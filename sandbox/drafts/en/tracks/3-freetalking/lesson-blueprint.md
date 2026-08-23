@@ -182,6 +182,45 @@ the deck author turns that compact arrow chain into eight single-prompt pages.
 | `q4`–`q5` | The most demanding reasoning or changed condition |
 | `q6` | Flip the topic and close it; do not open a new subject |
 
+### The one-hearing, three-second test
+
+The TOC uses the three-second test to admit a topic through its opening. Authored decks apply a
+stricter version to **every printed prompt and every tutor follow-up**. The learner hears the tutor;
+they do not get to study the sentence as an essay question.
+
+A prompt passes only when a proofreader can hear or read it once and immediately say a plausible
+first answer. Allow about three seconds to begin the answer. The answer can be short; the question
+should make extending it easy. If the proofreader first has to paraphrase the question, choose an
+interpretation, recover a hidden situation or decide what an abstract noun refers to, rewrite it.
+
+This is a processing-load test, not a vocabulary blacklist. Common words can still form a slow
+question:
+
+- `What risk creates the boundary?` is grammatical but abstract. Use `Why wouldn't you trust AI
+  with that?`.
+- `Which works best when explaining a custom: a reason, a comparison, or an example?` asks the
+  learner to evaluate overlapping communication strategies. Use a concrete choice such as `Which
+  is easier to explain: bowing or taking off your shoes?`.
+
+Prefer direct verbs, named people or things, and one visible situation. Reject:
+
+- nominalized or metaphorical packaging (`the boundary`, `the factor`, `the conclusion`) when a
+  direct `why`, `what happened` or `what would you do` asks the real question;
+- `it`, `that`, `this situation` or `the difference` when the referent is not unmistakable in
+  speech;
+- meta-questions about how to explain, classify, judge or frame an answer unless that action is the
+  topic itself;
+- unrestricted requests to retrieve a personal memory, fact or example with no concrete foothold;
+  when recall is optional, put two or three familiar choices in the prompt or the no-answer route;
+- choices that mix or overlap categories, such as `words, a picture, or an example`;
+- a Full rewrite that deepens the vocabulary or sentence structure instead of the answer.
+
+For every prompt, the proofreader records the pass mentally by saying a plausible opening answer
+aloud. For every follow-up set, test two paths: one after a substantive answer and one after `I
+don't know`, `none` or `never`. At least one follow-up must give the second path a concrete new
+foothold. A slightly tangential rescue is better than repeating the question the learner could not
+answer.
+
 ### One printed prompt
 
 Each page prints exactly one talking prompt. A direct imperative such as “Tell me about the first
@@ -206,7 +245,7 @@ follow-up. Useful jobs include **concretize**, **cause**, **another perspective*
 making the list reach three, rewrite it or remove it. **Two strong prompts are better than a filler
 third.**
 
-Every set must pass all six checks:
+Every set must pass all eight checks:
 
 1. **Answer-dependent.** It responds naturally to a plausible answer to the printed question.
 2. **Distinct.** No two follow-ups ask for the same information through different wording.
@@ -222,21 +261,27 @@ Every set must pass all six checks:
 6. **Intellectually paired.** Full and accessible prompts perform the same semantic jobs. The
    accessible version lowers language load; it does not replace a reason or perspective with “Did
    you like it?” or another generic reaction check.
+7. **No-answer route.** After `I don't know`, `none` or `never`, at least one follow-up supplies a
+   concrete foothold instead of asking for another detail from the missing answer.
+8. **Immediate in speech.** Each line independently passes the one-hearing, three-second test. A
+   rescue that needs interpretation is not a rescue.
 
 Topic relevance is a boundary, not a cage. A slightly tangential question is better than a dull
 restatement when it opens a natural, adult conversation. Follow the most interesting detail in the
 learner's answer; do not force every listed question or a preselected language pattern into the
 exchange.
 
-### Five checks for a prompt
+### Six checks for a prompt
 
-1. **One hypothetical layer.** Do not stack another “if” on a topic already built on a condition.
-2. **A visible object.** The learner should not first have to decide what “change” or “improve” is
+1. **One hearing, then an answer.** Say one plausible first answer aloud within about three seconds;
+   if you must paraphrase the prompt first, rewrite it.
+2. **One hypothetical layer.** Do not stack another “if” on a topic already built on a condition.
+3. **A visible object.** The learner should not first have to decide what “change” or “improve” is
    supposed to act on.
-3. **Anchored vocabulary.** At least one important noun or verb comes from the opening/model/topic.
-4. **Not finished by yes/no or A/B.** Except for the deliberate warm-up/setup, ask for the scene,
+4. **Anchored vocabulary.** At least one important noun or verb comes from the opening/model/topic.
+5. **Not finished by yes/no or A/B.** Except for the deliberate warm-up/setup, ask for the scene,
    reason, threshold or consequence.
-5. **No assumed life.** “Your work or studies” remains answerable by workers, students, retirees and
+6. **No assumed life.** “Your work or studies” remains answerable by workers, students, retirees and
    caregivers; “your current job” does not.
 
 At topic level, the TOC's three tests still apply: the opening answer arrives within three seconds,

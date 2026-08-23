@@ -12,10 +12,10 @@
 
 ## Outcome
 
-- **Can do:** "What's the best thing you've bought this year?"
+- **Can do:** "What's something you bought that was worth the money?"
 - **Theme:** 2 · Me lately
 - **Format:** story
-- **Opening:** "What's the best thing you've bought this year?"
+- **Opening:** "What's something you bought that was worth the money?"
 - **Question ladder:** what is it → when → what made you decide → was it expensive, did that matter → what do you regret buying → would you buy it again
 
 ## Retrieval

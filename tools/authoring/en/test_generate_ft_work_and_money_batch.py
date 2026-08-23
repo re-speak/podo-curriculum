@@ -31,8 +31,8 @@ EXPECTED_TOPICS = {
 
 EXPECTED_OPENINGS = {
     64: "What are some memorable ways people use their first paycheck?",
-    65: "What makes finishing something feel genuinely satisfying?",
-    66: "What can make an ordinary moment feel like success?",
+    65: "Which feels better: finishing a long job or fixing a small annoying problem?",
+    66: "Which small success feels best: arriving on time, cooking well, or finishing a task?",
     67: "What skill would you most like to improve?",
     68: "Besides spending it, what can people do with money?",
     69: "Which career would you be curious to try for one year?",

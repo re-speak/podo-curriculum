@@ -283,7 +283,7 @@ class FreetalkingThingsILikeBatchTests(unittest.TestCase):
         )
         self.assertEqual(
             batch.TOPICS[27]["prompts"][0]["accessible_followups"],
-            ["What makes it feel special?", "Who would you trust enough to tell?"],
+            ["Why would you make that choice?", "Who would you tell first?"],
         )
         self.assertEqual(
             batch.TOPICS[28]["prompts"][7]["accessible"],
@@ -291,11 +291,11 @@ class FreetalkingThingsILikeBatchTests(unittest.TestCase):
         )
         self.assertEqual(
             batch.TOPICS[29]["prompts"][3]["accessible"],
-            "What is the best way for a beginner to start?",
+            "What can a beginner do in the first hour of a new hobby?",
         )
         self.assertEqual(
             batch.TOPICS[30]["prompts"][4]["accessible"],
-            "Who would best understand why the object matters to you?",
+            "Who understands a sentimental object better: the giver or the owner?",
         )
         self.assertEqual(
             batch.TOPICS[33]["prompts"][7]["accessible"],

@@ -52,7 +52,7 @@ TOC_RETRIEVAL_AUDIT_ONLY = True
 
 BRIEF_OPENINGS = {
     57: "What's something small that makes you like someone?",
-    58: "What kind of comment can destroy trust in a relationship?",
+    58: "Which is harder to forgive: a lie, an insult, or a broken promise?",
     59: "What's one thing you could never compromise on in a partner?",
     60: "Which relationship habit do you think is hardest to change?",
     61: "If you had a wedding tomorrow, what's the one thing you'd insist on?",
@@ -517,7 +517,7 @@ TOPICS = {
                 ("Which need does it protect?", "Could someone show the same value in a different way?"),
                 full="Why would that quality carry enough weight to become non-negotiable?",
                 full_ja="その特徴が譲れないほど重要になるのはなぜですか？",
-                full_followups=("Which underlying need or value does it protect?", "Could the same value be demonstrated through different behaviour?"),
+                full_followups=("What real need or value does it protect?", "Could the same value be shown through different behaviour?"),
                 safety="value-analysis",
             ),
             prompt(
@@ -577,7 +577,7 @@ TOPICS = {
                 ("What would make the statement clear?", "What choice must the other person still keep?"),
                 full="How can a non-negotiable be expressed as a personal boundary rather than a demand for control?",
                 full_ja="譲れない条件を、支配する要求ではなく、自分の境界線としてどう表現できますか？",
-                full_followups=("Which wording would make ownership of the boundary clear?", "Which autonomy must remain with the other person?"),
+                full_followups=("Which wording would make ownership of the boundary clear?", "Which choice must remain with the other person?"),
                 safety="general-communication",
             ),
         ],
@@ -726,7 +726,7 @@ TOPICS = {
                 ("For your own habit, what might get in the way the first time you try the new response?", "For a general example, what support could make the replacement easier?"),
                 full="If the pattern is yours, which replacement behaviour could you use; in a general case, which response could the person use?",
                 full_ja="自分の傾向なら自分が、一般的な例ならその人が、どの代替行動を使えますか？",
-                full_followups=("For your own pattern, which obstacle could block the replacement under stress?", "For a general case, what support could make the replacement sustainable?"),
+                full_followups=("For your own pattern, which obstacle could block the replacement under stress?", "For a general case, what support could make the new response last?"),
                 safety="self-or-general-strategy",
             ),
             prompt(
@@ -1232,38 +1232,38 @@ REVIEWED_PROMPTS = {
         ("Would you tell someone about a small quality you find attractive?", "魅力的だと感じる小さな特徴を、本人に伝えますか？", ("What would make the compliment feel sincere?", "What might make the moment awkward?"), "Would you name an understated quality you find attractive to the person who has it?", "その人のさりげない特徴に魅力を感じると、本人に伝えますか？", ("What would make the compliment feel genuine?", "Which context could make it uncomfortable?")),
         ("When is someone's kindness easiest to notice?", "その人の優しさに気づきやすいのは、どんなときですか？", ("What might the person do?", "Who benefits from the kindness?"), "Which ordinary situation reveals genuine consideration most clearly?", "本当の思いやりが最もはっきり現れるのは、どんな日常の場面ですか？", ("Which action would make it visible?", "Why would that moment carry weight?")),
         ("Which matters more at first: someone's appearance or their everyday habits?", "最初は、見た目と日常の習慣のどちらがより重要ですか？", ("Can your answer change over time?", "Which habit could outweigh appearance?"), "At the beginning of an attraction, how do appearance and ordinary behaviour compete for attention?", "人にひかれ始めるとき、見た目と日常の行動はどう影響し合いますか？", ("Which tends to matter first?", "Which behaviour could overturn the first impression?")),
-        ("What can make a charming habit become annoying?", "魅力的な癖が、気になる癖に変わるのはどんなときですか？", ("Does intention matter?", "Which change in context matters most?"), "What can make the same endearing habit lose its charm?", "同じ愛らしい癖が魅力を失うのは、どんなときですか？", ("How much does intention affect the meaning?", "Which context could reverse your judgment?")),
+        ("What can make a charming habit become annoying?", "魅力的な癖が、気になる癖に変わるのはどんなときですか？", ("Does intention matter?", "Which change in context matters most?"), "What can make an endearing habit lose its charm?", "愛らしい癖が魅力を失うのは、どんなときですか？", ("How much does intention affect the meaning?", "Which context could reverse your judgment?")),
         ("How have the small qualities you value in people changed over time?", "人の中で大切に感じる小さな特徴は、時間とともにどう変わりましたか？", ("What matters more now?", "Which preference has stayed steady?"), "How have age and experience changed which understated qualities you value?", "年齢や経験によって、大切に感じるさりげない特徴はどう変わりましたか？", ("Which quality carries more weight now?", "Which preference has remained stable?")),
         ("What small quality would you be happy for someone to notice in you?", "自分のどんな小さな特徴に気づいてもらえたら、うれしいですか？", ("How does it appear in everyday life?", "Would you want the person to mention it?"), "Which understated quality would you be glad to have someone notice in you?", "自分のどんなさりげない特徴に気づいてもらえたら、うれしいですか？", ("How would it become visible naturally?", "Would naming it improve the moment or make it awkward?")),
     ),
     58: (
-        ("What kind of comment can destroy trust in a relationship?", "どんな発言が、人間関係の信頼を壊すと思いますか？", ("Which boundary does it cross?", "Does the context change its impact?"), "Which kind of remark can destroy trust between two people?", "どのような発言が、二人の間の信頼を壊し得ると思いますか？", ("Which value would the remark violate?", "How much should context affect the judgment?")),
-        ("Which is hardest to forgive: an insult, a threat, or a lie?", "侮辱、脅し、うその中で、最も許しにくいのはどれですか？", ("What makes it especially serious?", "Can severity change your answer?"), "Which is most difficult to repair after: contempt, a threat, or deliberate dishonesty?", "軽蔑、脅し、意図的な不誠実さの中で、最も修復が難しいのはどれですか？", ("Which feature makes the damage decisive?", "Could a less severe version remain repairable?")),
-        ("How should someone respond when a comment crosses a serious boundary?", "発言が重大な境界線を越えたとき、どう対応すべきですか？", ("Should the response be immediate?", "What could help the person think clearly?"), "What is the wisest first response when a remark crosses a serious relationship boundary?", "発言が重大な関係の境界線を越えたとき、最初にどう対応するのが賢明ですか？", ("What needs to happen immediately?", "Whose perspective could help assess the situation?")),
-        ("When is taking time before replying better than answering immediately?", "すぐに答えるより、時間を置いてから返事をするほうがよいのはどんなときですか？", ("What can a pause prevent?", "How long should the pause last?"), "Under which conditions is a deliberate pause more constructive than an immediate response?", "どのような状況では、すぐに反応するより、意識的に間を置くほうが建設的ですか？", ("Which escalation could a pause prevent?", "How can the pause avoid feeling like punishment?")),
-        ("Do exact words matter more than the attitude behind them?", "正確な言葉と、その奥にある態度のどちらがより重要ですか？", ("Can different words cause the same harm?", "Can the same words carry different meanings?"), "Should a damaging remark be judged mainly by its literal wording or by the attitude it reveals?", "傷つける発言は、文字どおりの言葉と、そこに表れる態度のどちらを主に見るべきですか？", ("Could different wording expose the same harm?", "How much should intention matter?")),
-        ("What does a real apology need after a hurtful comment?", "傷つける発言の後、本当の謝罪には何が必要ですか？", ("Do words alone count?", "What change should follow?"), "What would credible accountability require after a damaging remark?", "傷つける発言の後、信頼できる責任の取り方には何が必要ですか？", ("Which action should accompany the apology?", "Which repeated pattern would make repair unlikely?")),
-        ("What should nobody say to a partner during an argument?", "口論中でも、パートナーに決して言わないほうがよいのは何ですか？", ("Which value sets that limit?", "How could the concern be expressed safely?"), "Which category of remark should remain off-limits even during intense conflict?", "激しい対立の中でも、どの種類の発言は禁じるべきですか？", ("Which principle sets that limit?", "How could the underlying concern be expressed constructively?")),
-        ("How can someone state a serious boundary without making a threat?", "脅しにならないように、重大な境界線をどう伝えられますか？", ("What wording sounds clear?", "When should the conversation happen?"), "How can a serious boundary be communicated firmly without becoming coercive?", "重大な境界線を、強制的にならず、はっきりとどう伝えられますか？", ("Which wording preserves the other person's choice?", "Which setting would support a calm discussion?")),
+        ("Which is harder to forgive: a lie, an insult, or a broken promise?", "うそ、侮辱、破られた約束の中で、最も許しにくいのはどれですか？", ("Why does that one hurt trust most?", "Could a sincere apology change your answer?"), "Which does more damage to trust: a lie, a cruel comment, or a broken promise?", "うそ、ひどい発言、破られた約束の中で、信頼を最も傷つけるのはどれですか？", ("Why does that one carry the most weight?", "Could the context change your answer?")),
+        ("Can one comment end a relationship, or does a repeated pattern matter more?", "一度の発言で関係が終わることはありますか。それとも、繰り返される行動のほうが重要ですか？", ("What kind of comment could be a deal-breaker?", "When should someone look at the larger pattern?"), "Can one terrible comment be a deal-breaker, or does a repeated pattern matter more?", "一度のひどい発言が関係を終わらせる決定打になりますか。それとも、繰り返される行動のほうが重要ですか？", ("What could make one comment impossible to ignore?", "When does a pattern become clearer than a single moment?")),
+        ("What makes an apology feel sincere?", "謝罪が心からのものだと感じられるのは、どんなときですか？", ("What words help?", "What action should follow?"), "What makes an apology feel genuine?", "謝罪が本心からのものだと感じられるのは、どんなときですか？", ("How much do the exact words matter?", "What change would need to follow?")),
+        ("When is it better to pause an argument and talk later?", "口論をいったん止めて、後で話すほうがよいのはどんなときですか？", ("What can a short break prevent?", "How can someone promise to return to the conversation?"), "When is taking a break from an argument healthier than continuing it?", "口論を続けるより、いったん離れるほうが健全なのはどんなときですか？", ("What signs show that the conversation is no longer useful?", "How can the break avoid feeling like punishment?")),
+        ("What should nobody use against a partner in an argument?", "口論の中でも、パートナーに対して持ち出すべきでないことは何ですか？", ("Why should it stay off-limits?", "How could the real concern be said more safely?"), "What should never be used as a weapon in an argument?", "口論の中で、決して攻撃の材料にしてはいけないことは何ですか？", ("Why would using it cause lasting harm?", "How could the same concern be raised fairly?")),
+        ("What would someone need to do to rebuild trust after crossing a serious line?", "重大な一線を越えた後、信頼を取り戻すには何をする必要がありますか？", ("What should happen first?", "How long can rebuilding trust take?"), "What would real repair look like after someone crosses a serious line?", "重大な一線を越えた後、本当の関係修復とはどのようなものですか？", ("Which action would matter more than another promise?", "How would both people know that trust is returning?")),
+        ("How can someone say “That's not okay” without making the fight worse?", "けんかを悪化させずに、「それは受け入れられない」とどう伝えられますか？", ("What words sound clear but calm?", "When is the best time to say it?"), "How can someone set a firm boundary without making a threat?", "脅しにせず、はっきりと境界線を示すにはどうすればよいですか？", ("What wording keeps the focus on the boundary?", "Which choice should the other person still have?")),
+        ("What's one green flag that makes a relationship feel safe?", "人間関係に安心を感じさせるよいサインを一つ挙げるとしたら何ですか？", ("How does it show up in everyday life?", "What makes it especially valuable?"), "What's one green flag that tells you a relationship is safe?", "人間関係が安心できると分かるよいサインを一つ挙げるとしたら何ですか？", ("Which everyday action makes the sign visible?", "How does it help both people handle conflict?")),
     ),
     59: (
         ("What's one thing you could never compromise on in a partner?", "パートナーについて、絶対に妥協できないことは何ですか？", ("Which value does it protect?", "What behaviour would cross the line?"), "Which single quality or behaviour would be non-negotiable in a partner?", "パートナーのどの特徴や行動は、絶対に譲れませんか？", ("Which value underlies that boundary?", "What observable behaviour would violate it?")),
-        ("Why do some preferences become non-negotiable?", "なぜ、ある好みは絶対に譲れない条件になるのでしょうか？", ("Which need can a boundary protect?", "Can the same value appear in different ways?"), "What gives one preference enough weight to become a non-negotiable?", "一つの好みが絶対に譲れない条件になるほどの重みは、どこから生まれますか？", ("Which underlying need does it protect?", "Could the same value be demonstrated differently?")),
+        ("Why do some preferences become non-negotiable?", "なぜ、ある好みは絶対に譲れない条件になるのでしょうか？", ("Which need can a boundary protect?", "Can the same value appear in different ways?"), "What gives one preference enough weight to become a non-negotiable?", "一つの好みが絶対に譲れない条件になるほどの重みは、どこから生まれますか？", ("What real need does it protect?", "Could the same value be shown differently?")),
         ("Which partner preference is usually safe to be flexible about?", "パートナーに求める条件の中で、柔軟に考えやすいのは何ですか？", ("Why is it less important?", "Where should flexibility stop?"), "Which preference can usually be negotiated without sacrificing a central value?", "中心的な価値観を犠牲にせず、通常は調整できる好みは何ですか？", ("What makes it genuinely flexible?", "At which point would accommodation become too costly?")),
         ("Which qualities in a partner matter more with age?", "年齢を重ねると、パートナーのどんな特徴がより重要になると思いますか？", ("Which quality may matter less?", "What could cause the change?"), "How might age and experience reorder the qualities someone values in a partner?", "年齢や経験は、パートナーに求める特徴の優先順位をどう変えると思いますか？", ("Which criterion might gain weight?", "Which ideal could become less important?")),
         ("Why are some reasonable boundaries called unrealistic?", "なぜ、理にかなった境界線でも現実的でないと言われることがあるのでしょうか？", ("What social pressure affects that judgment?", "Who gets to decide what is reasonable?"), "Why can a legitimate relationship boundary be dismissed as unrealistic?", "なぜ、正当な関係の境界線が現実的でないと退けられることがあるのでしょうか？", ("Which social expectation distorts the judgment?", "Whose interests does the criticism serve?")),
         ("When is it healthy to reconsider a relationship boundary?", "どんなときに、関係の境界線を見直すのが健全ですか？", ("What new evidence should matter?", "Which value should remain protected?"), "What evidence justifies reassessing a boundary without abandoning its purpose?", "境界線の目的を捨てずに見直すには、どんな根拠が必要ですか？", ("Would consequences or another perspective matter more?", "Which core value still needs protection?")),
-        ("What should two people do when their reasonable boundaries do not fit together?", "二人の合理的な境界線が合わないとき、どうすべきですか？", ("Which differences allow compromise?", "When is accepting incompatibility more honest?"), "How should two people respond when their defensible non-negotiables are incompatible?", "二人の正当な譲れない条件が両立しないとき、どう対応すべきですか？", ("Which differences might still allow negotiation?", "When is acknowledging incompatibility more honest?")),
-        ("How can someone state a non-negotiable without controlling another person?", "相手をコントロールせずに、譲れない条件をどう伝えられますか？", ("What wording makes it a personal boundary?", "Which choice must the other person keep?"), "How can a non-negotiable be expressed as a personal boundary rather than a demand?", "譲れない条件を、要求ではなく自分の境界線としてどう表現できますか？", ("Which wording shows ownership of the boundary?", "Which autonomy must remain with the other person?")),
+        ("What should two people do when their reasonable boundaries do not fit together?", "二人の合理的な境界線が合わないとき、どうすべきですか？", ("Which differences allow compromise?", "When is accepting that the two people are a poor fit more honest?"), "How should two people respond when their defensible non-negotiables are incompatible?", "二人の正当な譲れない条件が両立しないとき、どう対応すべきですか？", ("Which differences might still allow negotiation?", "When is admitting that the two people are a poor fit more honest?")),
+        ("How can someone state a non-negotiable without controlling another person?", "相手をコントロールせずに、譲れない条件をどう伝えられますか？", ("What wording makes it a personal boundary?", "Which choice must the other person keep?"), "How can a non-negotiable be expressed as a personal boundary rather than a demand?", "譲れない条件を、要求ではなく自分の境界線としてどう表現できますか？", ("Which wording shows ownership of the boundary?", "Which choice must remain with the other person?")),
     ),
     60: (
         ("Which relationship habit do you think is hardest to change?", "人間関係の癖の中で、最も変えにくいのは何だと思いますか？", ("What usually triggers it?", "Why does it continue?"), "Which unhelpful relationship pattern is usually hardest to change?", "役に立たない関係のパターンの中で、通常最も変えにくいのは何ですか？", ("Which trigger tends to activate it?", "What continues to reinforce it?")),
-        ("When do people usually notice a bad relationship habit in themselves?", "人は普通、いつ自分のよくない関係の癖に気づきますか？", ("What evidence makes it clear?", "Why can it be hard to see?"), "Which situation most often exposes an unhelpful relationship pattern to the person who has it?", "役に立たない関係のパターンに本人が気づくのは、どんな状況が多いですか？", ("Which consequence makes the pattern visible?", "Why might self-awareness arrive late?")),
-        ("How can someone point out a relationship habit without starting a fight?", "口論を始めずに、相手の関係の癖をどう指摘できますか？", ("What wording keeps it specific?", "When is the best time to talk?"), "How can feedback about a relationship pattern remain specific without becoming an attack?", "関係のパターンについての指摘を、攻撃にせず具体的に伝えるにはどうすればよいですか？", ("Which observation would keep it concrete?", "Which timing would reduce defensiveness?")),
+        ("When do people usually notice a bad relationship habit in themselves?", "人は普通、いつ自分のよくない関係の癖に気づきますか？", ("What evidence makes it clear?", "Why can it be hard to see?"), "Which situation most often exposes an unhelpful relationship pattern to the person who has it?", "役に立たない関係のパターンに本人が気づくのは、どんな状況が多いですか？", ("Which consequence makes the pattern visible?", "Why might the person notice it late?")),
+        ("How can someone point out a relationship habit without starting a fight?", "口論を始めずに、相手の関係の癖をどう指摘できますか？", ("What wording keeps it specific?", "When is the best time to talk?"), "How can feedback about a relationship pattern remain specific without becoming an attack?", "関係のパターンについての指摘を、攻撃にせず具体的に伝えるにはどうすればよいですか？", ("Which observation would keep it concrete?", "Which timing would help the person feel less attacked?")),
         ("What small change can make a bad relationship habit easier to manage?", "よくない関係の癖を管理しやすくする小さな変化は何ですか？", ("What could replace the old response?", "How could progress be noticed?"), "Which small replacement behaviour can make an unhelpful pattern easier to change?", "役に立たないパターンを変えやすくする小さな代替行動は何ですか？", ("Which trigger would cue the new response?", "What evidence would show progress?")),
         ("Which relationship habit is especially difficult to live with?", "一緒に過ごす上で、特に受け入れにくい関係の癖は何ですか？", ("What effect does it have?", "Can the person be unaware of it?"), "Which relationship pattern in another person is particularly difficult to tolerate?", "相手のどのような関係のパターンが、特に受け入れにくいですか？", ("Which impact makes it difficult?", "How might the person remain unaware of it?")),
         ("When does explaining a bad habit become an excuse?", "よくない癖の説明が、言い訳になるのはどんなときですか？", ("What responsibility should remain?", "Which effort makes the explanation more honest?"), "Where is the line between honestly disclosing a pattern and using it to avoid responsibility?", "パターンを正直に説明することと、責任を避けるために使うことの境界はどこですか？", ("Which responsibility must remain?", "What concrete effort should accompany the disclosure?")),
-        ("What can someone do instead of shutting down during conflict?", "対立中に心を閉ざす代わりに、何ができますか？", ("What makes the new response difficult?", "Which support could help?"), "Which replacement behaviour could interrupt the habit of shutting down during conflict?", "対立中に心を閉ざす癖を中断する代替行動は何ですか？", ("Which obstacle could block the response under stress?", "What support could make it sustainable?")),
+        ("What can someone do instead of shutting down during conflict?", "対立中に心を閉ざす代わりに、何ができますか？", ("What makes the new response difficult?", "Which support could help?"), "Which replacement behaviour could interrupt the habit of shutting down during conflict?", "対立中に心を閉ざす癖を中断する代替行動は何ですか？", ("Which obstacle could block the response under stress?", "What support could make the new response last?")),
         ("Which healthy relationship habit deserves more attention?", "どの健全な関係の習慣が、もっと注目されるべきですか？", ("How does it help both people?", "Why is it easy to overlook?"), "Which healthy relationship pattern is most undervalued?", "どの健全な関係のパターンが、最も過小評価されていますか？", ("How does it support both people?", "Why can it be difficult to recognize?")),
     ),
     61: (
@@ -1278,7 +1278,7 @@ REVIEWED_PROMPTS = {
     ),
     62: (
         ("Why can some breakups be so hard to get over?", "なぜ、立ち直るのがとても難しい別れがあるのでしょうか？", ("What is lost besides the relationship?", "Which part can take longest to accept?"), "Why can some breakups be particularly hard to get over?", "なぜ、立ち直るのが特に難しい別れがあるのでしょうか？", ("Which losses extend beyond the relationship itself?", "What can make acceptance take longer?")),
-        ("What changes most after a relationship ends?", "人間関係が終わった後、最も大きく変わるのは何ですか？", ("Which daily routine changes first?", "Which future plan is hardest to replace?"), "Which immediate change after a breakup tends to feel most disruptive?", "別れの後、どのような即時の変化が最も生活を乱しやすいですか？", ("Which routine disappears first?", "Which practical consequence is often underestimated?")),
+        ("What changes most after a relationship ends?", "人間関係が終わった後、最も大きく変わるのは何ですか？", ("Which daily routine changes first?", "Which future plan is hardest to replace?"), "Which immediate change after a breakup tends to feel most disruptive?", "別れの後、どのような即時の変化が最も生活を乱しやすいですか？", ("Which routine disappears first?", "Which everyday effect is often overlooked?")),
         ("What affects how long it takes to recover from a breakup?", "別れから立ち直るまでの時間には、何が影響しますか？", ("Does the length of the relationship matter?", "Which sign shows progress?"), "Which factors shape the pace of recovery after a relationship ends?", "関係が終わった後、回復の速さを左右するのはどんな要因ですか？", ("How much does the nature of the ending matter?", "Which sign indicates genuine progress?")),
         ("When is privacy helpful after a breakup, and when is support better?", "別れの後、一人でいることが役立つのはいつで、人の支えがよりよいのはいつですか？", ("What can solitude provide?", "What kind of support feels useful?"), "How should someone balance privacy and social support after a breakup?", "別れの後、プライバシーと周りの支えをどうバランスすべきですか？", ("Which purpose can solitude serve?", "Which form of support tends to be constructive?")),
         ("What genuinely helps someone begin to get over a breakup?", "別れから立ち直り始めるために、本当に役立つのは何ですか？", ("Is the help emotional or practical?", "Which common advice does not help?"), "What helps someone begin recovering from a difficult breakup in a meaningful way?", "難しい別れから本当の意味で回復し始めるには、何が役立ちますか？", ("Is useful support mainly emotional or practical?", "Which familiar response can make recovery harder?")),
@@ -1287,12 +1287,12 @@ REVIEWED_PROMPTS = {
         ("What is one sign that someone is moving forward without erasing the past?", "過去を消さずに前に進んでいることを示すサインは何ですか？", ("Is the sign emotional or practical?", "What might still remain difficult?"), "Which sign shows that recovery is underway without pretending the relationship was meaningless?", "その関係に意味がなかったふりをせずに、回復が進んでいると示すサインは何ですか？", ("Would the clearest evidence be emotional or practical?", "Which difficulty could reasonably remain?")),
     ),
     63: (
-        ("Why might someone choose not to marry or have children?", "なぜ、結婚しない、または子どもを持たないと選ぶ人がいるのでしょうか？", ("Which reasons are often overlooked?", "Are marriage and children separate decisions?"), "Which values or circumstances can lead someone to choose neither marriage nor parenthood?", "どのような価値観や状況が、結婚も親になることも選ばない決定につながるのでしょうか？", ("Which motivations are commonly underestimated?", "Why should the two decisions remain distinct?")),
+        ("Why might someone choose not to marry or have children?", "なぜ、結婚しない、または子どもを持たないと選ぶ人がいるのでしょうか？", ("Which reasons are often overlooked?", "Are marriage and children separate decisions?"), "Which values or circumstances can lead someone to choose neither marriage nor parenthood?", "どのような価値観や状況が、結婚も親になることも選ばない決定につながるのでしょうか？", ("Which reasons are commonly overlooked?", "Why should the two decisions remain distinct?")),
         ("Should anyone have to explain a choice not to marry or have children?", "結婚しない、または子どもを持たない選択を、誰かに説明する必要があるでしょうか？", ("Which questions feel too personal?", "When can curiosity be respectful?"), "Does anyone owe other people an explanation for choosing not to marry or become a parent?", "結婚しない、または親にならない選択について、他人に説明する義務はあるでしょうか？", ("Which details should remain private?", "What makes a question respectful rather than intrusive?")),
         ("What do people often say to someone who makes that choice?", "その選択をした人に、周りはよく何と言いますか？", ("Which comment sounds caring but feels like pressure?", "What would a neutral response sound like?"), "How do people commonly respond to someone who rejects marriage or parenthood?", "結婚や親になることを選ばない人に、周りは通常どう反応しますか？", ("Which response may disguise pressure as concern?", "What would curiosity without advocacy sound like?")),
         ("Why do views on marriage and children change over time?", "結婚や子どもについての考えが、時間とともに変わるのはなぜでしょうか？", ("Which life change can matter?", "Can uncertainty be a valid position?"), "Which experiences or conditions can reshape a person's view of marriage and parenthood?", "どのような経験や条件が、結婚や親になることへの考えを変えるのでしょうか？", ("Which material condition might carry weight?", "Why can uncertainty remain reasonable?")),
         ("How do family expectations affect decisions about marriage or children?", "家族の期待は、結婚や子どもについての決定にどう影響しますか？", ("How is pressure communicated?", "Which boundary keeps the discussion respectful?"), "How can family and social expectations shape decisions about marriage or parenthood?", "家族や社会の期待は、結婚や親になることへの決定をどう形作りますか？", ("Which messages carry the most pressure?", "Which boundary should the conversation respect?")),
-        ("Without social pressure, what should matter most in either decision?", "社会的なプレッシャーがなければ、どちらの決定で最も重要なのは何ですか？", ("Which value should guide the choice?", "Which practical condition still matters?"), "Without social pressure, which values and conditions should guide decisions about marriage or parenthood?", "社会的なプレッシャーがなければ、どの価値観や条件が結婚や親になる決定を導くべきですか？", ("Which principle supports autonomy?", "Which material condition carries legitimate weight?")),
+        ("Without social pressure, what should matter most in either decision?", "社会的なプレッシャーがなければ、どちらの決定で最も重要なのは何ですか？", ("Which value should guide the choice?", "Which practical condition still matters?"), "Without social pressure, which values and conditions should guide decisions about marriage or parenthood?", "社会的なプレッシャーがなければ、どの価値観や条件が結婚や親になる決定を導くべきですか？", ("Which principle protects a person's freedom to choose?", "Which material condition carries legitimate weight?")),
         ("Why is choosing marriage different from choosing to have children?", "なぜ、結婚を選ぶことと子どもを持つことは異なる決定なのでしょうか？", ("Which responsibilities differ?", "Why are the choices often treated as one?"), "Why should marriage and parenthood be treated as separate life decisions?", "なぜ、結婚と親になることは別々の人生の決定として扱うべきですか？", ("Which commitments and consequences differ?", "Which expectation tends to merge the two?")),
         ("How can people respond respectfully to decisions about marriage or children?", "結婚や子どもについての決定に、どうすれば敬意を持って応じられますか？", ("What should nobody demand?", "Which comment keeps the conversation open?"), "What makes a response to decisions about marriage or parenthood genuinely respectful?", "結婚や親になることについての決定への、本当に敬意ある反応とは何ですか？", ("Which explanation should nobody demand?", "Which wording preserves neutrality?")),
     ),
@@ -1311,6 +1311,195 @@ for _topic_no, _rows in REVIEWED_PROMPTS.items():
             full_followups=_f_followups,
             safety="standalone-opinion-or-scenario",
         )
+
+
+# FT58 is the approved calibration and stays exact. In the other pairs, Full
+# deepens the angle without replacing ordinary spoken English with essay terms.
+_PLAIN_FULL_PHRASES = (
+    ("understated", "small"),
+    ("trait could it indicate", "quality could it show"),
+    ("carry weight", "matter"),
+    ("compete for attention", "shape the first impression"),
+    ("reorder the qualities", "change the qualities"),
+    ("non-negotiable", "deal-breaker"),
+    ("underlies that boundary", "is behind that boundary"),
+    ("observable behaviour", "real behaviour"),
+    ("negotiated without sacrificing a central value", "flexible without giving up something important"),
+    ("accommodation become too costly", "flexibility go too far"),
+    ("legitimate relationship boundary be dismissed", "reasonable relationship boundary be called"),
+    ("reassessing a boundary", "reconsidering a boundary"),
+    ("defensible", "reasonable"),
+    ("incompatible", "a poor fit"),
+    ("unhelpful relationship pattern", "bad relationship habit"),
+    ("exposes", "reveals"),
+    ("replacement behaviour", "new habit"),
+    ("disclosing a pattern", "explaining a habit"),
+    ("avoid responsibility", "escape responsibility"),
+    ("interrupt the habit", "replace the habit"),
+    ("undervalued", "not appreciated enough"),
+    ("single element", "one thing"),
+    ("deserves to be preserved, adapted, or reinvented", "is worth keeping or changing"),
+    ("conventional wedding element", "common wedding tradition"),
+    ("decision-making power be shared", "wedding decisions be shared"),
+    ("produces the most avoidable pressure", "creates the most unnecessary pressure"),
+    ("authentic", "meaningful"),
+    ("central purpose should guide", "main purpose should shape"),
+    ("particularly", "especially"),
+    ("disruptive", "difficult"),
+    ("shape the pace of recovery", "affect how quickly someone recovers"),
+    ("balance privacy and social support", "choose between privacy and support"),
+    ("in a meaningful way", "for real"),
+    ("dismissive", "uncaring"),
+    ("recovery is underway", "someone is moving forward"),
+    ("circumstances can lead", "reasons can lead"),
+    ("owe other people an explanation", "have to explain"),
+    ("rejects marriage or parenthood", "chooses not to marry or have children"),
+    ("reshape", "change"),
+    ("distinct decisions", "separate decisions"),
+    ("genuinely respectful", "truly respectful"),
+)
+
+
+def _plain_full(value: str) -> str:
+    for _old, _new in _PLAIN_FULL_PHRASES:
+        value = value.replace(_old, _new)
+    return value
+
+
+for _topic_no, _topic in TOPICS.items():
+    if _topic_no == 58:
+        continue
+    for _item in _topic["prompts"]:
+        _item["full"] = _plain_full(_item["full"])
+        _item["full_followups"] = tuple(_plain_full(_probe) for _probe in _item["full_followups"])
+
+_STANDALONE_REVISIONS = {
+    (57, 2): ("What can a small kind gesture show about someone—and what can it not prove?", "小さな親切から、その人の何が分かり、何は断定できないと思いますか？", "What can a small kind gesture show about a person without proving it?", "小さな親切は、人柄について何を示しても、証明まではできないと思いますか？"),
+    (59, 6): ("What could make someone rethink a relationship deal-breaker?", "人間関係で絶対に譲れない条件を、考え直すきっかけは何ですか？", "What kind of experience could make a reasonable relationship boundary change?", "人間関係での妥当な境界線を変えるのは、どんな経験ですか？"),
+    (60, 2): ("When do people notice a bad relationship habit in themselves?", "人はいつ、自分の人間関係でのよくない習慣に気づきますか？", "Which situation makes a bad relationship habit hardest to ignore?", "人間関係でのよくない習慣が、最も無視できなくなるのはどんな状況ですか？"),
+    (62, 8): ("What's one sign that someone is moving forward after a breakup?", "別れのあと、前に進んでいると分かるサインは何ですか？", "Which sign shows that someone is moving forward without pretending the relationship meant nothing?", "その関係に意味がなかったふりをせず、前に進んでいると分かるサインは何ですか？"),
+    (63, 3): ("What do people often say when someone chooses not to marry or have children?", "結婚や子どもを持たない選択をした人に、周りはよく何と言いますか？", "How do people commonly respond when someone chooses not to marry or have children?", "結婚や子どもを持たない選択に対して、周りは一般にどう反応しますか？"),
+}
+for (_topic_no, _prompt_no), (_a, _a_ja, _f, _f_ja) in _STANDALONE_REVISIONS.items():
+    TOPICS[_topic_no]["prompts"][_prompt_no - 1].update(
+        accessible=_a, accessible_ja=_a_ja, full=_f, full_ja=_f_ja
+    )
+
+_FINAL_FULL_QUESTIONS = {
+    (57, 3): "Would you tell someone about a small quality you find attractive?",
+    (57, 4): "What ordinary situation shows someone's kindness most clearly?",
+    (57, 5): "When you first like someone, which matters more: appearance or everyday behaviour?",
+    (59, 1): "Which quality or behaviour would be a deal-breaker in a partner?",
+    (59, 2): "Why do some preferences become relationship deal-breakers?",
+    (59, 3): "Which preference can stay flexible without giving up something important?",
+    (59, 5): "Why are some reasonable relationship boundaries called unrealistic?",
+    (59, 7): "What should two people do when their reasonable deal-breakers do not fit together?",
+    (59, 8): "How can someone state a deal-breaker as a boundary instead of a demand?",
+    (60, 3): "How can someone point out a relationship habit without making it sound like an attack?",
+    (60, 4): "What small new habit can make a bad relationship pattern easier to change?",
+    (60, 5): "Which relationship habit is especially hard to live with?",
+    (60, 6): "When does explaining a bad habit become an excuse?",
+    (60, 7): "What can someone do instead of shutting down during an argument?",
+    (60, 8): "Which healthy relationship habit deserves more attention?",
+    (61, 1): "If you had a wedding tomorrow, what one thing would have to be there?",
+    (61, 2): "Which wedding tradition is worth keeping, changing, or dropping?",
+    (61, 3): "Which common wedding tradition creates more pressure than meaning?",
+    (61, 4): "How should a couple and their families share wedding decisions?",
+    (61, 5): "What makes one wedding detail truly memorable?",
+    (61, 6): "What part of wedding culture creates the most unnecessary stress?",
+    (61, 8): "What should be the main purpose of a wedding?",
+    (62, 2): "What change after a breakup can be hardest to get used to?",
+    (62, 3): "What affects how quickly someone recovers after a breakup?",
+    (62, 4): "When is privacy helpful after a breakup, and when is support better?",
+    (62, 5): "What genuinely helps someone start recovering after a breakup?",
+    (62, 6): "What can someone understand about a breakup only much later?",
+    (62, 7): "What kind-sounding breakup advice can actually feel uncaring?",
+    (63, 1): "Why might someone choose not to marry or become a parent?",
+    (63, 2): "Should anyone have to explain a choice not to marry or have children?",
+    (63, 4): "What can change someone's views on marriage or children over time?",
+    (63, 5): "How can family expectations affect decisions about marriage or children?",
+    (63, 6): "Without outside pressure, what should matter most in either decision?",
+    (63, 7): "Why should marriage and having children be treated as separate decisions?",
+    (63, 8): "What does a truly respectful response to either decision sound like?",
+}
+for (_topic_no, _prompt_no), _question in _FINAL_FULL_QUESTIONS.items():
+    TOPICS[_topic_no]["prompts"][_prompt_no - 1]["full"] = _question
+
+_CONCRETE_MAIN_QUESTIONS = {
+    (57, 4): ("Where is kindness easiest to notice: at home, at work, or with strangers?", "Which ordinary situation reveals genuine kindness most clearly?"),
+    (57, 5): ("Which matters more at first: appearance or everyday behaviour?", "Which can change a first attraction more: appearance or everyday behaviour?"),
+    (59, 3): ("Which partner preference is usually safe to be flexible about?", "Which partner preference can stay flexible without giving up an important value?"),
+    (59, 7): ("What should two people do when their important boundaries do not fit together?", "When two reasonable deal-breakers clash, is compromise possible—or is leaving fairer?"),
+    (60, 4): ("What small habit could replace a bad reaction during an argument?", "What small replacement habit can interrupt a bad pattern during conflict?"),
+    (60, 8): ("Which healthy habit helps relationships most: listening, checking in, or giving space?", "Which quiet relationship habit deserves much more attention?"),
+    (62, 4): ("After a breakup, when is being alone helpful and when is company better?", "After a breakup, what is the right balance between privacy and support?"),
+    (63, 2): ("Should people have to explain why they do not want marriage or children?", "Does anyone owe others an explanation for choosing not to marry or have children?"),
+}
+for (_topic_no, _prompt_no), (_accessible, _full) in _CONCRETE_MAIN_QUESTIONS.items():
+    TOPICS[_topic_no]["prompts"][_prompt_no - 1].update(
+        accessible=_accessible, full=_full
+    )
+
+_CONCRETE_JAPANESE = {
+    (57, 4): ("優しさに最も気づきやすいのは、家、職場、知らない人との場面のどこですか？", "本当の優しさが最もはっきり現れる日常の場面は何ですか？"),
+    (57, 5): ("最初は、見た目と日常の行動のどちらが大切ですか？", "最初の魅力をより変えるのは、見た目と日常の行動のどちらですか？"),
+    (59, 3): ("パートナーに求める条件のうち、柔軟に考えやすいものは何ですか？", "大切な価値観を失わずに柔軟に考えられる条件は何ですか？"),
+    (59, 7): ("大切な境界線が合わないとき、二人はどうすべきですか？", "妥当な譲れない条件がぶつかったとき、妥協は可能ですか。それとも別れるほうが公平ですか？"),
+    (60, 4): ("口論中のよくない反応を、どんな小さな習慣に置き換えられますか？", "衝突中のよくないパターンを止める、小さな代わりの習慣は何ですか？"),
+    (60, 8): ("人間関係に最も役立つのは、聞くこと、声をかけること、距離を与えることのどれですか？", "もっと注目されるべき、目立たない健全な習慣は何ですか？"),
+    (62, 4): ("別れのあと、一人でいるほうがよいのはいつで、誰かといるほうがよいのはいつですか？", "別れのあと、プライバシーと支えをどのように両立させるとよいですか？"),
+    (63, 2): ("結婚や子どもを望まない理由を、説明しなければならないと思いますか？", "結婚や子どもを持たない選択について、他人に説明する義務はありますか？"),
+}
+for (_topic_no, _prompt_no), (_accessible_ja, _full_ja) in _CONCRETE_JAPANESE.items():
+    TOPICS[_topic_no]["prompts"][_prompt_no - 1].update(
+        accessible_ja=_accessible_ja, full_ja=_full_ja
+    )
+
+TOPICS[57]["prompts"][2]["full"] = "Would you tell someone about a small quality you quietly find attractive?"
+TOPICS[60]["prompts"][5]["full"] = "When does an honest explanation of a bad habit turn into an excuse?"
+TOPICS[60]["prompts"][7]["full"] = "Which healthy relationship habit is easiest to overlook?"
+TOPICS[62]["prompts"][3]["full"] = "After a breakup, how should someone balance privacy and support?"
+TOPICS[63]["prompts"][1]["full"] = "Does anyone owe an explanation for choosing not to marry or have children?"
+TOPICS[63]["prompts"][5]["full"] = "Without social pressure, which personal value should matter most in either decision?"
+
+_PLAIN_PROBE_REVISIONS = {
+    "What other evidence would you want before judging?": "What else would you want to see before judging?",
+    "Which context could make it uncomfortable?": "Which situation could make it uncomfortable?",
+    "Which change in context matters most?": "Which change in the situation matters most?",
+    "Which context could reverse your judgment?": "Which situation could reverse your judgment?",
+    "What new evidence should matter?": "What new information should matter?",
+    "Would consequences or another perspective matter more?": "Would the result or another person's view matter more?",
+    "What evidence makes it clear?": "What makes the habit clear?",
+    "What evidence would show progress?": "What would show that the habit is changing?",
+    "What concrete effort should accompany the disclosure?": "What real effort should follow the explanation?",
+    "Which structural change could reduce it?": "Which practical change could reduce it?",
+    "Would the clearest evidence be emotional or practical?": "Would the clearest sign be emotional or practical?",
+    "Which material condition might matter?": "Which practical condition might matter?",
+    "Which practical condition still matters?": "Which practical issue still matters?",
+    "Which material condition carries legitimate weight?": "Which practical issue deserves serious weight?",
+}
+for _topic_no, _topic in TOPICS.items():
+    if _topic_no == 58:
+        continue
+    for _item in _topic["prompts"]:
+        for _key in ("accessible_followups", "full_followups"):
+            _item[_key] = tuple(_PLAIN_PROBE_REVISIONS.get(_probe, _probe) for _probe in _item[_key])
+
+
+FT58_PAGE_TITLES = (
+    ("A quick choice", "すぐに選ぶ"),
+    ("One comment or a pattern", "一度の発言か繰り返しか"),
+    ("A sincere apology", "心からの謝罪"),
+    ("Take a break", "いったん休む"),
+    ("Off-limits in an argument", "口論でも持ち出さないこと"),
+    ("Rebuilding trust", "信頼を取り戻す"),
+    ("Set a clear boundary", "はっきり境界線を示す"),
+    ("One green flag", "よいサインを一つ"),
+)
+for _item, (_title, _title_ja) in zip(
+    TOPICS[58]["prompts"], FT58_PAGE_TITLES, strict=True
+):
+    _item.update(title=_title, title_ja=_title_ja)
 
 
 CLAIM_ORDER = {
@@ -1483,6 +1672,319 @@ def _question_page(page_id: str, number: str, item: dict[str, object], variant: 
         '<button class="fb-add" data-add="note" type="button">＋ Note</button></div>'
     )
     return base.page(page_id, item["title"], item["title_ja"], body)
+
+
+_FINAL_CONVERSATION_PATCHES = {
+    (57, 2): {
+        "full": "What can a small kind gesture suggest about a person?",
+        "full_ja": "小さな親切から、その人のどんな人柄が感じられますか？",
+    },
+    (59, 4): {
+        "full_followups": ("Which quality might become more important?", "Which ideal might matter less?"),
+    },
+    (59, 5): {
+        "full_followups": ("Does social pressure make the choice harder to judge?", "Who benefits from the criticism?"),
+    },
+    (59, 7): {
+        "accessible_followups": ("Which differences allow compromise?", "When is accepting that the two people are a poor fit more honest?"),
+        "full_followups": ("Which differences might still allow negotiation?", "When is admitting that the two people are a poor fit more honest?"),
+    },
+    (60, 1): {
+        "title": "A hard habit to change",
+        "title_ja": "変えにくい癖",
+        "full": "Which relationship habit is usually hardest to change?",
+        "full_ja": "人間関係の癖の中で、普通いちばん変えにくいものは何ですか？",
+        "full_followups": ("What usually brings the habit out?", "Why can it be hard to change?"),
+    },
+    (60, 2): {
+        "title": "When people notice it",
+        "title_ja": "癖に気づくとき",
+        "full": "When do people usually notice a bad relationship habit in themselves?",
+        "full_ja": "人は普通、いつ自分のよくない関係の癖に気づきますか？",
+        "full_followups": ("What result makes the habit clear?", "Why can it be hard to notice?"),
+    },
+    (60, 3): {
+        "full": "How can someone raise a relationship habit without turning it into a fight?",
+        "full_ja": "関係の癖を、口論にせずどう話題にできますか？",
+        "full_followups": ("What exact behaviour should they mention?", "When would the conversation go best?"),
+    },
+    (60, 4): {
+        "title": "Changing the reaction",
+        "title_ja": "反応を変える",
+        "full": "What could someone do instead of reacting badly during an argument?",
+        "full_ja": "口論中によくない反応をする代わりに、何ができますか？",
+        "full_followups": ("What sign tells them to use the new response?", "What makes the change hard in the moment?"),
+    },
+    (60, 5): {
+        "full": "Which relationship habit is hardest to live with, and why?",
+        "full_ja": "一緒に過ごす上でいちばん受け入れにくい人間関係の癖と、その理由は何ですか？",
+        "full_followups": ("What effect can it have on the other person?", "Can someone have the habit without noticing it?"),
+    },
+    (60, 6): {
+        "title": "Explanation or excuse",
+        "title_ja": "説明か言い訳か",
+        "full": "When does explaining a bad relationship habit start to sound like an excuse?",
+        "full_ja": "人間関係のよくない癖を説明することが、言い訳に聞こえ始めるのはどんなときですか？",
+        "full_followups": ("What responsibility should the person still accept?", "What effort would make the explanation more honest?"),
+    },
+    (60, 7): {
+        "full": "What response could replace shutting down during conflict?",
+        "full_ja": "対立中に心を閉ざす反応を、何に置き換えられますか？",
+        "full_followups": ("What could make the new response hard?", "What support could make the new response last?"),
+    },
+    (60, 8): {
+        "full": "Which healthy relationship habit matters most but often goes unnoticed?",
+        "full_ja": "大切なのに気づかれにくい、人間関係のよい癖は何ですか？",
+        "full_followups": ("How does the habit help both people?", "Why might people fail to notice it?"),
+    },
+    (61, 2): {
+        "full_ja": "結婚式の習慣の中で、残したいもの、変えたいもの、なくしたいものは何ですか？",
+    },
+    (61, 1): {
+        "full_followups": ("What would that element actually look or sound like?", "Who else might share its meaning?"),
+    },
+    (61, 7): {
+        "full_ja": "プライベートな式は、大規模な公の祝いより意味深く感じられますか？",
+    },
+    (61, 8): {
+        "full_followups": ("Who should feel represented by the event?", "What choice would make that purpose visible?"),
+    },
+    (62, 2): {
+        "full_ja": "別れのあと、どの変化に慣れるのが最も難しいですか？",
+    },
+    (62, 8): {
+        "accessible_followups": ("Would other people notice the sign?", "What might still remain difficult?"),
+        "full_followups": ("Would close friends notice the sign before the person did?", "Which difficulty could reasonably remain?"),
+    },
+    (63, 3): {
+        "full": "How can someone ask about a choice not to marry or have children without sounding judgmental?",
+        "full_ja": "結婚しない、または子どもを持たない選択について、批判的に聞こえずにどう質問できますか？",
+        "full_followups": ("Which question would feel respectful?", "How can someone ask without trying to change the person's mind?"),
+    },
+    (63, 6): {
+        "full": "Without social pressure, what should matter most in decisions about marriage or children?",
+        "full_ja": "社会的なプレッシャーがなければ、結婚や子どもについての決定で何が最も大切ですか？",
+        "full_followups": ("What does respecting the person's choice sound like?", "Which practical issue deserves the most attention?"),
+    },
+    (63, 8): {
+        "full": "How can people discuss marriage and children without assuming one right choice?",
+        "full_ja": "結婚や子どもについて、一つの正解を決めつけずにどう話せますか？",
+        "full_followups": ("Which wording avoids pushing one answer?", "How can the discussion stay open and respectful?"),
+    },
+}
+for (_topic_no, _prompt_no), _changes in _FINAL_CONVERSATION_PATCHES.items():
+    TOPICS[_topic_no]["prompts"][_prompt_no - 1].update(_changes)
+
+
+_THREE_SECOND_PATCHES = {
+    (57, 1): {
+        "full": "What small gesture or quality makes someone more attractive to you?",
+        "full_ja": "どんな小さな行動や特徴が、その人をより魅力的に感じさせますか？",
+        "full_followups": ("When do you notice it most?", "Why do you like it?"),
+    },
+    (57, 2): {
+        "accessible": "What can a small kind gesture suggest about someone?",
+        "accessible_ja": "小さな親切から、その人について何が感じられますか？",
+        "accessible_followups": ("Which quality might it suggest?", "What else would you need to see before judging?"),
+    },
+    (57, 4): {
+        "full": "Where does kindness show most clearly: at home, at work, or with strangers?",
+        "full_ja": "親切が最もはっきり表れるのは、家、職場、知らない人との場面のどこですか？",
+        "full_followups": ("What might the person do?", "Who would benefit?"),
+    },
+    (57, 5): {
+        "full": "Which matters more after the first meeting: appearance or everyday behaviour?",
+        "full_ja": "初対面のあとにより大切になるのは、外見と日常の行動のどちらですか？",
+        "full_followups": ("Which one matters first?", "What behaviour could change the first impression?"),
+    },
+    (57, 6): {
+        "full": "When can a charming habit start to feel annoying?",
+        "full_ja": "魅力的な癖が、うっとうしく感じ始めるのはどんなときですか？",
+        "accessible_followups": ("Does the person's intention matter?", "Which change could make the habit annoying?"),
+        "full_followups": ("Does the person's intention matter?", "Which change could make the habit annoying?"),
+    },
+    (57, 7): {
+        "full_followups": ("What matters more to you now?", "Which preference has stayed the same?"),
+    },
+    (57, 8): {
+        "full_followups": ("How would people notice it in daily life?", "Would you want them to mention it?"),
+    },
+    (59, 1): {
+        "accessible_followups": ("Why is it important to you?", "Which is hardest to accept: dishonesty, unkindness, or unreliability?"),
+        "full_followups": ("Which personal need makes it important?", "Which crosses the line fastest: lying, cruelty, or broken promises?"),
+    },
+    (59, 2): {
+        "accessible": "Why can one preference become a relationship deal-breaker?",
+        "accessible_ja": "一つの好みが、人間関係で絶対に譲れない条件になるのはなぜですか？",
+        "full": "How can a simple preference turn into a relationship deal-breaker?",
+        "full_ja": "単純な好みが、人間関係で絶対に譲れない条件に変わるのはなぜですか？",
+        "accessible_followups": ("What need might it protect?", "Could the same need be met another way?"),
+        "full_followups": ("What need might it protect?", "Could the same need be met another way?"),
+    },
+    (59, 3): {
+        "full": "Which preference can you be flexible about in a partner?",
+        "full_ja": "パートナーのどんな好みなら柔軟に受け入れられますか？",
+        "full_followups": ("Why is it less important?", "When would flexibility go too far?"),
+    },
+    (59, 4): {
+        "full": "Which qualities in a partner can matter more as people get older?",
+        "full_ja": "年齢を重ねると、パートナーのどんな特徴がより大切になることがありますか？",
+        "full_followups": ("Which quality might matter more?", "Which one might matter less?"),
+    },
+    (59, 5): {
+        "accessible_followups": ("Do family or friends affect that opinion?", "Who should decide what is reasonable?"),
+        "full_followups": ("Do family or friends affect that opinion?", "Who should decide what is reasonable?"),
+    },
+    (59, 6): {
+        "full_followups": ("What new fact could change the person's mind?", "What should still remain important?"),
+    },
+    (59, 7): {
+        "full": "What should two people do when their deal-breakers clash?",
+        "full_ja": "二人の絶対に譲れない条件がぶつかったら、どうすべきですか？",
+        "full_followups": ("Which differences still allow compromise?", "When is ending the relationship more honest?"),
+    },
+    (59, 8): {
+        "accessible_followups": ("What words show that it is your own limit?", "What choice must the other person keep?"),
+        "full_followups": ("What words show that it is your own limit?", "What choice must the other person keep?"),
+    },
+    (60, 4): {
+        "accessible_followups": ("What could the person do instead?", "How would they know the new response is helping?"),
+        "full_followups": ("What could remind them to use the new response?", "Why might it be hard in the moment?"),
+    },
+    (60, 6): {
+        "accessible_followups": ("What should the person still take responsibility for?", "What action would make the explanation more honest?"),
+        "full_followups": ("What should the person still take responsibility for?", "What action would make the explanation more honest?"),
+    },
+    (60, 7): {
+        "accessible_followups": ("Why might the new response be hard?", "Who or what could help?"),
+        "full_followups": ("Why might the new response be hard?", "Who or what could help?"),
+    },
+    (61, 1): {
+        "accessible_followups": ("What would it look or sound like?", "Who else would care about it?"),
+        "full_followups": ("What would it look or sound like?", "Who else would care about it?"),
+    },
+    (61, 2): {
+        "full_followups": ("Why does the tradition matter?", "How could it fit the couple?"),
+    },
+    (61, 3): {
+        "full": "If one common wedding tradition had to go, which would you choose?",
+        "full_ja": "よくある結婚式の習慣を一つなくすなら、どれを選びますか？",
+        "full_followups": ("What problem would that solve?", "Who might miss it?"),
+    },
+    (61, 5): {
+        "full_followups": ("Does it need to be expensive?", "Could it work at a small wedding?"),
+    },
+    (61, 6): {
+        "full": "What part of a wedding creates the most unnecessary stress?",
+        "full_ja": "結婚式で、いちばん余計なストレスを生むのはどの部分ですか？",
+        "full_followups": ("Who usually feels the stress?", "What simple change could reduce it?"),
+    },
+    (61, 7): {
+        "accessible": "Could a tiny ceremony feel more special than a large wedding?",
+        "accessible_ja": "ごく小さな式のほうが、大きな結婚式より特別に感じられることはありますか？",
+        "full": "Can a private ceremony feel more personal than a large public celebration?",
+        "full_ja": "私的な式のほうが、大規模な公の祝いより個人的に感じられますか？",
+        "accessible_followups": ("What would be easier at the smaller wedding?", "What might people miss?"),
+        "full_followups": ("What would be easier at the private ceremony?", "What might people miss?"),
+    },
+    (61, 8): {
+        "accessible_followups": ("Who is the wedding mainly for?", "What choice would show that?"),
+        "full_followups": ("Who is the wedding mainly for?", "What choice would show that?"),
+    },
+    (62, 1): {
+        "accessible_followups": ("What else is lost besides the relationship?", "What can take longest to accept?"),
+        "full_followups": ("What else is lost besides the relationship?", "What can take longest to accept?"),
+    },
+    (62, 2): {
+        "full_followups": ("Which daily routine changes first?", "Which change do people often forget about?"),
+    },
+    (62, 3): {
+        "accessible_followups": ("Does a long relationship always take longer to recover from?", "What sign shows progress?"),
+        "full_followups": ("Does the way the relationship ended matter?", "What sign shows progress?"),
+    },
+    (62, 4): {
+        "full": "After a breakup, which moments call for time alone and which call for company?",
+        "full_ja": "別れのあと、どんなときは一人の時間が必要で、どんなときは誰かといるほうがよいですか？",
+        "full_followups": ("What can time alone provide?", "What kind of company would help?"),
+    },
+    (62, 6): {
+        "accessible_followups": ("What becomes clearer with time?", "Can people remember the past unfairly?"),
+        "full_followups": ("What becomes clearer with time?", "Can people unfairly blame one person later?"),
+    },
+    (62, 7): {
+        "full_followups": ("Why can the advice feel uncaring?", "What could someone say instead?"),
+    },
+    (62, 8): {
+        "full": "What is one sign that someone is moving forward after a breakup?",
+        "full_ja": "別れのあと、前に進んでいると分かるサインは一つ何ですか？",
+    },
+    (63, 1): {
+        "full_followups": ("Which reasons do people often forget about?", "Why are marriage and children separate choices?"),
+    },
+    (63, 2): {
+        "full": "Does anyone owe others an explanation for not wanting marriage or children?",
+        "full_ja": "結婚や子どもを望まない理由を、ほかの人に説明する義務はありますか？",
+        "full_followups": ("Which questions are too personal?", "When can curiosity be respectful?"),
+    },
+    (63, 4): {
+        "accessible_followups": ("Could money, health, or a relationship change the view?", "Is it okay to be unsure?"),
+        "full_followups": ("Could money, health, or a relationship change the view?", "Is it okay to be unsure?"),
+    },
+    (63, 5): {
+        "accessible_followups": ("What do families say that creates pressure?", "What question would be too personal?"),
+        "full_followups": ("What do families say that creates pressure?", "What question would be too personal?"),
+    },
+    (63, 6): {
+        "accessible": "Without social pressure, what should matter most when choosing marriage or children?",
+        "accessible_ja": "社会的な圧力がなければ、結婚や子どもを選ぶときに何を最も大切にすべきですか？",
+        "full": "If social pressure disappeared, what should guide a choice about marriage or children?",
+        "full_ja": "社会的な圧力がなくなったら、結婚や子どもについての選択を何が導くべきですか？",
+        "accessible_followups": ("Do personal wishes, money, or health matter most?", "What practical issue cannot be ignored?"),
+        "full_followups": ("Do personal wishes, money, or health matter most?", "What practical issue cannot be ignored?"),
+    },
+    (63, 7): {
+        "accessible_followups": ("Which daily responsibilities are different?", "Why do people often treat the choices as one?"),
+        "full_followups": ("Which daily responsibilities are different?", "Why do people often treat the choices as one?"),
+    },
+    (63, 8): {
+        "accessible_followups": ("What should nobody ask someone to prove?", "What comment would keep the conversation open?"),
+        "full_followups": ("What should nobody ask someone to prove?", "What comment would keep the conversation open?"),
+    },
+}
+for (_topic_no, _prompt_no), _changes in _THREE_SECOND_PATCHES.items():
+    TOPICS[_topic_no]["prompts"][_prompt_no - 1].update(_changes)
+
+
+_THREE_SECOND_FULL_FOLLOWUPS = {
+    (57, 4): ("Which action would show kindness there?", "Who would notice the benefit first?"),
+    (57, 6): ("Would a good intention change how the habit feels?", "What repeated behaviour could make it irritating?"),
+    (59, 1): ("Which personal need makes it important?", "Which would end trust fastest: dishonesty, cruelty, or unreliability?"),
+    (59, 2): ("Which need could make the preference non-negotiable?", "Is there another way to protect that need?"),
+    (59, 3): ("What makes that preference easier to accept?", "When would being flexible create a real problem?"),
+    (59, 5): ("Whose opinion affects the judgment most: family, friends, or the couple?", "Who has the right to set the boundary?"),
+    (59, 8): ("How can you make clear that the limit belongs to you?", "Which decision must remain with the other person?"),
+    (60, 6): ("Which part of the problem is still the person's responsibility?", "What follow-up action would make the explanation believable?"),
+    (60, 7): ("What makes the better response difficult in the moment?", "Would a reminder, another person, or more time help most?"),
+    (61, 1): ("How would guests notice that element?", "Which family member might value it too?"),
+    (61, 3): ("Which source of stress would disappear?", "Would the couple, family, or guests miss it most?"),
+    (61, 5): ("Could the element feel special without costing much?", "How would it work with only a few guests?"),
+    (61, 6): ("Who carries most of that stress?", "Which one change would lower it fastest?"),
+    (61, 7): ("What would become easier at a private ceremony?", "Which part of a large celebration would be hardest to give up?"),
+    (61, 8): ("Should the couple, the families, or the guests come first?", "Which wedding decision would make that priority visible?"),
+    (62, 1): ("Which shared plan, place, or routine also disappears?", "What part of the changed future may take longest to accept?"),
+    (62, 2): ("What is the first everyday habit that usually changes?", "Which practical change can catch people by surprise?"),
+    (62, 3): ("Does the way the relationship ended affect recovery?", "Which everyday sign would show that life is moving forward?"),
+    (62, 6): ("Which part of the relationship becomes easier to understand later?", "Can time make someone blame one person too much?"),
+    (62, 7): ("Why might that advice sound uncaring?", "Which kinder sentence could replace it?"),
+    (63, 2): ("Which questions cross a privacy line?", "What wording would make honest curiosity feel respectful?"),
+    (63, 4): ("Which change could matter most: money, health, or a relationship?", "Is ‘I haven't decided’ a complete answer?"),
+    (63, 5): ("Which family comment creates the strongest pressure?", "What is one question relatives should avoid?"),
+    (63, 6): ("Which should guide the choice first: personal wishes, health, or money?", "Which real-life limit still deserves attention?"),
+    (63, 7): ("How do the daily duties of marriage and parenting differ?", "What makes people talk about the two decisions together?"),
+    (63, 8): ("Which private reason should nobody demand proof of?", "What could someone say to welcome more than one life path?"),
+}
+for (_topic_no, _prompt_no), _followups in _THREE_SECOND_FULL_FOLLOWUPS.items():
+    TOPICS[_topic_no]["prompts"][_prompt_no - 1]["full_followups"] = _followups
 
 
 def build(topic_no: int, variant: str) -> str:

@@ -16,18 +16,18 @@ VARIANTS = ("accessible", "full")
 
 EXPECTED = {
     76: ("advice-you-kept-hearing-as-a-child", "What advice do adults often repeat to children?"),
-    77: ("a-teacher-you-still-remember", "Which teacher—real or fictional—stands out to you most, and why?"),
+    77: ("a-teacher-you-still-remember", "Which real or fictional teacher stands out to you most?"),
     78: ("a-nickname-you-had-at-school", "What's the most memorable school nickname you've heard?"),
     79: ("something-you-hated-as-a-child-but-love-now", "Which food do many children dislike but learn to enjoy later?"),
     80: ("a-mistake-people-still-remind-you-about", "What kind of old mistake becomes a story people keep retelling?"),
     81: ("a-trip-that-went-wrong", "What travel problem makes the best story afterward?"),
-    82: ("a-place-you-would-happily-visit-again", "Choose a place that deserves a return visit. What makes it worth going back?"),
-    83: ("what-you-wanted-to-be-as-a-child", "Which childhood dream job is especially interesting to you?"),
+    82: ("a-place-you-would-happily-visit-again", "Which place would you happily visit again?"),
+    83: ("what-you-wanted-to-be-as-a-child", "Which childhood dream job sounds most fun to you now?"),
     84: ("one-day-you-would-go-back-to", "You can visit one day in the past. Which day do you choose?"),
-    85: ("a-turning-point-in-your-life", "What kind of moment can send a life in a completely different direction?"),
-    86: ("what-you-were-like-as-a-child", "How can the same child seem completely different to different people?"),
+    85: ("a-turning-point-in-your-life", "Think of a small choice that changed someone's life. What happened?"),
+    86: ("what-you-were-like-as-a-child", "What were you like as a child?"),
     87: ("a-childhood-place-that-no-longer-exists", "Which vanished place—local, famous, or personal—would you bring back?"),
-    88: ("something-you-were-completely-wrong-about", "What's a belief that many people once accepted but later proved wrong?"),
+    88: ("something-you-were-completely-wrong-about", "What's something people used to believe that surprises you now?"),
 }
 
 PROMPT_JOBS = {
@@ -110,7 +110,7 @@ class SourceTests(unittest.TestCase):
         self.assertEqual(len(all_claims), len(set(all_claims)))
 
     def test_prompts_are_unique_answerable_and_free_of_defensive_fallbacks(self):
-        all_visible_questions = []
+        all_visible_questions = {variant: [] for variant in VARIANTS}
         for number in batch.TOPIC_NUMBERS:
             prompts = batch.TOPICS[number]["prompts"]
             self.assertEqual(tuple(item["job"] for item in prompts), PROMPT_JOBS[number])
@@ -119,8 +119,6 @@ class SourceTests(unittest.TestCase):
             for item in prompts:
                 self.assertEqual(set(item), PROMPT_KEYS)
                 self.assertRegex(item["safety"], r"^[a-z]+(?:-[a-z]+)+$")
-                self.assertNotEqual(item["accessible"], item["full"])
-                self.assertNotEqual(item["accessible_ja"], item["full_ja"])
                 for variant in VARIANTS:
                     main = item[variant]
                     japanese = item[f"{variant}_ja"]
@@ -132,19 +130,21 @@ class SourceTests(unittest.TestCase):
                     self.assertFalse(DEFENSIVE_FALLBACK.search(" ".join((main, *followups))))
                     self.assertLessEqual(len(main.replace("—", " ").split()), 22)
                     self.assertLessEqual(max(len(question.split()) for question in followups), 16)
-                    all_visible_questions.append(main)
+                    all_visible_questions[variant].append(main)
                     topic_followups[variant].extend(followups)
             for followups in topic_followups.values():
                 self.assertEqual(len(followups), len(set(followups)))
-        self.assertEqual(len(all_visible_questions), 208)
-        self.assertEqual(len(all_visible_questions), len(set(all_visible_questions)))
+            self.assertGreaterEqual(sum(item["accessible"] != item["full"] for item in prompts), 2)
+        for questions in all_visible_questions.values():
+            self.assertEqual(len(questions), 104)
+            self.assertEqual(len(questions), len(set(questions)))
 
     def test_openings_do_not_require_private_experience(self):
         expected_routes = {
             77: ("real or fictional",), 80: ("kind of old mistake",),
             81: ("travel problem",), 84: ("one day in the past",),
-            85: ("kind of moment",), 87: ("local", "famous", "personal"),
-            88: ("many people",),
+            85: ("someone's life",), 87: ("local", "famous", "personal"),
+            88: ("people used to believe",),
         }
         for number, fragments in expected_routes.items():
             text = batch.TOPICS[number]["prompts"][0]["accessible"].casefold().replace("—", " ")
@@ -224,7 +224,7 @@ class SourceTests(unittest.TestCase):
         claims = [value for number in batch.TOPIC_NUMBERS for row in batch.TOPICS[number]["articles"] for value in row]
         prompts = [value for number in batch.TOPIC_NUMBERS for item in batch.TOPICS[number]["prompts"] for value in (item["job"], item["title"], item["title_ja"], item["accessible"], item["accessible_ja"], *item["accessible_followups"], item["full"], item["full_ja"], *item["full_followups"], item["safety"])]
         self.assertEqual(hashlib.sha256("\n".join(claims).encode()).hexdigest(), "64103ed6923554d1dce0f6bcda8e7cfb5eed03385250ce3ab88c7239d7b4554c")
-        self.assertEqual(hashlib.sha256("\n".join(prompts).encode()).hexdigest(), "25d6099e3b3be9efe68337e063ceb513c94f005819bca85258b63146ca4a5e4c")
+        self.assertEqual(hashlib.sha256("\n".join(prompts).encode()).hexdigest(), "d9260539e32f1056c43300a2709aa39026611a2fd8768fd179baf115f5c05fd4")
 
 
 if __name__ == "__main__":

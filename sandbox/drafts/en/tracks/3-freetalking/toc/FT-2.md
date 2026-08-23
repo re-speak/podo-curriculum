@@ -12,10 +12,10 @@
 
 ## Outcome
 
-- **Can do:** "What do people from other countries assume about Japan that isn't true?"
+- **Can do:** "What do people often get wrong about Japan?"
 - **Theme:** 1 · Between two countries
 - **Format:** 両国
-- **Opening:** "What do people from other countries assume about Japan that isn't true?"
+- **Opening:** "What do people often get wrong about Japan?"
 - **Question ladder:** what do they assume → where do they get it → what's the reality → what do *you* assume about my country → have you ever been wrong about somewhere → what should people ask instead
 
 ## Retrieval

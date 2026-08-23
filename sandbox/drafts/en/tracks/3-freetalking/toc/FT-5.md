@@ -12,10 +12,10 @@
 
 ## Outcome
 
-- **Can do:** "If I visited for one day, where would you take me — not the famous place."
+- **Can do:** "If I visited Japan for one day, where would you take me besides the famous places?"
 - **Theme:** 1 · Between two countries
 - **Format:** 両国
-- **Opening:** "If I visited for one day, where would you take me — not the famous place."
+- **Opening:** "If I visited Japan for one day, where would you take me besides the famous places?"
 - **Question ladder:** where → why there → when did you find it → who have you taken → what would I not get about it → where would you take me in *my* country if you could pick
 
 ## Retrieval

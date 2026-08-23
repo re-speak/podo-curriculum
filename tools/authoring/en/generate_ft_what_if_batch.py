@@ -26,15 +26,15 @@ SHARED_SOURCE = {number: (f"KR 9-{number - 88}" if number < 100 else "NEW → KR
 
 BRIEF_OPENINGS = {
     89: "Imagine you win a large lottery prize tomorrow. What would you do first?",
-    90: "Which three useful objects would you take to a desert island?",
+    90: "What would feel hardest about your first day on a desert island?",
     91: "Whose daily life would you be curious to experience for one day?",
     92: "Which superpower would make ordinary life most interesting?",
     93: "Which food would be hardest for you to get tired of?",
     94: "If one everyday service were free for life, which would you choose?",
-    95: "Which part of a week with no optional phone use would be hardest?",
-    96: "If AI handled all your usual tasks, how would you use the free time?",
+    95: "Which phone feature would you miss most for one week?",
+    96: "If AI handled your usual tasks for a week, what would you do with the extra time?",
     97: "Which animal best represents your personality?",
-    98: "Which country would offer the most interesting different upbringing?",
+    98: "If you had grown up in another country, which one would you choose?",
     99: "What would an ideal ordinary day look like ten years from now?",
     100: "Once everyone is safe, which possession would be hardest to lose?",
 }
@@ -729,6 +729,695 @@ for (_topic_no, _prompt_no), (_accessible, _full) in FOLLOWUP_REVISIONS.items():
     )
 
 
+def _conversation(a, ja, f=None, f_ja=None):
+    return (a, ja, a if f is None else f, ja if f_ja is None else f_ja)
+
+
+# A page in the question pool must work cold.  These prompts replace the
+# earlier essay-like ladder with concrete choices, scenes, and examples.
+CONVERSATIONAL_MAIN_REVISIONS = {
+    89: (
+        _conversation("Imagine you win a large lottery prize tomorrow. What would you do first?", "明日、宝くじで大当たりしたと想像してください。最初に何をしますか？"),
+        _conversation("Who would you call before buying anything?", "何かを買う前に、誰に電話しますか？", "Whose advice would you want before making any big decision?", "大きな決断をする前に、誰の助言がほしいですか？"),
+        _conversation("Would you tell family or friends about the win, or keep it private?", "当選を家族や友人に話しますか。それとも秘密にしますか？", "Who, if anyone, would need to know about the win?", "当選について、知らせる必要がある人がいるとすれば誰ですか？"),
+        _conversation("Which part of your current routine would you keep even if you didn't need the money?", "お金のために必要でなくても、今の日課のどの部分を続けますか？", "Which part of your current life would you protect from the changes money could bring?", "お金による変化から、今の生活のどんな部分を守りたいですか？"),
+        _conversation("What's the first thing you would buy for someone else?", "ほかの人のために最初に買うものは何ですか？"),
+        _conversation("What's the easiest mistake for a lottery winner to make?", "宝くじの当選者が最もしやすい失敗は何ですか？", "Which early decision could create the biggest regret after a lottery win?", "宝くじに当たった後、どんな早い決断が最も大きな後悔につながりますか？"),
+        _conversation("What would you want to keep normal after becoming rich?", "お金持ちになっても、何を普通のままにしておきたいですか？"),
+        _conversation("What important part of life would the jackpot not solve?", "大当たりしても解決できない大切なことは何ですか？", "Which problem might money make easier without truly solving it?", "お金で楽にはできても、本当には解決できない問題は何ですか？"),
+    ),
+    90: (
+        _conversation("Which three useful objects would you take to a desert island?", "無人島に持っていく役立つ物を三つ選ぶとしたら何ですか？"),
+        _conversation("Which need comes first: water, shelter, food, or a way to call for help?", "水、住む場所、食べ物、助けを呼ぶ方法のうち、どれを最初に考えますか？"),
+        _conversation("Which common object would be surprisingly useful on an island?", "無人島で意外に役立つ普通の物は何ですか？", "Which ordinary household object could solve more than one island problem?", "どんな普通の家庭用品が、無人島で一つ以上の問題を解決できますか？"),
+        _conversation("Would one comfort item deserve a place among the three objects?", "三つの物の中に、気持ちを楽にする物を一つ入れる価値はありますか？"),
+        _conversation("What would you regret not bringing after the first night?", "最初の夜の後、持ってこなかったことを後悔しそうな物は何ですか？"),
+        _conversation("Would your three objects change if the island were cold instead of tropical?", "その島が南国ではなく寒い場所なら、三つの物は変わりますか？"),
+        _conversation("Would one companion help more than a fourth object?", "一人の仲間は、四つ目の物より役立ちますか？", "What could one good companion provide that no object could?", "よい仲間一人は、どんな物にもできない何を与えてくれますか？"),
+        _conversation("Which useful island object would become almost useless at home?", "島では役立っても、家ではほとんど役に立たない物は何ですか？"),
+    ),
+    91: (
+        _conversation("Whose daily life would you be curious to experience for one day?", "誰の日常生活を一日体験してみたいですか？"),
+        _conversation("Would you choose someone famous or someone with a very different ordinary life?", "有名な人と、全く違う普通の生活をする人のどちらを選びますか？"),
+        _conversation("What's the first thing you would do in another person's life?", "ほかの人の生活に入ったら、最初に何をしますか？", "How would you use the first hour without disrupting the other person's life?", "ほかの人の生活を乱さずに、最初の一時間をどう使いますか？"),
+        _conversation("What would you want to learn that an interview couldn't tell you?", "インタビューでは分からない何を知りたいですか？"),
+        _conversation("Which attractive life might be much harder in private?", "魅力的に見えても、実際にはずっと大変そうな生活は何ですか？"),
+        _conversation("What would be unfair to discover about someone during a life swap?", "人生を交換している間に知ると不公平なことは何ですか？", "Where should privacy still exist during a one-day life swap?", "一日の人生交換でも、どんな部分は秘密のままであるべきですか？"),
+        _conversation("Which part of your own life might you appreciate more afterward?", "その後、自分の生活のどんな部分をもっと大切に感じそうですか？"),
+        _conversation("What might another person misunderstand after one day in your life?", "あなたの生活を一日体験した人は、何を誤解しそうですか？"),
+    ),
+    92: (
+        _conversation("Which superpower would make ordinary life most interesting?", "どの超能力が普通の生活を最も面白くしますか？"),
+        _conversation("What would you do with a superpower on the first morning?", "超能力を持った最初の朝、何をしますか？", "What first use would show whether you could handle the power well?", "その力をうまく扱えるかが分かる、最初の使い方は何ですか？"),
+        _conversation("Would you tell your closest friend about a superpower?", "超能力について、最も親しい友達に話しますか？"),
+        _conversation("Which superpower would be annoying in daily life?", "日常生活では面倒になりそうな超能力は何ですか？", "Which useful superpower would bring the most unwanted attention?", "役立つ超能力のうち、最も望まない注目を集めそうなものは何ですか？"),
+        _conversation("Which useful-looking superpower would you refuse?", "役立ちそうでも断りたい超能力は何ですか？"),
+        _conversation("Which superpower would cause the most trouble if everyone had it?", "全員が持つと最も大きな問題を起こす超能力は何ですか？"),
+        _conversation("What one rule would you set for your chosen superpower?", "自分が選んだ超能力に、どんな一つのルールを決めますか？"),
+        _conversation("What ordinary skill is better than a superpower in real life?", "現実では、どんな普通の能力が超能力より役立ちますか？"),
+    ),
+    93: (
+        _conversation("Which food would be hardest for you to get tired of?", "どの食べ物なら、最も飽きにくいですか？"),
+        _conversation("How many days would it take for a favourite food to get boring?", "好きな食べ物でも、何日で飽きると思いますか？"),
+        _conversation("Which two foods would be hardest to choose between?", "どの二つの食べ物なら、選ぶのが最も難しいですか？"),
+        _conversation("Which taste would you miss first if you ate only one food?", "一つの食べ物だけを食べたら、最初にどんな味が恋しくなりますか？", "Would you miss a flavour, texture, or shared meal first?", "最初に恋しくなるのは、味、食感、誰かと食べる時間のどれですか？"),
+        _conversation("What food could you happily never eat again?", "もう二度と食べなくても平気な食べ物は何ですか？"),
+        _conversation("Would you choose a healthy everyday food or an exciting food that's bad for you?", "健康的な日常の食べ物と、体によくなくてもわくわくする食べ物のどちらを選びますか？"),
+        _conversation("What small change can keep a favourite food interesting?", "好きな食べ物に飽きないための小さな変化は何ですか？"),
+        _conversation("When is variety better than having one favourite?", "一つの好物を持つより、種類が多いほうがよいのはどんなときですか？"),
+    ),
+    94: (
+        _conversation("If one everyday service were free for life, which would you choose?", "日常のサービスを一つ一生無料にできるなら、何を選びますか？"),
+        _conversation("Which bill would you most like never to pay again?", "もう二度と払いたくない請求は何ですか？"),
+        _conversation("How would a free commute change an ordinary week?", "通勤や通学が無料なら、普通の一週間はどう変わりますか？"),
+        _conversation("Which free service could help a whole family or group?", "どんな無料サービスなら、家族やグループ全体の役に立ちますか？"),
+        _conversation("Which boring service would save the most money over a lifetime?", "地味でも、一生で最もお金を節約できるサービスは何ですか？"),
+        _conversation("Should someone be allowed to give their free service to another person?", "無料サービスをほかの人に譲ってもよいですか？"),
+        _conversation("What hidden cost can make a free service feel expensive?", "無料のサービスでも高く感じさせる見えない負担は何ですか？"),
+        _conversation("What would make a paid service better than a free one?", "有料サービスが無料のものよりよくなるのは何ですか？"),
+    ),
+    95: (
+        _conversation("Which phone feature would you miss most for one week?", "一週間、携帯電話のどの機能が最も恋しくなりますか？"),
+        _conversation("Which part of your day usually begins with your phone?", "一日のどの部分が、ふつう携帯電話から始まりますか？"),
+        _conversation("Which phone feature would be hardest to replace?", "携帯電話のどの機能が最も代わりを用意しにくいですか？", "Which useful phone feature would be hardest to replace in another way?", "携帯電話のどの便利な機能が、別の方法では最も代えにくいですか？"),
+        _conversation("What might improve after three days with less phone use?", "携帯電話を減らして三日たつと、何がよくなるかもしれませんか？"),
+        _conversation("When is it easiest to leave your phone in another room?", "携帯電話を別の部屋に置きやすいのは、どんなときですか？"),
+        _conversation("How could you stay reachable in an emergency while using your phone less?", "携帯電話を減らしながら、緊急時に連絡を受けられるようにするにはどうしますか？"),
+        _conversation("Which phone feature would you keep during a break?", "携帯電話を休む間でも、どの機能は使えるようにしますか？", "Where would you draw the line between essential and optional phone use?", "必要な携帯電話の利用と、なくてもよい利用の境目をどこに置きますか？"),
+        _conversation("Which phone habit would you most like to change?", "どの携帯電話の習慣を最も変えたいですか？"),
+    ),
+    96: (
+        _conversation("If AI handled your usual tasks for a week, what would you do with the extra time?", "AIが普段の作業を一週間してくれたら、空いた時間をどう使いますか？"),
+        _conversation("What would you do on the first morning with no tasks waiting?", "待っている作業がない最初の朝、何をしますか？"),
+        _conversation("When should people say that AI did most of their work?", "AIが仕事の大部分をしたことを、どんなときに伝えるべきですか？", "Who deserves to know when AI produced most of a result?", "AIが結果の大部分を作ったとき、誰に知らせる必要がありますか？"),
+        _conversation("Which part of work, study, care, or daily routine would you miss?", "仕事、勉強、ケア、日課のどの部分が恋しくなりますか？"),
+        _conversation("What project would you start with a month of free time?", "一か月の自由な時間があれば、どんなプロジェクトを始めますか？"),
+        _conversation("Which daily task gives people a sense of purpose?", "どんな日々の作業が、人に目的を感じさせますか？"),
+        _conversation("What task would you still choose to do yourself if AI could do it?", "AIにできても、自分で続けたい作業は何ですか？"),
+        _conversation("Which task should never be handed over completely to AI?", "どんな作業は、完全にAIへ任せるべきではありませんか？", "Where should a human always keep the final responsibility?", "どんな場面では、人が必ず最後の責任を持つべきですか？"),
+    ),
+    97: (
+        _conversation("Which animal best represents your personality?", "どの動物があなたの性格を最もよく表しますか？"),
+        _conversation("Which animal would your friends choose for you?", "友達はあなたにどの動物を選ぶと思いますか？"),
+        _conversation("Would you choose the same animal for yourself?", "自分でも同じ動物を選びますか？"),
+        _conversation("What can friends notice about you that you may not notice?", "自分では気づかなくても、友達が気づくあなたの特徴は何ですか？"),
+        _conversation("Which animal is least like you?", "あなたに最も似ていない動物は何ですか？"),
+        _conversation("How could the animal that fits you change between work and a day off?", "仕事の日と休みの日で、あなたに合う動物はどう変わりますか？"),
+        _conversation("I'll share three real traits about myself. Which animal fits them?", "私が自分の本当の特徴を三つ話します。どの動物が合いますか？"),
+        _conversation("What important part of a person can an animal comparison miss?", "動物のたとえでは、人のどんな大切な部分を表せませんか？", "Why can no single animal describe a whole person fairly?", "なぜ一つの動物だけでは、人全体を公平に表せないのですか？"),
+    ),
+    98: (
+        _conversation("If you had grown up in another country, which one would you choose?", "別の国で育っていたとしたら、どの国を選びますか？"),
+        _conversation("What everyday part of childhood might be most different there?", "その国では、子どもの日常のどんな部分が最も違いそうですか？"),
+        _conversation("How could another school system change a child?", "別の学校制度は、子どもをどう変えるでしょうか？"),
+        _conversation("Which food or family custom would you miss from your actual childhood?", "実際の子ども時代の食べ物や家族の習慣で、何が恋しくなりそうですか？"),
+        _conversation("What part of your actual upbringing would you be happy to leave behind?", "実際に育った環境のどんな部分なら、なくてもよいと思いますか？"),
+        _conversation("How might a childhood language change jokes or emotions?", "子どもの頃の言語によって、冗談や感情はどう変わりますか？"),
+        _conversation("Why is growing up somewhere different from moving there as an adult?", "ある場所で育つことと、大人になってから移ることが違うのはなぜですか？"),
+        _conversation("What part of your personality would probably stay the same anywhere?", "どこで育っても、自分の性格のどんな部分は同じだと思いますか？"),
+    ),
+    99: (
+        _conversation("What would an ideal ordinary day look like ten years from now?", "十年後の理想的な普通の一日は、どんな一日ですか？"),
+        _conversation("Where would you like to wake up on an ordinary morning ten years from now?", "十年後の普通の朝、どこで目を覚ましたいですか？"),
+        _conversation("Who would you want to speak to most days?", "ほとんど毎日、誰と話したいですか？"),
+        _conversation("What current habit would you like to still have in ten years?", "今のどんな習慣を、十年後も続けたいですか？"),
+        _conversation("What would you hope not to spend time doing in ten years?", "十年後、何に時間を使わずにすむことを望みますか？"),
+        _conversation("Which matters more for the future: a clear plan or room to change?", "将来には、明確な計画と変わる余地のどちらが大切ですか？"),
+        _conversation("What small action this year could make your future direction clearer?", "今年どんな小さな行動をすると、将来の方向がより明確になりますか？"),
+        _conversation("What opportunity would make you happily throw away a ten-year plan?", "どんな機会があれば、十年計画を喜んで手放しますか？", "When is changing a long-term plan a sign of growth rather than failure?", "長期計画を変えることが、失敗ではなく成長の印になるのはどんなときですか？"),
+    ),
+    100: (
+        _conversation("Once everyone is safe, which possession would be hardest to lose?", "全員が安全になった後、失うのが最もつらい持ち物は何ですか？"),
+        _conversation("What makes one old object impossible to replace?", "一つの古い物が、代えられないものになるのはなぜですか？"),
+        _conversation("Which ordinary object can hold the most memories?", "どんな普通の物が、最も多くの思い出を持てますか？", "Why can a cheap ordinary object carry more meaning than an expensive one?", "安い普通の物が、高価な物より多くの意味を持つことがあるのはなぜですか？"),
+        _conversation("Would you save photos, letters, or one practical item?", "写真、手紙、実用的な物一つのどれを持ち出しますか？"),
+        _conversation("Can a digital copy preserve what matters about an old object?", "デジタルのコピーで、古い物の大切なところを残せますか？"),
+        _conversation("What object would you be sad to lose but never risk safety for?", "失うと悲しくても、安全を危険にしてまで取りに行かない物は何ですか？"),
+        _conversation("What important object could you back up or photograph now?", "今、バックアップしたり写真に撮ったりできる大切な物は何ですか？"),
+        _conversation("What still matters when every object is gone?", "すべての物がなくなっても、大切なものは何ですか？", "Which important part of a life cannot be stored in an object?", "人生の大切な部分のうち、物の中に保存できないものは何ですか？"),
+    ),
+}
+
+for _number, _rows in CONVERSATIONAL_MAIN_REVISIONS.items():
+    if len(_rows) != 8:
+        raise ValueError(f"FT-{_number} must have eight conversational prompts")
+    for _item, (_a, _a_ja, _f, _f_ja) in zip(TOPICS[_number]["prompts"], _rows, strict=True):
+        _item.update(
+            accessible=_a,
+            accessible_ja=_a_ja,
+            full=_f,
+            full_ja=_f_ja,
+            full_followups=_item["accessible_followups"],
+            safety="standalone-conversation-pool",
+        )
+
+CONVERSATIONAL_FULL_DEEPENING = {
+    (93, 8): ("When does variety matter more than having the perfect favourite?", "完璧なお気に入りがあることより、種類の多さが大切なのはどんなときですか？"),
+    (94, 7): ("When can a free service cost too much in time, privacy, or inconvenience?", "無料のサービスでも、時間、プライバシー、不便さの負担が大きすぎるのはどんなときですか？"),
+    (94, 8): ("What extra quality would make a paid service worth choosing over a free one?", "無料のものより有料サービスを選ぶ価値を生む、追加のよさは何ですか？"),
+    (97, 4): ("What might friends notice in your habits that you overlook in yourself?", "自分では見落としていても、友人が習慣の中で気づくことは何ですか？"),
+    (97, 8): ("What important part of someone could never fit one animal comparison?", "一つの動物のたとえでは決して表せない、人の大切な部分は何ですか？"),
+    (98, 3): ("How might a different school system change how someone studies, speaks, or takes risks?", "違う学校制度は、学び方、話し方、挑戦の仕方をどう変えるかもしれませんか？"),
+    (98, 7): ("Why does growing up in a country shape someone differently from moving there as an adult?", "ある国で育つことと、大人になって移ることでは、人への影響が違うのはなぜですか？"),
+    (99, 6): ("Which is more useful ten years ahead: a clear direction or freedom to change course?", "十年先を考えると、明確な方向と進路を変える自由のどちらが役立ちますか？"),
+    (99, 8): ("What kind of opportunity would be worth changing a ten-year plan for?", "十年計画を変える価値のある機会とは、どんなものですか？"),
+}
+for (_number, _index), (_full, _full_ja) in CONVERSATIONAL_FULL_DEEPENING.items():
+    TOPICS[_number]["prompts"][_index - 1].update(full=_full, full_ja=_full_ja)
+
+CONVERSATIONAL_PAGE_TITLES = {
+    (89, 2): ("The first call", "最初に電話する相手"),
+    (89, 5): ("Buying for someone else", "誰かのために買う物"),
+    (89, 7): ("Keeping life normal", "日常を変えないこと"),
+    (90, 2): ("The first need", "最初に必要なもの"),
+    (90, 3): ("A surprisingly useful object", "意外に役立つ物"),
+    (90, 4): ("One comfort item", "心を楽にする物一つ"),
+    (90, 5): ("After the first night", "最初の夜のあと"),
+    (90, 6): ("A cold island", "寒い島"),
+    (90, 7): ("A companion or an object", "同行者か物か"),
+    (91, 2): ("Famous or very different", "有名な人か全く違う人か"),
+    (91, 6): ("What should stay private", "知るべきではないこと"),
+    (91, 8): ("What someone might misunderstand", "誤解されそうなこと"),
+    (92, 1): ("A power for ordinary life", "日常生活のための力"),
+    (92, 6): ("If everyone had it", "みんなが持っていたら"),
+    (93, 2): ("How quickly it gets boring", "飽きるまでの時間"),
+    (93, 3): ("Two hard choices", "選びにくい二つの食べ物"),
+    (93, 5): ("Easy to give up", "なくても平気な食べ物"),
+    (93, 7): ("Keeping it interesting", "飽きないための工夫"),
+    (94, 2): ("A bill you would remove", "なくしたい請求"),
+    (94, 3): ("A free commute", "無料の通勤"),
+    (94, 4): ("Helping a whole group", "みんなの役に立つこと"),
+    (94, 5): ("The biggest lifetime saving", "一生で最も節約できるもの"),
+    (94, 6): ("Giving it away", "ほかの人に譲ること"),
+    (94, 8): ("Worth paying for", "お金を払う価値"),
+    (95, 2): ("How the day begins", "一日の始まり方"),
+    (95, 5): ("Leaving the phone behind", "スマホを別の部屋に置くこと"),
+    (95, 6): ("Reachable in an emergency", "緊急時につながる方法"),
+    (95, 7): ("One feature to keep", "残したい一つの機能"),
+    (95, 8): ("One habit to change", "変えたい一つの習慣"),
+    (96, 1): ("A week of extra time", "自由な時間が増える一週間"),
+    (96, 2): ("The first free morning", "最初の自由な朝"),
+    (96, 3): ("Saying AI did the work", "AIがしたと伝えること"),
+    (96, 4): ("What you would miss", "恋しくなること"),
+    (96, 5): ("A project to begin", "始めたいプロジェクト"),
+    (96, 6): ("A task with purpose", "意味を感じる日課"),
+    (96, 7): ("A task you would keep", "自分で続けたいこと"),
+    (97, 1): ("Your animal", "自分を表す動物"),
+    (97, 2): ("Your friends' choice", "友人が選ぶ動物"),
+    (97, 3): ("The same choice?", "同じ動物を選ぶか"),
+    (97, 4): ("What friends notice", "友人が気づくこと"),
+    (97, 6): ("Workday or day off", "仕事の日か休みの日か"),
+    (97, 7): ("Three real traits", "三つの本当の特徴"),
+    (98, 2): ("A different childhood", "違う子ども時代"),
+    (98, 3): ("A different school system", "違う学校制度"),
+    (98, 4): ("What you would miss", "恋しくなるもの"),
+    (98, 5): ("What you would leave behind", "置いていきたいもの"),
+    (98, 6): ("Language, jokes, and feelings", "言語、冗談、気持ち"),
+    (99, 2): ("Where you wake up", "目覚めたい場所"),
+    (99, 3): ("Who you speak to", "話したい相手"),
+    (99, 5): ("What you would stop doing", "やめていたいこと"),
+    (99, 7): ("A small action this year", "今年の小さな行動"),
+    (100, 3): ("An ordinary object full of memories", "思い出が詰まった普通の物"),
+    (100, 4): ("Photos, letters, or something practical", "写真、手紙、実用品"),
+    (100, 5): ("Can a digital copy be enough?", "デジタルコピーで十分か"),
+    (100, 6): ("Sad to lose, not worth the risk", "悲しくても危険を冒さない物"),
+}
+for (_number, _index), (_title, _title_ja) in CONVERSATIONAL_PAGE_TITLES.items():
+    TOPICS[_number]["prompts"][_index - 1].update(title=_title, title_ja=_title_ja)
+
+CONVERSATIONAL_FOLLOWUP_REVISIONS = {
+    (96, 3): ("Who would be affected?", "How much should the person tell others?"),
+    (89, 2): ("Why would you call that person?", "What advice would you ask for?"),
+    (89, 5): ("Why would you choose that gift?", "Would you tell the person where the money came from?"),
+    (89, 7): ("Why is that part worth protecting?", "Could money quietly change it anyway?"),
+    (90, 3): ("What problem would it solve?", "Why might people forget to pack it?"),
+    (90, 5): ("Why would you need it after dark?", "Which other item could replace it?"),
+    (90, 6): ("Which cold-weather problem matters first?", "What tropical item would become less useful?"),
+    (91, 2): ("What would fame let you experience?", "What could an ordinary life teach instead?"),
+    (91, 6): ("Why should that remain private?", "Would the other person have the same boundary?"),
+    (91, 8): ("Which routine might surprise them?", "What would take longer than one day to understand?"),
+    (92, 2): ("Who would benefit?", "What could go wrong with that first use?"),
+    (92, 6): ("Why would that power become dangerous at a large scale?", "What rule might reduce the problem?"),
+    (92, 7): ("What temptation would the rule control?", "Would you trust yourself to follow it?"),
+    (93, 6): ("Which choice would be easier to continue?", "What would you miss about the other food?"),
+    (93, 7): ("Would a new sauce be enough?", "How often would you need a bigger change?"),
+    (94, 2): ("Why does that bill feel especially painful?", "Would you use more of the service if it were free?"),
+    (94, 4): ("Who else would benefit?", "Could the service be shared easily?"),
+    (94, 6): ("When would giving it away be generous?", "What rule could prevent unfair resale?"),
+    (94, 7): ("Is the cost time, privacy, or inconvenience?", "When would the free service stop being worth it?"),
+    (95, 2): ("What do you check first?", "Could the routine start another way?"),
+    (95, 4): ("Which part of the day might feel calmer?", "How would you notice the improvement?"),
+    (95, 6): ("Who would need another way to contact you?", "Which emergency feature would stay available?"),
+    (96, 2): ("Would you rest or begin something new?", "What would give the day some shape?"),
+    (96, 6): ("What feeling makes the task meaningful?", "Could AI help without removing that feeling?"),
+    (97, 2): ("Which trait would shape their choice?", "Would different friends choose different animals?"),
+    (97, 3): ("Why would you agree or disagree?", "Which part of you does neither animal show?"),
+    (97, 4): ("Which habit might they notice?", "Why might you see that habit differently?"),
+    (97, 6): ("Which setting changes you most?", "What trait stays visible in both settings?"),
+    (97, 8): ("Which quality is hardest to match to an animal?", "Would two animals be fairer?"),
+    (98, 1): ("What part of childhood there interests you most?", "What would you want to learn before choosing?"),
+    (98, 2): ("Would school, home, or free time change most?", "Which difference would a child notice first?"),
+    (98, 5): ("Why would you leave that part behind?", "What would you hope to experience instead?"),
+    (98, 7): ("What can a child learn without trying?", "What would an adult newcomer notice more clearly?"),
+    (99, 2): ("What would you want nearby?", "Would the place be busy or quiet?"),
+    (99, 3): ("What kind of conversation would you want?", "How much time alone would still feel good?"),
+    (99, 4): ("Why is the habit worth protecting?", "What could make it difficult to keep?"),
+    (99, 5): ("What would you rather spend that time on?", "Could technology or another person remove the task?"),
+    (99, 6): ("Why does that matter more?", "What is the main risk of the other approach?"),
+    (99, 7): ("What could you try this month?", "What result would help you decide?"),
+    (99, 8): ("Why would that opportunity matter more?", "What part of the old plan might you keep?"),
+    (100, 4): ("Why did you choose that kind of object?", "Which choice would be easiest to replace?"),
+    (100, 5): ("What can a copy keep?", "What disappears without the original object?"),
+    (100, 6): ("Why would the object still matter?", "How can you protect the memory without taking the risk?"),
+    (100, 7): ("Would a photo, scan, or safer storage help most?", "What could you do today?"),
+}
+for (_number, _index), _followups in CONVERSATIONAL_FOLLOWUP_REVISIONS.items():
+    TOPICS[_number]["prompts"][_index - 1].update(
+        accessible_followups=_followups,
+        full_followups=_followups,
+    )
+
+FINAL_SEMANTIC_REPAIRS = {
+    (89, 4): dict(accessible_followups=("Why would you protect that routine?", "How might money still change it?"), full_followups=("Why would you protect that routine?", "How might money still change it?")),
+    (89, 8): dict(accessible_followups=("What else would be needed?", "Who could help with that problem?"), full_followups=("What else would be needed?", "Who could help with that problem?")),
+    (90, 1): dict(title="The hardest first-day problem", title_ja="最初の日に最も大変なこと", accessible="What would feel hardest about your first day on a desert island?", accessible_ja="無人島での最初の一日で、最も大変に感じることは何ですか？", full="Which problem would be hardest to face on your first day on a desert island?", full_ja="無人島での最初の一日に、どの問題に向き合うのが最も大変ですか？", accessible_followups=("Would the problem begin before dark?", "What could make it manageable?"), full_followups=("Would the problem begin before dark?", "What could make it manageable?")),
+    (90, 8): dict(accessible_followups=("Why would that object matter on the island?", "What would replace it at home?"), full_followups=("Why would that object matter on the island?", "What would replace it at home?")),
+    (91, 4): dict(accessible_followups=("What could one day show you?", "What would still be impossible to know?"), full_followups=("What could one day show you?", "What would still be impossible to know?")),
+    (91, 7): dict(accessible_followups=("Why would you appreciate it more?", "What would you miss from the borrowed life?"), full_followups=("Why would you appreciate it more?", "What would you miss from the borrowed life?")),
+    (92, 6): dict(accessible_followups=("Why would that power become dangerous on a large scale?", "What rule might reduce the problem?"), full_followups=("Why would that power become dangerous on a large scale?", "What rule might reduce the problem?")),
+    (92, 7): dict(accessible="What one rule would you set for using a superpower?", accessible_ja="超能力を使うために、どんなルールを一つ決めますか？", full="What one rule would you set for using a superpower?", full_ja="超能力を使うために、どんなルールを一つ決めますか？"),
+    (93, 4): dict(full="Which would you miss first: a flavour, a texture, or eating with other people?", full_ja="味、食感、ほかの人と食べることのうち、最初に恋しくなるのはどれですか？", accessible_followups=("Why would that be hardest to lose?", "When would you notice it most?"), full_followups=("Why would that be hardest to lose?", "When would you notice it most?")),
+    (93, 8): dict(full="When does variety matter more than having a favourite food?", full_ja="お気に入りの食べ物があることより、種類の多さが大切なのはどんなときですか？"),
+    (94, 2): dict(title="A service that should cost less", title_ja="もっと安くするべきサービス", accessible="Which everyday service should cost less for everyone?", accessible_ja="どの日常サービスを、すべての人にとってもっと安くするべきですか？", full="Which everyday service would help people most if it cost less?", full_ja="どの日常サービスが安くなれば、人々の役に最も立ちますか？", accessible_followups=("Who would benefit most?", "What might make a lower price difficult?"), full_followups=("Who would benefit most?", "What might make a lower price difficult?")),
+    (94, 3): dict(accessible="How would one free everyday service change an ordinary week?", accessible_ja="日常サービスが一つ無料になったら、普通の一週間はどう変わりますか？", full="How would one free everyday service change an ordinary week?", full_ja="日常サービスが一つ無料になったら、普通の一週間はどう変わりますか？", accessible_followups=("Which routine would change most?", "What time or money could it save?"), full_followups=("Which routine would change most?", "What time or money could it save?")),
+    (94, 7): dict(accessible_followups=("What makes that cost hard to avoid?", "When would paying be better?"), full_followups=("What makes that cost hard to avoid?", "When would paying be better?")),
+    (95, 3): dict(title="Easiest to live without", title_ja="なくても困りにくい機能", accessible="Which phone feature would be easiest to live without?", accessible_ja="なくても最も困りにくいスマートフォンの機能は何ですか？", full="Which useful phone feature could you give up with the least trouble?", full_ja="便利なスマートフォンの機能のうち、最も困らずに手放せるものは何ですか？", accessible_followups=("What would you use instead?", "Why is another feature harder to lose?"), full_followups=("What would you use instead?", "Why is another feature harder to lose?")),
+    (96, 2): dict(title="Giving free time some shape", title_ja="自由時間に形を与えること", accessible="What would keep a week of extra free time from becoming boring?", accessible_ja="自由時間が増えた一週間を、退屈にしないものは何ですか？", full="What would give a week of extra time some shape without filling it with work?", full_ja="増えた一週間の時間を、仕事で埋めずに充実させるものは何ですか？", accessible_followups=("Would you plan the week or decide each day?", "What would you leave unplanned?"), full_followups=("Would you plan the week or decide each day?", "What would you leave unplanned?")),
+    (96, 4): dict(accessible_followups=("What part of the day does it shape?", "What could provide the same benefit?"), full_followups=("What part of the day does it shape?", "What could provide the same benefit?")),
+    (97, 3): dict(title="Your own choice", title_ja="自分で選ぶ動物", accessible="Which animal would you choose for yourself?", accessible_ja="自分を表す動物として、どれを選びますか？", full="Which animal would you choose for yourself?", full_ja="自分を表す動物として、どれを選びますか？", accessible_followups=("Why does that animal fit?", "Why might friends choose differently?"), full_followups=("Why does that animal fit?", "Why might friends choose differently?")),
+    (97, 6): dict(title="A busy day or a day off", title_ja="忙しい日か休みの日か", accessible="How could the animal that fits you change between a busy day and a day off?", accessible_ja="忙しい日と休みの日では、自分に合う動物がどう変わりますか？", full="How could the animal that fits you change between a busy day and a day off?", full_ja="忙しい日と休みの日では、自分に合う動物がどう変わりますか？"),
+    (98, 2): dict(title="A different daily life", title_ja="違う日常生活", accessible="If a child grew up in another country, which part of daily life might feel most different?", accessible_ja="子どもが別の国で育ったら、日常生活のどの部分が最も違って感じられますか？", full="Which part of everyday childhood changes most across countries?", full_ja="国によって、子どもの日常生活のどの部分が最も変わりますか？"),
+    (98, 6): dict(accessible="How might a childhood language change the way people express jokes or emotions?", accessible_ja="子どもの頃に使う言語によって、冗談や感情の表し方はどう変わりますか？", full="How might a childhood language change the way people express jokes or emotions?", full_ja="子どもの頃に使う言語によって、冗談や感情の表し方はどう変わりますか？"),
+    (100, 8): dict(accessible="What memory or relationship can stay important without any object?", accessible_ja="物がなくても大切であり続ける思い出や人とのつながりは何ですか？"),
+}
+for (_number, _index), _changes in FINAL_SEMANTIC_REPAIRS.items():
+    TOPICS[_number]["prompts"][_index - 1].update(**_changes)
+
+FINAL_REVIEW_REPAIRS = {
+    (89, 2): dict(accessible="Whose advice, if anyone, would you want before buying anything?", accessible_ja="何かを買う前に、相談したい相手はいますか？", full="Whose advice, if anyone, would you want before making a big decision?", full_ja="大きな決断をする前に、相談したい相手はいますか？", accessible_followups=("What could that person help you notice?", "If you asked no one, how would you slow the decision down?"), full_followups=("What could that person help you notice?", "If you asked no one, how would you slow the decision down?")),
+    (89, 6): dict(accessible_followups=("What would cause that mistake?", "What could help the winner avoid it?"), full_followups=("What would cause that mistake?", "What could help the winner avoid it?")),
+    (90, 4): dict(accessible_followups=("How would it make life on the island feel easier?", "What comfort would you give up?")),
+    (93, 1): dict(accessible_followups=("Which preparation would keep it interesting?", "What makes that food easy to eat in different ways?"), full_followups=("Which preparation would keep it interesting?", "What makes that food easy to eat in different ways?")),
+    (93, 3): dict(accessible_followups=("What is good about each food?", "What would help you decide?"), full_followups=("What is good about each food?", "What would help you decide?")),
+    (93, 5): dict(accessible_followups=("Why does it matter so little?", "Would your answer change if it were cooked differently?"), full_followups=("Why does it matter so little?", "Would your answer change if it were cooked differently?")),
+    (95, 2): dict(accessible="What, if anything, do you usually use your phone for first?", accessible_ja="普段、最初にスマートフォンを使うとしたら、何に使いますか？", full="What, if anything, is usually your first reason to use your phone?", full_ja="普段、最初にスマートフォンを使う理由があるとしたら、何ですか？", accessible_followups=("Could that first task be done another way?", "What happens on a day when you do not use it?"), full_followups=("Could that first task be done another way?", "What happens on a day when you do not use it?")),
+    (99, 3): dict(accessible="How much contact with other people would you want on most days?", accessible_ja="ほとんどの日に、ほかの人とどのくらい関わりたいですか？", full="On most days, how much conversation and time alone would feel right?", full_ja="ほとんどの日に、会話と一人の時間がどのくらいあるとちょうどよいですか？", accessible_followups=("Who, if anyone, might be part of that contact?", "How much time alone would still feel good?"), full_followups=("Who, if anyone, might be part of that contact?", "How much time alone would still feel good?")),
+    (100, 1): dict(accessible_followups=("What makes it special to you?", "Could a photo or copy protect part of it?")),
+    (100, 2): dict(accessible_followups=("Do you use it, or is it tied to a memory?", "Would a photo or copy keep what matters?")),
+    (100, 3): dict(accessible_followups=("Why might people miss its importance?", "What memory does it bring back?")),
+}
+for (_number, _index), _changes in FINAL_REVIEW_REPAIRS.items():
+    TOPICS[_number]["prompts"][_index - 1].update(**_changes)
+
+# One-hearing review for every spoken question.  These repairs remove hidden
+# references to earlier pages and give every follow-up set a concrete way back
+# into the conversation after "I don't know", "none", or "never".
+THREE_SECOND_REPAIRS = {
+    (89, 1): dict(
+        accessible_followups=("Would you call someone, make a plan, or do nothing for a day?", "What would you avoid doing immediately?"),
+        full_followups=("Would you call someone, make a plan, or do nothing for a day?", "What would you avoid doing immediately?"),
+    ),
+    (89, 4): dict(
+        accessible_followups=("Would you keep the same home, hobbies, or daily schedule?", "How might money still change it?"),
+        full_followups=("Would you keep the same home, hobbies, or daily schedule?", "How might money still change it?"),
+    ),
+    (89, 5): dict(
+        accessible_followups=("Would you choose a gift, a trip, or practical help?", "If you bought nothing, how else could you share the money?"),
+        full_followups=("Would you choose a gift, a trip, or practical help?", "If you bought nothing, how else could you share the money?"),
+    ),
+    (89, 8): dict(
+        accessible_followups=("Would money solve loneliness or poor health?", "What else would help?"),
+        full_followups=("Would money solve loneliness or poor health?", "What else would help?"),
+    ),
+    (90, 1): dict(
+        accessible_followups=("Would water, shelter, or being alone worry you most?", "What could make the first day easier?"),
+        full_followups=("Would water, shelter, or being alone worry you most?", "What could make the first day easier?"),
+    ),
+    (90, 3): dict(
+        accessible_followups=("Would a pot, rope, or mirror be useful?", "What problem would it solve?"),
+        full_followups=("Would a pot, rope, or mirror be useful?", "What problem would it solve?"),
+    ),
+    (90, 4): dict(
+        accessible="Would you take one comfort item to a desert island?",
+        accessible_ja="無人島に、気持ちを楽にする物を一つ持って行きますか？",
+        full="Would one comfort item be worth taking to a desert island?",
+        full_ja="無人島に、気持ちを楽にする物を一つ持って行く価値はありますか？",
+        accessible_followups=("Would you choose music, a book, or a favourite snack?", "If you took none, what practical item would replace it?"),
+        full_followups=("Would you choose music, a book, or a favourite snack?", "If you took none, what practical item would replace it?"),
+    ),
+    (90, 5): dict(
+        accessible_followups=("Would you miss a light, blanket, or tool most?", "What could replace it?"),
+        full_followups=("Would you miss a light, blanket, or tool most?", "What could replace it?"),
+    ),
+    (90, 6): dict(
+        accessible="Would your island choices change if the weather were cold?",
+        accessible_ja="島の天気が寒かったら、持って行く物は変わりますか？",
+        full="Would you choose different island supplies in cold weather?",
+        full_ja="寒い天気の島なら、違う道具を選びますか？",
+        accessible_followups=("Would warm clothing or a fire tool come first?", "Which tropical item would be less useful?"),
+        full_followups=("Would warm clothing or a fire tool come first?", "Which tropical item would be less useful?"),
+    ),
+    (90, 8): dict(
+        accessible_followups=("Would a fishing net or water filter be a good example?", "What would replace it at home?"),
+        full_followups=("Would a fishing net or water filter be a good example?", "What would replace it at home?"),
+    ),
+    (91, 1): dict(
+        accessible_followups=("Would you choose a famous person, a doctor, or someone from another country?", "Which part of their day would you want to see?"),
+        full_followups=("Would you choose a famous person, a doctor, or someone from another country?", "Which part of their day would you want to see?"),
+    ),
+    (91, 3): dict(
+        full="What would you do in the first hour of another person's life?",
+        full_ja="別の人の人生を体験する最初の一時間に何をしますか？",
+        accessible_followups=("Would you explore their home, work, or neighbourhood?", "What would you avoid doing?"),
+        full_followups=("Would you explore their home, work, or neighbourhood?", "What would you avoid doing?"),
+    ),
+    (91, 5): dict(
+        accessible_followups=("Would a celebrity's life or a luxury lifestyle be a good example?", "What hidden responsibility might appear?"),
+        full_followups=("Would a celebrity's life or a luxury lifestyle be a good example?", "What hidden responsibility might appear?"),
+    ),
+    (91, 7): dict(
+        accessible_followups=("Would you appreciate your home, free time, or relationships more?", "What might you miss from the other life?"),
+        full_followups=("Would you appreciate your home, free time, or relationships more?", "What might you miss from the other life?"),
+    ),
+    (92, 1): dict(
+        accessible_followups=("Would flying, stopping time, or reading minds improve daily life most?", "What problem could that power create?"),
+        full_followups=("Would flying, stopping time, or reading minds improve daily life most?", "What problem could that power create?"),
+    ),
+    (92, 2): dict(
+        accessible="If you got a superpower, what would you do on the first morning?",
+        accessible_ja="超能力を得たら、最初の朝に何をしますか？",
+        full="If you got a superpower, what first use would test whether you could handle it?",
+        full_ja="超能力を得たら、うまく扱えるかを試す最初の使い方は何ですか？",
+        accessible_followups=("Would you test it alone or use it to help someone?", "What could go wrong?"),
+        full_followups=("Would you test it alone or use it to help someone?", "What could go wrong?"),
+    ),
+    (92, 4): dict(
+        accessible_followups=("Would reading minds or hearing everything become annoying?", "Could you switch it off?"),
+        full_followups=("Would flying or reading minds attract more attention?", "Could you hide or switch it off?"),
+    ),
+    (92, 3): dict(
+        accessible="Would you tell someone close to you about a superpower?",
+        accessible_ja="親しい人に超能力のことを話しますか？",
+        full="Would you tell someone close to you about a superpower?",
+        full_ja="親しい人に超能力のことを話しますか？",
+        accessible_followups=("Would telling one person make the power safer?", "What could secrecy protect?"),
+        full_followups=("Would telling one person make the power safer?", "What could secrecy protect?"),
+    ),
+    (92, 5): dict(
+        accessible_followups=("Would reading minds or never sleeping be too costly?", "Could a safe limit change your answer?"),
+        full_followups=("Would reading minds or never sleeping be too costly?", "Could a safe limit change your answer?"),
+    ),
+    (92, 8): dict(
+        accessible_followups=("Would patience, clear communication, or first aid be a good example?", "How can someone improve that skill?"),
+        full_followups=("Would patience, clear communication, or first aid be a good example?", "How can someone improve that skill?"),
+    ),
+    (93, 1): dict(
+        accessible_followups=("Would rice, noodles, or bread be hard to get tired of?", "How could you serve it in different ways?"),
+        full_followups=("Would rice, noodles, or bread be hard to get tired of?", "How could you serve it in different ways?"),
+    ),
+    (93, 2): dict(
+        accessible_followups=("Would the taste or repetition become boring first?", "If you have no favourite food, which everyday food could you eat for a week?"),
+        full_followups=("Would the taste or repetition become boring first?", "If you have no favourite food, which everyday food could you eat for a week?"),
+    ),
+    (93, 3): dict(
+        accessible_followups=("Would you compare taste, price, or health?", "Would you choose pizza or noodles?"),
+        full_followups=("Would you compare taste, price, or health?", "Would you choose pizza or noodles?"),
+    ),
+    (93, 4): dict(
+        full="What would you miss most if you ate the same food every day?",
+        full_ja="毎日同じ食べ物を食べたら、何が一番恋しくなりますか？",
+        accessible_followups=("Would you miss something sweet, spicy, or crunchy?", "When would you notice it most?"),
+        full_followups=("Would you miss something sweet, spicy, or crunchy?", "When would you notice it most?"),
+    ),
+    (93, 5): dict(
+        accessible_followups=("Would a strong-smelling food be a good example?", "Could a different recipe change your answer?"),
+        full_followups=("Would a strong-smelling food be a good example?", "Could a different recipe change your answer?"),
+    ),
+    (94, 1): dict(
+        accessible_followups=("Would you choose transport, delivery, or cleaning?", "How often would you use it?"),
+        full_followups=("Would you choose transport, delivery, or cleaning?", "How often would you use it?"),
+    ),
+    (94, 2): dict(
+        accessible_followups=("Would cheaper transport or childcare help more people?", "What could make the lower price difficult?"),
+        full_followups=("Would cheaper transport or childcare help more people?", "What could make the lower price difficult?"),
+    ),
+    (94, 5): dict(
+        accessible_followups=("Would cleaning, internet, or insurance save more over time?", "Would you still prefer a more enjoyable service?"),
+        full_followups=("Would cleaning, internet, or insurance save more over time?", "Would you still prefer a more enjoyable service?"),
+    ),
+    (95, 1): dict(
+        accessible_followups=("Would you miss maps, messages, or payments most?", "What could you use instead?"),
+        full_followups=("Would you miss maps, messages, or payments most?", "What could you use instead?"),
+    ),
+    (95, 4): dict(
+        accessible="What might improve, if anything, after three days with less phone use?",
+        accessible_ja="スマホをあまり使わずに三日過ごしたら、何かよくなりそうですか？",
+        full="What might improve, if anything, after three days with less phone use?",
+        full_ja="スマホをあまり使わずに三日過ごしたら、何かよくなりそうですか？",
+        accessible_followups=("Would sleep, focus, or free time change?", "What could become harder with less phone use?"),
+        full_followups=("Would sleep, focus, or free time change?", "What could become harder with less phone use?"),
+    ),
+    (95, 5): dict(
+        accessible_followups=("Would meals, exercise, or bedtime be easiest?", "What makes a phone hard to leave?"),
+        full_followups=("Would meals, exercise, or bedtime be easiest?", "What makes a phone hard to leave?"),
+    ),
+    (95, 8): dict(
+        accessible_followups=("Would you change late-night use or constant checking?", "Which phone habit is worth keeping?"),
+        full_followups=("Would you change late-night use or constant checking?", "Which phone habit is worth keeping?"),
+    ),
+    (96, 1): dict(
+        accessible_followups=("Would you rest, see people, or start a project?", "What gives any free week some structure?"),
+        full_followups=("Would you rest, see people, or start a project?", "What gives any free week some structure?"),
+    ),
+    (96, 2): dict(
+        accessible="How would you stop a week of free time from becoming boring?",
+        accessible_ja="一週間の自由時間が退屈にならないように、どうしますか？",
+        full="How would you give a free week some structure without filling it with work?",
+        full_ja="仕事で埋めずに、自由な一週間をどう組み立てますか？",
+        accessible_followups=("Would you make a plan or decide each morning?", "What would you leave unplanned?"),
+        full_followups=("Would you make a plan or decide each morning?", "What would you leave unplanned?"),
+    ),
+    (96, 3): dict(
+        accessible_followups=("Would a customer, teacher, or teammate need to know?", "When would saying nothing be unfair?"),
+        full_followups=("Would a customer, teacher, or teammate need to know?", "When would saying nothing be unfair?"),
+    ),
+    (96, 4): dict(
+        accessible_followups=("Would you miss the people, the routine, or finishing something?", "What would you happily stop doing?"),
+        full_followups=("Would you miss the people, the routine, or finishing something?", "What would you happily stop doing?"),
+    ),
+    (96, 5): dict(
+        accessible_followups=("Would you learn something, make something, or travel?", "How would you use the first free week?"),
+        full_followups=("Would you learn something, make something, or travel?", "How would you use the first free week?"),
+    ),
+    (96, 6): dict(
+        accessible="Which daily task can make people feel useful?",
+        accessible_ja="どんな日々の作業が、人に役立っていると感じさせますか？",
+        full="Which daily task can make a person feel useful?",
+        full_ja="どんな日々の作業が、その人自身を役立っていると感じさせますか？",
+        accessible_followups=("Could cooking, caring for someone, or fixing something do that?", "Could AI help without taking over?"),
+        full_followups=("Could cooking, caring for someone, or fixing something do that?", "Could AI help without taking over?"),
+    ),
+    (96, 8): dict(
+        accessible_followups=("Should a person always make medical or legal decisions?", "Could AI still give useful advice?"),
+        full_followups=("Should a person always make medical or legal decisions?", "Could AI still give useful advice?"),
+    ),
+    (96, 7): dict(
+        accessible_followups=("Would you still cook, write, or make important decisions yourself?", "When could AI still help?"),
+        full_followups=("Would you still cook, write, or make important decisions yourself?", "When could AI still help?"),
+    ),
+    (97, 1): dict(
+        accessible_followups=("Would you choose a dog, cat, fox, or bird?", "Where does the comparison stop working?"),
+        full_followups=("Would you choose a dog, cat, fox, or bird?", "Where does the comparison stop working?"),
+    ),
+    (97, 2): dict(
+        accessible_followups=("Would they choose a calm, social, or independent animal?", "Would different friends choose differently?"),
+        full_followups=("Would they choose a calm, social, or independent animal?", "Would different friends choose differently?"),
+    ),
+    (97, 3): dict(
+        accessible="Which animal quality would you like to have more of?",
+        accessible_ja="どんな動物の性質を、もっと自分にも持ちたいですか？",
+        full="Which animal quality would you like to develop more in yourself?",
+        full_ja="どんな動物の性質を、自分の中でもっと伸ばしたいですか？",
+        accessible_followups=("Would you choose a dog's loyalty, a cat's independence, or a bird's freedom?", "When would that quality help?"),
+        full_followups=("Would you choose a dog's loyalty, a cat's independence, or a bird's freedom?", "When would that quality help?"),
+    ),
+    (97, 5): dict(
+        accessible_followups=("Would a loud, slow, or highly social animal feel least like you?", "Could one trait still fit?"),
+        full_followups=("Would a loud, slow, or highly social animal feel least like you?", "Could one trait still fit?"),
+    ),
+    (97, 8): dict(
+        accessible_followups=("Could one animal show both kindness and ambition?", "Would using two animals be fairer?"),
+        full_followups=("Could one animal show both kindness and ambition?", "Would using two animals be fairer?"),
+    ),
+    (98, 1): dict(
+        accessible_followups=("Would you choose a country for its schools, nature, or daily life?", "What would you want to learn before choosing?"),
+        full_followups=("Would you choose a country for its schools, nature, or daily life?", "What would you want to learn before choosing?"),
+    ),
+    (98, 3): dict(
+        accessible_followups=("Could it change how a child studies or speaks in class?", "What might stay the same?"),
+        full_followups=("Could it change how a child studies or speaks in class?", "What might stay the same?"),
+    ),
+    (98, 4): dict(
+        accessible_followups=("Would you miss a food, holiday, or family routine?", "What do people often miss from childhood?"),
+        full_followups=("Would you miss a food, holiday, or family routine?", "What do people often miss from childhood?"),
+    ),
+    (98, 5): dict(
+        accessible_followups=("Would you change school pressure, rules, or expectations?", "If you would change nothing, what would you keep?"),
+        full_followups=("Would you change school pressure, rules, or expectations?", "If you would change nothing, what would you keep?"),
+    ),
+    (99, 1): dict(
+        accessible_followups=("Would it begin in a quiet home, a busy city, or somewhere new?", "What would make the day feel good?"),
+        full_followups=("Would it begin in a quiet home, a busy city, or somewhere new?", "What would make the day feel good?"),
+    ),
+    (99, 4): dict(
+        accessible_followups=("Would you keep exercise, reading, or time with friends?", "What could make the habit hard to keep?"),
+        full_followups=("Would you keep exercise, reading, or time with friends?", "What could make the habit hard to keep?"),
+    ),
+    (99, 8): dict(
+        accessible_followups=("Would a new relationship, place, or dream be enough?", "What part of the old plan might you keep?"),
+        full_followups=("Would a new relationship, place, or dream be enough?", "What part of the old plan might you keep?"),
+    ),
+    (100, 1): dict(
+        accessible_followups=("Would you choose photos, a gift, or something you use every day?", "Could a photo or copy protect part of it?"),
+        full_followups=("Would you choose photos, a gift, or something you use every day?", "Could a photo or copy protect part of it?"),
+    ),
+    (100, 2): dict(
+        full_followups=("Do you still use it, or does it hold a memory?", "Would a photo or copy keep what matters?"),
+    ),
+    (100, 3): dict(
+        full_followups=("Why might other people miss its importance?", "What memory could it bring back?"),
+    ),
+    (100, 4): dict(
+        accessible_followups=("Would you choose photos, letters, or a useful item?", "What would you save instead of those three?"),
+        full_followups=("Would you choose photos, letters, or a useful item?", "What would you save instead of those three?"),
+    ),
+    (100, 6): dict(
+        accessible_followups=("Would a family photo or old letter be a good example?", "How could you protect the memory safely?"),
+        full_followups=("Would a family photo or old letter be a good example?", "How could you protect the memory safely?"),
+    ),
+    (100, 8): dict(
+        full="What can stay important even when no object remains?",
+        full_ja="物が何も残っていなくても、大切であり続けるものは何ですか？",
+        accessible_followups=("Could a story, habit, or relationship carry the memory?", "Can an object still help?"),
+        full_followups=("Could a story, habit, or relationship carry the memory?", "Can an object still help?"),
+    ),
+    (100, 7): dict(
+        accessible_followups=("Would photos, documents, or messages need a backup?", "What could you protect today?"),
+        full_followups=("Would photos, documents, or messages need a backup?", "What could you protect today?"),
+    ),
+}
+for (_number, _index), _changes in THREE_SECOND_REPAIRS.items():
+    TOPICS[_number]["prompts"][_index - 1].update(**_changes)
+
+# Independent post-generation semantic review.  Keep the rescue route concrete,
+# remove repeated jobs, and let Full deepen the answer rather than the syntax.
+INDEPENDENT_SEMANTIC_REPAIRS = {
+    (89, 6): dict(
+        accessible_followups=("What would cause that mistake?", "Would spending too fast or trusting the wrong person be more dangerous?"),
+        full_followups=("What would cause that mistake?", "Would spending too fast or trusting the wrong person be more dangerous?"),
+    ),
+    (89, 7): dict(
+        accessible_followups=("Why is that part worth protecting?", "Would sudden wealth make ordinary friendships harder?"),
+        full_followups=("Why is that part worth protecting?", "Would sudden wealth make ordinary friendships harder?"),
+    ),
+    (91, 6): dict(
+        accessible_followups=("Why should that remain private?", "Should private messages or medical information stay off-limits?"),
+        full_followups=("Why should that remain private?", "Should private messages or medical information stay off-limits?"),
+    ),
+    (92, 2): dict(
+        full="If you got a superpower, how would you test it safely?",
+        full_ja="超能力を得たら、どうやって安全に試しますか？",
+        full_followups=("Would you test it alone or with someone nearby?", "What could go wrong?"),
+    ),
+    (92, 6): dict(
+        accessible_followups=("Why would that power become dangerous on a large scale?", "Would stopping time or reading minds cause more trouble?"),
+        full_followups=("Why would that power become dangerous on a large scale?", "Would stopping time or reading minds cause more trouble?"),
+    ),
+    (92, 7): dict(
+        accessible_followups=("What temptation would the rule control?", "Should a superpower ever be used without permission?"),
+        full_followups=("What temptation would the rule control?", "Should a superpower ever be used without permission?"),
+    ),
+    (94, 3): dict(
+        accessible_followups=("Which routine would change most?", "Would free transport change your week?"),
+        full_followups=("Which routine would change most?", "Would free transport change your week?"),
+    ),
+    (94, 4): dict(
+        accessible_followups=("Who else would benefit?", "Would free childcare or free public transport help more people?"),
+        full_followups=("Who else would benefit?", "Would free childcare or free public transport help more people?"),
+    ),
+    (94, 7): dict(
+        accessible="What problem can make a free service not worth using?",
+        accessible_ja="どんな問題があると、無料のサービスでも使う価値がないと感じますか？",
+        accessible_followups=("What makes that problem hard to avoid?", "Would you use a free app that collected your personal data?"),
+    ),
+    (94, 8): dict(
+        accessible_followups=("Which matters more: faster service or better support?", "What makes the free version enough?"),
+        full_followups=("Which matters more: faster service or better support?", "What makes the free version enough?"),
+    ),
+    (95, 2): dict(
+        full="What do you usually use your phone for first?",
+        full_ja="普段、最初にスマートフォンを何に使いますか？",
+    ),
+    (95, 7): dict(
+        full="Which phone uses would you keep during a break?",
+        full_ja="スマートフォンを休む間でも、どの使い方は続けますか？",
+        full_followups=("Would you keep calls, maps, or payments?", "Which use would you limit first?"),
+    ),
+    (96, 1): dict(
+        accessible_followups=("Would you rest, see people, or start a project?", "Would the extra time feel relaxing or strange at first?"),
+        full_followups=("Would you rest, see people, or start a project?", "Would the extra time feel relaxing or strange at first?"),
+    ),
+    (97, 2): dict(
+        accessible_followups=("Would they choose a dog, cat, or bird?", "How is a dog's personality different from a cat's?"),
+        full_followups=("Would they choose a dog, cat, or bird?", "How is a dog's personality different from a cat's?"),
+    ),
+    (97, 4): dict(
+        accessible_followups=("Which habit might they notice?", "Do people notice a person's voice or body language first?"),
+        full_followups=("Which habit might they notice?", "Do people notice a person's voice or body language first?"),
+    ),
+    (97, 6): dict(
+        accessible="Which animal fits you on a busy day?",
+        accessible_ja="忙しい日の自分には、どの動物が合いますか？",
+        full="Which animal fits you on a busy day?",
+        full_ja="忙しい日の自分には、どの動物が合いますか？",
+        accessible_followups=("Which trait does that animal show?", "On a busy day, do you move quickly or slowly?"),
+        full_followups=("Which trait does that animal show?", "On a busy day, do you move quickly or slowly?"),
+    ),
+    (98, 6): dict(
+        accessible_followups=("Are some feelings easier to express in one language?", "Is it easier to joke in your first language or another language?"),
+        full_followups=("Are some feelings easier to express in one language?", "Is it easier to joke in your first language or another language?"),
+    ),
+    (99, 5): dict(
+        accessible_followups=("What would you rather spend that time on?", "Would you rather spend less time commuting or doing housework?"),
+        full_followups=("What would you rather spend that time on?", "Would you rather spend less time commuting or doing housework?"),
+    ),
+    (99, 7): dict(
+        accessible_followups=("What could you try this month?", "Would trying one new class or hobby make the future clearer?"),
+        full_followups=("What could you try this month?", "Would trying one new class or hobby make the future clearer?"),
+    ),
+    (100, 4): dict(
+        accessible_followups=("Which of those would be hardest to replace?", "What would you save instead of those three?"),
+        full_followups=("Which of those would be hardest to replace?", "What would you save instead of those three?"),
+    ),
+    (100, 7): dict(
+        accessible_followups=("Would photos, documents, or messages need a backup?", "Where would you keep the backup?"),
+        full_followups=("Would photos, documents, or messages need a backup?", "Where would you keep the backup?"),
+    ),
+}
+for (_number, _index), _changes in INDEPENDENT_SEMANTIC_REPAIRS.items():
+    TOPICS[_number]["prompts"][_index - 1].update(**_changes)
+
+
 CLAIM_ORDER = {
     topic_no: tuple(f"ft{topic_no}-c{index:02d}" for index in range(1, 11))
     for topic_no in TOPIC_NUMBERS
@@ -755,8 +1444,8 @@ VOCABULARY = {
     90: {"new": "essential item|必需品", "recycled": "", "assumed": "object|物; island|島; take|持っていく; useful|役に立つ; person|人", "receptive": "versatile|多用途の; symbolic value|象徴的な価値"},
     91: {"new": "trade lives|人生を入れ替える", "recycled": "", "assumed": "person|人; day|一日; life|人生; private|私的な; return|戻る", "receptive": "inhabit|体験する; intrusion|立ち入り"},
     92: {"new": "superpower|超能力", "recycled": "", "assumed": "power|力; choose|選ぶ; problem|問題; secret|秘密; refuse|断る", "receptive": "surveillance|監視; reversibility|元に戻せること"},
-    93: {"new": "get sick of|飽きる", "recycled": "", "assumed": "food|食べ物; forever|永遠に; healthy|健康的な; choice|選択; miss|恋しくなる", "receptive": "dietary boundary|食事上の制限; sustainable|続けやすい"},
-    94: {"new": "resell|転売する", "recycled": "", "assumed": "free|無料の; use|使う; week|一週間; benefit|利益; cost|費用", "receptive": "non-transferable|譲渡できない; opportunity cost|機会費用"},
+    93: {"new": "", "recycled": "", "assumed": "food|食べ物; forever|永遠に; healthy|健康的な; choice|選択; miss|恋しくなる", "receptive": "get sick of|飽きる; dietary boundary|食事上の制限; sustainable|続けやすい"},
+    94: {"new": "", "recycled": "", "assumed": "free|無料の; use|使う; week|一週間; benefit|利益; cost|費用", "receptive": "resell|転売する; non-transferable|譲渡できない; opportunity cost|機会費用"},
     95: {"new": "digital detox|デジタル機器から離れること", "recycled": "", "assumed": "phone|携帯電話; week|一週間; routine|日課; safe|安全な; contact|連絡", "receptive": "accessibility|アクセシビリティ; discretionary|自由に減らせる"},
     96: {"new": "work identity|仕事を通じた自己認識", "recycled": "", "assumed": "AI|AI; salary|給料; work|仕事; study|勉強; care|ケア; routine|日課", "receptive": "automation|自動化; unstructured|予定のない"},
     97: {"new": "symbolize|象徴する", "recycled": "", "assumed": "animal|動物; people|人々; know|知る; choose|選ぶ; personality|性格", "receptive": "observer|観察者; metaphor|比喩"},

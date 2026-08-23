@@ -34,7 +34,7 @@ EXPECTED_TOPICS = {
 }
 EXPECTED_OPENINGS = {
     57: "What's something small that makes you like someone?",
-    58: "What kind of comment can destroy trust in a relationship?",
+    58: "Which is harder to forgive: a lie, an insult, or a broken promise?",
     59: "What's one thing you could never compromise on in a partner?",
     60: "Which relationship habit do you think is hardest to change?",
     61: "If you had a wedding tomorrow, what's the one thing you'd insist on?",
@@ -836,7 +836,7 @@ class FreetalkingLoveAndMarriageSourceTests(unittest.TestCase):
                     *item["accessible_followups"], item["full"], item["full_ja"], *item["full_followups"], item["safety"],
                 ])
         self.assertEqual(hashlib.sha256("\n".join(claims).encode()).hexdigest(), "fa631f32c716fabf5f5458ad5c1da7d1dcb8d0fa5edf29594bfabdf3ef39273f")
-        self.assertEqual(hashlib.sha256("\n".join(prompts).encode()).hexdigest(), "5ff9f8f42d819fe420cc8f1272001be3ed0f8dfcead1245314f7ba5cf146ab10")
+        self.assertEqual(hashlib.sha256("\n".join(prompts).encode()).hexdigest(), "52bb2acf443b554e0a7918acb574fb0ba95f70584ece268a6aa8b9f3f2812153")
         self.assertEqual(hashlib.sha256(repr(batch.VOCABULARY).encode()).hexdigest(), "5411c539ff9f25b791eb14443245b9dd317d84bcadf009b906d514d6a18c45e6")
 
 
