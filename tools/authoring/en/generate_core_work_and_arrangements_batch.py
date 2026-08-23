@@ -43,7 +43,7 @@ LESSONS = {
             ("I {t}shouldn't have{/t} waited so long.", "あんなに長く待た{t}なければよかったです{/t}。", "I|shouldn't have|waited|so long."),
             ("I {t}shouldn't have{/t} sent that message.", "あのメッセージを送ら{t}なければよかったです{/t}。", "I|shouldn't have|sent|that message."),
         ),
-        rules=(("Use should have plus a past participle for the better action you did not take.", "しなかったほうの望ましい行動は、should have と過去分詞で表します。"), ("Use shouldn't have plus a past participle for an action you now regret taking.", "してしまった行動への後悔は、shouldn't have と過去分詞で表します。")),
+        rules=(("Use should have plus a past participle for the better action you did not take.", "しなかったほうの望ましい行動は、「should have」 と過去分詞で表します。"), ("Use shouldn't have plus a past participle for an action you now regret taking.", "してしまった行動への後悔は、「shouldn't have」 と過去分詞で表します。")),
         prompt=("Tell me about one real regret, or say that none comes to mind, then ask me too.", "実際の後悔を一つ話すか、思いつかなければそう伝えてから、私にも聞いてください。"),
     ),
     72: dict(
@@ -62,7 +62,7 @@ LESSONS = {
             ("He {t}must have been{/t} tired.", "彼は疲れていた{t}に違いありません{/t}。", "He|must have|been|tired."),
             ("They {t}must have been{/t} at home.", "彼らは家にいた{t}に違いありません{/t}。", "They|must have|been|at home."),
         ),
-        rules=(("Use might have plus a past participle when the explanation is only possible.", "可能性のある説明には、might have と過去分詞を使います。"), ("Use must have plus a past participle for a confident conclusion, not a past obligation.", "確信のある結論には must have と過去分詞を使い、過去の義務とは区別します。")),
+        rules=(("Use might have plus a past participle when the explanation is only possible.", "可能性のある説明には、「might have」 と過去分詞を使います。"), ("Use must have plus a past participle for a confident conclusion, not a past obligation.", "確信のある結論には 「must have」 と過去分詞を使い、過去の義務とは区別します。")),
         prompt=("Explain one past mystery if you have one, or say that nothing comes to mind, then ask what I think happened.", "過去の気になる出来事を一つ説明するか、思いつかなければそう伝えてから、私の推測も聞いてください。"),
     ),
     73: dict(
@@ -81,7 +81,7 @@ LESSONS = {
             ("{t}By the time{/t} the meeting started, she {t}had arrived{/t}.", "会議が始まる{t}ころには{/t}、彼女は{t}到着していました{/t}。", "By the time|the meeting started,|she|had arrived."),
             ("{t}By the time{/t} we got home, the rain {t}had stopped{/t}.", "帰宅した{t}ころには{/t}、雨は{t}やんでいました{/t}。", "By the time|we got home,|the rain|had stopped."),
         ),
-        rules=(("Use had plus a past participle for the earlier event; use the simple past after when for the later one.", "先に起きた出来事は had と過去分詞で、when のあとの遅い出来事は単純過去で表します。"), ("Put By the time before the later event and use had plus a past participle for what was already complete.", "遅い出来事の前に By the time を置き、すでに完了していたことは had と過去分詞で表します。")),
+        rules=(("Use had plus a past participle for the earlier event; use the simple past after when for the later one.", "先に起きた出来事は had と過去分詞で、when のあとの遅い出来事は単純過去で表します。"), ("Put By the time before the later event and use had plus a past participle for what was already complete.", "遅い出来事の前に 「By the time」 を置き、すでに完了していたことは had と過去分詞で表します。")),
         prompt=("Describe a time you arrived too late, or say that it has not happened, then ask about me.", "到着が遅すぎた経験を話すか、なければそう伝えてから、私にも聞いてください。"),
     ),
     74: dict(
@@ -100,7 +100,7 @@ LESSONS = {
             ("{t}I'd planned to{/t} send it yesterday, but it {t}slipped my mind{/t}.", "昨日送る{t}予定でしたが{/t}、{t}うっかり忘れました{/t}。", "I'd planned|to send it yesterday,|but|it slipped my mind."),
             ("{t}I'd planned to{/t} meet her, but I {t}felt sick{/t}.", "彼女に会う{t}予定でしたが{/t}、{t}気分が悪くなりました{/t}。", "I'd planned|to meet her,|but|I felt sick."),
         ),
-        rules=(("Use was going to plus a plain verb for an intention, then use but to give the reason it did not happen.", "実現しなかったつもりは was going to と動詞の原形で表し、but のあとに理由を続けます。"), ("Use had planned to plus a plain verb for an earlier plan, then explain the change after but.", "以前に立てた予定は had planned to と動詞の原形で表し、but のあとに変わった理由を続けます。")),
+        rules=(("Use was going to plus a plain verb for an intention, then use but to give the reason it did not happen.", "実現しなかったつもりは 「was going to」 と動詞の原形で表し、but のあとに理由を続けます。"), ("Use had planned to plus a plain verb for an earlier plan, then explain the change after but.", "以前に立てた予定は 「had planned to」 と動詞の原形で表し、but のあとに変わった理由を続けます。")),
         prompt=("Describe one plan that changed, or say that none changed recently, then ask me about mine.", "変わった予定を一つ話すか、最近なければそう伝えてから、私の予定も聞いてください。"),
     ),
     75: dict(
@@ -119,7 +119,7 @@ LESSONS = {
             ("I {t}don't work downtown{/t} anymore.", "今はもう{t}中心街では働きません{/t}。", "I|don't|work downtown|anymore."),
             ("I {t}don't play tennis{/t} anymore.", "今はもう{t}テニスをしません{/t}。", "I|don't|play tennis|anymore."),
         ),
-        rules=(("Use used to plus a plain verb for a past habit or state that is no longer true.", "今は当てはまらない昔の習慣・状態には、used to と動詞の原形を使います。"), ("Use don't plus a plain verb and put anymore at the end to state the present contrast.", "今との対比は don't と動詞の原形を使い、文末に anymore を置きます。")),
+        rules=(("Use used to plus a plain verb for a past habit or state that is no longer true.", "今は当てはまらない昔の習慣・状態には、「used to」 と動詞の原形を使います。"), ("Use don't plus a plain verb and put anymore at the end to state the present contrast.", "今との対比は 「don't」 と動詞の原形を使い、文末に 「anymore」 を置きます。")),
         prompt=("Tell me about one real past habit, or say that nothing has changed, then ask me too.", "実際の昔の習慣を一つ話すか、変わったことがなければそう伝えてから、私にも聞いてください。"),
         omit_choice=(1,),
     ),
@@ -139,7 +139,7 @@ LESSONS = {
             ("I {t}need to get{/t} this coat {t}cleaned{/t}.", "このコートを{t}クリーニングして{/t}{t}もらう必要があります{/t}。", "I|need to get|this coat|cleaned."),
             ("I {t}need to get{/t} the battery {t}checked{/t}.", "バッテリーを{t}点検して{/t}{t}もらう必要があります{/t}。", "I|need to get|the battery|checked."),
         ),
-        rules=(("Use had plus the thing plus a past participle for a service you arranged and completed.", "手配して完了したサービスは、had、物、過去分詞の順で表します。"), ("Use need to get plus the thing plus a past participle for a service that still needs arranging.", "これから手配する必要があるサービスは、need to get、物、過去分詞の順で表します。")),
+        rules=(("Use had plus the thing plus a past participle for a service you arranged and completed.", "手配して完了したサービスは、had、物、過去分詞の順で表します。"), ("Use need to get plus the thing plus a past participle for a service that still needs arranging.", "これから手配する必要があるサービスは、「need to get」、物、過去分詞の順で表します。")),
         prompt=("Name a service you arranged or need, or say that you do not need one now, then ask me too.", "頼んだ・必要なサービスを話すか、今はなければそう伝えてから、私にも聞いてください。"),
     ),
     77: dict(
@@ -158,7 +158,7 @@ LESSONS = {
             ("Could you {t}check what's happened to{/t} the repair?", "{t}修理がどうなったか確認していただけますか{/t}？", "Could you|check|what's happened to|the repair?"),
             ("Could you {t}check what's happened to{/t} the delivery?", "{t}配達がどうなったか確認していただけますか{/t}？", "Could you|check|what's happened to|the delivery?"),
         ),
-        rules=(("Use was supposed to plus a plain verb for an agreed expectation that was not met.", "満たされなかった合意上の予定は、was supposed to と動詞の原形で表します。"), ("Use what's happened to for the present result, after calmly stating the expectation.", "予定を落ち着いて伝えたあと、現在の結果は what's happened to で確認します。")),
+        rules=(("Use was supposed to plus a plain verb for an agreed expectation that was not met.", "満たされなかった合意上の予定は、「was supposed to」 と動詞の原形で表します。"), ("Use what's happened to for the present result, after calmly stating the expectation.", "予定を落ち着いて伝えたあと、現在の結果は 「what's happened to」 で確認します。")),
         prompt=("Describe a real delayed service, or say that you have none, then ask whether I have had one.", "実際に遅れたサービスを話すか、なければそう伝えてから、私にも経験があるか聞いてください。"),
         omit_choice=(2,),
     ),
@@ -178,7 +178,7 @@ LESSONS = {
             ("At noon, {t}I'll still be waiting{/t}.", "正午には、まだ{t}待っているところです{/t}。", "At noon,|I'll still be|waiting."),
             ("At ten, {t}I'll still be driving{/t}.", "10時には、まだ{t}運転中です{/t}。", "At ten,|I'll still be|driving."),
         ),
-        rules=(("Keep the future time anchor with will be plus the -ing form to show an activity in progress then.", "未来の時点を添え、will be と -ing 形でその時に進行中の活動を表します。"), ("Put still between will and be when the activity continues through the later future point.", "さらに遅い未来の時点まで続く活動は、will と be の間に still を置きます。")),
+        rules=(("Keep the future time anchor with will be plus the -ing form to show an activity in progress then.", "未来の時点を添え、「will be」 と -ing 形でその時に進行中の活動を表します。"), ("Put still between will and be when the activity continues through the later future point.", "さらに遅い未来の時点まで続く活動は、will と be の間に still を置きます。")),
         prompt=("Say what you will really be doing tomorrow, or say that you have no plan, then ask me too.", "明日実際にしていることを話すか、予定がなければそう伝えてから、私にも聞いてください。"),
     ),
     79: dict(
@@ -197,7 +197,7 @@ LESSONS = {
             ("It {t}may take{/t} another week.", "さらに1週間{t}かかるかもしれません{/t}。", "It|may take|another|week."),
             ("It {t}may take{/t} another day.", "さらに1日{t}かかるかもしれません{/t}。", "It|may take|another|day."),
         ),
-        rules=(("Use should have plus the thing plus ready for an expected state by a deadline, not advice or regret.", "期限までに見込まれる状態は、助言や後悔ではなく、should have、物、ready の順で表します。"), ("Use may plus the plain verb take to keep the extra time estimate honestly uncertain.", "追加時間が不確かなことを正直に伝えるには、may と動詞の原形 take を使います。")),
+        rules=(("Use should have plus the thing plus ready for an expected state by a deadline, not advice or regret.", "期限までに見込まれる状態は、助言や後悔ではなく、「should have」、物、ready の順で表します。"), ("Use may plus the plain verb take to keep the extra time estimate honestly uncertain.", "追加時間が不確かなことを正直に伝えるには、may と動詞の原形 take を使います。")),
         prompt=("Give a real estimate, or say that you have no deadline now, then ask about one of my tasks.", "実際の見込みを伝えるか、今は期限がなければそう伝えてから、私の作業について聞いてください。"),
         omit_choice=(1,),
     ),
@@ -217,7 +217,7 @@ LESSONS = {
             ("{t}I'll send it as soon as{/t} it's ready.", "{t}準備できたらすぐ送ります{/t}。", "I'll|send it|as soon as|it's ready."),
             ("{t}I'll book it as soon as{/t} they reply.", "{t}返事が来たらすぐ予約します{/t}。", "I'll|book it|as soon as|they reply."),
         ),
-        rules=(("Use a present form after once even when the trigger is in the future.", "未来のきっかけでも、once のあとは現在形を使います。"), ("Put will in the action clause and use a present form after as soon as for the trigger.", "will は行動の節に置き、as soon as のあとのきっかけには現在形を使います。")),
+        rules=(("Use a present form after once even when the trigger is in the future.", "未来のきっかけでも、「once」 のあとは現在形を使います。"), ("Put will in the action clause and use a present form after as soon as for the trigger.", "will は行動の節に置き、「as soon as」 のあとのきっかけには現在形を使います。")),
         prompt=("Name a real task that depends on a reply or finish, or say that none does, then ask me too.", "返事・完了を待つ実際の作業を話すか、なければそう伝えてから、私にも聞いてください。"),
     ),
 }
@@ -250,7 +250,7 @@ SPECS = {
             tuple((jp, pre, "must", "might", suf) for jp, pre, suf in (("証拠から強くそう思います。交通がひどかった{t}に違いありません{/t}。", "The traffic ", " have been bad."), ("証拠から強くそう思います。鍵がかかっていた{t}に違いありません{/t}。", "The door ", " have been locked."), ("証拠から強くそう思います。彼は疲れていた{t}に違いありません{/t}。", "He ", " have been tired."), ("証拠から強くそう思います。彼らは家にいた{t}に違いありません{/t}。", "They ", " have been at home."))),
         ),
         (("Possible past explanation", "可能性のある過去の説明", "人 + <b>might have</b> + 過去分詞", "One possibility", "一つの可能性", ("I <b>might have left</b> it at home.", "She <b>might have missed</b> the train.")), ("Confident past conclusion", "確信のある過去の結論", "人・物 + <b>must have</b> + 過去分詞", "Strong evidence", "強い根拠", ("The traffic <b>must have been</b> bad.", "The door <b>must have been</b> locked."))),
-        ("Maybe or might have?", "maybe と might have", "Maybe can introduce the whole explanation. Might have builds the possibility into the verb.", "Maybe は説明全体の前に置けます。might have は可能性を動詞の中に組み込みます。", ("Sentence opener", "文全体への前置き", "Maybe I left it at home.", "もしかすると家に置いてきました。"), ("Inside the verb", "動詞の中", "I might have left it at home.", "家に置いてきたのかもしれません。")),
+        ("Maybe or might have?", "maybe と might have", "Maybe can introduce the whole explanation. Might have builds the possibility into the verb.", "Maybe は説明全体の前に置けます。「might have」 は可能性を動詞の中に組み込みます。", ("Sentence opener", "文全体への前置き", "Maybe I left it at home.", "もしかすると家に置いてきました。"), ("Inside the verb", "動詞の中", "I might have left it at home.", "家に置いてきたのかもしれません。")),
     ),
     73: semantic_spec(
         (("Use this when the first event was already complete before a later past event.", "あとの過去の出来事より前に、最初の出来事がすでに完了していたと伝えるときに使います。"), ("Use this to set the later past event first, then say what was already complete.", "あとの過去の出来事を先に示し、その時点ですでに完了していたことを伝えるときに使います。")),
@@ -260,7 +260,7 @@ SPECS = {
             tuple((jp, pre, cor, dis, suf) for jp, pre, cor, dis, suf in (("着いたころには、そこは{t}閉まっていた{/t}。", "By the time we arrived, it ", "had closed", "closed", "."), ("電話したころには、彼らは{t}出発していた{/t}。", "By the time I called, they ", "had left", "left", "."), ("会議開始までに、彼女は{t}到着していた{/t}。", "By the time the meeting started, she ", "had arrived", "arrived", "."), ("帰宅したころには、雨は{t}やんでいた{/t}。", "By the time we got home, the rain ", "had stopped", "stopped", "."))),
         ),
         (("Mark the earlier event", "先の出来事を示す", "先の出来事: <b>had</b> + 過去分詞 + when + あとの出来事", "Earlier then later", "先、あと", ("The train <b>had left</b> when we arrived.", "The film <b>had started</b> when we sat down.")), ("Lead with the later deadline", "あとの時点を先に置く", "<b>By the time</b> + あとの出来事, + 先の出来事: had + 過去分詞", "View from the later point", "あとの時点から見る", ("<b>By the time</b> we arrived, it had closed.", "<b>By the time</b> I called, they had left."))),
-        ("Had left or left before?", "had left と left before", "Use had left when both past events are in one timeline. Left before is a shorter alternative when the reference event is already clear.", "二つの過去の出来事を一つの時間軸で示すなら had left を使います。基準の出来事が明らかなら left before と短く言えます。", ("Full timeline", "時間軸を明示", "The train had left when we arrived.", "到着したとき、電車は出たあとでした。"), ("Reference already clear", "基準が明らか", "The train left before that.", "電車はその前に出ました。")),
+        ("Had left or left before?", "had left と left before", "Use had left when both past events are in one timeline. Left before is a shorter alternative when the reference event is already clear.", "二つの過去の出来事を一つの時間軸で示すなら 「had left」 を使います。基準の出来事が明らかなら 「left before」 と短く言えます。", ("Full timeline", "時間軸を明示", "The train had left when we arrived.", "到着したとき、電車は出たあとでした。"), ("Reference already clear", "基準が明らか", "The train left before that.", "電車はその前に出ました。")),
     ),
     74: semantic_spec(
         (("Use this for an intention that did not happen, followed by the reason.", "実現しなかったつもりを、その理由と一緒に伝えるときに使います。"), ("Use this for a plan made earlier that did not happen, followed by the reason.", "前に立てた予定が実現しなかったことを、その理由と一緒に伝えるときに使います。")),
@@ -270,7 +270,7 @@ SPECS = {
             tuple((jp, "I ", "had planned to", "plan to", suf) for jp, suf in (("今日終える{t}予定でした{/t}。", " finish it today, but I ran out of time."), ("正午に電話する{t}予定でした{/t}。", " call at noon, but something came up."), ("昨日送る{t}予定でした{/t}。", " send it yesterday, but it slipped my mind."), ("彼女に会う{t}予定でした{/t}。", " meet her, but I felt sick."))),
         ),
         (("Earlier intention", "以前のつもり", "人 + <b>was going to</b> + 動詞の原形, + but + 理由", "Did not happen", "実現しなかった", ("I <b>was going to call</b>, but I ran out of time.", "I <b>was going to cook</b>, but something came up.")), ("Earlier plan", "以前の予定", "人 + <b>had planned to</b> + 動詞の原形, + but + 理由", "Plan changed", "予定が変わった", ("I'd <b>planned to finish it</b>, but I ran out of time.", "I'd <b>planned to call</b>, but something came up."))),
-        ("I was going to or I meant to?", "I was going to と I meant to", "I was going to states the plan. I meant to is a shorter, conversational way to admit an intention you did not carry out.", "I was going to は予定を伝えます。I meant to は実行できなかった意図を認める短く会話的な言い方です。", ("State the plan", "予定を伝える", "I was going to call.", "電話するつもりでした。"), ("Admit the missed intention", "できなかった意図を認める", "I meant to call.", "電話するつもりだったんです。")),
+        ("I was going to or I meant to?", "I was going to と I meant to", "I was going to states the plan. I meant to is a shorter, conversational way to admit an intention you did not carry out.", "「I was going to」 は予定を伝えます。「I meant to」 は実行できなかった意図を認める短く会話的な言い方です。", ("State the plan", "予定を伝える", "I was going to call.", "電話するつもりでした。"), ("Admit the missed intention", "できなかった意図を認める", "I meant to call.", "電話するつもりだったんです。")),
     ),
     75: semantic_spec(
         (("Use this for a repeated past habit or state that is no longer true.", "今は当てはまらない、昔の繰り返した習慣・状態に使います。"), ("Use this to state the present contrast directly.", "今は違うことをはっきり伝えるときに使います。")),
@@ -287,7 +287,7 @@ SPECS = {
             tuple((jp, pre, cor, dis, ".") for jp, pre, cor, dis in (("画面を{t}交換してもらう必要があります{/t}。", "I need to get the screen ", "replaced", "replace"), ("ファスナーを{t}直してもらう必要があります{/t}。", "I need to get the zipper ", "fixed", "fix"), ("コートを{t}クリーニングしてもらう必要があります{/t}。", "I need to get this coat ", "cleaned", "clean"), ("バッテリーを{t}点検してもらう必要があります{/t}。", "I need to get the battery ", "checked", "check"))),
         ),
         (("Completed arranged service", "手配して完了したサービス", "人 + <b>had</b> + 物 + <b>過去分詞</b>", "Someone else did it", "別の人が作業した", ("I <b>had my phone repaired</b>.", "I <b>had my coat cleaned</b>.")), ("Service still needed", "まだ必要なサービス", "人 + need to <b>get</b> + 物 + <b>過去分詞</b>", "Needs arranging", "これから手配", ("I need to <b>get the screen replaced</b>.", "I need to <b>get the zipper fixed</b>."))),
-        ("Repaired or fixed?", "repaired と fixed", "Repaired is neutral and specific to restoring something. Fixed is the common conversational choice.", "repaired は修理して元に戻す中立的な語です。fixed は会話でよく使う言い方です。", ("Neutral service wording", "中立的なサービス表現", "I had my phone repaired.", "携帯を修理してもらいました。"), ("Conversation", "会話", "I got my phone fixed.", "携帯を直してもらいました。")),
+        ("Repaired or fixed?", "repaired と fixed", "Repaired is neutral and specific to restoring something. Fixed is the common conversational choice.", "「repaired」 は修理して元に戻す中立的な語です。「fixed」 は会話でよく使う言い方です。", ("Neutral service wording", "中立的なサービス表現", "I had my phone repaired.", "携帯を修理してもらいました。"), ("Conversation", "会話", "I got my phone fixed.", "携帯を直してもらいました。")),
     ),
     77: semantic_spec(
         (("Use this to state an agreed expectation that was not met.", "満たされなかった合意上の予定を伝えるときに使います。"), ("Use this after the expectation to ask neutrally about the current result.", "予定を伝えたあと、現在どうなっているか中立的に確認するときに使います。")),
@@ -297,7 +297,7 @@ SPECS = {
             (),
         ),
         (("State the unmet expectation", "満たされなかった予定", "物 + <b>was supposed to</b> + 動詞の原形", "Agreed but not met", "合意されたが未達", ("It <b>was supposed to be</b> ready today.", "The order <b>was supposed to arrive</b> by noon.")), ("Ask for the present result", "現在の結果を確認", "Could you check + <b>what's happened to</b> + 物?", "Neutral follow-up", "中立的な確認", ("Could you check <b>what's happened to it</b>?", "Could you check <b>what's happened to my order</b>?"))),
-        ("Could you check or take a look?", "Could you check と take a look", "Could you check asks for a factual update. Could you take a look asks someone to inspect the item itself.", "Could you check は事実の確認を頼みます。Could you take a look は物そのものを見てもらう頼み方です。", ("Status update", "状況確認", "Could you check what's happened to it?", "どうなったか確認していただけますか？"), ("Inspect the item", "物を見てもらう", "Could you take a look at it?", "これを見ていただけますか？")),
+        ("Could you check or take a look?", "Could you check と take a look", "Could you check asks for a factual update. Could you take a look asks someone to inspect the item itself.", "「Could you check」 は事実の確認を頼みます。「Could you take a look」 は物そのものを見てもらう頼み方です。", ("Status update", "状況確認", "Could you check what's happened to it?", "どうなったか確認していただけますか？"), ("Inspect the item", "物を見てもらう", "Could you take a look at it?", "これを見ていただけますか？")),
     ),
     78: semantic_spec(
         (("Use this to place yourself inside an activity at a stated future time.", "はっきりした未来の時点で、活動の途中にいることを伝えるときに使います。"), ("Use this when the activity will continue through a later future time.", "さらに遅い未来の時点まで活動が続くと伝えるときに使います。")),
@@ -307,7 +307,7 @@ SPECS = {
             tuple((jp, pre, "still be", "be still", suf) for jp, pre, suf in (("6時にはまだ{t}移動中です{/t}。", "At six, I'll ", " traveling."), ("8時にはまだ{t}仕事中です{/t}。", "At eight, I'll ", " working."), ("正午にはまだ{t}待っているところです{/t}。", "At noon, I'll ", " waiting."), ("10時にはまだ{t}運転中です{/t}。", "At ten, I'll ", " driving."))),
         ),
         (("Future activity in progress", "未来に進行中の活動", "未来の時点 + 人 + <b>will be</b> + 動詞<b>-ing</b>", "Inside the later moment", "未来の時点の途中", ("This time tomorrow, <b>I'll be flying</b> home.", "Tomorrow morning, <b>I'll be meeting</b> a client.")), ("Continuing through a later point", "さらに遅い時点まで継続", "未来の時点 + 人 + will + <b>still be</b> + 動詞-ing", "Still in progress", "まだ進行中", ("At six, <b>I'll still be traveling</b>.", "At eight, <b>I'll still be working</b>."))),
-        ("I'll be meeting or I'm meeting?", "I'll be meeting と I'm meeting", "I'll be meeting places you inside the future activity. I'm meeting focuses on a firm arrangement.", "I'll be meeting は未来の活動の途中に視点を置きます。I'm meeting は確定した予定に焦点を当てます。", ("Future activity", "未来の活動の途中", "At ten, I'll be meeting a client.", "10時には顧客と会っているところです。"), ("Firm arrangement", "確定した予定", "I'm meeting a client at ten.", "10時に顧客と会う予定です。")),
+        ("I'll be meeting or I'm meeting?", "I'll be meeting と I'm meeting", "I'll be meeting places you inside the future activity. I'm meeting focuses on a firm arrangement.", "「I'll be meeting」 は未来の活動の途中に視点を置きます。「I'm meeting」 は確定した予定に焦点を当てます。", ("Future activity", "未来の活動の途中", "At ten, I'll be meeting a client.", "10時には顧客と会っているところです。"), ("Firm arrangement", "確定した予定", "I'm meeting a client at ten.", "10時に顧客と会う予定です。")),
     ),
     79: semantic_spec(
         (("Use this to give an expected ready state by a deadline.", "期限までに準備できる見込みを伝えるときに使います。"), ("Use this to add honest uncertainty about extra time.", "追加でかかる時間が不確かだと正直に伝えるときに使います。")),
@@ -327,7 +327,7 @@ SPECS = {
             tuple((jp, pre, cor, dis, suf) for jp, pre, cor, dis, suf in (("返事が来たら{t}すぐ始めます{/t}。", "I'll start as soon as I ", "hear", "will hear", " back."), ("届いたら{t}すぐ電話します{/t}。", "I'll call as soon as it ", "arrives", "will arrive", "."), ("準備できたら{t}すぐ送ります{/t}。", "I'll send it as soon as it ", "is", "will be", " ready."), ("返事が来たら{t}すぐ予約します{/t}。", "I'll book it as soon as they ", "reply", "will reply", "."))),
         ),
         (("Present form after once", "once のあとは現在形", "Let me know + <b>once</b> + 主語 + <b>現在形</b>", "Future trigger", "未来のきっかけ", ("Let me know <b>once it's ready</b>.", "Let me know <b>once the order arrives</b>.")), ("Will only in the action clause", "will は行動の節だけ", "<b>I'll + 動詞</b> + as soon as + 主語 + <b>現在形</b>", "Action after trigger", "きっかけ後の行動", ("<b>I'll start</b> as soon as I <b>hear</b> back.", "<b>I'll call</b> as soon as it <b>arrives</b>."))),
-        ("As soon as or the moment?", "as soon as と the moment", "As soon as is neutral and clear. The moment adds stronger immediacy in conversation.", "as soon as は中立的で明確です。the moment は会話で、さらに強い即時性を加えます。", ("Neutral", "中立的", "I'll call as soon as it arrives.", "届いたらすぐ電話します。"), ("More immediate", "さらに即時", "I'll call the moment it arrives.", "届いた瞬間に電話します。")),
+        ("As soon as or the moment?", "as soon as と the moment", "As soon as is neutral and clear. The moment adds stronger immediacy in conversation.", "「as soon as」 は中立的で明確です。「the moment」 は会話で、さらに強い即時性を加えます。", ("Neutral", "中立的", "I'll call as soon as it arrives.", "届いたらすぐ電話します。"), ("More immediate", "さらに即時", "I'll call the moment it arrives.", "届いた瞬間に電話します。")),
     ),
 }
 

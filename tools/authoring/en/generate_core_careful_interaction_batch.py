@@ -70,7 +70,7 @@ LESSONS = {
             ("{t}Would you mind checking{/t} the file?", "ファイルを{t}確認していただけますか{/t}？", "Would you mind|checking|the file?"),
             ("{t}Would you mind sending{/t} the email?", "メールを{t}送っていただけますか{/t}？", "Would you mind|sending|the email?"),
         ),
-        rules=(("Use could plus a plain verb for a polite everyday request.", "日常的な丁寧なお願いでは、could の後ろに動詞の原形を置きます。"), ("After Would you mind, use the -ing form, not to plus a verb.", "Would you mind の後ろは to＋動詞ではなく、-ing 形にします。")),
+        rules=(("Use could plus a plain verb for a polite everyday request.", "日常的な丁寧なお願いでは、could の後ろに動詞の原形を置きます。"), ("After Would you mind, use the -ing form, not to plus a verb.", "「Would you mind」 の後ろは to＋動詞ではなく、-ing 形にします。")),
         prompt=("Ask me to do one small thing, then ask the same favor more carefully.", "小さなお願いを一つしてから、同じことをさらに丁寧に頼んでください。"),
     ),
     61: dict(
@@ -89,7 +89,7 @@ LESSONS = {
             ("{t}Not at all, take one{/t}.", "{t}全く構いません。一枚撮ってください{/t}。", "Not at all,|take one."),
         ),
         omit_reorder=(2,),
-        rules=(("Keep normal statement order after if I: if I sit, not if sit I.", "if I の後ろは普通の文の語順にし、if I sit とします。"), ("Not at all means there is no problem, so the permission answer is positive.", "Not at all は「全く構いません」という意味なので、許可する答えです。")),
+        rules=(("Keep normal statement order after if I: if I sit, not if sit I.", "「if I」 の後ろは普通の文の語順にし、「if I sit」 とします。"), ("Not at all means there is no problem, so the permission answer is positive.", "「Not at all」 は「全く構いません」という意味なので、許可する答えです。")),
         prompt=("Answer one permission request from me, then ask permission for one action.", "私からの許可のお願いに答えてから、自分の行動について許可を求めてください。"),
     ),
     62: dict(
@@ -107,7 +107,7 @@ LESSONS = {
             ("{t}Could you tell me when the meeting starts{/t}?", "{t}会議がいつ始まるか教えてもらえますか{/t}？", "Could you tell me|when|the meeting starts?"),
             ("{t}Could you tell me when the café closes{/t}?", "{t}カフェがいつ閉まるか教えてもらえますか{/t}？", "Could you tell me|when|the café closes?"),
         ),
-        rules=(("After Do you know where, return to statement order: the station is.", "Do you know where の後ろは普通の語順に戻し、the station is とします。"), ("After when, keep the complete subject before its verb: the next train leaves.", "when の後ろは、主語全体を動詞の前に置き、the next train leaves とします。")),
+        rules=(("After Do you know where, return to statement order: the station is.", "「Do you know where」 の後ろは普通の語順に戻し、「the station is」 とします。"), ("After when, keep the complete subject before its verb: the next train leaves.", "when の後ろは、主語全体を動詞の前に置き、「the next train leaves」 とします。")),
         prompt=("Ask me where one place is, then ask when one event starts.", "場所を一つたずねてから、出来事がいつ始まるか聞いてください。"),
     ),
     63: dict(
@@ -143,7 +143,7 @@ LESSONS = {
             ("{t}Have you tried charging{/t} it?", "{t}充電してみましたか{/t}？", "Have you tried|charging|it?"),
             ("{t}Have you tried opening{/t} it another way?", "別の方法で{t}開けてみましたか{/t}？", "Have you tried|opening|it another way?"),
         ),
-        rules=(("For a thing that refuses to work, use won't plus a plain verb; this is not future time.", "物がどうしても動かないときは、未来ではなく won't＋動詞の原形を使います。"), ("After Have you tried, use the -ing form for a possible fix.", "Have you tried の後ろは、試す対処を -ing 形にします。")),
+        rules=(("For a thing that refuses to work, use won't plus a plain verb; this is not future time.", "物がどうしても動かないときは、未来ではなく 「won't」＋動詞の原形を使います。"), ("After Have you tried, use the -ing form for a possible fix.", "「Have you tried」 の後ろは、試す対処を -ing 形にします。")),
         prompt=("Suggest one fix for my problem, then ask for help with another problem.", "私の不具合に対処法を一つ提案してから、別の不具合について助けを求めてください。"),
     ),
     65: dict(
@@ -162,7 +162,7 @@ LESSONS = {
             ("It {t}was taken from{/t} the car.", "それは車{t}から取られました{/t}。", "It|was taken from|the car."),
         ),
         omit_reorder=(1,),
-        rules=(("Use was plus the past participle when the unknown person who did it is not the point.", "した人が不明または重要でないときは、was＋過去分詞を使います。"), ("Keep taken from together to name the source or location.", "取られた元の場所を言うときは taken from をひとまとまりで使います。")),
+        rules=(("Use was plus the past participle when the unknown person who did it is not the point.", "した人が不明または重要でないときは、was＋過去分詞を使います。"), ("Keep taken from together to name the source or location.", "取られた元の場所を言うときは 「taken from」 をひとまとまりで使います。")),
         prompt=("Make an imagined theft report, then say where the item was taken from.", "想像上の盗難届を作り、品物がどこから取られたか伝えてください。"),
     ),
     66: dict(
@@ -180,7 +180,7 @@ LESSONS = {
             ("{t}What would you do if you had more time{/t}?", "{t}もっと時間があったら何をしますか{/t}？", "What would you do|if|you had more time?"),
             ("{t}What would you do if you could work anywhere{/t}?", "{t}どこでも働けたら何をしますか{/t}？", "What would you do|if|you could work anywhere?"),
         ),
-        rules=(("For an unreal situation now, use a past form after if and would in the result.", "今の非現実的な想像では、if の後ろに過去形、結果に would を使います。"), ("Keep What would you do at the front, then put the imaginary condition after if.", "What would you do を文頭に置き、その後ろに if＋想像の条件を続けます。")),
+        rules=(("For an unreal situation now, use a past form after if and would in the result.", "今の非現実的な想像では、if の後ろに過去形、結果に 「would」 を使います。"), ("Keep What would you do at the front, then put the imaginary condition after if.", "「What would you do」 を文頭に置き、その後ろに if＋想像の条件を続けます。")),
         prompt=("Imagine one change to your life, then ask what I would do in another imaginary situation.", "生活の変化を一つ想像してから、別の想像の状況で私なら何をするか聞いてください。"),
     ),
     67: dict(
@@ -198,7 +198,7 @@ LESSONS = {
             ("{t}I wish I could travel more{/t}.", "{t}もっと旅行できたらいいのに{/t}。", "I wish|I could|travel more."),
             ("{t}I wish I could work from home{/t}.", "{t}在宅勤務ができたらいいのに{/t}。", "I wish|I could|work from home."),
         ),
-        rules=(("After wish, use had for a present situation that is not true now.", "wish の後ろでは、今は事実でない状況を had で表します。"), ("Use could plus a plain verb for an ability or possibility you do not have now.", "今はない能力や可能性には could＋動詞の原形を使います。")),
+        rules=(("After wish, use had for a present situation that is not true now.", "wish の後ろでは、今は事実でない状況を had で表します。"), ("Use could plus a plain verb for an ability or possibility you do not have now.", "今はない能力や可能性には 「could」＋動詞の原形を使います。")),
         prompt=("Name one thing you wish you had and one thing you wish you could do.", "あればいいと思うものと、できればいいと思うことを一つずつ話してください。"),
     ),
     68: dict(
@@ -235,7 +235,7 @@ LESSONS = {
             ("{t}She told me she'd help tomorrow{/t}.", "{t}彼女は明日手伝うと私に言いました{/t}。", "She told me|she'd|help tomorrow."),
         ),
         omit_choice=(1,),
-        rules=(("After a past reporting verb, step am or is back to was when you report the earlier words.", "過去の発言を伝えるときは、am・is を was に一段戻します。"), ("Tell needs a person: told me. Then use would, often contracted to 'd, for the later action.", "tell には人が必要なので told me とします。その後の行動は would（通常 'd）で表します。")),
+        rules=(("After a past reporting verb, step am or is back to was when you report the earlier words.", "過去の発言を伝えるときは、am・is を was に一段戻します。"), ("Tell needs a person: told me. Then use would, often contracted to 'd, for the later action.", "tell には人が必要なので 「told me」 とします。その後の行動は would（通常 'd）で表します。")),
         prompt=("Report one thing someone said, then one thing they said they would do.", "誰かが言ったことと、その人がすると言ったことを一つずつ伝えてください。"),
     ),
     70: dict(
@@ -253,7 +253,7 @@ LESSONS = {
             ("{t}He asked me not to call{/t} today.", "{t}彼は今日電話しないよう私に頼みました{/t}。", "He asked me|not to call|today."),
             ("{t}She asked me not to open{/t} the door.", "{t}彼女はドアを開けないよう私に頼みました{/t}。", "She asked me|not to open|the door."),
         ),
-        rules=(("Tell needs the person before to plus the instruction: told me to wait.", "tell は人を必要とし、told me to wait の順にします。"), ("For a negative request, put not before to plus the plain verb: asked me not to mention it.", "否定のお願いは、to＋動詞の前に not を置き、asked me not to mention it とします。")),
+        rules=(("Tell needs the person before to plus the instruction: told me to wait.", "tell は人を必要とし、「told me to wait」 の順にします。"), ("For a negative request, put not before to plus the plain verb: asked me not to mention it.", "否定のお願いは、to＋動詞の前に not を置き、「asked me not to mention it」 とします。")),
         prompt=("Relay one instruction you received, then one thing someone asked you not to do.", "受けた指示と、しないよう頼まれたことを一つずつ伝えてください。"),
     ),
 }
@@ -345,7 +345,7 @@ SPECS = {
         ("Tell needs a person", "tell には人が必要", "He <b>told me</b> + he'd + 動詞", "Report a later action", "後の行動を伝える", ("He <b>told me he'd call back</b>.", "She <b>told me she'd help</b>.")),
         ("A summary or the exact words?", "要約・一字一句", "Use ordinary reported speech for a summary. Add “word for word” only when the wording is exact.", "普通の間接話法は要約です。言葉が完全に同じときだけ「word for word」を加えます。", ("Summary", "要約", "She said she was busy.", "彼女は忙しいと言っていました。"), ("Exact wording", "一字一句同じ", "That's what she said, word for word.", "それが彼女の言った言葉そのままです。"))),
     70: standard_spec(70,
-        ("Use told plus a person and to for a positive instruction.", "するようにという指示には、told＋人＋to を使います。"), ("Use asked plus a person and not to for a negative request.", "しないようにというお願いには、asked＋人＋not to を使います。"),
+        ("Use told plus a person and to for a positive instruction.", "するようにという指示には、told＋人＋to を使います。"), ("Use asked plus a person and not to for a negative request.", "しないようにというお願いには、asked＋人＋「not to」 を使います。"),
         ("Relay one instruction someone gave you.", "誰かから受けた指示を一つ伝えてください。"), ("Relay one thing someone asked you not to do.", "しないよう頼まれたことを一つ伝えてください。"),
         (("彼女は待つよう{t}私に言いました{/t}。", "She ", "told me", "said me", " to wait here."), ("彼は後で折り返すよう{t}私に言いました{/t}。", "He ", "told me", "said me", " to call back later."), ("彼女は早く来るよう{t}私に言いました{/t}。", "She ", "told me", "said me", " to come early."), ("彼はメールを確認するよう{t}私に言いました{/t}。", "He ", "told me", "said me", " to check the email.")),
         (("彼はそのことを{t}言わないよう{/t}私に頼みました。", "He asked me ", "not to mention", "to mention", " it."), ("彼女はファイルを{t}共有しないよう{/t}私に頼みました。", "She asked me ", "not to share", "to share", " the file."), ("彼は今日{t}電話しないよう{/t}私に頼みました。", "He asked me ", "not to call", "to call", " today."), ("彼女はドアを{t}開けないよう{/t}私に頼みました。", "She asked me ", "not to open", "to open", " the door.")),

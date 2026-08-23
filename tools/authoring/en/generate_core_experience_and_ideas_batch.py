@@ -55,8 +55,8 @@ LESSONS = {
         # already retrieve the complete frame, so omit that low-value choice.
         omit_choice=(1, 2),
         rules=(
-            ("Put ever before the past participle to ask about any time up to now.", "ever は過去分詞の前に置き、今までのどこかの時点での経験を聞きます。"),
-            ("Put never before the past participle, then keep but I'd like to as the positive close.", "never は過去分詞の前に置き、but I'd like to を前向きな結びとして続けます。"),
+            ("Put ever before the past participle to ask about any time up to now.", "「ever」 は過去分詞の前に置き、今までのどこかの時点での経験を聞きます。"),
+            ("Put never before the past participle, then keep but I'd like to as the positive close.", "「never」 は過去分詞の前に置き、「but I'd like to」 を前向きな結びとして続けます。"),
         ),
         prompt=("Tell me one thing you have never tried, then ask about my experience.", "まだしたことがないことを一つ話してから、私の経験も聞いてください。"),
     ),
@@ -80,7 +80,7 @@ LESSONS = {
         ),
         omit_choice=(1,),
         rules=(
-            ("Put already between have and the past participle in an affirmative update.", "肯定の進捗報告では、already を have と過去分詞の間に置きます。"),
+            ("Put already between have and the past participle in an affirmative update.", "肯定の進捗報告では、「already」 を have と過去分詞の間に置きます。"),
             ("Put yet at the end of a neutral question about whether something is done.", "完了したかを普通に確認する質問では、yet を文末に置きます。"),
         ),
         prompt=("Give me one real update, then ask whether one other task is done.", "実際の進捗を一つ伝えてから、別の作業が終わったか聞いてください。"),
@@ -128,8 +128,8 @@ LESSONS = {
             ("{t}I've been here for{/t} a day.", "ここには{t}1日います{/t}。", "I've been|here|for|a day."),
         ),
         rules=(
-            ("Keep how long at the front and use have been for a stay continuing now.", "how long を文頭に置き、今も続く滞在には have been を使います。"),
-            ("Use for with a length of time and since with a starting point.", "期間の長さには for、始まった時点には since を使います。"),
+            ("Keep how long at the front and use have been for a stay continuing now.", "「how long」 を文頭に置き、今も続く滞在には 「have been」 を使います。"),
+            ("Use for with a length of time and since with a starting point.", "期間の長さには for、始まった時点には 「since」 を使います。"),
         ),
         prompt=("Tell me how long you have been where you live, then ask me too.", "今住んでいる場所にどのくらいいるか答えてから、私にも聞いてください。"),
     ),
@@ -153,7 +153,7 @@ LESSONS = {
         ),
         rules=(
             ("Build the continuing activity with have been plus the -ing form.", "今まで続く活動は have been と -ing 形で作ります。"),
-            ("State the cause first, then use that's why before the effect you feel now.", "原因を先に伝え、今の結果の前に that's why を置きます。"),
+            ("State the cause first, then use that's why before the effect you feel now.", "原因を先に伝え、今の結果の前に 「that's why」 を置きます。"),
         ),
         prompt=("Answer honestly; if nothing has continued for long today, say that instead.", "正直に答え、今日は長く続けていることがなければ、代わりにそう伝えましょう。"),
     ),
@@ -178,8 +178,8 @@ LESSONS = {
         omit_choice=(1, 2),
         omit_reorder=(1,),
         rules=(
-            ("Use have plus finished for completed work that matters to the update now.", "今の進捗に関係する完了済みの作業には have と finished を使います。"),
-            ("Put still before need to when the task remains unfinished.", "作業が残っているときは、need to の前に still を置きます。"),
+            ("Use have plus finished for completed work that matters to the update now.", "今の進捗に関係する完了済みの作業には have と 「finished」 を使います。"),
+            ("Put still before need to when the task remains unfinished.", "作業が残っているときは、「need to」 の前に still を置きます。"),
         ),
         prompt=("Use a real countable project if you have one; otherwise say you do not have one right now.", "数えられる実際の作業があれば使い、今なければそう伝えましょう。"),
     ),
@@ -202,7 +202,7 @@ LESSONS = {
             ("My client was busy, {t}so{/t} we moved the meeting.", "顧客が忙しかったです。{t}だから{/t}会議を変更しました。", "My client|was busy,|so|we moved the meeting."),
         ),
         rules=(
-            ("Put because before the reason: result first, reason second.", "because は理由の前に置き、結果、理由の順にします。"),
+            ("Put because before the reason: result first, reason second.", "「because」 は理由の前に置き、結果、理由の順にします。"),
             ("Put so before the result: reason first, result second.", "so は結果の前に置き、理由、結果の順にします。"),
         ),
         prompt=("Use a real changed plan if you have one; otherwise say that none changed and ask about mine.", "実際に変わった予定があれば使い、なければ何も変わらなかったと伝えて私の予定を聞きましょう。"),
@@ -227,7 +227,7 @@ LESSONS = {
         ),
         rules=(
             ("Name the person first, then put who and the describing action after the noun.", "人を先に置き、そのあとに who と説明する動作を続けます。"),
-            ("Name the thing first, then put that and what it does after the noun.", "物を先に置き、そのあとに that とその働きを続けます。"),
+            ("Name the thing first, then put that and what it does after the noun.", "物を先に置き、そのあとに 「that」 とその働きを続けます。"),
         ),
         prompt=("Describe one real person and one object without saying their names first.", "名前を先に言わずに、実在する人と物を一つずつ説明してください。"),
     ),
@@ -251,7 +251,7 @@ LESSONS = {
         ),
         rules=(
             ("Use but between two equal statements when the second limits the first.", "二つの対等な文の間に but を置き、後半で前半に制限を加えます。"),
-            ("Put even though before the background fact, then give the surprising main point.", "背景になる事実の前に even though を置き、そのあとに意外な要点を伝えます。"),
+            ("Put even though before the background fact, then give the surprising main point.", "背景になる事実の前に 「even though」 を置き、そのあとに意外な要点を伝えます。"),
         ),
         prompt=("Describe one real option with a good point and a limitation, then ask mine.", "実際の選択肢についてよい点と問題点を話してから、私の意見も聞いてください。"),
     ),
@@ -275,8 +275,8 @@ LESSONS = {
         ),
         omit_choice=(2,),
         rules=(
-            ("Use the present form after if, then put will in the result clause.", "if のあとは現在形にし、結果の節に will を置きます。"),
-            ("Keep will in the question, but still use the present form after if.", "質問には will を残しますが、if のあとはやはり現在形にします。"),
+            ("Use the present form after if, then put will in the result clause.", "if のあとは現在形にし、結果の節に 「will」 を置きます。"),
+            ("Keep will in the question, but still use the present form after if.", "質問には 「will」 を残しますが、if のあとはやはり現在形にします。"),
         ),
         prompt=("Give a real plan if you have one; otherwise say you have not decided yet, then ask about mine.", "実際の予定があれば話し、まだ決めていなければそう伝えてから私の予定を聞きましょう。"),
     ),
@@ -299,8 +299,8 @@ LESSONS = {
             ("{t}Unless{/t} the soil is wet, {t}I'll{/t} water the plants.", "土が湿っていない{t}かぎり{/t}、{t}植物に水をやります{/t}。", "Unless|the soil is wet,|I'll|water the plants."),
         ),
         rules=(
-            ("Use the present form after when even though the main action is in the future.", "未来の話でも、when のあとは現在形を使います。"),
-            ("Unless means if not; use a positive present form after it.", "unless は if not の意味で、そのあとは肯定の現在形を使います。"),
+            ("Use the present form after when even though the main action is in the future.", "未来の話でも、「when」 のあとは現在形を使います。"),
+            ("Unless means if not; use a positive present form after it.", "「unless」 は 「if not」 の意味で、そのあとは肯定の現在形を使います。"),
         ),
         prompt=("Use a real contact plan if you have one; otherwise say you have none, then ask about mine.", "実際の連絡予定があれば使い、なければ予定がないと伝えてから私の予定を聞きましょう。"),
     ),
@@ -324,7 +324,7 @@ LESSONS = {
         ),
         rules=(
             ("Use to plus the plain verb to answer why you went somewhere.", "出かけた目的を答えるときは、to のあとに動詞の原形を置きます。"),
-            ("Keep the best way to and is to as the two anchors around the goal and method.", "目的と方法をはさむ二つの軸として、the best way to と is to を保ちます。"),
+            ("Keep the best way to and is to as the two anchors around the goal and method.", "目的と方法をはさむ二つの軸として、「the best way to」 と 「is to」 を保ちます。"),
         ),
         prompt=("If you went somewhere for a reason, say why; otherwise say you did not, then ask me for one best method.", "目的があって出かけたなら理由を話し、なければ出かけていないと伝えてから、一番よい方法を私に聞きましょう。"),
     ),
@@ -507,7 +507,7 @@ SPECS = {
     ),
     54: semantic_spec(
         (
-            ("Use because after a result when you want to add its reason.", "結果を話したあと、その理由を加えるときに because を使います。"),
+            ("Use because after a result when you want to add its reason.", "結果を話したあと、その理由を加えるときに 「because」 を使います。"),
             ("Use so after a reason when you want to add its result.", "理由を話したあと、その結果を加えるときに so を使います。"),
         ),
         (

@@ -46,7 +46,7 @@ LESSONS = {
         ),
         omit_choice=(1, 2),
         omit_reorder=(1, 2),
-        rules=(("Keep I with am; use I'm in conversation, then add a name, state, or job.", "I と am を一緒にして会話では I'm を使い、そのあとに名前・状態・仕事を続けます。"), ("Use My name is for a full name, or say first name or family name when you need to be specific.", "名前全体には My name is を使い、区別するときは first name または family name を使います。")),
+        rules=(("Keep I with am; use I'm in conversation, then add a name, state, or job.", "I と am を一緒にして会話では I'm を使い、そのあとに名前・状態・仕事を続けます。"), ("Use My name is for a full name, or say first name or family name when you need to be specific.", "名前全体には 「My name is」 を使い、区別するときは 「first name」 または 「family name」 を使います。")),
         prompt=("Introduce yourself with your name and one more true detail.", "名前と、もう一つ本当の情報を使って自己紹介してください。"),
     ),
     2: dict(
@@ -86,7 +86,7 @@ LESSONS = {
         omit_choice=(1, 2),
         omit_reorder=(1, 2),
         rules=(("Move is before this, then add a complete thing, owner, or description.", "is を this の前に移し、そのあとに物・持ち主・説明を一まとまりで続けます。"), ("Move are before you, then add an identity, state, origin, or availability.", "are を you の前に移し、そのあとに身分・状態・出身・予定を一まとまりで続けます。")),
-        prompt=("Ask me one Is this question and one Are you question.", "Is this の質問と Are you の質問を一つずつしてください。"),
+        prompt=("Ask me one Is this question and one Are you question.", "「Is this」 の質問と 「Are you」 の質問を一つずつしてください。"),
     ),
     7: dict(
         slug="theres-a-cafe-near-here", title="There's a café near here", ko="근처에 카페가 있어요", ja="この近くにカフェがあります",
@@ -104,7 +104,7 @@ LESSONS = {
             ("{t}It's next to{/t} the café.", "{t}カフェの隣です{/t}。", "It's|next to|the café."),
         ),
         omit_choice=(1,),
-        rules=(("Use There's a as one chunk — There's an before a vowel sound.", "近くに場所が一つあると伝えるときは There's a をひとまとまりで使い、母音の音の前では There's an にします。"), ("Keep next to with the place; the word before the place can be the, my or that.", "next to は場所と一緒に使い、場所の前には the・my・that のいずれかを置きます。")),
+        rules=(("Use There's a as one chunk — There's an before a vowel sound.", "近くに場所が一つあると伝えるときは 「There's a」 をひとまとまりで使い、母音の音の前では 「There's an」 にします。"), ("Keep next to with the place; the word before the place can be the, my or that.", "「next to」 は場所と一緒に使い、場所の前には the・my・that のいずれかを置きます。")),
         prompt=("What's one place you wish you had near your home? Why?", "家の近くにあったらいいと思う場所は何ですか？理由も教えてください。"),
     ),
     8: dict(
@@ -123,7 +123,7 @@ LESSONS = {
             ("{t}No, it isn't.{/t} It's not rainy.", "{t}いいえ、違います。{/t}雨ではありません。", "No,|it isn't.|It's not|rainy."),
         ),
         omit_reorder=(2,),
-        rules=(("Weather questions still need it: put is before it.", "天気の質問にも it が必要で、is を it の前に置きます。"), ("Answer with it is after yes and it isn't after no.", "yes のあとは it is、no のあとは it isn't で答えます。")),
+        rules=(("Weather questions still need it: put is before it.", "天気の質問にも it が必要で、is を it の前に置きます。"), ("Answer with it is after yes and it isn't after no.", "yes のあとは 「it is」、no のあとは 「it isn't」 で答えます。")),
         prompt=("What kind of weather gives you energy? What do you like to do then?", "どんな天気だと元気が出ますか？そんな日は何をするのが好きですか？"),
     ),
     9: dict(
@@ -180,7 +180,7 @@ LESSONS = {
             ("{t}It's behind{/t} the hotel.", "{t}ホテルの後ろです{/t}。", "It's|behind|the hotel."),
             ("{t}It's behind{/t} the café.", "{t}カフェの後ろです{/t}。", "It's|behind|the café."),
         ),
-        rules=(("Keep Where's together, then add the specific place with the.", "Where's をひとまとまりにして、the をつけた場所を続けます。"), ("Keep the place phrase together: behind the post office.", "場所の表現は behind the post office のようにひとまとまりで覚えます。")),
+        rules=(("Keep Where's together, then add the specific place with the.", "Where's をひとまとまりにして、the をつけた場所を続けます。"), ("Keep the place phrase together: behind the post office.", "場所の表現は 「behind the post office」 のようにひとまとまりで覚えます。")),
         prompt=("What's one place in your area that's hard to find? How would you explain where it is?", "近所で見つけにくい場所はどこですか？場所をどう説明しますか？"),
     ),
 }
@@ -353,7 +353,7 @@ _simple_spec(7,
 )
 
 _simple_spec(8,
-    (("Use this to ask whether one weather description is true today.", "今日の天気について、一つの説明が当てはまるか聞くときに使います。"), ("Answer with Yes, it is or No, it isn't.", "Yes, it is または No, it isn't で答えます。")),
+    (("Use this to ask whether one weather description is true today.", "今日の天気について、一つの説明が当てはまるか聞くときに使います。"), ("Answer with Yes, it is or No, it isn't.", "「Yes, it is」 または 「No, it isn't」 で答えます。")),
     (("Now use “Is it ___ today?” to ask me one real weather question.", "では、「Is it ___ today?」を使って、今日の天気について一つ質問してください。"), ("Answer “Is it cold today?” with a true short answer, then add one weather detail.", "「Is it cold today?」に本当の短い答えを言い、天気の情報を一つ加えてください。")),
     ((
         ("今日は{t}寒いですか{/t}？", "", "Is it", "It's", " cold today?"),
@@ -424,10 +424,10 @@ _simple_spec(2,
     (("Use “I'm/He's/She's/They're from ___.” to say where someone is from.", "「I'm / He's / She's / They're from ___.」で人の出身地を伝えてください。"), ("Use “I/He/She/They live(s) in ___.” to say where someone lives.", "「I / He / She / They live(s) in ___.」で人が住んでいる場所を伝えてください。")),
     ((), ()),
     (("Match be to the person", "人に合わせて be を選ぶ", "I am / he・she is / they are + from", "Origin", "出身地", ("I'm from Osaka.", "She's from Kyoto.", "They're from Australia.")), ("Add s only with he or she", "he・she のときだけ s", "I・they live / he・she lives + in + 場所", "Current home", "今住んでいる場所", ("I live in Tokyo.", "He lives in Osaka.", "They live in Fukuoka."))),
-    ("From and live in are different", "from と live in の違い", "From tells us where a person comes from. Live in tells us where that person lives now; the two places may be different.", "from は出身地、live in は今住んでいる場所を表します。二つの場所は違うこともあります。", ("Origin", "出身地", "I'm from Osaka.", "大阪出身です。"), ("Home now", "今の居住地", "I live in Tokyo.", "東京に住んでいます。")),
+    ("From and live in are different", "from と live in の違い", "From tells us where a person comes from. Live in tells us where that person lives now; the two places may be different.", "from は出身地、「live in」 は今住んでいる場所を表します。二つの場所は違うこともあります。", ("Origin", "出身地", "I'm from Osaka.", "大阪出身です。"), ("Home now", "今の居住地", "I live in Tokyo.", "東京に住んでいます。")),
 )
 _simple_spec(3,
-    (("Use an Is this question to check a thing, description, or situation.", "Is this の質問で物・特徴・状況を確かめます。"), ("Use an Are you question to check a person's role, state, origin, or availability.", "Are you の質問で人の立場・状態・出身・都合を確かめます。")),
+    (("Use an Is this question to check a thing, description, or situation.", "「Is this」 の質問で物・特徴・状況を確かめます。"), ("Use an Are you question to check a person's role, state, origin, or availability.", "「Are you」 の質問で人の立場・状態・出身・都合を確かめます。")),
     (("Use “Is this ___?” to ask one real question about something near you.", "「Is this ___?」で近くの物について本当の質問を一つしてください。"), ("Use “Are you ___?” to ask one appropriate question about the tutor.", "「Are you ___?」で先生について適切な質問を一つしてください。")),
     ((), ()),
     (("Put the complement after Is this", "Is this の後ろに内容を置く", "Is this + 所有・名詞句・形容詞?", "Check a thing", "物を確かめる", ("Is this your bag?", "Is this the right key?", "Is this yours?", "Is this okay?")), ("Put the complement after Are you", "Are you の後ろに内容を置く", "Are you + 役割・状態・from・都合?", "Check about a person", "人について確かめる", ("Are you a student?", "Are you ready?", "Are you from Osaka?", "Are you free tomorrow?"))),
