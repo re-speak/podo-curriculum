@@ -4,7 +4,7 @@ metadata:
   slug: 05-butterflies
 
 spec:
-  week: 5                      # → CLASS_WEEK. 코스 안에서 1..N 연속이어야 한다.
+  week: 4                      # → CLASS_WEEK. 코스 안에서 1..N 연속이어야 한다.
 
   title:
     ko: 설렘
