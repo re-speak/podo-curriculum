@@ -697,13 +697,13 @@ VOCAB = {
         new="bill|請求書",
         recycled="",
         assumed="email|メール; report|レポート; table|テーブル; task|作業",
-        receptive="almost done|もうすぐ終わる; send|送る; finish|終える; launch|公開; just now|たった今; That's a relief.|ほっとしました。; Great. Let's go.|よかった。行きましょう。",
+        receptive="almost done|もうすぐ終わる; send|送る; finish|終える; launch|公開; just now|たった今; That's a relief.|ほっとしました。; Great. Let\'s go.|よかった。行きましょう。",
     ),
     50: dict(
         new="last summer|去年の夏; two months ago|2か月前",
         recycled="Canada|カナダ|CORE-2; café|カフェ|CORE-7",
         assumed="Kyoto|京都; museum|美術館; last year|去年; Friday|金曜日",
-        receptive="exhibit|展示; It's been a while.|久しぶりです。; back in 2022|振り返ると2022年に; Sure. I'll tell you about it.|もちろん。話しますね。; Let's go this weekend.|今週末に行きましょう。",
+        receptive="exhibit|展示; It's been a while.|久しぶりです。; back in 2022|振り返ると2022年に; Sure. I'll tell you about it.|もちろん。話しますね。; Let\'s go this weekend.|今週末に行きましょう。",
     ),
     51: dict(
         new="neighborhood|地域",
@@ -859,14 +859,14 @@ DIALOGUES = {
     ),
     50: dict(
         model=("Friend", 0, 0, ("You went to Kyoto last year, right? I'm planning a trip there.", "去年京都に行きましたよね？ 私も旅行を計画しています。"), ("Not yet. When did you go?", "まだありません。いつ行きましたか？"), ("I'd love to hear what you liked.", "気に入ったものをぜひ聞きたいです。"), ("Sure. I'll tell you about it.", "もちろん。話しますね。")),
-        wild=("Neighbor", 3, 2, ("You said you visited the new museum exhibit on Friday.", "金曜日に美術館の新しい展示を見たと言っていましたね。"), ("Not yet. When did you go?", "まだありません。いつ行きましたか？"), ("Is the exhibit still open?", "その展示はまだ開いていますか？"), ("Yes. Let's go this weekend.", "はい。今週末に行きましょう。")),
+        wild=("Neighbor", 3, 2, ("You said you visited the new museum exhibit on Friday.", "金曜日に美術館の新しい展示を見たと言っていましたね。"), ("Not yet. When did you go?", "まだありません。いつ行きましたか？"), ("Is the exhibit still open?", "その展示はまだ開いていますか？"), ("Yes. Let\'s go this weekend.", "はい。今週末に行きましょう。")),
     ),
     51: dict(
         model=("Neighbor", 0, 0, ("I just moved to Tokyo.", "東京に引っ越してきたばかりです。"), ("Only a week. What about you?", "まだ1週間です。あなたは？"), ("Then you know the neighborhood well.", "では、この地域をよく知っていますね。"), ("I do. I really like it.", "はい。とても気に入っています。")),
         wild=("Volunteer", 3, 2, ("I help new volunteers settle into this neighborhood.", "新しいボランティアがこの地域に慣れるのを手伝っています。"), ("I've been here since I was a kid, on and off. What about you?", "子どものころから、時々離れながらここにいます。あなたは？"), ("The people here are very friendly.", "ここの人たちはとても親切です。"), ("I agree.", "同感です。")),
     ),
     52: dict(
-        model=("Coworker", 0, 0, ("You look tired. What have you been doing?", "疲れて見えます。何をしていたんですか？"), ("Since nine? You've been working nonstop.", "9時からですか？休みなく働いていたんですね。"), ("Let's stop before the next task.", "次の作業の前に止めましょう。"), ("I need a break.", "休憩が必要です。")),
+        model=("Coworker", 0, 0, ("You look tired. What have you been doing?", "疲れて見えます。何をしていたんですか？"), ("Since nine? You've been working nonstop.", "9時からですか？休みなく働いていたんですね。"), ("Let\'s stop before the next task.", "次の作業の前に止めましょう。"), ("I need a break.", "休憩が必要です。")),
         wild=("Volunteer", 2, 2, ("The community hall looks much better.", "公民館がずっときれいになりました。"), ("Since eight? You've been cleaning nonstop.", "8時からですか？休みなく掃除していたんですね。"), ("We're done for today.", "今日は終わりです。"), ("I need a break.", "休憩が必要です。")),
     ),
     53: dict(
@@ -1061,7 +1061,7 @@ for _number in range(48, 60):
     SPECS[_number]["writes"] = REVIEWED_WRITES_48_59[_number]
     _question, _question_ja, _ask_back, _ask_back_ja = REVIEWED_LIVE_48_59[_number]
     LESSONS[_number]["prompt"] = (
-        "Let's talk about this topic. Answer my question, then ask me too.",
+        "Let\'s talk about this topic. Answer my question, then ask me too.",
         "この話題について話しましょう。私の質問に答えて、そのあと私にも聞いてください。",
     )
     LIVE_SCENES[_number] = (
@@ -1287,7 +1287,7 @@ def translate_page(number, part, pattern):
         f"p{part}-translate",
         "Say it in English",
         "英語にしよう",
-        '<p class="section-subtitle"><span class="ko">Read the Japanese, then say it in English.</span>'
+        '<p class="section-subtitle"><span class="ko">Let\'s read the Japanese, then say it in English.</span>'
         '<span class="ja">日本語を見て、英語で言ってみましょう。</span></p>'
         '<div class="tutor-note">Type the learner\'s complete English sentence exactly as they say it.</div>'
         + "".join(blocks),

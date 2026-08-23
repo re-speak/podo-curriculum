@@ -52,14 +52,17 @@ class CoreDailyLifeAndPastBatchTests(unittest.TestCase):
         self.assertEqual(set(batch.NUMBERS), set(range(25, 37)) - {32})
         self.assertEqual(set(batch.LESSONS), set(batch.NUMBERS))
         digest = hashlib.sha256(batch.PRESERVED.read_bytes()).hexdigest()
-        # The pin moved once, on 2026-08-23. CORE-32 is an owner-approved golden
-        # deck, and its rule line named four taught forms bare inside a Japanese
-        # sentence — the citation convention that came across from Korean now
-        # wraps them. The English half of the same line already quoted them, so
-        # the two halves disagreed with each other. Nothing else changed.
+        # The pin moved twice on 2026-08-23, both times to follow a rule the owner
+        # approved after this deck was signed off:
+        #   1. its rule line named four taught forms bare inside a Japanese
+        #      sentence, while the English half of that same line already quoted
+        #      them — the citation convention now wraps both halves;
+        #   2. the approved shared activity scripts moved from a bare imperative
+        #      to the invitational form the tutor-register standard asks for, and
+        #      this golden carries those scripts like every other deck.
         self.assertEqual(
             digest,
-            "44e6b009d354603514b96dd9db242e4dad94303aab6eb9c9e5a32fe44cc54b9d",
+            "813b5f089c7dc4f4992cf9e99d2f5fc88d91349738c7fddc7e298d99e1af5153",
         )
         core32 = vocabulary.parse(batch.PRESERVED.read_text(encoding="utf-8"))["categories"]
         self.assertEqual(

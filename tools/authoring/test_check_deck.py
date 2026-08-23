@@ -1325,7 +1325,7 @@ class LearnerReadsModelTests(unittest.TestCase):
     def test_inviting_the_learner_passes(self):
         for ko in ("이번엔 네 문장을 한 줄씩 소리 내어 읽어 볼까요?",
                    "이번엔 혼자 한 번 읽어 볼까요?",
-                   "Please read each sentence aloud."):
+                   "Let's read each sentence aloud."):
             with self.subTest(ko=ko):
                 self.assertEqual(check_deck.learner_reads_model_issues(self.page(ko)), [])
 

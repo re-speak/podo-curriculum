@@ -135,7 +135,7 @@ DIALOGUES = {
  model=("Server",0,0,("Are you ready to order?","ご注文はお決まりですか？"),("Certainly. Anything to drink?","かしこまりました。お飲み物はいかがですか？"),("Great. I will bring that soon.","かしこまりました。すぐお持ちします。"),("Thank you.","ありがとうございます。")),
  wild=("Server",1,1,("What would you like today?","今日は何になさいますか？"),("Good choice. Would you like anything else?","いいですね。ほかにもご注文はありますか？"),("Of course. I will bring both.","かしこまりました。両方お持ちします。"),("Thanks.","ありがとうございます。"))),
 23: dict(
- model=("Friend",0,0,("Let's order the drinks first.","まず飲み物を注文しましょう。"),("Good. Now let's plan the rest of the meal.","いいですね。では残りの食事を考えましょう。"),("Enough for four people.","4人分あれば十分です。"),("Got it.","分かりました。")),
+ model=("Friend",0,0,("Let\'s order the drinks first.","まず飲み物を注文しましょう。"),("Good. Now let's plan the rest of the meal.","いいですね。では残りの食事を考えましょう。"),("Enough for four people.","4人分あれば十分です。"),("Got it.","分かりました。")),
  wild=("Friend",1,1,("What should we get for the trip?","旅行用に何を買いましょうか？"),("Okay. We should check the other supplies too.","分かりました。ほかの物も確認しましょう。"),("About six bottles altogether.","全部で6本くらいです。"),("I will put them on the list.","リストに入れておきます。"))),
 24: dict(
  model=("Staff",0,0,("The next train leaves from platform thirteen.","次の電車は13番ホームから出ます。"),("Of course: platform one-three.","もちろんです。ホームは1、3です。"),("Yes. I will speak more slowly.","はい。もっとゆっくり話します。"),("Thank you.","ありがとうございます。")),
@@ -507,7 +507,7 @@ def rule_example(pattern):
 
 def read(pid, pattern):
     lines="".join(f'<div class="model-line"><span class="korean">{marks(en)}</span><span class="translation">{marks(jp)}</span></div>' for en,jp,_ in pattern)
-    return section(pid,"Read the sentences","文を読もう",'<p class="section-subtitle"><span class="ko">Please read each sentence aloud.</span><span class="ja">一文ずつ声に出して読んでください。</span></p><div class="model-list">'+lines+'</div>')
+    return section(pid,"Read the sentences","文を読もう",'<p class="section-subtitle"><span class="ko">Let\'s read each sentence aloud.</span><span class="ja">一文ずつ声に出して読んでみましょう。</span></p><div class="model-list">'+lines+'</div>')
 
 
 def reorder(pid, pattern):
@@ -515,7 +515,7 @@ def reorder(pid, pattern):
     for i,(en,jp,chunks) in enumerate(pattern):
         choices="".join(f'<span class="choice" data-item-id="{pid}-{i}-{j}">{esc(c)}</span>' for j,c in enumerate(chunks.split("|")[::-1]))
         blocks.append(f'<div class="task-block"><div class="answer-box small"><span class="answer-label">{esc(strip_marks(jp))}</span><span class="answer-space build-zone" data-sync-id="{pid}-{i}" data-sync-kind="order" data-a="{esc(strip_marks(en))}"></span></div>{choices}</div>')
-    return section(pid,"Build the sentence","文を組み立てよう",'<p class="section-subtitle"><span class="ko">Put the words in order, then say the whole sentence out loud.</span><span class="ja">単語を順番に並べて、文をまるごと声に出して言ってみましょう。</span></p>'+"".join(blocks))
+    return section(pid,"Build the sentence","文を組み立てよう",'<p class="section-subtitle"><span class="ko">Let\'s put the words in order, then say the whole sentence out loud.</span><span class="ja">単語を順番に並べて、文をまるごと声に出して言ってみましょう。</span></p>'+"".join(blocks))
 
 
 BOUND_REORDER_CHIPS = {"a", "an", "the", "er"}
@@ -575,7 +575,7 @@ def fill(pid, pattern, *, hints=None):
                 for ja_hint, en_hint in hint_row
             ) + '</span>'
         blocks.append(f'<div class="task-block"><div class="answer-box"><span class="answer-label">{marks(jp,"target ending")}</span><span class="answer-fill"><span class="korean">{"".join(fields)}</span></span>{hint_html}</div></div>')
-    return section(pid,"Say the complete sentence","文をまるごと言おう",'<p class="section-subtitle"><span class="ko">Say each whole sentence aloud, including the missing words.</span><span class="ja">空欄に入る言葉も含めて、文をまるごと声に出して言ってください。</span></p><div class="tutor-note">Type only the missing words exactly as the learner says them.</div>'+"".join(blocks))
+    return section(pid,"Say the complete sentence","文をまるごと言おう",'<p class="section-subtitle"><span class="ko">Let\'s say each whole sentence aloud, including the missing words.</span><span class="ja">空欄に入る言葉も含めて、文をまるごと声に出して言ってみましょう。</span></p><div class="tutor-note">Type only the missing words exactly as the learner says them.</div>'+"".join(blocks))
 
 
 def translate(pid, pattern, *, hints=None, support_stage=None):
@@ -625,7 +625,7 @@ def translate(pid, pattern, *, hints=None, support_stage=None):
         pid,
         "Say it in English",
         "英語にしよう",
-        '<p class="section-subtitle"><span class="ko">Read the Japanese, then say it in English.</span><span class="ja">日本語を見て、英語で言ってみましょう。</span></p><div class="tutor-note">Type the learner\'s complete English sentence exactly as they say it.</div>'
+        '<p class="section-subtitle"><span class="ko">Let\'s read the Japanese, then say it in English.</span><span class="ja">日本語を見て、英語で言ってみましょう。</span></p><div class="tutor-note">Type the learner\'s complete English sentence exactly as they say it.</div>'
         + "".join(blocks),
         attributes=attributes,
     )

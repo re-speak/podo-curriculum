@@ -133,9 +133,9 @@ FREETALK_PAGES = [
 ]
 FREETALK_STYLE_EN = "Please choose your preferred discussion style."
 FREETALK_STYLE_JA = "希望する会話の進め方を選んでください。"
-REORDER_SCRIPT_EN = "Put the words in order, then say the whole sentence out loud."
+REORDER_SCRIPT_EN = "Let's put the words in order, then say the whole sentence out loud."
 REORDER_SCRIPT_JA = "単語を順番に並べて、文をまるごと声に出して言ってみましょう。"
-TRANSLATE_SCRIPT_EN = "Read the Japanese, then say it in English."
+TRANSLATE_SCRIPT_EN = "Let's read the Japanese, then say it in English."
 TRANSLATE_SCRIPT_JA = "日本語を見て、英語で言ってみましょう。"
 SPAN_TAG = re.compile(r"<span\b[^>]*>|</span>", re.I)
 SPAN_OPEN = re.compile(r"<span\b[^>]*>", re.I)

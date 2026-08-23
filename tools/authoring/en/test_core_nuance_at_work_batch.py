@@ -19,7 +19,7 @@ import generate_core_nuance_at_work_batch as batch
 import vocabulary
 
 EXPECTED = set(batch.NUMBERS)
-CORE82_SHA256 = "6c6e82e766b9dd6693d00836743a9f62c101f714b90bcf59a89ab12e039ba3b8"
+CORE82_SHA256 = "ef2e4f77c900074c8ef8d6373445c6966ada1fc08bbd5c432a4fdf99d6d5e000"
 
 
 class CoreNuanceAtWorkBatchTests(unittest.TestCase):
@@ -73,6 +73,12 @@ class CoreNuanceAtWorkBatchTests(unittest.TestCase):
 
     def test_core82_is_preserved_at_the_reviewed_byte_identity(self):
         source = batch.EXISTING_CORE82.read_bytes()
+        # Bumped again on 2026-08-23: the approved shared activity scripts moved
+        # from a bare imperative to the invitational form the tutor-register
+        # standard now asks for, and this golden carries them like every other
+        # deck. Two of the four scripts had an English half commanding while
+        # their own Japanese half invited (`言ってみましょう`); the two halves of
+        # one line agree again.
         self.assertEqual(hashlib.sha256(source).hexdigest(), CORE82_SHA256)
 
     def test_core82_translation_hints_support_content_without_revealing_the_frame(self):

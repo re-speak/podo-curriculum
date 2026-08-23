@@ -217,14 +217,14 @@ LESSONS = {
         prompt=("Respond to one interpretation, or say you do not have a view yet.", "一つの解釈に答えるか、まだ意見がないと伝えましょう。"),
     ),
     119: dict(
-        slug="lets-just-say-it-didnt-go-well", title="Let's just say it didn't go well",
+        slug="lets-just-say-it-didnt-go-well", title="Let\'s just say it didn't go well",
         ko="그냥 잘 안 됐다고만 해 두죠", ja="うまくいかなかった、とだけ言っておきます",
         goal=("Offer deliberately limited information and let the listener infer the rest.", "意図的に情報を限定し、残りは相手に察してもらいましょう。"),
         p1=rows(
-            ("{t}Let's just say{/t} it didn't go well.", "{t}うまくいかなかった、とだけ言っておきます{/t}。", "Let's just say|it didn't go well."),
-            ("{t}Let's just say{/t} the meeting was difficult.", "{t}会議は大変だった、とだけ言っておきます{/t}。", "Let's just say|the meeting|was difficult."),
-            ("{t}Let's just say{/t} we didn't agree.", "{t}意見が合わなかった、とだけ言っておきます{/t}。", "Let's just say|we didn't agree."),
-            ("{t}Let's just say{/t} the result was disappointing.", "{t}結果は残念だった、とだけ言っておきます{/t}。", "Let's just say|the result|was disappointing."),
+            ("{t}Let\'s just say{/t} it didn't go well.", "{t}うまくいかなかった、とだけ言っておきます{/t}。", "Let\'s just say|it didn't go well."),
+            ("{t}Let\'s just say{/t} the meeting was difficult.", "{t}会議は大変だった、とだけ言っておきます{/t}。", "Let\'s just say|the meeting|was difficult."),
+            ("{t}Let\'s just say{/t} we didn't agree.", "{t}意見が合わなかった、とだけ言っておきます{/t}。", "Let\'s just say|we didn't agree."),
+            ("{t}Let\'s just say{/t} the result was disappointing.", "{t}結果は残念だった、とだけ言っておきます{/t}。", "Let\'s just say|the result|was disappointing."),
         ),
         p2=rows(
             ("{t}All I'll say is that{/t} we disagreed.", "{t}私が言えるのは{/t}、意見が合わなかったということだけです。", "All I'll say|is that|we|disagreed."),
@@ -232,7 +232,7 @@ LESSONS = {
             ("{t}All I'll say is that{/t} the project needs more work.", "{t}私が言えるのは{/t}、その企画にはさらに作業が必要ということだけです。", "All I'll say|is that|the project|needs more work."),
             ("{t}All I'll say is that{/t} the discussion ended early.", "{t}私が言えるのは{/t}、話し合いが早く終わったということだけです。", "All I'll say|is that|the discussion|ended early."),
         ),
-        rules=(("After Let's just say, use one complete clause that gives the limited version.", "「Let's just say」 のあとには、限定して伝える内容を完全な節で続けます。"),
+        rules=(("After Let\'s just say, use one complete clause that gives the limited version.", "「Let\'s just say」 のあとには、限定して伝える内容を完全な節で続けます。"),
                ("After All I'll say is, use that plus the one clause you are willing to offer.", "「All I'll say is」 のあとには that と、伝えてよい一つの節を続けます。")),
         omit_reorder=(1,),
         prompt=("Summarize one experience without details, or say no such example comes to mind.", "詳しく話さずに一つの経験をまとめるか、そのような例は思いつかないと伝えましょう。"),
@@ -427,19 +427,19 @@ SPECS = {
         (("Give a deliberately brief summary, or say you have no matching experience.", "意図的に短くまとめるか、当てはまる経験はないと伝えましょう。"),
          ("State the one fact you are willing to share, or say there is nothing to add.", "伝えてよい一つの事実を述べるか、付け加えることはないと伝えましょう。")),
         (choices(
-            ("うまくいかなかった{t}とだけ言っておきます{/t}。", "", "Let's just say", "Let's only tell", " it didn't go well."),
-            ("会議は大変だった{t}とだけ言っておきます{/t}。", "", "Let's just say", "Let's only tell", " the meeting was difficult."),
-            ("意見が合わなかった{t}とだけ言っておきます{/t}。", "", "Let's just say", "Let's only tell", " we didn't agree."),
-            ("結果は残念だった{t}とだけ言っておきます{/t}。", "", "Let's just say", "Let's only tell", " the result was disappointing."),
+            ("うまくいかなかった{t}とだけ言っておきます{/t}。", "", "Let\'s just say", "Let\'s only tell", " it didn't go well."),
+            ("会議は大変だった{t}とだけ言っておきます{/t}。", "", "Let\'s just say", "Let\'s only tell", " the meeting was difficult."),
+            ("意見が合わなかった{t}とだけ言っておきます{/t}。", "", "Let\'s just say", "Let\'s only tell", " we didn't agree."),
+            ("結果は残念だった{t}とだけ言っておきます{/t}。", "", "Let\'s just say", "Let\'s only tell", " the result was disappointing."),
         ), choices(
             ("私が言えるのは、意見が合わなかった{t}ということだけです{/t}。", "All I'll say is ", "that", "what", " we disagreed."),
             ("私が言えるのは、時期が悪かった{t}ということだけです{/t}。", "All I'll say is ", "that", "what", " the timing was wrong."),
             ("私が言えるのは、さらに作業が必要だ{t}ということだけです{/t}。", "All I'll say is ", "that", "what", " the project needs more work."),
             ("私が言えるのは、話し合いが早く終わった{t}ということだけです{/t}。", "All I'll say is ", "that", "what", " the discussion ended early."),
         )),
-        (("Signal deliberate restraint", "意図的な抑制を示す", "<b>Let's just say</b> + 完全な節", "Limited summary", "限定したまとめ", ("<b>Let's just say</b> it didn't go well.", "<b>Let's just say</b> we didn't agree.")),
+        (("Signal deliberate restraint", "意図的な抑制を示す", "<b>Let\'s just say</b> + 完全な節", "Limited summary", "限定したまとめ", ("<b>Let\'s just say</b> it didn't go well.", "<b>Let\'s just say</b> we didn't agree.")),
          ("Offer one fact only", "一つの事実だけ伝える", "All I'll say + <b>is that</b> + 完全な節", "Explicit information limit", "明示的な情報制限", ("All I'll say <b>is that we disagreed</b>.", "All I'll say <b>is that it ended early</b>."))),
-        ("Brief, not evasive", "短く、逃げずに", "A calm complete clause sounds deliberate. Trailing off mid-sentence can sound uncertain rather than private.", "落ち着いて完全な節を言うと、意図的な限定に聞こえます。文の途中で曖昧に終えると、不確かに聞こえることがあります。", ("Deliberate limit", "意図的な限定", "Let's just say we disagreed.", "意見が合わなかった、とだけ言っておきます。"), ("Uncertain hesitation", "不確かなためらい", "Well, I sort of...", "ええと、その…。")),
+        ("Brief, not evasive", "短く、逃げずに", "A calm complete clause sounds deliberate. Trailing off mid-sentence can sound uncertain rather than private.", "落ち着いて完全な節を言うと、意図的な限定に聞こえます。文の途中で曖昧に終えると、不確かに聞こえることがあります。", ("Deliberate limit", "意図的な限定", "Let\'s just say we disagreed.", "意見が合わなかった、とだけ言っておきます。"), ("Uncertain hesitation", "不確かなためらい", "Well, I sort of...", "ええと、その…。")),
     ),
     120: semantic_spec(
         (("Use this when a suggestion-shaped line is meant to prompt action; context and tone decide how optional it is.", "提案の形をした文で行動を促すときに使い、任意かどうかは文脈と声調で判断します。"),
@@ -578,7 +578,7 @@ SUPPORT_EXPRESSIONS = {
 
 DIALOGUES = {
     113: dict(
-        model=("Project lead", 1, 1, ("The handoff was missed again.", "また引き継ぎが抜けました。"), ("Do you think that explains the repeated delays too?", "それで繰り返す遅れも説明できると思いますか？"), ("Then let's map each handoff and owner.", "では、引き継ぎと担当を一つずつ整理しましょう。"), ("Good. Let's start with ownership.", "いいですね。まず担当から始めましょう。")),
+        model=("Project lead", 1, 1, ("The handoff was missed again.", "また引き継ぎが抜けました。"), ("Do you think that explains the repeated delays too?", "それで繰り返す遅れも説明できると思いますか？"), ("Then let's map each handoff and owner.", "では、引き継ぎと担当を一つずつ整理しましょう。"), ("Good. Let\'s start with ownership.", "いいですね。まず担当から始めましょう。")),
         wild=("Volunteer lead", 3, 2, ("Three teams prepared the same material.", "3つのチームが同じ資料を準備していました。"), ("Does that point to a broader issue?", "それは、より広い問題を示していますか？"), ("I'll set one priority list for everyone.", "全員共通の優先順位表を一つ作ります。"), ("Great. That should prevent duplicate work.", "いいですね。それで重複作業を防げるはずです。"))),
     114: dict(
         model=("Consultant", 0, 0, ("One process should work for every team size.", "一つの手順が、どの規模のチームにも使えるはずです。"), ("What else makes the choice difficult?", "ほかに何が選択を難しくしますか？"), ("Then let's compare both team sizes separately.", "では、二つのチーム規模を分けて比べましょう。"), ("Agreed. That will give us a fair comparison.", "賛成です。それなら公平に比較できます。")),
@@ -590,10 +590,10 @@ DIALOGUES = {
         model=("Support lead", 0, 0, ("Support requests seem to be falling now.", "問い合わせは今、減っているようです。"), ("What evidence points the other way?", "逆方向を示す根拠は何ですか？"), ("Then I'll add another person to the evening shift.", "では、夜の担当を一人増やします。"), ("Good. I'll plan for higher demand.", "いいですね。需要の増加を見込んで計画します。")),
         wild=("Coordinator", 2, 2, ("The new process was supposed to reduce delays.", "新しい手順で遅れが減るはずでした。"), ("So the response time proves the reverse?", "では、応答時間が逆を示していますか？"), ("I'll review where the extra time is going.", "増えた時間がどこにかかっているか確認します。"), ("Great. Then we can fix the real bottleneck.", "いいですね。それなら本当の詰まりを直せます。"))),
     117: dict(
-        model=("Buyer", 0, 2, ("The reliable option costs more but lasts longer.", "信頼できる案は高いですが、長く使えます。"), ("What is the deciding factor for you?", "あなたにとっての決め手は何ですか？"), ("Then the reliable option sounds right.", "では、信頼できる案がよさそうですね。"), ("Agreed. Let's choose the reliable option.", "賛成です。信頼できるほうを選びましょう。")),
+        model=("Buyer", 0, 2, ("The reliable option costs more but lasts longer.", "信頼できる案は高いですが、長く使えます。"), ("What is the deciding factor for you?", "あなたにとっての決め手は何ですか？"), ("Then the reliable option sounds right.", "では、信頼できる案がよさそうですね。"), ("Agreed. Let\'s choose the reliable option.", "賛成です。信頼できるほうを選びましょう。")),
         wild=("Committee member", 1, 1, ("The plan is practical, but the timing is tight.", "その案は現実的ですが、時期が厳しいです。"), ("What does the decision come down to for you?", "あなたにとって判断の決め手は何ですか？"), ("Then let's move the date rather than reject the plan.", "では、案を退けずに日程を動かしましょう。"), ("Good. That keeps the useful part of the plan.", "いいですね。それなら案のよい部分を残せます。"))),
     118: dict(
-        model=("Director", 0, 0, ("The delayed launch shows that we were cautious.", "公開を遅らせたのは慎重だった証拠です。"), ("Would you still call the pilot a success?", "それでも試行は成功と呼べますか？"), ("Fair point. Let's review retention, not just complaints.", "なるほど。苦情だけでなく継続率も見ましょう。"), ("Yes. That will give us a fuller result.", "はい。それなら、より全体的な結果が分かります。")),
+        model=("Director", 0, 0, ("The delayed launch shows that we were cautious.", "公開を遅らせたのは慎重だった証拠です。"), ("Would you still call the pilot a success?", "それでも試行は成功と呼べますか？"), ("Fair point. Let\'s review retention, not just complaints.", "なるほど。苦情だけでなく継続率も見ましょう。"), ("Yes. That will give us a fuller result.", "はい。それなら、より全体的な結果が分かります。")),
         wild=("Editor", 1, 1, ("The extra approval step makes the process efficient.", "追加の承認手順で作業が効率的になります。"), ("Would you call the change progress?", "その変更を進歩と呼べますか？"), ("Then I'll compare speed and error rates.", "では、速さと誤りの割合を比べます。"), ("Good. That should test both interpretations.", "いいですね。それなら両方の見方を確かめられます。"))),
     119: dict(
         model=("Colleague", 0, 0, ("How did the client meeting go?", "顧客との会議はどうでしたか？"), ("Did you at least agree on the main point?", "少なくとも主要な点では合意しましたか？"), ("Understood. I won't press for details.", "分かりました。詳しくは聞きません。"), ("Thanks for understanding.", "理解してくれてありがとう。")),
@@ -603,10 +603,10 @@ DIALOGUES = {
         wild=("Team lead", 2, 3, ("I'm about to overwrite the only copy.", "唯一のコピーを上書き保存しようとしています。"), ("What else might be worth doing first?", "ほかに先に何をする価値がありますか？"), ("Right. I'll save a backup before I continue.", "そうですね。続ける前にバックアップを保存します。"), ("Good. Then the original stays safe.", "いいですね。それなら元のものが安全です。"))),
     121: dict(
         model=("Colleague", 0, 0, ("Why did the contract discussion end early?", "契約の話し合いはなぜ早く終わったのですか？"), ("Understood. Do you want to discuss the next step now?", "分かりました。次の段階は今話しますか？"), ("Of course. We can return to it tomorrow.", "もちろんです。明日また話せます。"), ("Thanks. I appreciate that.", "ありがとう。助かります。")),
-        wild=("Friend", 3, 1, ("Do you want to explain what happened?", "何があったか説明したいですか？"), ("Should we keep talking about that topic?", "その話題を続けますか？"), ("No problem. Let's talk about something else.", "大丈夫です。別の話をしましょう。"), ("Thank you. That feels better.", "ありがとう。そのほうが楽です。"))),
+        wild=("Friend", 3, 1, ("Do you want to explain what happened?", "何があったか説明したいですか？"), ("Should we keep talking about that topic?", "その話題を続けますか？"), ("No problem. Let\'s talk about something else.", "大丈夫です。別の話をしましょう。"), ("Thank you. That feels better.", "ありがとう。そのほうが楽です。"))),
     122: dict(
         model=("Reviewer", 0, 0, ("So was the pilot simply a success or a failure?", "では、試行は単純に成功か失敗のどちらですか？"), ("Then is the low response rate the problem?", "では、回答率が低いことが問題ですか？"), ("What should we ask instead?", "代わりに何を問うべきですか？"), ("The real question is what changed.", "本当に問うべきなのは、何が変わったかです。")),
-        wild=("Host", 1, 1, ("Is this choice simply clear or unclear?", "この選択は単純に明確か不明確のどちらですか？"), ("Then is clarity the real issue?", "では、明確さが本当の論点ですか？"), ("What would be a better question?", "もっとよい問いは何ですか？"), ("Let's ask which option solves the problem.", "どの選択肢が問題を解決するかを問いましょう。"))),
+        wild=("Host", 1, 1, ("Is this choice simply clear or unclear?", "この選択は単純に明確か不明確のどちらですか？"), ("Then is clarity the real issue?", "では、明確さが本当の論点ですか？"), ("What would be a better question?", "もっとよい問いは何ですか？"), ("Let\'s ask which option solves the problem.", "どの選択肢が問題を解決するかを問いましょう。"))),
 }
 
 
@@ -652,7 +652,7 @@ LIVE_HINTS = {
         ("call it ___, though", "少し距離を置く呼び方", ("成功:a success", "進歩:progress", "慎重:cautious", "公平:fair")),
     )},
     119: {1: (
-        ("Let's just say ___", "短いまとめ", ("うまくいかなかった:it didn't go well", "会議は大変だった:the meeting was difficult", "意見が合わなかった:we didn't agree", "結果は残念だった:the result was disappointing")),
+        ("Let\'s just say ___", "短いまとめ", ("うまくいかなかった:it didn't go well", "会議は大変だった:the meeting was difficult", "意見が合わなかった:we didn't agree", "結果は残念だった:the result was disappointing")),
         ("All I'll say is that ___", "伝えてよい一つの事実", ("意見が合わなかった:we disagreed", "時期が悪かった:the timing was wrong", "企画にはさらに作業が必要:the project needs more work", "話し合いが早く終わった:the discussion ended early")),
     )},
     120: {1: (
@@ -681,7 +681,7 @@ LIVE_SLOT_FRAMES = {
     116: (("If anything, ", "."), ("It's actually the opposite: ", ".")),
     117: (("Overall, I'd say ", "."), ("What it comes down to for me is ", ".")),
     118: (("You could see it as ", "."), ("", "."), ("I can see why you'd call it ", ", though.")),
-    119: (("Let's just say ", "."), ("All I'll say is that ", ".")),
+    119: (("Let\'s just say ", "."), ("All I'll say is that ", ".")),
     120: (("You might want to ", "."), ("It might be worth ", ".")),
     121: (("I'd rather not go into ", "."), ("Can we leave ", " for now?")),
     122: (("It's not that ", ", though."), ("The real question is ", "."), ("I think the simple framing works: ", ".")),
@@ -706,7 +706,7 @@ WRITE_FRAMES = {
     116: ("If anything, ___", "It's actually the opposite: ___"),
     117: ("Overall, I'd say ___", "What it comes down to for me is ___"),
     118: ("You could see it as ___, but ___", "I can see why you'd call it ___, though"),
-    119: ("Let's just say ___", "All I'll say is that ___"),
+    119: ("Let\'s just say ___", "All I'll say is that ___"),
     120: ("You might want to ___", "It might be worth ___ing"),
     121: ("I'd rather not go into ___", "Can we leave ___ for now?"),
     122: ("It's not that ___, though", "That's not really the ___"),
@@ -757,7 +757,7 @@ SPIRAL_CHOICES = {
     (113, "ART-02"): choices(
         ("共有済みの問題", "We discussed ", "the issue", "an issue", " yesterday."),
         ("初めて出す問題", "This may reveal ", "a problem", "the problem", " elsewhere."),
-        ("共有済みの全体像", "Let's return to ", "the bigger picture", "a bigger picture", "."),
+        ("共有済みの全体像", "Let\'s return to ", "the bigger picture", "a bigger picture", "."),
         ("一般的な兆候", "A delay can be ", "a symptom", "the symptom", "."),
     ),
     (114, "NUM-01"): choices(
@@ -936,7 +936,7 @@ def translate_page(number, part, pattern):
         )
     rendered = core.section(
         f"p{part}-translate", "Say it in English", "英語にしよう",
-        '<p class="section-subtitle"><span class="ko">Read the Japanese, then say it in English.</span>'
+        '<p class="section-subtitle"><span class="ko">Let\'s read the Japanese, then say it in English.</span>'
         '<span class="ja">日本語を見て、英語で言ってみましょう。</span></p>'
         '<div class="tutor-note">Type the learner\'s complete English sentence exactly as they say it.</div>'
         + "".join(blocks),
