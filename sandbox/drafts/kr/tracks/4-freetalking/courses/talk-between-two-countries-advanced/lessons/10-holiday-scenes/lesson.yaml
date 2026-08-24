@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 설날과 오쇼가쓰, 뭐가 같고 뭐가 다른가
+    canDoJa: ソルラルとお正月、何が同じで何が違うか
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-between-two-countries-advanced · 10
 

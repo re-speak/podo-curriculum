@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 외국인이 자주 잘못 알고 있는 일본 / 한국
+    canDoJa: 外国人がよく誤解している日本／韓国
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-between-two-countries-intermediate · 2
 

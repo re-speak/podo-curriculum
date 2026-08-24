@@ -24,6 +24,7 @@ spec:
     - N대로
     - ~(으)면서
     canDo: 상대 말에 전적으로 동의하고, 나도 같은 생각이었다고 맞장구친다.
+    canDoJa: 相手の言葉に全面的に同意し、自分も同じ考えだったと相づちを打つ。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-online-intermediate/lessons/08-empathy-reactions/lesson.html
 

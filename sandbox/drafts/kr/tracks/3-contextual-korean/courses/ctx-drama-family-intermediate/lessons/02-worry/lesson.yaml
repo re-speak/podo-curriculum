@@ -20,6 +20,7 @@ spec:
       - ~아/어 보이는데
       - ~고 다니다
     canDo: 상대의 안색을 보고 무슨 일이 있는지 묻고, 끼니를 챙기는지 확인한다.
+    canDoJa: 相手の顔色を見て何かあったのかを尋ね、食事をとっているかを確かめる。
   scene: 밥상 앞에 앉혀 놓고 얼굴부터 뜯어본다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-family-intermediate · 2

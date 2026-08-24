@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 요즘 보고 있는 작품과 멈출 수 없는 이유
+    canDoJa: 最近見ている作品と、やめられない理由
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-me-lately-intermediate · 3
 

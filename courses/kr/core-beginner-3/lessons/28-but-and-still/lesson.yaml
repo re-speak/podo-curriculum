@@ -24,6 +24,7 @@ spec:
     - -지만
     - 그래서 · 그런데 · 그리고 · 그러니까
     canDo: 한 가지에 대해 좋은 점과 아쉬운 점을 함께 말한다.
+    canDoJa: 一つのことについて、良い点と物足りない点を合わせて話す。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-3/lessons/28-but-and-still/lesson.html
 

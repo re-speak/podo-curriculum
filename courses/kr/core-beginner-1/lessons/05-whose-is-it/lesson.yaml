@@ -24,6 +24,7 @@ spec:
     - N의 N
     - 제 · 네 · 누구 거
     canDo: 물건이 누구 것인지 묻고, 자기 것이라고 밝힌다.
+    canDoJa: 物が誰のものかを尋ね、自分のものだと明かす。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-1/lessons/05-whose-is-it/lesson.html
 

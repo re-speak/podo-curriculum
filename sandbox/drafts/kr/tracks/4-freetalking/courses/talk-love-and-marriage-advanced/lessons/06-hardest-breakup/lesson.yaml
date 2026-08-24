@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 말할 수 있는 범위에서 이별 경험과 배운 점 이야기하기
+    canDoJa: 話せる範囲で、別れの経験とそこから学んだことを話す
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-love-and-marriage-advanced · 6
 

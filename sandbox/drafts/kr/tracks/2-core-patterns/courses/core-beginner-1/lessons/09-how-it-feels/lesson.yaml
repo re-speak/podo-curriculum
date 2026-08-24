@@ -20,6 +20,7 @@ spec:
       - 형용사 -아/어요
       - "-네요"
     canDo: 먹어 보고 겪어 본 것의 느낌을, 지금 안 사실처럼 말한다.
+    canDoJa: 食べてみて・経験してみた感想を、今わかったことのように話す。
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-1 · 9
 

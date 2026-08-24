@@ -20,6 +20,7 @@ spec:
       - ~는 거 알지?
       - ~(으)ㄹ 때
     canDo: 같이 덕질하는 즐거움을 확인하고, 혼자일 때와 비교한다.
+    canDoJa: 一緒に推し活する楽しさを確かめ、一人のときと比べる。
   scene: 혼자 덕질하던 시절 이야기가 나왔다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-kpop-fan-life-intermediate · 6

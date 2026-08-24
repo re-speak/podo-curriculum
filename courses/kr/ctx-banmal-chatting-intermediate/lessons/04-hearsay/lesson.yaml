@@ -24,6 +24,7 @@ spec:
     - ~대
     - ~더라
     canDo: 들은 소문을 전하고, 그럴 줄 알았다고 자기 관찰을 덧붙인다.
+    canDoJa: 聞いたうわさを伝え、そうだと思ったと自分の見立てを付け加える。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-banmal-chatting-intermediate/lessons/04-hearsay/lesson.html
 

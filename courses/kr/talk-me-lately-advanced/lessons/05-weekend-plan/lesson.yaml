@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 아직 아무한테도 말 안 한 것
+    canDoJa: まだ誰にも話していないこと
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-me-lately-advanced/lessons/05-weekend-plan/lesson.html
 

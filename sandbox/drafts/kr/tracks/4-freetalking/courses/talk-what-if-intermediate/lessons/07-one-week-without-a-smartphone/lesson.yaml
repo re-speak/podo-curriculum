@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 산속 리조트에서 버틸 수 있나
+    canDoJa: 山の中のリゾートで耐えられるか
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-what-if-intermediate · 7
 

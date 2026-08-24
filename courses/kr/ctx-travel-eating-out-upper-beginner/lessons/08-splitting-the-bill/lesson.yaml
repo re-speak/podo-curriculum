@@ -24,6 +24,7 @@ spec:
     - ~(으)ㄹ 수 있을까요?
     - N(으)로 나눠서
     canDo: 각자 계산할 수 있는지 묻고, 카드를 나눠 결제해 달라고 한다.
+    canDoJa: 別会計ができるかを尋ね、カードを分けて決済してほしいと頼む。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-eating-out-upper-beginner/lessons/08-splitting-the-bill/lesson.html
 

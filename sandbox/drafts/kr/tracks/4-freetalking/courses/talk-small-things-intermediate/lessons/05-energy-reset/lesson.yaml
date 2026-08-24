@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 기운을 되찾게 해 주는 행동이나 사람 이야기하기
+    canDoJa: 元気を取り戻させてくれる行動や人について話す
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-small-things-intermediate · 5
 

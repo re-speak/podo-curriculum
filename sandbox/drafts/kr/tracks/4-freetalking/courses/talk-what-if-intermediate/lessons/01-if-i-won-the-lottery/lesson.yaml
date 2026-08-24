@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 가장 먼저 할 일
+    canDoJa: まず最初にすること
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-what-if-intermediate · 1
 

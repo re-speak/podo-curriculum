@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 하고 싶은 것, 절대 안 하고 싶은 것
+    canDoJa: やってみたいこと、絶対にやりたくないこと
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-love-and-marriage-advanced · 5
 

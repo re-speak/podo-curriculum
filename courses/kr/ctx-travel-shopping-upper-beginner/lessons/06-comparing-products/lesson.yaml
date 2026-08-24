@@ -24,6 +24,7 @@ spec:
     - N 중에 어떤 게 더 ~?
     - N한테는
     canDo: 두 상품 중 더 잘나가는 것을 묻고, 나에게 맞는 것을 고른다.
+    canDoJa: 二つの商品のうちよく売れているほうを尋ね、自分に合うものを選ぶ。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-shopping-upper-beginner/lessons/06-comparing-products/lesson.html
 

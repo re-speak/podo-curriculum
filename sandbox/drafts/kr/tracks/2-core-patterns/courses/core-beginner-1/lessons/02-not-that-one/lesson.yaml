@@ -20,6 +20,7 @@ spec:
       - N이/가 아니에요
       - N이/가
     canDo: 상대가 잘못 안 것을 부정하고, 맞는 쪽을 다시 알려 준다.
+    canDoJa: 相手の思い違いを否定し、正しいほうを教え直す。
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-1 · 2
 

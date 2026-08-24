@@ -21,7 +21,13 @@ spec:
       - 최소 대립쌍 가–카–까
       - 자–차–짜
       - 듣고 고르기
+    patternsJa:
+    - "平音 / 激音 / 濃音を一つの表に"
+    - "ミニマルペア 가–카–까"
+    - "자–차–짜"
+    - "聞いて選ぶ"
     canDo: 다리 vs 따리 · 방 vs 팡 — 어느 줄인지 듣고, 어떤 자음이든 보는 즉시 읽는다
+    canDoJa: どの行の音かを聞き分け、どの子音でも見た瞬間に読む
   prerequisites: []
   source: podo-curriculum-public 1-hangul/hangul-starter · 6
 

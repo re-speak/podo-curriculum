@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 왜 그때가 좋았나
+    canDoJa: なぜあのころがよかったのか
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-what-came-before-advanced/lessons/07-return-destination/lesson.html
 

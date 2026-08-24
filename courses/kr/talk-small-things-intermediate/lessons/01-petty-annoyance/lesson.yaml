@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 남들은 신경도 안 쓰는 그것
+    canDoJa: 周りは気にもしない、あれ
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-small-things-intermediate/lessons/01-petty-annoyance/lesson.html
 

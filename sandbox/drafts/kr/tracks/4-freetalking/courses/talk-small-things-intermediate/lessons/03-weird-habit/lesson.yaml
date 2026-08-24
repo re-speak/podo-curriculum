@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 가족만 아는 것
+    canDoJa: 家族だけが知っていること
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-small-things-intermediate · 3
 

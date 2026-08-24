@@ -20,6 +20,7 @@ spec:
       - ~(으)ㄹ 줄 알다/모르다
       - ~나 보다
     canDo: 우연한 재회에 반가움을 표현하고, 어떻게 여기 있는지 묻는다.
+    canDoJa: 偶然の再会を喜び、どうしてここにいるのかを尋ねる。
   scene: 며칠 뒤 같은 편의점. 문을 열자마자 또 마주친다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-friends-intermediate · 2

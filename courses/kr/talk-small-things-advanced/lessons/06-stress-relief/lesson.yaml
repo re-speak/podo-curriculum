@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 스트레스를 풀 때 실제로 하는 것 설명하기
+    canDoJa: ストレスを発散するとき、実際にやっていることを説明する
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-small-things-advanced/lessons/06-stress-relief/lesson.html
 

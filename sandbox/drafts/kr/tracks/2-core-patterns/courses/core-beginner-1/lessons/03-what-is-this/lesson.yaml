@@ -20,6 +20,7 @@ spec:
       - 뭐예요?
       - 이/그/저 + N
     canDo: 모르는 물건을 가리켜 이름을 묻고, 상대의 대답을 알아듣는다.
+    canDoJa: 知らない物を指して名前を尋ね、相手の答えを聞き取る。
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-1 · 3
 

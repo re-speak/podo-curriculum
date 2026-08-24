@@ -24,6 +24,7 @@ spec:
     - ~아/어 있다
     - ~(이)면
     canDo: 와이파이 정보를 묻고, 부대시설 이용 조건을 확인한다.
+    canDoJa: Wi-Fiの情報を尋ね、館内施設の利用条件を確かめる。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-staying-upper-beginner/lessons/04-wifi-and-facilities/lesson.html
 

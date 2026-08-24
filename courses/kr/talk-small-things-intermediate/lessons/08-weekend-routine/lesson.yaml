@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 아무것도 안 하는 날에도 순서는 있다
+    canDoJa: 何もしない日にも、順番はある
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-small-things-intermediate/lessons/08-weekend-routine/lesson.html
 

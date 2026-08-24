@@ -24,6 +24,7 @@ spec:
     - -(으)ㄹ 것도 없다
     - -(으)면 몰라도
     canDo: 따질 것도 없이 당연하다고 밀어붙이고, 상대는 조건을 달아 받아친다.
+    canDoJa: 議論の余地もなく当然だと押し切り、相手は条件をつけて言い返す。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-advanced-1/lessons/115-obviously-and-unless/lesson.html
 

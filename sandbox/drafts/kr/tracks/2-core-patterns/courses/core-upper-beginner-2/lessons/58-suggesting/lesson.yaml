@@ -20,6 +20,7 @@ spec:
       - "-(으)ㄹ래요?"
       - "-지 그래요?"
     canDo: 상대의 의향을 가볍게 묻고, 부담 없이 권해 본다.
+    canDoJa: 相手の意向を軽く尋ね、気軽に勧めてみる。
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-upper-beginner-2 · 58
 

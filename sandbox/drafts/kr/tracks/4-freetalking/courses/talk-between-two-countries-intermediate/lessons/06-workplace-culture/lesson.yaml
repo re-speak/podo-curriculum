@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 회식·호칭·퇴근 시간, 어느 쪽이 편한가
+    canDoJa: 飲み会・呼び方・退社時間、どちらが気楽か
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-between-two-countries-intermediate · 6
 

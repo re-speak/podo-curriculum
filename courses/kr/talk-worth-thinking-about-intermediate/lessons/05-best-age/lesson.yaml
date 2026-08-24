@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 나이 든다는 것
+    canDoJa: 年を取るということ
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-worth-thinking-about-intermediate/lessons/05-best-age/lesson.html
 

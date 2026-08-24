@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 언제 마음이 움직이나
+    canDoJa: どんなときに心が動くか
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-love-and-marriage-advanced/lessons/01-heart-fluttering-moment/lesson.html
 

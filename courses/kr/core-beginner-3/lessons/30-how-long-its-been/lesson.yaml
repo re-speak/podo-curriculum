@@ -24,6 +24,7 @@ spec:
     - -(으)ㄴ 지 ~ 됐어요
     - N마다
     canDo: 어떤 일을 시작한 지 얼마나 됐는지, 얼마나 자주 하는지 말한다.
+    canDoJa: あることを始めてどれくらい経つか、どれくらいの頻度でするかを言う。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-3/lessons/30-how-long-its-been/lesson.html
 

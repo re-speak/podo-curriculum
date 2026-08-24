@@ -24,6 +24,7 @@ spec:
     - ~(으)ㄹ게요
     - ~아/어 봐도 될까요?
     canDo: 그냥 보는 중이라고 알리고, 상품을 만져 봐도 되는지 묻는다.
+    canDoJa: 見ているだけだと伝え、商品に触れてもいいかを尋ねる。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-shopping-upper-beginner/lessons/01-browsing/lesson.html
 

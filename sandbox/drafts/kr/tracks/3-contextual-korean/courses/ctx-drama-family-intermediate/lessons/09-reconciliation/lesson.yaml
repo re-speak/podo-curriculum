@@ -20,6 +20,7 @@ spec:
       - ~았/었지?
       - ~았/었어도
     canDo: 아까 심했다고 먼저 인정하고, 이해해 달라고 부탁한다.
+    canDoJa: さっきは言いすぎたと自分から認め、わかってほしいと頼む。
   scene: 1화의 잔소리 이후 처음으로, 엄마가 먼저 그 이야기를 꺼낸다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-family-intermediate · 9

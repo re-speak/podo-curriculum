@@ -20,6 +20,7 @@ spec:
       - ~지 않아?
       - ~(으)ㄹ 지경이다
     canDo: 최애가 잘나간다고 자랑하고, 자랑스러운 감정을 과장해 표현한다.
+    canDoJa: 推しが売れていると自慢し、誇らしい気持ちを大げさに表す。
   scene: 우리 애들 기사가 떴다. 자랑을 참을 수 없다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-kpop-online-intermediate · 7

@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 얼마였고 뭐에 썼나
+    canDoJa: いくらで、何に使ったか
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-work-and-money-intermediate/lessons/01-my-first-paycheck/lesson.html
 

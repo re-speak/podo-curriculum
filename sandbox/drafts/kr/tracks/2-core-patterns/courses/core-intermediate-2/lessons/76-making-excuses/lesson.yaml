@@ -20,6 +20,7 @@ spec:
       - "-느라고"
       - "-는 바람에"
     canDo: 못 한 일에 대해 내 탓과 상황 탓을 구별해 핑계를 댄다.
+    canDoJa: できなかったことについて、自分のせいと状況のせいを分けて言い訳する。
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-intermediate-2 · 76
 

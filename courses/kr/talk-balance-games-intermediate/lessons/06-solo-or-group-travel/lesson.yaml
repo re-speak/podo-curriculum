@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 자유와 공유의 장단점을 실제 여행 장면으로 비교하기
+    canDoJa: 自由と共有の長所と短所を、実際の旅の場面で比べる
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-balance-games-intermediate/lessons/06-solo-or-group-travel/lesson.html
 

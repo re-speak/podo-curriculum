@@ -24,6 +24,7 @@ spec:
     - ~(으)ㄹ + N 있다 / 없다
     - ~아/어도 될까요?
     canDo: 자리가 있는지 묻고, 원하는 자리를 요청한다.
+    canDoJa: 席が空いているかを尋ね、希望の席をお願いする。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-eating-out-upper-beginner/lessons/01-getting-a-table/lesson.html
 

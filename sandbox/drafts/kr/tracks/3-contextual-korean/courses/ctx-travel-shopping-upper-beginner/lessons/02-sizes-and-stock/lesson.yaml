@@ -20,6 +20,7 @@ spec:
       - ~(으)ㄴ 거 있나요?
       - N(으)로
     canDo: 다른 색상과 사이즈의 재고를 묻고, 다른 사이즈를 요청한다.
+    canDoJa: 別の色とサイズの在庫を尋ね、違うサイズをお願いする。
   scene: 마음에 드는 것을 찾았는데 내 사이즈가 안 보인다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-travel-shopping-upper-beginner · 2

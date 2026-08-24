@@ -24,6 +24,7 @@ spec:
     - ~지 않아요?
     - ~(으)ㄹ 때
     canDo: 최애의 매력을 구체적인 순간으로 묘사하고 동의를 구한다.
+    canDoJa: 推しの魅力を具体的な場面で描写し、同意を求める。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-talk-beginner/lessons/07-describing-charm/lesson.html
 

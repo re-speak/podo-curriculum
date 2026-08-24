@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 어디서 뭘 하고 있을까
+    canDoJa: どこで何をしているだろうか
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-what-if-intermediate/lessons/11-this-day-ten-years-later/lesson.html
 

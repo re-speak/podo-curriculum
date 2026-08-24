@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 그래도 이건 지킨다
+    canDoJa: それでも、これだけは守る
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-small-things-intermediate · 7
 

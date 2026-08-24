@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 정확한 기억과 빠른 회복의 이득과 부담을 비교하기
+    canDoJa: 正確な記憶と早い立ち直り、それぞれの得と負担を比べる
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-balance-games-intermediate/lessons/13-never-forget-or-choose-what-to-forget/lesson.html
 

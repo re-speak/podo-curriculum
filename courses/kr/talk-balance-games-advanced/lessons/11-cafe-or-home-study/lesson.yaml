@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 일하거나 공부할 때 집중을 돕는 소리·공간·비용 조건을 비교하기
+    canDoJa: 仕事や勉強のとき集中を助ける音・空間・費用の条件を比べる
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-balance-games-advanced/lessons/11-cafe-or-home-study/lesson.html
 

@@ -24,6 +24,7 @@ spec:
     - A는 B예요
     - 혹시 ~(으)세요?
     canDo: 자기 최애가 누구인지 소개하고, 상대가 그 그룹을 아는지 묻는다.
+    canDoJa: 自分の推しが誰かを紹介し、相手がそのグループを知っているかを尋ねる。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-talk-beginner/lessons/01-favorite-member/lesson.html
 

@@ -20,6 +20,7 @@ spec:
       - ~(으)ㄹ지도 모르다
       - ~아/어야겠다
     canDo: 품절 가능성을 걱정하고, 그 자리에서 사겠다고 마음먹는다.
+    canDoJa: 売り切れそうだと心配し、その場で買うと心を決める。
   scene: 한정판 굿즈 페이지를 같이 보고 있다. 재고가 줄고 있다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-kpop-fan-life-intermediate · 4

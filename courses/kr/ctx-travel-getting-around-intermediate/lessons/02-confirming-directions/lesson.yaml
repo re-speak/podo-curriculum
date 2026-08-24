@@ -24,6 +24,7 @@ spec:
     - ~(으)면 나오다
     - ~(으)면 되는 거죠?
     canDo: 이 길이 맞는지 확인하고, 들은 길 안내를 되짚어 확인한다.
+    canDoJa: この道で合っているかを確かめ、聞いた道案内を復唱して確認する。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-getting-around-intermediate/lessons/02-confirming-directions/lesson.html
 

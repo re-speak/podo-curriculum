@@ -20,6 +20,7 @@ spec:
       - 무슨 · 어느 · 어떤 + N
       - N도
     canDo: 어느 나라·어떤 종류인지 묻고, 상대와 같은 점을 덧붙인다.
+    canDoJa: どの国か・どんな種類かを尋ね、相手との共通点を付け加える。
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-1 · 6
 

@@ -24,6 +24,7 @@ spec:
     - ~(으)ㄴ 것 같은데
     - 일단 ~(으)면 될까요?
     canDo: 길을 잘못 든 것 같다고 도움을 청하고, 어떻게 할지 확인한다.
+    canDoJa: 道を間違えたようだと助けを求め、どうすればいいかを確かめる。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-getting-around-intermediate/lessons/08-getting-lost/lesson.html
 

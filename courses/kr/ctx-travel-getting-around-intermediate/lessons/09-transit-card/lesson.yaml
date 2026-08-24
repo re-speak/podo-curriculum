@@ -24,6 +24,7 @@ spec:
     - 어디서 ~는지 아세요?
     - ~(으)면 바로 ~(으)ㄹ 수 있다
     canDo: 충전할 수 있는 곳을 묻고, 바로 쓸 수 있는지 확인한다.
+    canDoJa: 充電できる場所を尋ね、すぐ使えるかを確かめる。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-getting-around-intermediate/lessons/09-transit-card/lesson.html
 

@@ -20,6 +20,7 @@ spec:
       - "-(느)ㄴ다면 / -(이)라면"
       - "-(으)ㄹ까 봐(서)"
     canDo: 현실과 다른 상황을 가정하고, 나쁜 일이 생길까 걱정돼 미리 한 행동을 설명한다.
+    canDoJa: 現実と違う状況を仮定し、悪いことが起きるのを心配して前もってした行動を説明する。
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-upper-intermediate-1 · 96
 

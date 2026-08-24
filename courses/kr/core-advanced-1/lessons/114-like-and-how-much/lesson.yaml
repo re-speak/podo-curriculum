@@ -24,6 +24,7 @@ spec:
     - -듯이
     - 얼마나 -(으)ㄴ/는지 모르다
     canDo: 얼마나 심했는지를 비유와 강조로 실감 나게 전한다.
+    canDoJa: どれほどひどかったかを、たとえと強調で実感が伝わるように話す。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-advanced-1/lessons/114-like-and-how-much/lesson.html
 

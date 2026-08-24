@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 좋았나, 다시 할 건가
+    canDoJa: よかったか、もう一度やるか
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-me-lately-intermediate/lessons/08-first-time-lately/lesson.html
 

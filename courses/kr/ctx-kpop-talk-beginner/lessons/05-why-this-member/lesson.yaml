@@ -24,6 +24,7 @@ spec:
     - N 중에서 제일
     - ~도 ~고 ~도
     canDo: 여럿 중에서 최애를 고른 이유를 두 가지 이상 든다.
+    canDoJa: 何人もの中から推しを選んだ理由を、二つ以上挙げる。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-talk-beginner/lessons/05-why-this-member/lesson.html
 

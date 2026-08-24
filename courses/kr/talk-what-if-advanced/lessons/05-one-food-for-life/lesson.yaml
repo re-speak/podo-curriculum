@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 질리지 않을 자신 있나
+    canDoJa: 飽きない自信はあるか
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-what-if-advanced/lessons/05-one-food-for-life/lesson.html
 

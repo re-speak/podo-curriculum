@@ -20,6 +20,7 @@ spec:
       - "-다니(요)! / -(이)라니!"
       - "-(으)ㄹ 생각(이) 없다 / -(으)ㄹ 생각(은) 하지 마"
     canDo: 어이없는 제안을 받는다 — 믿기지 않는다고 놀라움을 터뜨린 뒤, 그럴 생각은 없다고 잘라 말한다.
+    canDoJa: あきれる提案を受ける — 信じられないと驚きをぶつけたあと、そのつもりはないと言い切る。
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-advanced-1 · 116
 

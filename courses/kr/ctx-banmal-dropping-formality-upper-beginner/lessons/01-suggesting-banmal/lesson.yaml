@@ -24,6 +24,7 @@ spec:
     - ~(으)ㄹ까요?
     - ~(으)셔도 돼요
     canDo: 상대에게 말을 편하게 하자고 제안하고, 상대의 제안을 받아들인다.
+    canDoJa: 相手にタメ口で話そうと提案し、相手の提案を受け入れる。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-banmal-dropping-formality-upper-beginner/lessons/01-suggesting-banmal/lesson.html
 

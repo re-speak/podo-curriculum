@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 어떤 물건이고 왜 아끼는지 설명하기
+    canDoJa: どんな物で、なぜ大切にしているのかを説明する
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-things-i-like-advanced/lessons/10-most-treasured-thing/lesson.html
 

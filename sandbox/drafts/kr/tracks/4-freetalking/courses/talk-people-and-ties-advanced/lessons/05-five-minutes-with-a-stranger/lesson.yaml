@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 술자리에서 뭘 물어보나
+    canDoJa: 飲みの席で何を聞くか
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-people-and-ties-advanced · 5
 

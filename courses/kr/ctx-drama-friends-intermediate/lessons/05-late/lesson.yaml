@@ -24,6 +24,7 @@ spec:
     - ~잖아
     - ~(으)ㄹ 것 같다
     canDo: 가볍게 타박하고, 변명을 웃으며 받아 준다.
+    canDoJa: 軽く責めつつ、言い訳を笑って受け止める。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-friends-intermediate/lessons/05-late/lesson.html
 

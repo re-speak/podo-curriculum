@@ -19,7 +19,11 @@ spec:
     patterns:
       - N 말고 N (교체) + ~아/어도 돼?
       - 혹시 ~(으)세요?
+    patternsJa:
+    - "N 말고 N（入れ替え）+ ~아/어도 돼?"
+    - "혹시 ~(으)세요?"
     canDo: 이름을 어떻게 부를지 정하고, 나이 차이에 맞는 호칭을 고른다.
+    canDoJa: 名前をどう呼ぶかを決め、年の差に合った呼び方を選ぶ。
   scene: 말은 놓기로 했는데, 서로를 뭐라고 부를지가 남았다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-banmal-dropping-formality-upper-beginner · 2

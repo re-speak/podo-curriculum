@@ -20,6 +20,7 @@ spec:
       - "-아/어도 돼요?"
       - "-(으)면 안 돼요"
     canDo: 해도 되는지 묻고, 안 된다고 답한다.
+    canDoJa: してもいいかを尋ね、だめだと答える。
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-4 · 38
 

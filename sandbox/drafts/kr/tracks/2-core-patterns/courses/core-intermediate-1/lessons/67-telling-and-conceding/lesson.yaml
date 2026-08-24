@@ -20,6 +20,7 @@ spec:
       - "-던데(요)"
       - "-기는 하다"
     canDo: 직접 본 것을 전하며 상대의 반응을 끌어내고, 일부는 인정해 준다.
+    canDoJa: 自分で見たことを伝えて相手の反応を引き出し、一部は認めてあげる。
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-intermediate-1 · 67
 

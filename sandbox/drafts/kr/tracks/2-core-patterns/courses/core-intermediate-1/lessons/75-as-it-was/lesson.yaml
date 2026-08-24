@@ -20,6 +20,7 @@ spec:
       - "-(으)ㄴ 채(로)"
       - "-아/어 두다 / -아/어 놓다"
     canDo: 어떤 상태를 그대로 둔 채 다른 일을 했다고 말한다.
+    canDoJa: ある状態をそのままにして、別のことをしたと言う。
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-intermediate-1 · 75
 

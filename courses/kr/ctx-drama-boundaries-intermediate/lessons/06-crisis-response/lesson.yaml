@@ -24,6 +24,7 @@ spec:
     - ~(으)ㄹ 때가 아니다
     - 이러다(가) ~겠어
     canDo: 남 탓할 때가 아니라고 상황을 정리하고, 더 커질 거라고 경고한다.
+    canDoJa: 人のせいにしている場合ではないと状況を整理し、もっと大きくなると警告する。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-boundaries-intermediate/lessons/06-crisis-response/lesson.html
 

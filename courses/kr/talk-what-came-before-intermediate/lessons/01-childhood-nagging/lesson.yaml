@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 누가 어떤 말을 자주 했는지 이야기하기
+    canDoJa: 誰がどんな言葉をよく言っていたかを話す
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-what-came-before-intermediate/lessons/01-childhood-nagging/lesson.html
 

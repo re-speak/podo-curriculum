@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 나라를 고르고 그곳에서 살고 싶은 이유 말하기
+    canDoJa: 国を一つ選び、そこで暮らしたい理由を話す
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-what-if-advanced/lessons/10-country-in-my-next-life/lesson.html
 

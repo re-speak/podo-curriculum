@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 무엇에, 왜 많이 쓰는지 설명하기
+    canDoJa: 何に、なぜ多く使うのかを説明する
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-me-lately-intermediate · 7
 

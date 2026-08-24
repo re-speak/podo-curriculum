@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 자기 생각과 그 이유 말하기
+    canDoJa: 自分の考えと、その理由を話す
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-love-and-marriage-intermediate/lessons/07-thoughts-on-single-life-and-dink/lesson.html
 

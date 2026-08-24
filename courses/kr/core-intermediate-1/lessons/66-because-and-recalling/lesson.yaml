@@ -24,6 +24,7 @@ spec:
     - -거든요
     - -더라고요
     canDo: 상대가 모르는 배경을 깔아 주고, 직접 겪어서 알게 된 것을 전한다.
+    canDoJa: 相手が知らない背景を先に説明し、自分で経験して知ったことを伝える。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-intermediate-1/lessons/66-because-and-recalling/lesson.html
 

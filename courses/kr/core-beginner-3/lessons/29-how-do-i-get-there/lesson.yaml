@@ -24,6 +24,7 @@ spec:
     - 어떻게 ~?
     - N(으)로
     canDo: 어떻게 가는지 묻고, 교통수단을 넣어 답한다.
+    canDoJa: どうやって行くかを尋ね、交通手段を入れて答える。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-3/lessons/29-how-do-i-get-there/lesson.html
 

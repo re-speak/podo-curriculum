@@ -23,7 +23,11 @@ spec:
     patterns:
     - N 전까지 (핵심 51 + 15) + ~아/어 두다
     - N쯤에 ~(으)러 오다
+    patternsJa:
+    - N 전까지（コア51 + 15）+ ~아/어 두다
+    - N쯤에 ~(으)러 오다
     canDo: 짐을 맡겨도 되는지 묻고, 언제 찾으러 올지 말한다.
+    canDoJa: 荷物を預けてもいいかを尋ね、いつ取りに来るかを伝える。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-staying-upper-beginner/lessons/07-luggage-storage/lesson.html
 

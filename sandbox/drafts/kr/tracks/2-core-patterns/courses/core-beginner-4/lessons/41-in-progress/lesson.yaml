@@ -20,6 +20,7 @@ spec:
       - "-고 있어요"
       - "-아/어 있어요"
     canDo: 지금 하고 있는 일을 말하고, 무언가가 어떤 상태로 되어 있는지 알린다.
+    canDoJa: 今していることを言い、何かがどんな状態になっているかを知らせる。
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-4 · 41
 

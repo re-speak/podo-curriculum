@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 먼저 연락하는 편인가
+    canDoJa: 自分から連絡するほうか
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-people-and-ties-advanced · 6
 

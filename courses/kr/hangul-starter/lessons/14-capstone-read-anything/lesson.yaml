@@ -23,7 +23,11 @@ spec:
     patterns:
     - 낯선 실물 단어 읽기 (간판 / 메뉴 / 이름)
     - 첫 수업 인사와 교실 표현 듣고 따라 읽기
+    patternsJa:
+    - 初めて見る実物の単語を読む（看板 / メニュー / 名前）
+    - 初回授業のあいさつと教室表現を聞いて復唱する
     canDo: 한국 거리에서 자주 만나는 간판·메뉴·이름을 글자 단위로 뜯어서 읽고, 안녕하세요·감사합니다·잘 들으세요·따라 읽으세요를 듣고 따라 한다
+    canDoJa: 韓国の街でよく見かける看板・メニュー・名前を一文字ずつ分けて読み、안녕하세요・감사합니다・잘 들으세요・따라 읽으세요を聞いて復唱する
   prerequisites: []
   source: sandbox/drafts/kr/tracks/1-hangul/courses/hangul-starter/lessons/14-capstone-read-anything/lesson.html
 

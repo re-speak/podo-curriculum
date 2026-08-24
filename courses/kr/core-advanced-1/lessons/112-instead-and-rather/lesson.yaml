@@ -24,6 +24,7 @@ spec:
     - -는 대신(에)
     - -느니 (차라리)
     canDo: 하나를 하는 대신 다른 것을 요구하고, 극단적인 대안을 택한다.
+    canDoJa: 一つをする代わりに別のものを要求し、極端な代案を選ぶ。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-advanced-1/lessons/112-instead-and-rather/lesson.html
 

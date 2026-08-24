@@ -24,6 +24,7 @@ spec:
     - -(으)면 되다
     - 안 -아/어도 되다 / -지 않아도 되다
     canDo: 무엇만 하면 되는지 알려 주고, 안 해도 되는 것을 빼 준다.
+    canDoJa: 何だけすればいいかを教え、しなくてもいいことを外してあげる。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-4/lessons/39-thats-all-you-need/lesson.html
 

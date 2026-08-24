@@ -24,6 +24,7 @@ spec:
     - ~더라
     - N이/가 N에 어울리다
     canDo: 이번 콘셉트의 비주얼과 의상에 대한 감상을 전한다.
+    canDoJa: 今回のコンセプトのビジュアルと衣装についての感想を伝える。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-stage-upper-beginner/lessons/04-visual-concept/lesson.html
 

@@ -24,6 +24,7 @@ spec:
     - ~(으)면 ~아/어요?
     - N 없이(도)
     canDo: 교환 가능 여부와 조건을 확인한다.
+    canDoJa: 交換できるかどうかと、その条件を確かめる。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-shopping-upper-beginner/lessons/09-exchanges-and-refunds/lesson.html
 

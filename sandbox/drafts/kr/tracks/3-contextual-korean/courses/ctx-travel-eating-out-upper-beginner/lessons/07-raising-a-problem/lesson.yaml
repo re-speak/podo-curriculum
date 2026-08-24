@@ -19,7 +19,11 @@ spec:
     patterns:
       - ~아/어서요
       - ~아/어 있다 (핵심 41) + ~(으)ㄴ데요
+    patternsJa:
+    - "~아/어서요"
+    - "~아/어 있다（コア41）+ ~(으)ㄴ데요"
     canDo: 주문이 안 나왔다고 알리고, 음식에 이물질이 있다고 정중하게 말한다.
+    canDoJa: 注文したものが来ていないと伝え、料理に異物が入っているとていねいに伝える。
   scene: 옆 테이블 음식이 먼저 나갔다. 우리 것은 아직이다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-travel-eating-out-upper-beginner · 7

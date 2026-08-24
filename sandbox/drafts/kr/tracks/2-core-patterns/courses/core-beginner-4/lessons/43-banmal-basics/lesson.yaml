@@ -19,7 +19,11 @@ spec:
     patterns:
       - "-아/어"
       - N이야 / 야 (명사 반말) · -아 / -야
+    patternsJa:
+    - "-아/어"
+    - "N이야 / 야（名詞のタメ口）· -아 / -야"
     canDo: 친구에게 지금 무엇을 하는지 묻고 답한다.
+    canDoJa: 友だちに今何をしているかを尋ね、答える。
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-4 · 43
 

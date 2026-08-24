@@ -20,6 +20,7 @@ spec:
       - "-(으)면서"
       - "-다가"
     canDo: 공부하거나 일하는 습관을 이야기한다 — 무엇을 하면서 같이 하는지, 그러다 결국 무엇으로 새는지.
+    canDoJa: 勉強や仕事の習慣を話す — 何をしながら一緒にするのか、そのうち結局何に脱線するのか。
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-upper-beginner-2 · 59
 

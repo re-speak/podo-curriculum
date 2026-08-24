@@ -19,6 +19,9 @@ spec:
     patterns:
       - ㄱ ㄷ ㄹ
       - "ㅂ ㅅ ㅈ  *(함정은 하나: 시 = \"시[shi]\")*"
+    patternsJa:
+    - "ㄱ ㄷ ㄹ"
+    - "ㅂ ㅅ ㅈ *(落とし穴は一つ: 시 = \"시[shi]\")*"
     canDo: 고기 · 구두 · 다리 · 바다 · 아버지 · 사자 · 주스 · 모자
   prerequisites: []
   source: podo-curriculum-public 1-hangul/hangul-starter · 2

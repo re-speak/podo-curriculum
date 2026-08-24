@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 어디까지 혼자 가능한가
+    canDoJa: どこまで一人でできるか
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-people-and-ties-advanced · 4
 

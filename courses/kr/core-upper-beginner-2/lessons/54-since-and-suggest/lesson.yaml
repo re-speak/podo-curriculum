@@ -24,6 +24,7 @@ spec:
     - -(으)니까
     - -는 게 어때요?
     canDo: 이유를 대면서 상대에게 무엇을 하자고 권한다.
+    canDoJa: 理由を挙げながら、相手に何かをしようと誘う。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-upper-beginner-2/lessons/54-since-and-suggest/lesson.html
 

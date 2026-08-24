@@ -24,6 +24,7 @@ spec:
     - ~는 법이다
     - ~아/어 오다
     canDo: 다 그런 거라고 다독이고, 지금까지 잘해 왔다고 응원한다.
+    canDoJa: みんなそんなものだとなだめ、今までよくやってきたと励ます。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-banmal-chatting-intermediate/lessons/08-comforting/lesson.html
 

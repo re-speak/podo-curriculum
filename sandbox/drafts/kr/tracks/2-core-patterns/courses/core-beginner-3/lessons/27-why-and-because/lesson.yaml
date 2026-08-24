@@ -20,6 +20,7 @@ spec:
       - 왜 ~?
       - "-아/어서"
     canDo: 왜 그랬는지 묻고, 이유를 대며 답한다.
+    canDoJa: なぜそうしたのかを尋ね、理由を挙げて答える。
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-3 · 27
 

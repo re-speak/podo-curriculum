@@ -20,6 +20,7 @@ spec:
       - N하고
       - N한테 · N에게
     canDo: 누구와 함께 하는지, 누구에게 하는지를 말한다.
+    canDoJa: 誰と一緒にするのか、誰にするのかを言う。
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-3 · 20
 

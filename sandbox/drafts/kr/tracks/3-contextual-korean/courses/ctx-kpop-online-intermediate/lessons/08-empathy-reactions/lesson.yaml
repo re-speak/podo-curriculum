@@ -20,6 +20,7 @@ spec:
       - N대로
       - ~(으)면서
     canDo: 상대 말에 전적으로 동의하고, 나도 같은 생각이었다고 맞장구친다.
+    canDoJa: 相手の言葉に全面的に同意し、自分も同じ考えだったと相づちを打つ。
   scene: 친구가 쓴 감상 글에 리플을 단다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-kpop-online-intermediate · 8

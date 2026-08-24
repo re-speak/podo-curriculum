@@ -20,6 +20,7 @@ spec:
       - "-(으)ㄴ N"
       - "-는 N"
     canDo: 이름을 모르는 물건을, 어떤 것인지 설명해서 가리킨다.
+    canDoJa: 名前がわからない物を、どんな物かを説明して指し示す。
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-upper-beginner-1 · 49
 

@@ -20,6 +20,7 @@ spec:
       - 저 → 나 · 제 → 내 · 저희 → 우리
       - 너 · 네(니) · 너희
     canDo: 어미뿐 아니라 인칭 대명사까지 반말 세트로 바꿔 말한다.
+    canDoJa: 語尾だけでなく人称代名詞まで、タメ口のセットに変えて話す。
   scene: 말은 놨는데 자꾸 「저는」이 튀어나온다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-banmal-dropping-formality-upper-beginner · 3

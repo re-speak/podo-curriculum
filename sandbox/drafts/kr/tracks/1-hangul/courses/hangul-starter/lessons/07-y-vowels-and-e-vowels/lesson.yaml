@@ -18,6 +18,8 @@ spec:
   teaches:
     patterns:
       - ㅑ ㅕ ㅛ ㅠ *(획 하나 = y 하나)*
+    patternsJa:
+    - "ㅑ ㅕ ㅛ ㅠ *(画一本 = y 一つ)*"
     canDo: 우유 · 여자 · 야구 · 요리 · 개 · 시계 · 얘기
   prerequisites: []
   source: podo-curriculum-public 1-hangul/hangul-starter · 7

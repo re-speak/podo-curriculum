@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 보고 상상했던 것과 실제로 와서 본 것
+    canDoJa: 見て想像していたものと、実際に来て見たもの
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-between-two-countries-intermediate/lessons/09-drama-vs-reality/lesson.html
 

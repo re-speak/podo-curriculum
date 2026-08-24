@@ -20,6 +20,7 @@ spec:
       - ~아/어 있다
       - ~(이)면
     canDo: 와이파이 정보를 묻고, 부대시설 이용 조건을 확인한다.
+    canDoJa: "Wi-Fiの情報を尋ね、館内施設の利用条件を確かめる。"
   scene: 비밀번호가 어디 적혀 있다고 했는데 못 찾겠다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-travel-staying-upper-beginner · 4

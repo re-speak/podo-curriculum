@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 회식·호칭·퇴근 시간, 어느 쪽이 편한가
+    canDoJa: 飲み会・呼び方・退社時間、どちらが気楽か
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-between-two-countries-advanced/lessons/06-workplace-culture/lesson.html
 

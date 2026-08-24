@@ -20,6 +20,7 @@ spec:
       - "-아/어지다"
       - "-게 되다"
     canDo: 전에는 아니었는데 지금은 그렇게 된 변화를 말한다.
+    canDoJa: 以前はそうではなかったのに、今はそうなったという変化を言う。
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-upper-beginner-2 · 60
 

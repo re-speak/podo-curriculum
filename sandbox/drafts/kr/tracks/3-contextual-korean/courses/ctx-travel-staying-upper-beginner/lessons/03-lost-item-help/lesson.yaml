@@ -20,6 +20,7 @@ spec:
       - ~고 오다
       - 어디로 ~(으)면 되나요?
     canDo: 물건을 두고 왔다고 알리고, 어디로 연락하면 되는지 묻는다.
+    canDoJa: 忘れ物をしたと伝え、どこに連絡すればいいかを尋ねる。
   scene: 지갑이 없다. 마지막으로 꺼낸 게 로비였던 것 같다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-travel-staying-upper-beginner · 3

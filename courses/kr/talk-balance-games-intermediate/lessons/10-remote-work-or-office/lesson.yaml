@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 집중·이동·사람 관계를 기준으로 더 맞는 업무 환경을 고르기
+    canDoJa: 集中・移動・人づきあいを基準に、自分に合う働く環境を選ぶ
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-balance-games-intermediate/lessons/10-remote-work-or-office/lesson.html
 

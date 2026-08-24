@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 실제로 달라진 것
+    canDoJa: 実際に変わったこと
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-work-and-money-intermediate/lessons/07-how-ai-changed-my-work/lesson.html
 

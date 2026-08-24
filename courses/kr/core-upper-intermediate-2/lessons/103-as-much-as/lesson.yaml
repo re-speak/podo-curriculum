@@ -24,6 +24,7 @@ spec:
     - -(으)ㄴ/는 만큼
     - N대로 / -(으)ㄴ/는 대로
     canDo: 결과를 놓고 이야기한다 — 노력한 만큼 나왔다고 평가하고, 앞으로는 상대 말대로 하겠다고 받아들인다.
+    canDoJa: 結果をめぐって話す — 努力した分だけ出たと評価し、これからは相手の言うとおりにすると受け入れる。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-upper-intermediate-2/lessons/103-as-much-as/lesson.html
 

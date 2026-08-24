@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 가능한지 입장을 정하고 경험을 근거로 설명하기
+    canDoJa: できるかどうか立場を決め、経験を根拠に説明する
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-worth-thinking-about-intermediate/lessons/06-life-without-regret/lesson.html
 

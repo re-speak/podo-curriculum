@@ -24,6 +24,7 @@ spec:
     - -길래 / -기에
     - -고 해서
     canDo: 내가 직접 보고 느낀 것을 근거로 왜 그렇게 했는지 설명한다.
+    canDoJa: 自分で見て感じたことを根拠に、なぜそうしたのかを説明する。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-intermediate-2/lessons/78-since-i-saw/lesson.html
 

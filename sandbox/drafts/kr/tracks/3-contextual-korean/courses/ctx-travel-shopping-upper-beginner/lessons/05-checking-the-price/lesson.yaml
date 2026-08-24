@@ -20,6 +20,7 @@ spec:
       - ~(으)ㄴ N
       - ~아/어야겠다
     canDo: 세일 전 원래 가격을 확인하고, 더 생각해 보겠다고 물러선다.
+    canDoJa: セール前の元の値段を確かめ、もう少し考えると言って引き下がる。
   scene: 세일 표시가 붙어 있는데 원래 가격이 얼마인지 모르겠다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-travel-shopping-upper-beginner · 5

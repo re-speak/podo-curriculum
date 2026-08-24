@@ -24,6 +24,7 @@ spec:
     - -아/어 가지고
     - -다가는
     canDo: 어떻게 해서 그렇게 됐는지 말하고, 계속 그러면 어떻게 될지 경고받는다.
+    canDoJa: どうしてそうなったのかを話し、このまま続けたらどうなるか警告される。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-advanced-1/lessons/113-and-then-and-warning/lesson.html
 

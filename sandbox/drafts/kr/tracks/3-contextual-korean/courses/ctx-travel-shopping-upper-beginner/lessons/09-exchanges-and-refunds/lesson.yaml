@@ -20,6 +20,7 @@ spec:
       - ~(으)면 ~아/어요?
       - N 없이(도)
     canDo: 교환 가능 여부와 조건을 확인한다.
+    canDoJa: 交換できるかどうかと、その条件を確かめる。
   scene: 사이즈가 안 맞을 것 같아서 미리 조건을 확인해 둔다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-travel-shopping-upper-beginner · 9

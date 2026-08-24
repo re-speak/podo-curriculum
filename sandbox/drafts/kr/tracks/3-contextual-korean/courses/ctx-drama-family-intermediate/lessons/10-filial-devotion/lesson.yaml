@@ -20,6 +20,7 @@ spec:
       - ~게 생각하다
       - 알아서 ~(으)ㄹ게
     canDo: 늘 고마워하고 있다고 전하고, 이번엔 내가 준비하겠다고 나선다.
+    canDoJa: いつも感謝していると伝え、今回は自分が用意すると申し出る。
   scene: 올라온 뒤의 전화. 이번엔 자식이 먼저 걸었다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-family-intermediate · 10

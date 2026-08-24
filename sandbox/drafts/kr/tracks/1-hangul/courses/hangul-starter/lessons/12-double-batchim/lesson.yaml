@@ -19,6 +19,9 @@ spec:
     patterns:
       - 먼저 익힐 여섯 짝 ㄺ ㄻ ㅀ
       - ㅄ ㄳ ㄶ *(둘 중 하나만 소리 납니다 — 어느 쪽인지가 규칙)*
+    patternsJa:
+    - "まず覚える6組 ㄺ ㄻ ㅀ"
+    - "ㅄ ㄳ ㄶ *(どちらか一方だけ音が出ます — どちらがそれかがルール)*"
     canDo: 닭 · 삶 · 싫다 · 값 · 몫 · 많다
   prerequisites: []
   source: podo-curriculum-public 1-hangul/hangul-starter · 12

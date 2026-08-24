@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 한국어의 이 단어, 일본어엔 없다 (그리고 그 반대)
+    canDoJa: 韓国語のこの言葉、日本語にはない（そしてその逆も）
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-between-two-countries-intermediate/lessons/07-untranslatable-words/lesson.html
 

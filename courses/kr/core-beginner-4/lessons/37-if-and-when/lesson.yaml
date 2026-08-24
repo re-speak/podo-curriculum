@@ -24,6 +24,7 @@ spec:
     - -(으)면
     - -았/었으면 좋겠어요
     canDo: 조건을 붙여 제안하고, 이루어졌으면 하는 일을 말한다.
+    canDoJa: 条件をつけて提案し、叶ってほしいことを言う。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-4/lessons/37-if-and-when/lesson.html
 

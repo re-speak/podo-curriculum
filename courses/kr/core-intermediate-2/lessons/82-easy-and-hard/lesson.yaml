@@ -24,6 +24,7 @@ spec:
     - -기(가) 쉽다 · 어렵다 · 힘들다 · 편하다
     - -기 싫다 / -기 좋다
     canDo: 어떤 일이 하기 쉬운지 어려운지 평가하고, 하기 싫다고 말한다.
+    canDoJa: あることがしやすいか難しいかを評価し、したくないと言う。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-intermediate-2/lessons/82-easy-and-hard/lesson.html
 

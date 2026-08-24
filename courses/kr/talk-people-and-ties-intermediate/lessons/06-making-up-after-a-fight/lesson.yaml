@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 먼저 연락하는 편인가
+    canDoJa: 自分から連絡するほうか
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-people-and-ties-intermediate/lessons/06-making-up-after-a-fight/lesson.html
 

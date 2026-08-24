@@ -24,6 +24,7 @@ spec:
     - -(으)ㄹ 뻔하다
     - -아/어 버리다
     canDo: 큰일 날 뻔했던 순간을 전하고, 다 해 버린 일을 아쉬워하거나 시원해한다.
+    canDoJa: 大事になりかけた瞬間を伝え、やってしまったことを惜しんだり、すっきりしたと言ったりする。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-upper-intermediate-1/lessons/94-almost-and-completely/lesson.html
 

@@ -24,6 +24,7 @@ spec:
     - -(으)ㄹ 수 있어요 / 없어요
     - -(으)ㄹ 줄 알아요 / 몰라요
     canDo: 함께 할 활동을 정하면서 상대가 할 수 있는지 묻고, 배운 적이 있어서 할 줄 안다고 답한다.
+    canDoJa: 一緒にする活動を決めながら相手ができるかを尋ね、習ったことがあるのでできると答える。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-4/lessons/35-can-you/lesson.html
 

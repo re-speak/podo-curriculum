@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 언제로, 뭘 하러
+    canDoJa: いつへ、何をしに
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-what-came-before-intermediate · 9
 

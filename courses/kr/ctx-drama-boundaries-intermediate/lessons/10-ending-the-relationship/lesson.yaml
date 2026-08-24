@@ -24,6 +24,7 @@ spec:
     - ~(으)ㄹ 생각(이) 없다
     - ~(으)ㄴ 게 없다
     canDo: 더 맞춰 줄 생각이 없다고 밝히고, 남은 게 없다고 관계를 끝낸다.
+    canDoJa: もう合わせるつもりはないと明かし、残っているものはないと関係を終える。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-boundaries-intermediate/lessons/10-ending-the-relationship/lesson.html
 

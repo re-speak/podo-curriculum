@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 편의점·전철·택시·배달, 어느 쪽이 이기나
+    canDoJa: コンビニ・電車・タクシー・デリバリー、どちらに軍配が上がるか
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-between-two-countries-intermediate/lessons/08-convenience-showdown/lesson.html
 

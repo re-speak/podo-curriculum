@@ -24,6 +24,7 @@ spec:
     - ~(으)ㄴ 거 있나요?
     - N(으)로
     canDo: 다른 색상과 사이즈의 재고를 묻고, 다른 사이즈를 요청한다.
+    canDoJa: 別の色とサイズの在庫を尋ね、違うサイズをお願いする。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-shopping-upper-beginner/lessons/02-sizes-and-stock/lesson.html
 

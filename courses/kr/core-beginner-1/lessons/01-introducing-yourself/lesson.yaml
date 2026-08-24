@@ -24,6 +24,7 @@ spec:
     - N이에요/예요
     - N은/는
     canDo: 자기 이름을 말하고, 상대의 이름과 신분을 물어 첫인사를 끝낸다.
+    canDoJa: 自分の名前を言い、相手の名前と立場を尋ねて初対面のあいさつを終える。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-1/lessons/01-introducing-yourself/lesson.html
 

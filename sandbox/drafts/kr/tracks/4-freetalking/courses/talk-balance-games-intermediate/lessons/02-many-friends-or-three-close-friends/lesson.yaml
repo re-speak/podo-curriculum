@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 관계의 넓이와 깊이 중 더 중요한 쪽을 경험으로 설명하기
+    canDoJa: 人間関係の広さと深さ、どちらがより大切かを自分の経験で説明する
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-balance-games-intermediate · 2
 

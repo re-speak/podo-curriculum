@@ -16,6 +16,7 @@ spec:
       - ~잖아
       - ~(으)ㄹ 것 같다
     canDo: 가볍게 타박하고, 변명을 웃으며 받아 준다.
+    canDoJa: 軽く責めつつ、言い訳を笑って受け止める。
   scene: 약속 장소. 유진이 이십 분 늦게 나타난다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-friends-intermediate · 5

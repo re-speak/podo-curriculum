@@ -24,6 +24,7 @@ spec:
     - N보다 (더)
     - 제일 · 가장
     canDo: 두 가지를 비교하고, 여럿 중에서 제일 좋은 것을 고른다.
+    canDoJa: 二つを比べ、いくつもの中から一番いいものを選ぶ。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-3/lessons/23-comparing/lesson.html
 

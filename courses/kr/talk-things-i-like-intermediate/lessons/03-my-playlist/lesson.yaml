@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 언제 어떤 노래를 듣나
+    canDoJa: いつ、どんな曲を聴くか
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-things-i-like-intermediate/lessons/03-my-playlist/lesson.html
 

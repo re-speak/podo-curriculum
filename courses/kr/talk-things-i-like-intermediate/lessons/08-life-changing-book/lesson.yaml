@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 남한테 사서 준 적 있는 책
+    canDoJa: 人に買って贈ったことのある本
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-things-i-like-intermediate/lessons/08-life-changing-book/lesson.html
 

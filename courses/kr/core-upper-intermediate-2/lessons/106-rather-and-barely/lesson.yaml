@@ -24,6 +24,7 @@ spec:
     - -(으)ㄴ/는 편이다
     - -(으)ㄹ 지경이다
     canDo: 평소 자기 성향을 단정하지 않고 소개한 뒤, 그 성향으로도 감당이 안 됐던 극단적인 경험 하나를 덧붙인다.
+    canDoJa: 普段の自分の性格を断定せずに紹介したあと、その性格でも手に負えなかった極端な経験を一つ付け加える。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-upper-intermediate-2/lessons/106-rather-and-barely/lesson.html
 

@@ -16,6 +16,7 @@ spec:
       - ~(으)ㄹ래?
       - ~아/어도 돼
     canDo: 편하게 부탁하고, 물러설 자리를 만들어 준다.
+    canDoJa: 気軽に頼み、断れる余地も残してあげる。
   scene: 이사하는 날. 상자가 하나 남았는데 손이 모자란다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-friends-intermediate · 7

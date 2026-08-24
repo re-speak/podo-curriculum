@@ -24,6 +24,7 @@ spec:
     - ~보다 (더)
     - 훨씬 + 낫다
     canDo: 두 곡·두 장르를 비교해 자기 취향을 밝힌다.
+    canDoJa: 二つの曲・二つのジャンルを比べて、自分の好みを明かす。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-talk-beginner/lessons/06-comparing-songs/lesson.html
 

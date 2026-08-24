@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 준비와 자유 중 무엇이 여행을 더 즐겁게 하는지 장면으로 설명하기
+    canDoJa: 準備と自由、どちらが旅をより楽しくするかを具体的な場面で説明する
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-balance-games-intermediate/lessons/05-planned-or-spontaneous-trip/lesson.html
 

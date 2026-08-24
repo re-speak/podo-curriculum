@@ -16,6 +16,7 @@ spec:
       - ~는데
       - ~거든
     canDo: 뜻밖의 공통점을 발견하고, 반가움을 드러낸다.
+    canDoJa: 思いがけない共通点を見つけ、うれしさを表す。
   scene: 편의점 앞 파라솔. 각자 집어 온 것이 똑같다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-friends-intermediate · 3

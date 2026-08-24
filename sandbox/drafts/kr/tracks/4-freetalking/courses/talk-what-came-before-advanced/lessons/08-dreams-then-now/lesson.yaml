@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 언제 바뀌었나
+    canDoJa: いつ変わったのか
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-what-came-before-advanced · 8
 

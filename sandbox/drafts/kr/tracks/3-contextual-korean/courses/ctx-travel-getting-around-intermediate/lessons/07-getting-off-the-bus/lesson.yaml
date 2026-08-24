@@ -20,6 +20,7 @@ spec:
       - ~아/어 주시면 안 될까요?
       - ~(으)ㄹ게요
     canDo: 내릴 때 알려 달라고 부탁하고, 내리겠다고 양해를 구한다.
+    canDoJa: 降りるときに教えてほしいと頼み、降りますと声をかける。
   scene: 내려야 할 정류장이 언제인지 모른 채 서 있다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-travel-getting-around-intermediate · 7

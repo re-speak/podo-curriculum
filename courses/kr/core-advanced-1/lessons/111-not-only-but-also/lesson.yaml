@@ -24,6 +24,7 @@ spec:
     - -(으)ㄹ 뿐만 아니라
     - -(으)ㄴ/는 데다가
     canDo: 좋은 점(또는 나쁜 점)을 하나 더 얹어 강조한다.
+    canDoJa: 良い点（または悪い点）をもう一つ重ねて強調する。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-advanced-1/lessons/111-not-only-but-also/lesson.html
 

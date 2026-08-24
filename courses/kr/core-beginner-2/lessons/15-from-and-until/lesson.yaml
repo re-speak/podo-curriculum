@@ -24,6 +24,7 @@ spec:
     - N부터 N까지
     - N에서 N까지
     canDo: 시간과 거리의 시작과 끝을 말하고, 얼마나 걸리는지 묻는다.
+    canDoJa: 時間と距離の始まりと終わりを言い、どれくらいかかるかを尋ねる。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-2/lessons/15-from-and-until/lesson.html
 

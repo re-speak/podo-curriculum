@@ -20,6 +20,7 @@ spec:
       - ~보다 (더)
       - 훨씬 + 낫다
     canDo: 두 곡·두 장르를 비교해 자기 취향을 밝힌다.
+    canDoJa: 二つの曲・二つのジャンルを比べて、自分の好みを明かす。
   scene: 상대가 좋아하는 곡이 나와 취향 이야기로 넘어간다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-kpop-talk-beginner · 6

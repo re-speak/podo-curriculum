@@ -20,6 +20,7 @@ spec:
       - "-(으)ㄹ게요"
       - "-(으)ㄹ까요?"
     canDo: 내가 하겠다고 약속하고, 같이 하자고 제안한다.
+    canDoJa: 自分がやると約束し、一緒にやろうと提案する。
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-4 · 33
 

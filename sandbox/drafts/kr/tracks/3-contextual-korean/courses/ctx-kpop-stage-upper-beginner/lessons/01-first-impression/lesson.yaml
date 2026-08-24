@@ -20,6 +20,7 @@ spec:
       - ~아/어 보다
       - ~자마자
     canDo: 신곡을 들었는지 묻고, 들은 순간의 반응을 전한다.
+    canDoJa: 新曲を聴いたかを尋ね、聴いた瞬間の反応を伝える。
   scene: 컴백 당일 자정. 친구에게 바로 카톡이 왔다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-kpop-stage-upper-beginner · 1

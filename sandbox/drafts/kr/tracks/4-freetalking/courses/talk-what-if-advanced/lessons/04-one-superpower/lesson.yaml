@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 어디에 쓸 건가
+    canDoJa: 何に使うか
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-what-if-advanced · 4
 

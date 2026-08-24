@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 편리함·공간·사람 관계가 달라질 때 원하는 생활을 고르기
+    canDoJa: 便利さ・空間・人づきあいが変わるとき、どんな暮らしを望むかを選ぶ
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-balance-games-advanced · 7
 

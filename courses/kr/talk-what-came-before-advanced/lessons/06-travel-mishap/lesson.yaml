@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 계획대로 안 됐던 그날
+    canDoJa: 計画どおりにいかなかった、あの日
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-what-came-before-advanced/lessons/06-travel-mishap/lesson.html
 

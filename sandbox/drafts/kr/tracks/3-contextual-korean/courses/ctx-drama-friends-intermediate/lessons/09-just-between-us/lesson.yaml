@@ -16,6 +16,7 @@ spec:
       - ~더라
       - N밖에 없다
     canDo: 속엣말을 털어놓고, 들어 주는 사람이 되어 준다.
+    canDoJa: 本音を打ち明け、聞き役にもなってあげる。
   scene: 늦은 밤 편의점 앞 파라솔. 아무한테도 안 한 얘기가 나온다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-friends-intermediate · 9

@@ -24,6 +24,7 @@ spec:
     - N 어때?
     - ~(으)ㄴ 줄 모르다
     canDo: 카톡으로 가볍게 약속을 잡고, 답장이 늦은 이유를 설명한다.
+    canDoJa: カカオトークで気軽に約束を決め、返信が遅れた理由を説明する。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-banmal-chatting-intermediate/lessons/10-kakao-style/lesson.html
 

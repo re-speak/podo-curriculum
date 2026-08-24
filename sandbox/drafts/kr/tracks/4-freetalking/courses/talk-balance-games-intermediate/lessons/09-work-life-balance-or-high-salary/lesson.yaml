@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 시간과 수입의 교환 조건을 편한 범위에서 구체적으로 설명하기
+    canDoJa: 時間と収入の引き換え条件を、話せる範囲で具体的に説明する
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-balance-games-intermediate · 9
 

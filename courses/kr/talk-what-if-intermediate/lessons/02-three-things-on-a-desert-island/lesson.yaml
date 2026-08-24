@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 딱 세 개만
+    canDoJa: たった三つだけ
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-what-if-intermediate/lessons/02-three-things-on-a-desert-island/lesson.html
 

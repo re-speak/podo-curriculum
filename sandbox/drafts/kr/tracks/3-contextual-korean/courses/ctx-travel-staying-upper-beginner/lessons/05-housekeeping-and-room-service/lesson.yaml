@@ -20,6 +20,7 @@ spec:
       - 안 ~아/어도 괜찮다
       - ~아/어다 주다
     canDo: 청소를 사양하고, 방으로 물건을 가져다 달라고 요청한다.
+    canDoJa: 清掃を断り、部屋まで物を持ってきてほしいとお願いする。
   scene: 내일 아침에는 늦잠을 자고 싶다. 청소가 오면 곤란하다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-travel-staying-upper-beginner · 5

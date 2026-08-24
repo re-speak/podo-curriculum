@@ -20,6 +20,7 @@ spec:
       - "-(으)ㄴ/는지 알다 / 모르다"
       - "-(으)ㄹ지 모르겠어요"
     canDo: 의문사가 든 질문을 문장 안에 넣어 정중하게 묻는다.
+    canDoJa: 疑問詞の入った質問を文の中に入れて、ていねいに尋ねる。
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-upper-beginner-2 · 62
 

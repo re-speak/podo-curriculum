@@ -23,7 +23,11 @@ spec:
     patterns:
     - ~(으)라고 하다 (핵심 69) + ~지?
     - ~게 만들다
+    patternsJa:
+    - ~(으)라고 하다（コア69）+ ~지?
+    - ~게 만들다
     canDo: 전에 시킨 일을 다시 상기시키고, 반복하게 만들지 말라고 나무란다.
+    canDoJa: 前に頼んだことを改めて思い出させ、何度も言わせるなとたしなめる。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-family-intermediate/lessons/01-nagging/lesson.html
 

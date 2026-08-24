@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 그릇을 드는가, 젓가락을 어떻게 놓는가, 누가 먼저 먹는가
+    canDoJa: 器を持ち上げるか、箸をどう置くか、誰が先に食べるか
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-between-two-countries-advanced · 4
 

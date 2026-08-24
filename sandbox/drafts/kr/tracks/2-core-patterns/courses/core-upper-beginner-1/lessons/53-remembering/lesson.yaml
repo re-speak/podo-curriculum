@@ -20,6 +20,7 @@ spec:
       - "-던 N"
       - "-았/었던 N"
     canDo: 옛날 사진을 보며 예전에 자주 다니던 곳과 그때 살던 집을 상대에게 소개한다.
+    canDoJa: 昔の写真を見ながら、以前よく通っていた場所と当時住んでいた家を相手に紹介する。
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-upper-beginner-1 · 53
 

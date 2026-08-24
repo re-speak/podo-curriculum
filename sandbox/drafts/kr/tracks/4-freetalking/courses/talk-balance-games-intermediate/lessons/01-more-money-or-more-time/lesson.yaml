@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 지금 더 필요한 쪽을 고르고 조건에 따라 선택이 바뀌는지 설명하기
+    canDoJa: 今より必要なほうを選び、条件によって選択が変わるかを説明する
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-balance-games-intermediate · 1
 

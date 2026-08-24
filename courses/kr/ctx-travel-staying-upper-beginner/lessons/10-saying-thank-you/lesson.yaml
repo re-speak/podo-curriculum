@@ -24,6 +24,7 @@ spec:
     - ~아/어서
     - ~게 되면
     canDo: 도와준 것에 감사를 전하고, 다시 오고 싶다고 말한다.
+    canDoJa: 助けてくれたことに感謝を伝え、また来たいと言う。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-staying-upper-beginner/lessons/10-saying-thank-you/lesson.html
 

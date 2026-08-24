@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 나이 든다는 것
+    canDoJa: 年を取るということ
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-worth-thinking-about-intermediate · 5
 

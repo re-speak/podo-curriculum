@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 12월까지 딱 하나만 한다면
+    canDoJa: 12月までに一つだけやるとしたら
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-me-lately-advanced · 6
 

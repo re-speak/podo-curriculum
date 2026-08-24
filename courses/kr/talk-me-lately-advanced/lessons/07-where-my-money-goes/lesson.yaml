@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 무엇에, 왜 많이 쓰는지 설명하기
+    canDoJa: 何に、なぜ多く使うのかを説明する
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-me-lately-advanced/lessons/07-where-my-money-goes/lesson.html
 

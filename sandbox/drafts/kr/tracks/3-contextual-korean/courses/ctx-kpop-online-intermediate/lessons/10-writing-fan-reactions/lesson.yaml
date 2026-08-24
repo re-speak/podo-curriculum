@@ -20,6 +20,7 @@ spec:
       - 왜 이렇게 ~아/어?
       - ~네
     canDo: 짧은 감탄 리플을 직접 쓰고, 팬덤 특유의 과장 표현을 읽어 낸다.
+    canDoJa: 短い感嘆のリプライを自分で書き、ファンダム特有の大げさな表現を読み取る。
   scene: 오늘 공항 사진이 올라왔다. 리플을 직접 쓴다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-kpop-online-intermediate · 10

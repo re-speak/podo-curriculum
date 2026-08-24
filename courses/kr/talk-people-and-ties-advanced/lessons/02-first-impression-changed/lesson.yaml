@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 좋은 쪽으로도, 나쁜 쪽으로도
+    canDoJa: いい方向にも、悪い方向にも
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-people-and-ties-advanced/lessons/02-first-impression-changed/lesson.html
 

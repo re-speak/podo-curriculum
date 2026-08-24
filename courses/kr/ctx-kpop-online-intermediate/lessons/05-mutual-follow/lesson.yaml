@@ -24,6 +24,7 @@ spec:
     - ~아/어 주실 수 있나요?
     - N이/가 같다 / 다르다
     canDo: 처음 보는 계정에 맞팔을 요청하고, 이유를 밝힌다.
+    canDoJa: 初めて見るアカウントに相互フォローを頼み、その理由を伝える。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-online-intermediate/lessons/05-mutual-follow/lesson.html
 

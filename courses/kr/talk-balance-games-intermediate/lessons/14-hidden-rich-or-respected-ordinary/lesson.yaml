@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 돈·평판·사생활 중 무엇을 지키고 싶은지 설명하기
+    canDoJa: お金・評判・プライバシーのうち、何を守りたいかを説明する
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-balance-games-intermediate/lessons/14-hidden-rich-or-respected-ordinary/lesson.html
 

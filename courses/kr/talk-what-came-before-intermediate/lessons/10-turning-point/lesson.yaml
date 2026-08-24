@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 삶의 방향이 바뀐 계기와 전후 이야기하기
+    canDoJa: 人生の向きが変わったきっかけと、その前後を話す
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-what-came-before-intermediate/lessons/10-turning-point/lesson.html
 

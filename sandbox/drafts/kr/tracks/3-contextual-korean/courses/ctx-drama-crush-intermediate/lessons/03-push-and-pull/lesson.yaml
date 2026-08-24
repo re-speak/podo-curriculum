@@ -20,6 +20,7 @@ spec:
       - ~(으)면 ~는 거야
       - ~지 마
     canDo: 먼저 연락하지 않겠다고 버티고, 티 내지 말라고 놀린다.
+    canDoJa: 自分からは連絡しないと粘り、態度に出すなとからかう。
   scene: 서로 먼저 연락하지 않으려고 버티는 며칠. 친구가 옆에서 놀린다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-crush-intermediate · 3

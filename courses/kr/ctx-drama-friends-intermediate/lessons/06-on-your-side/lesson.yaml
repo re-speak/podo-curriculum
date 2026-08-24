@@ -24,6 +24,7 @@ spec:
     - ~(으)ㄹ 만하다
     - 아무리 ~아/어도
     canDo: 편을 들어 주고, 그럴 만했다고 인정해 준다.
+    canDoJa: 味方をして、それも無理はなかったと認めてあげる。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-friends-intermediate/lessons/06-on-your-side/lesson.html
 

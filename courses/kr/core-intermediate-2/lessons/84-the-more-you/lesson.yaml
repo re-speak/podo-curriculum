@@ -24,6 +24,7 @@ spec:
     - -(으)ㄹ수록
     - -는 데(에)
     canDo: 정도가 더해지는 변화를 말하고, 무엇에 무엇이 좋은지 추천한다.
+    canDoJa: 程度が増していく変化を言い、何に何がいいかを勧める。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-intermediate-2/lessons/84-the-more-you/lesson.html
 

@@ -20,6 +20,7 @@ spec:
       - N을/를 위해(서) / -기 위해(서)
       - "-도록"
     canDo: 무엇을 위해 하는지 밝히고, 어떤 상태가 되도록 하라고 일러 준다.
+    canDoJa: 何のためにするのかを明かし、どんな状態になるようにするかを教える。
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-intermediate-2 · 80
 

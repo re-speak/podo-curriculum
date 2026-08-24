@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 하고 싶은 것, 절대 안 하고 싶은 것
+    canDoJa: やってみたいこと、絶対にやりたくないこと
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-love-and-marriage-intermediate/lessons/05-dream-wedding/lesson.html
 

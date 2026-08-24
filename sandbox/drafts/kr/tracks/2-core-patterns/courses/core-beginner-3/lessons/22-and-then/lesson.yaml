@@ -20,6 +20,7 @@ spec:
       - "-고"
       - N(이)나 · -거나
     canDo: 두 가지 일을 이어서 말하고, 둘 중 하나를 고르게 한다.
+    canDoJa: 二つのことを続けて言い、そのうち一つを選ばせる。
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-3 · 22
 

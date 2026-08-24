@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 아직 아무한테도 말 안 한 것
+    canDoJa: まだ誰にも話していないこと
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-me-lately-intermediate · 5
 

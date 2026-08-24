@@ -23,7 +23,11 @@ spec:
     patterns:
     - 기대했던 것보다 훨씬 + A
     - ~(으)ㄴ 것 같다 (핵심 61, ~(으)ㄴ데는 56 복습)
+    patternsJa:
+    - 기대했던 것보다 훨씬 + A
+    - ~(으)ㄴ 것 같다（コア61・~(으)ㄴ데は56の復習）
     canDo: 기대와 비교해 맛을 평가하고, 간을 조절해 달라고 부탁한다.
+    canDoJa: 期待と比べて味を評価し、味つけを調節してほしいと頼む。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-eating-out-upper-beginner/lessons/06-describing-the-taste/lesson.html
 

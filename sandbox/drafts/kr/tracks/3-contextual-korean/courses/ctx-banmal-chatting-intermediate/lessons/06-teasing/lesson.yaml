@@ -20,6 +20,7 @@ spec:
       - ~기는 무슨
       - 또 ~네
     canDo: 상대의 말을 비꼬아 받아치고, 또 시작이라고 놀린다.
+    canDoJa: 相手の言葉を皮肉って言い返し、また始まったとからかう。
   scene: 친구가 지키지도 못할 다짐을 또 한다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-banmal-chatting-intermediate · 6

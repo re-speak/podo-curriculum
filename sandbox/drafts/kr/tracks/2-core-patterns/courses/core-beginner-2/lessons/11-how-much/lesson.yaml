@@ -20,6 +20,7 @@ spec:
       - 얼마예요?
       - 한자어 숫자 + 원
     canDo: 값을 묻고, 들은 값을 되짚어 확인한다.
+    canDoJa: 値段を尋ね、聞いた値段を言い直して確認する。
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-2 · 11
 

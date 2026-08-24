@@ -24,6 +24,7 @@ spec:
     - ~는데
     - 아무리 ~아/어도
     canDo: 정면으로 부정하지 않으면서 다른 생각을 내놓는다.
+    canDoJa: 正面から否定せずに、別の考えを出す。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-banmal-chatting-intermediate/lessons/05-gentle-disagreement/lesson.html
 

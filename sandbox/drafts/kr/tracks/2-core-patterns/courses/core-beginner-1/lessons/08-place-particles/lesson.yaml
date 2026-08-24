@@ -20,6 +20,7 @@ spec:
       - N에
       - N에서
     canDo: 오늘 어디에 가서 무엇을 하는지 한 문장으로 이어 말하고, 상대에게도 묻는다.
+    canDoJa: 今日どこへ行って何をするのかを一文でつないで言い、相手にも尋ねる。
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-1 · 8
 

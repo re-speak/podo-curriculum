@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 한국에서(또는 한국 사람에게서) 놀랐던 순간
+    canDoJa: 韓国で（または韓国の人に）驚いた瞬間
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-between-two-countries-intermediate · 1
 

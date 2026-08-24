@@ -24,6 +24,7 @@ spec:
     - ~(으)ㄹ래?
     - ~(으)ㄹ게
     canDo: 사귀자고 고백하고, 앞으로 잘하겠다고 약속한다.
+    canDoJa: 付き合おうと告白し、これから大事にすると約束する。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-crush-intermediate/lessons/08-confession/lesson.html
 

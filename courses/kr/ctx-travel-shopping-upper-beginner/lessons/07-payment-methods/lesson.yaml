@@ -24,6 +24,7 @@ spec:
     - N(으)로도
     - N 말고 N(으)로 해 주세요
     canDo: 해외 카드가 되는지 묻고, 할부/일시불을 지정한다.
+    canDoJa: 海外のカードが使えるかを尋ね、分割払いか一括払いかを指定する。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-shopping-upper-beginner/lessons/07-payment-methods/lesson.html
 

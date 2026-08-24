@@ -24,6 +24,7 @@ spec:
     - N 있어요 / 없어요
     - N이/가 어디에 있어요?
     canDo: 어떤 것이 있는지 묻고, 없으면 없다고 답한다.
+    canDoJa: 何があるかを尋ね、なければないと答える。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-2/lessons/16-is-there-one/lesson.html
 

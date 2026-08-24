@@ -20,6 +20,7 @@ spec:
       - ~았/었어요
       - ~(으)면 좋겠다
     canDo: 최근에 다녀온 덕질 활동을 이야기하고, 다음에 하고 싶은 것을 말한다.
+    canDoJa: 最近行ってきた推し活を話し、次にやりたいことを言う。
   scene: 지난주 콘서트 이야기가 나왔다. 나는 다녀왔고, 상대는 못 갔다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-kpop-talk-beginner · 10

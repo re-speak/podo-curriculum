@@ -20,6 +20,7 @@ spec:
       - ~(으)ㄴ 적 있다
       - ~아/어도 돼요?
     canDo: 처음 본 사람에게 아는 사이인지 떠보고, 연락처를 물어본다.
+    canDoJa: 初対面の人に、知り合いかどうかを探りつつ、連絡先を尋ねる。
   scene: 비 오는 밤 편의점 앞. 앞사람이 떨어뜨린 물건을 주워 건네다가, 지난주에 본 얼굴이라는 걸 알아본다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-friends-intermediate · 1

@@ -19,6 +19,7 @@ spec:
     patterns:
       []
     canDo: 질리지 않을 자신 있나
+    canDoJa: 飽きない自信はあるか
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-what-if-advanced · 5
 

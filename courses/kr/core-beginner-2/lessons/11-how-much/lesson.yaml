@@ -24,6 +24,7 @@ spec:
     - 얼마예요?
     - 한자어 숫자 + 원
     canDo: 값을 묻고, 들은 값을 되짚어 확인한다.
+    canDoJa: 値段を尋ね、聞いた値段を言い直して確認する。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-2/lessons/11-how-much/lesson.html
 

@@ -24,6 +24,7 @@ spec:
     - 하마터면 ~(으)ㄹ 뻔했다
     - ~(으)ㄹ걸
     canDo: 큰일 날 뻔했다고 가슴을 쓸어내리고, 하지 말걸 그랬다고 후회한다.
+    canDoJa: 大事になりかけたと胸をなでおろし、やらなければよかったと悔やむ。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-banmal-chatting-intermediate/lessons/09-relief-and-regret/lesson.html
 

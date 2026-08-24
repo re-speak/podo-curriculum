@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 산속 리조트에서 버틸 수 있나
+    canDoJa: 山の中のリゾートで耐えられるか
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-what-if-advanced/lessons/07-one-week-without-a-smartphone/lesson.html
 

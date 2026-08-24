@@ -20,6 +20,7 @@ spec:
       - "-는 둥 마는 둥"
       - "-(으)ㄴ/는 척하다"
     canDo: 제대로 하지 않고 넘긴 일과, 알면서 모르는 척한 태도를 묘사한다.
+    canDoJa: きちんとやらずに済ませたことと、知っていて知らないふりをした態度を描写する。
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-upper-intermediate-2 · 109
 

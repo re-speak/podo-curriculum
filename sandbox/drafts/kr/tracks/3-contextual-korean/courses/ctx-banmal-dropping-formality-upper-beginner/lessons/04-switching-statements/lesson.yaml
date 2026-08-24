@@ -20,6 +20,7 @@ spec:
       - ~아/어요 → ~아/어
       - ~았/었어요 → ~았/었어
     canDo: 존댓말 문장을 반말로, 반말을 존댓말로 즉석에서 바꿔 말한다.
+    canDoJa: 敬語の文をタメ口に、タメ口を敬語に、その場で言い換える。
   scene: 아까 존댓말로 했던 이야기를 그대로 다시 해 본다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-banmal-dropping-formality-upper-beginner · 4

@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 좋아하는 편? 그날은 뭘 하나
+    canDoJa: 好きなほう？ その日は何をするか
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-small-things-intermediate/lessons/04-rainy-day-me/lesson.html
 

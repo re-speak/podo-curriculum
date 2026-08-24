@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 어디까지 혼자 가능한가
+    canDoJa: どこまで一人でできるか
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-people-and-ties-intermediate/lessons/04-doing-things-alone/lesson.html
 

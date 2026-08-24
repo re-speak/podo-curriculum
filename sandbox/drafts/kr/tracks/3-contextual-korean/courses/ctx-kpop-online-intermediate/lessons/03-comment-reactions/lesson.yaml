@@ -20,6 +20,7 @@ spec:
       - N마다
       - 그냥 ~지 마
     canDo: 댓글 분위기를 전하고, 악플은 무시하라고 말린다.
+    canDoJa: コメント欄の空気を伝え、悪意あるコメントは無視するように止める。
   scene: 영상 댓글창을 같이 내려 보는 중. 악플도 섞여 있다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-kpop-online-intermediate · 3

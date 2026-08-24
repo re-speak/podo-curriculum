@@ -20,6 +20,7 @@ spec:
       - ~(으)면 ~(으)ㄹ 거야
       - ~아/어 보이다
     canDo: 더 넘어오면 가만있지 않겠다고 경고하고, 만만하게 보지 말라고 못 박는다.
+    canDoJa: これ以上踏み込むなら黙っていないと警告し、なめるなと念を押す。
   scene: 상의 없이 결정한 일이 한 번 더 반복됐다. 이번엔 짚고 넘어간다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-boundaries-intermediate · 1

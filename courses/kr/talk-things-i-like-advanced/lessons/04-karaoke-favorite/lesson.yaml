@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 무조건 넣는 그 곡
+    canDoJa: 必ず入れる、あの曲
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-things-i-like-advanced/lessons/04-karaoke-favorite/lesson.html
 

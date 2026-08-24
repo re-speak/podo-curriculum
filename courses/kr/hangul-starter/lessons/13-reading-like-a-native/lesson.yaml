@@ -23,6 +23,9 @@ spec:
     patterns:
     - 연음 (겹받침 포함)
     - ㅎ 변화
+    patternsJa:
+    - 連音（二重パッチムを含む）
+    - ㅎ 변화
     canDo: 한국어→한구거 · 음악→으막 · 좋아요→조아요 · 많다→만타
   prerequisites: []
   source: sandbox/drafts/kr/tracks/1-hangul/courses/hangul-starter/lessons/13-reading-like-a-native/lesson.html

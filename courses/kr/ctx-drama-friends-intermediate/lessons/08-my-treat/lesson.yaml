@@ -24,6 +24,7 @@ spec:
     - ~(으)ㄹ게
     - ~(으)니까
     canDo: 사겠다고 나서고, 다음을 기약하며 물러선다.
+    canDoJa: おごると申し出て、次を約束して引き下がる。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-friends-intermediate/lessons/08-my-treat/lesson.html
 

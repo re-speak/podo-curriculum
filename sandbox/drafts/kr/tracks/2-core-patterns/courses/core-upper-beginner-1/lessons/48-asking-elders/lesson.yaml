@@ -20,6 +20,7 @@ spec:
       - "-(으)셨어요"
       - 어떻게 되세요?
     canDo: 어른께 지난 일을 여쭙고, 이름·나이를 정중하게 묻는다.
+    canDoJa: 目上の人に過去のことをうかがい、名前・年齢をていねいに尋ねる。
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-upper-beginner-1 · 48
 

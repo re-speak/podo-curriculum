@@ -22,6 +22,7 @@ spec:
   teaches:
     patterns: []
     canDo: 지금 일 말고 뭘 하고 있었을까
+    canDoJa: 今の仕事ではなく、何をしていただろうか
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-work-and-money-intermediate/lessons/06-if-i-had-another-job/lesson.html
 

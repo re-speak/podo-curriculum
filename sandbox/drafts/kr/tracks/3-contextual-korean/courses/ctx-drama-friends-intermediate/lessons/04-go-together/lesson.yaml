@@ -16,6 +16,7 @@ spec:
       - ~(으)ㄹ래?
       - ~자
     canDo: 같이 가자고 제안하고, 시간을 맞춘다.
+    canDoJa: 一緒に行こうと提案し、時間を合わせる。
   scene: 다음 주에 동네에서 열리는 행사 이야기가 나온다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-friends-intermediate · 4

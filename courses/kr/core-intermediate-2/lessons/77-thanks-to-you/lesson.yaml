@@ -24,6 +24,7 @@ spec:
     - N 덕분에 / -(으)ㄴ 덕분에
     - -아/어서 그런지
     canDo: 좋은 결과의 공을 상대에게 돌리고, 확실하지 않은 원인은 짐작으로 댄다.
+    canDoJa: 良い結果の手柄を相手に譲り、はっきりしない原因は推測で挙げる。
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-intermediate-2/lessons/77-thanks-to-you/lesson.html
 
