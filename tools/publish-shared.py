@@ -46,7 +46,10 @@ import model
 # Only what shared/ owns moves. A lesson-specific image stays in its deck, and
 # `repoint-shared.py` keeps a local copy whose bytes differ from shared's even when
 # the basename matches.
-MIRRORED = ("css", "js", "assets")
+# `view` 는 리포트 뷰어 한 장이다(shared/view/report.html). 덱이 부르는 파일은 아니지만
+# podo-app 이 저장된 리포트를 다시 열 때 이 태그에서 그대로 가져다 쓰므로, 런타임과 같은
+# 태그에 실려야 한다 — 뷰어만 따로 배포하면 그 순간 리포트가 두 판본이 된다.
+MIRRORED = ("css", "js", "assets", "view")
 
 
 class PublishError(Exception):
