@@ -31,6 +31,21 @@ Throughout, **target language** means the language being taught (Korean or Engli
 - **The title is a label, not speech** — a noun phrase, never a question or a full sentence. If there's a question to ask, it belongs in the script box.
 - **One blue script box** per page — the exact line the tutor reads aloud (see *Scripts*). Blue means exactly one thing in this system: the tutor is saying it out loud. Nothing else may take that fill.
 - **One boxed component** holds the activity (max two levels of nesting); it fills the page.
+- **A page that marks a chapter takes the whole screen; a page that teaches keeps its frame.**
+  Colour-led pages — the lime brand pages and the dark part dividers — carry a kicker, a title
+  and at most the script box. They hold no activity, so they need no card to hold it, and the
+  colour reaching every edge *is* the signal that the chapter turned. They run full-bleed: no
+  margin, no radius, no shadow.
+
+  Teaching pages do the opposite, and the reason is concrete rather than aesthetic: the page
+  card is white, the phone column behind it is white, and its border is transparent — so the
+  only thing separating one lesson page from the next is its margin. Take that away and a
+  scrolled deck becomes one undifferentiated column. **Never bleed a white page to match a
+  coloured one.** Consistency here means each surface keeps the signal it actually carries.
+
+  The same test decides a page that is already a box. A report or 안내 page whose content is
+  itself a bordered card drops the page frame too, because keeping it would make three levels
+  of nesting out of the two allowed above.
 
 ## Scripts & language
 - The script box is the tutor's **word-for-word spoken script** — natural, simple, *spoken* language, not textbook phrasing, and no grammar jargon.
