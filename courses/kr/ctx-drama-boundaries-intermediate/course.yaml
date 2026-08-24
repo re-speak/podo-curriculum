@@ -41,6 +41,8 @@ spec:
     en: Draw a line, refuse firmly, press on who is responsible, and end a relationship without losing your composure.
     ja: 線を引き、きっぱり断り、責任の所在を問い、関係を終える言葉を、感情に飲まれずに言える。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

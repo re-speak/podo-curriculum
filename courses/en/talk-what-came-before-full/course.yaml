@@ -31,6 +31,8 @@ spec:
     en: Tell what you already lived through, in order and in detail.
     ja: すでに経験した記憶を、時間の順とディテールで語る。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

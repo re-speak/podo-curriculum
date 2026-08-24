@@ -33,6 +33,8 @@ spec:
     en: Lead with a reason, invite and ask politely, and say how something seems without overclaiming.
     ja: 理由や背景を置いてから丁寧に誘い・頼み、断定を避けて感じたことや推測を伝える。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

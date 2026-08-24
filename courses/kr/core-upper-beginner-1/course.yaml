@@ -33,6 +33,8 @@ spec:
     en: Speak politely to elders, and pin down which thing and from when by modifying nouns.
     ja: 目上の人に敬語で話し、名詞を修飾して「どれか・いつのことか」を言い分ける。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

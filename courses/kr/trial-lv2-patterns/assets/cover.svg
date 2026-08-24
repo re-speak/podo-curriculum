@@ -1,31 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="864" height="1080" viewBox="0 0 864 1080">
-  <rect width="864" height="1080" fill="#b5fd4c"/>
-  <g font-family="Hiragino Sans, Noto Sans JP, sans-serif" fill="#1c1c1c">
-    <rect x="72" y="72" width="462" height="82" rx="41" fill="#1c1c1c"/>
-    <text x="104" y="126" fill="#ffffff" font-family="Helvetica Neue, Arial, sans-serif" font-size="34" font-weight="900" letter-spacing="1">PODO</text>
-    <rect x="226" y="82" width="298" height="62" rx="31" fill="#ffffff"/>
-    <text x="375" y="123" text-anchor="middle" font-size="26" font-weight="800">体験レッスン</text>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="864" height="1080" viewBox="0 0 864 1080">
+  <defs>
+    <linearGradient id="bg" x1="92" y1="50" x2="780" y2="1050" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B7F0BC" stop-opacity=".24"/>
+      <stop offset=".38" stop-color="#69CD73"/>
+      <stop offset="1" stop-color="#43B95B"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(650 790) rotate(112) scale(510 470)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity=".19"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="card"><rect width="864" height="1080" rx="48"/></clipPath>
+    <style>
+      text { font-family: Pretendard, "Hiragino Sans", sans-serif; }
+      .eyebrow { fill: #fff; font-size: 34px; font-weight: 800; letter-spacing: 1.2px; }
+      .title { fill: #fff; font-weight: 900; letter-spacing: -2.5px; }
+      .level { fill: #fff; fill-opacity: .72; font-size: 35px; font-weight: 700; letter-spacing: -.8px; }
+    </style>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect width="864" height="1080" fill="url(#bg)"/>
+    <circle cx="716" cy="708" r="322" fill="none" stroke="#FFFFFF" stroke-opacity=".07" stroke-width="92"/>
+    <circle cx="695" cy="713" r="178" fill="none" stroke="#000000" stroke-opacity=".055" stroke-width="54"/>
+    <path d="M-46 897C137 735 268 826 403 698C552 558 646 424 934 468" fill="none" stroke="#FFFFFF" stroke-opacity=".055" stroke-width="64" stroke-linecap="round"/>
+    <rect width="864" height="1080" fill="url(#glow)"/>
 
-    <text x="72" y="320" font-size="124" font-weight="900" letter-spacing="-5">初級</text>
-    <text x="76" y="382" font-size="31" font-weight="700" opacity=".62">基本パターンで話す</text>
-    <text x="790" y="122" text-anchor="end" font-family="Helvetica Neue, Arial, sans-serif" font-size="27" font-weight="800" opacity=".45">02 / 04</text>
+    <text x="84" y="105" class="eyebrow">KR · TRIAL</text>
+    <rect x="678" y="66" width="106" height="58" rx="29" fill="#000000" fill-opacity=".22"/>
+    <text x="731" y="105" text-anchor="middle" fill="#FFFFFF" font-size="26" font-weight="800">KO</text>
+    <text x="84" y="204" class="title" font-size="88">체험 레슨</text>
+    <text x="86" y="324" class="level">初級</text>
 
-    <g transform="translate(72 514)">
-      <rect width="720" height="205" rx="38" fill="#ffffff"/>
-      <rect x="34" y="42" width="174" height="76" rx="20" fill="#1c1c1c"/>
-      <text x="121" y="94" text-anchor="middle" fill="#b5fd4c" font-size="37" font-weight="900">저는</text>
-      <rect x="226" y="42" width="244" height="76" rx="20" fill="#1c1c1c" fill-opacity=".08" stroke="#1c1c1c" stroke-opacity=".35" stroke-width="3" stroke-dasharray="10 10"/>
-      <text x="348" y="93" text-anchor="middle" font-size="29" font-weight="700" opacity=".42">なまえ</text>
-      <rect x="488" y="42" width="198" height="76" rx="20" fill="#1c1c1c" fill-opacity=".12"/>
-      <text x="587" y="94" text-anchor="middle" font-size="37" font-weight="900">예요</text>
-      <path d="M43 158H677" stroke="#1c1c1c" stroke-opacity=".16" stroke-width="3"/>
-      <text x="360" y="184" text-anchor="middle" font-size="22" font-weight="700" opacity=".52">パターンに入れて、声に出す</text>
-    </g>
+    <image x="166" y="390" width="760" height="640" preserveAspectRatio="xMidYMid meet" href="../../../../tools/authoring/course_covers/motifs/patterns.png" xlink:href="../../../../tools/authoring/course_covers/motifs/patterns.png"/>
 
-    <path d="M72 821H792" stroke="#1c1c1c" stroke-opacity=".18" stroke-width="3"/>
-    <text x="72" y="894" font-size="29" font-weight="800">短い文から、会話へ。</text>
-    <text x="72" y="947" font-size="24" font-weight="700" opacity=".58">韓国語 · 55分体験</text>
-    <circle cx="762" cy="914" r="38" fill="#1c1c1c"/>
-    <text x="762" y="925" text-anchor="middle" fill="#b5fd4c" font-family="Helvetica Neue, Arial, sans-serif" font-size="34" font-weight="900">02</text>
+    <text x="84" y="1004" fill="#FFFFFF" font-size="31" font-weight="900" letter-spacing="1.4">PODO</text>
+    <text x="780" y="1004" text-anchor="end" fill="#FFFFFF" fill-opacity=".58" font-size="24" font-weight="700">TRIAL</text>
   </g>
 </svg>

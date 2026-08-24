@@ -31,6 +31,8 @@ spec:
     en: Escalate a cancellation, document an incident for insurance, advocate for what you need, and decide safely on partial information.
     ja: 欠航をエスカレーションし、事故を記録に残し、必要な配慮を主張し、情報が足りない中で安全側の判断をする。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

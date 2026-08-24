@@ -36,6 +36,8 @@ spec:
     ko: 익숙한 주제로 대화를 이어가 보는 25분 체험 레슨.
     ja: 身近なテーマで会話を続けてみる25分の体験レッスン。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

@@ -31,6 +31,8 @@ spec:
     en: Explain what you like and why, through experiences specific enough to picture.
     ja: 好きなものとその理由を、具体的な経験で説明する。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

@@ -31,6 +31,8 @@ spec:
     en: Introduce yourself, name what is around you, and keep the subject English always needs.
     ja: 自己紹介をし、身の回りのものを言い、英語が必ず求める主語を落とさずに話す。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

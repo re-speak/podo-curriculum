@@ -33,6 +33,8 @@ spec:
     en: Ask prices, counts, times and dates, find out where something is, and make a request.
     ja: 値段・個数・時間・日付をたずね、何がどこにあるかを確かめ、必要なものを頼む。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

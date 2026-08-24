@@ -31,6 +31,8 @@ spec:
     en: Interrupt to clarify, summarise a decision, present your recommendation up front, and disagree upward constructively.
     ja: 確認のために割って入り、決まったことをまとめ、結論から提案し、目上にも建設的に反対する。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

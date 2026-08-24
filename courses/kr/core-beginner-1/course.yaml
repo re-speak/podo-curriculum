@@ -33,6 +33,8 @@ spec:
     en: Exchange names, ask about the things and people in front of you, and describe your day.
     ja: 名前をやりとりし、目の前のものや人をたずね、一日の過ごし方と「しないこと」まで話す。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []
