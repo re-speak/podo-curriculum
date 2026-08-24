@@ -20,8 +20,8 @@
 ## 1 · 파일 뼈대
 
 경로는 `korean/trial/lessons/deck.html` 처럼 **저장소 루트에서 세 단계 아래**에 있는 덱
-기준입니다. 한 단계 위(`korean/tracks/2-core-patterns/`)에 두면 `../` 하나를 빼고,
-실제 레슨 자리(`korean/tracks/<t>/courses/<c>/lessons/<slug>/`)는 일곱 단계라
+기준입니다. 한 단계 위(`sandbox/drafts/kr/tracks/2-core-patterns/`)에 두면 `../` 하나를 빼고,
+실제 레슨 자리(`sandbox/drafts/kr/tracks/<t>/courses/<c>/lessons/<slug>/`)는 일곱 단계라
 `../` 가 일곱 개입니다.
 
 > **`runtime/` 은 이제 저장소 루트에 있습니다** — `korean/` 안이 아닙니다. 한국어와 영어
@@ -169,7 +169,7 @@ closing
 
 ### 가르치는 면에 걸리는 여섯 가지 (`check_teaching.py`)
 
-덱을 쓰고 나면 `python3 korean/tools/check_teaching.py <deck…>` 를 돌립니다.
+덱을 쓰고 나면 `python3 tools/authoring/kr/check_teaching.py <deck…>` 를 돌립니다.
 
 1. **앵커** — 코어 트랙의 `pN-teach` 는 `.anchor` 슬롯 + 말하는 줄 한 문장.
 2. **소리 내어 읽는 줄에 일본어 금지** — `.ko` 안에 가나·한자를 넣지 않습니다. 도움이 되는

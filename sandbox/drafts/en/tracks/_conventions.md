@@ -212,8 +212,8 @@ It is not worth losing the right example over — take the wrap and note it.
 
 | Needed | State | Why |
 | --- | --- | --- |
-| Shared English runtime | **live in `v1.12.1`** | The published runtime includes the verified 360px `.slot-input` spacing and all-page pager clearance used by the current English decks. There is no outstanding republish or repoint dependency for these fixes |
-| Language-aware tutor-only labels | **live in `v1.12.1`** | English decks declare `podo:target-language=en`. The live runtime emits `Spoken sentence`, `Correction`, `Note`, `Delete`, `Tutor only`, `Message to the learner`, and `Well done stamp` for them while keeping Korean as the default |
+| Shared English runtime | **live at `curriculum.yaml` → `spec.sharedRuntime.version`** | The immutable version declared there is the only current version claim; do not copy a tag into this document |
+| Language-aware tutor-only labels | **part of the pinned shared runtime** | English decks declare `podo:target-language=en`. The runtime emits `Spoken sentence`, `Correction`, `Note`, `Delete`, `Tutor only`, `Message to the learner`, and `Well done stamp` for them while keeping Korean as the default |
 | A three-branch rule diagram | not written | inherited from Korean and **worse here**: `do/does/did`, `a/an/the` and `-s/-es/-ies` are all three-case, and `.batchim` is single-column. Core 20 dodged it (its rule is an honest two-brancher). The next lesson that does not, ships two boxes and reports it |
 | `.ko` / `.korean` class names | naming only, not a defect | they mean "the line the tutor reads" and "the target-language span". English decks reuse them as-is, because renaming is a runtime change touching 316 Korean decks. Worth knowing before someone reads an English deck and thinks it is mislabelled |
 | A second inline accent for English | not written | see the mark-vocabulary section above. Not needed yet |
@@ -228,7 +228,7 @@ does not fit rather than bending a component into a wrong teaching.
 
 ## Before you call a lesson done
 
-0. **`python3 english/tools/check_deck.py <your deck>` — run this first.** It mechanises items
+0. **`python3 tools/authoring/check_deck.py <your deck>` — run this first.** It mechanises items
    1, 3, 4 and 5 below and exits non-zero on any error. It does not replace looking at the page.
 1. Every `href`/`src` resolves — run the deck's own relative paths, do not eyeball them.
 2. Nothing the lesson has not taught appears in learner-produced English.
@@ -252,12 +252,12 @@ does not fit rather than bending a component into a wrong teaching.
 
 ---
 
-## Runtime publish — current live state
+## Runtime publish — current source of truth
 
-**`v1.12.1` is published and live.** It includes the shared pattern components, the corrected
-cross-language type scale, the 360px input spacing and pager clearance, and the language-aware
-English tutor-only labels described above. The former `v1.4.0`/`v1.7.0` follow-up publish gaps are
-closed; do not add deck-local workarounds for them.
+The immutable tag declared in the repository-root `curriculum.yaml` at
+`spec.sharedRuntime.version` is the current published version. It includes the shared pattern
+components and language-aware English tutor-only labels described above. Do not copy the tag into
+this file or add deck-local workarounds for shared behavior.
 
 Decks continue to load an immutable pinned runtime. Any future shared-runtime change remains an
 orchestrator decision: publish the new tag, repoint the intended decks, and verify both language

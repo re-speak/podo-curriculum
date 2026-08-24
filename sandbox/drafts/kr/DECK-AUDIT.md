@@ -7,9 +7,9 @@
 그래서 지금까지 통과해 온 것입니다.
 
 ```sh
-python3 english/tools/check_deck.py korean/tracks          # 전체
-python3 english/tools/check_deck.py korean/tracks/2-core-patterns
-python3 english/tools/check_deck.py <파일 하나>
+python3 tools/authoring/check_deck.py sandbox/drafts/kr/tracks          # 전체
+python3 tools/authoring/check_deck.py sandbox/drafts/kr/tracks/2-core-patterns
+python3 tools/authoring/check_deck.py <파일 하나>
 ```
 
 오류가 있으면 non-zero 로 끝나므로 배치 게이트로 쓸 수 있습니다.
@@ -170,7 +170,7 @@ CSS·JS 를 싣지 않고, 런타임이 못 하는 게 있으면 **멈추고 보
 ## 끝나고
 
 ```sh
-python3 english/tools/check_deck.py korean/tracks
+python3 tools/authoring/check_deck.py sandbox/drafts/kr/tracks
 ```
 
 오류 0을 목표로 하되, 2번에서 **개수가 섞인 채로 두는 것이 옳다고 판단한 페이지**가

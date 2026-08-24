@@ -37,11 +37,15 @@ ships — that manifest is the reviewable part of a promotion.
 
 ```sh
 python3 tools/authoring/kr/check_structure.py     # while writing
-python3 tools/make-promotion.py --lang en         # derive promotion.yaml from the decks
-python3 tools/promote.py --check                  # what would ship
-python3 tools/promote.py                          # write courses/
-python3 tools/repoint-shared.py && python3 tools/validate.py
+python3 tools/make-promotion.py <course-draft-dir> --force
+python3 tools/promote.py --check <course-draft-dir>/promotion.yaml
+python3 tools/promote.py <course-draft-dir>/promotion.yaml
+python3 tools/repoint-shared.py <lang/course-slug>
+python3 tools/validate.py --env stage
 ```
+
+Omitting the manifest or course key walks every draft or promoted course. That
+is reserved for an intentional full-corpus regeneration, not normal course work.
 
 **Promotion copies; it does not move.** A draft stays here after it ships and
 remains the thing you edit. `promote.py` clears and rewrites
