@@ -518,8 +518,9 @@ def tail(freetalk=False):
   <script src="../../../../../shared/js/highlight.js"></script>
 
   <!-- STAMP · よくできました。stamp.js がこの絵をページごとに複製する。
-       .phone の外に置くのが大事 — 中に入れると空のページが一つ増える。 -->
-  <img class="stamp-art" src="../assets/well-done.svg" alt="">
+       .phone の外に置くのが大事 — 中に入れると空のページが一つ増える。
+       英語デッキは英語の判子を押す — 韓国語の 참!잘했어요 ではない。 -->
+  <img class="stamp-art" src="../assets/good-job.svg" alt="">
   <script src="../../../../../shared/js/stamp.js"></script>
 
   <!-- yomi.js は読み込まない。英語デッキはカタカナの読みを一切持たない
