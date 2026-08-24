@@ -95,8 +95,15 @@ spec:
   sharedRuntime:
     baseUrl: https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared
     repo: re-speak/podo-curriculum-shared
-    version: v1.23.0
+    version: v1.24.0
     join: "@"
+    # jsDelivr intentionally serves repository HTML as text/plain with nosniff.
+    # The full runtime is therefore mirrored to this versioned GCS path as well;
+    # report.html and all of its relative css/js/assets remain one immutable unit.
+    gcsMirror:
+      bucket: podo-assets
+      prefix: podo-curriculum-shared
+      publicBaseUrl: https://storage.googleapis.com/podo-assets/podo-curriculum-shared
 
   # Directories the sync tool will never walk, no matter what is inside them.
   # sandbox/ is committed on purpose — experiments should be reviewable — but it

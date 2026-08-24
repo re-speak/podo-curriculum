@@ -81,6 +81,17 @@
               "type": "string",
               "enum": ["@", "/"],
               "description": "How the version attaches to baseUrl. jsDelivr pins with '@'; a plain bucket path uses '/'."
+            },
+            "gcsMirror": {
+              "type": "object",
+              "description": "Immutable full-runtime mirror for executable HTML; jsDelivr serves repository HTML as text/plain.",
+              "required": ["bucket", "prefix", "publicBaseUrl"],
+              "additionalProperties": false,
+              "properties": {
+                "bucket": { "type": "string" },
+                "prefix": { "type": "string" },
+                "publicBaseUrl": { "type": "string", "format": "uri" }
+              }
             }
           }
         },
