@@ -36,6 +36,7 @@ accepted as the legacy spelling of `KR`.
 | host → viewer | `{source, type: "render", requestId, snapshot}` |
 | viewer → host | `{source, type: "rendered", requestId, ok, error?}` |
 | viewer → host | `{source, type: "height", height}` — on every change |
+| viewer → host | `{source, type: "render-complete", requestId}` — fonts, images and final layout are stable |
 
 `source` is `"podo-trial-report"`, the same constant `report-submit.js` uses to
 send a report *out*. One report, one channel name, two directions.
@@ -45,9 +46,14 @@ not filter who may ask: it renders what it is handed and reads nothing of its ow
 so an unknown embedder can only show itself its own data. Deciding that an iframe
 really is the runtime is the host's job, not something the iframe can assert.
 
-The snapshot is `podoReport.snapshot()` as stored in `le_level_test.report_snapshot`
-— inputs only. Everything printed is recomputed here from the same tables the deck
-used, which is the point: no stored result that can disagree with the tables.
+The host selects only `capturedAt`, `answers`, `assessment`, and `plan` from the stored
+snapshot. The viewer needs no student identity, deck metadata, or other report fields.
+Everything printed is recomputed here from the same tables the deck used.
+
+The host embeds the page with `sandbox="allow-scripts"` and no `allow-same-origin`.
+That gives the document an opaque origin, blocks navigation/forms/plugins, and makes a
+nested frame structurally unable to impersonate the direct iframe window. The host
+accepts messages only from that exact `contentWindow` with the opaque `null` origin.
 
 ## What restore() does that first-draw does not
 
