@@ -81,6 +81,27 @@ def take(src, ids):
     return {i: rebase(p[i], src.parent) for i in ids}
 
 
+def check_complete(src, spec):
+    """Fail if the source has a page this band neither uses nor declares it is skipping.
+
+    `take` already catches the easy direction — a listed page that no longer exists stops
+    the build. This is the other direction, and it is the one that bit us: a source lesson
+    rewritten under a *stable* page set drifts away from a hand-written page list without
+    anything failing at all. 初級 shipped three days of a superseded CORE-12 that way.
+
+    So a band must account for every page in its source. Dropping one is allowed and
+    sometimes right — say so in `omit`, next to the page list, where the next person
+    reading the band can see the cut and its cost together.
+    """
+    extra = sorted(set(pages(src)) - set(spec["lesson"]) - set(spec.get("omit", ())))
+    if extra:
+        sys.exit(
+            "%s: source has page(s) this band neither uses nor omits: %s\n"
+            "  The source lesson has probably been reworked. Re-read the band's page list "
+            "against it, then either add the page to `lesson` or name it in `omit`."
+            % (spec["id"], ", ".join(extra)))
+
+
 def rebase(html, src_dir):
     """Re-point relative asset paths from the source deck's depth to the trial deck's.
 
@@ -540,34 +561,52 @@ def register(key, **spec):
 # written against these lessons before the lessons were wired in, which is why 中上級
 # already promises 仕事の場面で意見を伝えて and 上級 already says フリートーキング.
 #
-# 初級 is trimmed to roughly 60% of its source; the other three are lifted whole. The
-# reason is not that the beginner deck matters less — it is that a pattern lesson has to
-# be walked in order, so a trial that runs out of clock mid-pattern ends on a drill. The
-# other three degrade gracefully: a situation lesson can drop its last transfer scene and
-# the free-talk lesson is explicitly a question *pool* whose own tutor note says to skip
-# freely and leave 2–3 minutes for feedback. Where the clock stops is the tutor's call
-# there, and the deck already tells them how to make it.
+# All four are lifted whole — every page of the source lesson except its own lesson-goal,
+# which the trial replaces with a promise about what the learner will walk out able to do.
+#
+# None of them is cut to fit 25 minutes, and that is deliberate. A trial deck is not a
+# 25-minute lesson; it is the lesson, with the tutor deciding live how far to get. Cutting
+# it here would move that judgement from the person in the room to whoever last edited
+# this file, and the decks already tell the tutor how to make it: the free-talk lesson is
+# explicitly a question *pool* whose tutor note says to skip freely and leave 2–3 minutes
+# for feedback, and the situation lessons end on a transfer scene that is the natural
+# thing to drop when the clock is short.
+#
+# 初級 was the exception until 2026-08-24 for reasons that turned out not to be reasons.
+# See its section below.
 # ============================================================================
 
 
 # ---------------------------------------------------------------------------
-# 初級 · CORE-12
+# 初級 · CORE-12 · I start work at nine
 #
-# 25 minutes, and the report takes the last seven of them. So the lesson body is roughly
-# 60% of the standard deck: pattern 1 keeps its full arc, pattern 2 is taught and drilled
-# only as far as the conversation needs, and the conversation itself is kept whole —
-# it is the page that makes a trial feel like a lesson rather than an exercise sheet.
-# Dropped from the source deck: p1-rule, p1-fill, p1-translate, p2-rule, p2-reorder,
-# p2-fill, p2-translate, p2-write, in-the-wild.
+# Lifted whole, source lesson-goal excepted, exactly like the other three.
+#
+# This band carried a 16-page cut until 2026-08-24, described here as a deliberate 60%
+# trim. It was not one. The list was written on 08-21 against a lesson that was still
+# being finished: `d0129074d` (08-22) fixed the alternating answer positions and
+# `3b2507165` (08-23) moved all sixteen activity pages onto the approved shared activity
+# script — including all eight the cut dropped. Nobody revisited the list afterwards, so
+# the trial spent three days showing a version of CORE-12 that had been superseded, and
+# the comment explaining why read as a decision about a lesson that did not exist yet.
+#
+# The general point, which is why this is written down rather than quietly fixed: the
+# generator keeps page *content* current automatically — that is the whole reason it
+# exists — but the page *list* is frozen prose, and nothing checks it against the source.
+# A lesson that gains or loses a page fails loudly in `take()`; a lesson that is rewritten
+# under a stable page set does not fail at all. When a source lesson is reworked, re-read
+# the band's page list. Do not trust a rationale in this file over the source's own log.
 # ---------------------------------------------------------------------------
 
 T1_SOURCE = "1-core-patterns/courses/core-first-exchanges-2/lessons/12-i-start-work-at-nine/lesson.html"
 
 T1_LESSON = ["words-you-know",
-          "part1-intro", "p1-teach", "p1-read", "p1-choose", "p1-reorder", "p1-write",
-          "part2-intro", "p2-teach", "p2-read", "p2-choose",
-          "part3-intro", "p3-model", "p3-complete", "p3-freetalk",
-          "native-tip"]
+             "part1-intro", "p1-teach", "p1-read", "p1-rule", "p1-choose", "p1-reorder",
+             "p1-fill", "p1-translate", "p1-write",
+             "part2-intro", "p2-teach", "p2-read", "p2-rule", "p2-choose", "p2-reorder",
+             "p2-fill", "p2-translate", "p2-write",
+             "part3-intro", "p3-model", "p3-complete", "p3-freetalk",
+             "in-the-wild", "native-tip"]
 
 T1_GREETING = [
     [("other", "こんにちは！お会いできてうれしいです。", "Hello! Nice to meet you.", None),
@@ -790,6 +829,8 @@ register(
     title={"ko": "체험 레슨 · 초급", "en": "Trial lesson · Elementary", "ja": "体験レッスン 初級"},
     source=T1_SOURCE,
     lesson=T1_LESSON,
+    # the wrapper supplies its own goal page, carrying the promise instead of the title
+    omit=["lesson-goal"],
     greeting=greeting(T1_GREETING),
     promise=T1_PROMISE,
     lesson_goal=T1_LESSON_GOAL,
@@ -804,6 +845,8 @@ register(
     title={"ko": "체험 레슨 · 중급", "en": "Trial lesson · Intermediate", "ja": "体験レッスン 中級"},
     source=T2_SOURCE,
     lesson=T2_LESSON,
+    # the wrapper supplies its own goal page, carrying the promise instead of the title
+    omit=["lesson-goal"],
     greeting=open_greeting(OPEN_GREETING),
     promise=T2_PROMISE,
     lesson_goal=T2_LESSON_GOAL,
@@ -818,6 +861,8 @@ register(
     title={"ko": "체험 레슨 · 중고급", "en": "Trial lesson · Upper-intermediate", "ja": "体験レッスン 中上級"},
     source=T3_SOURCE,
     lesson=T3_LESSON,
+    # the wrapper supplies its own goal page, carrying the promise instead of the title
+    omit=["lesson-goal"],
     greeting=open_greeting(OPEN_GREETING),
     promise=T3_PROMISE,
     lesson_goal=T3_LESSON_GOAL,
@@ -842,7 +887,9 @@ register(
 
 def build(key):
     spec = DECKS[key]
-    pg = take(TRACKS / spec["source"], spec["lesson"])
+    src = TRACKS / spec["source"]
+    check_complete(src, spec)
+    pg = take(src, spec["lesson"])
     out = [
         head(spec["id"], spec["level"], spec["title"], spec["cover"]),
         spec["greeting"],
