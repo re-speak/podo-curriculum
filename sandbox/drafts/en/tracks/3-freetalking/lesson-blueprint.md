@@ -249,6 +249,11 @@ don't know`, `none` or `never`. At least one follow-up must give the second path
 foothold. A slightly tangential rescue is better than repeating the question the learner could not
 answer.
 
+The completed page-review ledger records the evidence rather than a generic pass: write the actual
+`plausibleFirstAnswer`, name its `answerExpansion`, and quote the current `noAnswerFollowup` that
+rescues the conversation. Because the ledger is bound to the lesson hash, changing the prompt or
+follow-ups requires this spoken test again.
+
 ### One printed prompt
 
 Each page prints exactly one talking prompt. A direct imperative such as “Tell me about the first

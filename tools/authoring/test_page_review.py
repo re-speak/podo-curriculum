@@ -67,6 +67,46 @@ class PageReviewTest(unittest.TestCase):
         review = page_review.scaffold(self.lesson, self.review_path)
         self.assertEqual(review["pages"][0]["evidence"]["supportStage"], "supported")
 
+    def test_freetalk_scaffold_requires_recorded_conversation_checks(self) -> None:
+        self.lesson.write_text(
+            '<main><section data-page-id="warm-1">'
+            '<span class="ko">What have you bought that was worth the money?</span>'
+            '<span class="ja">買ってよかったものは何ですか？</span>'
+            '<ul class="tn-more"><li>How often do you use it?</li>'
+            '<li>Would you buy it again?</li></ul></section></main>',
+            encoding="utf-8",
+        )
+        review = page_review.scaffold(self.lesson, self.review_path)
+        self.assertEqual(
+            set(review["pages"][0]["conversationReview"]),
+            set(page_review.FREETALK_REVIEW_FIELDS),
+        )
+        self.review_path.write_text(json.dumps(review), encoding="utf-8")
+        errors = page_review.validate(self.lesson, self.review_path)
+        self.assertTrue(any("plausibleFirstAnswer" in error for error in errors))
+
+    def test_no_answer_route_must_quote_a_current_followup(self) -> None:
+        self.lesson.write_text(
+            '<main><section data-page-id="warm-1">'
+            '<span class="ko">What have you bought that was worth the money?</span>'
+            '<span class="ja">買ってよかったものは何ですか？</span>'
+            '<ul class="tn-more"><li>How often do you use it?</li>'
+            '<li>Would you buy it again?</li></ul></section></main>',
+            encoding="utf-8",
+        )
+        review = self.completed_review()
+        review["pages"][0]["targetOrPrompt"] = (
+            "What have you bought that was worth the money?"
+        )
+        review["pages"][0]["conversationReview"] = {
+            "plausibleFirstAnswer": "My rice cooker was worth the money.",
+            "answerExpansion": "I can explain how often I use it and why it saves time.",
+            "noAnswerFollowup": "What do people usually buy for convenience?",
+        }
+        self.review_path.write_text(json.dumps(review), encoding="utf-8")
+        errors = page_review.validate(self.lesson, self.review_path)
+        self.assertTrue(any("must quote one current tutor follow-up" in error for error in errors))
+
     def test_incomplete_template_fails(self) -> None:
         review = page_review.scaffold(self.lesson, self.review_path)
         self.review_path.write_text(json.dumps(review), encoding="utf-8")
