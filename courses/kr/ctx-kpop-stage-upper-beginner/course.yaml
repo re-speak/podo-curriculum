@@ -33,6 +33,8 @@ spec:
     en: React to a new song, a stage, the choreography and the visuals in casual speech, compare albums, and sell a track to a friend.
     ja: 新曲・ステージ・振り付け・ビジュアルの感想をタメ口で言い、アルバム同士を比べ、友達に曲をすすめられる。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

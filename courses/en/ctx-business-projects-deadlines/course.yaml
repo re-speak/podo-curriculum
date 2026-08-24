@@ -31,6 +31,8 @@ spec:
     en: Confirm priorities, clarify who owns an action, raise a risk early, and deliver bad news with a next step.
     ja: 優先順位を確認し、担当の所在をはっきりさせ、リスクを早めに出し、悪い知らせを次の一手と一緒に伝える。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

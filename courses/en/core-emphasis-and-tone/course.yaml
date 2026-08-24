@@ -31,6 +31,8 @@ spec:
     en: Put the important part first, and match register and tone to the room.
     ja: 大事な部分を先に出し、場に合わせて語調と丁寧さを合わせる。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

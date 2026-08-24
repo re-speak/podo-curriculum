@@ -33,6 +33,8 @@ spec:
     en: Check in, make requests, report a problem, store luggage and extend checkout — and ask for help if you fall ill or something is stolen.
     ja: チェックイン・お願い・不具合の連絡・荷物預かり・チェックアウト延長をこなし、体調を崩したり盗難に遭ったときに助けを求められる。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

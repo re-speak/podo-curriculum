@@ -31,6 +31,8 @@ spec:
     en: Argue from evidence you can reach from ordinary life, and weigh the other side too.
     ja: 日常から答えられる根拠で意見を述べ、反対の立場まで検討する。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

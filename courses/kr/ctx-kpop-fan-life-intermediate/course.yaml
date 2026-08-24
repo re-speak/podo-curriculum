@@ -33,6 +33,8 @@ spec:
     en: Handle ticketing, streaming, birthday cafés and goods trades, and take a swap through from first message to handover.
     ja: チケッティング・ストリーミング・センイルカフェ・グッズ取引など、実際のファン活動に必要な言葉を使い、ファンアカウントで取引のやりとりができる。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

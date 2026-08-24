@@ -31,6 +31,8 @@ spec:
     en: Make careful requests, ask for information without sounding blunt, and reason about what might be.
     ja: 丁寧に頼み、ぶしつけにならずに情報を求め、あり得ることを推し量る。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

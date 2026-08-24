@@ -31,6 +31,8 @@ spec:
     en: Talk about experience and how long, and join ideas into longer turns.
     ja: 経験と期間を話し、考えをつないで長く話す。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

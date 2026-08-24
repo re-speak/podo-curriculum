@@ -31,6 +31,8 @@ spec:
     en: Separate what you usually do from what is happening now, and tell what happened.
     ja: いつものことと今起きていることを分け、あったことを語る。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

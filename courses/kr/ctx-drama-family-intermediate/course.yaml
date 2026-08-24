@@ -33,6 +33,8 @@ spec:
     en: Follow a family's nagging, worry, errands and comfort, and tell apart what elders say to you from what you say to juniors.
     ja: 家族の小言・心配・頼み・慰めを聞き取り、目上から受ける言葉と目下にかける言葉を使い分けられる。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

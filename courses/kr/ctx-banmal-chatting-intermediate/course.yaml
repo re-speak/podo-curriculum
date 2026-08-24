@@ -33,6 +33,8 @@ spec:
     en: Backchannel, react with surprise, pass on what you heard, push back gently, tease and console — and keep the conversation from stalling.
     ja: 友達の話に相づちを打ち、驚き、聞いた話を伝え、やわらかく反論し、からかい、慰めながら、会話を途切れさせずに続けられる。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

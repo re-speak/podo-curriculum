@@ -31,6 +31,8 @@ spec:
     en: Open a difficult performance conversation, give feedback that leads to action, and recommend under real uncertainty.
     ja: 厳しい評価面談を切り出し、行動につながるフィードバックを渡し、不確実さの中で提言する。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

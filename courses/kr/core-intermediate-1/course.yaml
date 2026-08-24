@@ -33,6 +33,8 @@ spec:
     en: Bring up what you went through, report what you were told, and place it in time.
     ja: 自分の経験を切り出し、聞いた話を伝え、それがいつ・どんな状態で起きたかを話す。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

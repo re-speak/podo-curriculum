@@ -33,6 +33,8 @@ spec:
     en: Read a timeline or a forum thread, work out what actually happened, and write your own short reactions and replies.
     ja: Xやコミュニティの投稿を読んで何が起きたのかをつかみ、短い反応やリプライを自分で書ける。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

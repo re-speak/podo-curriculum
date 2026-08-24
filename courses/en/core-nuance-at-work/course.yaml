@@ -31,6 +31,8 @@ spec:
     en: Handle workplace language, and control degree and quantity with nuance.
     ja: 職場の言い回しを扱い、程度と量をニュアンスまで込めて言う。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

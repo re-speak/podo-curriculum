@@ -33,6 +33,8 @@ spec:
     en: Stack reasons in one direction, and add force with exaggeration and reversal.
     ja: 同じ方向に根拠を重ね、誇張と反転で言葉に力を持たせる。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []
