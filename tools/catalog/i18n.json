@@ -202,6 +202,116 @@
       "ko": "교재",
       "ja": "教材",
       "en": "decks"
+    },
+    "navLabel": {
+      "ko": "커리큘럼 탐색",
+      "ja": "カリキュラムを見る",
+      "en": "Browse the curriculum"
+    },
+    "trackWord": {
+      "ko": "트랙",
+      "ja": "トラック",
+      "en": "Track"
+    },
+    "levelLabel": {
+      "ko": "레벨",
+      "ja": "レベル",
+      "en": "Level"
+    },
+    "searchPlaceholder": {
+      "ko": "과·패턴·표현 검색",
+      "ja": "レッスン・パターン・表現を検索",
+      "en": "Search lessons, patterns, phrases"
+    },
+    "curriculum": {
+      "ko": "커리큘럼",
+      "ja": "カリキュラム",
+      "en": "Curriculum"
+    },
+    "planContents": {
+      "ko": "계획 목차",
+      "ja": "計画の目次",
+      "en": "Planned contents"
+    },
+    "collapseUnits": {
+      "ko": "단원 모두 접기",
+      "ja": "ユニットをすべて閉じる",
+      "en": "Collapse all units"
+    },
+    "collapseAll": {
+      "ko": "과까지 모두 접기",
+      "ja": "レッスンまですべて閉じる",
+      "en": "Collapse every lesson"
+    },
+    "planNoDecks": {
+      "ko": "계획 목차이며 현재 사용할 수 있는 레슨 덱은 없습니다.",
+      "ja": "計画上の目次で、いま使えるレッスンデッキはありません。",
+      "en": "A planned outline — no lesson decks are available yet."
+    },
+    "noLevelBound": {
+      "ko": "특정 레벨에 묶이지 않습니다 — 튜터가 문제를 들은 시점에 한 과씩 꺼내 씁니다.",
+      "ja": "特定のレベルに縛られません — チューターが課題に気づいた時点で1レッスンずつ使います。",
+      "en": "Not tied to a level — the tutor pulls one lesson at the moment the problem shows up."
+    },
+    "noDecks": {
+      "ko": "아직 나와 있는 덱이 없습니다.",
+      "ja": "まだ公開されているデッキはありません。",
+      "en": "No decks are published yet."
+    },
+    "coreRef": {
+      "ko": "핵심",
+      "ja": "コア",
+      "en": "Core"
+    },
+    "peakUpTo": {
+      "ko": "핵심 {n}과까지",
+      "ja": "コアは {n} レッスンまで",
+      "en": "Core through lesson {n}"
+    },
+    "openInNewTab": {
+      "ko": "{title} 덱을 새 탭에서 엽니다",
+      "ja": "{title} のデッキを新しいタブで開きます",
+      "en": "Opens the {title} deck in a new tab"
+    },
+    "slotLecture": {
+      "ko": "수업용",
+      "ja": "授業用",
+      "en": "In class"
+    },
+    "slotPrestudy": {
+      "ko": "예습용",
+      "ja": "予習用",
+      "en": "Prep"
+    },
+    "fullScreen": {
+      "ko": "전체 화면",
+      "ja": "全画面",
+      "en": "Full screen"
+    },
+    "openTrack": {
+      "ko": "{n}개 덱 펼치기",
+      "ja": "{n} 件のデッキを開く",
+      "en": "Show {n} decks"
+    },
+    "qWarmup": {
+      "ko": "몸풀기",
+      "ja": "ウォームアップ",
+      "en": "Warm-up"
+    },
+    "qQuestion": {
+      "ko": "질문",
+      "ja": "質問",
+      "en": "Question"
+    },
+    "trialKicker": {
+      "ko": "먼저 한 과만",
+      "ja": "まずは1レッスンだけ",
+      "en": "Start with one lesson"
+    },
+    "trialOpen": {
+      "ko": "체험 레슨 보기",
+      "ja": "体験レッスンを見る",
+      "en": "See the trial lessons"
     }
   },
   "detail": {

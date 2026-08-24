@@ -20,6 +20,8 @@ spec:
       - ~고 (나서)
       - ~아/어서
     canDo: 어떻게 팬이 되었는지 계기를 순서대로 이야기한다.
+    canDoJa: どうやってファンになったのか、きっかけを順を追って話す。
+    canDoEn: "Tell the story of how you became a fan, in order."
   scene: "\"어쩌다 좋아하게 됐어요?\"라는 질문을 받았다."
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-kpop-talk-beginner · 4

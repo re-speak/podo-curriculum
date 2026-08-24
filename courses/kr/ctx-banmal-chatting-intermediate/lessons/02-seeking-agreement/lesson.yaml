@@ -24,6 +24,8 @@ spec:
     - ~잖아
     - ~는 거 아니지?
     canDo: 둘 다 아는 사실을 근거로 삼고, 나만 그런 게 아니라고 확인받는다.
+    canDoJa: 二人とも知っている事実を根拠にして、自分だけではないと確認してもらう。
+    canDoEn: Build on a fact you both know, and get confirmation that it isn't just you.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-banmal-chatting-intermediate/lessons/02-seeking-agreement/lesson.html
 

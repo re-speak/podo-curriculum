@@ -20,6 +20,8 @@ spec:
       - ~(으)ㄹ 건데
       - ~(으)면 좋겠어요
     canDo: 선물용 포장을 요청하고, 원하는 색을 지정한다.
+    canDoJa: プレゼント用の包装をお願いし、希望の色を指定する。
+    canDoEn: "Ask for gift wrapping, and specify the colour you want."
   scene: 친구 선물이다. 그냥 담아 주려고 한다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-travel-shopping-upper-beginner · 8

@@ -19,6 +19,8 @@ spec:
     patterns:
       []
     canDo: 실제로 달라진 것
+    canDoJa: 実際に変わったこと
+    canDoEn: "What actually changed"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-work-and-money-intermediate · 7
 

@@ -24,6 +24,8 @@ spec:
     - -(으)ㄹ 걸 (그랬다)
     - -았/었어야 했다
     canDo: 안 해서 아쉬운 일을 혼잣말처럼 후회하고, 했어야 할 일을 짚어 자책한다.
+    canDoJa: しなくて心残りなことを独り言のように悔やみ、すべきだったことを挙げて自分を責める。
+    canDoEn: Regret aloud, half to yourself, what you wish you had done, and name what you should have done.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-upper-intermediate-2/lessons/107-should-have/lesson.html
 

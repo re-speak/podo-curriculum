@@ -20,6 +20,8 @@ spec:
       - N + 시키다
       - N + 당하다 / 되다
     canDo: 시킨 일과 당한 일을 명사에 붙여 간단히 말한다.
+    canDoJa: させたことと、されたことを名詞につけて簡単に言う。
+    canDoEn: "Express causing and undergoing simply, by attaching them to a noun."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-intermediate-3 · 88
 

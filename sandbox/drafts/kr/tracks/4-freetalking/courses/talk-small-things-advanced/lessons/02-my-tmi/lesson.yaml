@@ -19,6 +19,8 @@ spec:
     patterns:
       []
     canDo: 아무도 모르는 사소한 사실 하나 이야기하기
+    canDoJa: 誰も知らないささいな事実を一つ話す
+    canDoEn: "Share one small fact about yourself that nobody knows"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-small-things-advanced · 2
 

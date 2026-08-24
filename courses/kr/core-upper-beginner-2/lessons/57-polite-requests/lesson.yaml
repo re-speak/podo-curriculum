@@ -24,6 +24,8 @@ spec:
     - -아/어 주시겠어요?
     - -아/어 주실 수 있나요?
     canDo: 처음 보는 사람에게 부담을 주지 않고 부탁한다.
+    canDoJa: 初対面の人に負担をかけずに頼む。
+    canDoEn: Ask a favour of someone you have just met, without putting them on the spot.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-upper-beginner-2/lessons/57-polite-requests/lesson.html
 

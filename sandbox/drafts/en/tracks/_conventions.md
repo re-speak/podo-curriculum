@@ -159,7 +159,7 @@ whether it happens to sit in the Korean folder. Check the file before adding a r
 
 | Asset | Covers | Path | Shared? |
 | --- | --- | --- | --- |
-| Well-done stamp | the `stamp.js` mark | `korean/trial/assets/well-done.svg` | **yes** — checked, it is pure paths with no text in it, so nothing about it is Korean |
+| Well-done stamp | the `stamp.js` mark | `en/trial/assets/good-job.svg` | **no** — English has its own. Korean's `well-done.svg` reads 참!잘했어요, outlined into paths; "pure paths" was never the test, since outlined lettering is still lettering. The English twin is the same ring, character and stars with a `Good Job!` arc |
 | Mascot | brand pages | `korean/trial/assets/podo-character{,-point}.png` | untested — no English deck uses a brand page yet |
 | Mouth shapes | six Korean vowels | `korean/trial/assets/mouth/…` | **no** — hangul-specific. If an English pronunciation track ever needs mouth art it needs its own, drawn for English contrasts |
 

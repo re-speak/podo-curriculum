@@ -20,6 +20,8 @@ spec:
       - ~고 있어요
       - 제일 잘 ~
     canDo: 누가 어떤 포지션을 맡고 있는지 소개한다.
+    canDoJa: 誰がどのポジションを担当しているかを紹介する。
+    canDoEn: "Introduce who takes which position."
   scene: 멤버 사진을 하나씩 짚어 가며 누가 뭘 맡는지 설명한다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-kpop-talk-beginner · 3

@@ -24,6 +24,8 @@ spec:
     - -아/어 오다
     - -는 중이다
     canDo: 지금까지 이어 온 일과 지금 하고 있는 일을 묶어 자기를 소개한다.
+    canDoJa: 今まで続けてきたことと今していることをまとめて自己紹介する。
+    canDoEn: Introduce yourself by tying together what you have kept doing and what you do now.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-intermediate-1/lessons/73-so-far-and-now/lesson.html
 

@@ -24,6 +24,8 @@ spec:
     - N마다
     - 그냥 ~지 마
     canDo: 댓글 분위기를 전하고, 악플은 무시하라고 말린다.
+    canDoJa: コメント欄の空気を伝え、悪意あるコメントは無視するように止める。
+    canDoEn: Relay the mood in the comments, and talk them out of reading the nasty ones.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-online-intermediate/lessons/03-comment-reactions/lesson.html
 

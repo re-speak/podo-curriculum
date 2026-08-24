@@ -20,6 +20,8 @@ spec:
       - "-지만"
       - 그래서 · 그런데 · 그리고 · 그러니까
     canDo: 한 가지에 대해 좋은 점과 아쉬운 점을 함께 말한다.
+    canDoJa: 一つのことについて、良い点と物足りない点を合わせて話す。
+    canDoEn: "Give both the good side and the disappointing side of one thing."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-3 · 28
 

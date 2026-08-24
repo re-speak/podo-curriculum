@@ -24,6 +24,8 @@ spec:
     - ~(으)면 ~(으)ㄹ 거야
     - ~아/어 보이다
     canDo: 더 넘어오면 가만있지 않겠다고 경고하고, 만만하게 보지 말라고 못 박는다.
+    canDoJa: これ以上踏み込むなら黙っていないと警告し、なめるなと念を押す。
+    canDoEn: Warn that you won't sit still if they push further, and make clear you're not a soft touch.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-boundaries-intermediate/lessons/01-warning/lesson.html
 

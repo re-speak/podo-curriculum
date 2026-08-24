@@ -19,6 +19,8 @@ spec:
     patterns:
       []
     canDo: 어디서 뭘 하고 있을까
+    canDoJa: どこで何をしているだろうか
+    canDoEn: "Where would you be, doing what"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-what-if-advanced · 11
 

@@ -24,6 +24,8 @@ spec:
     - -(으)나 마나
     - -아/어 봤자
     canDo: 해 봐야 결과가 뻔하다며 시도를 접는다.
+    canDoJa: やっても結果は見えていると言って、試すのをやめる。
+    canDoEn: Give up trying, on the grounds that the outcome is obvious anyway.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-upper-intermediate-1/lessons/98-no-use-trying/lesson.html
 

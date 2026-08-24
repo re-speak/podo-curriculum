@@ -20,6 +20,8 @@ spec:
       - "-(으)ㄹ 것도 없다"
       - "-(으)면 몰라도"
     canDo: 따질 것도 없이 당연하다고 밀어붙이고, 상대는 조건을 달아 받아친다.
+    canDoJa: 議論の余地もなく当然だと押し切り、相手は条件をつけて言い返す。
+    canDoEn: "Push it through as self-evident, and have the other person counter with a condition."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-advanced-1 · 115
 

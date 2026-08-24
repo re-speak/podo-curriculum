@@ -20,6 +20,8 @@ spec:
       - N이/가 안 되다
       - N(으)로 바꾸다
     canDo: 객실 설비가 작동하지 않는다고 알리고, 방 교체를 요청한다.
+    canDoJa: 客室の設備が動かないと伝え、部屋の交換をお願いする。
+    canDoEn: "Report that something in the room isn't working, and ask to change rooms."
   scene: 방에 들어와 에어컨을 켰는데 아무 소리도 안 난다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-travel-staying-upper-beginner · 2

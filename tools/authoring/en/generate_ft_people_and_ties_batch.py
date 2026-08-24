@@ -26,11 +26,11 @@ CANONICAL = {
 PRESERVED = {
     "accessible": (
         TRACK / "courses/talk-people-and-ties-accessible/lessons/49-how-accurate-is-your-mbti/lesson.html",
-        "ba79620e1b10675907aa25ed7922422cb3e2cc8b97bd83111d58c3a210a9edc9",
+        "407b0132d8e795c526f80410278fe26ac2e767741202efdeb323797670868fde",
     ),
     "full": (
         TRACK / "courses/talk-people-and-ties-full/lessons/49-how-accurate-is-your-mbti/lesson.html",
-        "4d34fe56113d15eb344ef498858abce63443f038463141fb1e77629e5ce6ce29",
+        "4b0464ca8a956345232373416c16ab2be3e40bf1d29c7ad6dda9c88b2b285e16",
     ),
 }
 esc = base.esc

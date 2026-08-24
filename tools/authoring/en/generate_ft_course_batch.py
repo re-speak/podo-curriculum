@@ -35,11 +35,11 @@ CANONICAL = {
 PRESERVED_FT7 = {
     "accessible": (
         TRACK / "courses/talk-between-two-countries-accessible/lessons/07-japan-does-especially-well/lesson.html",
-        "ca171830908f7a2bdcc3760d4d617c87eb481ded8ae0876d144d4f72659977f9",
+        "8a26dec92ded7634b9919dc62ec3692933e99c309727e0d93a350f7c572fbdae",
     ),
     "full": (
         TRACK / "courses/talk-between-two-countries-full/lessons/07-japan-does-especially-well/lesson.html",
-        "39c5fce1a5c30ee68e50f6eac2920231f2a34c5c5c088d8395a84485f943a578",
+        "80c60a78263ecbdba4e8b34cac2663cb0e6b47022b223e2cc4b7546bc2ef1e05",
     ),
 }
 

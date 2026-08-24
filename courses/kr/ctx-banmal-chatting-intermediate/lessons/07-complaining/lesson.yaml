@@ -24,6 +24,8 @@ spec:
     - ~다니까
     - ~(으)ㄹ 지경이다
     canDo: 쌓인 불만을 반복 강조하며 털어놓는다.
+    canDoJa: たまった不満を、繰り返し強調しながら打ち明ける。
+    canDoEn: Let out a pile of grievances, driving each one home.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-banmal-chatting-intermediate/lessons/07-complaining/lesson.html
 

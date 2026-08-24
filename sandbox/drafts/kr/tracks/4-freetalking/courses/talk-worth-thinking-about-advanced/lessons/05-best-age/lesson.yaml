@@ -19,6 +19,8 @@ spec:
     patterns:
       []
     canDo: 나이 든다는 것
+    canDoJa: 年を取るということ
+    canDoEn: "On growing older"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-worth-thinking-about-advanced · 5
 

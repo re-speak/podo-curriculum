@@ -20,6 +20,8 @@ spec:
       - ~(으)ㄹ래?
       - ~(으)ㄹ게
     canDo: 사귀자고 고백하고, 앞으로 잘하겠다고 약속한다.
+    canDoJa: 付き合おうと告白し、これから大事にすると約束する。
+    canDoEn: "Confess and ask them out, and promise to do right by them."
   scene: 7화에서 이어지는 그 자리. 버스가 지나가고 두 사람만 남았다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-crush-intermediate · 8

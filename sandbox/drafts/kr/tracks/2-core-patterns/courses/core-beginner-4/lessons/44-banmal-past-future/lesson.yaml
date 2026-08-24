@@ -20,6 +20,8 @@ spec:
       - "-았/었어"
       - "-(으)ㄹ 거야"
     canDo: 어제 한 일과 내일 할 일을 친구에게 말한다.
+    canDoJa: 昨日したことと明日することを友だちに話す。
+    canDoEn: "Tell a friend what you did yesterday and what you will do tomorrow."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-4 · 44
 

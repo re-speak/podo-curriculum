@@ -19,6 +19,8 @@ spec:
     patterns:
       []
     canDo: 그리고 작심삼일로 끝난 것
+    canDoJa: そして三日坊主で終わったこと
+    canDoEn: "And the one that fizzled out in three days"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-work-and-money-advanced · 4
 

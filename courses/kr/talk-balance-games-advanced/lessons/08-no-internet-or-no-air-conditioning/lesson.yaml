@@ -22,6 +22,8 @@ spec:
   teaches:
     patterns: []
     canDo: 계절과 생활 조건을 바꾸어 어느 불편을 감수할지 설명하기
+    canDoJa: 季節と生活条件を変えながら、どの不便なら受け入れられるかを説明する
+    canDoEn: Vary the season and the conditions, and say which discomfort you'd take
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-balance-games-advanced/lessons/08-no-internet-or-no-air-conditioning/lesson.html
 

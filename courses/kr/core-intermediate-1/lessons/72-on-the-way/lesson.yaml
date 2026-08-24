@@ -24,6 +24,8 @@ spec:
     - -는 길에
     - -자마자
     canDo: 오가는 길에 있었던 일과 도착하자마자 한 일을 시간 순서로 전한다.
+    canDoJa: 行き帰りにあったことと、着いてすぐにしたことを時間の順に伝える。
+    canDoEn: Recount what happened on the way and what you did on arrival, in order.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-intermediate-1/lessons/72-on-the-way/lesson.html
 

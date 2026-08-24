@@ -24,6 +24,8 @@ spec:
     - ~만 보면
     - ~는 줄 모르다
     canDo: 상대 앞에서 생기는 신체 반응으로 설렘을 표현한다.
+    canDoJa: 相手の前で起きる体の反応で、ときめきを表す。
+    canDoEn: Express the flutter through what your body does in front of them.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-crush-intermediate/lessons/05-butterflies/lesson.html
 

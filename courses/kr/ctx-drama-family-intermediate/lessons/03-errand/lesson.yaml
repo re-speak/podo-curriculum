@@ -24,6 +24,8 @@ spec:
     - ~는 김에
     - ~아/어다 주다
     canDo: 나가는 길에 겸사겸사 해 달라고 심부름을 부탁한다.
+    canDoJa: 出かけるついでにと、用事を頼む。
+    canDoEn: Ask them to run an errand while they're heading out anyway.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-family-intermediate/lessons/03-errand/lesson.html
 

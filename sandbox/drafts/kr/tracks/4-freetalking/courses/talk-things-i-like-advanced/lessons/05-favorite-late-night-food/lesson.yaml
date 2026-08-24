@@ -19,6 +19,8 @@ spec:
     patterns:
       []
     canDo: 몇 시에, 뭘 시키나
+    canDoJa: 何時に、何を頼むか
+    canDoEn: "What time, and what do you order"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-things-i-like-advanced · 5
 

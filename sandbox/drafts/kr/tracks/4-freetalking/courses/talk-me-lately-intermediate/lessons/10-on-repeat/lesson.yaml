@@ -19,6 +19,8 @@ spec:
     patterns:
       []
     canDo: 언제부터, 왜 계속 듣는지 이야기하기
+    canDoJa: いつから、なぜ聴き続けているのかを話す
+    canDoEn: "Say since when, and why you keep listening"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-me-lately-intermediate · 10
 

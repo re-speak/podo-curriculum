@@ -22,6 +22,8 @@ spec:
   teaches:
     patterns: []
     canDo: 크지 않아도 됩니다
+    canDoJa: 大きくなくてかまいません
+    canDoEn: It doesn't have to be big
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-work-and-money-intermediate/lessons/03-when-i-felt-successful/lesson.html
 

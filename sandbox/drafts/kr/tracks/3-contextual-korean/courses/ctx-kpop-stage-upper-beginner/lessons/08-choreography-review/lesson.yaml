@@ -20,6 +20,8 @@ spec:
       - ~기(가) 어렵다 / 쉽다
       - 얼마나 ~(으)ㄴ/는지
     canDo: 안무의 난이도를 평가하고, 연습량을 짐작해 감탄한다.
+    canDoJa: 振り付けの難しさを評価し、練習量を想像して感嘆する。
+    canDoEn: "Rate how hard the choreography is, and marvel at the practice it must have taken."
   scene: 안무 연습 영상이 올라왔다. 따라 하다가 포기했다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-kpop-stage-upper-beginner · 8

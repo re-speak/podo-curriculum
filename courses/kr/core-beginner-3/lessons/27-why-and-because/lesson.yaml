@@ -24,6 +24,8 @@ spec:
     - 왜 ~?
     - -아/어서
     canDo: 왜 그랬는지 묻고, 이유를 대며 답한다.
+    canDoJa: なぜそうしたのかを尋ね、理由を挙げて答える。
+    canDoEn: Ask why they did it, and answer by giving a reason.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-3/lessons/27-why-and-because/lesson.html
 

@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="864" height="1080" viewBox="0 0 864 1080">
   <defs>
     <linearGradient id="bg" x1="92" y1="50" x2="780" y2="1050" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFC092" stop-opacity=".24"/>
+      <stop stop-color="#EE6619"/>
       <stop offset=".38" stop-color="#EE6619"/>
       <stop offset="1" stop-color="#C94A0B"/>
     </linearGradient>
@@ -12,9 +12,9 @@
     <clipPath id="card"><rect width="864" height="1080" rx="48"/></clipPath>
     <style>
       text { font-family: Pretendard, "Hiragino Sans", sans-serif; }
-      .eyebrow { fill: #fff; font-size: 34px; font-weight: 800; letter-spacing: 1.2px; }
+      .eyebrow { fill: #fff; font-size: 42px; font-weight: 800; letter-spacing: 1.2px; }
       .title { fill: #fff; font-weight: 900; letter-spacing: -2.5px; }
-      .level { fill: #fff; fill-opacity: .72; font-size: 35px; font-weight: 700; letter-spacing: -.8px; }
+      .level { fill: #fff; fill-opacity: .82; font-size: 42px; font-weight: 700; letter-spacing: -.8px; }
     </style>
   </defs>
   <g clip-path="url(#card)">
@@ -25,14 +25,14 @@
     <rect width="864" height="1080" fill="url(#glow)"/>
 
     <text x="84" y="105" class="eyebrow">KR · TALK</text>
-    <rect x="678" y="66" width="106" height="58" rx="29" fill="#000000" fill-opacity=".22"/>
-    <text x="731" y="105" text-anchor="middle" fill="#FFFFFF" font-size="26" font-weight="800">KO</text>
-    <text x="84" y="204" class="title" font-size="88">일과 돈</text>
-    <text x="86" y="324" class="level">中級</text>
+    <rect x="664" y="58" width="120" height="66" rx="33" fill="#000000" fill-opacity=".22"/>
+    <text x="724" y="103" text-anchor="middle" fill="#FFFFFF" font-size="32" font-weight="800">KO</text>
+    <text x="84" y="204" class="title" font-size="96">일과 돈</text>
+    <text x="86" y="332" class="level">中級</text>
 
     <image x="166" y="390" width="760" height="640" preserveAspectRatio="xMidYMid meet" href="../../../../tools/authoring/course_covers/motifs/work-money.png" xlink:href="../../../../tools/authoring/course_covers/motifs/work-money.png"/>
 
-    <text x="84" y="1004" fill="#FFFFFF" font-size="31" font-weight="900" letter-spacing="1.4">PODO</text>
-    <text x="780" y="1004" text-anchor="end" fill="#FFFFFF" fill-opacity=".58" font-size="24" font-weight="700">TALK</text>
+    <text x="84" y="1004" fill="#FFFFFF" font-size="38" font-weight="900" letter-spacing="1.4">PODO</text>
+    <text x="780" y="1004" text-anchor="end" fill="#FFFFFF" fill-opacity=".82" stroke="#000000" stroke-opacity=".18" stroke-width="7" paint-order="stroke" font-size="30" font-weight="700">TALK</text>
   </g>
 </svg>

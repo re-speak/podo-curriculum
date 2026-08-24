@@ -19,6 +19,8 @@ spec:
     patterns:
       []
     canDo: 언제 마음이 움직이나
+    canDoJa: どんなときに心が動くか
+    canDoEn: "What moves you"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-love-and-marriage-intermediate · 1
 

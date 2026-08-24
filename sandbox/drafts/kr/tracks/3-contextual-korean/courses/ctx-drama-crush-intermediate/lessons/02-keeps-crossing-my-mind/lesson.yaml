@@ -20,6 +20,8 @@ spec:
       - 자꾸 ~게 되다
       - ~느라(고)
     canDo: 상대가 자꾸 신경 쓰인다는 마음을 돌려서 전한다.
+    canDoJa: 相手のことが気になってしかたないという気持ちを、遠回しに伝える。
+    canDoEn: "Get across, indirectly, that you can't stop thinking about them."
   scene: 번호는 받았는데 연락은 못 하고, 며칠째 화면만 들여다본다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-crush-intermediate · 2

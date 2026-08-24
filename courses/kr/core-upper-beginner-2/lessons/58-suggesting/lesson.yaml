@@ -24,6 +24,8 @@ spec:
     - -(으)ㄹ래요?
     - -지 그래요?
     canDo: 상대의 의향을 가볍게 묻고, 부담 없이 권해 본다.
+    canDoJa: 相手の意向を軽く尋ね、気軽に勧めてみる。
+    canDoEn: Ask lightly what the other person feels like, and suggest it without pressure.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-upper-beginner-2/lessons/58-suggesting/lesson.html
 

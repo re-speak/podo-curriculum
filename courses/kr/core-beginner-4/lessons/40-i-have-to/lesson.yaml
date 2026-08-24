@@ -24,6 +24,8 @@ spec:
     - -아/어야 돼요 / 해요
     - -(으)ㄹ 필요 없다
     canDo: 처음 온 사람에게 마감이나 절차를 안내하며, 꼭 해야 할 일과 안 해도 되는 일을 정리해 준다.
+    canDoJa: 初めて来た人に締め切りや手続きを案内しながら、必ずすべきことと、しなくてもいいことを整理してあげる。
+    canDoEn: Walk a newcomer through a deadline or procedure, sorting out what they must do from what they need not.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-4/lessons/40-i-have-to/lesson.html
 

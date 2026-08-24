@@ -20,6 +20,8 @@ spec:
       - 언제 ~는지 알 수 있을까요?
       - ~(으)ㄹ 수밖에 없다
     canDo: 막차 시간을 확인하고, 놓쳤을 때의 대안을 말한다.
+    canDoJa: 終電の時間を確かめ、逃したときの代わりの手段を言う。
+    canDoEn: "Check the time of the last train, and name the fallback if you miss it."
   scene: 밤이 늦었다. 지하철이 끊기기 전에 움직여야 한다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-travel-getting-around-intermediate · 10

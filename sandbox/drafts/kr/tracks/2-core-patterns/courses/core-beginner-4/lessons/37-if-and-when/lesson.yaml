@@ -20,6 +20,8 @@ spec:
       - "-(으)면"
       - "-았/었으면 좋겠어요"
     canDo: 조건을 붙여 제안하고, 이루어졌으면 하는 일을 말한다.
+    canDoJa: 条件をつけて提案し、叶ってほしいことを言う。
+    canDoEn: "Make a proposal with a condition attached, and say what you hope comes true."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-4 · 37
 

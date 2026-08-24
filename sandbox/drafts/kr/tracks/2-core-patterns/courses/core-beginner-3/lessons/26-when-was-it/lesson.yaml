@@ -20,6 +20,8 @@ spec:
       - 언제 ~았/었어요?
       - 시간 명사 + 에
     canDo: 언제 있었던 일인지 묻고, 시간 표현을 붙여 답한다.
+    canDoJa: いつのことかを尋ね、時間の表現をつけて答える。
+    canDoEn: "Ask when something happened, and answer with a time expression attached."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-3 · 26
 

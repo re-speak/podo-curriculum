@@ -24,6 +24,8 @@ spec:
     - ~았/었어요
     - ~(으)면 좋겠다
     canDo: 최근에 다녀온 덕질 활동을 이야기하고, 다음에 하고 싶은 것을 말한다.
+    canDoJa: 最近行ってきた推し活を話し、次にやりたいことを言う。
+    canDoEn: Talk about a fan outing you went on recently, and what you want to do next.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-talk-beginner/lessons/10-fan-experience-and-hopes/lesson.html
 

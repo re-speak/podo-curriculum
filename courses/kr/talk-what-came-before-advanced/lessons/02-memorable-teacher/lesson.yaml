@@ -22,6 +22,8 @@ spec:
   teaches:
     patterns: []
     canDo: 기억에 남는 선생님과 그 이유 이야기하기
+    canDoJa: 記憶に残っている先生と、その理由を話す
+    canDoEn: Talk about a teacher you remember, and why
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-what-came-before-advanced/lessons/02-memorable-teacher/lesson.html
 

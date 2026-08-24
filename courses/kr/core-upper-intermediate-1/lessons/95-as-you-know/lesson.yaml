@@ -24,6 +24,8 @@ spec:
     - -다시피
     - -(으)려나 보다 / -는 듯하다
     canDo: 상대도 이미 아는 사실을 근거로 삼고, 앞일을 조심스럽게 짐작한다.
+    canDoJa: 相手もすでに知っている事実を根拠にして、先のことを控えめに推測する。
+    canDoEn: Build on a fact the other person already knows, and guess carefully at what is ahead.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-upper-intermediate-1/lessons/95-as-you-know/lesson.html
 

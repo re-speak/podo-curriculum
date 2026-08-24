@@ -20,6 +20,8 @@ spec:
       - "-기는커녕"
       - "-조차"
     canDo: 기대한 일은커녕 반대의 일이 벌어졌다고, 기본적인 것조차 안 됐다고 불평한다.
+    canDoJa: 期待したことどころか反対のことが起きた、基本的なことすらできていないと不満を言う。
+    canDoEn: "Complain that far from what you expected, the opposite happened, and not even the basics were done."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-upper-intermediate-1 · 100
 

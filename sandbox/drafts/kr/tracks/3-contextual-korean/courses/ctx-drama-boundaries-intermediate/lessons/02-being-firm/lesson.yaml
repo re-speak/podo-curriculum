@@ -20,6 +20,8 @@ spec:
       - ~(으)ㄹ 이유가 없다
       - ~(으)ㄹ + N이다
     canDo: 더 참을 이유가 없다고 선을 긋고, 내가 알아서 할 일이라고 차단한다.
+    canDoJa: もう我慢する理由はないと線を引き、自分で決めることだと突っぱねる。
+    canDoEn: "Draw a line that there's no reason to put up with it, and shut it down as your own business."
   scene: 상대가 웃으며 넘기려 한다. 이번엔 넘어가 주지 않는다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-boundaries-intermediate · 2

@@ -20,6 +20,8 @@ spec:
       - ~아/어서 바로 ~았/었어
       - ~아/어도 돼?
     canDo: 웃긴 짤을 저장했다고 말하고, 공유해도 되는지 묻는다.
+    canDoJa: 面白い画像を保存したと言い、共有してもいいかを尋ねる。
+    canDoEn: "Say you saved a funny picture, and ask if you may share it."
   scene: 웃긴 장면을 발견해서 바로 저장했다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-kpop-online-intermediate · 4

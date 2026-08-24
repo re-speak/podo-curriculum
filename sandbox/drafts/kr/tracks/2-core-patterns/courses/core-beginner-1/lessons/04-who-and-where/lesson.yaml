@@ -20,6 +20,8 @@ spec:
       - 누구예요?
       - 어디예요?
     canDo: 사진이나 자리에서 사람이 누구인지, 어떤 곳이 어디인지 묻고 답한다.
+    canDoJa: 写真や場所で、その人が誰か・そこがどこかを尋ねて答える。
+    canDoEn: "Ask and answer who someone is and where a place is, in a photo or on the spot."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-1 · 4
 

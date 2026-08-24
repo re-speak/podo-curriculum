@@ -22,6 +22,10 @@ spec:
   teaches:
     patterns:
     - 경음 ㄲ ㄸ ㅃ ㅆ ㅉ *(이번에도 평음에서 짝을 떠서)*
+    patternsJa:
+    - 濃音 ㄲ ㄸ ㅃ ㅆ ㅉ *(今回も平音からペアを取って)*
+    patternsEn:
+    - Tense ㄲ ㄸ ㅃ ㅆ ㅉ *(again paired off from the plain series)*
     canDo: 토끼 · 아빠 · 가짜 · 코끼리 · 싸다
   prerequisites: []
   source: sandbox/drafts/kr/tracks/1-hangul/courses/hangul-starter/lessons/05-double-is-strong/lesson.html

@@ -22,6 +22,8 @@ spec:
   teaches:
     patterns: []
     canDo: 남한테 추천할 만한가
+    canDoJa: 人に勧められるか
+    canDoEn: Would you recommend it to anyone
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-work-and-money-advanced/lessons/05-my-money-habit/lesson.html
 

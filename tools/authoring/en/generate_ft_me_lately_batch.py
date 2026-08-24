@@ -33,11 +33,11 @@ CANONICAL = {
 PRESERVED_FT9 = {
     "accessible": (
         TRACK / "courses/talk-me-lately-accessible/lessons/09-a-purchase-that-was-worth-it/lesson.html",
-        "dfdde5570c095a4c613cc8f58a0746e3b93998ddaad37cd642c0aa69f3190a19",
+        "997e85546e8b2f12ca7f4994fd2f358d64838a266f488417b9ee2e10b8fc63a3",
     ),
     "full": (
         TRACK / "courses/talk-me-lately-full/lessons/09-a-purchase-that-was-worth-it/lesson.html",
-        "09bdd2bece5c85a501183f83423be22ca720b411f033438afe3d77562bb3248c",
+        "a6db80a94694ea5b6394f2329793c139bccff1caee289ea8351d229530efae9c",
     ),
 }
 

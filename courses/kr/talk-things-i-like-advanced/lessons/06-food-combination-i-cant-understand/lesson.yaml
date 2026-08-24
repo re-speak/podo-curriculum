@@ -22,6 +22,8 @@ spec:
   teaches:
     patterns: []
     canDo: 찍먹·부먹, 민트초코, 파인애플 피자
+    canDoJa: つけ派・かけ派、チョコミント、パイナップルのピザ
+    canDoEn: Dip it or drown it, mint choc chip, pineapple on pizza
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-things-i-like-advanced/lessons/06-food-combination-i-cant-understand/lesson.html
 

@@ -24,6 +24,8 @@ spec:
     - -(으)ㄴ 채(로)
     - -아/어 두다 / -아/어 놓다
     canDo: 어떤 상태를 그대로 둔 채 다른 일을 했다고 말한다.
+    canDoJa: ある状態をそのままにして、別のことをしたと言う。
+    canDoEn: Say that you did something else while leaving a state as it was.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-intermediate-1/lessons/75-as-it-was/lesson.html
 
