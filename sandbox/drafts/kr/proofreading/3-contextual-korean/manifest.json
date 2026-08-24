@@ -2,7 +2,7 @@
   "counts": {
     "courses": 16,
     "decks": 160,
-    "entries": 44799
+    "entries": 44855
   },
   "formatVersion": 1,
   "generator": "tools/authoring/kr/build_proofreading_packets.py",
@@ -24,7 +24,7 @@
       "course": "ctx-drama-boundaries-intermediate",
       "decks": 10,
       "file": "packets/03-ctx-drama-boundaries-intermediate.md",
-      "sourceSetSha256": "bdbb75521a0186d6723b2caac6c021ca5dde11be8876b0ca0d86761dc561f298"
+      "sourceSetSha256": "299f8feca63a1fd9ba1d2a6e251906818994f2b6a72923b2412682a23f286337"
     },
     {
       "course": "ctx-drama-crush-intermediate",
@@ -42,7 +42,7 @@
       "course": "ctx-drama-family-intermediate",
       "decks": 10,
       "file": "packets/06-ctx-drama-family-intermediate.md",
-      "sourceSetSha256": "b252014cf2d138ab70c4623b2105860b961df250d15a749544af951d5cce91a7"
+      "sourceSetSha256": "a44b483906ed40e4decaf3de5d536394d54f9bfe3014eaa97f8e3765804edb72"
     },
     {
       "course": "ctx-drama-friends-intermediate",
@@ -66,7 +66,7 @@
       "course": "ctx-kpop-online-intermediate",
       "decks": 10,
       "file": "packets/10-ctx-kpop-online-intermediate.md",
-      "sourceSetSha256": "01a9e6ea12ff73e4f63bea092e4bf681fdc4cda850b0dde3a87b363443d4b12e"
+      "sourceSetSha256": "0264693f8270dec293d0bbf6902d9c1b21c42b3fcc0c3353eafc4fed7407ab9f"
     },
     {
       "course": "ctx-kpop-stage-upper-beginner",
@@ -96,7 +96,7 @@
       "course": "ctx-travel-shopping-upper-beginner",
       "decks": 10,
       "file": "packets/15-ctx-travel-shopping-upper-beginner.md",
-      "sourceSetSha256": "7c0d8370427a7f87f954bfeef1c91147044c75c3db40c6456c65cb91af5230cf"
+      "sourceSetSha256": "1126db1fbaa0ccb1f2c827a66447b29406b1906ed8ae0a3aada42e55f2c40b84"
     },
     {
       "course": "ctx-travel-staying-upper-beginner",
