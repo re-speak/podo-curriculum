@@ -285,6 +285,11 @@ steps:
 
         # 두 언어 공용. --all 이 아니라 초안만 본다.
         run "덱 정적 검사(두 언어)" python3 tools/authoring/check_deck.py sandbox/drafts
+
+        # 교정에서 이미 내려진 판단. 게이트가 아니면 다음 덱이 같은 습관을 다시 기르고,
+        # 같은 사람이 같은 코멘트를 다시 쓴다 — PR #89 가 한 표현을 고친 뒤에도 88곳이
+        # 그대로 남아 PR #116 에서 네 코스에 걸쳐 다시 지적된 게 그 증거다.
+        run "교정 표준(두 언어)" python3 tools/authoring/copy_standard.py --quiet
         run "프리토킹 질문 계약"      python3 tools/authoring/check_freetalk_questions.py
         run "FT 생성·교정 회귀 검사"  python3 -m unittest \
           tools.authoring.test_check_freetalk_questions \

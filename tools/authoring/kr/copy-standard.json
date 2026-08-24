@@ -1,0 +1,431 @@
+{
+  "_note": [
+    "Settled Korean copy decisions, each one a judgment a native proofreader",
+    "already made. tools/authoring/copy_standard.py reads this file; the header",
+    "there explains the two rule kinds and why the mechanism is shared.",
+    "",
+    "A rule earns its place here only when the decision generalises. 'This deck",
+    "should say 습관 rather than 버릇' is a correction to that deck. 'An",
+    "instruction never claims the previous activity was fake' is a rule, and it",
+    "is a rule because the same comment arrived on four courses on four days.",
+    "",
+    "Every entry cites its evidence. When a later reviewer disagrees, the",
+    "argument is with the quoted comment, not with whoever wrote the regex.",
+    "",
+    "Sources: PR #89 (2026-08-19 검수), PR #93 (원어민 교정 말투 일반화),",
+    "PR #116 (교정 반영: 96건 / 54개 파일, comments dated 2026-08-19..24)."
+  ],
+  "rules": [
+    {
+      "id": "authenticity-framing",
+      "kind": "pair",
+      "why": "An instruction never opens by claiming the activity is 진짜. It implies everything before it was fake, and it is the single most-repeated comment in the corpus: 「진짜 이야기예요. 제외」(01-introducing-yourself), 「진짜 이야기예요. 삭제 해주세요」(04-who-and-where), 「이번엔 진짜 질문이에요. > 삭제」(16-is-there-one), 「이번엔 진짜예요. > 이번엔 본인 이야기예요」(72, 76, 77, 80). PR #89 softened one spelling of it; 88 others were still standing.",
+      "container": "section-subtitle",
+      "left": "ko",
+      "right": "ja",
+      "find": "이번엔 진짜",
+      "cases": [
+        {
+          "when": "이번엔 진짜[^.]*\\.\\s*(제가 |저한테 |저를 |여기가 |우리 )",
+          "_case": "The learner speaks to the tutor inside a set-up the next sentence already describes. The opener carries nothing; drop it in both languages.",
+          "left": [
+            {
+              "from": "^\\s*이번엔 진짜[^.]*\\.\\s*",
+              "to": ""
+            }
+          ],
+          "right": [
+            {
+              "from": "^\\s*今度は本当[^。]*。\\s*",
+              "to": ""
+            }
+          ]
+        },
+        {
+          "when": "이번엔 진짜(?: 자기)? 질문이에요\\.",
+          "left": [
+            {
+              "from": "이번엔 진짜(?: 자기)? 질문이에요\\.",
+              "to": "이번엔 본인 질문이에요."
+            }
+          ],
+          "right": [
+            {
+              "from": "^\\s*今度は本当[^。]*。",
+              "to": "今度はご自身の質問です。"
+            }
+          ]
+        },
+        {
+          "when": "이번엔 진짜 자기 가족 이야기예요\\.",
+          "left": [
+            {
+              "from": "이번엔 진짜 자기 가족 이야기예요\\.",
+              "to": "이번엔 본인 가족 이야기예요."
+            }
+          ],
+          "right": [
+            {
+              "from": "^\\s*今度は本当[^。]*。",
+              "to": "今度はご自身のご家族の話です。"
+            }
+          ]
+        },
+        {
+          "when": "이번엔 진짜 자기 물건이에요\\.",
+          "left": [
+            {
+              "from": "이번엔 진짜 자기 물건이에요\\.",
+              "to": "이번엔 본인 물건이에요."
+            }
+          ],
+          "right": [
+            {
+              "from": "^\\s*今度は本当[^。]*。",
+              "to": "今度はご自身の持ち物です。"
+            }
+          ]
+        },
+        {
+          "when": "이번엔 진짜 자기 바람이에요\\.",
+          "_case": "바람 → 소망 is the same reviewer's call on 10-fan-experience-and-hopes (「덕질 경험과 바람」 → 「덕질 경험과 소망」).",
+          "left": [
+            {
+              "from": "이번엔 진짜 자기 바람이에요\\.",
+              "to": "이번엔 본인 소망이에요."
+            }
+          ],
+          "right": [
+            {
+              "from": "^\\s*今度は本当[^。]*。",
+              "to": "今度はご自身の願いです。"
+            }
+          ]
+        },
+        {
+          "when": "이번엔 진짜(?: 어제)?(?: 이야기)?(?:예요|이에요)\\.",
+          "_case": "The default. 이번엔 본인 이야기예요. is the replacement the reviewer wrote out by hand more than once, and it is already what the two decks corrected in PR #89 say — including their Japanese.",
+          "left": [
+            {
+              "from": "이번엔 진짜(?: 어제)?(?: 이야기)?(?:예요|이에요)\\.",
+              "to": "이번엔 본인 이야기예요."
+            }
+          ],
+          "right": [
+            {
+              "from": "^\\s*今度は本当[^。]*。",
+              "to": "今度はご自身の話です。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reason-word",
+      "kind": "run",
+      "why": "까닭 → 이유. 「[까닭] > [이유]로 변경」 was written five times across 54-since-and-suggest and 55-because-of on 2026-08-21. 까닭 is not wrong Korean; it is a literary choice in a page whose job is to name a grammatical function plainly, and 이유 is the word the learner will meet everywhere else.",
+      "fix": [
+        {
+          "from": "까닭일",
+          "to": "이유일"
+        },
+        {
+          "from": "까닭은",
+          "to": "이유는"
+        },
+        {
+          "from": "까닭이",
+          "to": "이유가"
+        },
+        {
+          "from": "까닭을",
+          "to": "이유를"
+        },
+        {
+          "from": "까닭과",
+          "to": "이유와"
+        },
+        {
+          "from": "까닭",
+          "to": "이유"
+        }
+      ]
+    },
+    {
+      "id": "compare-word",
+      "kind": "run",
+      "why": "견주다 → 비교하다. 「혼자일 때와 견주면서 지금이 낫다고 말해요」 → 「혼자일 때와 비교하면 지금이 낫다고 말해요」 (06-fandom-friends, 2026-08-24). Same family as 까닭: a prettier native verb where the plain Sino-Korean one is what an adult learner has already been taught.",
+      "fix": [
+        {
+          "from": "견주면서",
+          "to": "비교하면서"
+        },
+        {
+          "from": "견주며",
+          "to": "비교하며"
+        },
+        {
+          "from": "견주는",
+          "to": "비교하는"
+        },
+        {
+          "from": "견주지",
+          "to": "비교하지"
+        },
+        {
+          "from": "견주면",
+          "to": "비교하면"
+        },
+        {
+          "from": "견주어",
+          "to": "비교해"
+        }
+      ]
+    },
+    {
+      "id": "chunk-word",
+      "kind": "run",
+      "why": "덩어리 → 낱말 in a reorder instruction. Five separate comments: 「낱말 4개를 순서대로 배치하고」(06-jealousy), 「낱말을 순서대로 배열하고」(08-confession), 「단어를 순서대로 배열하고」(10-certainty), 「말 덩어리를 → 알맞게 배열하고」(01-argument), 「흩어진 덩어리 → 흩어진 낱말」(02-choosing-address-terms). The learner is looking at word chips; 덩어리 names them as something they cannot see.",
+      "never_in": [
+        "tutor-note",
+        "tn-body",
+        "tn-more",
+        "s-w",
+        "s-key"
+      ],
+      "exempt": "한 덩어리|덩어리째|덩어리씩|덩어리로 익|덩어리로 기억|덩어리 익히|덩어리로 읽|덩어리를 읽|덩어리 중|쓰는 세 덩어리|여행 덩어리|완성 덩어리|선택 덩어리|요청 덩어리|ひとかたまり|かたまりで覚|かたまりのまま|一まとまり|一つの情報|よく使うかたまり|まるごと使うかたまり|かたまりで 覚|かたまりとして|낱말 덩어리|ことばのまとまり|かたまりずつ|三つのかたまりから|かたまり\\)|そのまま覚え|まるごと覚え",
+      "fix": [
+        {
+          "from": "흩어진 네 덩어리로",
+          "to": "흩어진 낱말 네 개로"
+        },
+        {
+          "from": "흩어진 덩어리를",
+          "to": "흩어진 낱말을"
+        },
+        {
+          "from": "섞인 세네 덩어리로",
+          "to": "섞인 낱말 서너 개로"
+        },
+        {
+          "from": "섞인 세네 덩어리를",
+          "to": "섞인 낱말 서너 개를"
+        },
+        {
+          "from": "섞인 네 덩어리로",
+          "to": "섞인 낱말 네 개로"
+        },
+        {
+          "from": "섞인 네 덩어리에서",
+          "to": "섞인 낱말 네 개에서"
+        },
+        {
+          "from": "세 (의미|뜻|말) 덩어리를",
+          "to": "낱말 덩어리 세 개를"
+        },
+        {
+          "from": "(의미|뜻|말) 덩어리를",
+          "to": "낱말 덩어리를"
+        },
+        {
+          "from": "네 덩어리를",
+          "to": "낱말 네 개를"
+        },
+        {
+          "from": "세 덩어리를 순서대로",
+          "to": "낱말 세 개를 순서대로"
+        },
+        {
+          "from": "덩어리를 채워요",
+          "to": "낱말을 채워요"
+        },
+        {
+          "from": "덩어리 채우기",
+          "to": "낱말 채우기"
+        },
+        {
+          "from": "(묻는|뜻하는) 덩어리를 (완성해|채워)",
+          "to": "\\1 문장을 \\2"
+        },
+        {
+          "from": "(부탁|확인) 덩어리를 완성하세요",
+          "to": "\\1 문장을 완성하세요"
+        },
+        {
+          "from": "완성형 덩어리를 넣으세요",
+          "to": "완성형 표현을 넣으세요"
+        },
+        {
+          "from": "ばらばらの4つのかたまりで",
+          "to": "ばらばらの4つのことばで"
+        },
+        {
+          "from": "ばらばらのかたまりを",
+          "to": "ばらばらのことばを"
+        },
+        {
+          "from": "([0-9三四])つのかたまりを",
+          "to": "\\1つのことばを"
+        },
+        {
+          "from": "(意味|ことば|言葉)の(かたまり|まとまり)",
+          "to": "ことばのまとまり"
+        },
+        {
+          "from": "のかたまりを完成させ",
+          "to": "の文を完成させ"
+        },
+        {
+          "from": "のかたまりを入れ",
+          "to": "の表現を入れ"
+        },
+        {
+          "from": "かたまりをうめて",
+          "to": "ことばをうめて"
+        },
+        {
+          "from": "かたまりを埋め",
+          "to": "ことばを埋め"
+        },
+        {
+          "from": "混ざった(3〜4|[0-9三四])つのかたまり",
+          "to": "混ざった\\1つのことば"
+        },
+        {
+          "from": "かたまりをうめよう",
+          "to": "ことばをうめよう"
+        }
+      ]
+    },
+    {
+      "id": "restore-metaphor",
+      "kind": "run",
+      "why": "복원 → 만들기. Nothing was destroyed, so nothing is being restored: the learner is producing the line for the first time. 「엄마 말 복원하기 → 엄마 말 예상하기」, 「한마디를 복원해 보세요 → 예상해보세요」, 「엄마의 열린 말 복원하기 → 엄마의 말 이해하기」, 「한국어로 복원해 보세요 → 한국어로 만들어 보세요」 (01-nagging and 08-encouragement, 2026-08-20). 만들다 is the form that is true of every one of these pages; where the activity is really a prediction, the deck says 예상 and this rule leaves it alone.",
+      "exempt": "예상",
+      "fix": [
+        {
+          "from": "복원하기",
+          "to": "만들기"
+        },
+        {
+          "from": "복원해 보세요",
+          "to": "만들어 보세요"
+        },
+        {
+          "from": "복원하고",
+          "to": "만들고"
+        },
+        {
+          "from": "복원한",
+          "to": "만든"
+        },
+        {
+          "from": "복원해",
+          "to": "만들어"
+        },
+        {
+          "from": "復元しよう",
+          "to": "作ってみよう"
+        },
+        {
+          "from": "復元して",
+          "to": "作って"
+        },
+        {
+          "from": "復元しましょう",
+          "to": "作ってみましょう"
+        },
+        {
+          "from": "復元します",
+          "to": "作ります"
+        },
+        {
+          "from": "復元し、",
+          "to": "作り、"
+        },
+        {
+          "from": "復元する",
+          "to": "作る"
+        }
+      ]
+    },
+    {
+      "id": "argument-framing",
+      "kind": "run",
+      "why": "An activity is not framed as an argument when the same pattern is taught by talking. 「무엇이 나은지 논쟁해요」 → 「무엇이 나은지 이야기해요」 (04-visual-concept), 「논쟁을 풀고 나자」 → 「대화를 끝마치고」 (05-gentle-disagreement), 「온라인 논쟁」 → 「SNS로 의견 나누기」 (06-online-debate). 논쟁 stays where it is the subject being discussed — the freetalking article on 음식 논쟁 keeps it, and so does its vocabulary gloss.",
+      "only_in": [
+        "section-subtitle",
+        "section-title",
+        "title-ja"
+      ],
+      "find": "논쟁해요|논쟁을 풀|論争します",
+      "fix": [
+        {
+          "from": "논쟁해요",
+          "to": "이야기해요"
+        },
+        {
+          "from": "논쟁을 풀고 나자",
+          "to": "대화를 끝마치고"
+        },
+        {
+          "from": "論争します",
+          "to": "話します"
+        }
+      ]
+    },
+    {
+      "id": "mood-rider",
+      "kind": "run",
+      "why": "An instruction says what to do, not how it should feel. The reviewer cut the atmospheric tail off six instructions and kept the task: 「뒤를 재촉하지 말고, 여운을 살려 네 문장을 읽어 볼까요?」 → 「아래의 문장을 읽어 볼까요?」, 「상대를 몰아붙이지 않는 질문으로 읽어 보세요」 → 「읽어보세요」, 「갑자기 빨라진 심장 소리를 확인해 보세요」 → cut, 「보고 느낀 인상을 혼잣말처럼 흘릴 때 써요」 → 「보고 느낀 인상을 말해요」. Mood belongs in the scene, which the learner reads; not in the imperative, which the tutor performs. 혼잣말처럼 is deliberately not on this list: in a 뜻과 쓰임 box it is the pattern's actual pragmatic meaning ('사나 봐' 는 혼잣말처럼 짚어서 상대가 대답 안 해도 돼요), not decoration.",
+      "only_in": [
+        "section-subtitle"
+      ],
+      "find": "여운을 살려|뒤를 재촉하지|몰아붙이지 않는|놀리듯|흘릴 때|흘리듯|문을 열어 두|심장 소리를 확인",
+      "manual": "Cut the rider, keep the task. If the rider is the only thing naming what the learner produces, rewrite it as a plain description of that output."
+    },
+    {
+      "id": "slang-gloss",
+      "kind": "glossary",
+      "why": "A fandom abbreviation is glossed where the learner first meets it, not only in the vocabulary strip on a later page. Nine comments, all the same shape: 「생카가 뭔지 나도 모르겠어요」, 「스포가 뭔지 외국인들이 어떻게 아나요..?」, 「입덕이 뭔지 부정기가 뭔지 어떻게 알아요」, 「택포가 뭔지 이렇게 줄여야 하나요..?」, 「너무 줄임말임」(실트), 「짤이 뭔지 움짤이 뭔지 설명이 없어요」, 「맞팔설명」, 「탐라가 완전히 둘로 갈렸어 — 이게 뭔말인지 모르겠어요」, 「\"저장각\"에 대한 설명이 없어요」. Their two applied fixes show the shape of the answer: 「스밍」 → 「스트리밍 (반복재생)」 in the title, 「현생 때문에」 → 「현생(일상) 때문에」 in the question. The test this rule applies is position, not presence: a term glossed only in the vocabulary strip on a later page still fails, because that is exactly the deck state the reviewer was reading when they asked. 최애 and 떡밥 are deliberately absent: the reviewer never asked about either, the decks already gloss them in Japanese (推し / 新しい供給), and 최애 is not always fandom slang — 최애 야식 in the Free Talking track means a favourite food, so a fixed gloss would be wrong there. Titles are out of scope on purpose: a title is two or three words and an inline gloss inside one reads as though it belongs to the last word only (짤 & 움짤(움직이는 사진)). The gloss goes in the first sentence of prose the learner reads.",
+      "only_in": [
+        "section-subtitle",
+        "transition-copy",
+        "topic",
+        "ask"
+      ],
+      "never_in": [
+        "s-w",
+        "s-key",
+        "fb-add"
+      ],
+      "glosses": {
+        "생카": "(생일 카페)",
+        "스포": "(스포일러)",
+        "입덕": "(팬이 되는 것)",
+        "택포": "(택배비 포함)",
+        "실트": "(실시간 트렌드)",
+        "움짤": "(움직이는 사진)",
+        "맞팔": "(서로 팔로우)",
+        "탐라": "(타임라인)",
+        "저장각": "(저장하고 싶은 것)",
+        "현생": "(일상)",
+        "스밍": "(스트리밍)",
+        "직캠": "(멤버 한 명만 찍은 영상)",
+        "포카": "(포토 카드)",
+        "덕메": "(덕질 친구)"
+      }
+    },
+    {
+      "id": "bare-activity-title",
+      "kind": "run",
+      "why": "An activity title names what the learner will do, with enough context to be unambiguous. Fourteen titles were rewritten this way in one batch: 자리 잡기 → 식당에서 자리 잡기, 객실 문제 → 객실에서 생긴 문제, 아플 때 → 아플 때 도움 청하기, 긴급 상황 → 긴급 상황에서 신고하기, 감사 인사 → 감사 인사 전하기, 내 친구들 → 친구들에게 소개하기, 어디 갈까 → 여행지를 정해요, 온라인 논쟁 → SNS로 의견 나누기, 영업 멘트 → 친구에게 좋아하는 가수를 소개해요, 부드러운 반박 → 반대 생각 말하기, 이제 당신 차례예요 → 경험을 말해 볼까요?, 콘서트 준비 → 콘서트 갈 준비, 리필 & 추가 → 반찬 리필 & 메뉴 추가, 와이파이 & 시설 → 와이파이와 부대시설.",
+      "only_in": [
+        "episode-title",
+        "lesson-title"
+      ],
+      "find": "^$",
+      "manual": "Rewrite as a verb phrase that says where, with whom, or to what end. A bare noun label reads as a chapter heading, not as an instruction."
+    }
+  ]
+}
