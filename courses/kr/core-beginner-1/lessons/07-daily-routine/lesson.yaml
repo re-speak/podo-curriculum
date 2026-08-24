@@ -24,6 +24,8 @@ spec:
     - -아/어요
     - N을/를
     canDo: 매일 하는 일과 좋아하는 것을 말하고, 상대에게 되묻는다.
+    canDoJa: 毎日していることと好きなものを話し、相手にも聞き返す。
+    canDoEn: Say what you do every day and what you like, and put the question back.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-1/lessons/07-daily-routine/lesson.html
 

@@ -19,6 +19,8 @@ spec:
     patterns:
       []
     canDo: 자다가 갑자기 떠오르는 그 장면
+    canDoJa: 寝ているときにふと浮かぶ、あの場面
+    canDoEn: "The scene that surfaces when you're half asleep"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-small-things-intermediate · 10
 

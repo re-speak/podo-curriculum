@@ -24,6 +24,8 @@ spec:
     - N에 성공하다 / 실패하다
     - ~아/어서 ~도 못 하다
     canDo: 티켓팅 결과를 전하고, 그 순간이 얼마나 긴박했는지 묘사한다.
+    canDoJa: チケット争奪の結果を伝え、その瞬間がどれほど緊迫していたかを描写する。
+    canDoEn: Report how the ticket rush went, and describe how tense the moment was.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-fan-life-intermediate/lessons/01-ticketing/lesson.html
 

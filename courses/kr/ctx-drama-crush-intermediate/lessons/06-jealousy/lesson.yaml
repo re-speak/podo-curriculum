@@ -24,6 +24,8 @@ spec:
     - ~(으)ㄴ/는 편이다
     - ~잖아
     canDo: 상대의 다른 관계를 떠보고, 신경 쓰인다고 인정한다.
+    canDoJa: 相手のほかの関係を探りつつ、気になっていると認める。
+    canDoEn: Sound out their other relationships, and admit that it bothers you.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-crush-intermediate/lessons/06-jealousy/lesson.html
 

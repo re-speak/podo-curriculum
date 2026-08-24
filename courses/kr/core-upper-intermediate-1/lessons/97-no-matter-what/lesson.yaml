@@ -24,6 +24,8 @@ spec:
     - 아무리 -아/어도
     - -든지 -든지 / -든 -든
     canDo: 어떤 조건이 붙어도 결과가 바뀌지 않는다고 못 박는다.
+    canDoJa: どんな条件がついても結果は変わらないと念を押す。
+    canDoEn: Insist that whatever condition is attached, the result does not change.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-upper-intermediate-1/lessons/97-no-matter-what/lesson.html
 

@@ -20,6 +20,8 @@ spec:
       - ~(으)ㄹ래요? ↔ ~(으)ㄹ래?
       - ~(으)ㄹ게요 ↔ ~(으)ㄹ게
     canDo: 같은 자리에서 상대에 따라 말투를 갈아 끼우며 말한다.
+    canDoJa: 同じ場で、相手によって話し方を切り替えながら話す。
+    canDoEn: "Switch register person by person, in the same room."
   scene: 셋이 모였다. 한 명은 나보다 위, 한 명은 아래다. 한 문장 걸러 말투를 바꿔야 한다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-banmal-dropping-formality-upper-beginner · 8

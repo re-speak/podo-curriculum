@@ -19,7 +19,15 @@ spec:
     patterns:
       - 계시다 · 드시다 · 주무시다
       - N께 (대상 높임) + 드리다
+    patternsJa:
+    - "계시다 · 드시다 · 주무시다"
+    - "N께（相手を高める）+ 드리다"
+    patternsEn:
+    - "계시다 · 드시다 · 주무시다"
+    - "N께 (raising the recipient) + 드리다"
     canDo: 높임 전용 동사를 써서 어른의 상태와 행동을 말한다.
+    canDoJa: 尊敬語専用の動詞を使って、目上の人の状態と行動を言う。
+    canDoEn: "Use dedicated honorific verbs to describe an elder's state and actions."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-upper-beginner-1 · 47
 

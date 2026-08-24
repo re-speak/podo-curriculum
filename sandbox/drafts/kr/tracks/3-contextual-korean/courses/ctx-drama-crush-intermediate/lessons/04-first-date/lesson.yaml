@@ -20,6 +20,8 @@ spec:
       - ~아/어 보이다
       - ~(으)ㄹ까?
     canDo: 상대의 오늘 모습을 칭찬하고, 다음 만남을 제안한다.
+    canDoJa: 今日の相手の様子をほめ、次に会う約束を提案する。
+    canDoEn: "Compliment how they look today, and propose meeting again."
   scene: 처음으로 약속을 잡고 만난 날. 평소와 다르게 차려입고 나왔다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-crush-intermediate · 4

@@ -20,6 +20,8 @@ spec:
       - ~(으)ㄴ 거 봤어?
       - ~길래
     canDo: 실시간 트렌드에 오른 것을 알리고, 바로 캡쳐했다고 전한다.
+    canDoJa: リアルタイムトレンドに入ったことを知らせ、すぐスクショしたと伝える。
+    canDoEn: "Announce it has hit the live trends, and say you screenshotted it straight away."
   scene: 타임라인을 새로고침했더니 우리 애들이 1위에 올라 있다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-kpop-online-intermediate · 1

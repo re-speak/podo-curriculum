@@ -22,6 +22,8 @@ spec:
   teaches:
     patterns: []
     canDo: 왜 그 동물인가
+    canDoJa: なぜその動物なのか
+    canDoEn: Why that animal
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-what-if-advanced/lessons/09-if-i-were-an-animal/lesson.html
 

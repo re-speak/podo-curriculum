@@ -20,6 +20,8 @@ spec:
       - "-기는 무슨"
       - "-다니까 / -라니까"
     canDo: 상대의 말을 가볍게 비꼬아 부정하고, 하고 싶은 말을 우겨서 강조한다.
+    canDoJa: 相手の言葉を軽く皮肉って否定し、言いたいことを押し通して強調する。
+    canDoEn: "Deny what the other person said with a light jab, and press your own point."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-upper-intermediate-1 · 101
 

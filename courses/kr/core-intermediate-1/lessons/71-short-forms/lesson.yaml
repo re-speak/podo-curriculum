@@ -24,6 +24,8 @@ spec:
     - -대요 · -래요 · -재요
     - 반말 축약 -대 · -래 · -재
     canDo: 들은 말을 실제 대화에서 쓰는 짧은 형태로 전한다.
+    canDoJa: 聞いた話を、実際の会話で使う短い形にして伝える。
+    canDoEn: Pass on what you heard in the shortened form real conversation uses.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-intermediate-1/lessons/71-short-forms/lesson.html
 

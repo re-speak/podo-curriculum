@@ -22,6 +22,8 @@ spec:
   teaches:
     patterns: []
     canDo: 몇 시에, 뭘 시키나
+    canDoJa: 何時に、何を頼むか
+    canDoEn: What time, and what do you order
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-things-i-like-advanced/lessons/05-favorite-late-night-food/lesson.html
 

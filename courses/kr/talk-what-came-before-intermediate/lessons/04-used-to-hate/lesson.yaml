@@ -22,6 +22,8 @@ spec:
   teaches:
     patterns: []
     canDo: 음식이든 뭐든
+    canDoJa: 食べ物でも、何でも
+    canDoEn: Food or anything else
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-what-came-before-intermediate/lessons/04-used-to-hate/lesson.html
 

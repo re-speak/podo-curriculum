@@ -24,6 +24,8 @@ spec:
     - ~(으)ㄴ/는데 ~아/어 봐
     - ~기만 해도
     canDo: 묻힌 수록곡을 권하고, 듣기만 해도 좋다고 장담한다.
+    canDoJa: 埋もれた収録曲を勧め、聴くだけでもいいと請け合う。
+    canDoEn: Recommend an overlooked album track, and promise it's worth a listen alone.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-stage-upper-beginner/lessons/06-recommending-a-track/lesson.html
 

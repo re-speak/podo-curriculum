@@ -24,6 +24,8 @@ spec:
     - ~고 싶은데
     - N 이상 ~아/어야 되다
     canDo: 면세 서류를 요청하고, 최소 금액 조건을 확인한다.
+    canDoJa: 免税の書類をお願いし、最低金額の条件を確かめる。
+    canDoEn: Ask for the tax-free paperwork, and check the minimum spend.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-shopping-upper-beginner/lessons/10-tax-refund/lesson.html
 

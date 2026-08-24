@@ -24,6 +24,8 @@ spec:
     - ~(으)ㄹ + N 있다
     - ~지 말고
     canDo: 진지한 이야기를 꺼내겠다고 예고하고, 마음의 준비를 시킨다.
+    canDoJa: まじめな話を切り出すと予告し、心の準備をさせる。
+    canDoEn: Signal that a serious talk is coming, and let them brace for it.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-crush-intermediate/lessons/07-courage/lesson.html
 

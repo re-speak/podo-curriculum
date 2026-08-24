@@ -20,6 +20,8 @@ spec:
       - N 중에서 제일
       - ~도 ~고 ~도
     canDo: 여럿 중에서 최애를 고른 이유를 두 가지 이상 든다.
+    canDoJa: 何人もの中から推しを選んだ理由を、二つ以上挙げる。
+    canDoEn: "Give two or more reasons for picking your favourite out of the group."
   scene: 다섯 명 중에 왜 하필 그 멤버냐고 묻는다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-kpop-talk-beginner · 5

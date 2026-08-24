@@ -22,6 +22,8 @@ spec:
   teaches:
     patterns: []
     canDo: 그릇을 드는가, 젓가락을 어떻게 놓는가, 누가 먼저 먹는가
+    canDoJa: 器を持ち上げるか、箸をどう置くか、誰が先に食べるか
+    canDoEn: Do you lift the bowl, how do you lay the chopsticks, who eats first
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-between-two-countries-intermediate/lessons/04-table-manners/lesson.html
 

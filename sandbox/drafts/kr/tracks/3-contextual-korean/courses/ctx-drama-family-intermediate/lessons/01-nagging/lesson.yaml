@@ -19,7 +19,15 @@ spec:
     patterns:
       - ~(으)라고 하다 (핵심 69) + ~지?
       - ~게 만들다
+    patternsJa:
+    - "~(으)라고 하다（コア69）+ ~지?"
+    - "~게 만들다"
+    patternsEn:
+    - "~(으)라고 하다 (Core 69) + ~지?"
+    - "~게 만들다"
     canDo: 전에 시킨 일을 다시 상기시키고, 반복하게 만들지 말라고 나무란다.
+    canDoJa: 前に頼んだことを改めて思い出させ、何度も言わせるなとたしなめる。
+    canDoEn: "Remind them of what you asked before, and scold them for making you repeat it."
   scene: 본가에 내려간 첫날 아침. 방이 어젯밤 그대로다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-family-intermediate · 1

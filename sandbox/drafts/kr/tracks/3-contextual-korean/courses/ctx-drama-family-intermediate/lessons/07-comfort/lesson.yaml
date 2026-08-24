@@ -20,6 +20,8 @@ spec:
       - ~(으)니까 ~지 마
       - ~(으)ㄹ 테니까
     canDo: 지난 일로 자책하지 말라고 다독이고, 다 잘될 거라고 안심시킨다.
+    canDoJa: 過ぎたことで自分を責めるなとなだめ、きっとうまくいくと安心させる。
+    canDoEn: "Comfort them not to beat themselves up over the past, and reassure them it will work out."
   scene: 밥상 앞에서. 아까 핀잔을 준 사람이 반찬을 밀어 주며 말투를 바꾼다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-family-intermediate · 7

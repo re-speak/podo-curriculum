@@ -20,6 +20,8 @@ spec:
       - ~고 싶은데
       - N 이상 ~아/어야 되다
     canDo: 면세 서류를 요청하고, 최소 금액 조건을 확인한다.
+    canDoJa: 免税の書類をお願いし、最低金額の条件を確かめる。
+    canDoEn: "Ask for the tax-free paperwork, and check the minimum spend."
   scene: 결제를 마치고 나가려다 면세 서류가 생각났다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-travel-shopping-upper-beginner · 10

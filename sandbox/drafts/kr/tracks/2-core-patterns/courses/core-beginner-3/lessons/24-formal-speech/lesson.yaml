@@ -20,6 +20,8 @@ spec:
       - N입니다 / N입니까?
       - "-ㅂ/습니다 / -ㅂ/습니까?"
     canDo: 격식이 필요한 자리에서 자기소개를 하고, 안내 방송과 뉴스의 말투를 알아듣는다.
+    canDoJa: 改まった場で自己紹介をし、アナウンスやニュースの言い方を聞き取る。
+    canDoEn: "Introduce yourself where formality is expected, and follow the register of announcements and the news."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-3 · 24
 

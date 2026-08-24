@@ -22,6 +22,8 @@ spec:
   teaches:
     patterns: []
     canDo: 최근에 시작한, 남들은 잘 모르는 취미
+    canDoJa: 最近始めた、周りはあまり知らない趣味
+    canDoEn: A hobby you took up recently that few people know
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-me-lately-intermediate/lessons/02-current-obsession/lesson.html
 

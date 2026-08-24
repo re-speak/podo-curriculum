@@ -24,6 +24,8 @@ spec:
     - 얼마나 걸리다
     - ~(으)ㄹ 만하다
     canDo: 이동 시간을 묻고, 걸어갈 만한 거리인지 판단한다.
+    canDoJa: 移動時間を尋ね、歩いて行ける距離かどうかを判断する。
+    canDoEn: Ask how long the journey takes, and judge whether it's within walking distance.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-getting-around-intermediate/lessons/03-distance-and-time/lesson.html
 

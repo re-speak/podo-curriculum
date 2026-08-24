@@ -22,6 +22,8 @@ spec:
   teaches:
     patterns: []
     canDo: 외국인이 자주 잘못 알고 있는 일본 / 한국
+    canDoJa: 外国人がよく誤解している日本／韓国
+    canDoEn: What foreigners often get wrong about Japan, and about Korea
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-between-two-countries-intermediate/lessons/02-misunderstood-country/lesson.html
 

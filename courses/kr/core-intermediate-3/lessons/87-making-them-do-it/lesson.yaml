@@ -24,6 +24,8 @@ spec:
     - 사동사
     - -게 하다 / -게 만들다
     canDo: 다른 사람이 어떤 행동을 하게 만들었다고 말한다.
+    canDoJa: 他の人に、ある行動をさせたと言う。
+    canDoEn: Say that you made someone else do something.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-intermediate-3/lessons/87-making-them-do-it/lesson.html
 

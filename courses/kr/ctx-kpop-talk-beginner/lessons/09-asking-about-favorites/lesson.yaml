@@ -24,6 +24,8 @@ spec:
     - 누구 · 뭐 · 어디
     - 무슨 + N
     canDo: 상대의 최애와 자주 듣는 노래를 물어 대화를 넘긴다.
+    canDoJa: 相手の推しとよく聴く曲を尋ねて、会話を渡す。
+    canDoEn: Ask about their favourite and what they play often, handing the conversation over.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-talk-beginner/lessons/09-asking-about-favorites/lesson.html
 

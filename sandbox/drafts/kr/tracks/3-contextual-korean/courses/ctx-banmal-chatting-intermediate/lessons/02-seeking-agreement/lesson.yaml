@@ -20,6 +20,8 @@ spec:
       - ~잖아
       - ~는 거 아니지?
     canDo: 둘 다 아는 사실을 근거로 삼고, 나만 그런 게 아니라고 확인받는다.
+    canDoJa: 二人とも知っている事実を根拠にして、自分だけではないと確認してもらう。
+    canDoEn: "Build on a fact you both know, and get confirmation that it isn't just you."
   scene: 둘 다 아는 사람 이야기가 나왔다. 나만 그렇게 느낀 게 아니길 바란다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-banmal-chatting-intermediate · 2

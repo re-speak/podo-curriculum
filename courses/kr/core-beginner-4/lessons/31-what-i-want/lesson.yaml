@@ -24,6 +24,8 @@ spec:
     - -고 싶어요
     - -고 싶어 해요
     canDo: 자기가 하고 싶은 것을 말하고, 다른 사람이 원하는 것을 전한다.
+    canDoJa: 自分がしたいことを言い、他の人が望んでいることを伝える。
+    canDoEn: Say what you want to do, and relay what someone else wants.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-4/lessons/31-what-i-want/lesson.html
 

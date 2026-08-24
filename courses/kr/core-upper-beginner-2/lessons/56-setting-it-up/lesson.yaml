@@ -24,6 +24,8 @@ spec:
     - -는데
     - -(으)ㄴ/는데요
     canDo: 먼저 상황을 깔고 본론을 말하며, 말끝을 흐려 부드럽게 만든다.
+    canDoJa: 先に状況を説明してから本題を言い、語尾をぼかしてやわらかくする。
+    canDoEn: Set up the situation before the main point, and soften it by trailing off.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-upper-beginner-2/lessons/56-setting-it-up/lesson.html
 

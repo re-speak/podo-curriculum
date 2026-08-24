@@ -22,6 +22,8 @@ spec:
   teaches:
     patterns: []
     canDo: 언제 바뀌었나
+    canDoJa: いつ変わったのか
+    canDoEn: When did it change
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-what-came-before-advanced/lessons/08-dreams-then-now/lesson.html
 

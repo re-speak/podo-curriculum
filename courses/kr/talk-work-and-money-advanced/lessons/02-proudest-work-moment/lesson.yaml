@@ -22,6 +22,8 @@ spec:
   teaches:
     patterns: []
     canDo: 어떤 일이었고 왜 뿌듯했는지 이야기하기
+    canDoJa: どんな出来事で、なぜ誇らしかったのかを話す
+    canDoEn: Tell what it was, and why it made you proud
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-work-and-money-advanced/lessons/02-proudest-work-moment/lesson.html
 

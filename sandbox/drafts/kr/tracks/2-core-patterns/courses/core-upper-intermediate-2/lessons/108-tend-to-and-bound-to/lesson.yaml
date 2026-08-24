@@ -20,6 +20,8 @@ spec:
       - "-곤 하다"
       - "-기 마련이다"
     canDo: 자기 나쁜 버릇을 고백하고, 상대는 누구나 그렇다고 받아 준다.
+    canDoJa: 自分の悪い癖を打ち明け、相手は誰でもそうだと受け止める。
+    canDoEn: "Confess a bad habit, and have the other person say everyone is like that."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-upper-intermediate-2 · 108
 

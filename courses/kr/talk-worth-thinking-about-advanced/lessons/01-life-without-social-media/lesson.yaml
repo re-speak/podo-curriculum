@@ -22,6 +22,8 @@ spec:
   teaches:
     patterns: []
     canDo: 며칠까지 가능한가
+    canDoJa: 何日まで耐えられるか
+    canDoEn: How many days could you manage
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-worth-thinking-about-advanced/lessons/01-life-without-social-media/lesson.html
 

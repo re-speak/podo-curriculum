@@ -22,6 +22,8 @@ spec:
   teaches:
     patterns: []
     canDo: 실수의 장면과 이후 반응 이야기하기
+    canDoJa: 失敗した場面と、そのあとの反応を話す
+    canDoEn: Tell the scene of the mistake, and what happened next
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-what-came-before-intermediate/lessons/05-embarrassing-mistake/lesson.html
 

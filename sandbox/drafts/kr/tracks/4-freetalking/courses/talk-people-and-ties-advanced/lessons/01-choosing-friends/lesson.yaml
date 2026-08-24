@@ -19,6 +19,8 @@ spec:
     patterns:
       []
     canDo: 이것만은 못 참는다
+    canDoJa: これだけは我慢できない
+    canDoEn: "This is the one thing you can't stand"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-people-and-ties-advanced · 1
 

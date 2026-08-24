@@ -22,6 +22,8 @@ spec:
   teaches:
     patterns: []
     canDo: 언제로, 뭘 하러
+    canDoJa: いつへ、何をしに
+    canDoEn: To when, and what for
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-what-came-before-advanced/lessons/09-one-trip-to-past/lesson.html
 

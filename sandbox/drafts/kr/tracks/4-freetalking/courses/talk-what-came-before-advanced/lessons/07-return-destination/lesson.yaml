@@ -19,6 +19,8 @@ spec:
     patterns:
       []
     canDo: 왜 그때가 좋았나
+    canDoJa: なぜあのころがよかったのか
+    canDoEn: "Why was that time good"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-what-came-before-advanced · 7
 

@@ -24,6 +24,8 @@ spec:
     - ~자
     - ~아/어 · ~지 마
     canDo: 친구에게 같이 하자고 하고, 하라고·하지 말라고 한다.
+    canDoJa: 友だちに一緒にやろうと言い、しろ・するなと言う。
+    canDoEn: Tell a friend to do it with you, and tell them to do it or not to.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-banmal-dropping-formality-upper-beginner/lessons/06-suggestions-and-commands/lesson.html
 

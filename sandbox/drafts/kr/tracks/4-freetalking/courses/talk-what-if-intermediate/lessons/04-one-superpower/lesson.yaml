@@ -19,6 +19,8 @@ spec:
     patterns:
       []
     canDo: 어디에 쓸 건가
+    canDoJa: 何に使うか
+    canDoEn: "What would you spend it on"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-what-if-intermediate · 4
 

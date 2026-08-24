@@ -19,6 +19,8 @@ spec:
     patterns:
       []
     canDo: 얼마면 충분할까
+    canDoJa: いくらあれば十分か
+    canDoEn: "How much would be enough"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-worth-thinking-about-intermediate · 4
 

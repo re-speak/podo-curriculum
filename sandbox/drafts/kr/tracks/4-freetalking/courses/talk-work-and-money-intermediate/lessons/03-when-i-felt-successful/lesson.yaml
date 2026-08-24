@@ -19,6 +19,8 @@ spec:
     patterns:
       []
     canDo: 크지 않아도 됩니다
+    canDoJa: 大きくなくてかまいません
+    canDoEn: "It doesn't have to be big"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-work-and-money-intermediate · 3
 

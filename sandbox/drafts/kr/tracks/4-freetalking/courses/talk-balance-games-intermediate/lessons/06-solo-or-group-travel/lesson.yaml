@@ -19,6 +19,8 @@ spec:
     patterns:
       []
     canDo: 자유와 공유의 장단점을 실제 여행 장면으로 비교하기
+    canDoJa: 自由と共有の長所と短所を、実際の旅の場面で比べる
+    canDoEn: "Weigh going solo against sharing, through real moments from a trip"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-balance-games-intermediate · 6
 

@@ -19,6 +19,8 @@ spec:
     patterns:
       []
     canDo: 좋은 쪽으로도, 나쁜 쪽으로도
+    canDoJa: いい方向にも、悪い方向にも
+    canDoEn: "For better and for worse"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-people-and-ties-intermediate · 2
 

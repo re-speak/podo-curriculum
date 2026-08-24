@@ -22,6 +22,8 @@ spec:
   teaches:
     patterns: []
     canDo: 자다가 갑자기 떠오르는 그 장면
+    canDoJa: 寝ているときにふと浮かぶ、あの場面
+    canDoEn: The scene that surfaces when you're half asleep
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-small-things-intermediate/lessons/10-cringe-memory/lesson.html
 

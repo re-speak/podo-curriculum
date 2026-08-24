@@ -24,6 +24,8 @@ spec:
     - -다고 하다
     - -(이)라고 하다
     canDo: 다른 사람이 한 말을 그대로 옮겨 전한다.
+    canDoJa: 他の人が言ったことを、そのまま引用して伝える。
+    canDoEn: Pass on what someone else said, quoting it as it was.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-intermediate-1/lessons/68-reporting-statements/lesson.html
 

@@ -20,6 +20,8 @@ spec:
       - 제일 ~는 N
       - ~(으)ㄹ까요?
     canDo: 잘나가는 메뉴를 묻고, 외국인 입맛에 맞는 것을 추천받는다.
+    canDoJa: 人気のメニューを尋ね、外国人の口に合うものを勧めてもらう。
+    canDoEn: "Ask what sells well, and get a recommendation suited to a foreign palate."
   scene: 메뉴판이 전부 한글이다. 사진도 없다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-travel-eating-out-upper-beginner · 2

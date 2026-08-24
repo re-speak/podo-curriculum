@@ -21,6 +21,7 @@ being identical the first time one of them is fixed.
 
 import argparse
 import io
+import os
 import pathlib
 import re
 import sys
@@ -77,7 +78,51 @@ def take(src, ids):
     missing = [i for i in ids if i not in p]
     if missing:
         sys.exit("missing pages in %s: %s" % (src, missing))
-    return {i: p[i] for i in ids}
+    return {i: rebase(p[i], src.parent) for i in ids}
+
+
+def check_complete(src, spec):
+    """Fail if the source has a page this band neither uses nor declares it is skipping.
+
+    `take` already catches the easy direction — a listed page that no longer exists stops
+    the build. This is the other direction, and it is the one that bit us: a source lesson
+    rewritten under a *stable* page set drifts away from a hand-written page list without
+    anything failing at all. 初級 shipped three days of a superseded CORE-12 that way.
+
+    So a band must account for every page in its source. Dropping one is allowed and
+    sometimes right — say so in `omit`, next to the page list, where the next person
+    reading the band can see the cut and its cost together.
+    """
+    extra = sorted(set(pages(src)) - set(spec["lesson"]) - set(spec.get("omit", ())))
+    if extra:
+        sys.exit(
+            "%s: source has page(s) this band neither uses nor omits: %s\n"
+            "  The source lesson has probably been reworked. Re-read the band's page list "
+            "against it, then either add the page to `lesson` or name it in `omit`."
+            % (spec["id"], ", ".join(extra)))
+
+
+def rebase(html, src_dir):
+    """Re-point relative asset paths from the source deck's depth to the trial deck's.
+
+    A lesson deck sits nine directories down and reaches the shared trial artwork with
+    seven `../`; a trial deck sits five down and needs four. A page lifted between them
+    keeps whatever its source wrote, so the path silently resolves outside the repo and
+    the image is simply missing — no error, nothing in the console but a 404.
+
+    Only FT-89's 会話スタイル page trips this today (two report icons that still live
+    under kr/trial/assets and did not move when English got its own trial folder). It is
+    done here rather than patched into that one page because the next lesson lifted into
+    a trial will have the same problem and no reason to expect it.
+    """
+    def fix(m):
+        attr, rel = m.group(1), m.group(2)
+        target = (src_dir / rel).resolve()
+        try:
+            return '%s="%s"' % (attr, os.path.relpath(target, OUT_DIR))
+        except ValueError:            # different drive on Windows; leave it alone
+            return m.group(0)
+    return re.sub(r'\b(src|href)="(\.\./[^"]*)"', fix, html)
 
 
 ICON = ('<span class="avatar icon"><svg viewBox="0 0 24 24" aria-hidden="true">'
@@ -117,7 +162,17 @@ def head(lesson_id, level, title, cover, version=None):
 
 
 def greeting(turns):
-    """The trial opening. `turns` is a list of (who, ja, en, cue) with who in me/other."""
+    """The scripted trial opening — 初級 only.
+
+    `turns` is a list of (who, ja, en, cue) with who in me/other. Every English line the
+    learner says is written out for them, because at A1 the alternative to a script is
+    silence.
+
+    Above A1 use `open_greeting` instead. The Korean product settled this: its 한글 and
+    패턴 trials are scripted and its 상황 and 자유 대화 trials are not, and the split is by
+    track rather than by taste — a learner who can already hold a conversation reads a
+    fill-in-the-blank "I'm ___" as being talked down to, and the tutor learns nothing about
+    them from a line they were handed."""
     out = ['''
     <!-- ============ GREETING ============
          The learner speaks English in the first minute. The tutor's own name goes in a
@@ -141,6 +196,47 @@ def greeting(turns):
                 f'<span class="translation">{ja}</span>'
                 f'<span class="korean">{en}</span>{cue_html}</div></div>')
         out.append('</div>')
+    out.append('\n    </div>\n')
+    return "".join(out)
+
+
+def open_greeting(asks):
+    """The unscripted trial opening — 中級 and above.
+
+    The tutor asks; the learner answers in their own words and the tutor types what they
+    actually said. `asks` is a list of (en, ja, task_ja, sync_id): the tutor's question in
+    English with its Japanese underneath, the one-line Japanese prompt over the answer box,
+    and the sync id that carries the answer to the other screen.
+
+    This page is also the first thing the tutor scores on. Five unscripted answers before
+    the lesson starts is more evidence of level than the whole lesson that follows, because
+    nothing here has been handed to the learner.
+    """
+    out = ['''
+    <!-- ============ GREETING ============
+         Unscripted. The tutor asks, the learner answers in their own words, and the tutor
+         types the answer into the box so both screens hold the same sentence — which is
+         also the first thing the tutor has to score on. The tutor's own name goes in a
+         text box so the same deck works for every tutor. -->
+    <div class="section" data-page-id="greeting">
+      <h2 class="section-title">Hello! <span class="title-ja">(はじめまして！)</span></h2>
+      <p class="section-subtitle"><span class="ko">Let&#x27;s say hello and introduce ourselves. Please answer in your own words.</span><span class="ja">まずは、軽くあいさつと自己紹介をしましょう。自分のことばで答えてください。</span></p>
+      <div class="tutor-note">Ask these in order and type what the learner actually says. If an answer is short, ask once more before moving on — this page is your first read on their level.</div>''']
+    for i, (en, ja, task, sid) in enumerate(asks):
+        style = ' style="margin-top:var(--item-gap);"' if i else ''
+        out.append(
+            f'\n      <div class="dialogue"{style}>'
+            f'<div class="turn other"><span class="who">{ICON}'
+            f'<span class="who-name">Tutor</span></span>'
+            f'<div class="bubble"><span class="korean">{en}</span>'
+            f'<span class="translation">{ja}</span></div></div>'
+            f'<div class="turn me"><span class="who">{ICON}'
+            f'<span class="who-name">Me</span></span>'
+            f'<div class="bubble me"><div class="answer-box tall">'
+            f'<span class="answer-label task">{task}</span>'
+            f'<span class="answer-space as-input">'
+            f'<textarea class="free-input" data-sync-id="{sid}" rows="2" spellcheck="false" maxlength="2000"></textarea>'
+            f'</span></div></div></div></div>')
     out.append('\n    </div>\n')
     return "".join(out)
 
@@ -219,9 +315,9 @@ NEEDS = '''
 def trial_intro(promise):
     return f'''
     <div class="brand-page divider" data-page-id="trial-intro">
-      <img class="brand-mascot" src="../assets/podo-character-point.png" alt="">
       <h2 class="brand-title">Trial lesson<span class="ja">体験レッスン</span></h2>
       <p class="brand-sub">{promise}</p>
+      <img class="brand-art study" src="../assets/podo-character-study.png" alt="">
     </div>
 '''
 
@@ -360,13 +456,26 @@ CLOSING = '''
 '''
 
 
-TAIL = '''
+def tail(freetalk=False):
+    """Everything after the last page. `freetalk` adds the script FT decks need.
+
+    freetalk-activities.js wires the no-right-answer pickers (.opt-list[data-pick]) that
+    only the 自由対話 lesson has — the 会話スタイル page. It deliberately skips lists
+    carrying data-group, which is every list the ニーズ把握 pages own, so it and report.js
+    do not both bind the same button. That guard was written for exactly this deck; the
+    comment at the top of the file says so.
+    """
+    ft = ('\n  <!-- FREETALK ACTIVITIES · 正解のない選び。会話スタイルのページが使う。\n'
+          '       activities.js のあとに来ること — 空の答え欄は向こうで自由作文欄になる。 -->\n'
+          '  <script src="../../../../../shared/js/freetalk-activities.js"></script>\n') if freetalk else ''
+    return '''
   </div>
 
   <!-- ACTIVITIES · 点線の枠 · 選ぶ · 文を組み立てる。共有スクリプト。
        ページャより先に来ること — ティーチングモードがここで作る幽霊の答えを使う。 -->
   <script src="../../../../../shared/js/activities.js"></script>
   <script src="../../../../../shared/js/feedback.js"></script>
+''' + ft + '''
 
   <!-- ================================================================
        PAGER · 一枚ずつめくるモード
@@ -410,7 +519,7 @@ TAIL = '''
 
   <!-- STAMP · よくできました。stamp.js がこの絵をページごとに複製する。
        .phone の外に置くのが大事 — 中に入れると空のページが一つ増える。 -->
-  <img class="stamp-art" src="../assets/well-done.svg" alt="">
+  <img class="stamp-art" src="../assets/good-job.svg" alt="">
   <script src="../../../../../shared/js/stamp.js"></script>
 
   <!-- yomi.js は読み込まない。英語デッキはカタカナの読みを一切持たない
@@ -433,17 +542,71 @@ def register(key, **spec):
     DECKS[key] = spec
 
 
-# 25 minutes, and the report takes the last seven of them. So the lesson body is roughly
-# 60% of the standard deck: pattern 1 keeps its full arc, pattern 2 is taught and drilled
-# only as far as the conversation needs, and the conversation itself is kept whole —
-# it is the page that makes a trial feel like a lesson rather than an exercise sheet.
-# Dropped from the source deck: p1-rule, p1-fill, p1-translate, p2-rule, p2-reorder,
-# p2-fill, p2-translate, p2-write, in-the-wild.
+# ============================================================================
+# WHAT EACH BAND TEACHES
+#
+# One real lesson per band, lifted whole out of the track it belongs to. The four
+# together are the same ladder the Korean trial climbs — patterns, situation, situation,
+# free talk — minus the rung Korean needs and English does not, because a Japanese
+# learner reads the Latin alphabet on day one and there is no 한글 course to sit below
+# Core (sandbox/drafts/en/trial/plan-logic.md §1).
+#
+#   初級    A1     CORE-12  I start work at nine                      1-core-patterns
+#   中級    B1     CTX-5    Ask for directions and confirm the route  2-contextual · travel
+#   中上級  B2     CTX-47   Disagree with a senior colleague           2-contextual · business
+#   上級    C1     FT-89    What you would really do if you won        3-freetalking
+#
+# All four sources are `proofread-status: complete` and their declared levels match the
+# band they sit in (A1 / A2-B1 / B2 / B2-C1). The four course.yaml descriptions were
+# written against these lessons before the lessons were wired in, which is why 中上級
+# already promises 仕事の場面で意見を伝えて and 上級 already says フリートーキング.
+#
+# All four are lifted whole — every page of the source lesson except its own lesson-goal,
+# which the trial replaces with a promise about what the learner will walk out able to do.
+#
+# None of them is cut to fit 25 minutes, and that is deliberate. A trial deck is not a
+# 25-minute lesson; it is the lesson, with the tutor deciding live how far to get. Cutting
+# it here would move that judgement from the person in the room to whoever last edited
+# this file, and the decks already tell the tutor how to make it: the free-talk lesson is
+# explicitly a question *pool* whose tutor note says to skip freely and leave 2–3 minutes
+# for feedback, and the situation lessons end on a transfer scene that is the natural
+# thing to drop when the clock is short.
+#
+# 初級 was the exception until 2026-08-24 for reasons that turned out not to be reasons.
+# See its section below.
+# ============================================================================
+
+
+# ---------------------------------------------------------------------------
+# 初級 · CORE-12 · I start work at nine
+#
+# Lifted whole, source lesson-goal excepted, exactly like the other three.
+#
+# This band carried a 16-page cut until 2026-08-24, described here as a deliberate 60%
+# trim. It was not one. The list was written on 08-21 against a lesson that was still
+# being finished: `d0129074d` (08-22) fixed the alternating answer positions and
+# `3b2507165` (08-23) moved all sixteen activity pages onto the approved shared activity
+# script — including all eight the cut dropped. Nobody revisited the list afterwards, so
+# the trial spent three days showing a version of CORE-12 that had been superseded, and
+# the comment explaining why read as a decision about a lesson that did not exist yet.
+#
+# The general point, which is why this is written down rather than quietly fixed: the
+# generator keeps page *content* current automatically — that is the whole reason it
+# exists — but the page *list* is frozen prose, and nothing checks it against the source.
+# A lesson that gains or loses a page fails loudly in `take()`; a lesson that is rewritten
+# under a stable page set does not fail at all. When a source lesson is reworked, re-read
+# the band's page list. Do not trust a rationale in this file over the source's own log.
+# ---------------------------------------------------------------------------
+
+T1_SOURCE = "1-core-patterns/courses/core-first-exchanges-2/lessons/12-i-start-work-at-nine/lesson.html"
+
 T1_LESSON = ["words-you-know",
-          "part1-intro", "p1-teach", "p1-read", "p1-choose", "p1-reorder", "p1-write",
-          "part2-intro", "p2-teach", "p2-read", "p2-choose",
-          "part3-intro", "p3-model", "p3-complete", "p3-freetalk",
-          "native-tip"]
+             "part1-intro", "p1-teach", "p1-read", "p1-rule", "p1-choose", "p1-reorder",
+             "p1-fill", "p1-translate", "p1-write",
+             "part2-intro", "p2-teach", "p2-read", "p2-rule", "p2-choose", "p2-reorder",
+             "p2-fill", "p2-translate", "p2-write",
+             "part3-intro", "p3-model", "p3-complete", "p3-freetalk",
+             "in-the-wild", "native-tip"]
 
 T1_GREETING = [
     [("other", "こんにちは！お会いできてうれしいです。", "Hello! Nice to meet you.", None),
@@ -458,18 +621,8 @@ T1_GREETING = [
      ("me", "はい、お願いします！", "Yes, let&#x27;s go!", "先生のことばに、返事してみましょう！")],
 ]
 
-GREETING = [
-    [("other", "こんにちは！お会いできてうれしいです。", "Hello! Nice to meet you.", None),
-     ("me", "こんにちは！", "Hello!", "先生のことばに、返事してみましょう！")],
-    [("other", "私は（名前）です。お名前は何ですか？",
-      'I\'m <input class="slot-input" data-sync-id="greeting-tutor-name" placeholder="name" aria-label="tutor name" autocomplete="off">. '
-      "What&#x27;s your name?", None),
-     ("me", "私は ＿(名前)＿ です。",
-      'I\'m <input class="slot-input" data-sync-id="greeting-student-name" placeholder="name" aria-label="student name" autocomplete="off">.',
-      "お名前を入れて言ってみましょう！")],
-    [("other", "では、今日のレッスンを始めますね。", "OK, let&#x27;s start today&#x27;s lesson.", None),
-     ("me", "はい、お願いします！", "Yes, let&#x27;s go!", "先生のことばに、返事してみましょう！")],
-]
+T1_PROMISE = ("ここから25分。終わるころには、自分の一日の始まりと終わりを英語で言えて、"
+              "相手にも聞けるようになります。約束します！")
 
 T1_LESSON_GOAL = '''
     <div class="transition-page" data-page-id="lesson-goal" data-act="Talking about your day">
@@ -499,61 +652,257 @@ T1_RESULT = '''
 
 
 # ---------------------------------------------------------------------------
-# PLACEHOLDER CONTENT
+# The unscripted greeting — every band above 初級
 #
-# All four bands currently carry the same A1 lesson (CORE-12). That is deliberate
-# and temporary: the four course rows have to exist in grape before anyone can wire
-# the trial flow to them, and the wiring does not care what the lesson teaches.
-#
-# What differs per band is everything the platform keys on — classLevel, slug,
-# difficulty, the three catalogue names, the cover, the declared level. Only the
-# lesson pages are shared, so swapping in the real content later is one edit per
-# entry ( and the page list) and nothing else moves.
-#
-# The real content, already chosen: CTX-5 for 中級, CTX-47 for 中上級, FT-89 for 上級.
+# Four questions, and none of the answers are written down. The last one doubles as a
+# lead-in to ニーズ把握: a learner who has just said out loud when they actually need
+# English answers 学ぶきっかけ two pages later with that already in mind.
 # ---------------------------------------------------------------------------
 
-BANDS = [
-    ("trial-1", "trial-1-elementary",         "A1", "初級",
-     "체험 레슨 · 초급",   "Trial lesson · Elementary",         "体験レッスン 初級"),
-    ("trial-2", "trial-2-intermediate",       "B1", "中級",
-     "체험 레슨 · 중급",   "Trial lesson · Intermediate",       "体験レッスン 中級"),
-    ("trial-3", "trial-3-upper-intermediate", "B2", "中上級",
-     "체험 레슨 · 중고급", "Trial lesson · Upper-intermediate", "体験レッスン 中上級"),
-    ("trial-4", "trial-4-advanced",           "C1", "上級",
-     "체험 레슨 · 고급",   "Trial lesson · Advanced",           "体験レッスン 上級"),
+OPEN_GREETING = [
+    ('Hello! I&#x27;m <input class="slot-input" data-sync-id="greeting-tutor-name" placeholder="name" aria-label="tutor name" autocomplete="off">. '
+     "It&#x27;s nice to meet you.",
+     "こんにちは！私は＿＿＿です。お会いできてうれしいです。",
+     "あいさつを返してみましょう", "greeting-hello"),
+    ("What&#x27;s your name? Please tell me a little about yourself.",
+     "お名前は何ですか？かんたんに自己紹介もお願いします。",
+     "名前と、自分のことを言ってみましょう", "greeting-selfintro"),
+    ("How long have you been studying English, and how do you study now?",
+     "英語の勉強はどのくらいですか？最近はどうやって勉強していますか？",
+     "勉強の期間と、今のやり方を言ってみましょう", "greeting-study"),
+    ("When do you actually need English?",
+     "実際に英語が必要になるのは、どんなときですか？",
+     "英語を使う場面を言ってみましょう", "greeting-need"),
 ]
 
-for _key, _id, _level, _cover, _ko, _en, _ja in BANDS:
-    register(
-        _key,
-        id=_id,
-        level=_level,
-        cover=_cover,
-        title={"ko": _ko, "en": _en, "ja": _ja},
-        source="1-core-patterns/courses/core-first-exchanges-2/lessons/12-i-start-work-at-nine/lesson.html",
-        promise="ここから25分。終わるころには、自分の一日の始まりと終わりを英語で言えて、"
-                "相手にも聞けるようになります。約束します！",
-        lesson=T1_LESSON,
-        greeting=T1_GREETING,
-        lesson_goal=T1_LESSON_GOAL,
-        result=T1_RESULT,
-    )
+
+# ---------------------------------------------------------------------------
+# 中級 · CTX-5 · Ask for directions and confirm the route
+#
+# Lifted whole. The one page dropped is the source's own lesson-goal, which reads the
+# lesson title aloud; the trial replaces it with the promise below, because a learner who
+# has not bought anything yet needs to be told what they will walk out able to do, not
+# what the lesson is called.
+#
+# Travel rather than business at this band on purpose. The trial is booked before anyone
+# knows the learner's motive — 学ぶきっかけ is asked four pages earlier and is not read
+# by the deck — so the middle band has to be the situation with the widest floor.
+# Travel opens at Core 47 and Business not until Core 70 (plan-logic.md §1).
+# ---------------------------------------------------------------------------
+
+T2_SOURCE = ("2-contextual-english/courses/ctx-travel-arrivals-transport"
+             "/lessons/05-ask-for-directions-and-confirm-the-route/lesson.html")
+
+T2_LESSON = ["scene", "understand", "expressions",
+             "part1-intro", "p1-teach", "p1-read", "p1-rule", "p1-reorder", "p1-fill",
+             "p1-translate", "p1-write",
+             "part2-intro", "p2-teach", "p2-read", "p2-rule", "p2-reorder", "p2-fill",
+             "p2-translate", "p2-write",
+             "part3-intro", "p3-model", "p3-complete", "p3-freetalk",
+             "transfer-scene"]
+
+T2_PROMISE = ("ここから25分。終わるころには、英語で道をたずねて、"
+              "教わった行き方をその場で確認できるようになります。約束します！")
+
+T2_LESSON_GOAL = '''
+    <div class="transition-page" data-page-id="lesson-goal" data-act="Asking the way">
+      <span class="transition-kicker">GOAL</span>
+      <h2 class="transition-title">Today&#x27;s goal <span class="title-ja">(今日のゴール)</span></h2>
+      <p class="section-subtitle"><span class="ko">By the end of today, you&#x27;ll be able to ask the way and check the route like this.</span><span class="ja">今日が終わるころには、こんなふうに道をたずねて、行き方を確認できるようになります。</span></p>
+      <div class="tutor-note">Read the three lines aloud once so the learner hears the shape, then move on.</div>
+      <div class="known lines">
+        <div class="known-row"><span class="k">Can I help you find something?</span><span class="j">どこかお探しですか？</span></div>
+        <div class="known-row"><span class="k">How do I get to the museum?</span><span class="j">美術館にはどう行けばいいですか？</span></div>
+        <div class="known-row"><span class="k">Do I take the north exit first?</span><span class="j">最初に北口を出ますか？</span></div>
+      </div>
+    </div>
+'''
+
+# 2 patterns × 4 fillers each: How do I get to {the museum, the hotel, the airport,
+# the bus stop}? and Do I {take the north exit, cross the road, turn left, take the bus}
+# first? The numbers are counted off the source deck's own drill pages — if the lesson
+# changes its fillers, this page has to change with it.
+T2_RESULT = '''
+    <div class="section" data-page-id="todays-result">
+      <h2 class="section-title">Today&#x27;s result <span class="title-ja">(今日の成果)</span></h2>
+      <p class="section-subtitle"><span class="ko">Twenty-five minutes ago you had none of these.</span><span class="ja">25分前は、まだ1つもありませんでした。</span></p>
+      <div class="payoff">
+        <span class="eqline">聞き方 2 × 行き先・手順 4</span>
+        <span class="big">8</span>
+        <span class="cap">今日言えるようになった文の数</span>
+      </div>
+    </div>
+'''
+
+
+# ---------------------------------------------------------------------------
+# 中上級 · CTX-47 · Disagree with a senior colleague constructively
+#
+# Lifted whole, source lesson-goal excepted, same as 中級.
+#
+# This is the band where a trial has to prove it is not a conversation class. The learner
+# can already talk; what they cannot do is disagree with someone senior without either
+# softening it into nothing or giving offence, and that is a thing a curriculum teaches
+# and a chat partner does not.
+# ---------------------------------------------------------------------------
+
+T3_SOURCE = ("2-contextual-english/courses/ctx-business-meetings-decisions"
+             "/lessons/47-disagree-with-a-senior-colleague-constructively/lesson.html")
+
+T3_LESSON = ["scene", "understand", "expressions",
+             "part1-intro", "p1-teach", "p1-read", "p1-fill", "p1-translate", "p1-write",
+             "part2-intro", "p2-teach", "p2-read", "p2-fill", "p2-translate", "p2-write",
+             "part3-intro", "p3-model", "p3-complete", "p3-freetalk",
+             "native-tip", "transfer-scene"]
+
+T3_PROMISE = ("ここから25分。終わるころには、目上の相手の考えをきちんと認めたうえで、"
+              "気になる点を英語で具体的に伝えられるようになります。約束します！")
+
+T3_LESSON_GOAL = '''
+    <div class="transition-page" data-page-id="lesson-goal" data-act="Disagreeing constructively">
+      <span class="transition-kicker">GOAL</span>
+      <h2 class="transition-title">Today&#x27;s goal <span class="title-ja">(今日のゴール)</span></h2>
+      <p class="section-subtitle"><span class="ko">By the end of today, you&#x27;ll be able to push back on a senior colleague like this.</span><span class="ja">今日が終わるころには、こんなふうに目上の同僚に異議を伝えられるようになります。</span></p>
+      <div class="tutor-note">Read the three lines aloud once so the learner hears the shape, then move on.</div>
+      <div class="known lines">
+        <div class="known-row"><span class="k">We can meet the date if we skip the final test.</span><span class="j">最終テストを省けば日程に間に合います。</span></div>
+        <div class="known-row"><span class="k">I see your point, but the timing concerns me.</span><span class="j">おっしゃることは分かりますが、日程が気になります。</span></div>
+        <div class="known-row"><span class="k">The part I&#x27;m not comfortable with is skipping the final test.</span><span class="j">私が不安に思うのは、最終テストを省く点です。</span></div>
+      </div>
+    </div>
+'''
+
+# 2 openings × 4 concerns each: I see your point, but {the timing, the cost, the evidence,
+# the client impact} concerns me. / The part I'm not comfortable with is {skipping the
+# final test, reducing the review time, using unverified data, telling the client later}.
+T3_RESULT = '''
+    <div class="section" data-page-id="todays-result">
+      <h2 class="section-title">Today&#x27;s result <span class="title-ja">(今日の成果)</span></h2>
+      <p class="section-subtitle"><span class="ko">Twenty-five minutes ago you had none of these.</span><span class="ja">25分前は、まだ1つもありませんでした。</span></p>
+      <div class="payoff">
+        <span class="eqline">切り出し方 2 × 懸念 4</span>
+        <span class="big">8</span>
+        <span class="cap">今日言えるようになった文の数</span>
+      </div>
+    </div>
+'''
+
+
+# ---------------------------------------------------------------------------
+# 上級 · FT-89 · What you would really do if you won the lottery
+#
+# The whole lesson, its own lesson-goal included — so this band alone has no wrapper goal
+# page. A free-talk lesson has no pattern to promise, and a "by the end of today you'll
+# be able to say these three sentences" page would be a lie about what the lesson is.
+# The Korean 자유 대화 trial reaches the same conclusion and goes straight from the
+# promise to the article.
+#
+# It also has no 今日の成果 page. The payoff of the other three bands is a count of
+# sentences the learner could not say an hour ago; here there is nothing to count, and a
+# number about effort rather than new ability would undercut the three that mean it.
+# The lesson ends where it should — on the tutor's feedback.
+#
+# The `full` variant, not `accessible`: the band is C1 and full is declared B2-C1.
+# ---------------------------------------------------------------------------
+
+T4_SOURCE = ("3-freetalking/courses/talk-what-if-full"
+             "/lessons/89-what-you-would-really-do-if-you-won-the-lottery/lesson.html")
+
+T4_LESSON = ["lesson-goal", "article", "lesson-style", "talk-intro",
+             "warm-1", "warm-2",
+             "q1", "q2", "q3", "q4", "q5", "q6",
+             "feedback"]
+
+T4_PROMISE = ("ここから25分。テーマは「宝くじに当たったら」。終わるころには、"
+              "思いついたことを英語でそのまま話し、その場で直してもらえます。約束します！")
+
+
+# ============================================================================
+# The four decks
+# ============================================================================
+
+register(
+    "trial-1",
+    id="trial-1-elementary",
+    level="A1",
+    cover="初級",
+    title={"ko": "체험 레슨 · 초급", "en": "Trial lesson · Elementary", "ja": "体験レッスン 初級"},
+    source=T1_SOURCE,
+    lesson=T1_LESSON,
+    # the wrapper supplies its own goal page, carrying the promise instead of the title
+    omit=["lesson-goal"],
+    greeting=greeting(T1_GREETING),
+    promise=T1_PROMISE,
+    lesson_goal=T1_LESSON_GOAL,
+    result=T1_RESULT,
+)
+
+register(
+    "trial-2",
+    id="trial-2-intermediate",
+    level="B1",
+    cover="中級",
+    title={"ko": "체험 레슨 · 중급", "en": "Trial lesson · Intermediate", "ja": "体験レッスン 中級"},
+    source=T2_SOURCE,
+    lesson=T2_LESSON,
+    # the wrapper supplies its own goal page, carrying the promise instead of the title
+    omit=["lesson-goal"],
+    greeting=open_greeting(OPEN_GREETING),
+    promise=T2_PROMISE,
+    lesson_goal=T2_LESSON_GOAL,
+    result=T2_RESULT,
+)
+
+register(
+    "trial-3",
+    id="trial-3-upper-intermediate",
+    level="B2",
+    cover="中上級",
+    title={"ko": "체험 레슨 · 중고급", "en": "Trial lesson · Upper-intermediate", "ja": "体験レッスン 中上級"},
+    source=T3_SOURCE,
+    lesson=T3_LESSON,
+    # the wrapper supplies its own goal page, carrying the promise instead of the title
+    omit=["lesson-goal"],
+    greeting=open_greeting(OPEN_GREETING),
+    promise=T3_PROMISE,
+    lesson_goal=T3_LESSON_GOAL,
+    result=T3_RESULT,
+)
+
+register(
+    "trial-4",
+    id="trial-4-advanced",
+    level="C1",
+    cover="上級",
+    title={"ko": "체험 레슨 · 고급", "en": "Trial lesson · Advanced", "ja": "体験レッスン 上級"},
+    source=T4_SOURCE,
+    lesson=T4_LESSON,
+    greeting=open_greeting(OPEN_GREETING),
+    promise=T4_PROMISE,
+    lesson_goal="",
+    result="",
+    freetalk=True,
+)
 
 
 def build(key):
     spec = DECKS[key]
-    pg = take(TRACKS / spec["source"], spec["lesson"])
+    src = TRACKS / spec["source"]
+    check_complete(src, spec)
+    pg = take(src, spec["lesson"])
     out = [
         head(spec["id"], spec["level"], spec["title"], spec["cover"]),
-        greeting(spec["greeting"]),
+        spec["greeting"],
         NEEDS,
         trial_intro(spec["promise"]),
+        # Empty on 上級 — a free-talk lesson has no pattern to promise, so it carries the
+        # source deck's own lesson-goal as its first page instead.
         spec["lesson_goal"],
     ]
     for pid in spec["lesson"]:
         out.append("\n    " + pg[pid] + "\n")
-    out += [spec["result"], CLOSING, tutor_score(), TAIL]
+    # Empty result on 上級 too: nothing countable came out of a conversation.
+    out += [spec["result"], CLOSING, tutor_score(), tail(spec.get("freetalk", False))]
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     target = OUT_DIR / (spec["id"] + ".html")

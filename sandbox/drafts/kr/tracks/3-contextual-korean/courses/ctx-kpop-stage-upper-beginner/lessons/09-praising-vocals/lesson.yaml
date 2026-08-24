@@ -20,6 +20,8 @@ spec:
       - N(이)랑 어울리다
       - ~(으)ㄹ 때마다
     canDo: 목소리와 곡의 궁합을 칭찬하고, 들을 때마다의 느낌을 전한다.
+    canDoJa: 声と曲の相性をほめ、聴くたびに感じることを伝える。
+    canDoEn: "Praise how the voice suits the song, and describe what you feel each time."
   scene: 이어폰 한 짝을 나눠 끼고 듣는 중.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-kpop-stage-upper-beginner · 9
