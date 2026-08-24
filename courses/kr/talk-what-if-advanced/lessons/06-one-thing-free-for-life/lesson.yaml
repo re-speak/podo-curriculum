@@ -22,6 +22,8 @@ spec:
   teaches:
     patterns: []
     canDo: 커피 / 치킨 / 영화 / 여행 / 택시
+    canDoJa: コーヒー／チキン／映画／旅行／タクシー
+    canDoEn: Coffee / chicken / films / travel / taxis
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-what-if-advanced/lessons/06-one-thing-free-for-life/lesson.html
 

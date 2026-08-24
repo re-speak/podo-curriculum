@@ -20,6 +20,8 @@ spec:
       - ~는 김에
       - ~아/어다 주다
     canDo: 나가는 길에 겸사겸사 해 달라고 심부름을 부탁한다.
+    canDoJa: 出かけるついでにと、用事を頼む。
+    canDoEn: "Ask them to run an errand while they're heading out anyway."
   scene: 신발을 신고 있는데 뒤에서 부른다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-family-intermediate · 3

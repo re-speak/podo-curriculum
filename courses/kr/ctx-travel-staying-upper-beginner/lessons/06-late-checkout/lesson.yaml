@@ -23,7 +23,15 @@ spec:
     patterns:
     - N 정도 (어휘) + ~(으)ㄹ 수 있을까요?
     - 얼마나 ~나요?
+    patternsJa:
+    - N 정도（語彙）+ ~(으)ㄹ 수 있을까요?
+    - 얼마나 ~나요?
+    patternsEn:
+    - N 정도 (vocabulary) + ~(으)ㄹ 수 있을까요?
+    - 얼마나 ~나요?
     canDo: 체크아웃 시간을 미룰 수 있는지 묻고, 추가 요금을 확인한다.
+    canDoJa: チェックアウトの時間を遅らせられるかを尋ね、追加料金を確かめる。
+    canDoEn: Ask whether checkout can be pushed back, and check the extra charge.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-staying-upper-beginner/lessons/06-late-checkout/lesson.html
 

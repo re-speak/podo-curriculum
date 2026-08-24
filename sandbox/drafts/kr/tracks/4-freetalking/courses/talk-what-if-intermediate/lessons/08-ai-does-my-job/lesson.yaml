@@ -19,6 +19,8 @@ spec:
     patterns:
       []
     canDo: 남는 시간에 뭘 할까
+    canDoJa: 余った時間に何をするか
+    canDoEn: "What would you do with the time left over"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-what-if-intermediate · 8
 

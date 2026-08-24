@@ -24,6 +24,8 @@ spec:
     - ~아/어 주실 수 있나요?
     - ~아/어도 돼요?
     canDo: 남은 음식 포장을 부탁하고, 싸 가도 되는지 확인한다.
+    canDoJa: 残った料理の持ち帰りを頼み、持ち帰ってもいいかを確かめる。
+    canDoEn: Ask for the leftovers to be boxed, and check whether you may take them away.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-eating-out-upper-beginner/lessons/05-packing-leftovers/lesson.html
 

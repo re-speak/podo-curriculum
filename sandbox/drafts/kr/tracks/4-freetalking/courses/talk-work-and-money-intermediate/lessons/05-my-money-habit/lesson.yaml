@@ -19,6 +19,8 @@ spec:
     patterns:
       []
     canDo: 남한테 추천할 만한가
+    canDoJa: 人に勧められるか
+    canDoEn: "Would you recommend it to anyone"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-work-and-money-intermediate · 5
 

@@ -20,6 +20,8 @@ spec:
       - "-(으)려면"
       - "-아/어야(지)"
     canDo: 목표를 이루려면 무엇이 필요한지, 무엇이 있어야 되는지 말한다.
+    canDoJa: 目標を叶えるには何が必要か、何がなければならないかを言う。
+    canDoEn: "Say what it takes to reach a goal, and what has to be there."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-intermediate-2 · 81
 

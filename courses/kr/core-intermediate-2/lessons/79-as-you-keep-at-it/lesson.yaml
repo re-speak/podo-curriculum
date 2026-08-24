@@ -24,6 +24,8 @@ spec:
     - -다(가) 보니
     - -다(가) 보면
     canDo: 꾸준히 해서 늘었다고 자기 경험을 말하고, 막 시작한 상대에게 계속하면 된다고 격려한다.
+    canDoJa: 続けたから上達したと自分の経験を話し、始めたばかりの相手に、続ければいいと励ます。
+    canDoEn: Say from experience that you improved by keeping at it, and encourage a beginner to keep going.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-intermediate-2/lessons/79-as-you-keep-at-it/lesson.html
 

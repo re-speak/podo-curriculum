@@ -20,6 +20,8 @@ spec:
       - "-겠-"
       - "-아/어야겠다"
     canDo: 상황을 보고 즉석에서 짐작하거나, 그 자리에서 마음을 정한다.
+    canDoJa: 状況を見てその場で推測したり、その場で心を決めたりする。
+    canDoEn: "Read the situation and guess on the spot, or make up your mind then and there."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-upper-beginner-2 · 64
 

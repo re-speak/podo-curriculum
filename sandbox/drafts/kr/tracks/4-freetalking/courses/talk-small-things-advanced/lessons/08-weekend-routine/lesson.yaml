@@ -19,6 +19,8 @@ spec:
     patterns:
       []
     canDo: 아무것도 안 하는 날에도 순서는 있다
+    canDoJa: 何もしない日にも、順番はある
+    canDoEn: "Even a day of nothing has an order to it"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-small-things-advanced · 8
 

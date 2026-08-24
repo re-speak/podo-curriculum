@@ -95,7 +95,7 @@ spec:
   sharedRuntime:
     baseUrl: https://cdn.jsdelivr.net/gh/re-speak/podo-curriculum-shared
     repo: re-speak/podo-curriculum-shared
-    version: v1.22.0
+    version: v1.23.0
     join: "@"
 
   # Directories the sync tool will never walk, no matter what is inside them.

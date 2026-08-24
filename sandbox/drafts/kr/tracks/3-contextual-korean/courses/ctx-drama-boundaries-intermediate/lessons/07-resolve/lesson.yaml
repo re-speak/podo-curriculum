@@ -20,6 +20,8 @@ spec:
       - 절대로 안 ~(으)ㄹ 거야
       - ~(으)ㄹ 수밖에 (없다)
     canDo: 이번엔 물러서지 않겠다고 결심하고, 끝까지 가 보겠다고 선언한다.
+    canDoJa: 今回は引かないと決意し、最後まで行くと宣言する。
+    canDoEn: "Resolve not to back down this time, and declare you'll see it through."
   scene: 수습이 끝나고 혼자 남았다. 이번엔 물러서지 않기로 한다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-boundaries-intermediate · 7

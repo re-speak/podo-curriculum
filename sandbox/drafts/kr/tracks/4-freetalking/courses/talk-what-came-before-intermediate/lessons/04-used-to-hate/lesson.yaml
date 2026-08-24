@@ -19,6 +19,8 @@ spec:
     patterns:
       []
     canDo: 음식이든 뭐든
+    canDoJa: 食べ物でも、何でも
+    canDoEn: "Food or anything else"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-what-came-before-intermediate · 4
 

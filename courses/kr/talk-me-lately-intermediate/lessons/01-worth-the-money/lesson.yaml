@@ -22,6 +22,8 @@ spec:
   teaches:
     patterns: []
     canDo: 최근에 산 것 중 가장 만족스러운 것
+    canDoJa: 最近買ったものの中で、一番満足しているもの
+    canDoEn: The best thing you've bought lately
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-me-lately-intermediate/lessons/01-worth-the-money/lesson.html
 

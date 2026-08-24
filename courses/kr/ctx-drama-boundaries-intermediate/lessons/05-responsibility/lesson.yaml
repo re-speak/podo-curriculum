@@ -24,6 +24,8 @@ spec:
     - ~아/어야 할 + N
     - ~아/어도
     canDo: 책임 소재를 상대에게 돌리고, 후회해도 늦었다고 못 박는다.
+    canDoJa: 責任の所在を相手に向け、後悔しても遅いと念を押す。
+    canDoEn: Put the responsibility on them, and state that regret comes too late.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-boundaries-intermediate/lessons/05-responsibility/lesson.html
 

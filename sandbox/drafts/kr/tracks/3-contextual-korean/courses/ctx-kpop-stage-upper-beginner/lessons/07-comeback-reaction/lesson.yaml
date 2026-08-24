@@ -20,6 +20,8 @@ spec:
       - ~던 것보다
       - ~(으)면 ~(으)ㄹ수록
     canDo: 기대와 실제를 비교하고, 볼수록 빠져든다고 표현한다.
+    canDoJa: 期待と実際を比べ、見るほどはまっていくと表す。
+    canDoEn: "Compare expectation with reality, and say it draws you in the more you watch."
   scene: 기대가 컸는데, 실제가 더 컸다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-kpop-stage-upper-beginner · 7

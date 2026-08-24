@@ -16,6 +16,8 @@ spec:
       - ~(으)ㄹ게
       - ~(으)니까
     canDo: 사겠다고 나서고, 다음을 기약하며 물러선다.
+    canDoJa: おごると申し出て、次を約束して引き下がる。
+    canDoEn: "Offer to pay, and step back promising the next one."
   scene: 밥을 다 먹고 계산대 앞. 둘 다 카드를 꺼낸다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-friends-intermediate · 8

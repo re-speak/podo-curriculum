@@ -22,6 +22,8 @@ spec:
   teaches:
     patterns: []
     canDo: 언제부터, 왜 계속 듣는지 이야기하기
+    canDoJa: いつから、なぜ聴き続けているのかを話す
+    canDoEn: Say since when, and why you keep listening
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-me-lately-intermediate/lessons/10-on-repeat/lesson.html
 

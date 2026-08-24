@@ -24,6 +24,8 @@ spec:
     - N 때문에
     - 도저히 못 ~겠다
     canDo: 바쁜 이유를 대고, 그래도 덕질은 못 끊는다고 말한다.
+    canDoJa: 忙しい理由を挙げつつ、それでも推し活はやめられないと言う。
+    canDoEn: Give your reasons for being busy, and say you still can't quit the fandom.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-fan-life-intermediate/lessons/07-real-life-vs-fandom/lesson.html
 

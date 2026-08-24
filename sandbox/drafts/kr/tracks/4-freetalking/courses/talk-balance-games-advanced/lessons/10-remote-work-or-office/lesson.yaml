@@ -19,6 +19,8 @@ spec:
     patterns:
       []
     canDo: 집중·이동·사람 관계를 기준으로 더 맞는 업무 환경을 고르기
+    canDoJa: 集中・移動・人づきあいを基準に、自分に合う働く環境を選ぶ
+    canDoEn: "Pick the work setting that suits you, judged on focus, commute and people"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-balance-games-advanced · 10
 

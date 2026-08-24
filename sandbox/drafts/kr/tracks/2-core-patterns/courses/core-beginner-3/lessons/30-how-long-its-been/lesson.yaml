@@ -20,6 +20,8 @@ spec:
       - "-(으)ㄴ 지 ~ 됐어요"
       - N마다
     canDo: 어떤 일을 시작한 지 얼마나 됐는지, 얼마나 자주 하는지 말한다.
+    canDoJa: あることを始めてどれくらい経つか、どれくらいの頻度でするかを言う。
+    canDoEn: "Say how long it has been since you started something, and how often you do it."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-3 · 30
 

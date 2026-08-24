@@ -20,6 +20,8 @@ spec:
       - ~아/어서
       - ~게 되면
     canDo: 도와준 것에 감사를 전하고, 다시 오고 싶다고 말한다.
+    canDoJa: 助けてくれたことに感謝を伝え、また来たいと言う。
+    canDoEn: "Thank them for their help, and say you'd like to come back."
   scene: 마지막 날 아침. 며칠 내내 챙겨 준 직원에게 인사한다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-travel-staying-upper-beginner · 10

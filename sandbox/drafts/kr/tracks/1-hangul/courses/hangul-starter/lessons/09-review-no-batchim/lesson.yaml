@@ -20,7 +20,17 @@ spec:
       - 자음 19개 × 모음 21개
       - 속도 읽기
       - 부품에서 글자 조립하기
+    patternsJa:
+    - "子音19個 × 母音21個"
+    - "スピード読み"
+    - "パーツから文字を組み立てる"
+    patternsEn:
+    - "19 consonants × 21 vowels"
+    - "Speed reading"
+    - "Assembling letters from their parts"
     canDo: 어제 · 화요일 · 교과서 · 뉴스 — 받침 없는 단어라면 처음 봐도 읽는다
+    canDoJa: パッチムのない単語なら、初めて見ても読める
+    canDoEn: "Read any batchim-free word, even seeing it for the first time"
   prerequisites: []
   source: podo-curriculum-public 1-hangul/hangul-starter · 9
 

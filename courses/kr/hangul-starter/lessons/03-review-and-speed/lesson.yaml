@@ -25,6 +25,8 @@ spec:
     - 받아쓰기
     - 지금까지 배운 것으로 단어 만들기
     canDo: 가구 · 거리 · 부모 · 소리 · 도시 · 가지 — 멈추지 않고 읽는다
+    canDoJa: 止まらずに読む
+    canDoEn: Read them without stopping
   prerequisites: []
   source: sandbox/drafts/kr/tracks/1-hangul/courses/hangul-starter/lessons/03-review-and-speed/lesson.html
 

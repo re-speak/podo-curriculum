@@ -19,7 +19,15 @@ spec:
     patterns:
       - ~아/어야지 (핵심 81, ~(으)니까는 54 복습)
       - ~(으)려면 ~아/어야 되다
+    patternsJa:
+    - "~아/어야지（コア81・~(으)니까は54の復習）"
+    - "~(으)려면 ~아/어야 되다"
+    patternsEn:
+    - "~아/어야지 (Core 81; ~(으)니까 revisits 54)"
+    - "~(으)려면 ~아/어야 되다"
     canDo: 스밍을 돌리자고 다짐하고, 목표를 위해 더 해야 한다고 독려한다.
+    canDoJa: ストリーミングを回そうと誓い、目標のためにもっとやろうと励ます。
+    canDoEn: "Commit to keeping the streams going, and rally for more to hit the target."
   scene: 컴백 첫 주. 덕메 단톡방에 목표가 올라왔다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-kpop-fan-life-intermediate · 2

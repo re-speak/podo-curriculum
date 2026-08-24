@@ -24,6 +24,8 @@ spec:
     - ~지 말았어야 했다
     - 괜히 ~아/어서
     canDo: 하지 말았어야 할 말을 후회하고, 괜한 말로 일이 커졌다고 자책한다.
+    canDoJa: 言うべきではなかった言葉を悔やみ、余計なひと言で事が大きくなったと自分を責める。
+    canDoEn: Regret what you should never have said, and blame yourself for blowing it up.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-boundaries-intermediate/lessons/09-regret/lesson.html
 

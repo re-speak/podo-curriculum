@@ -24,6 +24,8 @@ spec:
     - -(으)ㄹ 거예요
     - 뭐 할 거예요?
     canDo: 앞으로의 계획을 말하고, 상대의 계획을 묻는다.
+    canDoJa: これからの計画を話し、相手の計画を尋ねる。
+    canDoEn: Talk about your plans ahead, and ask about the other person's.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-4/lessons/32-making-plans/lesson.html
 

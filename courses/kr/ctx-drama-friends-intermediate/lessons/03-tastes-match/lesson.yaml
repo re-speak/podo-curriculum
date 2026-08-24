@@ -24,6 +24,8 @@ spec:
     - ~는데
     - ~거든
     canDo: 뜻밖의 공통점을 발견하고, 반가움을 드러낸다.
+    canDoJa: 思いがけない共通点を見つけ、うれしさを表す。
+    canDoEn: Discover an unexpected thing in common, and show your pleasure.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-friends-intermediate/lessons/03-tastes-match/lesson.html
 

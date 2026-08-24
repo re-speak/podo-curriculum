@@ -20,6 +20,8 @@ spec:
       - N부터 N까지
       - N에서 N까지
     canDo: 시간과 거리의 시작과 끝을 말하고, 얼마나 걸리는지 묻는다.
+    canDoJa: 時間と距離の始まりと終わりを言い、どれくらいかかるかを尋ねる。
+    canDoEn: "State where a time span or a distance starts and ends, and ask how long it takes."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-2 · 15
 

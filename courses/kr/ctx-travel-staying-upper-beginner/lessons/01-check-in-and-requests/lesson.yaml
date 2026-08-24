@@ -24,6 +24,8 @@ spec:
     - ~게
     - ~(으)ㄴ/는지 확인하다
     canDo: 체크인하면서 필요한 것을 요청하고, 조식 시간을 확인한다.
+    canDoJa: チェックインしながら必要なものをお願いし、朝食の時間を確かめる。
+    canDoEn: Ask for what you need while checking in, and check the breakfast times.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-staying-upper-beginner/lessons/01-check-in-and-requests/lesson.html
 

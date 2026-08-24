@@ -22,6 +22,8 @@ spec:
   teaches:
     patterns: []
     canDo: 일이나 공부를 바꾸고 싶었던 이유 이야기하기
+    canDoJa: 仕事や勉強を変えたいと思った理由を話す
+    canDoEn: Talk about why you wanted to change your work or your studies
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-work-and-money-advanced/lessons/08-why-i-wanted-a-change/lesson.html
 

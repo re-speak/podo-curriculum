@@ -20,6 +20,8 @@ spec:
       - ~는데
       - 아무리 ~아/어도
     canDo: 정면으로 부정하지 않으면서 다른 생각을 내놓는다.
+    canDoJa: 正面から否定せずに、別の考えを出す。
+    canDoEn: "Put a different view forward without contradicting head-on."
   scene: 친구 말에 동의가 안 된다. 그렇다고 정면으로 아니라고 하기도 그렇다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-banmal-chatting-intermediate · 5

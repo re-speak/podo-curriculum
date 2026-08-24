@@ -24,6 +24,8 @@ spec:
     - ~(으)면 ~는 거야
     - ~지 마
     canDo: 먼저 연락하지 않겠다고 버티고, 티 내지 말라고 놀린다.
+    canDoJa: 自分からは連絡しないと粘り、態度に出すなとからかう。
+    canDoEn: Hold out against messaging first, and tease them not to let it show.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-crush-intermediate/lessons/03-push-and-pull/lesson.html
 

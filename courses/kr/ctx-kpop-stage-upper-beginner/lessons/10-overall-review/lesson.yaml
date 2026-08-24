@@ -24,6 +24,8 @@ spec:
     - 하나도 ~없다 / 안 ~
     - ~아/어지다
     canDo: 앨범 전체를 총평하고, 그룹의 성장을 짚는다.
+    canDoJa: アルバム全体を総評し、グループの成長を指摘する。
+    canDoEn: Sum up the album as a whole, and point to how the group has grown.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-stage-upper-beginner/lessons/10-overall-review/lesson.html
 

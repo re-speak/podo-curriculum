@@ -24,6 +24,8 @@ spec:
     - N 위·아래·옆·앞·뒤·안·밖에
     - N 앞에서 만나요
     canDo: 물건이 어디 있는지 알려 주고, 만날 자리를 정한다.
+    canDoJa: 物がどこにあるかを教え、待ち合わせの場所を決める。
+    canDoEn: Tell someone where a thing is, and settle on a place to meet.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-2/lessons/17-where-it-is/lesson.html
 

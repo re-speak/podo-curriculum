@@ -353,7 +353,7 @@
 <header class="podo-bar">
   <div class="podo-bar__inner">
     <a class="podo-brand" id="brand" href="../../index.html"><img src="../../favicon.svg" width="28" height="28" alt="">PODO Curriculum</a>
-    <nav class="podo-nav" id="nav" aria-label="커리큘럼 탐색"></nav>
+    <nav class="podo-nav" id="nav" data-i18n-label="ui.navLabel" aria-label="커리큘럼 탐색"></nav>
     <div class="loc" id="loc" role="group"></div>
   </div>
 </header>
@@ -381,7 +381,8 @@
     <div class="band" id="band"></div>
     <div class="controls">
       <div class="crow">
-        <input class="search" id="q" type="search" placeholder="과·패턴·표현 검색" autocomplete="off">
+        <input class="search" id="q" type="search" data-i18n-ph="ui.searchPlaceholder"
+             placeholder="과·패턴·표현 검색" autocomplete="off">
         <button class="btn" id="expandUnits" type="button" data-i18n="ui.expandUnits">단원 모두 펼치기</button>
         <button class="btn deep" id="expandAll" type="button" data-i18n="ui.expandAll">과까지 모두 펼치기</button>
         <span class="hits" id="hits"></span>
@@ -426,6 +427,9 @@ const lvName = lv => ((I18N.level || {})[lv] || {})[L] || lv;
 /** 일본어 받침은 일본어로 볼 때만 보여 준다. 한국어·영어 번역은 아직 없고,
     없는 것을 있는 척하지 않는다. */
 const showJa = () => L === "ja";
+/** 언어 탭의 이름. locale 표에서 지금 표시 언어의 것으로 부른다 —
+    일본어 화면에서 "한국어" 탭 하나만 한국어로 남을 이유가 없다. */
+const langLabel = n => (n.langKey && (I18N.locale[n.langKey] || {})[L]) || n.label;
 /* 짙은 두 칸 위에서는 글씨가 흰색이어야 읽힌다. */
 const isDark = lv => DATA.ramp[lv] >= 5;
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -433,75 +437,78 @@ const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;
 /* ---------- 언어마다 다른 자리 ----------
    한 템플릿이 korean/ 과 english/ 를 함께 그린다. 언어 이름이 들어가는 자리는 전부
    DATA.page 에서 온다. */
-{
-  const P = DATA.page;
-  if (P.title) document.title = P.title;
-  document.getElementById("brand").href = P.home;
-  document.getElementById("nav").innerHTML = P.nav.map(n =>
+document.getElementById("brand").href = DATA.page.home;
+function paintLangNav() {
+  document.getElementById("nav").innerHTML = DATA.page.nav.map(n =>
     `<a${n.optional ? ` class="podo-nav__optional"` : ""} href="${esc(n.href)}"${
-      n.current ? ` aria-current="page"` : ""}>${esc(n.label)}</a>`).join("");
+      n.current ? ` aria-current="page"` : ""}>${esc(langLabel(n))}</a>`).join("");
 }
 
 const lvColor = lv => `var(--lv-${DATA.ramp[lv]})`;
 
 document.documentElement.style.setProperty("--ac", T.accent);
 document.documentElement.style.setProperty("--tint", T.tint);
-document.getElementById("ttl").textContent = `${T.ko} · PODO 한국어 커리큘럼`;
+/** 트랙 이름. 이 페이지의 주인공이라 표시 언어를 그대로 따른다. */
+const trackName = () => loc({ko: T.ko, ja: T.ja, en: T.en}) || T.ko;
 
-/* ---------- 탭 ---------- */
-document.getElementById("tabs").innerHTML =
-  `<a class="tab home" href="../">← 카탈로그</a>` +
-  DATA.nav.map(n => `<a class="tab${n.id === T.id ? " on" : ""}" href="${esc(n.id)}"${n.id === T.id ? ' aria-current="page"' : ""}
-    style="--ac:${n.accent}"><em>${String(n.no).padStart(2, "0")}</em>${esc(n.ko)}</a>`).join("");
+/* ---------- 탭 · 머리 · 띠 ----------
+   전부 한 함수 안에 둔다. 언어를 바꾸면 이 셋이 함께 다시 그려져야 하고, 예전에는
+   여기 있던 글자들이 그리는 시점 한 번만 한국어로 박혀 되돌릴 방법이 없었다. */
+function paintTrack() {
+  document.getElementById("ttl").textContent = `${trackName()} · ${loc(DATA.page.title)}`;
 
-/* ---------- 1단 ---------- */
-{
-  const span = T.span.length ? (T.span.length === 1 ? T.span[0] : `${T.span[0]} — ${T.span[T.span.length - 1]}`) : "전 레벨";
-  const flag = T.status === "plan" ? " · 계획만 있음 · 현재 개발하지 않음" : T.status === "open" ? " · 계속 추가" : "";
-  document.getElementById("hno").textContent = `트랙 ${String(T.no).padStart(2, "0")} · ${span}${flag}`;
-  document.getElementById("h1").setAttribute("aria-label", `${T.ko} — ${T.en}`);
-  document.getElementById("h1").innerHTML = `${esc(T.ko)}<span aria-hidden="true">${esc(T.en)}</span>`;
+  document.getElementById("tabs").innerHTML =
+    `<a class="tab home" href="../">← ${esc(t("ui","catalog"))}</a>` +
+    DATA.nav.map(n => `<a class="tab${n.id === T.id ? " on" : ""}${n.trial ? " trial" : ""}" href="${esc(n.id)}"${n.id === T.id ? ' aria-current="page"' : ""}
+      style="--ac:${n.accent}">${n.trial ? "" : `<em>${String(n.no).padStart(2, "0")}</em>`}${esc(loc({ko:n.ko, ja:n.ja, en:n.en}) || n.ko)}</a>`).join("");
+
+  const name = trackName();
+  const span = T.span.length
+    ? (T.span.length === 1 ? lvName(T.span[0]) : `${lvName(T.span[0])} — ${lvName(T.span[T.span.length - 1])}`)
+    : t("ui","allLevels");
+  const flag = T.status === "plan" ? ` · ${t("ui","planOnly")}` : T.status === "open" ? ` · ${t("ui","keepAdding")}` : "";
+  document.getElementById("hno").textContent = T.trial
+    ? `${t("ui","trialKicker")} · ${span}${flag}`
+    : `${t("ui","trackWord")} ${String(T.no).padStart(2, "0")} · ${span}${flag}`;
+  document.getElementById("h1").setAttribute("aria-label", `${name} — ${T.en}`);
+  // 라틴 보조 줄은 영어로 볼 때 제목을 두 번 말하게 된다.
+  document.getElementById("h1").innerHTML = `${esc(name)}${L === "en" ? "" : `<span aria-hidden="true">${esc(T.en)}</span>`}`;
   document.getElementById("hd").textContent = loc(T.desc);
+  // stats 는 {k: i18n 키, v: 숫자} 다. k 를 그대로 찍으면 화면에 "lessonWord" 가 뜬다.
   document.getElementById("figs").innerHTML =
-    T.stats.map(s => `<div><b>${esc(s.v)}</b><span>${esc(s.k)}</span></div>`).join("");
+    T.stats.map(s => `<div><b>${esc(s.v)}</b><span>${esc(t("ui", s.k))}</span></div>`).join("");
 
   const used = LEVELS.filter(lv => T.dist[lv]);
   document.querySelector(".panel").classList.toggle("single", used.length === 1);
   document.getElementById("distwrap").hidden = used.length === 1;
   document.getElementById("distwrap").innerHTML = used.length
     ? `<div class="dist">${used.map(lv => `<i style="flex:${T.dist[lv]};background:${lvColor(lv)}"
-        title="${lv} ${T.dist[lv]}${esc(T.lessonWord)}"></i>`).join("")}</div>
-       <div class="dist-legend">${used.map(lv => `<span><i style="background:${lvColor(lv)}"></i>${lv} <b>${T.dist[lv]}</b></span>`).join("")}</div>`
-    : `<div class="dist-legend"><span>${T.status === "plan"
-        ? "계획 목차이며 현재 사용할 수 있는 레슨 덱은 없습니다."
-        : "특정 레벨에 묶이지 않습니다 — 튜터가 문제를 들은 시점에 한 과씩 꺼내 씁니다."}</span></div>`;
+        title="${esc(lvName(lv))} ${T.dist[lv]} ${esc(t("ui","lessonWord"))}"></i>`).join("")}</div>
+       <div class="dist-legend">${used.map(lv => `<span><i style="background:${lvColor(lv)}"></i>${esc(lvName(lv))} <b>${T.dist[lv]}</b></span>`).join("")}</div>`
+    : `<div class="dist-legend"><span>${esc(t("ui", T.status === "plan" ? "planNoDecks" : "noLevelBound"))}</span></div>`;
 
-  document.getElementById("q").placeholder = `${T.lessonWord}·패턴·표현 검색`;
-  document.getElementById("expandUnits").textContent = `${T.unitWord} 모두 펼치기`;
-  document.getElementById("expandAll").textContent = `${T.lessonWord}까지 모두 펼치기`;
   document.body.classList.toggle("plan-track", T.status === "plan");
   document.getElementById("plan-banner").hidden = T.status !== "plan";
-}
 
-{
   const made = (T.decks || []).length;
   document.getElementById("band").innerHTML =
-    `<h2 id="curriculum-title">${T.status === "plan" ? "계획 목차" : "커리큘럼"}</h2>
-     <p>${T.unitCount || T.groups.length}개 ${esc(T.unitWord)}${made ? ` · 덱 ${made}` : ""}</p>`;
-}
+    `<h2 id="curriculum-title">${esc(t("ui", T.status === "plan" ? "planContents" : "curriculum"))}</h2>
+     <p>${T.unitCount || T.groups.length} ${esc(t("ui","unitWord"))}${made ? ` · ${esc(t("ui","deckWordShort"))} ${made}` : ""}</p>`;
 
-const usedLevels = LEVELS.filter(lv => T.dist[lv]);
-document.getElementById("levelbar").hidden = usedLevels.length < 2;
-document.getElementById("levelbar").innerHTML =
-  `<span class="lbl" style="margin-right:4px">레벨</span>` +
-  usedLevels.map(lv => `<button class="chip lv" type="button" data-lv="${lv}" aria-pressed="false">
-    <span class="dot" style="background:${lvColor(lv)}"></span>${lv}</button>`).join("");
+  const usedLevels = LEVELS.filter(lv => T.dist[lv]);
+  document.getElementById("levelbar").hidden = usedLevels.length < 2;
+  document.getElementById("levelbar").innerHTML =
+    `<span class="lbl" style="margin-right:4px">${esc(t("ui","levelLabel"))}</span>` +
+    usedLevels.map(lv => `<button class="chip lv" type="button" data-lv="${lv}"
+      aria-pressed="${activeLevels.has(lv)}">
+      <span class="dot" style="background:${lvColor(lv)}"></span>${esc(lvName(lv))}</button>`).join("");
+}
 
 /* ---------- 3·4·5단 ---------- */
 function chips(l) {
-  const p = (l.chips || []).slice(0, 2).map(c =>
+  const p = chipList(l).slice(0, 2).map(c =>
     `<span class="pat" title="${esc(c)}">${esc(c.replace(/\s+\(.*$/, "").trim() || c)}</span>`);
-  if (l.refs && l.refs.length) p.push(`<span class="pat ref">핵심 ${l.refs[0]}</span>`);
+  if (l.refs && l.refs.length) p.push(`<span class="pat ref">${esc(t("ui","coreRef"))} ${l.refs[0]}</span>`);
   return p.join(`<span class="sep">·</span>`);
 }
 
@@ -524,6 +531,19 @@ function markedJamo(text) {
 
 /** 펼친 과는 라벨 붙은 칸 셋으로 이루어진다 — 무엇을 할 수 있게 되는가,
     무엇을 배우는가, 그리고 그것을 받쳐 주는 말. 트랙마다 칸의 이름만 달라진다. */
+/** 목표 문장을 지금 표시 언어로. canDo 는 학습자가 말하는 한국어가 아니라 "무엇을 할
+    수 있게 되는가" 의 설명이라, 일본어로 보는 사람에게는 일본어여야 한다. 일본어가
+    아직 없는 줄만 한국어 원문으로 남는다. */
+/** 배울 거리 칩. 패턴 자체는 한국어 그대로지만, 몇몇 줄에 붙은 설명은 일본어를 갖는다. */
+function chipList(l) {
+  const alt = l.chipsL10n && l.chipsL10n[L];
+  return (alt && alt.length) ? alt : (l.chips || []);
+}
+
+function canText(l, fallback) {
+  return (l.cans && l.cans[L]) || fallback || "";
+}
+
 function detail(l) {
   const fields = [];
   const isHangul = T.id === "1-hangul";
@@ -531,25 +551,37 @@ function detail(l) {
   // 한글에서는 배울 글자·규칙이 본문이고, 읽을 수 있는 단어는 그 결과를 확인하는 예시다.
   if (isHangul && l.chips && l.chips.length) {
     fields.push({kind: "hangul-core", label: t("detail","learnThis"),
-      body: `<div class="hangul-focus">${l.chips.map(c =>
+      body: `<div class="hangul-focus">${chipList(l).map(c =>
         `<div class="hangul-focus-item"><span>${markedJamo(c)}</span></div>`).join("")}</div>`});
   }
   if (isHangul && l.can) {
-    const words = l.can.split(" · ").map(w => w.trim()).filter(Boolean);
-    fields.push({kind: "hangul-practice", label: t("detail","readPractice"),
-      body: `<div class="hangul-practice">${words.map(w => `<span>${esc(w)}</span>`).join("")}</div>`});
+    // "낱말 · 낱말 · 낱말 — 지시문" 한 줄이다. 낱말은 읽을 대상이라 한국어 그대로 칩이
+    // 되고, 지시문만 일본어를 갖는다. 낱말 목록이 아니면 통째로 목표 문장으로 다룬다.
+    const [head, ...rest] = l.can.split(/\s+—\s+/);
+    const tail = rest.join(" — ");
+    const words = head.split(" · ").map(w => w.trim()).filter(Boolean);
+    const note = canText(l, tail);
+    if (words.length >= 2) {
+      fields.push({kind: "hangul-practice", label: t("detail","readPractice"),
+        body: `<div class="hangul-practice">${words.map(w => `<span>${esc(w)}</span>`).join("")}</div>`
+          + (note ? `<p class="goal">${esc(note)}</p>` : "")});
+    } else {
+      fields.push({kind: "goal", label: t("detail","readGoal"),
+        body: `<p class="goal">${esc(canText(l, l.can))}</p>`});
+    }
   }
 
   // ① 이 과의 약속
   if (l.can && !isHangul) {
-    const words = l.can.split(" · ").map(w => w.trim()).filter(Boolean);
+    const canNow = canText(l, l.can);
+    const words = canNow.split(" · ").map(w => w.trim()).filter(Boolean);
     const listy = words.length >= 3 && words.every(w => w.length <= 7);
     const goalLabel = l.canLabel === "읽을 수 있다" ? t("detail","readGoal")
       : l.canLabel === "이야기한다" ? t("detail","talkGoal")
       : l.canLabel === "일본어의 습관" ? t("detail","fixPoint") : t("detail","lessonGoal");
     fields.push({kind: "goal", label: goalLabel, body: listy
       ? `<div class="words">${words.map(w => `<span>${esc(w)}</span>`).join("")}</div>`
-      : `<p class="goal">${esc(l.can)}</p>`});
+      : `<p class="goal">${esc(canNow)}</p>`});
   }
 
   // ② 배우는 것 — 패턴이 있으면 예문 안에서 짚어 주고, 없으면 이름만 늘어놓는다
@@ -565,7 +597,7 @@ function detail(l) {
   }
   if (l.chips && l.chips.length && !ps.length && !isHangul) {
     fields.push({kind: "items", label: l.fix ? t("detail","minPairs") : t("detail","learning"),
-      body: `<div class="said">${l.chips.map(c => `<span>${esc(c)}</span>`).join("")}</div>`});
+      body: `<div class="said">${chipList(l).map(c => `<span>${esc(c)}</span>`).join("")}</div>`});
   }
 
   // ③ 받쳐 주는 말 — 통째로 외워 쓰는 표현과, 딱 한 줄짜리 규칙
@@ -599,7 +631,7 @@ function detail(l) {
     fields.push({kind: "questions",
       label: `${t("detail","questions")} · ${t("detail","questionsN").replace("{n}", l.qs.length)}`,
       body: `<ol class="qs">` + l.qs.map(q => `<li class="qitem">
-        ${q.n ? `<span class="qn">${esc(q.n)}</span>` : ""}
+        ${q.n ? `<span class="qn">${esc(qLabel(q.n))}</span>` : ""}
         ${q.t ? `<p class="qt">${esc(q.t)}</p>` : ""}
         ${showJa() && q.ja ? `<p class="qja">${esc(q.ja)}</p>` : ""}
         ${(q.f && q.f.length) ? `<ul class="qf" aria-label="${esc(t("detail","followUps"))}">`
@@ -612,10 +644,26 @@ function detail(l) {
     + fields.map(f => `<section class="field field-${f.kind}"><span class="lbl">${esc(f.label)}</span>${f.body}</section>`).join("");
 }
 
+/** 덱 슬롯의 이름. 빌드가 넘긴 한국어 라벨 대신 표시 언어로 부른다. */
+function slotLabel(d) {
+  return d.slot ? t("ui", d.slot === "prestudy" ? "slotPrestudy" : "slotLecture") : (d.level || "");
+}
+
+/** 덱이 한국어로만 들고 있는 질문 번호표("몸풀기 1", "질문 3")를 표시 언어로 옮긴다.
+    종류만 갈아 끼우고 번호는 그대로 둔다 — 모르는 모양이면 원문을 그대로 쓴다. */
+const QN_KIND = {"몸풀기": "qWarmup", "질문": "qQuestion"};
+function qLabel(n) {
+  const m = /^(\S+)\s*(\d+)$/.exec(String(n || "").trim());
+  const key = m && QN_KIND[m[1]];
+  return key ? `${t("ui", key)} ${m[2]}` : (n || "");
+}
+
 function lessonRow(l, groupIndex, lessonIndex) {
   const c = chips(l);
   const firstLabel = `${t("ui","lessonWord")} 1`;
-  const sub = l.sub === firstLabel ? "" : l.sub || (c ? "" : l.can);
+  const name = loc(l.titles) || l.title;
+  // l.sub 는 일본어 제목이다 — 일본어로 볼 때는 제목 그 자체라 두 번 적을 이유가 없다.
+  const sub = (l.sub === firstLabel || l.sub === name) ? "" : l.sub || (c ? "" : l.can);
   const firstTag = l.first ? `<span class="first-tag">${esc(firstLabel)}</span>` : "";
   const no = String(l.n).padStart(2, "0");
   // 덱이 있으면 그 과에서 곧장 수업 화면으로 나간다 — 카탈로그를 잃지 않도록 새 탭에서.
@@ -623,14 +671,14 @@ function lessonRow(l, groupIndex, lessonIndex) {
   const showLevels = (l.levels || []).length > 1 || variants.length > 1;
   const deck = variants.length ? `<div class="deck-links">${variants.map(d =>
     `<a class="deck" href="../${esc(d.href)}" target="_blank" rel="noopener"
-       title="${esc(l.title)}${d.level ? ` · ${esc(d.level)}` : ""} 덱을 새 탭에서 엽니다">${showLevels && d.level ? esc(d.level) : esc(t("ui","openDeck"))} <span class="ext">↗</span></a>`
+       title="${esc(t("ui","openInNewTab").replace("{title}", name))}">${showLevels ? esc(slotLabel(d)) : esc(t("ui","openDeck"))} <span class="ext">↗</span></a>`
   ).join("")}</div>` : "";
   const detailId = `group-${groupIndex + 1}-lesson-${lessonIndex + 1}-detail`;
   return `<div class="lesson" data-text="${esc([l.title, l.sub, l.can, l.scene, (l.chips||[]).join(" "), (l.notes||[]).map(n=>n.v).join(" ")].join(" ").toLowerCase())}">
     <div class="lrow">
       <button class="lrow-btn" type="button" aria-expanded="false" aria-controls="${detailId}">
         <span class="lno">${esc(t("ui","lessonWord"))} ${no}</span>
-        <span class="ltitle">${esc(loc(l.titles) || l.title)}${sub ? ` <em>— ${esc(sub)}</em>` : ""}${firstTag}</span>
+        <span class="ltitle">${esc(name)}${sub ? ` <em>— ${esc(sub)}</em>` : ""}${firstTag}</span>
         <span class="lchips">${c}</span>
       </button>
       ${deck}
@@ -654,14 +702,18 @@ function group(g, index) {
   }
 
   const bodyId = `group-${index + 1}-body`;
+  // 코스 제목도 세 언어가 있다. 부제의 일이란 "일본어로는 이렇게 부른다" 였으니,
+  // 제목이 이미 일본어인 화면에서는 같은 말을 두 번 적는 것이 된다.
+  const gTitle = loc(g.titles) || g.title;
+  const gSub = L === "ja" ? "" : ((g.titles && g.titles.ja) || g.subtitle);
   const groupLevels = g.levels || (g.level ? [g.level] : []);
   const levelTags = groupLevels.map(lv =>
     `<span class="lv-tag"><i style="background:${lvColor(lv)}"></i>${esc(lvName(lv))}</span>`).join("");
   return `<div class="group" data-lv="${esc(groupLevels.join(" "))}">
     <button class="ghead" type="button" aria-expanded="false" aria-controls="${bodyId}">
-      <span class="gnum">${esc(g.label)}</span>
-      <span class="gtitle">${esc(g.title)}${g.subtitle ? `<em>${esc(g.subtitle)}</em>` : ""}</span>
-      <span class="gmeta">${g.peak ? `<span>핵심 ${g.peak}과까지</span>` : ""}${g.form ? `<span>${esc(g.form)}</span>` : ""}
+      <span class="gnum">${g.no ? `${g.no}${esc(t("ui","unitWord"))}` : esc(g.label)}</span>
+      <span class="gtitle">${esc(gTitle)}${gSub ? `<em>${esc(gSub)}</em>` : ""}</span>
+      <span class="gmeta">${g.peak ? `<span>${esc(t("ui","peakUpTo").replace("{n}", g.peak))}</span>` : ""}${g.form ? `<span>${esc(g.form)}</span>` : ""}
         ${levelTags}
         <span>${g.lessons.length} ${esc(t("ui","lessonWord"))}</span><span class="caret"></span></span>
     </button>
@@ -742,7 +794,8 @@ function apply() {
     }
   });
   const filtering = q || activeLevels.size;
-  $hits.textContent = filtering ? `${hits}${T.lessonWord} · ${shown}${T.unitWord}` : "";
+  $hits.textContent = filtering
+    ? `${hits} ${t("ui","lessonWord")} · ${shown} ${t("ui","unitWord")}` : "";
   $empty.classList.toggle("hide", !(filtering && hits === 0));
 
   if (q) {
@@ -782,8 +835,8 @@ function setOpen(units, lessons) {
   });
   $units.classList.toggle("on", units && !lessons);
   $all.classList.toggle("on", lessons);
-  $units.textContent = units && !lessons ? `${T.unitWord} 모두 접기` : `${T.unitWord} 모두 펼치기`;
-  $all.textContent = lessons ? `${T.lessonWord}까지 모두 접기` : `${T.lessonWord}까지 모두 펼치기`;
+  $units.textContent = t("ui", units && !lessons ? "collapseUnits" : "expandUnits");
+  $all.textContent = t("ui", lessons ? "collapseAll" : "expandAll");
 }
 $units.addEventListener("click", () => setOpen(!$units.classList.contains("on"), false));
 $all.addEventListener("click", () => { const on = !$all.classList.contains("on"); setOpen(on, on); });
@@ -795,14 +848,21 @@ $all.addEventListener("click", () => { const on = !$all.classList.contains("on")
 /** data-i18n 이 붙은 자리를 지금 언어로 채운다. 마크업의 한국어는 기본값으로 남는다 —
     JS 가 죽어도 페이지는 읽히는 상태여야 한다. */
 function paintStatic() {
-  const hd = document.getElementById("hd");
-  if (hd) hd.textContent = loc(T.desc);
+  document.querySelectorAll("[data-i18n-label]").forEach(el => {
+    const [sec, key] = el.getAttribute("data-i18n-label").split(".");
+    const v = t(sec, key); if (v) el.setAttribute("aria-label", v);
+  });
+  document.querySelectorAll("[data-i18n-ph]").forEach(el => {
+    const [sec, key] = el.getAttribute("data-i18n-ph").split(".");
+    const v = t(sec, key); if (v) el.placeholder = v;
+  });
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const [sec, key] = el.getAttribute("data-i18n").split(".");
     const v = t(sec, key);
     if (v) el.textContent = v;
   });
   document.documentElement.lang = L;
+  paintLangNav();
 }
 
 function paintLocaleBar() {
@@ -818,7 +878,9 @@ function setLocale(next) {
   if (!LOCALES.includes(next) || next === L) return;
   L = next;
   try { localStorage.setItem(LS_KEY, L); } catch (e) {}
-  paintStatic(); paintLocaleBar(); redraw();
+  paintStatic(); paintLocaleBar(); paintTrack(); redraw();
+  // 펼침 버튼의 말은 지금 펼쳐진 상태에 달렸다 — 상태를 읽어 그대로 다시 적는다.
+  setOpen($units.classList.contains("on"), $all.classList.contains("on"));
 }
 
 document.getElementById("loc").addEventListener("click", e => {
@@ -828,6 +890,7 @@ document.getElementById("loc").addEventListener("click", e => {
 
 paintStatic();
 paintLocaleBar();
+paintTrack();
 
 const firstGroup = document.querySelector(".group");
 firstGroup?.classList.add("open");

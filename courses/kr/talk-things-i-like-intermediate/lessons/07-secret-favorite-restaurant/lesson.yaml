@@ -22,6 +22,8 @@ spec:
   teaches:
     patterns: []
     canDo: 그런데 지금 말해 주세요
+    canDoJa: でも、今言ってください
+    canDoEn: But tell me now
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-things-i-like-intermediate/lessons/07-secret-favorite-restaurant/lesson.html
 

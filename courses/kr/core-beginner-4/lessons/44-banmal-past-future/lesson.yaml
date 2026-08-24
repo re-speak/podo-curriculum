@@ -24,6 +24,8 @@ spec:
     - -았/었어
     - -(으)ㄹ 거야
     canDo: 어제 한 일과 내일 할 일을 친구에게 말한다.
+    canDoJa: 昨日したことと明日することを友だちに話す。
+    canDoEn: Tell a friend what you did yesterday and what you will do tomorrow.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-4/lessons/44-banmal-past-future/lesson.html
 

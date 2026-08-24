@@ -24,6 +24,8 @@ spec:
     - 저 → 나 · 제 → 내 · 저희 → 우리
     - 너 · 네(니) · 너희
     canDo: 어미뿐 아니라 인칭 대명사까지 반말 세트로 바꿔 말한다.
+    canDoJa: 語尾だけでなく人称代名詞まで、タメ口のセットに変えて話す。
+    canDoEn: Switch not just endings but pronouns too, as one casual-speech set.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-banmal-dropping-formality-upper-beginner/lessons/03-jeo-to-na/lesson.html
 

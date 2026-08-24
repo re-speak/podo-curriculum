@@ -22,6 +22,8 @@ spec:
   teaches:
     patterns: []
     canDo: 한국에서(또는 한국 사람에게서) 놀랐던 순간
+    canDoJa: 韓国で（または韓国の人に）驚いた瞬間
+    canDoEn: A moment that surprised you in Korea, or about a Korean
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-between-two-countries-intermediate/lessons/01-what-surprised-me/lesson.html
 

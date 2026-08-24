@@ -22,6 +22,8 @@ spec:
   teaches:
     patterns: []
     canDo: 가장 집중되는 시간과 실제 생활 리듬을 근거로 고르기
+    canDoJa: 一番集中できる時間と実際の生活リズムを根拠に選ぶ
+    canDoEn: Choose based on when you focus best and what your real routine allows
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-balance-games-advanced/lessons/04-morning-person-or-night-owl/lesson.html
 

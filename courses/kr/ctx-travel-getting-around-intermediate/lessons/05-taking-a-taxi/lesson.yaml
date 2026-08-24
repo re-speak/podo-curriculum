@@ -23,7 +23,15 @@ spec:
     patterns:
     - ~아/어 주세요
     - N까지(도착점) ↔ N에서(그 지점)
+    patternsJa:
+    - ~아/어 주세요
+    - N까지（到着点）↔ N에서（その地点）
+    patternsEn:
+    - ~아/어 주세요
+    - N까지 (destination) ↔ N에서 (that point)
     canDo: 기사님에게 목적지와 세울 지점을 말한다 — 조사 하나로 갈린다.
+    canDoJa: 運転手さんに行き先と停める場所を伝える — 助詞一つで変わる。
+    canDoEn: Tell the driver your destination and where to stop — one particle changes it.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-getting-around-intermediate/lessons/05-taking-a-taxi/lesson.html
 

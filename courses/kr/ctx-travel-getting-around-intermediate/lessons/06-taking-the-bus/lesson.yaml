@@ -24,6 +24,8 @@ spec:
     - ~는 N 맞나요?
     - N 남다
     canDo: 이 버스가 맞는지 확인하고, 몇 정거장 남았는지 묻는다.
+    canDoJa: このバスで合っているかを確かめ、あと何駅かを尋ねる。
+    canDoEn: Check this is the right bus, and ask how many stops are left.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-getting-around-intermediate/lessons/06-taking-the-bus/lesson.html
 

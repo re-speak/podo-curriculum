@@ -22,6 +22,8 @@ spec:
   teaches:
     patterns: []
     canDo: 스스로 아는 것
+    canDoJa: 自分でわかっていること
+    canDoEn: What you know about yourself
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-love-and-marriage-advanced/lessons/04-my-bad-dating-habit/lesson.html
 

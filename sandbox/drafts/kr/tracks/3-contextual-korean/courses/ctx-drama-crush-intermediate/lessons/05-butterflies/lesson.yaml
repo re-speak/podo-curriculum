@@ -20,6 +20,8 @@ spec:
       - ~만 보면
       - ~는 줄 모르다
     canDo: 상대 앞에서 생기는 신체 반응으로 설렘을 표현한다.
+    canDoJa: 相手の前で起きる体の反応で、ときめきを表す。
+    canDoEn: "Express the flutter through what your body does in front of them."
   scene: 마주 앉아 있는데 대화가 자꾸 끊긴다. 심장 소리가 들릴 것 같다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-crush-intermediate · 5

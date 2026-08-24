@@ -20,6 +20,8 @@ spec:
       - "-듯이"
       - 얼마나 -(으)ㄴ/는지 모르다
     canDo: 얼마나 심했는지를 비유와 강조로 실감 나게 전한다.
+    canDoJa: どれほどひどかったかを、たとえと強調で実感が伝わるように話す。
+    canDoEn: "Convey just how bad it was, vividly, through comparison and emphasis."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-advanced-1 · 114
 

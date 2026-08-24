@@ -24,6 +24,8 @@ spec:
     - ~기로 하다
     - ~(으)려고
     canDo: 생카에 가기로 한 계획과 그 목적을 말한다.
+    canDoJa: センイル（誕生日）カフェに行く計画と、その目的を話す。
+    canDoEn: Talk about your plan to go to a birthday cafe event, and what it's for.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-fan-life-intermediate/lessons/05-birthday-cafe/lesson.html
 

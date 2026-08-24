@@ -24,6 +24,8 @@ spec:
     - ~(으)ㄹ 줄 알다/모르다
     - ~나 보다
     canDo: 우연한 재회에 반가움을 표현하고, 어떻게 여기 있는지 묻는다.
+    canDoJa: 偶然の再会を喜び、どうしてここにいるのかを尋ねる。
+    canDoEn: Show your delight at bumping into them, and ask how they come to be here.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-friends-intermediate/lessons/02-again/lesson.html
 

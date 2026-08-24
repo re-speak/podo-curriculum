@@ -20,6 +20,8 @@ spec:
       - ~(으)ㄴ/는데요
       - ~(으)니까 ~(으)ㄹ게요
     canDo: 아직 말을 놓기 어렵다고 완곡하게 거절하고, 애매한 사이를 버틴다.
+    canDoJa: まだタメ口にするのは難しいと遠回しに断り、あいまいな間柄を保つ。
+    canDoEn: "Decline gently that it's still hard to drop the polite form, and hold the awkward middle."
   scene: 이번엔 선배다. 말을 놓자는데, 아직 그러고 싶지 않다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-banmal-dropping-formality-upper-beginner · 9

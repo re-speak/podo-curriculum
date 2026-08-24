@@ -24,6 +24,8 @@ spec:
     - ~(으)니까 ~지 마
     - ~(으)ㄹ 테니까
     canDo: 지난 일로 자책하지 말라고 다독이고, 다 잘될 거라고 안심시킨다.
+    canDoJa: 過ぎたことで自分を責めるなとなだめ、きっとうまくいくと安心させる。
+    canDoEn: Comfort them not to beat themselves up over the past, and reassure them it will work out.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-family-intermediate/lessons/07-comfort/lesson.html
 

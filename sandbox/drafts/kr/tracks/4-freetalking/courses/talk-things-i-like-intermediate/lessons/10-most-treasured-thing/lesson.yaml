@@ -19,6 +19,8 @@ spec:
     patterns:
       []
     canDo: 어떤 물건이고 왜 아끼는지 설명하기
+    canDoJa: どんな物で、なぜ大切にしているのかを説明する
+    canDoEn: "Say what the thing is, and why you treasure it"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-things-i-like-intermediate · 10
 

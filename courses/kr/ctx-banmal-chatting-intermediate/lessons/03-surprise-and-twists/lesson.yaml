@@ -24,6 +24,8 @@ spec:
     - ~(으)ㄹ 줄 알았다
     - ~고 있었다
     canDo: 예상과 다른 상황에 놀라고, 마침 같은 생각을 하고 있었다고 말한다.
+    canDoJa: 予想と違う状況に驚き、ちょうど同じことを考えていたと言う。
+    canDoEn: Register surprise at an unexpected turn, and say you were just thinking the same.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-banmal-chatting-intermediate/lessons/03-surprise-and-twists/lesson.html
 
