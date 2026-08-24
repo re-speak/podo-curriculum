@@ -33,6 +33,8 @@ spec:
     en: Ask about stock and sizes, try things on, check the price, and see payment, wrapping, exchange and refund all the way through.
     ja: 在庫とサイズをたずね、試着し、値段を確かめ、支払い・包装・交換・返金まで一通り片づけられる。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

@@ -33,6 +33,8 @@ spec:
     en: Hint at interest, read the other person, confess, and settle what you are — all in casual speech.
     ja: 好意を遠回しに伝え、相手の気持ちを探り、告白し、関係を決める言葉をタメ口で言える。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

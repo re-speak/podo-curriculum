@@ -31,6 +31,8 @@ spec:
     en: Get a recommendation that fits you, join a group, make a plan with people you just met, and complain firmly without hostility.
     ja: 自分に合う提案を引き出し、グループに加わり、初対面の人と計画を立て、敵意を出さずにきっぱり苦情を言う。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

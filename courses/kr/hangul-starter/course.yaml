@@ -33,6 +33,8 @@ spec:
     en: From consonants and vowels through final consonants, to reading the signs on a Korean street.
     ja: 子音・母音・パッチムを通って、街の看板が読めるところまで。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

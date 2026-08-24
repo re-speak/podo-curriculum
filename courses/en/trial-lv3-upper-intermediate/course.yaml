@@ -36,6 +36,8 @@ spec:
     ko: 일하는 자리에서 의견을 전해 보는 25분 체험 레슨.
     ja: 仕事の場面で意見を伝えてみる25分の体験レッスン。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

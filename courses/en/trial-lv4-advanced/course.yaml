@@ -36,6 +36,8 @@ spec:
     ko: 주제를 놓고 자기 생각을 말해 보는 25분 프리토킹 체험 레슨.
     ja: テーマについて自分の考えを話してみる25分のフリートーキング体験レッスン。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

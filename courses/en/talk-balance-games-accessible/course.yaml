@@ -31,6 +31,8 @@ spec:
     en: Choose one of two fast, then justify it at length through concrete scenes and shifting conditions.
     ja: 二つのうち一つを素早く選び、具体的な生活の場面と条件の変化で、その理由を長く説明する。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

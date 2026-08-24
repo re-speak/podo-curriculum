@@ -33,6 +33,8 @@ spec:
     en: Keep a relationship across a time zone — see someone off, work around the clock difference, video-call, say you miss them, and ask the question.
     ja: 時差をまたいで関係を続ける。見送り、時間を合わせ、ビデオ通話し、会いたいと言い、そして最後の言葉を切り出す。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

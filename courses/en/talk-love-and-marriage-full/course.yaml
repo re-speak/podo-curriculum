@@ -31,6 +31,8 @@ spec:
     en: Talk about love and marriage — what you have lived and what you think — dialling the sensitivity as you go.
     ja: 踏み込む深さを調節しながら、恋愛と結婚の経験や考えを話す。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []
