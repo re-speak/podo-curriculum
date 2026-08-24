@@ -33,8 +33,19 @@
 <link rel="stylesheet" href="../css/lesson-card.css">
 <link rel="stylesheet" href="../css/trial.css">
 <style>
-  /* 뷰어는 폰 틀만 쓴다 — 덱의 페이저·표지·상담 장은 여기 없다. */
+  /* 뷰어는 폰 틀만 쓴다 — 덱의 페이저·표지·상담 장은 여기 없다.
+
+     **html 의 여백을 0 으로 두는 것은 취향이 아니라 계약이다.** lesson-card.css 는
+     `html { padding: 16px }` 을 걸어 두는데, 그대로 두면 부모에게 알려 주는 높이가
+     내용보다 32px 크고 → 부모가 iframe 을 그만큼 키우고 → 아래 min-height 가 내용을
+     다시 그만큼 늘려 → 매번 32px 씩 자라는 고리가 생긴다. */
   html, body { margin: 0; padding: 0; background: #fff; }
+
+  /* 같은 이유로 `.phone` 의 `min-height: 100vh` 를 푼다. 덱에서는 한 장이 화면을
+     채우라는 뜻이지만, 여기서는 「화면」 이 곧 부모가 정해 준 iframe 높이라 내용이
+     아니라 부모의 지난 결정을 되읽게 된다 — 카드를 넘겨 내용이 짧아져도 높이가
+     줄지 않고 흰 여백만 남는다. 뷰어가 보내는 높이는 언제나 내용의 높이여야 한다. */
+  .phone { min-height: 0; }
   /* report.js 는 실린 즉시 빈 리포트를 한 번 그린다(고른 것이 아직 없으므로).
      스냅샷은 부모가 보내 줘야 오는 것이라 그 사이 한 프레임이 비어 보인다.
      복원이 끝나면 bridge 가 걷는다 — display 가 아니라 visibility 인 것은
@@ -286,6 +297,7 @@
    ================================================================ */
 (function () {
   var SOURCE = "podo-trial-report";
+  var watching = false;
 
   /* le_level_test.language -> 그 제품의 문안 표.
      KO 는 KR 의 옛 표기다(백엔드가 정규화하지만, 옛 행을 그대로 받아도 열린다). */
@@ -319,7 +331,8 @@
       window.podoReport.restore(d.snapshot);
       document.body.classList.add("report-ready");
       reply({ type: "rendered", requestId: d.requestId, ok: true });
-      watchHeight(e.source, e.origin);
+      /* 부모가 두 번 보내도 감시자는 하나다 — 둘이 붙으면 같은 높이를 두 번 알린다. */
+      if (!watching) { watching = true; watchHeight(e.source, e.origin); }
     } catch (err) {
       reply({ type: "rendered", requestId: d.requestId, ok: false,
               error: String((err && err.message) || err) });

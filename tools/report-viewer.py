@@ -37,7 +37,9 @@ VIEWER = model.REPO / "shared" / "view" / "report.html"
 
 # 리포트를 싣고 있는 덱. 없는 덱(영어 체험)은 튜터 채점만 하고 리포트 면이 없다 —
 # 그쪽 리포트는 수업이 끝난 뒤 챗으로 간다는 것이 그 덱의 설계다.
-DECK_GLOB = "courses/kr/trial-lv*/lessons/*/lecture/index.html"
+# 예습 덱도 같은 리포트 면을 싣는다(현재 8벌: 레슨 4 × lecture·prestudy). 여덟이
+# 모두 같아야 하고, 하나만 검사하면 나머지가 조용히 갈라진다.
+DECK_GLOB = "courses/kr/trial-lv*/lessons/*/*/index.html"
 
 
 class ViewerError(Exception):
@@ -83,6 +85,16 @@ def strip_tutor_blocks(block: str) -> str:
                     break
             else:
                 raise ViewerError(f".{cls} is never closed")
+
+    # 못 걷어낸 것이 하나라도 남으면 조용히 넘어가지 않는다. 남는 순간 두 가지가
+    # 한꺼번에 깨진다 — 학생이 볼 문서에 튜터 조작면이 실리고, report.js 가 레벨
+    # 카드의 ✓ 줄을 로케일 표가 아니라 그 마크업(.axq)에서 읽어 버려서 영어 리포트가
+    # 한국어 문법 이야기를 하게 된다. 마크업의 class 가 바뀌면 여기서 멈춘다.
+    left = [cls for cls in TUTOR_ONLY if re.search(r'class="[^"]*\b' + re.escape(cls) + r'\b', block)]
+    if left:
+        raise ViewerError(
+            f"tutor-only block(s) survived stripping: {', '.join(left)}\n"
+            f"    덱의 class 이름이 바뀌었을 수 있다 — TUTOR_ONLY 와 맞춰라")
     return block
 
 
