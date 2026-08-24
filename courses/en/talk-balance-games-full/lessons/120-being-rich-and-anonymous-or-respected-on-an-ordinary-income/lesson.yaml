@@ -7,9 +7,9 @@ spec:
   week: 14
 
   title:
-    ko: "부유하고 무명, 평범한 수입과 존중?"
-    en: "Being rich and anonymous or respected on an ordinary income?"
-    ja: "裕福で無名、それとも普通の収入で尊敬？"
+    ko: "한 사람의 칭찬, 많은 사람의 인정?"
+    en: "Praise from one person or recognition from many?"
+    ja: "一人からの言葉？多くの人からの評価？"
 
   decks:
     lecture:  { entry: lecture/index.html }

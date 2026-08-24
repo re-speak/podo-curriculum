@@ -7,9 +7,9 @@ spec:
   week: 7
 
   title:
-    ko: "어떤 우정이 멀어지는 이유"
-    en: "Why some friendships fade"
-    ja: "友情が薄れていく理由"
+    ko: "함께 있으면 마음이 편한 사람"
+    en: "Someone you can completely relax around"
+    ja: "一緒にいると心からくつろげる人"
 
   decks:
     lecture:  { entry: lecture/index.html }

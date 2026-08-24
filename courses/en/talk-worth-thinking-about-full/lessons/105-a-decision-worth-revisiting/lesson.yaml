@@ -7,9 +7,9 @@ spec:
   week: 5
 
   title:
-    ko: "다시 생각해 볼 만한 결정"
-    en: "A decision worth revisiting"
-    ja: "見直す価値のある決断"
+    ko: "약속을 취소해도 괜찮을 때"
+    en: "When it's okay to cancel plans"
+    ja: "予定をキャンセルしてもよいとき"
 
   decks:
     lecture:  { entry: lecture/index.html }
