@@ -34,6 +34,8 @@ MOTIFS = pathlib.Path(__file__).resolve().parent / "motifs"
 WIDTH = 864
 HEIGHT = 1080
 THUMBNAIL = "assets/cover.png"
+TITLE_MAX_VISUAL_WIDTH = 8.2
+TITLE_CONTENT_WIDTH = 680
 
 
 PALETTES = {
@@ -199,30 +201,34 @@ def visual_width(text: str) -> float:
 
 
 def split_title(text: str) -> list[str]:
-    if visual_width(text) <= 9.4:
+    """Wrap a title without splitting a word or other whitespace-delimited unit."""
+    if visual_width(text) <= TITLE_MAX_VISUAL_WIDTH:
         return [text]
-    break_chars = ("と", "の", "・", "への", "を")
-    candidates: list[tuple[float, int]] = []
-    total = visual_width(text)
-    for i in range(1, len(text)):
-        if text[i - 1] in break_chars or text[i] in break_chars:
-            candidates.append((abs(visual_width(text[:i]) - total / 2), i))
-    if candidates:
-        _, point = min(candidates)
+
+    # English and the current Korean catalogue both provide semantic spacing.
+    # Prefer the split whose widest line is shortest, using balance as a tie-breaker.
+    points = [match.start() for match in re.finditer(r"\s+", text)]
+    if points:
+        _, _, point = min(
+            (
+                max(visual_width(text[:point]), visual_width(text[point:])),
+                abs(visual_width(text[:point]) - visual_width(text[point:])),
+                point,
+            )
+            for point in points
+        )
     else:
-        target = total / 2
-        point = min(range(1, len(text)), key=lambda i: abs(visual_width(text[:i]) - target))
+        # With no semantic boundary, fitting one line is safer than inventing
+        # a break inside an English word or Korean phrase.
+        return [text]
     first, second = text[:point].strip(), text[point:].strip()
     return [first, second] if first and second else [text]
 
 
 def title_size(lines: list[str]) -> int:
     widest = max(visual_width(line) for line in lines)
-    if widest <= 6.5:
-        return 88
-    if widest <= 8.4:
-        return 78
-    return 68
+    fitted = min(96, int(TITLE_CONTENT_WIDTH / widest))
+    return max(48, fitted - fitted % 2)
 
 
 def motif_href(course_root: pathlib.Path, motif: str) -> str:
@@ -236,7 +242,7 @@ def svg_for(course_path: pathlib.Path, doc: dict) -> str:
     spec = doc["spec"]
     motif = motif_for(lang, slug)
     palette_name = palette_for(slug, spec.get("difficulty", ""), motif)
-    base, dark, highlight = PALETTES[palette_name]
+    base, dark, _highlight = PALETTES[palette_name]
     language, track, topic, level = cover_copy(lang, slug, spec["title"])
     lines = split_title(topic)
     font_size = title_size(lines)
@@ -254,7 +260,7 @@ def svg_for(course_path: pathlib.Path, doc: dict) -> str:
     return f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}">
   <defs>
     <linearGradient id="bg" x1="92" y1="50" x2="780" y2="1050" gradientUnits="userSpaceOnUse">
-      <stop stop-color="{highlight}" stop-opacity=".24"/>
+      <stop stop-color="{base}"/>
       <stop offset=".38" stop-color="{base}"/>
       <stop offset="1" stop-color="{dark}"/>
     </linearGradient>
@@ -265,9 +271,9 @@ def svg_for(course_path: pathlib.Path, doc: dict) -> str:
     <clipPath id="card"><rect width="864" height="1080" rx="48"/></clipPath>
     <style>
       text {{ font-family: Pretendard, "Hiragino Sans", sans-serif; }}
-      .eyebrow {{ fill: #fff; font-size: 34px; font-weight: 800; letter-spacing: 1.2px; }}
+      .eyebrow {{ fill: #fff; font-size: 42px; font-weight: 800; letter-spacing: 1.2px; }}
       .title {{ fill: #fff; font-weight: 900; letter-spacing: -2.5px; }}
-      .level {{ fill: #fff; fill-opacity: .72; font-size: 35px; font-weight: 700; letter-spacing: -.8px; }}
+      .level {{ fill: #fff; fill-opacity: .82; font-size: 42px; font-weight: 700; letter-spacing: -.8px; }}
     </style>
   </defs>
   <g clip-path="url(#card)">
@@ -278,15 +284,15 @@ def svg_for(course_path: pathlib.Path, doc: dict) -> str:
     <rect width="864" height="1080" fill="url(#glow)"/>
 
     <text x="84" y="105" class="eyebrow">{html.escape(sequence)}</text>
-    <rect x="678" y="66" width="106" height="58" rx="29" fill="#000000" fill-opacity=".22"/>
-    <text x="731" y="105" text-anchor="middle" fill="#FFFFFF" font-size="26" font-weight="800">{html.escape(language[:2])}</text>
+    <rect x="664" y="58" width="120" height="66" rx="33" fill="#000000" fill-opacity=".22"/>
+    <text x="724" y="103" text-anchor="middle" fill="#FFFFFF" font-size="32" font-weight="800">{html.escape(language[:2])}</text>
 {title_nodes}
     <text x="86" y="{level_y}" class="level">{level_text}</text>
 
     <image x="166" y="390" width="760" height="640" preserveAspectRatio="xMidYMid meet" href="{motif_path}" xlink:href="{motif_path}"/>
 
-    <text x="84" y="1004" fill="#FFFFFF" font-size="31" font-weight="900" letter-spacing="1.4">PODO</text>
-    <text x="780" y="1004" text-anchor="end" fill="#FFFFFF" fill-opacity=".58" font-size="24" font-weight="700">{html.escape(track)}</text>
+    <text x="84" y="1004" fill="#FFFFFF" font-size="38" font-weight="900" letter-spacing="1.4">PODO</text>
+    <text x="780" y="1004" text-anchor="end" fill="#FFFFFF" fill-opacity=".82" stroke="#000000" stroke-opacity=".18" stroke-width="7" paint-order="stroke" font-size="30" font-weight="700">{html.escape(track)}</text>
   </g>
 </svg>
 '''
