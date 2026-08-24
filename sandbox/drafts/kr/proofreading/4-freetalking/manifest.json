@@ -29,7 +29,7 @@
       "decks": 20,
       "file": "packets/01-between-two-countries.md",
       "lessonPairs": 10,
-      "sourceSetSha256": "36e8cddacc9024b555713749c4020d7960c449a5e864d568b17c1b46f635338c",
+      "sourceSetSha256": "251fda0c15b3bf01045f244534b8486f3346ec99681ec5afc656f044b4d0c5d2",
       "theme": "두 나라 사이",
       "themeNumber": 1
     },
@@ -45,7 +45,7 @@
       "decks": 22,
       "file": "packets/03-things-i-like.md",
       "lessonPairs": 11,
-      "sourceSetSha256": "fe70bae2fa72a8789c07c78e5a09dec2eb288806edcdd2e5c24a69caa87cab53",
+      "sourceSetSha256": "5aa090bf3684f73bc275e60de3bcc3bdc8f3520593adfbc1a4688238bbdcf1de",
       "theme": "좋아하는 것",
       "themeNumber": 3
     },

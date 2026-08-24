@@ -426,6 +426,29 @@
       ],
       "find": "^$",
       "manual": "Rewrite as a verb phrase that says where, with whom, or to what end. A bare noun label reads as a chapter heading, not as an instruction."
+    },
+    {
+      "id": "own-experience",
+      "kind": "run",
+      "why": "내 이야기로 바꾸기 → 내 경험을 말하기, and 자신의 이야기를 → 자신의 경험을 (01-suggesting-banmal, 2026-08-23). The learner is not converting anything into anything; they are saying something that happened to them, and 바꾸기 describes an operation the page never asks for. The reviewer fixed one deck. tools/authoring/kr/render_contextual_course.py emits this page for every Contextual lesson, so it stood in 60 of them — which is why the fix belongs here and in the generator rather than in that one deck.",
+      "fix": [
+        {
+          "from": "내 이야기로 바꾸기",
+          "to": "내 경험을 말하기"
+        },
+        {
+          "from": "자신의 이야기를 한 문장",
+          "to": "자신의 경험을 한 문장"
+        },
+        {
+          "from": "自分の話に変えよう",
+          "to": "自分の経験を話そう"
+        },
+        {
+          "from": "自分の話を1文",
+          "to": "自分の経験を1文"
+        }
+      ]
     }
   ]
 }

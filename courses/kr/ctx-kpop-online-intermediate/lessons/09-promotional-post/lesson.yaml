@@ -7,9 +7,9 @@ spec:
   week: 9
 
   title:
-    ko: "영업 멘트"
-    en: "Promotional comments"
-    ja: "布教コメント"
+    ko: "친구에게 좋아하는 가수를 소개해요."
+    en: "Introducing your favourite artist"
+    ja: "友だちに推しを紹介する"
 
   decks:
     lecture:  { entry: lecture/index.html }

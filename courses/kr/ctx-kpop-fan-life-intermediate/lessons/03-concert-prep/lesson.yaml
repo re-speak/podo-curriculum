@@ -7,9 +7,9 @@ spec:
   week: 3
 
   title:
-    ko: "콘서트 준비"
-    en: "Concert preparation"
-    ja: "コンサート準備"
+    ko: "콘서트 갈 준비"
+    en: "Getting ready for the concert"
+    ja: "コンサートに行く準備"
 
   decks:
     lecture:  { entry: lecture/index.html }

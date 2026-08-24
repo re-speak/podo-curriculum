@@ -7,9 +7,9 @@ spec:
   week: 6
 
   title:
-    ko: "온라인 논쟁"
-    en: "Online debates"
-    ja: "オンライン議論"
+    ko: "SNS로 의견 나누기"
+    en: "Sharing opinions on social media"
+    ja: "SNSで意見を交わす"
 
   decks:
     lecture:  { entry: lecture/index.html }
