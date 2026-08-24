@@ -2952,7 +2952,7 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 ## 09 · 09-semi-formal-speech
 
 - source: `sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-banmal-dropping-formality-upper-beginner/lessons/09-semi-formal-speech/lesson.html`
-- sha256: `5a9abc6fdb69b4e0b4bfcd97b8646394e32da21941c6495869e43a1ee669203b`
+- sha256: `b5afbc6d84e1dd777985328098ea65e92afc92c85541a85c1fe0ddecde2e7e9a`
 - level: 초중급
 
 ### `metadata`
@@ -3020,12 +3020,12 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 - `transition.1.ja` · JA: 私はまだ敬語のほうが楽なんですが。
 ### `p1-teach`
 
-> 첫 번째 표현 (最初の表現) 뜻과 쓰임 意味・使い方 싫다고 하지 않고 말끝을 흐려 거절해요. いやだと言わずに、語尾をぼかして断ります。 저는 아직 존댓말이 편한데요. チョヌン アジク チョンデンマリ ピョナンデヨ 私はまだ敬語のほうが楽なんですが。
+> 첫 번째 표현 (最初の表現) 뜻과 쓰임 意味・使い方 싫다고 하지 않고 완곡하게 거절해요. いやだと言わずに、やんわり断ります。 저는 아직 존댓말이 편한데요. チョヌン アジク チョンデンマリ ピョナンデヨ 私はまだ敬語のほうが楽なんですが。
 
 - `title.ko` · KO: 첫 번째 표현
 - `title.ja` · JA: (最初の表現)
-- `patternMeaning.1.ko` · KO: 싫다고 하지 않고 말끝을 흐려 거절해요.
-- `patternMeaning.1.ja` · JA: いやだと言わずに、語尾をぼかして断ります。
+- `patternMeaning.1.ko` · KO: 싫다고 하지 않고 완곡하게 거절해요.
+- `patternMeaning.1.ja` · JA: いやだと言わずに、やんわり断ります。
 - `text.1.ko` · KO: 저는 아직 존댓말이 편한데요.
 - `translation.1.ja` · JA: 私はまだ敬語のほうが楽なんですが。
 ### `p1-read`

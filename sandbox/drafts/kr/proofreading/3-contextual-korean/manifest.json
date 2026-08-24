@@ -18,7 +18,7 @@
       "course": "ctx-banmal-dropping-formality-upper-beginner",
       "decks": 10,
       "file": "packets/02-ctx-banmal-dropping-formality-upper-beginner.md",
-      "sourceSetSha256": "7bc3a24a29c1ce7a39dc9edeb9500f3f74ed73588f82eb0c0f41de83ef298cce"
+      "sourceSetSha256": "5f10c9a8a9c000c022ede72954ebcacf78596b5654cadd6ce2b2edbe84156e4e"
     },
     {
       "course": "ctx-drama-boundaries-intermediate",
@@ -30,19 +30,19 @@
       "course": "ctx-drama-crush-intermediate",
       "decks": 10,
       "file": "packets/04-ctx-drama-crush-intermediate.md",
-      "sourceSetSha256": "f5e2781076a60c4f16f1a6e02cee358120d3513a2cbe146b96325c3bcbaf26a8"
+      "sourceSetSha256": "f14c338acd0ca545a41c506b2a797c1ed4e227dcecdcba4648f625bd5520e603"
     },
     {
       "course": "ctx-drama-dating-intermediate",
       "decks": 10,
       "file": "packets/05-ctx-drama-dating-intermediate.md",
-      "sourceSetSha256": "0d477e94e89fc6190348cdc0276ee5fa26c7c9c1ae273ee8b6b98a01c1cb2354"
+      "sourceSetSha256": "229f9fafc6ad2b495f98099cc60d1001b3a0674b25af426d41723ad514f33d86"
     },
     {
       "course": "ctx-drama-family-intermediate",
       "decks": 10,
       "file": "packets/06-ctx-drama-family-intermediate.md",
-      "sourceSetSha256": "27a374619e134690687ac7dac7ca7af602726cb77e5150fcf7a237c4767297ee"
+      "sourceSetSha256": "b252014cf2d138ab70c4623b2105860b961df250d15a749544af951d5cce91a7"
     },
     {
       "course": "ctx-drama-friends-intermediate",
@@ -60,13 +60,13 @@
       "course": "ctx-kpop-fan-life-intermediate",
       "decks": 10,
       "file": "packets/09-ctx-kpop-fan-life-intermediate.md",
-      "sourceSetSha256": "0be596f53c762ef9e34916b4e38484e59397e6ffba50d5c95d5156a627376e86"
+      "sourceSetSha256": "751b3dbc07058a960fd922afbc5745837393d2b5660b10c8fdcf9a2e918d6902"
     },
     {
       "course": "ctx-kpop-online-intermediate",
       "decks": 10,
       "file": "packets/10-ctx-kpop-online-intermediate.md",
-      "sourceSetSha256": "c343d6f6428e390d11b531224ec8267c9e9d5381a54fe2bd6d6975071ede919d"
+      "sourceSetSha256": "01a9e6ea12ff73e4f63bea092e4bf681fdc4cda850b0dde3a87b363443d4b12e"
     },
     {
       "course": "ctx-kpop-stage-upper-beginner",
@@ -78,7 +78,7 @@
       "course": "ctx-kpop-talk-beginner",
       "decks": 10,
       "file": "packets/12-ctx-kpop-talk-beginner.md",
-      "sourceSetSha256": "0ce8197892fb30a25a67e3ae1889f35521d4c00e8e0f4525d42638bd76730f8f"
+      "sourceSetSha256": "f9a83c5e6340c1a3459688213de6bb553c1b8a37ebb25c82eac67ce43f1a4581"
     },
     {
       "course": "ctx-travel-eating-out-upper-beginner",

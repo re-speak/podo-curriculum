@@ -235,6 +235,63 @@ def deck_paths(lang):
     return sorted(p for p in root.rglob("*.html") if is_deck(p)) if root.exists() else []
 
 
+AUTHORING = REPO / "tools/authoring"
+
+
+def source_paths(lang):
+    """The scripts and templates that WRITE decks.
+
+    Correcting the corpus and leaving the generator alone buys one round. This
+    round proved it twice over: `render_contextual_course.py` still hardcoded
+    이번엔 흩어진 덩어리를 after 322 instances had been swept out of the decks, so
+    the next Contextual course would have reintroduced 120 of them; and its
+    자기 이야기 page had already been half-corrected, Korean moved and Japanese
+    left, which is the exact split the `pair` rule kind exists to stop.
+
+    Scoped by directory so a Japanese line inside an English deck generator —
+    「保存したコピーを復元する」 is business vocabulary, not the 복원 metaphor —
+    is not judged by the Korean table.
+    """
+    roots = [AUTHORING / lang, AUTHORING]
+    out = []
+    for root in roots:
+        if not root.is_dir():
+            continue
+        for p in sorted(root.glob("*.py")) + sorted(root.glob("*.html")):
+            if p.name.startswith("test_") or p.name == Path(__file__).name:
+                continue
+            if p not in out:
+                out.append(p)
+    return out
+
+
+def source_hits(path, rules):
+    """Every standard violation in a generator, as plain text.
+
+    No class scoping is possible here — a generator is code, not a deck — so
+    this reports and never rewrites. A string in a generator can also be a
+    comment explaining why the rule exists, and only a human can tell those
+    apart.
+    """
+    text = path.read_text(encoding="utf-8", errors="replace")
+    found = []
+    for rule in rules:
+        if rule.kind == "glossary":
+            pats = [(t, re.compile(re.escape(t) + r"(?!\s*[(（])"))
+                    for t in rule.glosses]
+        else:
+            pats = [(None, rule.find)]
+        for _, pat in pats:
+            for m in pat.finditer(text):
+                if rule.exempt and rule.exempt.search(
+                        text[max(0, m.start() - 60):m.end() + 60]):
+                    continue
+                line = text[:m.start()].count("\n") + 1
+                found.append((rule, m.group()[:40], f"line {line}"))
+                break
+    return found
+
+
 TAG = re.compile(r"<[^>]+>")
 
 
@@ -325,6 +382,8 @@ def main(argv):
     ap.add_argument("--fix", action="store_true", help="apply the exact replacements")
     ap.add_argument("--list", action="store_true", help="print the standard and exit")
     ap.add_argument("--quiet", action="store_true", help="counts only")
+    ap.add_argument("--sources", action="store_true",
+                    help="also check the generators and templates that write decks")
     args = ap.parse_args(argv)
 
     langs = [args.lang] if args.lang else list(LANGS)
@@ -353,6 +412,21 @@ def main(argv):
                 targets += sorted(p.rglob("lesson.html")) if p.is_dir() else [p]
         else:
             targets = deck_paths(lang)
+        if args.sources and not args.paths:
+            for path in source_paths(lang):
+                rows = source_hits(path, rules)
+                if not rows:
+                    continue
+                hit_decks.add(path)
+                if not args.quiet:
+                    print(f"\n### {path.relative_to(REPO)}")
+                for rule, hit, where in rows:
+                    total += 1
+                    tally[rule.id] += 1
+                    manual[rule.id] += 1          # a generator is never auto-fixed
+                    if not args.quiet:
+                        print(f"  [ src ] {rule.id:<26} {hit}   ({where})")
+
         for path in targets:
             found = scan(path, rules, args.fix)
             if not found:

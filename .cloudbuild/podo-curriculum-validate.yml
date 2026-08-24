@@ -289,7 +289,11 @@ steps:
         # 교정에서 이미 내려진 판단. 게이트가 아니면 다음 덱이 같은 습관을 다시 기르고,
         # 같은 사람이 같은 코멘트를 다시 쓴다 — PR #89 가 한 표현을 고친 뒤에도 88곳이
         # 그대로 남아 PR #116 에서 네 코스에 걸쳐 다시 지적된 게 그 증거다.
-        run "교정 표준(두 언어)" python3 tools/authoring/copy_standard.py --quiet
+        #
+        # --sources 는 덱을 만드는 생성기까지 본다. 코퍼스만 쓸어내면 한 라운드를 벌 뿐이다:
+        # 덱에서 덩어리 322곳을 걷어낸 뒤에도 render_contextual_course.py 가 그 문구를
+        # 그대로 들고 있었고, 맥락 코스를 하나만 더 만들면 120곳이 되살아날 참이었다.
+        run "교정 표준(두 언어)" python3 tools/authoring/copy_standard.py --quiet --sources
         run "프리토킹 질문 계약"      python3 tools/authoring/check_freetalk_questions.py
         run "FT 생성·교정 회귀 검사"  python3 -m unittest \
           tools.authoring.test_check_freetalk_questions \

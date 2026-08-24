@@ -387,12 +387,14 @@
     {
       "id": "slang-gloss",
       "kind": "glossary",
-      "why": "A fandom abbreviation is glossed where the learner first meets it, not only in the vocabulary strip on a later page. Nine comments, all the same shape: 「생카가 뭔지 나도 모르겠어요」, 「스포가 뭔지 외국인들이 어떻게 아나요..?」, 「입덕이 뭔지 부정기가 뭔지 어떻게 알아요」, 「택포가 뭔지 이렇게 줄여야 하나요..?」, 「너무 줄임말임」(실트), 「짤이 뭔지 움짤이 뭔지 설명이 없어요」, 「맞팔설명」, 「탐라가 완전히 둘로 갈렸어 — 이게 뭔말인지 모르겠어요」, 「\"저장각\"에 대한 설명이 없어요」. Their two applied fixes show the shape of the answer: 「스밍」 → 「스트리밍 (반복재생)」 in the title, 「현생 때문에」 → 「현생(일상) 때문에」 in the question. The test this rule applies is position, not presence: a term glossed only in the vocabulary strip on a later page still fails, because that is exactly the deck state the reviewer was reading when they asked. 최애 and 떡밥 are deliberately absent: the reviewer never asked about either, the decks already gloss them in Japanese (推し / 新しい供給), and 최애 is not always fandom slang — 최애 야식 in the Free Talking track means a favourite food, so a fixed gloss would be wrong there. Titles are out of scope on purpose: a title is two or three words and an inline gloss inside one reads as though it belongs to the last word only (짤 & 움짤(움직이는 사진)). The gloss goes in the first sentence of prose the learner reads.",
+      "why": "A fandom abbreviation is glossed where the learner first meets it, not only in the vocabulary strip on a later page. Nine comments, all the same shape: 「생카가 뭔지 나도 모르겠어요」, 「스포가 뭔지 외국인들이 어떻게 아나요..?」, 「입덕이 뭔지 부정기가 뭔지 어떻게 알아요」, 「택포가 뭔지 이렇게 줄여야 하나요..?」, 「너무 줄임말임」(실트), 「짤이 뭔지 움짤이 뭔지 설명이 없어요」, 「맞팔설명」, 「탐라가 완전히 둘로 갈렸어 — 이게 뭔말인지 모르겠어요」, 「\"저장각\"에 대한 설명이 없어요」. Their two applied fixes show the shape of the answer: 「스밍」 → 「스트리밍 (반복재생)」 in the title, 「현생 때문에」 → 「현생(일상) 때문에」 in the question. The test this rule applies is position, not presence: a term glossed only in the vocabulary strip on a later page still fails, because that is exactly the deck state the reviewer was reading when they asked. 최애 and 떡밥 are deliberately absent: the reviewer never asked about either, the decks already gloss them in Japanese (推し / 新しい供給), and 최애 is not always fandom slang — 최애 야식 in the Free Talking track means a favourite food, so a fixed gloss would be wrong there. Titles are out of scope on purpose: a title is two or three words and an inline gloss inside one reads as though it belongs to the last word only (짤 & 움짤(움직이는 사진)). The gloss goes in the first sentence of prose the learner reads. Dialogue is in scope for detection as well as prose: 04-merchandise uses 생카 only inside the scene's bubbles, and with prose-only scope the deck the reviewer complained about twice would have produced neither a gloss nor a finding. What it cannot reach: reorder chips and their data-a answer keys. A gloss inside a chip would change the answer, so a deck that uses a term only as drag-and-drop material (07-real-life-vs-fandom does, for 스밍 and 덕메) is left to human judgment.",
       "only_in": [
         "section-subtitle",
         "transition-copy",
         "topic",
-        "ask"
+        "ask",
+        "korean",
+        "bubble"
       ],
       "never_in": [
         "s-w",

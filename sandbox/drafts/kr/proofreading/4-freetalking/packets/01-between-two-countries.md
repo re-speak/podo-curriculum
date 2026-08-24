@@ -1236,7 +1236,7 @@ HTML이 원본이다. 이 파일은 중요한 텍스트만 모은 검수용 투�
 ### 고급
 
 - source: `sandbox/drafts/kr/tracks/4-freetalking/courses/talk-between-two-countries-advanced/lessons/04-table-manners/lesson.html`
-- sha256: `f5840c2bc043ac4af537d04e3256483be585ed549493c3e6e43fe39b42f6960c`
+- sha256: `5ea2011c2dfea2b8db07ab989d0ebf2853b408d25603a554657a600910d680b5`
 - source kind: `article`
 
 #### `metadata`
@@ -1271,8 +1271,8 @@ HTML이 원본이다. 이 파일은 중요한 텍스트만 모은 검수용 투�
 - `line.1.vocabulary.1.ja` · JA: 似ている
 - `line.1.vocabulary.2.ko` · KO: 세부
 - `line.1.vocabulary.2.ja` · JA: 細部
-- `line.2.ko` · KO: 가장 눈에 띄는 건 그릇을 드느냐 마느냐예요.
-- `line.2.ja` · JA: いちばん目立つのは、器を持ち上げるかどうかです。
+- `line.2.ko` · KO: 가장 눈에 띄는 건 그릇을 드느냐 들지 않느냐예요.
+- `line.2.ja` · JA: いちばん目立つのは、器を持ち上げるか持ち上げないかです。
 - `line.2.highlight.1.ko` · KO: 그릇
 - `line.2.highlight.2.ko` · KO: 드
 - `line.2.vocabulary.1.ko` · KO: 그릇
@@ -2052,7 +2052,7 @@ HTML이 원본이다. 이 파일은 중요한 텍스트만 모은 검수용 투�
 ### 고급
 
 - source: `sandbox/drafts/kr/tracks/4-freetalking/courses/talk-between-two-countries-advanced/lessons/06-workplace-culture/lesson.html`
-- sha256: `8b4b4631b01574710ec1203c1b75bee560377d75c20a474a534490c953aded5d`
+- sha256: `53ca22b4fa39a5c4df91df8f07979329c3a4149abb96c48e3118423b6b6ea0f0`
 - source kind: `article`
 
 #### `metadata`
@@ -2079,8 +2079,8 @@ HTML이 원본이다. 이 파일은 중요한 텍스트만 모은 검수용 투�
 - `source.intro.ko` · KO: 수업 전에 읽으면서 궁금한 거 있었어요? 있으면 그 문장을 눌러 주세요. 같이 볼게요.
 - `source.intro.ja` · JA: 授業前に読んでいて気になったことはありましたか？ あればその文を押してください。一緒に見てみましょう。
 - `source.tutorGuidance.ko` · KO: 질문이 없으면 오래 붙잡지 마세요. 안 읽고 왔으면 여기서 한 번 훑고 넘어갑니다.
-- `line.1.ko` · KO: 회사 분위기를 만드는 건 규정집이 아니라 작은 습관이에요.
-- `line.1.ja` · JA: 会社の雰囲気を作るのは、規程集ではなく小さな習慣です。
+- `line.1.ko` · KO: 회사 분위기를 만드는 건 규정이 아니라 작은 습관이에요.
+- `line.1.ja` · JA: 会社の雰囲気を作るのは、規則ではなく小さな習慣です。
 - `line.1.highlight.1.ko` · KO: 분위기
 - `line.1.highlight.2.ko` · KO: 습관
 - `line.1.vocabulary.1.ko` · KO: 분위기
