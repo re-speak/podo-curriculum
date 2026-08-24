@@ -196,6 +196,7 @@ LANGUAGES = {
     "kr": {
         "dir": "korean-jp",
         "nav": "한국어",
+        "langKey": "ko",
         "title": {"ko": "커리큘럼 카탈로그 · PODO 한국어",
                   "ja": "カリキュラム・カタログ · PODO 韓国語",
                   "en": "Curriculum catalog · PODO Korean"},
@@ -225,6 +226,7 @@ LANGUAGES = {
     "en": {
         "dir": "english-jp",
         "nav": "English",
+        "langKey": "en",
         "title": {"ko": "커리큘럼 카탈로그 · PODO 영어",
                   "ja": "カリキュラム・カタログ · PODO 英語",
                   "en": "Curriculum catalog · PODO English"},
@@ -470,12 +472,20 @@ def lesson_entry(course: model.Course, lesson: model.Lesson, deck_hrefs: dict,
 
     # 낱자를 가르치는 과. 배우는 것은 글자 그 자체라, 낱자는 한 덩어리로 묶어 하나의
     # 칸에 넣는다 — 그 과가 얹는 글자 묶음이 하나의 배울 거리이지, 아홉 개가 아니다.
+    entry_chips_ja = None
     letters = teaches.get("letters")
     if letters:
         chips = [" ".join(str(x) for x in letters)]
         chips += [str(c) for c in (teaches.get("concepts") or [])]
     else:
         chips = [str(x) for x in (teaches.get("patterns") or [])]
+        # 패턴 자체는 배우는 한국어라 번역하지 않는다. 몇몇 줄에 붙은 설명·상호참조만
+        # 일본어를 따로 들고 있어서, 길이가 맞을 때만 통째로 갈아 끼운다.
+        pja = [str(x) for x in (teaches.get("patternsJa") or [])]
+        if pja and len(pja) == len(chips):
+            entry_chips_ja = pja
+        else:
+            entry_chips_ja = None
 
     entry = {
         "n": lesson.week,
@@ -492,10 +502,19 @@ def lesson_entry(course: model.Course, lesson: model.Lesson, deck_hrefs: dict,
         "decks": deck_hrefs.get(lesson.slug, []),
     }
 
+    if entry_chips_ja:
+        entry["chipsJa"] = entry_chips_ja
+
     can = teaches.get("canDo") or lesson.spec.get("outcome")
     if can:
         entry["can"] = str(can)
         entry["canLabel"] = CAN_LABEL.get(family["slug"], "")
+        # canDo 는 학습자가 말하는 문장이 아니라 "무엇을 할 수 있게 되는가" 의 설명이다.
+        # 일본어 화자가 읽는 자리라 일본어가 있어야 하고, 없으면 한국어가 그대로 남는다.
+        # 한글 트랙에서는 낱말 목록 뒤에 붙는 지시문만 옮긴다 — 낱말은 배우는 대상이다.
+        ja = teaches.get("canDoJa")
+        if ja:
+            entry["canJa"] = str(ja)
 
     # 덱이 스스로 말하는 목표와 질문. canDo 와 나란히 두되 대체하지는 않는다 —
     # canDo 는 커리큘럼이 적어 둔 목표이고, goal 은 학습자가 덱에서 실제로 읽는 문장이다.
@@ -521,9 +540,23 @@ def unit_entry(course: model.Course, no: int, decks: dict, family: dict) -> dict
         lesson_entry(course, l, decks, level, family)
         for l in sorted(course.lessons, key=lambda l: l.week)
     ]
+    # 코스 제목도 세 언어가 course.yaml 에 들어 있다. 트랙 이름을 떼는 일은 언어마다
+    # 접두사가 달라서 각각 따로 해야 한다.
+    titles = {}
+    for code in ("ko", "ja", "en"):
+        v = (spec.get("title") or {}).get(code)
+        if not v:
+            continue
+        v = str(v)
+        fam = f"{family.get(code) or family['ko']} · "
+        titles[code] = v[len(fam):] if v.startswith(fam) else v
+
     return {
+        # 숫자만 넘기고 "코스"는 화면에서 붙인다 — 표시 언어마다 단위가 다르다.
+        "no": no,
         "label": f"{no}{UNIT_WORD}",
         "title": title[len(prefix):] if title.startswith(prefix) else title,
+        "titles": titles,
         "subtitle": pick(spec.get("title"), "ja", "en"),
         "levels": [level],
         "level": level,
@@ -532,8 +565,8 @@ def unit_entry(course: model.Course, no: int, decks: dict, family: dict) -> dict
     }
 
 
-def track_entry(lang: str, no: int, family: dict,
-                units: list[dict], statuses: list[str]) -> dict:
+def track_entry(lang: str, no: int, family: dict, units: list[dict],
+                statuses: list[str], trial: bool = False) -> dict:
     """트랙 카드 하나, 그리고 그 트랙 페이지의 머리."""
     accent, tint = PALETTE[family["palette"]]
     lessons = [l for u in units for l in u["lessons"]]
@@ -547,6 +580,8 @@ def track_entry(lang: str, no: int, family: dict,
     return {
         "id": family["slug"],
         "no": no,
+        # 체험은 번호를 갖지 않는다 — 사다리의 한 칸이 아니라 그 앞에 놓인 맛보기다.
+        "trial": trial,
         "ko": family["ko"],
         "en": family["en"],
         "ja": family["ja"],
@@ -570,7 +605,8 @@ def track_entry(lang: str, no: int, family: dict,
         "total": len(lessons),
         "unitCount": len(units),
         "decks": [
-            {"n": l["n"], "title": l["title"], "href": d["href"], "level": d["level"]}
+            {"n": l["n"], "title": l["title"], "titles": l.get("titles") or {},
+             "href": d["href"], "level": d["level"], "slot": d["slot"]}
             for l in lessons for d in l["decks"]
         ],
     }
@@ -628,6 +664,8 @@ def nav_links(built: list[str], lang: str | None, up: str) -> list[dict]:
     않고, 탭만 남으면 404 로 간다."""
     links = [{
         "label": LANGUAGES[code]["nav"],
+        # i18n.json 의 locale 표에 이미 세 언어가 있다 — 화면이 거기서 골라 쓴다.
+        "langKey": LANGUAGES[code]["langKey"],
         "href": f"{up}{LANGUAGES[code]['dir']}/",
         "current": code == lang,
     } for code in LANGUAGES if code in built]
@@ -648,8 +686,12 @@ def build_language(out: pathlib.Path, lang: str, courses: list[model.Course],
 
     tracks, catalog_json = [], []
 
-    for no, order in enumerate(sorted(families), start=1):
+    no = 0
+    for order in sorted(families):
         family, in_track = families[order]
+        is_trial = family["slug"] == "trial"
+        if not is_trial:
+            no += 1
         # 트랙 안에서는 레벨이 곧 코스의 자리라 CLASS_LEVEL 순이 그대로 목차 순서가 된다.
         in_track.sort(key=lambda c: (float(c.spec["classLevel"]), c.slug))
 
@@ -685,14 +727,17 @@ def build_language(out: pathlib.Path, lang: str, courses: list[model.Course],
                     write_viewer(out, base, course, lesson, deck,
                                  family, lang, built, *PALETTE[family["palette"]])
 
-        tracks.append(track_entry(lang, no, family, units, statuses))
+        tracks.append(track_entry(lang, 0 if is_trial else no, family, units,
+                                  statuses, trial=is_trial))
 
     # 사다리의 축은 이 페이지의 트랙이 실제로 쓰는 눈금만 세운다.
     used = {lv for tr in tracks for lv in tr["span"]}
     axis = [lv for lv in LEVEL_ORDER[lang] if lv in used]
     ramp = level_ramp(axis)
 
-    nav = [{"id": tr["id"], "no": tr["no"], "ko": tr["ko"], "accent": tr["accent"]}
+    # 탭에 트랙 이름이 그대로 뜬다 — 세 언어를 다 실어야 표시 언어를 따라간다.
+    nav = [{"id": tr["id"], "no": tr["no"], "ko": tr["ko"], "ja": tr["ja"],
+            "en": tr["en"], "accent": tr["accent"], "trial": tr.get("trial", False)}
            for tr in tracks]
 
     lessons = sum(tr["total"] for tr in tracks)
@@ -709,7 +754,7 @@ def build_language(out: pathlib.Path, lang: str, courses: list[model.Course],
             "kicker": cfg["kicker"],
             "lead": cfg["lead"],
             "h1": cfg["h1"],
-            "trackCount": len(tracks),
+            "trackCount": sum(1 for t in tracks if not t.get("trial")),
             "stats": [[len(tracks), "tracksH"], [units, "unitWord"], [decks, "deckWord"]],
             "foot": cfg["foot"],
             "home": up or "./",
@@ -787,7 +832,7 @@ def build(out: pathlib.Path) -> dict:
 
     (out / "index.html").write_text(fill("home.html", {
         "languages": cards,
-        "nav": [{"label": LANGUAGES[c]["nav"],
+        "nav": [{"label": LANGUAGES[c]["nav"], "langKey": LANGUAGES[c]["langKey"],
                  "href": f"{LANGUAGES[c]['dir']}/"} for c in built]
                ,
     }), encoding="utf-8")
@@ -820,7 +865,7 @@ VIEWER = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google" content="notranslate">
 <meta name="theme-color" content="#ffffff">
-<title>{title} · {slot} · PODO</title>
+<title>{title} · PODO</title>
 <link rel="icon" href="{up}favicon.ico" sizes="any">
 <link rel="icon" href="{up}favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
@@ -852,32 +897,92 @@ VIEWER = """<!DOCTYPE html>
     font-size: 11px; font-weight: 800; }}
   .strip .plain {{ color: #62686e; font-size: 12.5px; font-weight: 650; }}
   .strip .plain:hover {{ color: #16181a; }}
+  .loc {{ display: flex; gap: 2px; padding: 2px; border: 1px solid #e3e7ea; border-radius: 4px; background: #fff; }}
+  .loc button {{ padding: 3px 8px; border: 0; border-radius: 2px; background: transparent;
+    color: #62686e; font: inherit; font-size: 11.5px; font-weight: 650; cursor: pointer; }}
+  .loc button:hover {{ color: #16181a; }}
+  .loc button[aria-pressed="true"] {{ background: #16181a; color: #fff; }}
   .stage {{ flex: 1 1 auto; min-height: 0; display: flex; justify-content: center; padding: 0 12px 18px; }}
   .stage iframe {{ width: 480px; max-width: 100%; height: 100%;
     border: 1px solid #e6e8ea; border-radius: 10px; background: #fff; box-shadow: 0 10px 34px rgba(0,0,0,.07); }}
 </style>
 </head>
 <body>
-<a class="podo-skip" href="#deck">본문으로 건너뛰기</a>
+<a class="podo-skip" href="#deck" data-i18n="ui.skip">본문으로 건너뛰기</a>
 <header class="podo-bar">
   <div class="podo-bar__inner">
     <a class="podo-brand" href="{home}"><img src="{up}favicon.svg" width="28" height="28" alt="">PODO Curriculum</a>
-    <nav class="podo-nav" aria-label="커리큘럼 탐색">
+    <nav class="podo-nav" data-i18n-label="ui.navLabel" aria-label="커리큘럼 탐색">
 {nav}
     </nav>
   </div>
 </header>
 <div class="strip">
-  <a class="back" href="{course_href}">← {course}</a>
-  <span class="t">{week:02d} · {title} <em>{sub}</em></span>
+  <a class="back" href="{course_href}">← <span id="course"></span></a>
+  <span class="t">{week:02d} · <span id="title"></span> <em id="sub"></em></span>
   <span class="right">
-    <span class="slot">{slot}</span>
-    <a class="plain" href="{deck}" target="_blank" rel="noopener">전체 화면 ↗</a>
+    <span class="slot" id="slot"></span>
+    <a class="plain" href="{deck}" target="_blank" rel="noopener"><span data-i18n="ui.fullScreen">전체 화면</span> ↗</a>
+    <span class="loc" id="loc" role="group"></span>
   </span>
 </div>
 <div class="stage">
-  <iframe id="deck" src="{deck}" title="{title} · {slot}"></iframe>
+  <iframe id="deck" src="{deck}" title="{title}"></iframe>
 </div>
+<script>
+  /* 표시 언어. 카탈로그의 나머지와 같은 규칙이고 같은 키를 읽는다 — 카탈로그에서
+     일본어로 보던 사람이 덱을 열었을 때 액자만 한국어로 돌아가면 안 된다. */
+  (function () {{
+    var D = {data};
+    var I18N = D.i18n, LOCALES = ["ko", "ja", "en"], KEY = "podo-catalog-locale";
+    var L = "ja";
+    try {{ var v = localStorage.getItem(KEY); if (LOCALES.indexOf(v) >= 0) L = v; }} catch (e) {{}}
+    function tr(sec, key) {{
+      var row = (I18N[sec] || {{}})[key] || {{}};
+      return row[L] || row.ko || "";
+    }}
+    function loc(o) {{ return !o ? "" : (o[L] || o.ko || o.en || o.ja || ""); }}
+    function paint() {{
+      document.documentElement.lang = L;
+      document.querySelectorAll("[data-i18n]").forEach(function (el) {{
+        var p = el.getAttribute("data-i18n").split("."), v = tr(p[0], p[1]);
+        if (v) el.textContent = v;
+      }});
+      document.querySelectorAll("[data-i18n-label]").forEach(function (el) {{
+        var p = el.getAttribute("data-i18n-label").split("."), v = tr(p[0], p[1]);
+        if (v) el.setAttribute("aria-label", v);
+      }});
+      document.querySelectorAll("[data-lang-key]").forEach(function (el) {{
+        var v = (I18N.locale[el.getAttribute("data-lang-key")] || {{}})[L];
+        if (v) el.textContent = v;
+      }});
+      var name = loc(D.titles) || D.title;
+      var slot = tr("ui", D.slot === "prestudy" ? "slotPrestudy" : "slotLecture");
+      document.getElementById("course").textContent = loc(D.course);
+      document.getElementById("title").textContent = name;
+      // 부제는 일본어 제목이라, 일본어로 볼 때는 제목 그 자체다.
+      document.getElementById("sub").textContent = (D.sub && D.sub !== name) ? D.sub : "";
+      document.getElementById("slot").textContent = slot;
+      document.title = name + " · " + slot + " · PODO";
+      var frame = document.getElementById("deck");
+      if (frame) frame.title = name + " · " + slot;
+      var bar = document.getElementById("loc");
+      bar.setAttribute("aria-label", tr("locale", "label"));
+      bar.innerHTML = LOCALES.map(function (c) {{
+        return '<button type="button" data-loc="' + c + '" aria-pressed="' + (c === L) + '">'
+          + ((I18N.locale[c] || {{}})[c] || c) + '</button>';
+      }}).join("");
+    }}
+    document.getElementById("loc").addEventListener("click", function (e) {{
+      var b = e.target.closest("button[data-loc]");
+      if (!b || b.dataset.loc === L) return;
+      L = b.dataset.loc;
+      try {{ localStorage.setItem(KEY, L); }} catch (err) {{}}
+      paint();
+    }});
+    paint();
+  }})();
+</script>
 <script>
   /* 덱 파일은 룸에서 열리는 그대로라 손대지 않는다 — 액자 안에서 막대만 감춘다.
 
@@ -923,19 +1028,26 @@ def write_viewer(out, base, course, lesson, deck, family, lang, built,
         up=up,
         home=e(f"{up}index.html"),
         nav="\n".join(
-            '      <a{cls} href="{href}"{cur}>{label}</a>'.format(
+            '      <a{cls} href="{href}"{cur} data-lang-key="{key}">{label}</a>'.format(
                 cls=' class="podo-nav__optional"' if n.get("optional") else "",
                 href=e(n["href"]),
                 cur=' aria-current="page"' if n.get("current") else "",
+                key=e(n["langKey"]),
                 label=e(n["label"]),
             ) for n in links
         ),
-        course=e(family["ko"]),
         course_href=e(os.path.relpath(track_page, path.parent)),
         week=lesson.week,
         title=e(pick(lesson.spec.get("title"), "ko", "ja")),
-        sub=e(pick(lesson.spec.get("title"), "ja")),
-        slot=e(deck["level"]),
+        data=json.dumps({
+            "i18n": strings(),
+            "course": {c: family[c] for c in ("ko", "ja", "en") if family.get(c)},
+            "title": pick(lesson.spec.get("title"), "ko", "ja"),
+            "titles": {k: str(v) for k, v in (lesson.spec.get("title") or {}).items()
+                       if k in ("ko", "ja", "en") and v},
+            "sub": pick(lesson.spec.get("title"), "ja"),
+            "slot": deck["slot"],
+        }, ensure_ascii=False),
         accent=accent,
         tint=tint,
         deck=e(os.path.relpath(base / deck["entry"], path.parent)),

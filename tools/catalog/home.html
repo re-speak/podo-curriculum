@@ -202,12 +202,14 @@ let L = initialLocale();
 const tr = (sec, key) => ((I18N[sec] || {})[key] || {})[L] || ((I18N[sec] || {})[key] || {}).ko || "";
 const loc = o => !o ? "" : (typeof o === "string" ? o : (o[L] || o.ko || o.en || o.ja || ""));
 
+const langLabel = n => (n.langKey && (I18N.locale[n.langKey] || {})[L]) || n.label;
 function paintI18n() {
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const [sec, key] = el.getAttribute("data-i18n").split(".");
     const v = tr(sec, key); if (v) el.textContent = v;
   });
   document.documentElement.lang = L;
+  paintLangNav();
 }
 function paintLocaleBar() {
   const bar = document.getElementById("loc");
@@ -217,8 +219,10 @@ function paintLocaleBar() {
     `${esc((I18N.locale[c] || {})[c] || c)}</button>`).join("");
 }
 
-document.getElementById("nav").innerHTML = DATA.nav.map(n =>
-  `<a${n.optional ? ` class="podo-nav__optional"` : ""} href="${esc(n.href)}">${esc(n.label)}</a>`).join("");
+function paintLangNav() {
+  document.getElementById("nav").innerHTML = DATA.nav.map(n =>
+    `<a${n.optional ? ` class="podo-nav__optional"` : ""} href="${esc(n.href)}">${esc(langLabel(n))}</a>`).join("");
+}
 
 /* 카드는 courses/ 에서 센 값으로만 그린다 — 숫자와 말을 떼어 두어, 코스가 늘어도
    세 언어의 문장을 각각 고칠 일이 없다. */
