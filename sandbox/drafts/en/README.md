@@ -6,12 +6,12 @@ English is reserved for the target language itself. **No katakana readings at an
 
 **Goal:** take an adult beginner from first usable speaking frames to independent everyday and workplace conversation.
 
-> **Build status:** this folder is a curriculum specification plus its guardrails. **No lesson decks
-> exist yet.** [`BUILD-PLAN.md`](./BUILD-PLAN.md) is the ordered gap list; read it before proposing
-> work. Agents working here must read [`AGENTS.md`](./AGENTS.md) and
+> **Build status:** this folder is the live English authoring source. Derive current deck and course
+> counts from the tree; [`BUILD-PLAN.md`](./BUILD-PLAN.md) is a dated historical snapshot, not a
+> release ledger. Agents working here must read [`AGENTS.md`](./AGENTS.md) and
 > [`LESSON-CREATION-WORKFLOW.md`](./LESSON-CREATION-WORKFLOW.md) first.
 
-This folder adapts the teaching architecture in `korean/tracks/` to English. The central contract is the same:
+This folder adapts the teaching architecture in `../kr/tracks/` to English. The central contract is the same:
 
 > **One lesson, two reusable speaking patterns.** A pattern is a retrievable frame such as `Could you ___?`, not a grammar formula such as “modal + subject + verb.” Its slots may hold words, phrases, actions, or—at an appropriate level—clauses. The learner hears the frame in context, changes its slots, and retrieves it in conversation.
 
@@ -19,9 +19,9 @@ This folder adapts the teaching architecture in `korean/tracks/` to English. The
 
 | Track | Job | Size | Recommended point of use |
 | --- | --- | ---: | --- |
-| [`1-core-patterns`](./tracks/1-core-patterns/table-of-contents.md) | Build the main inventory of reusable speaking frames | 72 lessons · 144 patterns | Main sequence, Pre-A1 to B1+ |
-| [`2-contextual-english`](./tracks/2-contextual-english/table-of-contents.md) | Complete standalone Travel and Business tasks by combining Core language | 60 lessons · 120 patterns | Enter at low-intermediate; progress to B2–C1-bridge tasks |
-| [`3-freetalking`](./tracks/3-freetalking/table-of-contents.md) | Develop opinions, interaction, and fluency with recycled language | 24 graded launch topics · growing | Enter by topic prerequisite, from A2 |
+| [`1-core-patterns`](./tracks/1-core-patterns/table-of-contents.md) | Build the main inventory of reusable speaking frames | Derive from current TOC | Main sequence, Pre-A1 to B1+ |
+| [`2-contextual-english`](./tracks/2-contextual-english/table-of-contents.md) | Complete standalone Travel and Business tasks by combining Core language | Derive from current TOC | Enter at low-intermediate; progress to B2–C1-bridge tasks |
+| [`3-freetalking`](./tracks/3-freetalking/table-of-contents.md) | Develop opinions, interaction, and fluency with recycled language | Derive from current TOC | Enter by topic prerequisite, from A2 |
 
 The tracks become parallel after the opening stage. Core introduces frames in small exchanges;
 Contextual English combines them to complete larger practical situations; Freetalking retrieves

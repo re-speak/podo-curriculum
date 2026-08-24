@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
-"""Author and render paired Freetalking FT 107-121 balance-game decks.
+"""Render paired Freetalking FT 107-121 decks.
 
-Importing this module remains source-only. Repository and canonical-shell reads
-stay behind ``build``/``output_path``/``main`` so the reviewed language can be
-audited independently from rendering.
+This module retains the original balance-game data needed to assemble the deck
+shell. The current, human-reviewed topics and question pools live in
+``ft_content_overrides.py`` and are applied by ``ft_question_bank.apply``.
+Repository and canonical-shell reads stay behind ``build``/``output_path``/
+``main`` so importing the data remains side-effect free.
 """
 
 from __future__ import annotations
@@ -15,10 +17,10 @@ import sys
 
 try:
     from .ft_balance_games_content import ARTICLE_HEADS, ARTICLE_TAILS, QUESTION_POOLS
-    from .ft_balance_games_followups import FULL_FOLLOWUPS, RECIPROCAL_FOLLOWUPS
+    from .ft_balance_games_followups import FULL_FOLLOWUPS
 except ImportError:
     from ft_balance_games_content import ARTICLE_HEADS, ARTICLE_TAILS, QUESTION_POOLS
-    from ft_balance_games_followups import FULL_FOLLOWUPS, RECIPROCAL_FOLLOWUPS
+    from ft_balance_games_followups import FULL_FOLLOWUPS
 
 
 COURSE = "talk-balance-games"
@@ -143,20 +145,29 @@ def prompt(job, title, title_ja, accessible, accessible_ja, accessible_followups
     }
 
 
-def tutor_prompt(number, data):
-    """End each pool with a reciprocal learner-to-tutor exchange."""
-    accessible_followups, full_followups = RECIPROCAL_FOLLOWUPS[number]
+def closing_flip_prompt(number, data):
+    """Provide a safe base closer before the reviewed question bank is applied.
+
+    FT107-121 all have complete overrides, so this row is a render-stage
+    fallback rather than the semantic source. Keep it aligned with the track's
+    q6 ``flip it`` contract: it must never revive the retired reciprocal prompt.
+    """
+    del number, data
+    followups = (
+        "Which condition would matter most?",
+        "Would time, money, or another person change your mind?",
+    )
     return prompt(
-        "tutor",
-        "Hear your tutor's choice",
-        "チューターの選択を聞く",
-        "Ask your tutor which option they would choose and why.",
-        "チューターならどちらを選ぶか、その理由も聞いてください。",
-        accessible_followups,
-        full="Ask your tutor which option they would choose and why.",
-        full_ja="チューターならどちらを選ぶか、その理由も聞いてください。",
-        full_followups=full_followups,
-        safety="reciprocal-tutor-answer",
+        "flip",
+        "What could change your mind?",
+        "考えが変わる条件",
+        "Now the opposite — what could make you choose the other option?",
+        "では逆に、どんなことがあれば、もう一方を選びますか？",
+        followups,
+        full="Now the opposite — what could make you choose the other option?",
+        full_ja="では逆に、どんなことがあれば、もう一方を選びますか？",
+        full_followups=followups,
+        safety="closing-flip",
     )
 
 
@@ -307,7 +318,7 @@ def topic_prompts(number, data):
         changes = FINAL_ONE_HEARING_REPAIRS.get((number, item["job"]))
         if changes:
             item.update(**changes)
-    return tuple(pool) + (tutor_prompt(number, data),)
+    return tuple(pool) + (closing_flip_prompt(number, data),)
 
 
 RAW_TOPICS = {
@@ -539,8 +550,9 @@ def output_path(topic_number, variant):
     return new_lesson.ENGLISH / "tracks" / "3-freetalking" / "courses" / course / "lessons" / f"{topic_number:02d}-{slug}" / "lesson.html"
 
 
-def _set_complete(head: str) -> str:
-    marker = '<meta name="podo:proofread-status" content="complete">'
+def _set_review_pending(head: str) -> str:
+    """A generated deck must earn a new hash-bound human review."""
+    marker = '<meta name="podo:proofread-status" content="pending">'
     head = re.sub(r'\n\s*<meta name="podo:proofread-status" content="(?:pending|complete)">', "", head)
     title_ja = re.search(r'(^\s*<meta name="podo:title-ja" content="[^"]*">\n)', head, re.MULTILINE)
     if not title_ja:
@@ -567,7 +579,7 @@ def _question_page(page_id, number, item, variant, base):
     return base.page(page_id, item["title"], item["title_ja"], body)
 
 
-def build(topic_number, variant):
+def _build_variant(topic_number, variant):
     if topic_number not in TOPIC_NUMBERS or variant not in VARIANTS:
         raise ValueError((topic_number, variant))
     base, new_lesson = _render_dependencies()
@@ -581,7 +593,7 @@ def build(topic_number, variant):
         level="B1 accessible" if variant == "accessible" else "C1 full",
         title=data["title"], title_ko=data["ko"], title_ja=data["ja"], version="2026-08-21",
     )
-    head = _set_complete(head)
+    head = _set_review_pending(head)
     head = base.set_meta(head, "podo:vocabulary-status", "reviewed")
     for category in ("new", "recycled", "assumed", "receptive"):
         head = base.set_meta(head, f"podo:vocabulary:{category}", _vocabulary_meta(VOCABULARY[topic_number][category]))
@@ -600,6 +612,16 @@ def build(topic_number, variant):
     pages.append(base.extract_page(canonical, "feedback"))
     import ft_question_bank  # noqa: PLC0415
     return ft_question_bank.apply(new_lesson.redepth(head + "\n".join(pages) + foot, output_path(topic_number, variant)), topic_number, variant)
+
+
+def build(topic_number, variant):
+    """Build one deck and enforce the Full-first pair contract in memory."""
+    source = _build_variant(topic_number, variant)
+    if variant != "accessible":
+        return source
+    import ft_question_bank  # noqa: PLC0415
+    full = _build_variant(topic_number, "full")
+    return ft_question_bank.normalize_accessible_pair(full, source, topic_number)
 
 
 def main() -> int:

@@ -232,11 +232,12 @@ and `Pre-A1` as the band exempt from the teaching-set variation rule.
 
 ## Getting a lesson to production
 
-**English is live.** As of 2026-08-21 there are 47 enabled courses under `courses/en/` carrying
-425 promoted lessons, and a merge to `main` changes what an English learner sees in class. This
-paragraph used to say deployment was not yet possible and that the generator must not create
-`lesson.yaml`; both were true when written and neither is true now. Treat an English change with
-the same care as a Korean one.
+**English is live.** Enabled courses and promoted lesson counts are derived state under
+`courses/en/`; inspect the current tree instead of copying a dated count into documentation. A
+merge to `main` changes what an English learner sees in class. This paragraph used to say
+deployment was not yet possible and that the generator must not create `lesson.yaml`; both were
+true when written and neither is true now. Treat an English change with the same care as a Korean
+one.
 
 Two constraints are already fixed and worth knowing before anyone designs around them, both from
 `../kr/AGENTS.md`:
@@ -253,7 +254,9 @@ Two constraints are already fixed and worth knowing before anyone designs around
 collide across languages even where they coincide. Do not add it to `course.yaml`: the consuming
 repository derives `EN` from the destination directory. This tree is the source — there is no sync
 step any more. A verified course reaches learners by being named in `promotion.yaml` and
-promoted into `courses/en/` with `tools/promote.py`.
+promoted into `courses/en/` by passing that exact manifest to `tools/promote.py`, followed by the
+exact `en/<course-slug>` key to `tools/repoint-shared.py`. Omitting those positional arguments is a
+full-repository regeneration and repoint, not the normal single-course workflow.
 
 ### Catalogue names: three languages, always
 
