@@ -31,6 +31,37 @@
   box-shadow: none;
 }
 
+/* ---------- free memo on full-screen surfaces ----------
+   A brand or transition page is one composed picture. The shared memo runtime
+   therefore marks its textarea as a dock instead of inserting another child
+   into the centred flex stack. Brand pages keep it at the quiet top edge;
+   transition pages keep it above the pager, away from the corner yomi switch.
+
+   Long free memos remain readable but stop growing before they cover the page's
+   actual message. A readonly learner can scroll the textarea just as the tutor
+   can while writing. The ordinary learning-page memo is intentionally uncapped. */
+.brand-page > .note-input--dock,
+.transition-page > .note-input--dock {
+  position: absolute;
+  z-index: 4;
+  left: 30px;
+  right: 30px;
+  max-height: min(132px, 24vh);
+  overflow-y: auto;
+}
+
+.brand-page > .note-input--dock { top: 24px; }
+
+.brand-page.bleed > .note-input--dock {
+  top: 20px;
+  left: 20px;
+  right: 20px;
+}
+
+.transition-page > .note-input--dock {
+  bottom: var(--pager-clearance);
+}
+
 /* mascot as a white sticker so the lime body reads on the lime page. 체험 장들은
    더 이상 이걸 쓰지 않는다(아래 .brand-art.study) — 리포트 캡처 원형만 남아 있다. */
 .brand-mascot {
@@ -1766,6 +1797,16 @@ body:not(.no-yomi) .sent-more .yomi + .translation { margin-top: 7px; }
   /* 여백은 없다 — 라임은 좁은 기기에서도 화면째다. 안쪽 여백만 줄인다. */
   .brand-page {
     padding: 36px 22px;
+  }
+
+  .brand-page:not(.bleed) > .note-input--dock {
+    left: 22px;
+    right: 22px;
+  }
+
+  .transition-page > .note-input--dock {
+    left: 22px;
+    right: 22px;
   }
 
   .brand-title {
