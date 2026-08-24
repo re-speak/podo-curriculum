@@ -285,6 +285,11 @@ steps:
 
         # 두 언어 공용. --all 이 아니라 초안만 본다.
         run "덱 정적 검사(두 언어)" python3 tools/authoring/check_deck.py sandbox/drafts
+        run "프리토킹 질문 계약"      python3 tools/authoring/check_freetalk_questions.py
+        run "FT 생성·교정 회귀 검사"  python3 -m unittest \
+          tools.authoring.test_check_freetalk_questions \
+          tools.authoring.test_page_review \
+          tools.authoring.en.test_ft_question_bank
         run "영어 코퍼스 무결성"    python3 tools/authoring/en/corpus_integrity.py
 
         # 한국어 전용. 판정을 내리는 검사만 게이트에 넣는다 —
