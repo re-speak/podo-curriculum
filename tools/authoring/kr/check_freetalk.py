@@ -12,6 +12,7 @@ blueprint changes, change PROFILE in the same commit — and sample-lesson.html
 too. The three are one spec in three forms.
 
     python3 tools/authoring/kr/check_freetalk.py              # blocking + warnings
+    python3 tools/authoring/kr/check_freetalk.py <deck…>      # named decks
     python3 tools/authoring/kr/check_freetalk.py --warnings   # show soft findings
     python3 tools/authoring/kr/check_freetalk.py --write-baseline
 
@@ -26,7 +27,9 @@ from collections import defaultdict
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[3]
-TRACK = REPO / "sandbox/drafts/kr/tracks/4-freetalking"
+KR = REPO / "sandbox/drafts/kr"
+TRACKS = KR / "tracks"
+TRACK = TRACKS / "4-freetalking"
 BASELINE = Path(__file__).resolve().parent / "freetalk-baseline.json"
 
 PROFILE = {
@@ -221,9 +224,25 @@ def audit(deck: Path, baseline: dict) -> tuple[list[str], list[str]]:
     return err, warn
 
 
-def level_pairs() -> list[tuple[str, Path, Path]]:
+def deck_paths(paths, every) -> list[Path]:
+    """check_deck.py’s argument shape. A bare name that is no path on disk is a
+    track under sandbox/drafts/kr/tracks — the form kr/AGENTS.md advertises."""
+    roots = [KR] if every else [
+        Path(p).resolve() if Path(p).exists() else TRACKS / p for p in paths] or [TRACK]
+    out = []
+    for r in roots:
+        if r.is_dir():
+            out += sorted(r.rglob("lesson.html"))
+        elif r.exists():
+            out.append(r)
+        else:
+            print(f"! no such path: {r}", file=sys.stderr)
+    return out
+
+
+def level_pairs(decks: list[Path]) -> list[tuple[str, Path, Path]]:
     seen = defaultdict(dict)
-    for d in sorted(TRACK.glob("courses/*/lessons/*/lesson.html")):
+    for d in decks:
         course, lesson = d.parts[-4], d.parts[-2]
         for suf, lv in (("-advanced", "adv"), ("-intermediate", "int")):
             if course.endswith(suf):
@@ -233,17 +252,22 @@ def level_pairs() -> list[tuple[str, Path, Path]]:
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser()
+    ap = argparse.ArgumentParser(description=__doc__,
+                                 formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("paths", nargs="*", help="deck files, directories, or track names")
+    ap.add_argument("--all", action="store_true", help="every Korean deck in the repo")
     ap.add_argument("--warnings", action="store_true", help="print soft findings")
     ap.add_argument("--write-baseline", action="store_true",
                     help="record decks exempt from the pending-backfill rules")
     args = ap.parse_args()
 
-    decks = sorted(TRACK.glob("courses/*/lessons/*/lesson.html"))
+    decks = deck_paths(args.paths, args.all)
 
     if args.write_baseline:
         out = {}
-        for d in decks:
+        # the baseline is the whole track's exemption list — writing it from a
+        # subset would silently un-exempt every deck that was not named
+        for d in sorted(TRACK.rglob("lesson.html")):
             src = COMMENT.sub("", d.read_text(encoding="utf-8"))
             pages = page_map(src)
             ex = []
@@ -269,7 +293,7 @@ def main() -> int:
         errs += len(e)
         warns += len(w)
         if e or (w and args.warnings):
-            print(f"\n{d.relative_to(TRACK)}")
+            print(f"\n{d.relative_to(TRACK) if d.is_relative_to(TRACK) else d}")
             for x in e:
                 print(f"  ✗ {x}")
             if args.warnings:
@@ -278,7 +302,7 @@ def main() -> int:
 
     # soft: a 중급 deck that never simplified its 고급 sibling
     stale, shared = [], []
-    for name, adv, itm in level_pairs():
+    for name, adv, itm in level_pairs(decks):
         def vocab(p):
             t = COMMENT.sub("", p.read_text(encoding="utf-8"))
             pm = page_map(t)

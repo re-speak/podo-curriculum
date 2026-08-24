@@ -922,6 +922,109 @@ class DeckCheckTests(unittest.TestCase):
         self.assertEqual(check_deck.choice_branch_coverage_issues(pages), [])
 
     @staticmethod
+    def _choose_page(slots, *, container="choose-list", options=("이", "가")):
+        """Build a two-option choose page whose correct slot follows `slots`."""
+        rows = ""
+        for index, slot in enumerate(slots):
+            pair = ""
+            for position, word in enumerate(options):
+                mark = " data-correct" if position == slot else ""
+                pair += (
+                    f'<span class="opt" data-sync-option="{word}"{mark}>{word}</span>'
+                )
+            rows += (
+                f'<div class="choose-row sentence" data-sync-id="row-{index}" '
+                f'data-sync-kind="selection" data-sync-state="chosen">'
+                f'<span class="choose-opts">{pair}</span></div>'
+            )
+        return {"p1-choose": f'<div class="{container}">{rows}</div>'}
+
+    def test_korean_choose_list_is_read_for_branch_coverage(self):
+        errors = check_deck.choice_branch_coverage_issues(self._choose_page([0, 0, 0]))
+        self.assertTrue(
+            any("every row has the same correct branch" in item for item in errors)
+        )
+
+    def test_korean_choose_list_accepts_both_branches_being_meaningful(self):
+        self.assertEqual(
+            check_deck.choice_branch_coverage_issues(self._choose_page([0, 1, 0])), []
+        )
+
+    def test_choice_position_rejects_a_constant_slot(self):
+        errors = check_deck.choice_position_issues(self._choose_page([0, 0, 0, 0]))
+        self.assertTrue(
+            any("on the left in every row (left left left left)" in item
+                for item in errors)
+        )
+
+    def test_choice_position_rejects_strict_alternation_the_branch_rule_allows(self):
+        pages = self._choose_page([1, 0, 1, 0])
+        # Both branches are exercised, so the branch rule is satisfied; the
+        # answer is still readable off the position alone.
+        self.assertEqual(check_deck.choice_branch_coverage_issues(pages), [])
+        errors = check_deck.choice_position_issues(pages)
+        self.assertTrue(
+            any("alternates slot on every row (right left right left)" in item
+                for item in errors)
+        )
+
+    def test_choice_position_accepts_an_irregular_sequence(self):
+        self.assertEqual(
+            check_deck.choice_position_issues(self._choose_page([0, 0, 1, 0])), []
+        )
+
+    def test_choice_position_reads_the_english_container_too(self):
+        errors = check_deck.choice_position_issues(
+            self._choose_page([0, 1, 0], container="word-choice-list",
+                              options=("a", "an"))
+        )
+        self.assertTrue(any("alternates slot" in item for item in errors))
+
+    def test_choice_position_declines_short_and_uneven_pages(self):
+        self.assertEqual(
+            check_deck.choice_position_issues(self._choose_page([0, 0])), []
+        )
+        uneven = self._choose_page([0, 0, 0])
+        uneven["p1-choose"] = uneven["p1-choose"].replace(
+            '<span class="choose-opts">',
+            '<span class="choose-opts"><span class="opt">또</span>', 1
+        )
+        self.assertEqual(check_deck.choice_position_issues(uneven), [])
+
+    def test_korean_pattern_deck_runs_the_variation_gates(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            deck = (
+                pathlib.Path(temporary)
+                / "sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-1"
+                / "lessons/01-test/lesson.html"
+            )
+            deck.parent.mkdir(parents=True)
+            rows = "".join(
+                f'<div class="model-line"><span class="korean">저는 {noun}'
+                f'<span class="ending">이에요</span>.</span>'
+                f'<span class="translation">私は{noun}です。</span></div>'
+                for noun in ("학생", "회사원", "선생님")
+            )
+            choose = self._choose_page([0, 0, 0, 0])["p1-choose"]
+            deck.write_text(
+                '<meta name="google" content="notranslate">'
+                '<meta name="podo:lesson-id" content="01-test">'
+                '<meta name="podo:level" content="초급">'
+                '<body>'
+                '<div class="section" data-page-id="p1-read">'
+                f'<div class="model-list">{rows}</div></div>'
+                f'<div class="section" data-page-id="p1-choose">{choose}</div>'
+                '</body>',
+                encoding="utf-8",
+            )
+            errors, _ = check_deck.check(deck)
+            self.assertTrue(any("differ in one word only" in item for item in errors))
+            self.assertTrue(any("in every row" in item for item in errors))
+            self.assertTrue(
+                any("same correct branch" in item for item in errors)
+            )
+
+    @staticmethod
     def _read_page(*sentences):
         lines = "".join(
             f'<div class="model-line"><span class="korean">'
@@ -953,6 +1056,11 @@ class DeckCheckTests(unittest.TestCase):
         )
         self.assertEqual(check_deck.exemplar_variation_issues(pages, level="Pre-A1"), [])
         self.assertTrue(check_deck.exemplar_variation_issues(pages, level="A1"))
+
+    def test_exemplar_set_exempts_the_korean_pre_generative_band(self):
+        pages = self._read_page("저는 학생이에요.", "저는 의사예요.", "저는 가수예요.")
+        self.assertEqual(check_deck.exemplar_variation_issues(pages, level="왕초급"), [])
+        self.assertTrue(check_deck.exemplar_variation_issues(pages, level="초급"))
 
     def test_exemplar_set_ignores_a_taught_page_and_short_sets(self):
         varied = self._read_page("It's cold.", "It's very cold today.")
@@ -1159,3 +1267,70 @@ class DeckCheckTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ExemplarFrameFixedMarkerTests(unittest.TestCase):
+    """A page may declare its frame is honestly fixed — deliberately, and on the record."""
+
+    def page(self, marker=""):
+        rows = "".join(
+            f'<div class="model-line"><span class="korean">저는 {noun} 아니에요.</span></div>'
+            for noun in ("회사원이", "대학생이", "가수가", "기자가")
+        )
+        return {"p1-read": f'data-page-id="p1-read"{marker}>{rows}'}
+
+    def test_a_one_word_swap_fails_without_the_marker(self):
+        errors = check_deck.exemplar_variation_issues(self.page(), level="초급")
+        self.assertEqual(len(errors), 1)
+        self.assertIn("differ in one word only", errors[0])
+
+    def test_the_marker_clears_it(self):
+        errors = check_deck.exemplar_variation_issues(
+            self.page(' data-exemplar-review="frame-fixed"'), level="초급"
+        )
+        self.assertEqual(errors, [])
+
+    def test_the_marker_is_exact_and_a_near_miss_does_not_count(self):
+        for near in (' data-exemplar-review="frame fixed"',
+                     ' data-exemplar-review=""',
+                     ' data-exemplar-review'):
+            self.assertEqual(
+                len(check_deck.exemplar_variation_issues(self.page(near), level="초급")), 1, near
+            )
+
+
+class LearnerReadsModelTests(unittest.TestCase):
+    """The tutor may not read a printed model before the learner does — either language."""
+
+    def page(self, ko):
+        return {"p1-read": (
+            'data-page-id="p1-read">'
+            f'<p class="section-subtitle"><span class="ko">{ko}</span>'
+            '<span class="ja">…</span></p>'
+        )}
+
+    def test_korean_tutor_first_fails(self):
+        for ko in ("제가 먼저 읽을게요. 따라 읽어 보세요.",
+                   "먼저 제가 읽어 볼게요.",
+                   "네 문장을 천천히 따라 읽어 보세요.",
+                   "제가 한 줄씩 읽을게요."):
+            with self.subTest(ko=ko):
+                self.assertEqual(len(check_deck.learner_reads_model_issues(self.page(ko))), 1)
+
+    def test_english_tutor_first_fails(self):
+        self.assertEqual(
+            len(check_deck.learner_reads_model_issues(self.page("I'll read each one first."))), 1
+        )
+
+    def test_inviting_the_learner_passes(self):
+        for ko in ("이번엔 네 문장을 한 줄씩 소리 내어 읽어 볼까요?",
+                   "이번엔 혼자 한 번 읽어 볼까요?",
+                   "Let's read each sentence aloud."):
+            with self.subTest(ko=ko):
+                self.assertEqual(check_deck.learner_reads_model_issues(self.page(ko)), [])
+
+    def test_only_read_pages_are_judged(self):
+        chunks = {"p1-teach": 'data-page-id="p1-teach"><p class="section-subtitle">'
+                              '<span class="ko">제가 먼저 읽을게요.</span>'
+                              '<span class="ja">…</span></p>'}
+        self.assertEqual(check_deck.learner_reads_model_issues(chunks), [])

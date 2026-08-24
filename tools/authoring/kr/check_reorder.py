@@ -14,6 +14,7 @@ at 초급 and <span class="choice" ...>말</span> at 중급. A non-greedy .*?</s
 therefore truncates the first shape at the INNER close. Spans are counted here
 instead, and .yomi subtrees are dropped with their text before comparing.
 """
+import argparse
 import re
 import sys
 import unicodedata
@@ -22,6 +23,8 @@ from itertools import permutations
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[3]
+KR = REPO / "sandbox/drafts/kr"
+TRACKS = KR / "tracks"
 SPAN = re.compile(r"<span\b[^>]*>|</span>")
 YOMI = re.compile(r'<span class="yomi">.*?</span>', re.S)
 SMALLYOMI = re.compile(r'<small class="yomi">.*?</small>', re.S)
@@ -82,10 +85,30 @@ def check(path):
     return problems
 
 
+def deck_paths(paths, every):
+    """check_deck.py’s argument shape. A bare name that is no path on disk is a
+    track under sandbox/drafts/kr/tracks — the form kr/AGENTS.md advertises."""
+    roots = [KR] if every else [
+        Path(p).resolve() if Path(p).exists() else TRACKS / p for p in paths] or [TRACKS]
+    out = []
+    for r in roots:
+        if r.is_dir():
+            out += sorted(r.rglob("lesson.html"))
+        elif r.exists():
+            out.append(r)
+        else:
+            print(f"! no such path: {r}", file=sys.stderr)
+    return out
+
+
 def main():
-    args = sys.argv[1:]
-    decks = [Path(a) for a in args] if args else sorted(
-        (REPO / "sandbox/drafts/kr/tracks").glob("*/courses/*/lessons/*/lesson.html"))
+    ap = argparse.ArgumentParser(description=__doc__,
+                                 formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("paths", nargs="*", help="deck files, directories, or track names")
+    ap.add_argument("--all", action="store_true", help="every Korean deck in the repo")
+    args = ap.parse_args()
+
+    decks = deck_paths(args.paths, args.all)
     bad = 0
     for d in decks:
         for sid, want, built in check(d):

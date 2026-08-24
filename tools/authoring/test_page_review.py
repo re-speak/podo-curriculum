@@ -293,3 +293,57 @@ class PageReviewTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class AuditClaimsTests(unittest.TestCase):
+    """A proofread claim is only as good as the ledger behind it."""
+
+    def build(self, tmp, *, status="complete", with_ledger=True, tamper=False):
+        root = pathlib.Path(tmp)
+        lesson = root / "tracks/t/courses/c/lessons/01-x/lesson.html"
+        lesson.parent.mkdir(parents=True)
+        lesson.write_text(
+            '<meta name="podo:review-id" content="CORE-1">'
+            f'<meta name="podo:proofread-status" content="{status}">'
+            '<div data-page-id="lesson-goal"></div>',
+            encoding="utf-8",
+        )
+        reviews = root / "page-reviews"
+        reviews.mkdir()
+        if with_ledger:
+            ledger = page_review.scaffold(lesson, reviews / "CORE-1.page-review.json")
+            for page in ledger["pages"]:
+                for field in page_review.REQUIRED_PAGE_FIELDS:
+                    page[field] = "reviewed in full"
+                page["visual360"] = page["visual480"] = "pass"
+                page["verdict"] = "pass"
+            for stage in page_review.PASS_STAGES:
+                ledger.setdefault("stages", {})[stage] = "pass"
+            if tamper:
+                ledger["lessonSha256"] = "0" * 64
+            page_review.write_json(reviews / "CORE-1.page-review.json", ledger)
+        return root / "tracks", reviews
+
+    def test_a_backed_claim_is_clean(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            lessons, reviews = self.build(tmp)
+            self.assertEqual(page_review.audit_claims(lessons, reviews), [])
+
+    def test_a_claim_with_no_ledger_is_reported(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            lessons, reviews = self.build(tmp, with_ledger=False)
+            problems = page_review.audit_claims(lessons, reviews)
+            self.assertEqual(len(problems), 1)
+            self.assertIn("no ledger points at this deck", problems[0])
+
+    def test_a_stale_ledger_does_not_back_the_claim(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            lessons, reviews = self.build(tmp, tamper=True)
+            problems = page_review.audit_claims(lessons, reviews)
+            self.assertEqual(len(problems), 1)
+            self.assertIn("ledger does not pass", problems[0])
+
+    def test_a_deck_that_claims_nothing_is_not_judged(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            lessons, reviews = self.build(tmp, status="pending", with_ledger=False)
+            self.assertEqual(page_review.audit_claims(lessons, reviews), [])

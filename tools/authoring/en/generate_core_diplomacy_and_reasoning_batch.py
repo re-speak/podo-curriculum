@@ -78,7 +78,7 @@ LESSONS = {
             ("{t}I'd want to see{/t} the evidence {t}before approving it{/t}.", "{t}承認する前に{/t}根拠を{t}確認したいです{/t}。", "I'd want to see|the evidence|before|approving it."),
             ("{t}I'd want to see{/t} the full plan {t}before choosing{/t}.", "{t}選ぶ前に{/t}案全体を{t}確認したいです{/t}。", "I'd want to see|the full plan|before|choosing."),
         ),
-        rules=(("Follow convinced with that plus the complete idea you doubt.", "convinced のあとに that と、疑問に思う内容を文で続けます。"), ("Put the evidence after see, then use before plus the -ing action.", "see のあとに根拠を置き、before と -ing 形でその後の判断を示します。")),
+        rules=(("Follow convinced with that plus the complete idea you doubt.", "convinced のあとに 「that」 と、疑問に思う内容を文で続けます。"), ("Put the evidence after see, then use before plus the -ing action.", "see のあとに根拠を置き、before と -ing 形でその後の判断を示します。")),
         prompt=("Respond to my proposal with a real doubt, or say that you are convinced.", "私の提案に本当の疑問を伝えるか、納得していると答えましょう。"),
     ),
     93: dict(
@@ -96,7 +96,7 @@ LESSONS = {
             ("{t}That said,{/t} the timing is still unclear.", "{t}とはいえ{/t}、時期はまだ不明です。", "That said,|the timing|is still|unclear."),
             ("{t}That said,{/t} the plan still needs approval.", "{t}とはいえ{/t}、その案にはまだ承認が必要です。", "That said,|the plan|still needs|approval."),
         ),
-        rules=(("Use To be fair before the point you are granting; did plus a plain verb adds emphasis.", "認める点の前に To be fair を置き、did と動詞の原形で「確かに」を強調します。"), ("Use That said at the start of the counterpoint that follows the concession.", "認めたあとに続く反対側の要点は、文頭の That said で始めます。")),
+        rules=(("Use To be fair before the point you are granting; did plus a plain verb adds emphasis.", "認める点の前に 「To be fair」 を置き、did と動詞の原形で「確かに」を強調します。"), ("Use That said at the start of the counterpoint that follows the concession.", "認めたあとに続く反対側の要点は、文頭の 「That said」 で始めます。")),
         prompt=("React to my opinion by conceding one point, or say that you fully agree.", "私の意見の一つの点を認めて返すか、全面的に賛成だと伝えましょう。"),
     ),
     94: dict(
@@ -114,7 +114,7 @@ LESSONS = {
             ("{t}What if we moved{/t} it to Friday?", "{t}金曜日に動かしてみたら{/t}どうですか？", "What if|we|moved it|to Friday?"),
             ("{t}What if we used{/t} the smaller room?", "{t}小さい会議室を使ってみたら{/t}どうですか？", "What if|we|used|the smaller room?"),
         ),
-        rules=(("After if we, use a past form to make the suggestion tentative, not past in time.", "if we のあとに過去形を使い、過去ではなく提案を控えめにします。"), ("What if we also takes a past form when you float an alternative.", "別案を持ち出す What if we のあとにも過去形を使います。")),
+        rules=(("After if we, use a past form to make the suggestion tentative, not past in time.", "「if we」 のあとに過去形を使い、過去ではなく提案を控えめにします。"), ("What if we also takes a past form when you float an alternative.", "別案を持ち出す 「What if we」 のあとにも過去形を使います。")),
         prompt=("Suggest one change to my plan, or say that the plan works as it is.", "私の案に変更を一つ提案するか、このままでよいと伝えましょう。"),
     ),
     95: dict(
@@ -132,7 +132,7 @@ LESSONS = {
             ("{t}I don't think{/t} that takes the extra work {t}into account{/t}.", "それが追加作業を{t}考慮に入れている{/t}とは{t}思いません{/t}。", "I don't think|that takes|the extra work|into account."),
             ("{t}I don't think{/t} that takes the risk {t}into account{/t}.", "それがリスクを{t}考慮に入れている{/t}とは{t}思いません{/t}。", "I don't think|that takes|the risk|into account."),
         ),
-        rules=(("Put the one area of disagreement after push back is on.", "反対する一つの領域を push back is on のあとに置きます。"), ("Use take into account, placing the missing factor between takes and into account.", "take into account を使い、見落とされた要素を takes と into account の間に置きます。")),
+        rules=(("Put the one area of disagreement after push back is on.", "反対する一つの領域を 「push back is on」 のあとに置きます。"), ("Use take into account, placing the missing factor between takes and into account.", "「take 「into account」」 を使い、見落とされた要素を takes と 「into account」 の間に置きます。")),
         prompt=("Question one part of my proposal, or say that you accept the whole proposal.", "私の提案の一部に異議を示すか、全体を受け入れると伝えましょう。"),
     ),
     96: dict(
@@ -150,7 +150,7 @@ LESSONS = {
             ("{t}What I was trying to say is that{/t} this is only a draft.", "{t}私が言おうとしていたのは{/t}、これは下書きにすぎないということです。", "What I was trying to say|is that|this is only a draft."),
             ("{t}What I was trying to say is that{/t} we should wait.", "{t}私が言おうとしていたのは{/t}、待つべきだということです。", "What I was trying to say|is that|we should wait."),
         ),
-        rules=(("Put the intended detail after meant and the mistaken detail after not.", "意図した情報を meant のあと、誤解された情報を not のあとに置きます。"), ("Keep What I was trying to say is that together, then add the intended clause.", "What I was trying to say is that をひとまとまりにして、本来の内容を文で続けます。")),
+        rules=(("Put the intended detail after meant and the mistaken detail after not.", "意図した情報を meant のあと、誤解された情報を not のあとに置きます。"), ("Keep What I was trying to say is that together, then add the intended clause.", "「What I was trying to say is that」 をひとまとまりにして、本来の内容を文で続けます。")),
         prompt=("Correct one detail people sometimes misunderstand, or say that nothing needs correcting.", "誤解されることのある情報を一つ直すか、訂正はないと伝えましょう。"),
     ),
     97: dict(
@@ -168,7 +168,7 @@ LESSONS = {
             ("{t}Could we discuss{/t} it {t}another time{/t}?", "{t}また別の機会に{/t}{t}話し合えますか{/t}？", "Could we|discuss it|another time?"),
             ("{t}Could we decide{/t} {t}another time{/t}?", "{t}また別の機会に{/t}{t}決められますか{/t}？", "Could we|decide|another time?"),
         ),
-        rules=(("After would rather not, use a plain verb without to.", "would rather not のあとには to を付けず、動詞の原形を使います。"), ("After Could we, use a plain verb and place another time after the activity.", "Could we のあとに動詞の原形を置き、活動のあとに another time を続けます。")),
+        rules=(("After would rather not, use a plain verb without to.", "would rather not のあとには to を付けず、動詞の原形を使います。"), ("After Could we, use a plain verb and place another time after the activity.", "「Could we」 のあとに動詞の原形を置き、活動のあとに 「another time」 を続けます。")),
         prompt=("Respond to my invitation honestly, or accept it if you want to join.", "私の誘いに正直に答えるか、参加したければ受けましょう。"),
     ),
     98: dict(
@@ -186,7 +186,7 @@ LESSONS = {
             ("{t}A lot of it comes from{/t} the old system.", "その多くは{t}古い仕組みから生じています{/t}。", "A lot of it|comes from|the old system."),
             ("{t}A lot of it comes from{/t} one missing step.", "その多くは{t}一つ抜けた手順から生じています{/t}。", "A lot of it|comes from|one missing step."),
         ),
-        rules=(("Use because of before a noun or -ing phrase, not before a complete subject-verb clause.", "because of のあとには名詞か -ing 句を置き、主語と動詞のある文は置きません。"), ("Keep comes from with the noun phrase that names the source.", "原因を示す名詞句の前では comes from をひとまとまりで使います。")),
+        rules=(("Use because of before a noun or -ing phrase, not before a complete subject-verb clause.", "「because of」 のあとには名詞か -ing 句を置き、主語と動詞のある文は置きません。"), ("Keep comes from with the noun phrase that names the source.", "原因を示す名詞句の前では 「comes from」 をひとまとまりで使います。")),
         prompt=("Explain one real cause, or say that you are not sure what caused it.", "実際の原因を一つ説明するか、原因は分からないと伝えましょう。"),
     ),
     99: dict(
@@ -204,7 +204,7 @@ LESSONS = {
             ("{t}That would explain{/t} the empty room.", "{t}それなら会議室が空だった理由を説明できます{/t}。", "That|would explain|the empty room."),
             ("{t}That would explain{/t} the missing replies.", "{t}それなら返事がなかった理由を説明できます{/t}。", "That|would explain|the missing replies."),
         ),
-        rules=(("Use suggests that before the inferred clause, not before a noun alone.", "推測した内容を文で続けるときは suggests that を使います。"), ("Use would explain for a tentative logical fit, not a future prediction.", "断定せず論理的に説明できると示すときに would explain を使います。")),
+        rules=(("Use suggests that before the inferred clause, not before a noun alone.", "推測した内容を文で続けるときは 「suggests that」 を使います。"), ("Use would explain for a tentative logical fit, not a future prediction.", "断定せず論理的に説明できると示すときに 「would explain」 を使います。")),
         prompt=("Interpret one real observation, or say that it does not suggest anything yet.", "実際の観察を一つ解釈するか、まだ何も示していないと伝えましょう。"),
     ),
     100: dict(
@@ -222,7 +222,7 @@ LESSONS = {
             ("We moved the meeting. {t}That meant{/t} two people couldn't join.", "会議を移しました。{t}そのため{/t}、二人が参加できませんでした。", "We moved the meeting.|That meant|two people|couldn't join."),
             ("We changed the plan. {t}That meant{/t} more work for the team.", "案を変更しました。{t}そのため{/t}、チームの作業が増えました。", "We changed the plan.|That meant|more work|for the team."),
         ),
-        rules=(("Put As a result at the start of a new result sentence after the cause is complete.", "原因の文を終え、結果を述べる新しい文の先頭に As a result を置きます。"), ("Use That meant plus a clause to state the practical consequence of the whole fact before it.", "前の事実全体がもたらした実際の結果を That meant と文で続けます。")),
+        rules=(("Put As a result at the start of a new result sentence after the cause is complete.", "原因の文を終え、結果を述べる新しい文の先頭に 「As a result」 を置きます。"), ("Use That meant plus a clause to state the practical consequence of the whole fact before it.", "前の事実全体がもたらした実際の結果を 「That meant」 と文で続けます。")),
         prompt=("Connect the late file to one possible result, or say that nothing changed.", "遅れたファイルを一つの結果につなげるか、何も変わらなかったと伝えましょう。"),
     ),
     101: dict(
@@ -240,7 +240,7 @@ LESSONS = {
             ("{t}Either way,{/t} the deadline stays the same.", "{t}どちらにしても{/t}、期限は変わりません。", "Either way,|the deadline|stays the same."),
             ("{t}Either way,{/t} I'll send the update.", "{t}どちらにしても{/t}、更新を送ります。", "Either way,|I'll send|the update."),
         ),
-        rules=(("Keep depends on whether together, then add the unresolved possibility as a clause.", "depends on whether をひとまとまりにして、未確定の可能性を文で続けます。"), ("Use Either way before the action or fact that is true in both possible outcomes.", "二つの可能性のどちらでも変わらない行動や事実の前に Either way を置きます。")),
+        rules=(("Keep depends on whether together, then add the unresolved possibility as a clause.", "「depends on whether」 をひとまとまりにして、未確定の可能性を文で続けます。"), ("Use Either way before the action or fact that is true in both possible outcomes.", "二つの可能性のどちらでも変わらない行動や事実の前に 「Either way」 を置きます。")),
         prompt=("Answer my real question conditionally, or give a clear yes or no if nothing is unresolved.", "私の質問に条件付きで答えるか、未確定な点がなければ、はっきり「はい／いいえ」で答えましょう。"),
     ),
     102: dict(
@@ -258,7 +258,7 @@ LESSONS = {
             ("{t}If that doesn't work, we could{/t} use the old plan.", "{t}それでうまくいかなければ{/t}、古い案を使えます。", "If that doesn't work,|we could use|the old plan."),
             ("{t}If that doesn't work, we could{/t} try another date.", "{t}それでうまくいかなければ{/t}、別の日を試せます。", "If that doesn't work,|we could try|another date."),
         ),
-        rules=(("Otherwise replaces the failed condition; keep would have to with the necessary consequence.", "Otherwise が満たされなかった条件を表し、would have to で必要になる結果を続けます。"), ("After If that doesn't work, use could plus a plain verb for a possible fallback.", "If that doesn't work のあとに could と動詞の原形を置き、可能な代案を示します。")),
+        rules=(("Otherwise replaces the failed condition; keep would have to with the necessary consequence.", "「Otherwise」 が満たされなかった条件を表し、「would have to」 で必要になる結果を続けます。"), ("After If that doesn't work, use could plus a plain verb for a possible fallback.", "「If that doesn't work」 のあとに could と動詞の原形を置き、可能な代案を示します。")),
         prompt=("Build a fallback chain, or explain why another fallback is not needed.", "代案を順につなげるか、別の代案が必要ない理由を説明しましょう。"),
     ),
 }

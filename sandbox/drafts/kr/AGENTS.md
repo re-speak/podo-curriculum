@@ -1,18 +1,48 @@
 # Working in `korean/`
 
-**Read [`ux-philosophy.md`](../ux-philosophy.md) before touching anything in this folder — every
-time, including small edits.** It is the contract for every lesson page: one activity per page,
-instant clarity, minimal everything, Korean-first titles, one blue tutor-script box, one boxed
-component that *fills* the page, receptive → productive.
+**Read [`../../../shared/ux-philosophy.md`](../../../shared/ux-philosophy.md) and
+[`../../../shared/deltas-kr.md`](../../../shared/deltas-kr.md) before touching anything in this
+folder — every time, including small edits.** The first is the language-neutral contract for
+every lesson page in this repo: one activity per page, instant clarity, minimal everything, one
+blue tutor-script box, one boxed component that *fills* the page, receptive → productive. The
+second holds everything that is Korean-specific — the level bands, the `.yomi` scaffold and its
+switch, the decoding arc, "romanize the parts", the citation marks, the agglutination allowance
+on reorder chunking, and the cream/pink consonant-vowel seats.
 
-Do not design a page, add a component, or write copy here until you have read it. If a change
-you are about to make conflicts with it, say so and ask — don't quietly deviate.
+Do not design a page, add a component, or write copy here until you have read both. If a change
+you are about to make conflicts with either, say so and ask — don't quietly deviate.
+
+**Where a new rule goes.** `ux-philosophy.md` used to be this curriculum's own file and English
+was an appendix to it. It is now shared, and a Korean learning no longer becomes a shared rule
+just by being written down. If a rule would be just as true of English, put it in
+`ux-philosophy.md`; if it follows from the target language being Korean, put it in
+`deltas-kr.md`; and either way check whether `deltas-en.md` needs the answering entry.
+
+## 3-contextual-korean 의 여섯 코스는 손으로 고치지 않는다
+
+`ctx-kpop-*` 넷과 `ctx-banmal-*` 둘, 60개 덱은 `render_contextual_course.py` 가
+만든다. 렌더러는 매번 덱의 `.phone` 본문을 통째로 다시 쓰므로, **덱을 손으로 고치면
+다음 렌더에서 아무 말 없이 사라진다.** `promote.py` 가 `courses/` 에 대해 갖는 관계와
+같지만, 이쪽은 그렇게 적혀 있지 않았다.
+
+실제로 사라졌다. PR #89 · #93 의 문구·말투 정리가 이 60개 덱을 손으로 고쳤고
+매니페스트에는 반영되지 않았다. 2026-08-23 에 이 코스들을 다시 렌더하자 그 수정
+약 290줄이 한꺼번에 되돌아갔다 — 뜻과 쓰임 120줄, 원어민 팁 39줄, 규칙 20줄,
+학습 목표 8줄, 그리고 렌더러 안에 문자열로 박혀 있던 페이지 대본 전부.
+
+되돌아간 것은 전부 매니페스트와 렌더러로 옮겨 담았다. 고치는 자리는 둘 중 하나다:
+
+- 한 과에만 해당하는 말 → `toc/<course>/authoring-manifest.json`
+- 모든 과에 같은 말 → `render_contextual_course.py` 의 페이지 대본
+
+덱을 고쳐서는 안 된다. 고쳤는지 확인하려면 렌더 전후를 비교한다 — 렌더가 지우는 줄이
+있으면 그 줄은 원래 매니페스트에 있어야 했던 것이다.
 
 ## Also true of this folder
 
-- **Shared design system:** `runtime/css/lesson-card.css`. White cards on a 1px grey outline; the
+- **Shared design system:** `../../../shared/css/lesson-card.css`. White cards on a 1px grey outline; the
   palette lives in `:root` there — **use the tokens, never the hex**. Per-track additions go in
-  that track's own stylesheet, loaded after it (e.g. `runtime/css/trial.css`). Reuse the existing
+  that track's own stylesheet, loaded after it (e.g. `../../../shared/css/trial.css`). Reuse the existing
   component vocabulary before inventing a new one — consistency over novelty.
 - **Every colour means one thing.** `green-500`/`green-100` = state (chosen, correct, active).
   `blue-100` = the tutor's spoken script. `lime` = brand chrome only, never state.
@@ -280,7 +310,7 @@ attributes and all, and there is nothing further to read. This is the normal cas
 why building a lesson out of the existing component vocabulary is cheaper *and* safer than
 inventing markup.
 
-**Read [`interaction-protocol.md`](./interaction-protocol.md) only when
+**Read [`interaction-protocol.md`](../../../shared/interaction-protocol.md) only when
 you are inventing a new interaction type** — a new `data-sync-kind`, a new way of sharing state,
 anything not already in the vocabulary. Getting it wrong there fails silently: the activity
 works on your screen and never reaches the other person. Packaging a deck into an uploadable

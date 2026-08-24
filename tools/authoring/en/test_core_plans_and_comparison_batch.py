@@ -9,6 +9,7 @@ import re
 import sys
 import unittest
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import check_deck
 import generate_core_course_batch as core
@@ -21,9 +22,18 @@ class CorePlansAndComparisonBatchTests(unittest.TestCase):
         self.assertEqual(set(batch.NUMBERS), set(range(37, 48)) - {45})
         self.assertEqual(set(batch.LESSONS), set(batch.NUMBERS))
         preserved = batch.TRACK / "courses" / batch.COURSE / "lessons/45-this-ones-cheaper/lesson.html"
+        # The pin moved twice, both to follow rules the owner approved after this
+        # golden was signed off:
+        #   1. 2026-08-22 — its `p1-choose` put the correct option left, right,
+        #      left, right, the shape `check_deck.choice_position_issues` now
+        #      refuses. One row's two options were swapped; invisible on screen.
+        #      Leaving it would have kept the banned pattern in the deck other
+        #      lessons are copied from.
+        #   2. 2026-08-23 — the approved shared activity scripts moved to the
+        #      invitational form the tutor-register standard asks for.
         self.assertEqual(
             hashlib.sha256(preserved.read_bytes()).hexdigest(),
-            "d754d974dea9671744cb56cc1a41743cbc0262fa108721ec7e61fc187de5f432",
+            "157baf80f48314295d44bf3c147a6362453aa254ba89d6e2c269c769e92d7552",
         )
 
     def test_every_semantic_field_is_explicit(self):

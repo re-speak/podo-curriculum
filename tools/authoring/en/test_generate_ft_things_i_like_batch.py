@@ -5,6 +5,12 @@ import hashlib
 import re
 import unittest
 
+import pathlib
+import sys
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+
 import check_deck
 import generate_ft_things_i_like_batch as batch
 import vocabulary

@@ -96,7 +96,9 @@ from itertools import permutations
 
 import vocabulary
 
-REPO = pathlib.Path(__file__).resolve().parents[3]
+REPO = pathlib.Path(__file__).resolve().parents[2]
+# `promote.py` gives each deck of a lesson its own directory.
+DECK_SLOTS = {"lecture", "prestudy"}
 
 EN_END = ".!?"
 JA_END = "。！？"
@@ -131,9 +133,9 @@ FREETALK_PAGES = [
 ]
 FREETALK_STYLE_EN = "Please choose your preferred discussion style."
 FREETALK_STYLE_JA = "希望する会話の進め方を選んでください。"
-REORDER_SCRIPT_EN = "Put the words in order, then say the whole sentence out loud."
+REORDER_SCRIPT_EN = "Let's put the words in order, then say the whole sentence out loud."
 REORDER_SCRIPT_JA = "単語を順番に並べて、文をまるごと声に出して言ってみましょう。"
-TRANSLATE_SCRIPT_EN = "Read the Japanese, then say it in English."
+TRANSLATE_SCRIPT_EN = "Let's read the Japanese, then say it in English."
 TRANSLATE_SCRIPT_JA = "日本語を見て、英語で言ってみましょう。"
 SPAN_TAG = re.compile(r"<span\b[^>]*>|</span>", re.I)
 SPAN_OPEN = re.compile(r"<span\b[^>]*>", re.I)
@@ -169,6 +171,19 @@ SLOT_INPUT = re.compile(r'<input\b[^>]*class="[^"]*\bslot-input\b')
 CONTROL_TAG = re.compile(r'<(?:input|textarea)\b[^>]*>', re.I)
 GENERIC_AVATAR = re.compile(r'<span class="[^"]*\bavatar\b[^\"]*\bicon\b')
 TAG_OPEN = re.compile(r'<(?:div|span)\b[^>]*>', re.I)
+# The choice activity is one component under two names: English decks wrap it in
+# `word-choice-list`, Korean decks in `choose-list`. Everything inside — the
+# `choose-row` rows, the `opt` options, `data-correct` — is identical, so every
+# rule that reads a choice page accepts either container.
+CHOICE_LIST = re.compile(r'class="[^"]*\b(?:word-choice-list|choose-list)\b')
+DATA_CORRECT = re.compile(r"\bdata-correct(?:\s|>|=)")
+# Tracks whose decks teach one pattern per lesson and therefore carry the
+# `p1/p2` read-and-choose arc these rules read. Korean numbers its tracks from
+# the alphabet, English from the first pattern course, so the names differ.
+PATTERN_TRACKS = {
+    "1-core-patterns", "2-contextual-english",      # sandbox/drafts/en
+    "2-core-patterns", "3-contextual-korean",       # sandbox/drafts/kr
+}
 GENERIC_CORE_FREETALK = re.compile(
     r"\b(?:use (?:both|the) (?:comparison )?patterns?|give the status|"
     r"ask the tutor|tutor's real answer)\b",
@@ -519,7 +534,7 @@ def choice_branch_coverage_issues(page_chunks):
     """
     errors = []
     for page_id, chunk in page_chunks.items():
-        if not re.fullmatch(r"p[12]-choose", page_id) or "word-choice-list" not in chunk:
+        if not re.fullmatch(r"p[12]-choose", page_id) or not CHOICE_LIST.search(chunk):
             continue
         correct = []
         for match in SPAN_OPEN.finditer(chunk):
@@ -528,7 +543,7 @@ def choice_branch_coverage_issues(page_chunks):
             }
             if (
                 "opt" not in attrs.get("class", "").split()
-                or not re.search(r"\bdata-correct(?:\s|>|=)", match.group(0))
+                or not DATA_CORRECT.search(match.group(0))
             ):
                 continue
             correct.append(plain_text(span_body(chunk, match.end())).casefold())
@@ -540,7 +555,124 @@ def choice_branch_coverage_issues(page_chunks):
     return errors
 
 
+def choice_row_correct_slots(chunk):
+    """Return which slot holds the correct option in each row, in page order.
+
+    A row is any element carrying the `choose-row` class; its options are the
+    `opt` spans between it and the next row.  Returns None — decline to judge —
+    unless every row is a clean two-way choice with exactly one correct option,
+    because a page mixing widths has no single "position" to be predictable in.
+    """
+    starts = []
+    for match in TAG_OPEN.finditer(chunk):
+        attrs = {key.lower(): value for key, _, value in ATTRIBUTE.findall(match.group(0))}
+        if "choose-row" in attrs.get("class", "").split():
+            starts.append(match.start())
+    slots = []
+    for index, start in enumerate(starts):
+        end = starts[index + 1] if index + 1 < len(starts) else len(chunk)
+        correct = []
+        for match in SPAN_OPEN.finditer(chunk, start, end):
+            attrs = {
+                key.lower(): value for key, _, value in ATTRIBUTE.findall(match.group(0))
+            }
+            if "opt" in attrs.get("class", "").split():
+                correct.append(bool(DATA_CORRECT.search(match.group(0))))
+        if len(correct) != 2 or sum(correct) != 1:
+            return None
+        slots.append(correct.index(True))
+    return slots
+
+
+# The tutor announcing they will read the visible model first, in either
+# language. English's own `pilot_operating_issues` already refuses this, but it
+# refuses it with an English regex, so the rule stopped at the language border —
+# and Korean spent a week with three different answers for one page type.
+TUTOR_READS_MODEL = re.compile(
+    r"\bI(?:['’]ll| will) read\b"
+    r"|제가\s*(?:먼저\s*)?(?:한\s*줄씩\s*)?읽"
+    r"|먼저\s*제가\s*읽"
+    r"|따라\s*읽어",
+    re.I,
+)
+
+
+def learner_reads_model_issues(page_chunks):
+    """On a page whose models are already printed, the learner reads them.
+
+    Not the tutor first and the learner after. The model is visible and the
+    learner can decode it, so the first round spends class time re-doing what
+    the page already did — and `ux-philosophy.md` allows exactly two exceptions,
+    a sound the learner cannot yet produce and a dialogue where the two hold
+    different roles. Neither is a `-read` page: those are four printed model
+    sentences with nothing to distinguish and nobody to play.
+    """
+    errors = []
+    for page_id, chunk in page_chunks.items():
+        if not re.fullmatch(r"p[12]-read", page_id):
+            continue
+        subtitles = SUBTITLE.findall(chunk)
+        if not subtitles:
+            continue
+        spoken = SPAN_KO.search(subtitles[0][1])
+        if spoken and TUTOR_READS_MODEL.search(plain_text(spoken.group(1))):
+            errors.append(
+                f"{page_id}: the tutor reads the model before the learner — the "
+                "model is already on screen, so the learner reads it. Invite them "
+                "to read it themselves instead"
+            )
+    return errors
+
+
+def choice_position_issues(page_chunks):
+    """Require the answer to move down the page in a way position cannot predict.
+
+    A choice row asks the learner to read a sentence and decide.  The moment the
+    correct option sits in the same slot every time, the sentence stops being
+    read at all: the learner discovers on row two that the left pill is always
+    right and taps four times without looking, scoring full marks having learned
+    nothing.  `choice_branch_coverage_issues` does not catch this — it compares
+    the option *strings*, so a page can alternate two genuinely different
+    branches and still park the correct one on the left every row.
+
+    Alternating is the same defect one step later.  Left, right, left, right is
+    a rule the learner picks up just as fast, and picking it up is more
+    rewarding than reading, so it displaces the reading sooner.  Anything the
+    previous row does not predict is fine; the sequence does not have to be
+    random, only unlearnable at a glance.
+
+    Only two-option pages with three or more rows are judged: two rows cannot
+    establish a pattern, and a page whose rows differ in width has no consistent
+    position to be answerable by.
+    """
+    errors = []
+    for page_id, chunk in page_chunks.items():
+        if not re.fullmatch(r"p[12]-choose", page_id) or not CHOICE_LIST.search(chunk):
+            continue
+        slots = choice_row_correct_slots(chunk)
+        if slots is None or len(slots) < 3:
+            continue
+        sequence = " ".join(("left", "right")[slot] for slot in slots)
+        if len(set(slots)) == 1:
+            errors.append(
+                f"{page_id}: the correct option is on the {('left', 'right')[slots[0]]} "
+                f"in every row ({sequence}) — the page can be answered by position "
+                "without reading it. Move the correct option so its slot changes "
+                "down the page"
+            )
+        elif all(a != b for a, b in zip(slots, slots[1:])):
+            errors.append(
+                f"{page_id}: the correct option alternates slot on every row "
+                f"({sequence}) — position is still the answer, one step later. "
+                "Break the alternation so a row cannot be answered from the one "
+                "above it"
+            )
+    return errors
+
+
 EXEMPLAR_TOKEN = re.compile(r"[\w'’-]+|[^\w\s]")
+# Levels whose band is defined as pre-generative, in either track's vocabulary.
+PRE_GENERATIVE_LEVELS = {"pre-a1", "왕초급"}
 
 
 def exemplar_varying_regions(sentences):
@@ -580,10 +712,16 @@ def exemplar_variation_issues(page_chunks, *, level):
     lexically organised repertoire of situation-specific phrases" — it is a
     defect.
 
+    Korean decks do not band by CEFR; they band 왕초급 · 초급 · 초중급 · 중급 ·
+    중고급 · 고급. 왕초급 is that same pre-generative band under another name —
+    the learner is still assembling a rehearsed repertoire and has no slot to
+    generalise into — so it is exempt for the identical reason, and 초급 upward
+    is not.
+
     Only the `-read` pages are checked. `-teach` draws its examples from the
     same authored rows, so checking both would report one defect twice.
     """
-    if (level or "").strip().casefold() == "pre-a1":
+    if (level or "").strip().casefold() in PRE_GENERATIVE_LEVELS:
         return []
     errors = []
     for page_id, chunk in page_chunks.items():
@@ -597,6 +735,15 @@ def exemplar_variation_issues(page_chunks, *, level):
             continue
         varying = exemplar_varying_regions(sentences)
         if max(len(span) for span in varying) > 1:
+            continue
+        # A page may declare that its frame is honestly fixed, the same way a
+        # three-chip reorder declares `data-chunk-review="meaningful"`. The case
+        # this exists for is a first-course lesson whose only available subject
+        # is the first person: varying the frame there would spend grammar a
+        # later lesson owns, and the noun swap really is the lesson. Writing the
+        # marker is the author saying so on the record — it is not a way to make
+        # the check quiet, and a page that could vary its frame must.
+        if 'data-exemplar-review="frame-fixed"' in chunk:
             continue
         swapped = ", ".join(" ".join(span) or "—" for span in varying)
         errors.append(
@@ -1704,11 +1851,25 @@ def check(path):
     lesson_id = meta_content(html, "podo:lesson-id")
     if lesson_id is None:
         errs.append("missing podo:lesson-id")
-    elif "lessons" in path.parts and lesson_id != path.parent.name:
-        # The id must equal its directory only for a deck placed in a course, which
-        # is what the production importer reads. A track-root sample-lesson.html is
-        # a cut of the canonical trial deck and has no course directory to match.
-        errs.append(f"podo:lesson-id {lesson_id!r} != directory {path.parent.name!r}")
+    elif "lessons" in path.parts:
+        # The id must equal its lesson directory only for a deck placed in a
+        # course, which is what the production importer reads. A track-root
+        # sample-lesson.html is a cut of the canonical trial deck and has no
+        # course directory to match.
+        #
+        # A draft sits at `lessons/<slug>/lesson.html`, but `promote.py` writes
+        # each deck into its own slot — `lessons/<slug>/{lecture,prestudy}/
+        # index.html` — so under `courses/` the lesson directory is the
+        # grandparent. Comparing against the parent there called every promoted
+        # deck in the repo broken (1802 of them), which is how `--all` came to
+        # be unusable and why nothing ran the content gate over `courses/`.
+        owner = path.parent
+        if owner.name in DECK_SLOTS:
+            owner = owner.parent
+        # A trial source sits flat at `trial/lessons/<name>.html` with no
+        # directory of its own, so there is no lesson directory to disagree with.
+        if owner.name != "lessons" and lesson_id != owner.name:
+            errs.append(f"podo:lesson-id {lesson_id!r} != directory {owner.name!r}")
     review_id = meta_content(html, "podo:review-id")
     if is_english and not (review_id and re.fullmatch(r"(?:CORE|CTX|FT)-\d+", review_id)):
         errs.append("missing or invalid podo:review-id — use the stable TOC id")
@@ -1831,10 +1992,6 @@ def check(path):
             errs.extend(target_highlight_issues(page_chunks))
             errs.extend(controlled_target_alignment_issues(page_chunks))
             errs.extend(translation_support_issues(page_chunks))
-            errs.extend(choice_branch_coverage_issues(page_chunks))
-            errs.extend(exemplar_variation_issues(
-                page_chunks, level=meta_content(html, "podo:level")
-            ))
             errs.extend(core_production_issues(page_chunks))
             proofread_status = meta_content(html, "podo:proofread-status")
             if proofread_status == "pending":
@@ -1850,16 +2007,27 @@ def check(path):
             errs.extend(target_highlight_issues(page_chunks))
             errs.extend(controlled_target_alignment_issues(page_chunks))
             errs.extend(translation_support_issues(page_chunks))
-            errs.extend(choice_branch_coverage_issues(page_chunks))
-            errs.extend(exemplar_variation_issues(
-                page_chunks, level=meta_content(html, "podo:level")
-            ))
             errs.extend(contextual_production_issues(
                 page_chunks,
                 enforce_frame_boundaries=(
                     meta_content(html, "podo:curriculum-status") != "superseded"
                 ),
             ))
+
+    # ---- 0 · variation gates, both languages ------------------------------
+    # The pattern tracks of both languages write the same pages: `p1/p2-read`
+    # model rows in `<span class="korean">`, `p1/p2-choose` rows of `opt`
+    # options marked `data-correct`. Only the container class differs, which
+    # CHOICE_LIST absorbs, so these rules are language-neutral and run on
+    # every pattern deck rather than on the English ones alone.
+    if PATTERN_TRACKS.intersection(path.parts):
+        variation_chunks = dict(pages(html))
+        errs.extend(choice_branch_coverage_issues(variation_chunks))
+        errs.extend(choice_position_issues(variation_chunks))
+        errs.extend(learner_reads_model_issues(variation_chunks))
+        errs.extend(exemplar_variation_issues(
+            variation_chunks, level=meta_content(html, "podo:level")
+        ))
 
     # ---- 1 · tutor script sentence parity ---------------------------------
     for pid, chunk in pages(html):
@@ -1953,14 +2121,31 @@ def main():
         ap.error("give a path, or --all")
     for r in roots:
         if r.is_dir():
+            # `sandbox/archive/` is retired experiments — "not part of the read
+            # path: never cite one as precedent, never copy markup out of one".
+            # The exclusion named `_archive`, a directory that no longer exists,
+            # so 46 findings in retired files were counted against every run.
             targets += sorted(p for p in r.rglob("*.html")
-                              if "_archive" not in p.parts and p.name != "viewer.html")
+                              if not {"_archive", "archive"} & set(p.parts)
+                              and p.name != "viewer.html"
+                              and not p.name.startswith("_"))
         elif r.exists():
             targets.append(r)
         else:
             print(f"! no such path: {r}", file=sys.stderr)
 
     decks = [p for p in targets if PAGE_ID.search(p.read_text(encoding="utf-8"))]
+
+    # A deck marked `superseded` is kept as a record of a shape the curriculum
+    # moved away from, and it is not promoted into `courses/`. Holding it to the
+    # contract it was replaced *for* reports real differences that nobody should
+    # act on, and a gate that always prints thirty findings is a gate people
+    # learn to ignore. Say it was skipped rather than skipping it silently.
+    retired = [d for d in decks
+               if meta_content(d.read_text(encoding="utf-8"),
+                               "podo:curriculum-status") == "superseded"]
+    decks = [d for d in decks if d not in retired]
+
     pair_errors, pair_warnings = freetalk_pair_issues(decks)
     n_err = n_warn = 0
     for deck in decks:
@@ -1980,7 +2165,9 @@ def main():
             for w in warns:
                 print(f"  ! {w}")
 
-    print(f"\n{len(decks)} deck(s) checked · {n_err} error(s) · {n_warn} warning(s)")
+    retired_note = f" · {len(retired)} superseded deck(s) skipped" if retired else ""
+    print(f"\n{len(decks)} deck(s) checked · {n_err} error(s) · {n_warn} warning(s)"
+          + retired_note)
     return 1 if n_err else 0
 
 
