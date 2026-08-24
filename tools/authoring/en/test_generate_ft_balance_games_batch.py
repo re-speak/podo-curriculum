@@ -25,18 +25,18 @@ EXPECTED = {
     110: ("morning-person-or-night-owl", "For your most important tasks, would you rather start early or work late?"),
     111: ("a-planned-trip-or-a-spontaneous-one", "For a three-day trip, would you plan each day or decide as you go?"),
     112: ("travelling-alone-or-with-other-people", "For a new destination, would you rather travel alone or with someone?"),
-    113: ("life-in-the-city-or-the-countryside", "For everyday life, would you choose a lively city or a quiet rural area?"),
+    113: ("life-in-the-city-or-the-countryside", "For daily life, would you rather live in a busy city or a quiet town?"),
     114: ("a-summer-without-internet-or-air-conditioning", "For one summer, would you give up internet or air conditioning?"),
     115: ("better-work-life-balance-or-a-higher-salary", "For the next year, would you choose more free time or a higher income?"),
     116: ("working-from-home-or-going-into-the-office", "For focused work, would you choose home or a shared workplace?"),
     117: ("studying-in-a-cafe-or-at-home", "For two hours of serious study, would you choose a café or home?"),
     118: ("shopping-online-or-in-a-shop", "For an important purchase, would you rather buy online or in a shop?"),
     119: ("remembering-everything-or-forgetting-bad-memories", "Would you rather remember every ordinary detail or be able to forget painful memories?"),
-    120: ("being-rich-and-anonymous-or-respected-on-an-ordinary-income", "Would you rather be wealthy and anonymous or respected on an ordinary income?"),
+    120: ("being-rich-and-anonymous-or-respected-on-an-ordinary-income", "Would you rather be rich and unknown or respected on an average income?"),
     121: ("being-great-at-one-thing-or-good-at-many", "Would you rather master one skill or become good at many?"),
 }
 PROMPT_KEYS = {"job", "title", "title_ja", "accessible", "accessible_ja", "accessible_followups", "full", "full_ja", "full_followups", "safety"}
-SOURCE_DIGEST = "8dc4d43c2e072e3fc6c6951d46f074a76a1bc608f04e51f7fdc6cdb255c040a8"
+SOURCE_DIGEST = "ef7434d019a464eaadefc31d6e08d479313c818e0996f5a16d163ffe2220c0cc"
 batch = None
 
 
@@ -121,15 +121,14 @@ class SourceContractTests(unittest.TestCase):
 
     def test_prompts_are_natural_unique_answerable_and_reciprocal(self):
         banned = re.compile(r"if (?:the learner|none\b|not\b|yes\b|no\b)|general example|hypothetical case|private details|decline (?:to answer|the question)|opt out|fallback|no personal|keep .* private", re.I)
-        main_questions = set()
-        for topic in batch.TOPICS.values():
+        main_questions = {variant: set() for variant in batch.VARIANTS}
+        for topic_number, topic in batch.TOPICS.items():
             prompts = topic["prompts"]
             jobs = tuple(item["job"] for item in prompts)
             self.assertEqual(len(jobs), len(set(jobs)))
             self.assertEqual(jobs[-1], "tutor")
             for item in prompts:
                 self.assertEqual(set(item), PROMPT_KEYS)
-                self.assertNotEqual(item["accessible"], item["full"])
                 for variant in batch.VARIANTS:
                     main = item[variant]
                     followups = item[f"{variant}_followups"]
@@ -138,21 +137,23 @@ class SourceContractTests(unittest.TestCase):
                     self.assertEqual(len(set(followups)), 2)
                     self.assertTrue(all(question.endswith("?") for question in followups))
                     self.assertNotRegex(" ".join((main, *followups)), banned)
-                    self.assertNotIn(main, main_questions)
-                    main_questions.add(main)
-            self.assertIn("Ask your tutor", prompts[-1]["accessible"])
-            self.assertIn("Ask your tutor", prompts[-1]["full"])
-        self.assertEqual(len(main_questions), 240)
+                    if item["job"] != "tutor":
+                        self.assertNotIn(main, main_questions[variant])
+                        main_questions[variant].add(main)
+            self.assertEqual(prompts[-1]["accessible"], "Ask your tutor which option they would choose and why.")
+            self.assertEqual(prompts[-1]["full"], "Ask your tutor which option they would choose and why.")
+            self.assertGreaterEqual(sum(item["accessible"] != item["full"] for item in prompts), 2)
+        self.assertEqual({variant: len(values) for variant, values in main_questions.items()}, {variant: 105 for variant in batch.VARIANTS})
 
     def test_followups_are_independent_across_variants_and_topics(self):
-        followups = []
+        followups = {variant: [] for variant in batch.VARIANTS}
         for topic in batch.TOPICS.values():
             for item in topic["prompts"]:
-                self.assertNotEqual(item["accessible_followups"], item["full_followups"])
-                followups.extend(item["accessible_followups"])
-                followups.extend(item["full_followups"])
-        self.assertEqual(len(followups), 480)
-        self.assertEqual(len(set(followups)), 480)
+                for variant in batch.VARIANTS:
+                    followups[variant].extend(item[f"{variant}_followups"])
+        for values in followups.values():
+            self.assertEqual(len(values), 240)
+            self.assertEqual(len(set(values)), 240)
 
     def test_no_generic_comparison_templates_or_technical_placeholders(self):
         boilerplate = re.compile(
@@ -196,7 +197,8 @@ class SourceContractTests(unittest.TestCase):
                 self.assertIn("Did you have any questions about the article?", rendered)
                 self.assertIn("Let's follow the most interesting parts of the conversation.", rendered)
                 self.assertIn("share a brief real answer or relevant perspective of your own", rendered)
-                self.assertIn("Ask your tutor", rendered)
+                self.assertIn("Ask your tutor which option they would choose and why.", rendered)
+                self.assertIn("Answer first, then follow up", rendered)
                 self.assertNotRegex(rendered, r"聞いてください、")
 
     def test_output_routes_without_shell_reads(self):

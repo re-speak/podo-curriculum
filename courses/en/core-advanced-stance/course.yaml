@@ -31,6 +31,8 @@ spec:
     en: Argue in the abstract, and hear what is meant rather than what is said.
     ja: 抽象的に論じ、言われたことではなく含意を聞き取る。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

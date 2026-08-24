@@ -33,6 +33,8 @@ spec:
     en: Propose dropping formality, settle what to call each other, swap pronouns, greetings and replies as one set, hold the middle ground when it is unclear, and go back up when you need to.
     ja: 「タメ口で話そう」と切り出し、呼び方を決め、人称・あいさつ・返事までまとめて切り替え、微妙な間柄では半分敬語でしのぎ、必要なら敬語に戻せる。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

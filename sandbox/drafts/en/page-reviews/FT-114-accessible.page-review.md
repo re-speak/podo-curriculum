@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-balance-games-accessible/lessons/114-a-summer-without-internet-or-air-conditioning/lesson.html`
-- SHA-256: `c04fbdc87a2d2bb1c1a3db605e53cdb95ed538ed265a54e87cf55456c43306b1`
+- SHA-256: `269ade18dd7fc971994074b41a21c350f31572eab16d0988f2d1b2d96c26f8a8`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Answer the standalone question “What becomes difficult after one hour without internet?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What becomes difficult after one hour without internet?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “What becomes difficult after one hour without internet?” / “インターネットが一時間使えないと、最初に何が困りますか？” Follow-ups: “What could still be done offline?” and “When would the outage become serious?”
-- Learning target: Develop the distinct “One hour offline” angle of A summer without internet or air conditioning? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “One hour offline” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “What becomes difficult after one hour without internet?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “インターネットが一時間使えないと、最初に何が困りますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
+- Learner action: Answer the standalone question “What becomes difficult after one hour without internet?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What becomes difficult after one hour without internet?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What becomes difficult after one hour without internet?” / “インターネットが一時間使えないと、最初に何が困りますか？” Tutor follow-ups: “What could still be done offline?” and “Which would you miss first: messages, maps, or payments?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “インターネットが一時間使えないと、最初に何が困りますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What becomes difficult after one hour without internet?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer the standalone question “How would you spend half a cool day without a phone?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “How would you spend half a cool day without a phone?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “How would you spend half a cool day without a phone?” / “涼しい日にスマホなしで半日過ごすなら、何をしますか？” Follow-ups: “Which offline place would you visit?” and “What would you miss most?”
-- Learning target: Develop the distinct “A cool day offline” angle of A summer without internet or air conditioning? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “A cool day offline” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “How would you spend half a cool day without a phone?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “涼しい日にスマホなしで半日過ごすなら、何をしますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How would you spend half a cool day without a phone?"]}`
+- Learner action: Answer the standalone question “How would you spend half a cool day without internet?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How would you spend half a cool day without internet?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How would you spend half a cool day without internet?” / “涼しい日にインターネットなしで半日過ごすなら、何をしますか？” Tutor follow-ups: “Which offline activity would you choose?” and “Would you choose a walk, a book, or a movie?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “涼しい日にインターネットなしで半日過ごすなら、何をしますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How would you spend half a cool day without internet?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer the standalone question “For one summer, would you give up internet or air conditioning?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “For one summer, would you give up internet or air conditioning?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “For one summer, would you give up internet or air conditioning?” / “一夏の間、インターネットとエアコンのどちらかを諦めるなら、どちらにしますか？” Follow-ups: “Which duty shapes the answer?” and “What makes the other loss harder?”
-- Learning target: Develop the distinct “Choose one loss” angle of A summer without internet or air conditioning? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Choose one loss” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “For one summer, would you give up internet or air conditioning?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “一夏の間、インターネットとエアコンのどちらかを諦めるなら、どちらにしますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
+- Learner action: Answer the standalone question “For one summer, would you give up internet or air conditioning?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “For one summer, would you give up internet or air conditioning?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “For one summer, would you give up internet or air conditioning?” / “一夏の間、インターネットとエアコンのどちらかを諦めるなら、どちらにしますか？” Tutor follow-ups: “Would work, health, or family needs matter most?” and “Which is more essential in hot weather: cooling or online access?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一夏の間、インターネットとエアコンのどちらかを諦めるなら、どちらにしますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["For one summer, would you give up internet or air conditioning?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer the standalone question “What would go wrong first during one day without your choice?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What would go wrong first during one day without your choice?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “What would go wrong first during one day without your choice?” / “選んだものなしで一日過ごすと、最初に何が困りますか？” Follow-ups: “Would work or study be affected?” and “Would anyone else be affected?”
-- Learning target: Develop the distinct “The first problem” angle of A summer without internet or air conditioning? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “The first problem” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “What would go wrong first during one day without your choice?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “選んだものなしで一日過ごすと、最初に何が困りますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would go wrong first during one day without your choice?"]}`
+- Learner action: Answer the standalone question “What would be the first problem during one day without air conditioning?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would be the first problem during one day without air conditioning?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would be the first problem during one day without air conditioning?” / “エアコンなしで一日過ごすと、最初に何が問題になりますか？” Tutor follow-ups: “What could make the day easier?” and “Which suffers first in heat: sleep or concentration?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “エアコンなしで一日過ごすと、最初に何が問題になりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would be the first problem during one day without air conditioning?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer the standalone question “On one cool spring day, which loss would be easier?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “On one cool spring day, which loss would be easier?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “On one cool spring day, which loss would be easier?” / “涼しい春の日に一日だけなら、どちらを諦めますか？” Follow-ups: “What would you do offline?” and “Where could you go without air conditioning?”
-- Learning target: Develop the distinct “A cool spring day” angle of A summer without internet or air conditioning? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “A cool spring day” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “On one cool spring day, which loss would be easier?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “涼しい春の日に一日だけなら、どちらを諦めますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["On one cool spring day, which loss would be easier?"]}`
+- Learner action: Answer the standalone question “On a cool spring day, would you rather lose internet or air conditioning?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “On a cool spring day, would you rather lose internet or air conditioning?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “On a cool spring day, would you rather lose internet or air conditioning?” / “涼しい春の日なら、インターネットとエアコンのどちらを諦めますか？” Tutor follow-ups: “What would you do offline?” and “Would you still need air conditioning on a cool day?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “涼しい春の日なら、インターネットとエアコンのどちらを諦めますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["On a cool spring day, would you rather lose internet or air conditioning?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer the standalone question “Would a nearby safe, cool place change your summer answer?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Would a nearby safe, cool place change your summer answer?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Would a nearby safe, cool place change your summer answer?” / “近くに安全で涼しい場所があれば、夏の答えは変わりますか？” Follow-ups: “Would it need to open at night?” and “How far could it be?”
-- Learning target: Develop the distinct “A safe cool place” angle of A summer without internet or air conditioning? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “A safe cool place” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Would a nearby safe, cool place change your summer answer?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “近くに安全で涼しい場所があれば、夏の答えは変わりますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would a nearby safe, cool place change your summer answer?"]}`
+- Learner action: Answer the standalone question “Would a safe, cool place nearby make a summer without air conditioning possible?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would a safe, cool place nearby make a summer without air conditioning possible?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would a safe, cool place nearby make a summer without air conditioning possible?” / “近くに安全で涼しい場所があれば、エアコンなしの夏を過ごせますか？” Tutor follow-ups: “Would the safe place need to open at night?” and “Would a nearby library make the summer easier?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “近くに安全で涼しい場所があれば、エアコンなしの夏を過ごせますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would a safe, cool place nearby make a summer without air conditioning possible?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer the standalone question “Which season or safety condition would make you switch?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which season or safety condition would make you switch?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Which season or safety condition would make you switch?” / “どんな季節や安全条件なら、反対を選びますか？” Follow-ups: “How many hours would be safe?” and “Which alternative space would be necessary?”
-- Learning target: Develop the distinct “Season and safety” angle of A summer without internet or air conditioning? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Season and safety” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Which season or safety condition would make you switch?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “どんな季節や安全条件なら、反対を選びますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which season or safety condition would make you switch?"]}`
+- Learner action: Answer the standalone question “Which summer activity is hardest without air conditioning?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which summer activity is hardest without air conditioning?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which summer activity is hardest without air conditioning?” / “エアコンなしでは、夏のどんな活動が最も大変ですか？” Tutor follow-ups: “What cooler place could help?” and “Which is harder without cooling: sleeping or working?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “エアコンなしでは、夏のどんな活動が最も大変ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which summer activity is hardest without air conditioning?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Use the exact ask-back “Ask your tutor whether they would choose a summer without internet or a summer without air conditioning, and why.” to invite the tutor’s real answer, then compare the two positions.
-- Tutor action: Let the learner ask “Ask your tutor whether they would choose a summer without internet or a summer without air conditioning, and why.”, answer it genuinely and briefly, then use one topic-specific comparison probe if useful.
-- Visible target or prompt: Reciprocal ask-back: “Ask your tutor whether they would choose a summer without internet or a summer without air conditioning, and why.” / “チューターならインターネットなしの夏とエアコンなしの夏のどちらを選ぶか、その理由も聞いてください。” Follow-ups: “Which loss does your tutor consider less manageable?” and “What safe alternative does their answer depend on?”
-- Learning target: Turn the balance game into a two-way exchange by eliciting and comparing the tutor’s real position.
-- Pedagogical value: Prevents an interview-like ending and gives the learner a natural reason to listen, react, and compare.
-- Failure diagnoses: If the learner only states another personal answer, prompt the exact ask-back; do not model a preferred position.
-- Non-target support: The Japanese prompt “チューターならインターネットなしの夏とエアコンなしの夏のどちらを選ぶか、その理由も聞いてください。” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor whether they would choose a summer without internet or a summer without air conditioning, and why."]}`
+- Learner action: Answer the standalone question “Ask your tutor which option they would choose and why.” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Ask your tutor which option they would choose and why.”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Ask your tutor which option they would choose and why.” / “チューターならどちらを選ぶか、その理由も聞いてください。” Tutor follow-ups: “Which loss would be harder for your tutor?” and “Would a cooler climate change the choice?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “チューターならどちらを選ぶか、その理由も聞いてください。” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor which option they would choose and why."]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

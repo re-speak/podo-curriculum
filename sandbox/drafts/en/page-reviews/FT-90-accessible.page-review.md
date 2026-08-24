@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-accessible/lessons/90-three-things-you-would-take-to-a-desert-island/lesson.html`
-- SHA-256: `0fab86216197d0acd3c022cddf65da49873ec96ae26093caaf18269dc5424977`
+- SHA-256: `3567055c2509a59b8a4c8f3ac419ab0774c104ac6d4a89432a3e90f63d90b772`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “Which three useful objects would you take to a desert island?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which three useful objects would you take to a desert island?”, react or share briefly, then choose at most one relevant probe such as “Which need would you solve first?”.
-- Visible target or prompt: Which three useful objects would you take to a desert island? / 無人島に持っていく役立つ物を三つ選ぶとしたら何ですか？ Follow-up pool: Which need would you solve first? Which item or need feels most essential?
-- Learning target: Explore the distinct “Three objects” angle of “Three things you would take to a desert island” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which need would you solve first?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which need would you solve first?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which three useful objects would you take to a desert island?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which item or need feels most essential?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which three useful objects would you take to a desert island?"]}`
+- Learner action: Answer the standalone question “What would feel hardest about your first day on a desert island?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would feel hardest about your first day on a desert island?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would feel hardest about your first day on a desert island?” / “無人島での最初の一日で、最も大変に感じることは何ですか？” Tutor follow-ups: “Would water, shelter, or being alone worry you most?” and “What could make the first day easier?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “無人島での最初の一日で、最も大変に感じることは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would feel hardest about your first day on a desert island?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “Which need matters most when choosing objects for a desert island?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which need matters most when choosing objects for a desert island?”, react or share briefly, then choose at most one relevant probe such as “Which object would meet that need best?”.
-- Visible target or prompt: Which need matters most when choosing objects for a desert island? / 無人島に持っていく物を選ぶとき、どの必要が最も大切ですか？ Follow-up pool: Which object would meet that need best? Which need would come next?
-- Learning target: Explore the distinct “Why those three” angle of “Three things you would take to a desert island” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which object would meet that need best?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which object would meet that need best?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which need matters most when choosing objects for a desert island?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which need would come next?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which need matters most when choosing objects for a desert island?"]}`
+- Learner action: Answer the standalone question “Which need comes first: water, shelter, food, or a way to call for help?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which need comes first: water, shelter, food, or a way to call for help?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which need comes first: water, shelter, food, or a way to call for help?” / “水、住む場所、食べ物、助けを呼ぶ方法のうち、どれを最初に考えますか？” Tutor follow-ups: “Which object would meet that need best?” and “Which need would come next?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “水、住む場所、食べ物、助けを呼ぶ方法のうち、どれを最初に考えますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which need comes first: water, shelter, food, or a way to call for help?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “Which object would be hardest to leave out of a three-object list?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which object would be hardest to leave out of a three-object list?”, react or share briefly, then choose at most one relevant probe such as “What would that object add to the list?”.
-- Visible target or prompt: Which object would be hardest to leave out of a three-object list? / 三つの物のリストから外すのが最も難しい物は何ですか？ Follow-up pool: What would that object add to the list? Which trade-off would decide its place?
-- Learning target: Explore the distinct “The near-pick” angle of “Three things you would take to a desert island” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What would that object add to the list?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What would that object add to the list?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which object would be hardest to leave out of a three-object list?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which trade-off would decide its place?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which object would be hardest to leave out of a three-object list?"]}`
+- Learner action: Answer the standalone question “Which common object would be surprisingly useful on an island?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which common object would be surprisingly useful on an island?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which common object would be surprisingly useful on an island?” / “無人島で意外に役立つ普通の物は何ですか？” Tutor follow-ups: “Would a pot, rope, or mirror be useful?” and “What problem would it solve?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “無人島で意外に役立つ普通の物は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which common object would be surprisingly useful on an island?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “Would you take anything that is not useful?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Would you take anything that is not useful?”, react or share briefly, then choose at most one relevant probe such as “What emotional job would it do?”.
-- Visible target or prompt: Would you take anything that is not useful? / 役に立たない物も何か持っていきますか？ Follow-up pool: What emotional job would it do? What comfort would you give up?
-- Learning target: Explore the distinct “The useless one” angle of “Three things you would take to a desert island” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What emotional job would it do?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What emotional job would it do?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Would you take anything that is not useful?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What comfort would you give up?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you take anything that is not useful?"]}`
+- Learner action: Answer the standalone question “Would you take one comfort item to a desert island?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would you take one comfort item to a desert island?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would you take one comfort item to a desert island?” / “無人島に、気持ちを楽にする物を一つ持って行きますか？” Tutor follow-ups: “Would you choose music, a book, or a favourite snack?” and “If you took none, what practical item would replace it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “無人島に、気持ちを楽にする物を一つ持って行きますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you take one comfort item to a desert island?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “What might you regret leaving behind?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What might you regret leaving behind?”, react or share briefly, then choose at most one relevant probe such as “Why would that object still matter?”.
-- Visible target or prompt: What might you regret leaving behind? / 置いていくと後悔しそうな物は何ですか？ Follow-up pool: Why would that object still matter? Which practical need could keep it off a three-item list?
-- Learning target: Explore the distinct “Left behind” angle of “Three things you would take to a desert island” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Why would that object still matter?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Why would that object still matter?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What might you regret leaving behind?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which practical need could keep it off a three-item list?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What might you regret leaving behind?"]}`
+- Learner action: Answer the standalone question “What would you regret not bringing after the first night?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would you regret not bringing after the first night?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would you regret not bringing after the first night?” / “最初の夜の後、持ってこなかったことを後悔しそうな物は何ですか？” Tutor follow-ups: “Would you miss a light, blanket, or tool most?” and “What could replace it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “最初の夜の後、持ってこなかったことを後悔しそうな物は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would you regret not bringing after the first night?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “What would you need to know about an island before choosing what to take?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What would you need to know about an island before choosing what to take?”, react or share briefly, then choose at most one relevant probe such as “Which resource would change one choice or priority?”.
-- Visible target or prompt: What would you need to know about an island before choosing what to take? / 持っていく物を選ぶ前に、その島について何を知る必要がありますか？ Follow-up pool: Which resource would change one choice or priority? Which danger would make you rethink everything?
-- Learning target: Explore the distinct “What the island has” angle of “Three things you would take to a desert island” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which resource would change one choice or priority?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which resource would change one choice or priority?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What would you need to know about an island before choosing what to take?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which danger would make you rethink everything?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would you need to know about an island before choosing what to take?"]}`
+- Learner action: Answer the standalone question “Would your island choices change if the weather were cold?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would your island choices change if the weather were cold?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would your island choices change if the weather were cold?” / “島の天気が寒かったら、持って行く物は変わりますか？” Tutor follow-ups: “Would warm clothing or a fire tool come first?” and “Which tropical item would be less useful?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “島の天気が寒かったら、持って行く物は変わりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would your island choices change if the weather were cold?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “Would one companion make island life easier or more complicated?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Would one companion make island life easier or more complicated?”, react or share briefly, then choose at most one relevant probe such as “What would you share responsibility for?”.
-- Visible target or prompt: Would one companion make island life easier or more complicated? / 一人の仲間がいると、島での生活は楽になりますか、それとも複雑になりますか？ Follow-up pool: What would you share responsibility for? What would be easier alone?
-- Learning target: Explore the distinct “One person” angle of “Three things you would take to a desert island” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What would you share responsibility for?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What would you share responsibility for?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Would one companion make island life easier or more complicated?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What would be easier alone?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would one companion make island life easier or more complicated?"]}`
+- Learner action: Answer the standalone question “Would one companion help more than a fourth object?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would one companion help more than a fourth object?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would one companion help more than a fourth object?” / “一人の仲間は、四つ目の物より役立ちますか？” Tutor follow-ups: “What would you share responsibility for?” and “What would be easier alone?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一人の仲間は、四つ目の物より役立ちますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would one companion help more than a fourth object?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “Which useful island object would lose most of its value after returning home?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which useful island object would lose most of its value after returning home?”, react or share briefly, then choose at most one relevant probe such as “Why would one matter mainly on the island?”.
-- Visible target or prompt: Which useful island object would lose most of its value after returning home? / 島では役立っても、家に戻ると最も価値が下がる物は何ですか？ Follow-up pool: Why would one matter mainly on the island? Why would it still matter—or stop mattering—at home?
-- Learning target: Explore the distinct “Coming home” angle of “Three things you would take to a desert island” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Why would one matter mainly on the island?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Why would one matter mainly on the island?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which useful island object would lose most of its value after returning home?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Why would it still matter—or stop mattering—at home?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which useful island object would lose most of its value after returning home?"]}`
+- Learner action: Answer the standalone question “Which useful island object would become almost useless at home?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which useful island object would become almost useless at home?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which useful island object would become almost useless at home?” / “島では役立っても、家ではほとんど役に立たない物は何ですか？” Tutor follow-ups: “Would a fishing net or water filter be a good example?” and “What would replace it at home?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “島では役立っても、家ではほとんど役に立たない物は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which useful island object would become almost useless at home?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

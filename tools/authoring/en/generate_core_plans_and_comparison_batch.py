@@ -49,7 +49,7 @@ LESSONS = {
             ("{t}What are you going to cook{/t} tonight?", "今夜は{t}何を作るつもりですか{/t}？", "What are you going to|cook|tonight?"),
         ),
         omit_choice=(1, 2),
-        rules=(("Keep going to before the planned action.", "前から決めている行動の前に going to を置きます。"), ("Move are before you, then keep going to before the action.", "質問では are を you の前に移し、行動の前には going to を置きます。")),
+        rules=(("Keep going to before the planned action.", "前から決めている行動の前に 「going to」 を置きます。"), ("Move are before you, then keep going to before the action.", "質問では are を you の前に移し、行動の前には 「going to」 を置きます。")),
         prompt=("What is one change you would like to make in the next year? Why?", "これから一年で変えたいことは何ですか？理由も教えてください。"),
     ),
     38: dict(
@@ -68,7 +68,7 @@ LESSONS = {
             ("{t}Don’t worry, I’ll bring it{/t} by tomorrow.", "心配しないで、明日までに{t}持ってきます{/t}。", "Don't worry,|I'll bring it|by tomorrow."),
         ),
         omit_choice=(1, 2),
-        rules=(("Use Let me plus a plain verb to offer to do the action yourself.", "自分がその行動をすると申し出るときは Let me のあとに動詞の原形を置きます。"), ("Use I’ll for a decision you make as you speak, then name the deadline.", "話しながら今決めたことには I’ll を使い、そのあとに期限を伝えます。")),
+        rules=(("Use Let me plus a plain verb to offer to do the action yourself.", "自分がその行動をすると申し出るときは 「Let me」 のあとに動詞の原形を置きます。"), ("Use I’ll for a decision you make as you speak, then name the deadline.", "話しながら今決めたことには 「I’ll」 を使い、そのあとに期限を伝えます。")),
         prompt=("What kind of help do you appreciate most when you're busy?", "忙しいとき、どんな手助けが一番ありがたいですか？"),
     ),
     39: dict(
@@ -87,7 +87,7 @@ LESSONS = {
             ("{t}If the café is full, I’ll go{/t} somewhere else.", "{t}もしカフェが満席なら、別の場所へ行きます{/t}。", "If the café is full,|I'll go|somewhere else."),
         ),
         omit_choice=(2,),
-        rules=(("Put a plain verb after might.", "might のあとは動詞の原形を置きます。"), ("Use If for the uncertain condition and I’ll for your response.", "起こるか分からない条件には If、その場合の対応には I’ll を使います。")),
+        rules=(("Put a plain verb after might.", "「might」 のあとは動詞の原形を置きます。"), ("Use If for the uncertain condition and I’ll for your response.", "起こるか分からない条件には If、その場合の対応には 「I’ll」 を使います。")),
         prompt=("Do you usually make a backup plan? Why or why not?", "普段、代わりの案を用意しますか？その理由も教えてください。"),
     ),
     40: dict(
@@ -107,7 +107,7 @@ LESSONS = {
             ("{t}If it gets worse, you need to stop walking{/t}.", "{t}悪化したら、歩くのをやめる必要があります{/t}。", "If it gets worse,|you need to|stop walking."),
         ),
         omit_choice=(2,),
-        rules=(("Use should plus a plain verb for an ordinary recommendation.", "ふつうの助言には should と動詞の原形を使います。"), ("Use need to when the action becomes necessary, not just a good idea.", "よい考えというだけでなく必要になった行動には need to を使います。")),
+        rules=(("Use should plus a plain verb for an ordinary recommendation.", "ふつうの助言には 「should」 と動詞の原形を使います。"), ("Use need to when the action becomes necessary, not just a good idea.", "よい考えというだけでなく必要になった行動には 「need to」 を使います。")),
         prompt=("When you're exhausted, what advice would you actually want to hear?", "疲れ切っているとき、実際にどんな助言を聞きたいですか？"),
     ),
     41: dict(
@@ -127,7 +127,7 @@ LESSONS = {
             ("But you {t}don't have to print{/t} the ticket.", "でも、チケットを{t}印刷する必要はありません{/t}。", "But|you don't have to|print the ticket."),
         ),
         omit_choice=(1, 2),
-        rules=(("Use have to before a plain verb when a rule requires the action.", "決まりで必要な行動には have to と動詞の原形を使います。"), ("Don’t have to means optional. Mustn’t means forbidden; the two meanings are different.", "don’t have to は「しなくてもよい」、mustn’t は「してはいけない」です。この二つは意味が違います。")),
+        rules=(("Use have to before a plain verb when a rule requires the action.", "決まりで必要な行動には 「have to」 と動詞の原形を使います。"), ("Don’t have to means optional. Mustn’t means forbidden; the two meanings are different.", "「don’t have to」 は「しなくてもよい」、「mustn’t」 は「してはいけない」です。この二つは意味が違います。")),
         prompt=("What is one rule you think makes life better? Why?", "生活をよくすると思う決まりは何ですか？理由も教えてください。"),
     ),
     42: dict(
@@ -146,7 +146,7 @@ LESSONS = {
             ("No, {t}I don’t.{/t} I {t}prefer soup{/t}.", "「このサラダ、好きじゃないんですか？」→ {t}はい、好きではありません。{/t}{t}スープのほうが好きです{/t}。", "No,|I don't.|I prefer soup."),
         ),
         omit_choice=(1,),
-        rules=(("Answer the fact: use I do when the positive fact is true.", "質問が否定形でも、肯定の事実が正しければ I do で答えます。"), ("Use I don’t only when the negative fact is true.", "否定の事実が正しいときだけ I don’t で答えます。")),
+        rules=(("Answer the fact: use I do when the positive fact is true.", "質問が否定形でも、肯定の事実が正しければ 「I do」 で答えます。"), ("Use I don’t only when the negative fact is true.", "否定の事実が正しいときだけ 「I don’t」 で答えます。")),
         prompt=("What makes a yes-or-no answer confusing for you?", "yes や no の答えが分かりにくくなるのは、どんなときですか？"),
     ),
     43: dict(
@@ -166,7 +166,7 @@ LESSONS = {
             ("It’s {t}near a small park{/t}.", "{t}小さな公園の近くです{/t}。", "It's|near|a small park."),
             ("It’s {t}near the bank{/t}.", "{t}銀行の近くです{/t}。", "It's|near|the bank."),
         ),
-        rules=(("Put both adjectives before the noun; adjectives do not take plural -s.", "二つの形容詞は名詞の前に置き、複数でも形容詞に -s はつけません。"), ("Put near before the place you use as the landmark.", "目印にする場所の前に near を置きます。")),
+        rules=(("Put both adjectives before the noun; adjectives do not take plural -s.", "二つの形容詞は名詞の前に置き、複数でも形容詞に -s はつけません。"), ("Put near before the place you use as the landmark.", "目印にする場所の前に 「near」 を置きます。")),
         prompt=("What place makes you feel comfortable right away? Why?", "すぐに居心地がよいと感じる場所はどこですか？理由も教えてください。"),
     ),
     44: dict(
@@ -186,7 +186,7 @@ LESSONS = {
         ),
         omit_reorder=(2,),
         omit_choice=(1,),
-        rules=(("Put too before the adjective when the amount causes a problem.", "程度が問題になるときは、形容詞の前に too を置きます。"), ("Put enough after the adjective when the amount falls short.", "程度が足りないときは、形容詞のあとに enough を置きます。")),
+        rules=(("Put too before the adjective when the amount causes a problem.", "程度が問題になるときは、形容詞の前に too を置きます。"), ("Put enough after the adjective when the amount falls short.", "程度が足りないときは、形容詞のあとに 「enough」 を置きます。")),
         prompt=("What feature makes a purchase feel worth the money to you?", "どんな特徴があると、買った物に値段だけの価値を感じますか？"),
     ),
     46: dict(
@@ -320,7 +320,7 @@ SPECS = {
         ("Neutral or reassuring?", "ふつう・安心させる", "Both accept the task. “I’ve got it” adds a stronger sense that the other person can stop worrying.", "どちらも引き受ける言い方です。「I’ve got it」は、もう心配しなくてよいという安心感を強く加えます。", ("Simple acceptance", "ふつうに引き受ける", "Okay, I’ll do it.", "分かりました。やります。"), ("Reassuring acceptance", "安心させて引き受ける", "I’ve got it.", "私に任せてください。")),
     ),
     39: semantic_spec(
-        (("Use might when something is possible but not certain.", "起こる可能性はあるものの、まだ確かでないときに might を使います。"), ("Use this to say what you will do if the uncertain thing happens.", "まだ確かでないことが起きた場合の対応を伝えるときに使います。")),
+        (("Use might when something is possible but not certain.", "起こる可能性はあるものの、まだ確かでないときに 「might」 を使います。"), ("Use this to say what you will do if the uncertain thing happens.", "まだ確かでないことが起きた場合の対応を伝えるときに使います。")),
         (("Write one uncertain possibility for today.", "今日起こるかもしれないことを一つ書きましょう。"), ("Write one useful fallback for that possibility.", "その場合に役立つ代わりの案を一つ書きましょう。")),
         (
             tuple((jp, prefix, correct, distractor, suffix) for jp, prefix, correct, distractor, suffix in (
@@ -340,7 +340,7 @@ SPECS = {
         ("Might or may?", "might と may", "Both express possibility. “May” can sound a little more formal in an everyday warning.", "どちらも可能性を表します。日常の注意では「may」のほうが少し改まって聞こえることがあります。", ("Everyday warning", "日常の注意", "I might be late.", "遅れるかもしれません。"), ("Slightly more formal", "少し改まった言い方", "I may be late.", "遅れるかもしれません。")),
     ),
     40: semantic_spec(
-        (("Use should for a helpful idea that the other person can consider.", "相手が考えられる助言を一つ伝えるときに should を使います。"), ("Use need to when the situation makes an action necessary.", "状況によって行動が必要になったときに need to を使います。")),
+        (("Use should for a helpful idea that the other person can consider.", "相手が考えられる助言を一つ伝えるときに 「should」 を使います。"), ("Use need to when the situation makes an action necessary.", "状況によって行動が必要になったときに 「need to」 を使います。")),
         (("Give one helpful piece of advice for a real situation.", "実際の状況に役立つ助言を一つ書きましょう。"), ("Write when stronger action would become necessary.", "より強い対応が必要になる条件を書きましょう。")),
         (
             tuple((jp, prefix, correct, distractor, suffix) for jp, prefix, correct, distractor, suffix in (
@@ -357,10 +357,10 @@ SPECS = {
             )),
         ),
         (("Give advice with should", "should で助言する", "You + <b>should</b> + 動詞の原形", "Helpful idea", "役立つ考え", ("You <b>should get</b> some rest.", "You <b>should drink</b> some water.")), ("Name a necessary action", "必要な行動を伝える", "If it gets worse, + you <b>need to</b> + 動詞", "Necessary response", "必要になった対応", ("you <b>need to see</b> a doctor", "you <b>need to stop</b> walking"))),
-        ("Direct or softer?", "直接・やわらかく", "Add “maybe” before should when you want the advice to sound less direct.", "助言をやわらかく伝えたいときは、should の前に「maybe」を加えます。", ("Direct advice", "直接的な助言", "You should get some rest.", "少し休んだほうがいいですよ。"), ("Softer suggestion", "やわらかい提案", "Maybe you should get some rest.", "少し休んだほうがいいかもしれません。")),
+        ("Direct or softer?", "直接・やわらかく", "Add “maybe” before should when you want the advice to sound less direct.", "助言をやわらかく伝えたいときは、「should」 の前に「maybe」を加えます。", ("Direct advice", "直接的な助言", "You should get some rest.", "少し休んだほうがいいですよ。"), ("Softer suggestion", "やわらかい提案", "Maybe you should get some rest.", "少し休んだほうがいいかもしれません。")),
     ),
     41: semantic_spec(
-        (("Use have to for an action that a rule requires.", "決まりで必要な行動を伝えるときに have to を使います。"), ("Use don’t have to when the action is optional.", "その行動をしてもしなくてもよいときに don’t have to を使います。")),
+        (("Use have to for an action that a rule requires.", "決まりで必要な行動を伝えるときに 「have to」 を使います。"), ("Use don’t have to when the action is optional.", "その行動をしてもしなくてもよいときに 「don’t have to」 を使います。")),
         (("Write one action that a real rule requires.", "実際の決まりで必要な行動を一つ書きましょう。"), ("Write one action that is genuinely optional.", "本当にしなくてもよい行動を一つ書きましょう。")),
         (
             tuple((jp, prefix, correct, distractor, suffix) for jp, suffix in (
@@ -380,7 +380,7 @@ SPECS = {
         ("Full or conversational?", "完全な形・会話的な形", "“No need to” is a common conversational alternative to “You don’t have to.”", "「No need to」は「You don’t have to」の会話でよく使う言い換えです。", ("Complete sentence", "完全な文", "You don’t have to book ahead.", "前もって予約する必要はありません。"), ("Conversational shortcut", "会話で短く", "No need to book ahead.", "前もって予約しなくて大丈夫です。")),
     ),
     42: semantic_spec(
-        (("Use I do when the positive fact is true, even after a negative question.", "否定疑問のあとでも、肯定の事実が正しければ I do を使います。"), ("Use I don’t when the negative fact is true, then add your real preference.", "否定の事実が正しければ I don’t を使い、本当の好みを続けます。")),
+        (("Use I do when the positive fact is true, even after a negative question.", "否定疑問のあとでも、肯定の事実が正しければ 「I do」 を使います。"), ("Use I don’t when the negative fact is true, then add your real preference.", "否定の事実が正しければ 「I don’t」 を使い、本当の好みを続けます。")),
         (("Write one true positive answer to a negative question.", "否定疑問に対する本当の肯定の答えを書きましょう。"), ("Write one true negative answer and your alternative.", "本当の否定の答えと、代わりに好むものを書きましょう。")),
         (
             tuple((jp, "Actually, I ", "do", "don’t", suffix) for jp, suffix in (
@@ -400,7 +400,7 @@ SPECS = {
         ("Yes or actually?", "Yes と actually", "“Yes, I do” answers neutrally. “Actually, I do” gently corrects the other person’s expectation.", "「Yes, I do」は中立的な答えです。「Actually, I do」は相手の予想をやわらかく訂正します。", ("Neutral answer", "中立的に答える", "Yes, I do.", "はい、好きです。"), ("Correct an expectation", "予想を訂正する", "Actually, I do.", "いえ、実は好きです。")),
     ),
     43: semantic_spec(
-        (("Use this to give two useful details before naming a thing.", "ものの名前の前に役立つ特徴を二つ加えるときに使います。"), ("Use near to locate the thing by a familiar landmark.", "よく分かる目印を使って場所を伝えるときに near を使います。")),
+        (("Use this to give two useful details before naming a thing.", "ものの名前の前に役立つ特徴を二つ加えるときに使います。"), ("Use near to locate the thing by a familiar landmark.", "よく分かる目印を使って場所を伝えるときに 「near」 を使います。")),
         (("Describe one real place with two useful details.", "実際の場所を役立つ二つの特徴で説明しましょう。"), ("Write where that place is using one landmark.", "目印を一つ使って、その場所がどこにあるか書きましょう。")),
         (
             (),
@@ -415,7 +415,7 @@ SPECS = {
         ("Small or cozy?", "small と cozy", "“Small” only names size. “Cozy” adds the positive feeling that the place is comfortable and welcoming.", "「small」は大きさだけを表します。「cozy」は、居心地がよく温かいという肯定的な印象も加えます。", ("Size only", "大きさだけ", "It’s a small café.", "小さいカフェです。"), ("Positive feeling", "よい印象も加える", "It’s a cozy café.", "居心地のよいカフェです。")),
     ),
     44: semantic_spec(
-        (("Use too before an adjective when the amount causes a problem.", "程度が問題になるほど大きいときに、形容詞の前に too を使います。"), ("Use adjective plus enough when the amount falls short of what you need.", "必要な程度に足りないときに、形容詞のあとに enough を置きます。")),
+        (("Use too before an adjective when the amount causes a problem.", "程度が問題になるほど大きいときに、形容詞の前に too を使います。"), ("Use adjective plus enough when the amount falls short of what you need.", "必要な程度に足りないときに、形容詞のあとに 「enough」 を置きます。")),
         (("Write why one real option goes beyond your limit.", "実際の選択肢が限度を超えている理由を書きましょう。"), ("Write what one real option does not have enough of.", "実際の選択肢に何が十分でないか書きましょう。")),
         (
             tuple((jp, "It’s ", "too", "really", suffix) for jp, suffix in (

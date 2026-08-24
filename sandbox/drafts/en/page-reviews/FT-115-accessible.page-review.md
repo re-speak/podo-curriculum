@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-balance-games-accessible/lessons/115-better-work-life-balance-or-a-higher-salary/lesson.html`
-- SHA-256: `a4a8348c854113416e5011ecc1f1bd15d9fae7d733e7059fd9a75c6cf2400ec5`
+- SHA-256: `ae57bd6f4ef0a5c75ec70a0c2e6eb78aa55fb20807dd036af171bfd06afda623`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Answer the standalone question “What makes a day off feel genuinely restful?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What makes a day off feel genuinely restful?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “What makes a day off feel genuinely restful?” / “しっかり休めたと感じるには、何が必要ですか？” Follow-ups: “What time must obligations end?” and “What would you do with the evening?”
-- Learning target: Develop the distinct “A well-rested day” angle of Better work-life balance or a higher salary? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “A well-rested day” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “What makes a day off feel genuinely restful?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “しっかり休めたと感じるには、何が必要ですか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
+- Learner action: Answer the standalone question “What makes a day off feel genuinely restful?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What makes a day off feel genuinely restful?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What makes a day off feel genuinely restful?” / “しっかり休めたと感じるには、何が必要ですか？” Tutor follow-ups: “What would you stop doing on a restful day?” and “Would you rather rest alone or spend time with people?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “しっかり休めたと感じるには、何が必要ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes a day off feel genuinely restful?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer the standalone question “Which part of the day would you refuse to give up?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which part of the day would you refuse to give up?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Which part of the day would you refuse to give up?” / “一日の中で、必ず守りたい自分の時間はいつですか？” Follow-ups: “What belongs in that time?” and “How could you protect it during a busy week?”
-- Learning target: Develop the distinct “Time you protect” angle of Better work-life balance or a higher salary? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Time you protect” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Which part of the day would you refuse to give up?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “一日の中で、必ず守りたい自分の時間はいつですか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
+- Learner action: Answer the standalone question “Which part of the day would you refuse to give up?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which part of the day would you refuse to give up?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which part of the day would you refuse to give up?” / “一日の中で、必ず守りたい自分の時間はいつですか？” Tutor follow-ups: “How could you protect that time?” and “Which would you protect first: sleep or social time?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一日の中で、必ず守りたい自分の時間はいつですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which part of the day would you refuse to give up?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer the standalone question “For the next year, would you choose more free time or a higher income?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “For the next year, would you choose more free time or a higher income?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “For the next year, would you choose more free time or a higher income?” / “これから一年、自由な時間と高い収入のどちらを選びますか？” Follow-ups: “Which need is more urgent?” and “What is the main benefit of the other side?”
-- Learning target: Develop the distinct “Time or salary” angle of Better work-life balance or a higher salary? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Time or salary” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “For the next year, would you choose more free time or a higher income?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “これから一年、自由な時間と高い収入のどちらを選びますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
+- Learner action: Answer the standalone question “For the next year, would you choose more free time or a higher income?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “For the next year, would you choose more free time or a higher income?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “For the next year, would you choose more free time or a higher income?” / “これから一年、自由な時間と高い収入のどちらを選びますか？” Tutor follow-ups: “Which need is more urgent?” and “What makes a week feel too busy?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “これから一年、自由な時間と高い収入のどちらを選びますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["For the next year, would you choose more free time or a higher income?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer the standalone question “How would daily life change if you could gain only your choice?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “How would daily life change if you could gain only your choice?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “How would daily life change if you could gain only your choice?” / “選んだ条件だけがよくなれば、日常はどう変わりますか？” Follow-ups: “Would working hours change?” and “Which part of current life would be lost?”
-- Learning target: Develop the distinct “Only one benefit” angle of Better work-life balance or a higher salary? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Only one benefit” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “How would daily life change if you could gain only your choice?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “選んだ条件だけがよくなれば、日常はどう変わりますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How would daily life change if you could gain only your choice?"]}`
+- Learner action: Answer the standalone question “What would improve first with one extra free hour every day?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would improve first with one extra free hour every day?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would improve first with one extra free hour every day?” / “毎日自由な時間が一時間増えたら、最初に何がよくなりますか？” Tutor follow-ups: “How would the extra hour help?” and “Would you use the extra hour for sleep, exercise, or family?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “毎日自由な時間が一時間増えたら、最初に何がよくなりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would improve first with one extra free hour every day?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer the standalone question “Would high pay be worth frequently losing nights and weekends?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Would high pay be worth frequently losing nights and weekends?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Would high pay be worth frequently losing nights and weekends?” / “高い給料でも夜や週末をよく諦めるなら、受け入れますか？” Follow-ups: “Which commitment could not be sacrificed?” and “Would three months feel different from three years?”
-- Learning target: Develop the distinct “Nights and weekends” angle of Better work-life balance or a higher salary? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Nights and weekends” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Would high pay be worth frequently losing nights and weekends?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “高い給料でも夜や週末をよく諦めるなら、受け入れますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would high pay be worth frequently losing nights and weekends?"]}`
+- Learner action: Answer the standalone question “Would high pay be worth often losing evenings and weekends?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would high pay be worth often losing evenings and weekends?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would high pay be worth often losing evenings and weekends?” / “高い給料でも、夜や週末をよく失うなら受け入れますか？” Tutor follow-ups: “Which commitment could not be sacrificed?” and “Would losing every weekend be too much?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “高い給料でも、夜や週末をよく失うなら受け入れますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would high pay be worth often losing evenings and weekends?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer the standalone question “Would a clear one-year limit make high pay easier to choose?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Would a clear one-year limit make high pay easier to choose?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Would a clear one-year limit make high pay easier to choose?” / “ちょうど一年だけなら、高い給料を選びやすくなりますか？” Follow-ups: “What would the year need to achieve?” and “How would you recover afterward?”
-- Learning target: Develop the distinct “Exactly one year” angle of Better work-life balance or a higher salary? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Exactly one year” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Would a clear one-year limit make high pay easier to choose?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “ちょうど一年だけなら、高い給料を選びやすくなりますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would a clear one-year limit make high pay easier to choose?"]}`
+- Learner action: Answer the standalone question “Would a clear one-year limit make a demanding high-paid job easier to accept?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would a clear one-year limit make a demanding high-paid job easier to accept?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would a clear one-year limit make a demanding high-paid job easier to accept?” / “大変でも高収入の仕事が一年だけなら、受け入れやすくなりますか？” Tutor follow-ups: “What would the year need to achieve?” and “Would you accept the job for three months instead of a year?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “大変でも高収入の仕事が一年だけなら、受け入れやすくなりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would a clear one-year limit make a demanding high-paid job easier to accept?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer the standalone question “What new responsibility or goal would make you switch?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What new responsibility or goal would make you switch?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “What new responsibility or goal would make you switch?” / “どんな責任や目標ができたら、反対を選びますか？” Follow-ups: “How urgent would it need to be?” and “Would the switch be temporary?”
-- Learning target: Develop the distinct “A new responsibility” angle of Better work-life balance or a higher salary? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “A new responsibility” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “What new responsibility or goal would make you switch?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “どんな責任や目標ができたら、反対を選びますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What new responsibility or goal would make you switch?"]}`
+- Learner action: Answer the standalone question “Would caring for someone or facing a large bill make higher pay more important?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would caring for someone or facing a large bill make higher pay more important?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would caring for someone or facing a large bill make higher pay more important?” / “誰かのケアや大きな支払いが必要になったら、より高い給料が重要になりますか？” Tutor follow-ups: “Would the higher pay be needed for long?” and “Which cost could make higher pay urgent: rent, health care, or family care?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “誰かのケアや大きな支払いが必要になったら、より高い給料が重要になりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would caring for someone or facing a large bill make higher pay more important?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Use the exact ask-back “Ask your tutor whether they would choose better work-life balance or a higher salary, and why.” to invite the tutor’s real answer, then compare the two positions.
-- Tutor action: Let the learner ask “Ask your tutor whether they would choose better work-life balance or a higher salary, and why.”, answer it genuinely and briefly, then use one topic-specific comparison probe if useful.
-- Visible target or prompt: Reciprocal ask-back: “Ask your tutor whether they would choose better work-life balance or a higher salary, and why.” / “チューターならよりよい仕事と生活の両立とより高い給料のどちらを選ぶか、その理由も聞いてください。” Follow-ups: “Which part of personal time would your tutor protect?” and “What would make higher pay worth the cost?”
-- Learning target: Turn the balance game into a two-way exchange by eliciting and comparing the tutor’s real position.
-- Pedagogical value: Prevents an interview-like ending and gives the learner a natural reason to listen, react, and compare.
-- Failure diagnoses: If the learner only states another personal answer, prompt the exact ask-back; do not model a preferred position.
-- Non-target support: The Japanese prompt “チューターならよりよい仕事と生活の両立とより高い給料のどちらを選ぶか、その理由も聞いてください。” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor whether they would choose better work-life balance or a higher salary, and why."]}`
+- Learner action: Answer the standalone question “Ask your tutor which option they would choose and why.” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Ask your tutor which option they would choose and why.”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Ask your tutor which option they would choose and why.” / “チューターならどちらを選ぶか、その理由も聞いてください。” Tutor follow-ups: “Which part of personal time would your tutor protect?” and “Would a one-year offer change the choice?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “チューターならどちらを選ぶか、その理由も聞いてください。” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor which option they would choose and why."]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

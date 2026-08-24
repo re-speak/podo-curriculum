@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-love-and-marriage-full/lessons/58-a-relationship-deal-breaker/lesson.html`
-- SHA-256: `f85d8a043179e919fb3d86989ed4b06560eb422ed85923c6c112e4739cc6f841`
+- SHA-256: `f772f3ae28b823b7893c7e417b97d3786273ccfde4224ea4ec2720672d40a3db`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -22,9 +22,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; the page asks for one title reading and nothing else.
 - Component consistency: Uses the approved Freetalking goal component with no outcome rows or model answers.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pending**; 480px **pending**
+- Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection passed.
 
 ## 2. `article`
 
@@ -39,9 +39,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: Sentence reveals provide optional bilingual support and selective glosses; they are not graded choices or distractors.
 - Component consistency: Uses the approved ten-row sentence-reveal article with one operating question and the tutor-only skip rule.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pending**; 480px **pending**
+- Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection passed.
 
 ## 3. `lesson-style`
 
@@ -56,9 +56,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: The two mutually exclusive choices produce meaningfully different tutor behavior.
 - Component consistency: Reuses the approved synchronized Freetalking discussion-style component and option order.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pending**; 480px **pending**
+- Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection passed.
 
 ## 4. `talk-intro`
 
@@ -73,145 +73,145 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; this is one concise operating transition.
 - Component consistency: Matches the approved flexible-pool transition with visible learner framing and one tutor-only timing note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pending**; 480px **pending**
+- Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection passed.
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “Which kind of remark can destroy trust between two people?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which value would the remark violate?” rather than asking every follow-up.
-- Visible target or prompt: Which kind of remark can destroy trust between two people? / どのような発言が、二人の間の信頼を壊し得ると思いますか？
-- Learning target: Explore the distinct “A possible deal-breaker (受け入れられない一言)” angle of “A relationship deal-breaker” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which value would the remark violate?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which value would the remark violate?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which kind of remark can destroy trust between two people?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How much should context affect the judgment?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which kind of remark can destroy trust between two people?"]}`
-- Visual QA: 360px **pending**; 480px **pending**
+- Learner action: Answer the standalone question “Which does more damage to trust: a lie, a cruel comment, or a broken promise?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which does more damage to trust: a lie, a cruel comment, or a broken promise?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which does more damage to trust: a lie, a cruel comment, or a broken promise?” / “うそ、ひどい発言、破られた約束の中で、信頼を最も傷つけるのはどれですか？” Tutor follow-ups: “Why does that one carry the most weight?” and “Could the context change your answer?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “うそ、ひどい発言、破られた約束の中で、信頼を最も傷つけるのはどれですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which does more damage to trust: a lie, a cruel comment, or a broken promise?"]}`
+- Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “Which is most difficult to repair after: contempt, a threat, or deliberate dishonesty?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which feature makes the damage decisive?” rather than asking every follow-up.
-- Visible target or prompt: Which is most difficult to repair after: contempt, a threat, or deliberate dishonesty? / 軽蔑、脅し、意図的な不誠実さの中で、最も修復が難しいのはどれですか？
-- Learning target: Explore the distinct “The kind of remark (発言の種類)” angle of “A relationship deal-breaker” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which feature makes the damage decisive?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which feature makes the damage decisive?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which is most difficult to repair after: contempt, a threat, or deliberate dishonesty?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Could a less severe version remain repairable?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which is most difficult to repair after: contempt, a threat, or deliberate dishonesty?"]}`
-- Visual QA: 360px **pending**; 480px **pending**
+- Learner action: Answer the standalone question “Can one terrible comment be a deal-breaker, or does a repeated pattern matter more?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Can one terrible comment be a deal-breaker, or does a repeated pattern matter more?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Can one terrible comment be a deal-breaker, or does a repeated pattern matter more?” / “一度のひどい発言が関係を終わらせる決定打になりますか、それとも、繰り返される行動のほうが重要ですか？” Tutor follow-ups: “What could make one comment impossible to ignore?” and “When does a pattern become clearer than a single moment?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一度のひどい発言が関係を終わらせる決定打になりますか、それとも、繰り返される行動のほうが重要ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Can one terrible comment be a deal-breaker, or does a repeated pattern matter more?"]}`
+- Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “What is the wisest first response when a remark crosses a serious relationship boundary?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What needs to happen immediately?” rather than asking every follow-up.
-- Visible target or prompt: What is the wisest first response when a remark crosses a serious relationship boundary? / 発言が重大な関係の境界線を越えたとき、最初にどう対応するのが賢明ですか？
-- Learning target: Explore the distinct “Real or imagined (実際または仮定)” angle of “A relationship deal-breaker” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What needs to happen immediately?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What needs to happen immediately?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What is the wisest first response when a remark crosses a serious relationship boundary?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Whose perspective could help assess the situation?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What is the wisest first response when a remark crosses a serious relationship boundary?"]}`
-- Visual QA: 360px **pending**; 480px **pending**
+- Learner action: Answer the standalone question “What makes an apology feel genuine?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What makes an apology feel genuine?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What makes an apology feel genuine?” / “謝罪が本心からのものだと感じられるのは、どんなときですか？” Tutor follow-ups: “How much do the exact words matter?” and “What change would need to follow?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “謝罪が本心からのものだと感じられるのは、どんなときですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes an apology feel genuine?"]}`
+- Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “Under which conditions is a deliberate pause more constructive than an immediate response?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which escalation could a pause prevent?” rather than asking every follow-up.
-- Visible target or prompt: Under which conditions is a deliberate pause more constructive than an immediate response? / どのような状況では、すぐに反応するより、意識的に間を置くほうが建設的ですか？
-- Learning target: Explore the distinct “What happens next (その後の対応)” angle of “A relationship deal-breaker” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which escalation could a pause prevent?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which escalation could a pause prevent?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Under which conditions is a deliberate pause more constructive than an immediate response?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How can the pause avoid feeling like punishment?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Under which conditions is a deliberate pause more constructive than an immediate response?"]}`
-- Visual QA: 360px **pending**; 480px **pending**
+- Learner action: Answer the standalone question “When is taking a break from an argument healthier than continuing it?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When is taking a break from an argument healthier than continuing it?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When is taking a break from an argument healthier than continuing it?” / “口論を続けるより、いったん離れるほうが健全なのはどんなときですか？” Tutor follow-ups: “What signs show that the conversation is no longer useful?” and “How can the break avoid feeling like punishment?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “口論を続けるより、いったん離れるほうが健全なのはどんなときですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When is taking a break from an argument healthier than continuing it?"]}`
+- Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “Should a damaging remark be judged mainly by its literal wording or by the attitude it reveals?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Could different wording expose the same harm?” rather than asking every follow-up.
-- Visible target or prompt: Should a damaging remark be judged mainly by its literal wording or by the attitude it reveals? / 傷つける発言は、文字どおりの言葉と、そこに表れる態度のどちらを主に見るべきですか？
-- Learning target: Explore the distinct “Words or meaning (言葉か意味か)” angle of “A relationship deal-breaker” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Could different wording expose the same harm?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Could different wording expose the same harm?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Should a damaging remark be judged mainly by its literal wording or by the attitude it reveals?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How much should intention matter?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Should a damaging remark be judged mainly by its literal wording or by the attitude it reveals?"]}`
-- Visual QA: 360px **pending**; 480px **pending**
+- Learner action: Answer the standalone question “What should never be used as a weapon in an argument?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What should never be used as a weapon in an argument?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What should never be used as a weapon in an argument?” / “口論の中で、決して攻撃の材料にしてはいけないことは何ですか？” Tutor follow-ups: “Why would using it cause lasting harm?” and “How could the same concern be raised fairly?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “口論の中で、決して攻撃の材料にしてはいけないことは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What should never be used as a weapon in an argument?"]}`
+- Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “What would credible accountability require after a damaging remark?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which action should accompany the apology?” rather than asking every follow-up.
-- Visible target or prompt: What would credible accountability require after a damaging remark? / 傷つける発言の後、信頼できる責任の取り方には何が必要ですか？
-- Learning target: Explore the distinct “What is forgivable (許せる条件)” angle of “A relationship deal-breaker” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which action should accompany the apology?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which action should accompany the apology?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What would credible accountability require after a damaging remark?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which repeated pattern would make repair unlikely?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would credible accountability require after a damaging remark?"]}`
-- Visual QA: 360px **pending**; 480px **pending**
+- Learner action: Answer the standalone question “What would real repair look like after someone crosses a serious line?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would real repair look like after someone crosses a serious line?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would real repair look like after someone crosses a serious line?” / “重大な一線を越えた後、本当の関係修復とはどのようなものですか？” Tutor follow-ups: “Which action would matter more than another promise?” and “How would both people know that trust is returning?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “重大な一線を越えた後、本当の関係修復とはどのようなものですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would real repair look like after someone crosses a serious line?"]}`
+- Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “Which category of remark should remain off-limits even during intense conflict?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which principle sets that limit?” rather than asking every follow-up.
-- Visible target or prompt: Which category of remark should remain off-limits even during intense conflict? / 激しい対立の中でも、どの種類の発言は禁じるべきですか？
-- Learning target: Explore the distinct “What you would not say (自分が言わないこと)” angle of “A relationship deal-breaker” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which principle sets that limit?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which principle sets that limit?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which category of remark should remain off-limits even during intense conflict?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How could the underlying concern be expressed constructively?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which category of remark should remain off-limits even during intense conflict?"]}`
-- Visual QA: 360px **pending**; 480px **pending**
+- Learner action: Answer the standalone question “How can someone set a firm boundary without making a threat?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How can someone set a firm boundary without making a threat?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How can someone set a firm boundary without making a threat?” / “脅しにせず、はっきりと境界線を示すにはどうすればよいですか？” Tutor follow-ups: “What wording keeps the focus on the boundary?” and “Which choice should the other person still have?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “脅しにせず、はっきりと境界線を示すにはどうすればよいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can someone set a firm boundary without making a threat?"]}`
+- Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “How can a serious boundary be communicated firmly without becoming coercive?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which wording preserves the other person's choice?” rather than asking every follow-up.
-- Visible target or prompt: How can a serious boundary be communicated firmly without becoming coercive? / 重大な境界線を、強制的にならず、はっきりとどう伝えられますか？
-- Learning target: Explore the distinct “Stating the boundary (境界線の伝え方)” angle of “A relationship deal-breaker” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which wording preserves the other person's choice?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which wording preserves the other person's choice?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How can a serious boundary be communicated firmly without becoming coercive?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which setting would support a calm discussion?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can a serious boundary be communicated firmly without becoming coercive?"]}`
-- Visual QA: 360px **pending**; 480px **pending**
+- Learner action: Answer the standalone question “What's one green flag that tells you a relationship is safe?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's one green flag that tells you a relationship is safe?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's one green flag that tells you a relationship is safe?” / “人間関係が安心できると分かるよいサインを一つ挙げるとしたら何ですか？” Tutor follow-ups: “Which everyday action makes the sign visible?” and “How does it help both people handle conflict?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “人間関係が安心できると分かるよいサインを一つ挙げるとしたら何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's one green flag that tells you a relationship is safe?"]}`
+- Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 
@@ -226,6 +226,6 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No distractors appear; the tutor records only a useful correction or note from observed speech.
 - Component consistency: Uses the approved actionable feedback page and Student's sentence terminology.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pending**; 480px **pending**
+- Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection passed.

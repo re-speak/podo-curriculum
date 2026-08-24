@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-accessible/lessons/94-one-thing-you-would-make-free-forever/lesson.html`
-- SHA-256: `80769d682cd6218b5d42cc40071a415b595276e76b2e2e6eee35629aa2d40f74`
+- SHA-256: `43ac78f8cfd747cd344b8475a55fed09dadf9d0cca03d357152313c5610ff792`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “If one everyday service were free for life, which would you choose?” and develop the most interesting concrete detail.
-- Tutor action: Ask “If one everyday service were free for life, which would you choose?”, react or share briefly, then choose at most one relevant probe such as “How often would you use it?”.
-- Visible target or prompt: If one everyday service were free for life, which would you choose? / 日常のサービスを一つ一生無料にできるなら、何を選びますか？ Follow-up pool: How often would you use it? What makes that service especially useful?
-- Learning target: Explore the distinct “Free for life” angle of “One thing you would make free forever” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “How often would you use it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How often would you use it?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “If one everyday service were free for life, which would you choose?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What makes that service especially useful?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “If one everyday service were free for life, which would you choose?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “If one everyday service were free for life, which would you choose?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “If one everyday service were free for life, which would you choose?” / “日常のサービスを一つ一生無料にできるなら、何を選びますか？” Tutor follow-ups: “Would you choose transport, delivery, or cleaning?” and “How often would you use it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “日常のサービスを一つ一生無料にできるなら、何を選びますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If one everyday service were free for life, which would you choose?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “How often would a free service need to be used to make it valuable?” and develop the most interesting concrete detail.
-- Tutor action: Ask “How often would a free service need to be used to make it valuable?”, react or share briefly, then choose at most one relevant probe such as “Which service would meet that level of use?”.
-- Visible target or prompt: How often would a free service need to be used to make it valuable? / 無料のサービスは、どのくらい使えば価値がありますか？ Follow-up pool: Which service would meet that level of use? What could make frequent use less valuable?
-- Learning target: Explore the distinct “Real use” angle of “One thing you would make free forever” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which service would meet that level of use?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which service would meet that level of use?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How often would a free service need to be used to make it valuable?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What could make frequent use less valuable?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How often would a free service need to be used to make it valuable?"]}`
+- Learner action: Answer the standalone question “Which everyday service should cost less for everyone?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which everyday service should cost less for everyone?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which everyday service should cost less for everyone?” / “どの日常サービスを、すべての人にとってもっと安くするべきですか？” Tutor follow-ups: “Would cheaper transport or childcare help more people?” and “What could make the lower price difficult?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どの日常サービスを、すべての人にとってもっと安くするべきですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which everyday service should cost less for everyone?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “How could one free service change an ordinary week?” and develop the most interesting concrete detail.
-- Tutor action: Ask “How could one free service change an ordinary week?”, react or share briefly, then choose at most one relevant probe such as “Which day or routine would change most?”.
-- Visible target or prompt: How could one free service change an ordinary week? / 一つの無料サービスで、普通の一週間はどう変わりますか？ Follow-up pool: Which day or routine would change most? What would you do with the time or money saved?
-- Learning target: Explore the distinct “A changed week” angle of “One thing you would make free forever” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which day or routine would change most?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which day or routine would change most?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How could one free service change an ordinary week?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What would you do with the time or money saved?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How could one free service change an ordinary week?"]}`
+- Learner action: Answer the standalone question “How would one free everyday service change an ordinary week?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How would one free everyday service change an ordinary week?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How would one free everyday service change an ordinary week?” / “日常サービスが一つ無料になったら、普通の一週間はどう変わりますか？” Tutor follow-ups: “Which routine would change most?” and “Would free transport change your week?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “日常サービスが一つ無料になったら、普通の一週間はどう変わりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How would one free everyday service change an ordinary week?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “How could other people benefit from one person's free service?” and develop the most interesting concrete detail.
-- Tutor action: Ask “How could other people benefit from one person's free service?”, react or share briefly, then choose at most one relevant probe such as “How could you share it legally?”.
-- Visible target or prompt: How could other people benefit from one person's free service? / 一人の無料サービスから、ほかの人はどう恩恵を受けられますか？ Follow-up pool: How could you share it legally? What makes the benefit personal?
-- Learning target: Explore the distinct “Beyond you” angle of “One thing you would make free forever” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “How could you share it legally?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How could you share it legally?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How could other people benefit from one person's free service?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What makes the benefit personal?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How could other people benefit from one person's free service?"]}`
+- Learner action: Answer the standalone question “Which free service could help a whole family or group?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which free service could help a whole family or group?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which free service could help a whole family or group?” / “どんな無料サービスなら、家族やグループ全体の役に立ちますか？” Tutor follow-ups: “Who else would benefit?” and “Would free childcare or free public transport help more people?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな無料サービスなら、家族やグループ全体の役に立ちますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which free service could help a whole family or group?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “Which boring service would be the most sensible one to make free?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which boring service would be the most sensible one to make free?”, react or share briefly, then choose at most one relevant probe such as “Which long-term cost would it remove?”.
-- Visible target or prompt: Which boring service would be the most sensible one to make free? / 地味でも、無料にするのが最も賢いサービスは何ですか？ Follow-up pool: Which long-term cost would it remove? Would practical value change what you preferred?
-- Learning target: Explore the distinct “The boring answer” angle of “One thing you would make free forever” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which long-term cost would it remove?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which long-term cost would it remove?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which boring service would be the most sensible one to make free?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Would practical value change what you preferred?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which boring service would be the most sensible one to make free?"]}`
+- Learner action: Answer the standalone question “Which boring service would save the most money over a lifetime?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which boring service would save the most money over a lifetime?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which boring service would save the most money over a lifetime?” / “地味でも、一生で最もお金を節約できるサービスは何ですか？” Tutor follow-ups: “Would cleaning, internet, or insurance save more over time?” and “Would you still prefer a more enjoyable service?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “地味でも、一生で最もお金を節約できるサービスは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which boring service would save the most money over a lifetime?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “When would reselling free access be fair or unfair?” and develop the most interesting concrete detail.
-- Tutor action: Ask “When would reselling free access be fair or unfair?”, react or share briefly, then choose at most one relevant probe such as “What rule would have to allow it?”.
-- Visible target or prompt: When would reselling free access be fair or unfair? / 無料の利用権を転売することは、どんなときに公平、または不公平ですか？ Follow-up pool: What rule would have to allow it? What makes resale unfair or pointless?
-- Learning target: Explore the distinct “Reselling” angle of “One thing you would make free forever” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What rule would have to allow it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What rule would have to allow it?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “When would reselling free access be fair or unfair?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What makes resale unfair or pointless?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When would reselling free access be fair or unfair?"]}`
+- Learner action: Answer the standalone question “Should someone be allowed to give their free service to another person?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Should someone be allowed to give their free service to another person?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Should someone be allowed to give their free service to another person?” / “無料サービスをほかの人に譲ってもよいですか？” Tutor follow-ups: “When would giving it away be generous?” and “What rule could prevent unfair resale?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “無料サービスをほかの人に譲ってもよいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Should someone be allowed to give their free service to another person?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “What hidden costs can remain when a service is free?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What hidden costs can remain when a service is free?”, react or share briefly, then choose at most one relevant probe such as “Which hidden cost would matter most?”.
-- Visible target or prompt: What hidden costs can remain when a service is free? / サービスが無料でも、どんな見えない負担が残りますか？ Follow-up pool: Which hidden cost would matter most? How could a provider reduce that cost?
-- Learning target: Explore the distinct “Still not free” angle of “One thing you would make free forever” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which hidden cost would matter most?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which hidden cost would matter most?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What hidden costs can remain when a service is free?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “How could a provider reduce that cost?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What hidden costs can remain when a service is free?"]}`
+- Learner action: Answer the standalone question “What problem can make a free service not worth using?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What problem can make a free service not worth using?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What problem can make a free service not worth using?” / “どんな問題があると、無料のサービスでも使う価値がないと感じますか？” Tutor follow-ups: “What makes that problem hard to avoid?” and “Would you use a free app that collected your personal data?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな問題があると、無料のサービスでも使う価値がないと感じますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What problem can make a free service not worth using?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “What would make a paid service better than a free alternative?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What would make a paid service better than a free alternative?”, react or share briefly, then choose at most one relevant probe such as “What extra value would payment buy?”.
-- Visible target or prompt: What would make a paid service better than a free alternative? / 有料のサービスが無料の代わりよりよくなるのは何ですか？ Follow-up pool: What extra value would payment buy? What makes the free version enough?
-- Learning target: Explore the distinct “Paying on purpose” angle of “One thing you would make free forever” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What extra value would payment buy?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What extra value would payment buy?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What would make a paid service better than a free alternative?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What makes the free version enough?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would make a paid service better than a free alternative?"]}`
+- Learner action: Answer the standalone question “What would make a paid service better than a free one?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would make a paid service better than a free one?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would make a paid service better than a free one?” / “有料サービスが無料のものよりよくなるのは何ですか？” Tutor follow-ups: “Which matters more: faster service or better support?” and “What makes the free version enough?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “有料サービスが無料のものよりよくなるのは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would make a paid service better than a free one?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

@@ -54,6 +54,7 @@ import sys
 import yaml
 
 import model
+import prestudy
 
 REPO = pathlib.Path(__file__).resolve().parent.parent
 DRAFTS = REPO / "sandbox" / "drafts"
@@ -502,9 +503,27 @@ def promote(man: Manifest, dry_run: bool, assume_yes: bool) -> None:
 
         # Both slots are mandatory — a lesson with only 수업용 leaves
         # PRESTUDY_LEMONBOARD_KEY empty and class creation fails at
-        # /rooms/null/duplicate. The same deck fills both.
+        # /rooms/null/duplicate. Both start from the same deck.
         for slot in ("lecture", "prestudy"):
             build_deck(lesson / slot, page, sheets, scripts, assets, man.asset_roots)
+
+        # …and then 예습용 is cut down to a prestudy deck: pages the learner
+        # cannot do alone are removed, the tutor's apparatus goes with them
+        # (spoken script, teaching mode, notes, the shared pointer), and the
+        # labels become Japanese — the learner does this by themselves, before
+        # class, and reads no Korean they cannot act on.
+        #
+        # It is a subtraction from the deck built one line above, which is what
+        # keeps the two in step: a prestudy can never teach Korean the lesson
+        # does not, because it is the same file with pages taken out.
+        # tools/prestudy.py holds every rule and the reason for each.
+        # 한국어 커리큘럼에만 적용한다. 자르는 규칙(페이지 이름, 튜터 상용구,
+        # 라벨의 일본어 짝)은 전부 KR 덱의 생김새를 보고 만든 것이고, EN 덱은
+        # 구성도 대상 학습자도 다르다. 언어를 안 가리고 돌렸더니 영어 덱에서
+        # 「私は上司役をします」 같은 문장에 경고가 1500건 넘게 났다 —
+        # 규칙이 맞지 않는다는 신호다. EN 은 지금처럼 두 슬롯이 같은 덱이다.
+        if lessons.parents[1].name == "kr":
+            prestudy.cut_in_place(lesson / "prestudy")
 
 
 def discover() -> list[pathlib.Path]:

@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-work-and-money-full/lessons/74-what-your-workday-actually-looks-like/lesson.html`
-- SHA-256: `b2e2af060f15022bdcafa3df4cbaba848a9464c20a7083712dd4a53c9966da8f`
+- SHA-256: `a5ce0af667cce412e4b1f381f7b16fac75d2640b1bf591199967a95271a16bb7`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -24,7 +24,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection is pending for the revised wording.
 
 ## 2. `article`
 
@@ -41,7 +41,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection is pending for the revised wording.
 
 ## 3. `lesson-style`
 
@@ -58,7 +58,7 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection is pending for the revised wording.
 
 ## 4. `talk-intro`
 
@@ -75,143 +75,143 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection is pending for the revised wording.
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “Choose any recent two-hour window. Which activities filled it?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which activity would have been visible to an observer?” rather than asking every follow-up.
-- Visible target or prompt: Choose any recent two-hour window. Which activities filled it? / 最近の二時間を一つ選んでください。どんな活動がその時間を占めましたか？
-- Learning target: Explore the distinct “A two-hour window (二時間の様子)” angle of “What your workday actually looks like” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which activity would have been visible to an observer?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which activity would have been visible to an observer?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Choose any recent two-hour window. Which activities filled it?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What made that period typical or unusual?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Choose any recent two-hour window. Which activities filled it?"]}`
+- Learner action: Answer the standalone question “Think about a recent two-hour stretch. What filled the time?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Think about a recent two-hour stretch. What filled the time?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Think about a recent two-hour stretch. What filled the time?” / “最近の二時間を思い出してください。その時間を何に使いましたか？” Tutor follow-ups: “Which activity would have been visible to an observer?” and “What made that period typical or unusual?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “最近の二時間を思い出してください。その時間を何に使いましたか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Think about a recent two-hour stretch. What filled the time?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “Which sequence best represents a typical two-hour period?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which activity normally determines the sequence?” rather than asking every follow-up.
-- Visible target or prompt: Which sequence best represents a typical two-hour period? / よくある二時間を最もよく表す活動の流れは何ですか？
-- Learning target: Explore the distinct “Walk through the period (時間の流れ)” angle of “What your workday actually looks like” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which activity normally determines the sequence?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which activity normally determines the sequence?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which sequence best represents a typical two-hour period?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which interruption most often changes the plan?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which sequence best represents a typical two-hour period?"]}`
+- Learner action: Answer the standalone question “Which part of your day takes more time than other people might expect?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which part of your day takes more time than other people might expect?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which part of your day takes more time than other people might expect?” / “一日の中で、ほかの人が思うより時間のかかることは何ですか？” Tutor follow-ups: “Which activity usually sets the order of everything else?” and “Which interruption usually changes that order?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一日の中で、ほかの人が思うより時間のかかることは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which part of your day takes more time than other people might expect?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “Which activity consumes the largest share of a typical routine?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Does the duration come from execution, waiting, verification, or coordination?” rather than asking every follow-up.
-- Visible target or prompt: Which activity consumes the largest share of a typical routine? / よくある日課の中で、最も大きな時間を占める活動は何ですか？
-- Learning target: Explore the distinct “What takes longest (最も時間がかかること)” angle of “What your workday actually looks like” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Does the duration come from execution, waiting, verification, or coordination?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Does the duration come from execution, waiting, verification, or coordination?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which activity consumes the largest share of a typical routine?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Would the reason be visible to an outsider?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which activity consumes the largest share of a typical routine?"]}`
+- Learner action: Answer the standalone question “Which part of your routine feels most satisfying?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which part of your routine feels most satisfying?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which part of your routine feels most satisfying?” / “日課の中で、最も満足感があることは何ですか？” Tutor follow-ups: “What makes that part rewarding?” and “Would it still feel satisfying if you did more of it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “日課の中で、最も満足感があることは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which part of your routine feels most satisfying?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “Which part of a routine is most likely to feel satisfying, frustrating, or neutral?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which feature of the activity produces that response?” rather than asking every follow-up.
-- Visible target or prompt: Which part of a routine is most likely to feel satisfying, frustrating, or neutral? / 日課のどの部分が、満足、不満、または無感情に感じられやすいですか？
-- Learning target: Explore the distinct “A part you value (大切に思う部分)” angle of “What your workday actually looks like” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which feature of the activity produces that response?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which feature of the activity produces that response?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which part of a routine is most likely to feel satisfying, frustrating, or neutral?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Would a modest change alter the experience?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which part of a routine is most likely to feel satisfying, frustrating, or neutral?"]}`
+- Learner action: Answer the standalone question “Which part of the day takes the most energy out of you?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which part of the day takes the most energy out of you?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which part of the day takes the most energy out of you?” / “一日の中で、最もエネルギーを使うことは何ですか？” Tutor follow-ups: “Is the strain physical, mental, or social?” and “What change would make it easier?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一日の中で、最もエネルギーを使うことは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which part of the day takes the most energy out of you?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “Which preparation, verification, care, or coordination happens behind the scenes and would surprise an outsider?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which feature keeps the work out of view?” rather than asking every follow-up.
-- Visible target or prompt: Which preparation, verification, care, or coordination happens behind the scenes and would surprise an outsider? / 表に見えないところで、外の人が驚きそうな準備、検証、ケア、調整は何ですか？
-- Learning target: Explore the distinct “What would surprise an outsider (外からは意外なこと)” angle of “What your workday actually looks like” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which feature keeps the work out of view?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which feature keeps the work out of view?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which preparation, verification, care, or coordination happens behind the scenes and would surprise an outsider?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which problem does that hidden work prevent?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which preparation, verification, care, or coordination happens behind the scenes and would surprise an outsider?"]}`
+- Learner action: Answer the standalone question “What's one small task that creates a surprising amount of extra work?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's one small task that creates a surprising amount of extra work?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's one small task that creates a surprising amount of extra work?” / “小さな作業なのに、驚くほど多くの追加の仕事を生むものは何ですか？” Tutor follow-ups: “Why do other people not notice the work?” and “Which problem does that hidden work prevent?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “小さな作業なのに、驚くほど多くの追加の仕事を生むものは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's one small task that creates a surprising amount of extra work?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “How do ordinary work, study, or care routines evolve over time?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which activity or responsibility tends to shift most?” rather than asking every follow-up.
-- Visible target or prompt: How do ordinary work, study, or care routines evolve over time? / 仕事、勉強、ケアの普通の日課は、時間とともにどう変化しますか？
-- Learning target: Explore the distinct “How the routine changed (変わった日課)” angle of “What your workday actually looks like” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which activity or responsibility tends to shift most?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which activity or responsibility tends to shift most?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How do ordinary work, study, or care routines evolve over time?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which feature remains relatively stable?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How do ordinary work, study, or care routines evolve over time?"]}`
+- Learner action: Answer the standalone question “If you could remove or shorten one task, which would you choose?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “If you could remove or shorten one task, which would you choose?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “If you could remove or shorten one task, which would you choose?” / “一つの作業をなくすか短くできるなら、どれを選びますか？” Tutor follow-ups: “What would become easier in your routine if you removed or shortened it?” and “Who else might notice the change?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一つの作業をなくすか短くできるなら、どれを選びますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If you could remove or shorten one task, which would you choose?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “Which routine element should be removed, reduced, redesigned, or deliberately retained?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which outcome would improve?” rather than asking every follow-up.
-- Visible target or prompt: Which routine element should be removed, reduced, redesigned, or deliberately retained? / 日課のどの要素をなくす、減らす、設計し直す、または意識して残すべきですか？
-- Learning target: Explore the distinct “What to remove (減らしたいこと)” angle of “What your workday actually looks like” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which outcome would improve?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which outcome would improve?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which routine element should be removed, reduced, redesigned, or deliberately retained?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which necessary function or protection already works?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which routine element should be removed, reduced, redesigned, or deliberately retained?"]}`
+- Learner action: Answer the standalone question “What preparation helps the rest of a busy day run better?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What preparation helps the rest of a busy day run better?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What preparation helps the rest of a busy day run better?” / “どんな準備をすると、忙しい一日の残りがうまく進みますか？” Tutor follow-ups: “When does the preparation happen?” and “Which problem does it prevent?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな準備をすると、忙しい一日の残りがうまく進みますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What preparation helps the rest of a busy day run better?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “Which question would give an outsider a fairer account of the visible and hidden work in this routine?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Whose perspective would be most informative?” rather than asking every follow-up.
-- Visible target or prompt: Which question would give an outsider a fairer account of the visible and hidden work in this routine? / 外の人が、この日課の見える仕事と見えない仕事をより公平に理解するには、どんな質問が役立ちますか？
-- Learning target: Explore the distinct “See the whole day (一日全体を見る)” angle of “What your workday actually looks like” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Whose perspective would be most informative?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Whose perspective would be most informative?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which question would give an outsider a fairer account of the visible and hidden work in this routine?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which mistaken assumption might the answer correct?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which question would give an outsider a fairer account of the visible and hidden work in this routine?"]}`
+- Learner action: Answer the standalone question “What would surprise someone who swapped routines with you for a day?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would surprise someone who swapped routines with you for a day?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would surprise someone who swapped routines with you for a day?” / “あなたと一日だけ日課を交換した人は、何に驚くと思いますか？” Tutor follow-ups: “Which part would challenge them most?” and “What might they understand better afterward?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “あなたと一日だけ日課を交換した人は、何に驚くと思いますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would surprise someone who swapped routines with you for a day?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 
@@ -228,4 +228,4 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection is pending for the revised wording.

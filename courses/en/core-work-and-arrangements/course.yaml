@@ -31,6 +31,8 @@ spec:
     en: Look back on what was done, and arrange who does what by when.
     ja: 済んだことを振り返り、誰がいつまでに何をするかを決める。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

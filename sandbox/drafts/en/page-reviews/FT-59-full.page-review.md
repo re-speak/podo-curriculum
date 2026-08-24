@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-love-and-marriage-full/lessons/59-something-you-could-never-compromise-on-in-a-partner/lesson.html`
-- SHA-256: `6d01b5c4a12881f0e533853592a7381f3b8beeaaec88c579d8fbb9709dffac16`
+- SHA-256: `c626b54ed708ddce98dc9c99876b1dfabc7d4e3c251c67855769e5f79b75528e`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “Which single quality or behaviour would be non-negotiable in a partner?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which value underlies that boundary?” rather than asking every follow-up.
-- Visible target or prompt: Which single quality or behaviour would be non-negotiable in a partner? / パートナーのどの特徴や行動は、絶対に譲れませんか？
-- Learning target: Explore the distinct “One non-negotiable (一つの譲れない条件)” angle of “Something you could never compromise on in a partner” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which value underlies that boundary?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which value underlies that boundary?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which single quality or behaviour would be non-negotiable in a partner?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What observable behaviour would violate it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which single quality or behaviour would be non-negotiable in a partner?"]}`
+- Learner action: Answer the standalone question “Which quality or behaviour would be a deal-breaker in a partner?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which quality or behaviour would be a deal-breaker in a partner?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which quality or behaviour would be a deal-breaker in a partner?” / “パートナーのどの特徴や行動は、絶対に譲れませんか？” Tutor follow-ups: “Which personal need makes it important?” and “Which would end trust fastest: dishonesty, cruelty, or unreliability?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “パートナーのどの特徴や行動は、絶対に譲れませんか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which quality or behaviour would be a deal-breaker in a partner?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “What gives one preference enough weight to become a non-negotiable?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which underlying need does it protect?” rather than asking every follow-up.
-- Visible target or prompt: What gives one preference enough weight to become a non-negotiable? / 一つの好みが絶対に譲れない条件になるほどの重みは、どこから生まれますか？
-- Learning target: Explore the distinct “Why it matters (大切な理由)” angle of “Something you could never compromise on in a partner” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which underlying need does it protect?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which underlying need does it protect?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What gives one preference enough weight to become a non-negotiable?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Could the same value be demonstrated differently?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What gives one preference enough weight to become a non-negotiable?"]}`
+- Learner action: Answer the standalone question “How can a simple preference turn into a relationship deal-breaker?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How can a simple preference turn into a relationship deal-breaker?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How can a simple preference turn into a relationship deal-breaker?” / “単純な好みが、人間関係で絶対に譲れない条件に変わるのはなぜですか？” Tutor follow-ups: “Which need could make the preference non-negotiable?” and “Is there another way to protect that need?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “単純な好みが、人間関係で絶対に譲れない条件に変わるのはなぜですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can a simple preference turn into a relationship deal-breaker?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “Which preference can usually be negotiated without sacrificing a central value?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What makes it genuinely flexible?” rather than asking every follow-up.
-- Visible target or prompt: Which preference can usually be negotiated without sacrificing a central value? / 中心的な価値観を犠牲にせず、通常は調整できる好みは何ですか？
-- Learning target: Explore the distinct “What you could compromise on (妥協できること)” angle of “Something you could never compromise on in a partner” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What makes it genuinely flexible?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What makes it genuinely flexible?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which preference can usually be negotiated without sacrificing a central value?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “At which point would accommodation become too costly?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which preference can usually be negotiated without sacrificing a central value?"]}`
+- Learner action: Answer the standalone question “Which preference can you be flexible about in a partner?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which preference can you be flexible about in a partner?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which preference can you be flexible about in a partner?” / “パートナーのどんな好みなら柔軟に受け入れられますか？” Tutor follow-ups: “What makes that preference easier to accept?” and “When would being flexible create a real problem?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “パートナーのどんな好みなら柔軟に受け入れられますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which preference can you be flexible about in a partner?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “How might age and experience reorder the qualities someone values in a partner?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which criterion might gain weight?” rather than asking every follow-up.
-- Visible target or prompt: How might age and experience reorder the qualities someone values in a partner? / 年齢や経験は、パートナーに求める特徴の優先順位をどう変えると思いますか？
-- Learning target: Explore the distinct “How the list changes (条件の変化)” angle of “Something you could never compromise on in a partner” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which criterion might gain weight?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which criterion might gain weight?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How might age and experience reorder the qualities someone values in a partner?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which ideal could become less important?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How might age and experience reorder the qualities someone values in a partner?"]}`
+- Learner action: Answer the standalone question “Which qualities in a partner can matter more as people get older?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which qualities in a partner can matter more as people get older?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which qualities in a partner can matter more as people get older?” / “年齢を重ねると、パートナーのどんな特徴がより大切になることがありますか？” Tutor follow-ups: “Which quality might matter more?” and “Which one might matter less?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “年齢を重ねると、パートナーのどんな特徴がより大切になることがありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which qualities in a partner can matter more as people get older?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “Why can a legitimate relationship boundary be dismissed as unrealistic?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which social expectation distorts the judgment?” rather than asking every follow-up.
-- Visible target or prompt: Why can a legitimate relationship boundary be dismissed as unrealistic? / なぜ、正当な関係の境界線が現実的でないと退けられることがあるのでしょうか？
-- Learning target: Explore the distinct “Called unrealistic (非現実的と言われる条件)” angle of “Something you could never compromise on in a partner” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which social expectation distorts the judgment?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which social expectation distorts the judgment?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why can a legitimate relationship boundary be dismissed as unrealistic?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Whose interests does the criticism serve?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why can a legitimate relationship boundary be dismissed as unrealistic?"]}`
+- Learner action: Answer the standalone question “Why are some reasonable relationship boundaries called unrealistic?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why are some reasonable relationship boundaries called unrealistic?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why are some reasonable relationship boundaries called unrealistic?” / “なぜ、正当な関係の境界線が現実的でないと退けられることがあるのでしょうか？” Tutor follow-ups: “Whose opinion affects the judgment most: family, friends, or the couple?” and “Who has the right to set the boundary?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “なぜ、正当な関係の境界線が現実的でないと退けられることがあるのでしょうか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why are some reasonable relationship boundaries called unrealistic?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “What evidence justifies reassessing a boundary without abandoning its purpose?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Would consequences or another perspective matter more?” rather than asking every follow-up.
-- Visible target or prompt: What evidence justifies reassessing a boundary without abandoning its purpose? / 境界線の目的を捨てずに見直すには、どんな根拠が必要ですか？
-- Learning target: Explore the distinct “Were they right? (見直す必要)” angle of “Something you could never compromise on in a partner” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Would consequences or another perspective matter more?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Would consequences or another perspective matter more?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What evidence justifies reassessing a boundary without abandoning its purpose?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which core value still needs protection?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What evidence justifies reassessing a boundary without abandoning its purpose?"]}`
+- Learner action: Answer the standalone question “What kind of experience could make a reasonable relationship boundary change?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kind of experience could make a reasonable relationship boundary change?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kind of experience could make a reasonable relationship boundary change?” / “人間関係での妥当な境界線を変えるのは、どんな経験ですか？” Tutor follow-ups: “What new fact could change the person's mind?” and “What should still remain important?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “人間関係での妥当な境界線を変えるのは、どんな経験ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of experience could make a reasonable relationship boundary change?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “How should two people respond when their defensible non-negotiables are incompatible?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which differences might still allow negotiation?” rather than asking every follow-up.
-- Visible target or prompt: How should two people respond when their defensible non-negotiables are incompatible? / 二人の正当な譲れない条件が両立しないとき、どう対応すべきですか？
-- Learning target: Explore the distinct “Two boundaries (二つの境界線)” angle of “Something you could never compromise on in a partner” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which differences might still allow negotiation?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which differences might still allow negotiation?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How should two people respond when their defensible non-negotiables are incompatible?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When is acknowledging incompatibility more honest?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How should two people respond when their defensible non-negotiables are incompatible?"]}`
+- Learner action: Answer the standalone question “What should two people do when their deal-breakers clash?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What should two people do when their deal-breakers clash?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What should two people do when their deal-breakers clash?” / “二人の絶対に譲れない条件がぶつかったら、どうすべきですか？” Tutor follow-ups: “Which differences still allow compromise?” and “When is ending the relationship more honest?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “二人の絶対に譲れない条件がぶつかったら、どうすべきですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What should two people do when their deal-breakers clash?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “How can a non-negotiable be expressed as a personal boundary rather than a demand?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which wording shows ownership of the boundary?” rather than asking every follow-up.
-- Visible target or prompt: How can a non-negotiable be expressed as a personal boundary rather than a demand? / 譲れない条件を、要求ではなく自分の境界線としてどう表現できますか？
-- Learning target: Explore the distinct “A fair boundary (公平な境界線)” angle of “Something you could never compromise on in a partner” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which wording shows ownership of the boundary?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which wording shows ownership of the boundary?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How can a non-negotiable be expressed as a personal boundary rather than a demand?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which autonomy must remain with the other person?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can a non-negotiable be expressed as a personal boundary rather than a demand?"]}`
+- Learner action: Answer the standalone question “How can someone state a deal-breaker as a boundary instead of a demand?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How can someone state a deal-breaker as a boundary instead of a demand?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How can someone state a deal-breaker as a boundary instead of a demand?” / “譲れない条件を、要求ではなく自分の境界線としてどう表現できますか？” Tutor follow-ups: “How can you make clear that the limit belongs to you?” and “Which decision must remain with the other person?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “譲れない条件を、要求ではなく自分の境界線としてどう表現できますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can someone state a deal-breaker as a boundary instead of a demand?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

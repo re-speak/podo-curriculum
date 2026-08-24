@@ -31,6 +31,8 @@ spec:
     en: Disagree diplomatically, and lay out cause, evidence and consequence.
     ja: 角を立てずに反対し、原因・根拠・結果を筋道立てて述べる。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

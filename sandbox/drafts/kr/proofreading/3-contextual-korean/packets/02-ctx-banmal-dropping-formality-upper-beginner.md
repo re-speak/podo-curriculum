@@ -8,7 +8,7 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 ## 01 · 01-suggesting-banmal
 
 - source: `sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-banmal-dropping-formality-upper-beginner/lessons/01-suggesting-banmal/lesson.html`
-- sha256: `5e69c2c905ac90adcd3c2940d7f6dfcf106c24899e090cd548b791d3ca076189`
+- sha256: `d0bd91699f258d5e3c461b3b60030c9c665954bf18a3c04aa39295b2733def3c`
 - level: 초중급
 
 ### `metadata`
@@ -110,34 +110,35 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 - `tutorScript.1.ja` · JA: まず中心表現を見てみましょう。
 ### `p1-reorder`
 
-> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 もう気楽に話しましょうか？ 우리 이제 말 편하게 할까요 편하게 할까요 우리 이제 말 これから名前で呼びましょうか？ 이제 이름으로 부를까요 부를까요 이제 이름으로 私たちタメ口にしましょうか？ 우리 반말할까요 반말할까요 우리 次にまた会いましょうか？ 다음에 또 만날까요 만날까요 다음에 또
+> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 私たち、今日からタメ口にしましょうか？ 우리 오늘부터 말 놓을까요 우리 말 놓을까요 오늘부터 もう敬語はやめましょうか？ 이제 존댓말 그만할까요 존댓말 그만할까요 이제 私たち、週末にご飯食べましょうか？ 우리 주말에 밥 먹을까요 주말에 밥 먹을까요 우리 次の集まりには一緒に行きましょうか？ 다음 모임에는 같이 갈까요 같이 다음 모임에는 갈까요
 
 - `title.ko` · KO: 문장 만들기
 - `title.ja` · JA: (文を組み立てよう)
 - `tutorScript.1.ko` · KO: 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요?
 - `tutorScript.1.ja` · JA: 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。
-- `task.1.prompt.ja` · JA: もう気楽に話しましょうか？
-- `task.1.answer.ko` · KO: 우리 이제 말 편하게 할까요
-- `task.1.choice.1.ko` · KO: 편하게 할까요
-- `task.1.choice.2.ko` · KO: 우리 이제
-- `task.1.choice.3.ko` · KO: 말
-- `task.2.prompt.ja` · JA: これから名前で呼びましょうか？
-- `task.2.answer.ko` · KO: 이제 이름으로 부를까요
-- `task.2.choice.1.ko` · KO: 부를까요
-- `task.2.choice.2.ko` · KO: 이제
-- `task.2.choice.3.ko` · KO: 이름으로
-- `task.3.prompt.ja` · JA: 私たちタメ口にしましょうか？
-- `task.3.answer.ko` · KO: 우리 반말할까요
-- `task.3.choice.1.ko` · KO: 반말할까요
-- `task.3.choice.2.ko` · KO: 우리
-- `task.4.prompt.ja` · JA: 次にまた会いましょうか？
-- `task.4.answer.ko` · KO: 다음에 또 만날까요
-- `task.4.choice.1.ko` · KO: 만날까요
-- `task.4.choice.2.ko` · KO: 다음에
-- `task.4.choice.3.ko` · KO: 또
+- `task.1.prompt.ja` · JA: 私たち、今日からタメ口にしましょうか？
+- `task.1.answer.ko` · KO: 우리 오늘부터 말 놓을까요
+- `task.1.choice.1.ko` · KO: 우리
+- `task.1.choice.2.ko` · KO: 말 놓을까요
+- `task.1.choice.3.ko` · KO: 오늘부터
+- `task.2.prompt.ja` · JA: もう敬語はやめましょうか？
+- `task.2.answer.ko` · KO: 이제 존댓말 그만할까요
+- `task.2.choice.1.ko` · KO: 존댓말
+- `task.2.choice.2.ko` · KO: 그만할까요
+- `task.2.choice.3.ko` · KO: 이제
+- `task.3.prompt.ja` · JA: 私たち、週末にご飯食べましょうか？
+- `task.3.answer.ko` · KO: 우리 주말에 밥 먹을까요
+- `task.3.choice.1.ko` · KO: 주말에
+- `task.3.choice.2.ko` · KO: 밥 먹을까요
+- `task.3.choice.3.ko` · KO: 우리
+- `task.4.prompt.ja` · JA: 次の集まりには一緒に行きましょうか？
+- `task.4.answer.ko` · KO: 다음 모임에는 같이 갈까요
+- `task.4.choice.1.ko` · KO: 같이
+- `task.4.choice.2.ko` · KO: 다음 모임에는
+- `task.4.choice.3.ko` · KO: 갈까요
 ### `p1-fill`
 
-> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 もう気楽に話しましょうか？ 우리 이제 말 편하게 할까요? ＿＿＿ これから名前で呼びましょうか？ 이제 이름으로 부를까요? ＿＿＿ 私たちタメ口にしましょうか？ 우리 반말할까요? ＿＿＿ 次にまた会いましょうか？ 다음에 또 만날까요? ＿＿＿
+> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 もう気楽に話しましょうか？ 우리 이제 말 편하게 할까요 ? ウリ イジェ マル ピョナゲ ＿＿＿ これから名前で呼びましょうか？ 이제 이름으로 부를까요 ? イジェ イルムロ ＿＿＿ 私たちタメ口にしましょうか？ 우리 반말할까요 ? ウリ ＿＿＿ 次にまた会いましょうか？ 다음에 또 만날까요 ? タウメ ト ＿＿＿
 
 - `title.ko` · KO: 빈칸 채우기
 - `title.ja` · JA: (穴埋め練習)
@@ -218,35 +219,35 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 - `tutorScript.1.ja` · JA: まず中心表現を見てみましょう。
 ### `p2-reorder`
 
-> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 気楽にタメ口にして大丈夫です。 편하게 말 놓으셔도 돼요 돼요 편하게 말 놓으셔도 そのまま名前で呼んで大丈夫です。 그냥 이름으로 부르셔도 돼요 돼요 그냥 이름으로 부르셔도 先に行かれても大丈夫です。 먼저 가셔도 돼요 돼요 먼저 가셔도 楽なようになさって大丈夫です。 편한 대로 하셔도 돼요 돼요 편한 대로 하셔도
+> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 もう私にタメ口で話して大丈夫です。 이제 저한테 반말하셔도 돼요 저한테 반말하셔도 돼요 이제 ここの楽な席に座って大丈夫です。 여기 편한 자리에 앉으셔도 돼요 편한 자리에 앉으셔도 돼요 여기 敬語はもう使わなくて大丈夫です。 존댓말은 이제 안 쓰셔도 돼요 이제 안 쓰셔도 돼요 존댓말은 気になることは何でも聞いて大丈夫です。 궁금한 건 뭐든지 물어보셔도 돼요 궁금한 건 물어보셔도 돼요 뭐든지
 
 - `title.ko` · KO: 문장 만들기
 - `title.ja` · JA: (文を組み立てよう)
 - `tutorScript.1.ko` · KO: 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요?
 - `tutorScript.1.ja` · JA: 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。
-- `task.1.prompt.ja` · JA: 気楽にタメ口にして大丈夫です。
-- `task.1.answer.ko` · KO: 편하게 말 놓으셔도 돼요
-- `task.1.choice.1.ko` · KO: 돼요
-- `task.1.choice.2.ko` · KO: 편하게
-- `task.1.choice.3.ko` · KO: 말 놓으셔도
-- `task.2.prompt.ja` · JA: そのまま名前で呼んで大丈夫です。
-- `task.2.answer.ko` · KO: 그냥 이름으로 부르셔도 돼요
-- `task.2.choice.1.ko` · KO: 돼요
-- `task.2.choice.2.ko` · KO: 그냥
-- `task.2.choice.3.ko` · KO: 이름으로 부르셔도
-- `task.3.prompt.ja` · JA: 先に行かれても大丈夫です。
-- `task.3.answer.ko` · KO: 먼저 가셔도 돼요
-- `task.3.choice.1.ko` · KO: 돼요
-- `task.3.choice.2.ko` · KO: 먼저
-- `task.3.choice.3.ko` · KO: 가셔도
-- `task.4.prompt.ja` · JA: 楽なようになさって大丈夫です。
-- `task.4.answer.ko` · KO: 편한 대로 하셔도 돼요
-- `task.4.choice.1.ko` · KO: 돼요
-- `task.4.choice.2.ko` · KO: 편한
-- `task.4.choice.3.ko` · KO: 대로 하셔도
+- `task.1.prompt.ja` · JA: もう私にタメ口で話して大丈夫です。
+- `task.1.answer.ko` · KO: 이제 저한테 반말하셔도 돼요
+- `task.1.choice.1.ko` · KO: 저한테
+- `task.1.choice.2.ko` · KO: 반말하셔도 돼요
+- `task.1.choice.3.ko` · KO: 이제
+- `task.2.prompt.ja` · JA: ここの楽な席に座って大丈夫です。
+- `task.2.answer.ko` · KO: 여기 편한 자리에 앉으셔도 돼요
+- `task.2.choice.1.ko` · KO: 편한 자리에
+- `task.2.choice.2.ko` · KO: 앉으셔도 돼요
+- `task.2.choice.3.ko` · KO: 여기
+- `task.3.prompt.ja` · JA: 敬語はもう使わなくて大丈夫です。
+- `task.3.answer.ko` · KO: 존댓말은 이제 안 쓰셔도 돼요
+- `task.3.choice.1.ko` · KO: 이제
+- `task.3.choice.2.ko` · KO: 안 쓰셔도 돼요
+- `task.3.choice.3.ko` · KO: 존댓말은
+- `task.4.prompt.ja` · JA: 気になることは何でも聞いて大丈夫です。
+- `task.4.answer.ko` · KO: 궁금한 건 뭐든지 물어보셔도 돼요
+- `task.4.choice.1.ko` · KO: 궁금한 건
+- `task.4.choice.2.ko` · KO: 물어보셔도 돼요
+- `task.4.choice.3.ko` · KO: 뭐든지
 ### `p2-fill`
 
-> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 気楽にタメ口にして大丈夫です。 편하게 말 놓으셔도 돼요. ＿＿＿ そのまま名前で呼んで大丈夫です。 그냥 이름으로 부르셔도 돼요. ＿＿＿ 先に行かれても大丈夫です。 먼저 가셔도 돼요. ＿＿＿ 楽なようになさって大丈夫です。 편한 대로 하셔도 돼요. ＿＿＿
+> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 気楽にタメ口にして大丈夫です。 편하게 말 놓 으셔도 돼요 . ピョナゲ マル ノ＿＿＿ そのまま名前で呼んで大丈夫です。 그냥 이름으로 부르 셔도 돼요 . クニャン イルムロ プル＿＿＿ 先に行かれても大丈夫です。 먼저 가 셔도 돼요 . モンジョ カ＿＿＿ 楽なようになさって大丈夫です。 편한 대로 하 셔도 돼요 . ピョナン デロ ハ＿＿＿
 
 - `title.ko` · KO: 빈칸 채우기
 - `title.ja` · JA: (穴埋め練習)
@@ -374,7 +375,7 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 ## 02 · 02-choosing-address-terms
 
 - source: `sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-banmal-dropping-formality-upper-beginner/lessons/02-choosing-address-terms/lesson.html`
-- sha256: `a53598bdb5fde244c446ddc9456ce0682eba568f3277759db3b8b49e103d4e84`
+- sha256: `90b1ec8fc5e8442f29268389b29d9d33f78dcbbedd1b9fe728161a00d6ee3114`
 - level: 초중급
 
 ### `metadata`
@@ -476,35 +477,35 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 - `tutorScript.1.ja` · JA: まず中心表現を見てみましょう。
 ### `p1-reorder`
 
-> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 ジミンさんではなく、ジミンと呼んでもいい？ 지민 씨 말고 지민이라고 불러도 돼 불러도 돼 지민 씨 말고 지민이라고 先輩ではなくヒョンって言ってもいい？ 선배님 말고 형이라고 해도 돼 해도 돼 선배님 말고 형이라고 名字ではなく名前で呼んでもいい？ 성 말고 이름으로 불러도 돼 불러도 돼 성 말고 이름으로 敬語ではなくタメ口でもいい？ 존댓말 말고 반말해도 돼 돼 존댓말 말고 반말해도
+> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 今日じゃなくて明日会ってもいい？ 오늘 말고 내일 만나도 돼 내일 만나도 돼 오늘 말고 コーヒーじゃなくてジュース飲んでもいい？ 커피 말고 주스 마셔도 돼 주스 커피 말고 마셔도 돼 ここじゃなくてあそこで待ってもいい？ 여기 말고 저기에서 기다려도 돼 기다려도 돼 저기에서 여기 말고 メッセージじゃなくて電話で話してもいい？ 문자 말고 전화로 말해도 돼 문자 말고 말해도 돼 전화로
 
 - `title.ko` · KO: 문장 만들기
 - `title.ja` · JA: (文を組み立てよう)
 - `tutorScript.1.ko` · KO: 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요?
 - `tutorScript.1.ja` · JA: 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。
-- `task.1.prompt.ja` · JA: ジミンさんではなく、ジミンと呼んでもいい？
-- `task.1.answer.ko` · KO: 지민 씨 말고 지민이라고 불러도 돼
-- `task.1.choice.1.ko` · KO: 불러도 돼
-- `task.1.choice.2.ko` · KO: 지민 씨
-- `task.1.choice.3.ko` · KO: 말고 지민이라고
-- `task.2.prompt.ja` · JA: 先輩ではなくヒョンって言ってもいい？
-- `task.2.answer.ko` · KO: 선배님 말고 형이라고 해도 돼
-- `task.2.choice.1.ko` · KO: 해도 돼
-- `task.2.choice.2.ko` · KO: 선배님 말고
-- `task.2.choice.3.ko` · KO: 형이라고
-- `task.3.prompt.ja` · JA: 名字ではなく名前で呼んでもいい？
-- `task.3.answer.ko` · KO: 성 말고 이름으로 불러도 돼
-- `task.3.choice.1.ko` · KO: 불러도 돼
-- `task.3.choice.2.ko` · KO: 성 말고
-- `task.3.choice.3.ko` · KO: 이름으로
-- `task.4.prompt.ja` · JA: 敬語ではなくタメ口でもいい？
-- `task.4.answer.ko` · KO: 존댓말 말고 반말해도 돼
-- `task.4.choice.1.ko` · KO: 돼
-- `task.4.choice.2.ko` · KO: 존댓말
-- `task.4.choice.3.ko` · KO: 말고 반말해도
+- `task.1.prompt.ja` · JA: 今日じゃなくて明日会ってもいい？
+- `task.1.answer.ko` · KO: 오늘 말고 내일 만나도 돼
+- `task.1.choice.1.ko` · KO: 내일
+- `task.1.choice.2.ko` · KO: 만나도 돼
+- `task.1.choice.3.ko` · KO: 오늘 말고
+- `task.2.prompt.ja` · JA: コーヒーじゃなくてジュース飲んでもいい？
+- `task.2.answer.ko` · KO: 커피 말고 주스 마셔도 돼
+- `task.2.choice.1.ko` · KO: 주스
+- `task.2.choice.2.ko` · KO: 커피 말고
+- `task.2.choice.3.ko` · KO: 마셔도 돼
+- `task.3.prompt.ja` · JA: ここじゃなくてあそこで待ってもいい？
+- `task.3.answer.ko` · KO: 여기 말고 저기에서 기다려도 돼
+- `task.3.choice.1.ko` · KO: 기다려도 돼
+- `task.3.choice.2.ko` · KO: 저기에서
+- `task.3.choice.3.ko` · KO: 여기 말고
+- `task.4.prompt.ja` · JA: メッセージじゃなくて電話で話してもいい？
+- `task.4.answer.ko` · KO: 문자 말고 전화로 말해도 돼
+- `task.4.choice.1.ko` · KO: 문자 말고
+- `task.4.choice.2.ko` · KO: 말해도 돼
+- `task.4.choice.3.ko` · KO: 전화로
 ### `p1-fill`
 
-> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 ジミンさんではなく、ジミンと呼んでもいい？ 지민 씨 말고 지민이라고 불러도 돼? ＿＿＿ 先輩ではなくヒョンって言ってもいい？ 선배님 말고 형이라고 해도 돼? ＿＿＿ 名字ではなく名前で呼んでもいい？ 성 말고 이름으로 불러도 돼? ＿＿＿ 敬語ではなくタメ口でもいい？ 존댓말 말고 반말해도 돼? ＿＿＿
+> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 ジミンさんではなく、ジミンと呼んでもいい？ 지민 씨 말고 지민이라고 불러도 돼 ? チミン シ マルゴ チミニラゴ ＿＿＿ 先輩ではなくヒョンって言ってもいい？ 선배님 말고 형이라고 해도 돼 ? ソンベニム マルゴ ヒョンイラゴ ＿＿＿ 名字ではなく名前で呼んでもいい？ 성 말고 이름으로 불러도 돼 ? ソン マルゴ イルムロ ＿＿＿ 敬語ではなくタメ口でもいい？ 존댓말 말고 반말해도 돼 ? チョンデンマル マルゴ ＿＿＿
 
 - `title.ko` · KO: 빈칸 채우기
 - `title.ja` · JA: (穴埋め練習)
@@ -585,33 +586,35 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 - `tutorScript.1.ja` · JA: まず中心表現を見てみましょう。
 ### `p2-reorder`
 
-> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 失礼ですが何歳ですか？ 혹시 몇 살이세요 살이세요 혹시 몇 もしかして私より一つ上ですか？ 혹시 저보다 한 살 위세요 살 위세요 혹시 저보다 한 もしかして同い年ですか？ 혹시 동갑이세요 동갑이세요 혹시 もしかして先輩ですか？ 혹시 선배님이세요 선배님이세요 혹시
+> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 もしかして私より年上ですか？ 혹시 저보다 나이가 많으세요 저보다 나이가 많으세요 혹시 もしかして今お時間ありますか？ 혹시 지금 시간 있으세요 시간 있으세요 지금 혹시 もしかしてこの近くに住んでいますか？ 혹시 이 근처에 사세요 이 근처에 사세요 혹시 もしかして私を覚えていますか？ 혹시 저를 기억하세요 저를 기억하세요 혹시
 
 - `title.ko` · KO: 문장 만들기
 - `title.ja` · JA: (文を組み立てよう)
 - `tutorScript.1.ko` · KO: 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요?
 - `tutorScript.1.ja` · JA: 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。
-- `task.1.prompt.ja` · JA: 失礼ですが何歳ですか？
-- `task.1.answer.ko` · KO: 혹시 몇 살이세요
-- `task.1.choice.1.ko` · KO: 살이세요
-- `task.1.choice.2.ko` · KO: 혹시
-- `task.1.choice.3.ko` · KO: 몇
-- `task.2.prompt.ja` · JA: もしかして私より一つ上ですか？
-- `task.2.answer.ko` · KO: 혹시 저보다 한 살 위세요
-- `task.2.choice.1.ko` · KO: 살 위세요
-- `task.2.choice.2.ko` · KO: 혹시 저보다
-- `task.2.choice.3.ko` · KO: 한
-- `task.3.prompt.ja` · JA: もしかして同い年ですか？
-- `task.3.answer.ko` · KO: 혹시 동갑이세요
-- `task.3.choice.1.ko` · KO: 동갑이세요
-- `task.3.choice.2.ko` · KO: 혹시
-- `task.4.prompt.ja` · JA: もしかして先輩ですか？
-- `task.4.answer.ko` · KO: 혹시 선배님이세요
-- `task.4.choice.1.ko` · KO: 선배님이세요
-- `task.4.choice.2.ko` · KO: 혹시
+- `task.1.prompt.ja` · JA: もしかして私より年上ですか？
+- `task.1.answer.ko` · KO: 혹시 저보다 나이가 많으세요
+- `task.1.choice.1.ko` · KO: 저보다
+- `task.1.choice.2.ko` · KO: 나이가 많으세요
+- `task.1.choice.3.ko` · KO: 혹시
+- `task.2.prompt.ja` · JA: もしかして今お時間ありますか？
+- `task.2.answer.ko` · KO: 혹시 지금 시간 있으세요
+- `task.2.choice.1.ko` · KO: 시간 있으세요
+- `task.2.choice.2.ko` · KO: 지금
+- `task.2.choice.3.ko` · KO: 혹시
+- `task.3.prompt.ja` · JA: もしかしてこの近くに住んでいますか？
+- `task.3.answer.ko` · KO: 혹시 이 근처에 사세요
+- `task.3.choice.1.ko` · KO: 이 근처에
+- `task.3.choice.2.ko` · KO: 사세요
+- `task.3.choice.3.ko` · KO: 혹시
+- `task.4.prompt.ja` · JA: もしかして私を覚えていますか？
+- `task.4.answer.ko` · KO: 혹시 저를 기억하세요
+- `task.4.choice.1.ko` · KO: 저를
+- `task.4.choice.2.ko` · KO: 기억하세요
+- `task.4.choice.3.ko` · KO: 혹시
 ### `p2-fill`
 
-> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 失礼ですが何歳ですか？ 혹시 몇 살이세요? ＿＿＿ もしかして私より一つ上ですか？ 혹시 저보다 한 살 위세요? ＿＿＿ もしかして同い年ですか？ 혹시 동갑이세요? ＿＿＿ もしかして先輩ですか？ 혹시 선배님이세요? ＿＿＿
+> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 失礼ですが何歳ですか？ 혹시 몇 살 이세요 ? ホクシ ミョッ サル＿＿＿ もしかして私より一つ上ですか？ 혹시 저보다 한 살 위 세요 ? ホクシ チョボダ ハン サル ウィ＿＿＿ もしかして同い年ですか？ 혹시 동갑 이세요 ? ホクシ トンガプ＿＿＿ もしかして先輩ですか？ 혹시 선배님 이세요 ? ホクシ ソンベニム＿＿＿
 
 - `title.ko` · KO: 빈칸 채우기
 - `title.ja` · JA: (穴埋め練習)
@@ -739,7 +742,7 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 ## 03 · 03-jeo-to-na
 
 - source: `sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-banmal-dropping-formality-upper-beginner/lessons/03-jeo-to-na/lesson.html`
-- sha256: `0cb37a7f28d4d0373948bc237f90c65457e9a2dad4eef6bceda2edf1e2369329`
+- sha256: `b793b17020eb860dcb75595345fc1865d0a64bb6b2b43212f9e1d45dac7f2ce7`
 - level: 초중급
 
 ### `metadata`
@@ -841,35 +844,35 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 - `tutorScript.1.ja` · JA: まず中心表現を見てみましょう。
 ### `p1-reorder`
 
-> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 私はただ家にいるね。 나는 그냥 집에 있을게 있을게 나는 그냥 집에 私のかばんはここにある。 내 가방은 여기 있어 있어 내 가방은 여기 私たちは明日会う。 우리는 내일 만날 거야 거야 우리는 내일 만날 私はこの曲が好き。 나는 이 노래가 좋아 좋아 나는 이 노래가
+> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 私の名前はここに書くね。 내 이름은 여기에 쓸게 쓸게 여기에 내 이름은 うちの家は学校のすぐ前だ。 우리 집은 학교 바로 앞이야 학교 우리 집은 바로 앞이야 私は辛い食べ物があまり食べられない。 나는 매운 음식을 잘 못 먹어 매운 음식을 잘 못 먹어 나는 私たちは毎週末一緒に運動する。 우리는 주말마다 같이 운동해 주말마다 같이 운동해 우리는
 
 - `title.ko` · KO: 문장 만들기
 - `title.ja` · JA: (文を組み立てよう)
 - `tutorScript.1.ko` · KO: 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요?
 - `tutorScript.1.ja` · JA: 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。
-- `task.1.prompt.ja` · JA: 私はただ家にいるね。
-- `task.1.answer.ko` · KO: 나는 그냥 집에 있을게
-- `task.1.choice.1.ko` · KO: 있을게
-- `task.1.choice.2.ko` · KO: 나는
-- `task.1.choice.3.ko` · KO: 그냥 집에
-- `task.2.prompt.ja` · JA: 私のかばんはここにある。
-- `task.2.answer.ko` · KO: 내 가방은 여기 있어
-- `task.2.choice.1.ko` · KO: 있어
-- `task.2.choice.2.ko` · KO: 내
-- `task.2.choice.3.ko` · KO: 가방은 여기
-- `task.3.prompt.ja` · JA: 私たちは明日会う。
-- `task.3.answer.ko` · KO: 우리는 내일 만날 거야
-- `task.3.choice.1.ko` · KO: 거야
-- `task.3.choice.2.ko` · KO: 우리는
-- `task.3.choice.3.ko` · KO: 내일 만날
-- `task.4.prompt.ja` · JA: 私はこの曲が好き。
-- `task.4.answer.ko` · KO: 나는 이 노래가 좋아
-- `task.4.choice.1.ko` · KO: 좋아
-- `task.4.choice.2.ko` · KO: 나는
-- `task.4.choice.3.ko` · KO: 이 노래가
+- `task.1.prompt.ja` · JA: 私の名前はここに書くね。
+- `task.1.answer.ko` · KO: 내 이름은 여기에 쓸게
+- `task.1.choice.1.ko` · KO: 쓸게
+- `task.1.choice.2.ko` · KO: 여기에
+- `task.1.choice.3.ko` · KO: 내 이름은
+- `task.2.prompt.ja` · JA: うちの家は学校のすぐ前だ。
+- `task.2.answer.ko` · KO: 우리 집은 학교 바로 앞이야
+- `task.2.choice.1.ko` · KO: 학교
+- `task.2.choice.2.ko` · KO: 우리 집은
+- `task.2.choice.3.ko` · KO: 바로 앞이야
+- `task.3.prompt.ja` · JA: 私は辛い食べ物があまり食べられない。
+- `task.3.answer.ko` · KO: 나는 매운 음식을 잘 못 먹어
+- `task.3.choice.1.ko` · KO: 매운 음식을
+- `task.3.choice.2.ko` · KO: 잘 못 먹어
+- `task.3.choice.3.ko` · KO: 나는
+- `task.4.prompt.ja` · JA: 私たちは毎週末一緒に運動する。
+- `task.4.answer.ko` · KO: 우리는 주말마다 같이 운동해
+- `task.4.choice.1.ko` · KO: 주말마다
+- `task.4.choice.2.ko` · KO: 같이 운동해
+- `task.4.choice.3.ko` · KO: 우리는
 ### `p1-fill`
 
-> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 私はただ家にいるね。 나는 그냥 집에 있을게. ＿＿＿ 私のかばんはここにある。 내 가방은 여기 있어. ＿＿＿ 私たちは明日会う。 우리는 내일 만날 거야. ＿＿＿ 私はこの曲が好き。 나는 이 노래가 좋아. ＿＿＿
+> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 私はただ家にいるね。 나 는 그냥 집에 있을게. ＿＿＿ヌン クニャン チベ イッスルケ 私のかばんはここにある。 내 가방은 여기 있어. ＿＿＿ カバンウン ヨギ イッソ 私たちは明日会う。 우리 는 내일 만날 거야. ＿＿＿ヌン ネイル マンナル コヤ 私はこの曲が好き。 나 는 이 노래가 좋아. ＿＿＿ヌン イ ノレガ チョア
 
 - `title.ko` · KO: 빈칸 채우기
 - `title.ja` · JA: (穴埋め練習)
@@ -950,35 +953,35 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 - `tutorScript.1.ja` · JA: まず中心表現を見てみましょう。
 ### `p2-reorder`
 
-> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 君のかばんはどこ？ 네 가방은 어디 있어 있어 네 가방은 어디 君は今日何する？ 너는 오늘 뭐 해 해 너는 오늘 뭐 君の名前はどう書く？ 네 이름은 어떻게 써 써 네 이름은 어떻게 君たちは何時に会う？ 너희는 몇 시에 만나 만나 너희는 몇 시에
+> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 君の友達も一緒に来る？ 네 친구도 같이 올 거야 같이 올 거야 네 친구도 君は今日時間ある？ 너는 오늘 시간 있어 오늘 시간 있어 너는 君たちの家はここから遠い？ 너희 집은 여기에서 멀어 너희 집은 멀어 여기에서 君もあの人知ってる？ 너도 그 사람 알아 알아 그 사람 너도
 
 - `title.ko` · KO: 문장 만들기
 - `title.ja` · JA: (文を組み立てよう)
 - `tutorScript.1.ko` · KO: 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요?
 - `tutorScript.1.ja` · JA: 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。
-- `task.1.prompt.ja` · JA: 君のかばんはどこ？
-- `task.1.answer.ko` · KO: 네 가방은 어디 있어
-- `task.1.choice.1.ko` · KO: 있어
-- `task.1.choice.2.ko` · KO: 네
-- `task.1.choice.3.ko` · KO: 가방은 어디
-- `task.2.prompt.ja` · JA: 君は今日何する？
-- `task.2.answer.ko` · KO: 너는 오늘 뭐 해
-- `task.2.choice.1.ko` · KO: 해
-- `task.2.choice.2.ko` · KO: 너는
-- `task.2.choice.3.ko` · KO: 오늘 뭐
-- `task.3.prompt.ja` · JA: 君の名前はどう書く？
-- `task.3.answer.ko` · KO: 네 이름은 어떻게 써
-- `task.3.choice.1.ko` · KO: 써
-- `task.3.choice.2.ko` · KO: 네
-- `task.3.choice.3.ko` · KO: 이름은 어떻게
-- `task.4.prompt.ja` · JA: 君たちは何時に会う？
-- `task.4.answer.ko` · KO: 너희는 몇 시에 만나
-- `task.4.choice.1.ko` · KO: 만나
-- `task.4.choice.2.ko` · KO: 너희는
-- `task.4.choice.3.ko` · KO: 몇 시에
+- `task.1.prompt.ja` · JA: 君の友達も一緒に来る？
+- `task.1.answer.ko` · KO: 네 친구도 같이 올 거야
+- `task.1.choice.1.ko` · KO: 같이
+- `task.1.choice.2.ko` · KO: 올 거야
+- `task.1.choice.3.ko` · KO: 네 친구도
+- `task.2.prompt.ja` · JA: 君は今日時間ある？
+- `task.2.answer.ko` · KO: 너는 오늘 시간 있어
+- `task.2.choice.1.ko` · KO: 오늘
+- `task.2.choice.2.ko` · KO: 시간 있어
+- `task.2.choice.3.ko` · KO: 너는
+- `task.3.prompt.ja` · JA: 君たちの家はここから遠い？
+- `task.3.answer.ko` · KO: 너희 집은 여기에서 멀어
+- `task.3.choice.1.ko` · KO: 너희 집은
+- `task.3.choice.2.ko` · KO: 멀어
+- `task.3.choice.3.ko` · KO: 여기에서
+- `task.4.prompt.ja` · JA: 君もあの人知ってる？
+- `task.4.answer.ko` · KO: 너도 그 사람 알아
+- `task.4.choice.1.ko` · KO: 알아
+- `task.4.choice.2.ko` · KO: 그 사람
+- `task.4.choice.3.ko` · KO: 너도
 ### `p2-fill`
 
-> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 君のかばんはどこ？ 네 가방은 어디 있어? ＿＿＿ 君は今日何する？ 너는 오늘 뭐 해? ＿＿＿ 君の名前はどう書く？ 네 이름은 어떻게 써? ＿＿＿ 君たちは何時に会う？ 너희는 몇 시에 만나? ＿＿＿
+> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 君のかばんはどこ？ 네 가방은 어디 있어? ＿＿＿ カバンウン オディ イッソ 君は今日何する？ 너 는 오늘 뭐 해? ＿＿＿ヌン オヌル ムォ ヘ 君の名前はどう書く？ 네 이름은 어떻게 써? ＿＿＿ イルムン オットケ ソ 君たちは何時に会う？ 너희 는 몇 시에 만나? ＿＿＿ヌン ミョッ シエ マンナ
 
 - `title.ko` · KO: 빈칸 채우기
 - `title.ja` · JA: (穴埋め練習)
@@ -1106,7 +1109,7 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 ## 04 · 04-switching-statements
 
 - source: `sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-banmal-dropping-formality-upper-beginner/lessons/04-switching-statements/lesson.html`
-- sha256: `fe84781c0c77021c535a79f306edd4e3fa5054cca809d0cf42a6f78a4f73fe12`
+- sha256: `b7f3bc47a59ed096375bcbf6e97535df6a1d546908fbb7ceb91b5acdb1c098a0`
 - level: 초중급
 
 ### `metadata`
@@ -1208,35 +1211,35 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 - `tutorScript.1.ja` · JA: まず中心表現を見てみましょう。
 ### `p1-reorder`
 
-> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 私、今家に帰る。 나 지금 집에 가 가 나 지금 집에 私は今ご飯を食べる。 나는 지금 밥 먹어 먹어 나는 지금 밥 今日友達に会う。 오늘 친구를 만나 만나 오늘 친구를 この曲、本当に好き。 이 노래 정말 좋아 좋아 이 노래 정말
+> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 私、今日ちょっと忙しい。 나 오늘 좀 바빠 나 좀 바빠 오늘 うちの兄は会社に通ってる。 우리 형은 회사에 다녀 회사에 다녀 우리 형은 私はコーヒーよりお茶が好き。 나는 커피보다 차를 좋아해 커피보다 차를 좋아해 나는 今、外は雨が降ってる。 지금 밖에 비가 와 지금 비가 와 밖에
 
 - `title.ko` · KO: 문장 만들기
 - `title.ja` · JA: (文を組み立てよう)
 - `tutorScript.1.ko` · KO: 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요?
 - `tutorScript.1.ja` · JA: 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。
-- `task.1.prompt.ja` · JA: 私、今家に帰る。
-- `task.1.answer.ko` · KO: 나 지금 집에 가
-- `task.1.choice.1.ko` · KO: 가
-- `task.1.choice.2.ko` · KO: 나
-- `task.1.choice.3.ko` · KO: 지금 집에
-- `task.2.prompt.ja` · JA: 私は今ご飯を食べる。
-- `task.2.answer.ko` · KO: 나는 지금 밥 먹어
-- `task.2.choice.1.ko` · KO: 먹어
-- `task.2.choice.2.ko` · KO: 나는
-- `task.2.choice.3.ko` · KO: 지금 밥
-- `task.3.prompt.ja` · JA: 今日友達に会う。
-- `task.3.answer.ko` · KO: 오늘 친구를 만나
-- `task.3.choice.1.ko` · KO: 만나
-- `task.3.choice.2.ko` · KO: 오늘
-- `task.3.choice.3.ko` · KO: 친구를
-- `task.4.prompt.ja` · JA: この曲、本当に好き。
-- `task.4.answer.ko` · KO: 이 노래 정말 좋아
-- `task.4.choice.1.ko` · KO: 좋아
-- `task.4.choice.2.ko` · KO: 이
-- `task.4.choice.3.ko` · KO: 노래 정말
+- `task.1.prompt.ja` · JA: 私、今日ちょっと忙しい。
+- `task.1.answer.ko` · KO: 나 오늘 좀 바빠
+- `task.1.choice.1.ko` · KO: 나
+- `task.1.choice.2.ko` · KO: 좀 바빠
+- `task.1.choice.3.ko` · KO: 오늘
+- `task.2.prompt.ja` · JA: うちの兄は会社に通ってる。
+- `task.2.answer.ko` · KO: 우리 형은 회사에 다녀
+- `task.2.choice.1.ko` · KO: 회사에
+- `task.2.choice.2.ko` · KO: 다녀
+- `task.2.choice.3.ko` · KO: 우리 형은
+- `task.3.prompt.ja` · JA: 私はコーヒーよりお茶が好き。
+- `task.3.answer.ko` · KO: 나는 커피보다 차를 좋아해
+- `task.3.choice.1.ko` · KO: 커피보다
+- `task.3.choice.2.ko` · KO: 차를 좋아해
+- `task.3.choice.3.ko` · KO: 나는
+- `task.4.prompt.ja` · JA: 今、外は雨が降ってる。
+- `task.4.answer.ko` · KO: 지금 밖에 비가 와
+- `task.4.choice.1.ko` · KO: 지금
+- `task.4.choice.2.ko` · KO: 비가 와
+- `task.4.choice.3.ko` · KO: 밖에
 ### `p1-fill`
 
-> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 私、今家に帰る。 나 지금 집에 가. ＿＿＿ 私は今ご飯を食べる。 나는 지금 밥 먹어. ＿＿＿ 今日友達に会う。 오늘 친구를 만나. ＿＿＿ この曲、本当に好き。 이 노래 정말 좋아. ＿＿＿
+> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 私、今家に帰る。 나 지금 집에 가 . ナ チグム チベ ＿＿＿ 私は今ご飯を食べる。 나는 지금 밥 먹어 . ナヌン チグム パプ ＿＿＿ 今日友達に会う。 오늘 친구를 만나 . オヌル チングルル ＿＿＿ この曲、本当に好き。 이 노래 정말 좋아 . イ ノレ チョンマル ＿＿＿
 
 - `title.ko` · KO: 빈칸 채우기
 - `title.ja` · JA: (穴埋め練習)
@@ -1317,35 +1320,35 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 - `tutorScript.1.ja` · JA: まず中心表現を見てみましょう。
 ### `p2-reorder`
 
-> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 昨日、本当に楽しかった。 어제 진짜 재밌었어 재밌었어 어제 진짜 友達と映画を見た。 친구하고 영화 봤어 봤어 친구하고 영화 食べ物が本当においしかった。 음식이 정말 맛있었어 맛있었어 음식이 정말 家に遅く着いた。 집에 늦게 도착했어 도착했어 집에 늦게
+> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 昨日、友達とカラオケに行った。 어제 친구랑 노래방에 갔어 노래방에 갔어 친구랑 어제 週末に新しい服を買った。 주말에 새 옷을 샀어 주말에 샀어 새 옷을 さっき君の電話に出られなかった。 아까 네 전화를 못 받았어 못 받았어 네 전화를 아까 試験が思ったより難しかった。 시험이 생각보다 어려웠어 생각보다 어려웠어 시험이
 
 - `title.ko` · KO: 문장 만들기
 - `title.ja` · JA: (文を組み立てよう)
 - `tutorScript.1.ko` · KO: 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요?
 - `tutorScript.1.ja` · JA: 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。
-- `task.1.prompt.ja` · JA: 昨日、本当に楽しかった。
-- `task.1.answer.ko` · KO: 어제 진짜 재밌었어
-- `task.1.choice.1.ko` · KO: 재밌었어
-- `task.1.choice.2.ko` · KO: 어제
-- `task.1.choice.3.ko` · KO: 진짜
-- `task.2.prompt.ja` · JA: 友達と映画を見た。
-- `task.2.answer.ko` · KO: 친구하고 영화 봤어
-- `task.2.choice.1.ko` · KO: 봤어
-- `task.2.choice.2.ko` · KO: 친구하고
-- `task.2.choice.3.ko` · KO: 영화
-- `task.3.prompt.ja` · JA: 食べ物が本当においしかった。
-- `task.3.answer.ko` · KO: 음식이 정말 맛있었어
-- `task.3.choice.1.ko` · KO: 맛있었어
-- `task.3.choice.2.ko` · KO: 음식이
-- `task.3.choice.3.ko` · KO: 정말
-- `task.4.prompt.ja` · JA: 家に遅く着いた。
-- `task.4.answer.ko` · KO: 집에 늦게 도착했어
-- `task.4.choice.1.ko` · KO: 도착했어
-- `task.4.choice.2.ko` · KO: 집에
-- `task.4.choice.3.ko` · KO: 늦게
+- `task.1.prompt.ja` · JA: 昨日、友達とカラオケに行った。
+- `task.1.answer.ko` · KO: 어제 친구랑 노래방에 갔어
+- `task.1.choice.1.ko` · KO: 노래방에 갔어
+- `task.1.choice.2.ko` · KO: 친구랑
+- `task.1.choice.3.ko` · KO: 어제
+- `task.2.prompt.ja` · JA: 週末に新しい服を買った。
+- `task.2.answer.ko` · KO: 주말에 새 옷을 샀어
+- `task.2.choice.1.ko` · KO: 주말에
+- `task.2.choice.2.ko` · KO: 샀어
+- `task.2.choice.3.ko` · KO: 새 옷을
+- `task.3.prompt.ja` · JA: さっき君の電話に出られなかった。
+- `task.3.answer.ko` · KO: 아까 네 전화를 못 받았어
+- `task.3.choice.1.ko` · KO: 못 받았어
+- `task.3.choice.2.ko` · KO: 네 전화를
+- `task.3.choice.3.ko` · KO: 아까
+- `task.4.prompt.ja` · JA: 試験が思ったより難しかった。
+- `task.4.answer.ko` · KO: 시험이 생각보다 어려웠어
+- `task.4.choice.1.ko` · KO: 생각보다
+- `task.4.choice.2.ko` · KO: 어려웠어
+- `task.4.choice.3.ko` · KO: 시험이
 ### `p2-fill`
 
-> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 昨日、本当に楽しかった。 어제 진짜 재밌었어. ＿＿＿ 友達と映画を見た。 친구하고 영화 봤어. ＿＿＿ 食べ物が本当においしかった。 음식이 정말 맛있었어. ＿＿＿ 家に遅く着いた。 집에 늦게 도착했어. ＿＿＿
+> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 昨日、本当に楽しかった。 어제 진짜 재밌었어 . オジェ チンチャ ＿＿＿ 友達と映画を見た。 친구하고 영화 봤어 . チングハゴ ヨンファ ＿＿＿ 食べ物が本当においしかった。 음식이 정말 맛있었어 . ウムシギ チョンマル ＿＿＿ 家に遅く着いた。 집에 늦게 도착했어 . チベ ヌッケ ＿＿＿
 
 - `title.ko` · KO: 빈칸 채우기
 - `title.ja` · JA: (穴埋め練習)
@@ -1473,7 +1476,7 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 ## 05 · 05-asking-questions
 
 - source: `sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-banmal-dropping-formality-upper-beginner/lessons/05-asking-questions/lesson.html`
-- sha256: `3af1278bedadc75a8bfbfa11182250639d146859407af6559a39ab9ed935d805`
+- sha256: `2ac7c2f5a79e818b2f6d4553f016791da322a1aaaaa5e916a1d3684f5120177b`
 - level: 초중급
 
 ### `metadata`
@@ -1575,35 +1578,35 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 - `tutorScript.1.ja` · JA: まず中心表現を見てみましょう。
 ### `p1-reorder`
 
-> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 今どこ行く？ 너 지금 어디 가 가 너 지금 어디 今日何食べる？ 오늘 뭐 먹어 먹어 오늘 뭐 何時に会う？ 몇 시에 만나 만나 몇 시에 この曲好き？ 이 노래 좋아해 좋아해 이 노래
+> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 君、今どこで待ってる？ 너 지금 어디에서 기다려 어디에서 기다려 지금 너 君、この曲のタイトル知ってる？ 너 이 노래 제목 알아 이 노래 제목 너 알아 君、最近も運動してる？ 너 요즘도 운동해 너 운동해 요즘도 私たち、明日何時に出発する？ 우리 내일 몇 시에 출발해 몇 시에 출발해 내일 우리
 
 - `title.ko` · KO: 문장 만들기
 - `title.ja` · JA: (文を組み立てよう)
 - `tutorScript.1.ko` · KO: 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요?
 - `tutorScript.1.ja` · JA: 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。
-- `task.1.prompt.ja` · JA: 今どこ行く？
-- `task.1.answer.ko` · KO: 너 지금 어디 가
-- `task.1.choice.1.ko` · KO: 가
-- `task.1.choice.2.ko` · KO: 너
-- `task.1.choice.3.ko` · KO: 지금 어디
-- `task.2.prompt.ja` · JA: 今日何食べる？
-- `task.2.answer.ko` · KO: 오늘 뭐 먹어
-- `task.2.choice.1.ko` · KO: 먹어
-- `task.2.choice.2.ko` · KO: 오늘
-- `task.2.choice.3.ko` · KO: 뭐
-- `task.3.prompt.ja` · JA: 何時に会う？
-- `task.3.answer.ko` · KO: 몇 시에 만나
-- `task.3.choice.1.ko` · KO: 만나
-- `task.3.choice.2.ko` · KO: 몇
-- `task.3.choice.3.ko` · KO: 시에
-- `task.4.prompt.ja` · JA: この曲好き？
-- `task.4.answer.ko` · KO: 이 노래 좋아해
-- `task.4.choice.1.ko` · KO: 좋아해
-- `task.4.choice.2.ko` · KO: 이
-- `task.4.choice.3.ko` · KO: 노래
+- `task.1.prompt.ja` · JA: 君、今どこで待ってる？
+- `task.1.answer.ko` · KO: 너 지금 어디에서 기다려
+- `task.1.choice.1.ko` · KO: 어디에서 기다려
+- `task.1.choice.2.ko` · KO: 지금
+- `task.1.choice.3.ko` · KO: 너
+- `task.2.prompt.ja` · JA: 君、この曲のタイトル知ってる？
+- `task.2.answer.ko` · KO: 너 이 노래 제목 알아
+- `task.2.choice.1.ko` · KO: 이 노래 제목
+- `task.2.choice.2.ko` · KO: 너
+- `task.2.choice.3.ko` · KO: 알아
+- `task.3.prompt.ja` · JA: 君、最近も運動してる？
+- `task.3.answer.ko` · KO: 너 요즘도 운동해
+- `task.3.choice.1.ko` · KO: 너
+- `task.3.choice.2.ko` · KO: 운동해
+- `task.3.choice.3.ko` · KO: 요즘도
+- `task.4.prompt.ja` · JA: 私たち、明日何時に出発する？
+- `task.4.answer.ko` · KO: 우리 내일 몇 시에 출발해
+- `task.4.choice.1.ko` · KO: 몇 시에 출발해
+- `task.4.choice.2.ko` · KO: 내일
+- `task.4.choice.3.ko` · KO: 우리
 ### `p1-fill`
 
-> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 今どこ行く？ 너 지금 어디 가? ＿＿＿ 今日何食べる？ 오늘 뭐 먹어? ＿＿＿ 何時に会う？ 몇 시에 만나? ＿＿＿ この曲好き？ 이 노래 좋아해? ＿＿＿
+> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 今どこ行く？ 너 지금 어디 가 ? ノ チグム オディ ＿＿＿ 今日何食べる？ 오늘 뭐 먹어 ? オヌル ムォ ＿＿＿ 何時に会う？ 몇 시에 만나 ? ミョッ シエ ＿＿＿ この曲好き？ 이 노래 좋아해 ? イ ノレ ＿＿＿
 
 - `title.ko` · KO: 빈칸 채우기
 - `title.ja` · JA: (穴埋め練習)
@@ -1684,35 +1687,35 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 - `tutorScript.1.ja` · JA: まず中心表現を見てみましょう。
 ### `p2-reorder`
 
-> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 これ君のだよね？ 이거 네 거 맞지 맞지 이거 네 거 私たち明日会うよね？ 우리 내일 만나지 만나지 우리 내일 君もこの曲好きだよね？ 너도 이 노래 좋아하지 좋아하지 너도 이 노래 ここで待てばいいよね？ 여기에서 기다리면 되지 되지 여기에서 기다리면
+> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 君も明日一緒に行くよね？ 너도 내일 같이 가지 내일 같이 가지 너도 今日の集まり、7時に始まるよね？ 오늘 모임 일곱 시에 시작하지 일곱 시에 오늘 모임 시작하지 ジミンも私たちと夕飯食べるよね？ 지민이도 우리랑 저녁 먹지 우리랑 지민이도 저녁 먹지 私たち、この前もここで会ったよね？ 우리 저번에도 여기에서 만났지 여기에서 만났지 저번에도 우리
 
 - `title.ko` · KO: 문장 만들기
 - `title.ja` · JA: (文を組み立てよう)
 - `tutorScript.1.ko` · KO: 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요?
 - `tutorScript.1.ja` · JA: 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。
-- `task.1.prompt.ja` · JA: これ君のだよね？
-- `task.1.answer.ko` · KO: 이거 네 거 맞지
-- `task.1.choice.1.ko` · KO: 맞지
-- `task.1.choice.2.ko` · KO: 이거
-- `task.1.choice.3.ko` · KO: 네 거
-- `task.2.prompt.ja` · JA: 私たち明日会うよね？
-- `task.2.answer.ko` · KO: 우리 내일 만나지
-- `task.2.choice.1.ko` · KO: 만나지
-- `task.2.choice.2.ko` · KO: 우리
-- `task.2.choice.3.ko` · KO: 내일
-- `task.3.prompt.ja` · JA: 君もこの曲好きだよね？
-- `task.3.answer.ko` · KO: 너도 이 노래 좋아하지
-- `task.3.choice.1.ko` · KO: 좋아하지
-- `task.3.choice.2.ko` · KO: 너도
-- `task.3.choice.3.ko` · KO: 이 노래
-- `task.4.prompt.ja` · JA: ここで待てばいいよね？
-- `task.4.answer.ko` · KO: 여기에서 기다리면 되지
-- `task.4.choice.1.ko` · KO: 되지
-- `task.4.choice.2.ko` · KO: 여기에서
-- `task.4.choice.3.ko` · KO: 기다리면
+- `task.1.prompt.ja` · JA: 君も明日一緒に行くよね？
+- `task.1.answer.ko` · KO: 너도 내일 같이 가지
+- `task.1.choice.1.ko` · KO: 내일
+- `task.1.choice.2.ko` · KO: 같이 가지
+- `task.1.choice.3.ko` · KO: 너도
+- `task.2.prompt.ja` · JA: 今日の集まり、7時に始まるよね？
+- `task.2.answer.ko` · KO: 오늘 모임 일곱 시에 시작하지
+- `task.2.choice.1.ko` · KO: 일곱 시에
+- `task.2.choice.2.ko` · KO: 오늘 모임
+- `task.2.choice.3.ko` · KO: 시작하지
+- `task.3.prompt.ja` · JA: ジミンも私たちと夕飯食べるよね？
+- `task.3.answer.ko` · KO: 지민이도 우리랑 저녁 먹지
+- `task.3.choice.1.ko` · KO: 우리랑
+- `task.3.choice.2.ko` · KO: 지민이도
+- `task.3.choice.3.ko` · KO: 저녁 먹지
+- `task.4.prompt.ja` · JA: 私たち、この前もここで会ったよね？
+- `task.4.answer.ko` · KO: 우리 저번에도 여기에서 만났지
+- `task.4.choice.1.ko` · KO: 여기에서 만났지
+- `task.4.choice.2.ko` · KO: 저번에도
+- `task.4.choice.3.ko` · KO: 우리
 ### `p2-fill`
 
-> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 これ君のだよね？ 이거 네 거 맞지? ＿＿＿ 私たち明日会うよね？ 우리 내일 만나지? ＿＿＿ 君もこの曲好きだよね？ 너도 이 노래 좋아하지? ＿＿＿ ここで待てばいいよね？ 여기에서 기다리면 되지? ＿＿＿
+> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 これ君のだよね？ 이거 네 거 맞 지 ? イゴ ニ コ マッ＿＿＿ 私たち明日会うよね？ 우리 내일 만나 지 ? ウリ ネイル マンナ＿＿＿ 君もこの曲好きだよね？ 너도 이 노래 좋아하 지 ? ノド イ ノレ チョアハ＿＿＿ ここで待てばいいよね？ 여기에서 기다리면 되 지 ? ヨギエソ キダリミョン トェ＿＿＿
 
 - `title.ko` · KO: 빈칸 채우기
 - `title.ja` · JA: (穴埋め練習)
@@ -1840,7 +1843,7 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 ## 06 · 06-suggestions-and-commands
 
 - source: `sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-banmal-dropping-formality-upper-beginner/lessons/06-suggestions-and-commands/lesson.html`
-- sha256: `4f449f5e4007eb6bafd159063ec064e2b926482ada96fdfbf15bfb561acdb49f`
+- sha256: `810e76470e5e599692ea6f77ebe9c20353a4757df8e872b3fdf24b245f8d9108`
 - level: 초중급
 
 ### `metadata`
@@ -1942,35 +1945,35 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 - `tutorScript.1.ja` · JA: まず中心表現を見てみましょう。
 ### `p1-reorder`
 
-> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 あとでチキン食べよう。 우리 이따가 치킨 먹자 먹자 우리 이따가 치킨 夕方一緒に映画見よう。 저녁에 같이 영화 보자 보자 저녁에 같이 영화 ここで少し待とう。 여기에서 잠깐 기다리자 기다리자 여기에서 잠깐 来週また会おう。 다음 주에 또 만나자 만나자 다음 주에 또
+> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 私たち、今週末に遊園地行こう。 우리 이번 주말에 놀이공원 가자 이번 주말에 우리 놀이공원 가자 あとでコンビニでアイスクリーム買おう。 이따가 편의점에서 아이스크림 사자 아이스크림 사자 편의점에서 이따가 私たち、写真一枚一緒に撮ろう。 우리 사진 한 장 같이 찍자 사진 한 장 같이 찍자 우리 今度はうちの家に集まろう。 다음에는 우리 집에서 모이자 모이자 우리 집에서 다음에는
 
 - `title.ko` · KO: 문장 만들기
 - `title.ja` · JA: (文を組み立てよう)
 - `tutorScript.1.ko` · KO: 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요?
 - `tutorScript.1.ja` · JA: 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。
-- `task.1.prompt.ja` · JA: あとでチキン食べよう。
-- `task.1.answer.ko` · KO: 우리 이따가 치킨 먹자
-- `task.1.choice.1.ko` · KO: 먹자
+- `task.1.prompt.ja` · JA: 私たち、今週末に遊園地行こう。
+- `task.1.answer.ko` · KO: 우리 이번 주말에 놀이공원 가자
+- `task.1.choice.1.ko` · KO: 이번 주말에
 - `task.1.choice.2.ko` · KO: 우리
-- `task.1.choice.3.ko` · KO: 이따가 치킨
-- `task.2.prompt.ja` · JA: 夕方一緒に映画見よう。
-- `task.2.answer.ko` · KO: 저녁에 같이 영화 보자
-- `task.2.choice.1.ko` · KO: 보자
-- `task.2.choice.2.ko` · KO: 저녁에
-- `task.2.choice.3.ko` · KO: 같이 영화
-- `task.3.prompt.ja` · JA: ここで少し待とう。
-- `task.3.answer.ko` · KO: 여기에서 잠깐 기다리자
-- `task.3.choice.1.ko` · KO: 기다리자
-- `task.3.choice.2.ko` · KO: 여기에서
-- `task.3.choice.3.ko` · KO: 잠깐
-- `task.4.prompt.ja` · JA: 来週また会おう。
-- `task.4.answer.ko` · KO: 다음 주에 또 만나자
-- `task.4.choice.1.ko` · KO: 만나자
-- `task.4.choice.2.ko` · KO: 다음
-- `task.4.choice.3.ko` · KO: 주에 또
+- `task.1.choice.3.ko` · KO: 놀이공원 가자
+- `task.2.prompt.ja` · JA: あとでコンビニでアイスクリーム買おう。
+- `task.2.answer.ko` · KO: 이따가 편의점에서 아이스크림 사자
+- `task.2.choice.1.ko` · KO: 아이스크림 사자
+- `task.2.choice.2.ko` · KO: 편의점에서
+- `task.2.choice.3.ko` · KO: 이따가
+- `task.3.prompt.ja` · JA: 私たち、写真一枚一緒に撮ろう。
+- `task.3.answer.ko` · KO: 우리 사진 한 장 같이 찍자
+- `task.3.choice.1.ko` · KO: 사진 한 장
+- `task.3.choice.2.ko` · KO: 같이 찍자
+- `task.3.choice.3.ko` · KO: 우리
+- `task.4.prompt.ja` · JA: 今度はうちの家に集まろう。
+- `task.4.answer.ko` · KO: 다음에는 우리 집에서 모이자
+- `task.4.choice.1.ko` · KO: 모이자
+- `task.4.choice.2.ko` · KO: 우리 집에서
+- `task.4.choice.3.ko` · KO: 다음에는
 ### `p1-fill`
 
-> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 あとでチキン食べよう。 우리 이따가 치킨 먹자. ＿＿＿ 夕方一緒に映画見よう。 저녁에 같이 영화 보자. ＿＿＿ ここで少し待とう。 여기에서 잠깐 기다리자. ＿＿＿ 来週また会おう。 다음 주에 또 만나자. ＿＿＿
+> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 あとでチキン食べよう。 우리 이따가 치킨 먹 자 . ウリ イッタガ チキン モク＿＿＿ 夕方一緒に映画見よう。 저녁에 같이 영화 보 자 . チョニョゲ カチ ヨンファ ポ＿＿＿ ここで少し待とう。 여기에서 잠깐 기다리 자 . ヨギエソ チャムカン キダリ＿＿＿ 来週また会おう。 다음 주에 또 만나 자 . タウム チュエ ト マンナ＿＿＿
 
 - `title.ko` · KO: 빈칸 채우기
 - `title.ja` · JA: (穴埋め練習)
@@ -2051,35 +2054,35 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 - `tutorScript.1.ja` · JA: まず中心表現を見てみましょう。
 ### `p2-reorder`
 
-> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 遅れないで早く来て。 늦지 말고 빨리 와 와 늦지 말고 빨리 着いたらすぐ電話して。 도착하면 바로 전화해 전화해 도착하면 바로 先に食べないで。 먼저 먹지 마 마 먼저 먹지 心配せずゆっくり来て。 걱정하지 말고 천천히 와 와 걱정하지 말고 천천히
+> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 明日の朝、遅れないで早く来て。 내일 아침에 늦지 말고 일찍 와 늦지 말고 일찍 와 내일 아침에 これ、他の人に言わないで。 이거 다른 사람한테 말하지 마 말하지 마 다른 사람한테 이거 家に着いたら私にメッセージして。 집에 가면 나한테 문자해 집에 가면 문자해 나한테 今日は無理しないでゆっくり休んで。 오늘은 무리하지 말고 푹 쉬어 푹 쉬어 무리하지 말고 오늘은
 
 - `title.ko` · KO: 문장 만들기
 - `title.ja` · JA: (文を組み立てよう)
 - `tutorScript.1.ko` · KO: 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요?
 - `tutorScript.1.ja` · JA: 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。
-- `task.1.prompt.ja` · JA: 遅れないで早く来て。
-- `task.1.answer.ko` · KO: 늦지 말고 빨리 와
-- `task.1.choice.1.ko` · KO: 와
-- `task.1.choice.2.ko` · KO: 늦지
-- `task.1.choice.3.ko` · KO: 말고 빨리
-- `task.2.prompt.ja` · JA: 着いたらすぐ電話して。
-- `task.2.answer.ko` · KO: 도착하면 바로 전화해
-- `task.2.choice.1.ko` · KO: 전화해
-- `task.2.choice.2.ko` · KO: 도착하면
-- `task.2.choice.3.ko` · KO: 바로
-- `task.3.prompt.ja` · JA: 先に食べないで。
-- `task.3.answer.ko` · KO: 먼저 먹지 마
-- `task.3.choice.1.ko` · KO: 마
-- `task.3.choice.2.ko` · KO: 먼저
-- `task.3.choice.3.ko` · KO: 먹지
-- `task.4.prompt.ja` · JA: 心配せずゆっくり来て。
-- `task.4.answer.ko` · KO: 걱정하지 말고 천천히 와
-- `task.4.choice.1.ko` · KO: 와
-- `task.4.choice.2.ko` · KO: 걱정하지
-- `task.4.choice.3.ko` · KO: 말고 천천히
+- `task.1.prompt.ja` · JA: 明日の朝、遅れないで早く来て。
+- `task.1.answer.ko` · KO: 내일 아침에 늦지 말고 일찍 와
+- `task.1.choice.1.ko` · KO: 늦지 말고
+- `task.1.choice.2.ko` · KO: 일찍 와
+- `task.1.choice.3.ko` · KO: 내일 아침에
+- `task.2.prompt.ja` · JA: これ、他の人に言わないで。
+- `task.2.answer.ko` · KO: 이거 다른 사람한테 말하지 마
+- `task.2.choice.1.ko` · KO: 말하지 마
+- `task.2.choice.2.ko` · KO: 다른 사람한테
+- `task.2.choice.3.ko` · KO: 이거
+- `task.3.prompt.ja` · JA: 家に着いたら私にメッセージして。
+- `task.3.answer.ko` · KO: 집에 가면 나한테 문자해
+- `task.3.choice.1.ko` · KO: 집에 가면
+- `task.3.choice.2.ko` · KO: 문자해
+- `task.3.choice.3.ko` · KO: 나한테
+- `task.4.prompt.ja` · JA: 今日は無理しないでゆっくり休んで。
+- `task.4.answer.ko` · KO: 오늘은 무리하지 말고 푹 쉬어
+- `task.4.choice.1.ko` · KO: 푹 쉬어
+- `task.4.choice.2.ko` · KO: 무리하지 말고
+- `task.4.choice.3.ko` · KO: 오늘은
 ### `p2-fill`
 
-> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 遅れないで早く来て。 늦지 말고 빨리 와. ＿＿＿ 着いたらすぐ電話して。 도착하면 바로 전화해. ＿＿＿ 先に食べないで。 먼저 먹지 마. ＿＿＿ 心配せずゆっくり来て。 걱정하지 말고 천천히 와. ＿＿＿
+> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 遅れないで早く来て。 늦지 말고 빨리 와. ＿＿＿ パルリ ワ 着いたらすぐ電話して。 도착하면 바로 전화해 . トチャカミョン パロ ＿＿＿ 先に食べないで。 먼저 먹지 마 . モンジョ ＿＿＿ 心配せずゆっくり来て。 걱정하지 말고 천천히 와. ＿＿＿ チョンチョニ ワ
 
 - `title.ko` · KO: 빈칸 채우기
 - `title.ja` · JA: (穴埋め練習)
@@ -2207,7 +2210,7 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 ## 07 · 07-greetings-and-responses
 
 - source: `sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-banmal-dropping-formality-upper-beginner/lessons/07-greetings-and-responses/lesson.html`
-- sha256: `66f1a3535e617b0890df8d8a02fa822cb0bd130e74df05905a859724262477f1`
+- sha256: `b744c158918bfc32f4698915c85a4e2283e3ec0c703a5cbd133a3f2ae8442387`
 - level: 초중급
 
 ### `metadata`
@@ -2309,35 +2312,35 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 - `tutorScript.1.ja` · JA: まず中心表現を見てみましょう。
 ### `p1-reorder`
 
-> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 先に帰るね。気をつけて帰って。 나 먼저 갈게, 조심히 들어가 조심히 들어가 나 먼저 갈게, 私が連絡するね。おやすみ。 내가 연락할게, 잘 자 자 내가 연락할게, 잘 明日電話するね。気をつけて。 내일 전화할게, 잘 가 가 내일 전화할게, 잘 ここで待つね。ゆっくり来て。 여기서 기다릴게, 천천히 와 와 여기서 기다릴게, 천천히
+> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 あとで私が行くね。少しだけ待ってて。 이따가 내가 갈게, 조금만 기다려 내가 갈게, 이따가 조금만 기다려 私がメッセージ送るね。必ず確認して。 내가 문자 보낼게, 꼭 확인해 문자 보낼게, 내가 꼭 확인해 今度は私がおごるね。今日はありがとう。 다음에는 내가 살게, 오늘은 고마워 내가 살게, 다음에는 오늘은 고마워 私、もう帰るね。明日会おう。 나 이제 들어갈게, 내일 보자 이제 들어갈게, 내일 보자 나
 
 - `title.ko` · KO: 문장 만들기
 - `title.ja` · JA: (文を組み立てよう)
 - `tutorScript.1.ko` · KO: 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요?
 - `tutorScript.1.ja` · JA: 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。
-- `task.1.prompt.ja` · JA: 先に帰るね。気をつけて帰って。
-- `task.1.answer.ko` · KO: 나 먼저 갈게, 조심히 들어가
-- `task.1.choice.1.ko` · KO: 조심히 들어가
-- `task.1.choice.2.ko` · KO: 나 먼저
-- `task.1.choice.3.ko` · KO: 갈게,
-- `task.2.prompt.ja` · JA: 私が連絡するね。おやすみ。
-- `task.2.answer.ko` · KO: 내가 연락할게, 잘 자
-- `task.2.choice.1.ko` · KO: 자
+- `task.1.prompt.ja` · JA: あとで私が行くね。少しだけ待ってて。
+- `task.1.answer.ko` · KO: 이따가 내가 갈게, 조금만 기다려
+- `task.1.choice.1.ko` · KO: 내가 갈게,
+- `task.1.choice.2.ko` · KO: 이따가
+- `task.1.choice.3.ko` · KO: 조금만 기다려
+- `task.2.prompt.ja` · JA: 私がメッセージ送るね。必ず確認して。
+- `task.2.answer.ko` · KO: 내가 문자 보낼게, 꼭 확인해
+- `task.2.choice.1.ko` · KO: 문자 보낼게,
 - `task.2.choice.2.ko` · KO: 내가
-- `task.2.choice.3.ko` · KO: 연락할게, 잘
-- `task.3.prompt.ja` · JA: 明日電話するね。気をつけて。
-- `task.3.answer.ko` · KO: 내일 전화할게, 잘 가
-- `task.3.choice.1.ko` · KO: 가
-- `task.3.choice.2.ko` · KO: 내일
-- `task.3.choice.3.ko` · KO: 전화할게, 잘
-- `task.4.prompt.ja` · JA: ここで待つね。ゆっくり来て。
-- `task.4.answer.ko` · KO: 여기서 기다릴게, 천천히 와
-- `task.4.choice.1.ko` · KO: 와
-- `task.4.choice.2.ko` · KO: 여기서
-- `task.4.choice.3.ko` · KO: 기다릴게, 천천히
+- `task.2.choice.3.ko` · KO: 꼭 확인해
+- `task.3.prompt.ja` · JA: 今度は私がおごるね。今日はありがとう。
+- `task.3.answer.ko` · KO: 다음에는 내가 살게, 오늘은 고마워
+- `task.3.choice.1.ko` · KO: 내가 살게,
+- `task.3.choice.2.ko` · KO: 다음에는
+- `task.3.choice.3.ko` · KO: 오늘은 고마워
+- `task.4.prompt.ja` · JA: 私、もう帰るね。明日会おう。
+- `task.4.answer.ko` · KO: 나 이제 들어갈게, 내일 보자
+- `task.4.choice.1.ko` · KO: 이제 들어갈게,
+- `task.4.choice.2.ko` · KO: 내일 보자
+- `task.4.choice.3.ko` · KO: 나
 ### `p1-fill`
 
-> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 先に帰るね。気をつけて帰って。 나 먼저 갈게, 조심히 들어가. ＿＿＿ 私が連絡するね。おやすみ。 내가 연락할게, 잘 자. ＿＿＿ 明日電話するね。気をつけて。 내일 전화할게, 잘 가. ＿＿＿ ここで待つね。ゆっくり来て。 여기서 기다릴게, 천천히 와. ＿＿＿
+> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 先に帰るね。気をつけて帰って。 나 먼저 갈게 , 조심히 들어가. ナ モンジョ ＿＿＿ チョシミ トゥロガ 私が連絡するね。おやすみ。 내가 연락할게 , 잘 자. ネガ ＿＿＿ チャル チャ 明日電話するね。気をつけて。 내일 전화할게 , 잘 가. ネイル ＿＿＿ チャル ガ ここで待つね。ゆっくり来て。 여기서 기다릴게 , 천천히 와. ヨギソ ＿＿＿ チョンチョニ ワ
 
 - `title.ko` · KO: 빈칸 채우기
 - `title.ja` · JA: (穴埋め練習)
@@ -2418,35 +2421,35 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 - `tutorScript.1.ja` · JA: まず中心表現を見てみましょう。
 ### `p2-reorder`
 
-> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 うん、わかった。そのとき会おう。 응, 알겠어. 그때 보자 보자 응, 알겠어. 그때 うん、ありがとう。明日会おう。 어, 고마워. 내일 보자 보자 어, 고마워. 내일 うん、ごめん。次から気をつける。 응, 미안. 다음부터 조심할게 조심할게 응, 미안. 다음부터 わかった。今日もお疲れ。 알겠어. 오늘도 수고했어 수고했어 알겠어. 오늘도
+> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 うん、私もそう思う。 응, 나도 그렇게 생각해 응, 그렇게 생각해 나도 うん、今すぐ行くね。 어, 지금 바로 갈게 지금 바로 갈게 어, うん、心配しないで。私は大丈夫。 응, 걱정 마. 나 괜찮아 응, 나 괜찮아 걱정 마. わかった、あとでまた連絡するね。 알겠어, 이따가 다시 연락할게 다시 연락할게 이따가 알겠어,
 
 - `title.ko` · KO: 문장 만들기
 - `title.ja` · JA: (文を組み立てよう)
 - `tutorScript.1.ko` · KO: 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요?
 - `tutorScript.1.ja` · JA: 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。
-- `task.1.prompt.ja` · JA: うん、わかった。そのとき会おう。
-- `task.1.answer.ko` · KO: 응, 알겠어. 그때 보자
-- `task.1.choice.1.ko` · KO: 보자
-- `task.1.choice.2.ko` · KO: 응,
-- `task.1.choice.3.ko` · KO: 알겠어. 그때
-- `task.2.prompt.ja` · JA: うん、ありがとう。明日会おう。
-- `task.2.answer.ko` · KO: 어, 고마워. 내일 보자
-- `task.2.choice.1.ko` · KO: 보자
-- `task.2.choice.2.ko` · KO: 어,
-- `task.2.choice.3.ko` · KO: 고마워. 내일
-- `task.3.prompt.ja` · JA: うん、ごめん。次から気をつける。
-- `task.3.answer.ko` · KO: 응, 미안. 다음부터 조심할게
-- `task.3.choice.1.ko` · KO: 조심할게
-- `task.3.choice.2.ko` · KO: 응,
-- `task.3.choice.3.ko` · KO: 미안. 다음부터
-- `task.4.prompt.ja` · JA: わかった。今日もお疲れ。
-- `task.4.answer.ko` · KO: 알겠어. 오늘도 수고했어
-- `task.4.choice.1.ko` · KO: 수고했어
-- `task.4.choice.2.ko` · KO: 알겠어.
-- `task.4.choice.3.ko` · KO: 오늘도
+- `task.1.prompt.ja` · JA: うん、私もそう思う。
+- `task.1.answer.ko` · KO: 응, 나도 그렇게 생각해
+- `task.1.choice.1.ko` · KO: 응,
+- `task.1.choice.2.ko` · KO: 그렇게 생각해
+- `task.1.choice.3.ko` · KO: 나도
+- `task.2.prompt.ja` · JA: うん、今すぐ行くね。
+- `task.2.answer.ko` · KO: 어, 지금 바로 갈게
+- `task.2.choice.1.ko` · KO: 지금
+- `task.2.choice.2.ko` · KO: 바로 갈게
+- `task.2.choice.3.ko` · KO: 어,
+- `task.3.prompt.ja` · JA: うん、心配しないで。私は大丈夫。
+- `task.3.answer.ko` · KO: 응, 걱정 마. 나 괜찮아
+- `task.3.choice.1.ko` · KO: 응,
+- `task.3.choice.2.ko` · KO: 나 괜찮아
+- `task.3.choice.3.ko` · KO: 걱정 마.
+- `task.4.prompt.ja` · JA: わかった、あとでまた連絡するね。
+- `task.4.answer.ko` · KO: 알겠어, 이따가 다시 연락할게
+- `task.4.choice.1.ko` · KO: 다시 연락할게
+- `task.4.choice.2.ko` · KO: 이따가
+- `task.4.choice.3.ko` · KO: 알겠어,
 ### `p2-fill`
 
-> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 うん、わかった。そのとき会おう。 응, 알겠어. 그때 보자. ＿＿＿ うん、ありがとう。明日会おう。 어, 고마워. 내일 보자. ＿＿＿ うん、ごめん。次から気をつける。 응, 미안. 다음부터 조심할게. ＿＿＿ わかった。今日もお疲れ。 알겠어. 오늘도 수고했어. ＿＿＿
+> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 うん、わかった。そのとき会おう。 응 , 알겠어. 그때 보자. ＿＿＿ アルゲッソ クッテ ポジャ うん、ありがとう。明日会おう。 어 , 고마워. 내일 보자. ＿＿＿ コマウォ ネイル ポジャ うん、ごめん。次から気をつける。 응 , 미안. 다음부터 조심할게. ＿＿＿ ミアン タウムブト チョシマルケ わかった。今日もお疲れ。 알겠어 . 오늘도 수고했어. ＿＿＿ オヌルド スゴヘッソ
 
 - `title.ko` · KO: 빈칸 채우기
 - `title.ja` · JA: (穴埋め練習)
@@ -2574,7 +2577,7 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 ## 08 · 08-mixed-hierarchy
 
 - source: `sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-banmal-dropping-formality-upper-beginner/lessons/08-mixed-hierarchy/lesson.html`
-- sha256: `e94d39b1251160d0e0e20fb5adaecca0426935cf017d87b59d4955cfc1bde086`
+- sha256: `6202591760a3168214fb93b2e5aa16f8823d5bd2a83df313fddaa13cd4aef233`
 - level: 초중급
 
 ### `metadata`
@@ -2676,35 +2679,39 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 - `tutorScript.1.ja` · JA: 年上には尊敬語と「요」を使い、友達には普通語とパンマルの語尾を使います。
 ### `p1-reorder`
 
-> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 お兄さんは何を召し上がりますか？ 君は何食べる？ 형은 뭐 드실래요? 너는 뭐 먹을래 뭐 먹을래 형은 뭐 드실래요? 너는 お姉さんはどこへ行かれますか？ 君はどこ行く？ 누나는 어디 가실래요? 너는 어디 갈래 어디 갈래 누나는 어디 가실래요? 너는 お兄さんはコーヒーにしますか？ 君はお茶飲む？ 형은 커피 드실래요? 너는 차 마실래 차 마실래 형은 커피 드실래요? 너는 先輩は先に見ますか？ 君も見る？ 선배님은 먼저 보실래요? 너도 볼래 너도 볼래 선배님은 먼저 보실래요?
+> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 お姉さんは何を注文しますか？ 君は何注文する？ 누나는 뭐 시키실래요? 너는 뭐 시킬래 너는 뭐 시킬래 누나는 뭐 시키실래요? お兄さんはいつ来ますか？ 君はいつ来る？ 형은 언제 오실래요? 너는 언제 올래 언제 올래 언제 오실래요? 너는 형은 先輩はここに座りますか？ 君はあそこに座る？ 선배님은 여기 앉으실래요? 너는 저기 앉을래 저기 앉을래 너는 선배님은 여기 앉으실래요? お兄さんは写真撮りますか？ 君も一緒に撮る？ 형은 사진 찍으실래요? 너도 같이 찍을래 너도 같이 찍을래 형은 사진 찍으실래요?
 
 - `title.ko` · KO: 문장 만들기
 - `title.ja` · JA: (文を組み立てよう)
 - `tutorScript.1.ko` · KO: 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요?
 - `tutorScript.1.ja` · JA: 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。
-- `task.1.prompt.ja` · JA: お兄さんは何を召し上がりますか？ 君は何食べる？
-- `task.1.answer.ko` · KO: 형은 뭐 드실래요? 너는 뭐 먹을래
-- `task.1.choice.1.ko` · KO: 뭐 먹을래
-- `task.1.choice.2.ko` · KO: 형은 뭐
-- `task.1.choice.3.ko` · KO: 드실래요? 너는
-- `task.2.prompt.ja` · JA: お姉さんはどこへ行かれますか？ 君はどこ行く？
-- `task.2.answer.ko` · KO: 누나는 어디 가실래요? 너는 어디 갈래
-- `task.2.choice.1.ko` · KO: 어디 갈래
-- `task.2.choice.2.ko` · KO: 누나는 어디
-- `task.2.choice.3.ko` · KO: 가실래요? 너는
-- `task.3.prompt.ja` · JA: お兄さんはコーヒーにしますか？ 君はお茶飲む？
-- `task.3.answer.ko` · KO: 형은 커피 드실래요? 너는 차 마실래
-- `task.3.choice.1.ko` · KO: 차 마실래
-- `task.3.choice.2.ko` · KO: 형은 커피
-- `task.3.choice.3.ko` · KO: 드실래요? 너는
-- `task.4.prompt.ja` · JA: 先輩は先に見ますか？ 君も見る？
-- `task.4.answer.ko` · KO: 선배님은 먼저 보실래요? 너도 볼래
-- `task.4.choice.1.ko` · KO: 너도 볼래
-- `task.4.choice.2.ko` · KO: 선배님은 먼저
-- `task.4.choice.3.ko` · KO: 보실래요?
+- `task.1.prompt.ja` · JA: お姉さんは何を注文しますか？ 君は何注文する？
+- `task.1.answer.ko` · KO: 누나는 뭐 시키실래요? 너는 뭐 시킬래
+- `task.1.choice.1.ko` · KO: 너는
+- `task.1.choice.2.ko` · KO: 뭐 시킬래
+- `task.1.choice.3.ko` · KO: 누나는
+- `task.1.choice.4.ko` · KO: 뭐 시키실래요?
+- `task.2.prompt.ja` · JA: お兄さんはいつ来ますか？ 君はいつ来る？
+- `task.2.answer.ko` · KO: 형은 언제 오실래요? 너는 언제 올래
+- `task.2.choice.1.ko` · KO: 언제 올래
+- `task.2.choice.2.ko` · KO: 언제 오실래요?
+- `task.2.choice.3.ko` · KO: 너는
+- `task.2.choice.4.ko` · KO: 형은
+- `task.3.prompt.ja` · JA: 先輩はここに座りますか？ 君はあそこに座る？
+- `task.3.answer.ko` · KO: 선배님은 여기 앉으실래요? 너는 저기 앉을래
+- `task.3.choice.1.ko` · KO: 저기 앉을래
+- `task.3.choice.2.ko` · KO: 너는
+- `task.3.choice.3.ko` · KO: 선배님은
+- `task.3.choice.4.ko` · KO: 여기 앉으실래요?
+- `task.4.prompt.ja` · JA: お兄さんは写真撮りますか？ 君も一緒に撮る？
+- `task.4.answer.ko` · KO: 형은 사진 찍으실래요? 너도 같이 찍을래
+- `task.4.choice.1.ko` · KO: 너도
+- `task.4.choice.2.ko` · KO: 같이 찍을래
+- `task.4.choice.3.ko` · KO: 형은
+- `task.4.choice.4.ko` · KO: 사진 찍으실래요?
 ### `p1-fill`
 
-> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 お兄さんは何を召し上がりますか？ 君は何食べる？ 형은 뭐 드실래요? 너는 뭐 먹을래? ＿＿＿ お姉さんはどこへ行かれますか？ 君はどこ行く？ 누나는 어디 가실래요? 너는 어디 갈래? ＿＿＿ お兄さんはコーヒーにしますか？ 君はお茶飲む？ 형은 커피 드실래요? 너는 차 마실래? ＿＿＿ 先輩は先に見ますか？ 君も見る？ 선배님은 먼저 보실래요? 너도 볼래? ＿＿＿
+> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 お兄さんは何を召し上がりますか？ 君は何食べる？ 형은 뭐 드실래요? 너는 뭐 먹을래 ? ヒョンウン ムォ トゥシルレヨ ノヌン ムォ ＿＿＿ お姉さんはどこへ行かれますか？ 君はどこ行く？ 누나는 어디 가실래요? 너는 어디 갈래 ? ヌナヌン オディ カシルレヨ ノヌン オディ ＿＿＿ お兄さんはコーヒーにしますか？ 君はお茶飲む？ 형은 커피 드실래요? 너는 차 마실래 ? ヒョンウン コピ トゥシルレヨ ノヌン チャ ＿＿＿ 先輩は先に見ますか？ 君も見る？ 선배님은 먼저 보실래요? 너도 볼래 ? ソンベニムン モンジョ ポシルレヨ ノド ＿＿＿
 
 - `title.ko` · KO: 빈칸 채우기
 - `title.ja` · JA: (穴埋め練習)
@@ -2785,35 +2792,39 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 - `tutorScript.1.ja` · JA: 年上には「제가」・「게요」、友達には「내가」・게を使います。
 ### `p2-reorder`
 
-> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 私が注文します。私が注文するね。 제가 시킬게요. 내가 시킬게 시킬게 제가 시킬게요. 내가 私が持ってきます。私が持ってくるね。 제가 가져올게요. 내가 가져올게 가져올게 제가 가져올게요. 내가 私が払います。私が払うね。 제가 계산할게요. 내가 계산할게 계산할게 제가 계산할게요. 내가 私が確認します。私が確認するね。 제가 확인할게요. 내가 확인할게 확인할게 제가 확인할게요. 내가
+> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 私が予約します。私が予約するね。 제가 예약할게요. 내가 예약할게 예약할게 제가 내가 예약할게요. 私が先に行きます。私が先に行くね。 제가 먼저 갈게요. 내가 먼저 갈게 제가 내가 먼저 갈게 먼저 갈게요. 私が席を取ります。私が席を取るね。 제가 자리 잡을게요. 내가 자리 잡을게 자리 잡을게 내가 자리 잡을게요. 제가 私が後で連絡します。私が後で連絡するね。 제가 나중에 연락할게요. 내가 나중에 연락할게 내가 제가 나중에 연락할게요. 나중에 연락할게
 
 - `title.ko` · KO: 문장 만들기
 - `title.ja` · JA: (文を組み立てよう)
 - `tutorScript.1.ko` · KO: 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요?
 - `tutorScript.1.ja` · JA: 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。
-- `task.1.prompt.ja` · JA: 私が注文します。私が注文するね。
-- `task.1.answer.ko` · KO: 제가 시킬게요. 내가 시킬게
-- `task.1.choice.1.ko` · KO: 시킬게
+- `task.1.prompt.ja` · JA: 私が予約します。私が予約するね。
+- `task.1.answer.ko` · KO: 제가 예약할게요. 내가 예약할게
+- `task.1.choice.1.ko` · KO: 예약할게
 - `task.1.choice.2.ko` · KO: 제가
-- `task.1.choice.3.ko` · KO: 시킬게요. 내가
-- `task.2.prompt.ja` · JA: 私が持ってきます。私が持ってくるね。
-- `task.2.answer.ko` · KO: 제가 가져올게요. 내가 가져올게
-- `task.2.choice.1.ko` · KO: 가져올게
-- `task.2.choice.2.ko` · KO: 제가
-- `task.2.choice.3.ko` · KO: 가져올게요. 내가
-- `task.3.prompt.ja` · JA: 私が払います。私が払うね。
-- `task.3.answer.ko` · KO: 제가 계산할게요. 내가 계산할게
-- `task.3.choice.1.ko` · KO: 계산할게
-- `task.3.choice.2.ko` · KO: 제가
-- `task.3.choice.3.ko` · KO: 계산할게요. 내가
-- `task.4.prompt.ja` · JA: 私が確認します。私が確認するね。
-- `task.4.answer.ko` · KO: 제가 확인할게요. 내가 확인할게
-- `task.4.choice.1.ko` · KO: 확인할게
+- `task.1.choice.3.ko` · KO: 내가
+- `task.1.choice.4.ko` · KO: 예약할게요.
+- `task.2.prompt.ja` · JA: 私が先に行きます。私が先に行くね。
+- `task.2.answer.ko` · KO: 제가 먼저 갈게요. 내가 먼저 갈게
+- `task.2.choice.1.ko` · KO: 제가
+- `task.2.choice.2.ko` · KO: 내가
+- `task.2.choice.3.ko` · KO: 먼저 갈게
+- `task.2.choice.4.ko` · KO: 먼저 갈게요.
+- `task.3.prompt.ja` · JA: 私が席を取ります。私が席を取るね。
+- `task.3.answer.ko` · KO: 제가 자리 잡을게요. 내가 자리 잡을게
+- `task.3.choice.1.ko` · KO: 자리 잡을게
+- `task.3.choice.2.ko` · KO: 내가
+- `task.3.choice.3.ko` · KO: 자리 잡을게요.
+- `task.3.choice.4.ko` · KO: 제가
+- `task.4.prompt.ja` · JA: 私が後で連絡します。私が後で連絡するね。
+- `task.4.answer.ko` · KO: 제가 나중에 연락할게요. 내가 나중에 연락할게
+- `task.4.choice.1.ko` · KO: 내가
 - `task.4.choice.2.ko` · KO: 제가
-- `task.4.choice.3.ko` · KO: 확인할게요. 내가
+- `task.4.choice.3.ko` · KO: 나중에 연락할게요.
+- `task.4.choice.4.ko` · KO: 나중에 연락할게
 ### `p2-fill`
 
-> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 私が注文します。私が注文するね。 제가 시킬게요. 내가 시킬게. ＿＿＿ 私が持ってきます。私が持ってくるね。 제가 가져올게요. 내가 가져올게. ＿＿＿ 私が払います。私が払うね。 제가 계산할게요. 내가 계산할게. ＿＿＿ 私が確認します。私が確認するね。 제가 확인할게요. 내가 확인할게. ＿＿＿
+> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 私が注文します。私が注文するね。 제가 시킬게요. 내가 시킬게 . チェガ シキルケヨ ネガ ＿＿＿ 私が持ってきます。私が持ってくるね。 제가 가져올게요. 내가 가져올게 . チェガ カジョオルケヨ ネガ ＿＿＿ 私が払います。私が払うね。 제가 계산할게요. 내가 계산할게 . チェガ ケサナルケヨ ネガ ＿＿＿ 私が確認します。私が確認するね。 제가 확인할게요. 내가 확인할게 . チェガ ファギナルケヨ ネガ ＿＿＿
 
 - `title.ko` · KO: 빈칸 채우기
 - `title.ja` · JA: (穴埋め練習)
@@ -2941,7 +2952,7 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 ## 09 · 09-semi-formal-speech
 
 - source: `sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-banmal-dropping-formality-upper-beginner/lessons/09-semi-formal-speech/lesson.html`
-- sha256: `db31baea823ba290abdf1a26c3b1f12195b6371a56c32f1e0d2bb570eaee2199`
+- sha256: `7fb723814c0e8bab2d9ba3467aa0815ddd9f10f80566a3448a1066585ee9aa2c`
 - level: 초중급
 
 ### `metadata`
@@ -3043,35 +3054,35 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 - `tutorScript.1.ja` · JA: まず中心表現を見てみましょう。
 ### `p1-reorder`
 
-> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 私はまだ敬語のほうが楽なんですが。 저는 아직 존댓말이 편한데요 편한데요 저는 아직 존댓말이 今は少し気まずいんですが。 지금은 조금 어색한데요 어색한데요 지금은 조금 私はゆっくり親しくなりたいんですが。 저는 천천히 친해지고 싶은데요 싶은데요 저는 천천히 친해지고 まだタメ口は難しいんですが。 아직 말 놓기는 어려운데요 어려운데요 아직 말 놓기는
+> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 私はまだ少し負担なんですが。 저는 아직 조금 부담스러운데요 조금 부담스러운데요 아직 저는 実は私は人見知りするんですが。 사실 저는 낯을 좀 가리는데요 사실 낯을 좀 가리는데요 저는 私は今のままでもいいんですが。 저는 지금 이대로도 좋은데요 저는 좋은데요 지금 이대로도 敬語のほうが私には慣れているんですが。 존댓말이 저한테는 더 익숙한데요 저한테는 존댓말이 더 익숙한데요
 
 - `title.ko` · KO: 문장 만들기
 - `title.ja` · JA: (文を組み立てよう)
 - `tutorScript.1.ko` · KO: 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요?
 - `tutorScript.1.ja` · JA: 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。
-- `task.1.prompt.ja` · JA: 私はまだ敬語のほうが楽なんですが。
-- `task.1.answer.ko` · KO: 저는 아직 존댓말이 편한데요
-- `task.1.choice.1.ko` · KO: 편한데요
-- `task.1.choice.2.ko` · KO: 저는
-- `task.1.choice.3.ko` · KO: 아직 존댓말이
-- `task.2.prompt.ja` · JA: 今は少し気まずいんですが。
-- `task.2.answer.ko` · KO: 지금은 조금 어색한데요
-- `task.2.choice.1.ko` · KO: 어색한데요
-- `task.2.choice.2.ko` · KO: 지금은
-- `task.2.choice.3.ko` · KO: 조금
-- `task.3.prompt.ja` · JA: 私はゆっくり親しくなりたいんですが。
-- `task.3.answer.ko` · KO: 저는 천천히 친해지고 싶은데요
-- `task.3.choice.1.ko` · KO: 싶은데요
-- `task.3.choice.2.ko` · KO: 저는
-- `task.3.choice.3.ko` · KO: 천천히 친해지고
-- `task.4.prompt.ja` · JA: まだタメ口は難しいんですが。
-- `task.4.answer.ko` · KO: 아직 말 놓기는 어려운데요
-- `task.4.choice.1.ko` · KO: 어려운데요
-- `task.4.choice.2.ko` · KO: 아직
-- `task.4.choice.3.ko` · KO: 말 놓기는
+- `task.1.prompt.ja` · JA: 私はまだ少し負担なんですが。
+- `task.1.answer.ko` · KO: 저는 아직 조금 부담스러운데요
+- `task.1.choice.1.ko` · KO: 조금 부담스러운데요
+- `task.1.choice.2.ko` · KO: 아직
+- `task.1.choice.3.ko` · KO: 저는
+- `task.2.prompt.ja` · JA: 実は私は人見知りするんですが。
+- `task.2.answer.ko` · KO: 사실 저는 낯을 좀 가리는데요
+- `task.2.choice.1.ko` · KO: 사실
+- `task.2.choice.2.ko` · KO: 낯을 좀 가리는데요
+- `task.2.choice.3.ko` · KO: 저는
+- `task.3.prompt.ja` · JA: 私は今のままでもいいんですが。
+- `task.3.answer.ko` · KO: 저는 지금 이대로도 좋은데요
+- `task.3.choice.1.ko` · KO: 저는
+- `task.3.choice.2.ko` · KO: 좋은데요
+- `task.3.choice.3.ko` · KO: 지금 이대로도
+- `task.4.prompt.ja` · JA: 敬語のほうが私には慣れているんですが。
+- `task.4.answer.ko` · KO: 존댓말이 저한테는 더 익숙한데요
+- `task.4.choice.1.ko` · KO: 저한테는
+- `task.4.choice.2.ko` · KO: 존댓말이
+- `task.4.choice.3.ko` · KO: 더 익숙한데요
 ### `p1-fill`
 
-> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 私はまだ敬語のほうが楽なんですが。 저는 아직 존댓말이 편한데요. ＿＿＿ 今は少し気まずいんですが。 지금은 조금 어색한데요. ＿＿＿ 私はゆっくり親しくなりたいんですが。 저는 천천히 친해지고 싶은데요. ＿＿＿ まだタメ口は難しいんですが。 아직 말 놓기는 어려운데요. ＿＿＿
+> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 私はまだ敬語のほうが楽なんですが。 저는 아직 존댓말이 편한데요 . チョヌン アジク チョンデンマリ ＿＿＿ 今は少し気まずいんですが。 지금은 조금 어색한데요 . チグムン チョグム ＿＿＿ 私はゆっくり親しくなりたいんですが。 저는 천천히 친해지고 싶은데요 . チョヌン チョンチョニ チネジゴ ＿＿＿ まだタメ口は難しいんですが。 아직 말 놓기는 어려운데요 . アジク マル ノッキヌン ＿＿＿
 
 - `title.ko` · KO: 빈칸 채우기
 - `title.ja` · JA: (穴埋め練習)
@@ -3152,35 +3163,35 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 - `tutorScript.1.ja` · JA: まず中心表現を見てみましょう。
 ### `p2-reorder`
 
-> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 私が年下なので敬語を使います。 제가 어리니까 존댓말 쓸게요 쓸게요 제가 어리니까 존댓말 まだ気まずいのでゆっくりします。 아직 어색하니까 천천히 할게요 할게요 아직 어색하니까 천천히 先輩なので私が合わせます。 선배님이시니까 제가 맞출게요 맞출게요 선배님이시니까 제가 今日は初めてなので敬語にします。 오늘은 처음이니까 존댓말할게요 존댓말할게요 오늘은 처음이니까
+> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 私のほうが楽なので、ここに座ります。 제가 더 편하니까 여기에 앉을게요 앉을게요 여기에 제가 더 편하니까 時間が遅くなったので、もう帰ります。 시간이 늦었으니까 이제 들어갈게요 들어갈게요 이제 시간이 늦었으니까 私がよく知らないので、後で聞きます。 제가 잘 모르니까 나중에 물어볼게요 나중에 물어볼게요 제가 잘 모르니까 私が後輩なので、先に連絡します。 제가 후배니까 먼저 연락할게요 먼저 연락할게요 제가 후배니까
 
 - `title.ko` · KO: 문장 만들기
 - `title.ja` · JA: (文を組み立てよう)
 - `tutorScript.1.ko` · KO: 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요?
 - `tutorScript.1.ja` · JA: 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。
-- `task.1.prompt.ja` · JA: 私が年下なので敬語を使います。
-- `task.1.answer.ko` · KO: 제가 어리니까 존댓말 쓸게요
-- `task.1.choice.1.ko` · KO: 쓸게요
-- `task.1.choice.2.ko` · KO: 제가
-- `task.1.choice.3.ko` · KO: 어리니까 존댓말
-- `task.2.prompt.ja` · JA: まだ気まずいのでゆっくりします。
-- `task.2.answer.ko` · KO: 아직 어색하니까 천천히 할게요
-- `task.2.choice.1.ko` · KO: 할게요
-- `task.2.choice.2.ko` · KO: 아직
-- `task.2.choice.3.ko` · KO: 어색하니까 천천히
-- `task.3.prompt.ja` · JA: 先輩なので私が合わせます。
-- `task.3.answer.ko` · KO: 선배님이시니까 제가 맞출게요
-- `task.3.choice.1.ko` · KO: 맞출게요
-- `task.3.choice.2.ko` · KO: 선배님이시니까
-- `task.3.choice.3.ko` · KO: 제가
-- `task.4.prompt.ja` · JA: 今日は初めてなので敬語にします。
-- `task.4.answer.ko` · KO: 오늘은 처음이니까 존댓말할게요
-- `task.4.choice.1.ko` · KO: 존댓말할게요
-- `task.4.choice.2.ko` · KO: 오늘은
-- `task.4.choice.3.ko` · KO: 처음이니까
+- `task.1.prompt.ja` · JA: 私のほうが楽なので、ここに座ります。
+- `task.1.answer.ko` · KO: 제가 더 편하니까 여기에 앉을게요
+- `task.1.choice.1.ko` · KO: 앉을게요
+- `task.1.choice.2.ko` · KO: 여기에
+- `task.1.choice.3.ko` · KO: 제가 더 편하니까
+- `task.2.prompt.ja` · JA: 時間が遅くなったので、もう帰ります。
+- `task.2.answer.ko` · KO: 시간이 늦었으니까 이제 들어갈게요
+- `task.2.choice.1.ko` · KO: 들어갈게요
+- `task.2.choice.2.ko` · KO: 이제
+- `task.2.choice.3.ko` · KO: 시간이 늦었으니까
+- `task.3.prompt.ja` · JA: 私がよく知らないので、後で聞きます。
+- `task.3.answer.ko` · KO: 제가 잘 모르니까 나중에 물어볼게요
+- `task.3.choice.1.ko` · KO: 나중에
+- `task.3.choice.2.ko` · KO: 물어볼게요
+- `task.3.choice.3.ko` · KO: 제가 잘 모르니까
+- `task.4.prompt.ja` · JA: 私が後輩なので、先に連絡します。
+- `task.4.answer.ko` · KO: 제가 후배니까 먼저 연락할게요
+- `task.4.choice.1.ko` · KO: 먼저
+- `task.4.choice.2.ko` · KO: 연락할게요
+- `task.4.choice.3.ko` · KO: 제가 후배니까
 ### `p2-fill`
 
-> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 私が年下なので敬語を使います。 제가 어리니까 존댓말 쓸게요. ＿＿＿ まだ気まずいのでゆっくりします。 아직 어색하니까 천천히 할게요. ＿＿＿ 先輩なので私が合わせます。 선배님이시니까 제가 맞출게요. ＿＿＿ 今日は初めてなので敬語にします。 오늘은 처음이니까 존댓말할게요. ＿＿＿
+> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 私が年下なので敬語を使います。 제가 어리 니까 존댓말 쓸게요. チェガ オリ＿＿＿ チョンデンマル スルケヨ まだ気まずいのでゆっくりします。 아직 어색하 니까 천천히 할게요. アジク オセカ＿＿＿ チョンチョニ ハルケヨ 先輩なので私が合わせます。 선배님이시 니까 제가 맞출게요. ソンベニミシ＿＿＿ チェガ マッチュルケヨ 今日は初めてなので敬語にします。 오늘은 처음이 니까 존댓말할게요. オヌルン チョウミ＿＿＿ チョンデンマラルケヨ
 
 - `title.ko` · KO: 빈칸 채우기
 - `title.ja` · JA: (穴埋め練習)
@@ -3308,7 +3319,7 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 ## 10 · 10-returning-to-polite-speech
 
 - source: `sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-banmal-dropping-formality-upper-beginner/lessons/10-returning-to-polite-speech/lesson.html`
-- sha256: `080f7afcd9220c23a1948dfcb8596639676538636bdb117041abb08622fae296`
+- sha256: `6e2b88c4e4c6a7f91f397d6809a5b0e281137995e2309ed111e035925d8a23e7`
 - level: 초중급
 
 ### `metadata`
@@ -3410,34 +3421,35 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 - `tutorScript.1.ja` · JA: まず中心表現を見てみましょう。
 ### `p1-reorder`
 
-> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 すみません、言葉遣いが短くなりました。 죄송해요, 제가 말이 짧았어요 짧았어요 죄송해요, 제가 말이 すみません、気楽に話しすぎました。 죄송해요, 제가 너무 편하게 말했어요 편하게 말했어요 죄송해요, 제가 너무 呼び方を間違えました。 제가 호칭을 잘못 불렀어요 불렀어요 제가 호칭을 잘못 不快でしたらすみません。 불편하셨다면 죄송해요 죄송해요 불편하셨다면
+> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 すみません、私が間違えました。 죄송해요, 제가 실수했어요 실수했어요 제가 죄송해요, さっきは私が急ぎすぎました。 아까는 제가 너무 성급했어요 제가 너무 성급했어요 아까는 私が空気を読み間違えました。 제가 분위기를 잘못 읽었어요 잘못 읽었어요 분위기를 제가 気を悪くされたなら本当にすみません。 기분 나쁘셨다면 정말 죄송해요 정말 죄송해요 기분 나쁘셨다면
 
 - `title.ko` · KO: 문장 만들기
 - `title.ja` · JA: (文を組み立てよう)
 - `tutorScript.1.ko` · KO: 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요?
 - `tutorScript.1.ja` · JA: 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。
-- `task.1.prompt.ja` · JA: すみません、言葉遣いが短くなりました。
-- `task.1.answer.ko` · KO: 죄송해요, 제가 말이 짧았어요
-- `task.1.choice.1.ko` · KO: 짧았어요
-- `task.1.choice.2.ko` · KO: 죄송해요,
-- `task.1.choice.3.ko` · KO: 제가 말이
-- `task.2.prompt.ja` · JA: すみません、気楽に話しすぎました。
-- `task.2.answer.ko` · KO: 죄송해요, 제가 너무 편하게 말했어요
-- `task.2.choice.1.ko` · KO: 편하게 말했어요
-- `task.2.choice.2.ko` · KO: 죄송해요, 제가
-- `task.2.choice.3.ko` · KO: 너무
-- `task.3.prompt.ja` · JA: 呼び方を間違えました。
-- `task.3.answer.ko` · KO: 제가 호칭을 잘못 불렀어요
-- `task.3.choice.1.ko` · KO: 불렀어요
-- `task.3.choice.2.ko` · KO: 제가
-- `task.3.choice.3.ko` · KO: 호칭을 잘못
-- `task.4.prompt.ja` · JA: 不快でしたらすみません。
-- `task.4.answer.ko` · KO: 불편하셨다면 죄송해요
-- `task.4.choice.1.ko` · KO: 죄송해요
-- `task.4.choice.2.ko` · KO: 불편하셨다면
+- `task.1.prompt.ja` · JA: すみません、私が間違えました。
+- `task.1.answer.ko` · KO: 죄송해요, 제가 실수했어요
+- `task.1.choice.1.ko` · KO: 실수했어요
+- `task.1.choice.2.ko` · KO: 제가
+- `task.1.choice.3.ko` · KO: 죄송해요,
+- `task.2.prompt.ja` · JA: さっきは私が急ぎすぎました。
+- `task.2.answer.ko` · KO: 아까는 제가 너무 성급했어요
+- `task.2.choice.1.ko` · KO: 제가
+- `task.2.choice.2.ko` · KO: 너무 성급했어요
+- `task.2.choice.3.ko` · KO: 아까는
+- `task.3.prompt.ja` · JA: 私が空気を読み間違えました。
+- `task.3.answer.ko` · KO: 제가 분위기를 잘못 읽었어요
+- `task.3.choice.1.ko` · KO: 잘못 읽었어요
+- `task.3.choice.2.ko` · KO: 분위기를
+- `task.3.choice.3.ko` · KO: 제가
+- `task.4.prompt.ja` · JA: 気を悪くされたなら本当にすみません。
+- `task.4.answer.ko` · KO: 기분 나쁘셨다면 정말 죄송해요
+- `task.4.choice.1.ko` · KO: 정말
+- `task.4.choice.2.ko` · KO: 죄송해요
+- `task.4.choice.3.ko` · KO: 기분 나쁘셨다면
 ### `p1-fill`
 
-> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 すみません、言葉遣いが短くなりました。 죄송해요, 제가 말이 짧았어요. ＿＿＿ すみません、気楽に話しすぎました。 죄송해요, 제가 너무 편하게 말했어요. ＿＿＿ 呼び方を間違えました。 제가 호칭을 잘못 불렀어요. ＿＿＿ 不快でしたらすみません。 불편하셨다면 죄송해요. ＿＿＿
+> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 すみません、言葉遣いが短くなりました。 죄송해요, 제가 말이 짧았어요 . チェソンヘヨ チェガ マリ ＿＿＿ すみません、気楽に話しすぎました。 죄송해요, 제가 너무 편하게 말했어요 . チェソンヘヨ チェガ ノム ピョナゲ ＿＿＿ 呼び方を間違えました。 제가 호칭을 잘못 불렀어요 . チェガ ホチンウル チャルモッ ＿＿＿ 不快でしたらすみません。 불편하셨다면 죄송해요 . プルピョナショッタミョン ＿＿＿
 
 - `title.ko` · KO: 빈칸 채우기
 - `title.ja` · JA: (穴埋め練習)
@@ -3518,35 +3530,35 @@ HTML이 원본이다. 이 파일은 언어·지시·활동 의미를 검수하�
 - `tutorScript.1.ja` · JA: まず中心表現を見てみましょう。
 ### `p2-reorder`
 
-> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 私たちこのままの関係でいられたらいいです。 저희 그냥 지금처럼 지내면 좋겠어요 지내면 좋겠어요 저희 그냥 지금처럼 しばらく敬語にできたらいいです。 당분간 존댓말하면 좋겠어요 좋겠어요 당분간 존댓말하면 呼び方は今のままがいいです。 호칭은 지금처럼 부르면 좋겠어요 좋겠어요 호칭은 지금처럼 부르면 ゆっくり親しくなれたらいいです。 천천히 친해지면 좋겠어요 좋겠어요 천천히 친해지면
+> 문장 만들기 (文を組み立てよう) 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요? 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。 次の集まりにも一緒に行けたらいいです。 다음 모임에도 같이 가면 좋겠어요 가면 좋겠어요 같이 다음 모임에도 今日のことはそのまま忘れてくださったらいいです。 오늘 일은 그냥 잊으시면 좋겠어요 잊으시면 좋겠어요 그냥 오늘 일은 私たち、次はもっと気楽に会えたらいいです。 우리 다음에는 더 편하게 만나면 좋겠어요 우리 더 편하게 만나면 좋겠어요 다음에는 これからもこうしてよく会えたらいいです。 앞으로도 이렇게 자주 보면 좋겠어요 자주 보면 좋겠어요 이렇게 앞으로도
 
 - `title.ko` · KO: 문장 만들기
 - `title.ja` · JA: (文を組み立てよう)
 - `tutorScript.1.ko` · KO: 이번엔 흩어진 덩어리를 순서대로 놓아 대사를 완성해 볼까요?
 - `tutorScript.1.ja` · JA: 今度はばらばらのかたまりを順番に並べて、セリフを完成させてみましょうか。
-- `task.1.prompt.ja` · JA: 私たちこのままの関係でいられたらいいです。
-- `task.1.answer.ko` · KO: 저희 그냥 지금처럼 지내면 좋겠어요
-- `task.1.choice.1.ko` · KO: 지내면 좋겠어요
-- `task.1.choice.2.ko` · KO: 저희 그냥
-- `task.1.choice.3.ko` · KO: 지금처럼
-- `task.2.prompt.ja` · JA: しばらく敬語にできたらいいです。
-- `task.2.answer.ko` · KO: 당분간 존댓말하면 좋겠어요
-- `task.2.choice.1.ko` · KO: 좋겠어요
-- `task.2.choice.2.ko` · KO: 당분간
-- `task.2.choice.3.ko` · KO: 존댓말하면
-- `task.3.prompt.ja` · JA: 呼び方は今のままがいいです。
-- `task.3.answer.ko` · KO: 호칭은 지금처럼 부르면 좋겠어요
-- `task.3.choice.1.ko` · KO: 좋겠어요
-- `task.3.choice.2.ko` · KO: 호칭은
-- `task.3.choice.3.ko` · KO: 지금처럼 부르면
-- `task.4.prompt.ja` · JA: ゆっくり親しくなれたらいいです。
-- `task.4.answer.ko` · KO: 천천히 친해지면 좋겠어요
-- `task.4.choice.1.ko` · KO: 좋겠어요
-- `task.4.choice.2.ko` · KO: 천천히
-- `task.4.choice.3.ko` · KO: 친해지면
+- `task.1.prompt.ja` · JA: 次の集まりにも一緒に行けたらいいです。
+- `task.1.answer.ko` · KO: 다음 모임에도 같이 가면 좋겠어요
+- `task.1.choice.1.ko` · KO: 가면 좋겠어요
+- `task.1.choice.2.ko` · KO: 같이
+- `task.1.choice.3.ko` · KO: 다음 모임에도
+- `task.2.prompt.ja` · JA: 今日のことはそのまま忘れてくださったらいいです。
+- `task.2.answer.ko` · KO: 오늘 일은 그냥 잊으시면 좋겠어요
+- `task.2.choice.1.ko` · KO: 잊으시면 좋겠어요
+- `task.2.choice.2.ko` · KO: 그냥
+- `task.2.choice.3.ko` · KO: 오늘 일은
+- `task.3.prompt.ja` · JA: 私たち、次はもっと気楽に会えたらいいです。
+- `task.3.answer.ko` · KO: 우리 다음에는 더 편하게 만나면 좋겠어요
+- `task.3.choice.1.ko` · KO: 우리
+- `task.3.choice.2.ko` · KO: 더 편하게 만나면 좋겠어요
+- `task.3.choice.3.ko` · KO: 다음에는
+- `task.4.prompt.ja` · JA: これからもこうしてよく会えたらいいです。
+- `task.4.answer.ko` · KO: 앞으로도 이렇게 자주 보면 좋겠어요
+- `task.4.choice.1.ko` · KO: 자주 보면 좋겠어요
+- `task.4.choice.2.ko` · KO: 이렇게
+- `task.4.choice.3.ko` · KO: 앞으로도
 ### `p2-fill`
 
-> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 私たちこのままの関係でいられたらいいです。 저희 그냥 지금처럼 지내면 좋겠어요. ＿＿＿ しばらく敬語にできたらいいです。 당분간 존댓말하면 좋겠어요. ＿＿＿ 呼び方は今のままがいいです。 호칭은 지금처럼 부르면 좋겠어요. ＿＿＿ ゆっくり親しくなれたらいいです。 천천히 친해지면 좋겠어요. ＿＿＿
+> 빈칸 채우기 (穴埋め練習) 핵심 문장을 완성해 보세요. 中心文を完成させましょう。 私たちこのままの関係でいられたらいいです。 저희 그냥 지금처럼 지내 면 좋겠어요 . チョヒ クニャン チグムチョロム チネ＿＿＿ しばらく敬語にできたらいいです。 당분간 존댓말하 면 좋겠어요 . タンブンガン チョンデンマラ＿＿＿ 呼び方は今のままがいいです。 호칭은 지금처럼 부르 면 좋겠어요 . ホチンウン チグムチョロム プル＿＿＿ ゆっくり親しくなれたらいいです。 천천히 친해지 면 좋겠어요 . チョンチョニ チネジ＿＿＿
 
 - `title.ko` · KO: 빈칸 채우기
 - `title.ja` · JA: (穴埋め練習)

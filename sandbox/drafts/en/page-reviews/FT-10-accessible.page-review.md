@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-me-lately-accessible/lessons/10-something-youve-recently-got-into/lesson.html`
-- SHA-256: `38737396531a5212a20c7b7536384da40353972a0ebc178abd334ffb534d3a77`
+- SHA-256: `834734c71ccca1fdcff6c59ab688ab17de950153f69ecb8b650b16d3683de6cd`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -22,9 +22,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; the page asks for one observable title reading.
 - Component consistency: Uses the approved FT goal component with one title, one short bilingual script, and one tutor-only action note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 2. `article`
 
@@ -39,9 +39,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: Sentence reveals provide optional bilingual support; they are not graded choices or distractors.
 - Component consistency: Uses the approved FT sentence-reveal article with one operating question and an explicit tutor-only skip rule.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 3. `lesson-style`
 
@@ -56,9 +56,9 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: The two choices are mutually exclusive and meaningfully different: delayed essential correction or correction at natural breaks.
 - Component consistency: Reuses the approved synchronized single-choice FT discussion-style component.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 4. `talk-intro`
 
@@ -73,145 +73,145 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No choices or distractors appear; this is a concise operating transition.
 - Component consistency: Matches the approved FT flexible-pool transition with visible learner framing and a concrete tutor reciprocity note.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.
 
 ## 5. `warm-1`
 
-- Learner action: Answer “Have you got into anything new recently?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What do you enjoy most about it?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “What kind of new interest could easily catch your attention?”
-- Learning target: Explore the distinct “A new interest (新しい興味)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Have you got into anything new recently?” opens this angle; “What do you enjoy most about it?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What do you enjoy most about it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Have you got into anything new recently?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How did it first catch your attention?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of new interest could easily catch your attention?"]}`
+- Learner action: Answer the standalone question “What's something new you might enjoy trying?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's something new you might enjoy trying?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's something new you might enjoy trying?” / “新しく試してみたいと思うことは何ですか？” Tutor follow-ups: “What makes it look enjoyable?” and “Would you try it alone or with someone?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “新しく試してみたいと思うことは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's something new you might enjoy trying?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer “What has been taking most of your free time lately?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Did you choose to spend that time on it?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: What has been taking most of your free time lately? 最近、自由時間の多くを何に使っていますか？
-- Learning target: Explore the distinct “Your free time (自由時間)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “What has been taking most of your free time lately?” opens this angle; “Did you choose to spend that time on it?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Did you choose to spend that time on it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What has been taking most of your free time lately?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What would you like more time for?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What has been taking most of your free time lately?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Learner action: Answer the standalone question “What's taking up most of your free time these days?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's taking up most of your free time these days?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's taking up most of your free time these days?” / “最近、自由時間の多くを何に使っていますか？” Tutor follow-ups: “Did you choose to spend that time on it?” and “What would you like more time for?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “最近、自由時間の多くを何に使っていますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's taking up most of your free time these days?"]}`
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer “How did you first get interested in it?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What made you try it?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “What might turn your curiosity into a real interest?”
-- Learning target: Explore the distinct “How it began (始めたきっかけ)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “How did you first get interested in it?” opens this angle; “What made you try it?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What made you try it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “How did you first get interested in it?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Did you expect to enjoy it this much?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What might turn your curiosity into a real interest?"]}`
+- Learner action: Answer the standalone question “What's something you became interested in after trying it once?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's something you became interested in after trying it once?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's something you became interested in after trying it once?” / “一度試したあと、興味を持つようになったものは何ですか？” Tutor follow-ups: “What made the first try enjoyable?” and “Do you usually try new things once or more than once?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一度試したあと、興味を持つようになったものは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's something you became interested in after trying it once?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer “How often do you do it now?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “When do you usually make time for it?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “How would you make room for a new interest?”
-- Learning target: Explore the distinct “Time for it (使っている時間)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “How often do you do it now?” opens this angle; “When do you usually make time for it?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “When do you usually make time for it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “How often do you do it now?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What sometimes gets in the way?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How would you make room for a new interest?"]}`
+- Learner action: Answer the standalone question “Which new hobby would be easiest to fit into your week?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which new hobby would be easiest to fit into your week?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which new hobby would be easiest to fit into your week?” / “新しい趣味の中で、あなたの一週間にいちばん取り入れやすいものは何ですか？” Tutor follow-ups: “When could you do it?” and “Which is easiest to fit into a week: exercise, reading, or a class?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “新しい趣味の中で、あなたの一週間にいちばん取り入れやすいものは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which new hobby would be easiest to fit into your week?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer “Have you told anyone about this interest?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Who would understand this interest best?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “Who would be easiest for you to tell about a new interest?”
-- Learning target: Explore the distinct “Who knows (知っている人)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Have you told anyone about this interest?” opens this angle; “Who would understand this interest best?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Who would understand this interest best?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Have you told anyone about this interest?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What reaction would encourage you?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who would be easiest for you to tell about a new interest?"]}`
+- Learner action: Answer the standalone question “Who do you enjoy talking to about new interests?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Who do you enjoy talking to about new interests?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Who do you enjoy talking to about new interests?” / “新しく興味を持ったことについて、誰と話すのが楽しいですか？” Tutor follow-ups: “What makes that person easy to talk to?” and “Do online groups make new interests easier to share?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “新しく興味を持ったことについて、誰と話すのが楽しいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who do you enjoy talking to about new interests?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer “Do you prefer sharing new interests or keeping them private?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What makes you mention an interest?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Do you prefer sharing new interests or keeping them private? 新しい興味は人に話すほうですか、それとも自分だけにしておくほうですか？
-- Learning target: Explore the distinct “Sharing or private (話す？秘密にする？)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Do you prefer sharing new interests or keeping them private?” opens this angle; “What makes you mention an interest?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What makes you mention an interest?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Do you prefer sharing new interests or keeping them private?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How much do other people's reactions matter?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
+- Learner action: Answer the standalone question “Do you prefer sharing new interests or keeping them private?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Do you prefer sharing new interests or keeping them private?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Do you prefer sharing new interests or keeping them private?” / “新しい興味は人に話すほうですか、それとも自分だけにしておくほうですか？” Tutor follow-ups: “What makes you mention an interest?” and “When do you keep one to yourself?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “新しい興味は人に話すほうですか、それとも自分だけにしておくほうですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Do you prefer sharing new interests or keeping them private?"]}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer “Has this new interest reduced time for anything else?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “Was that change worth it?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “When would a new interest be worth giving up other free time for you?”
-- Learning target: Explore the distinct “What it replaces (代わりに減ったこと)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “Has this new interest reduced time for anything else?” opens this angle; “Was that change worth it?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “Was that change worth it?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “Has this new interest reduced time for anything else?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What would you not give up for it?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When would a new interest be worth giving up other free time for you?"]}`
+- Learner action: Answer the standalone question “What would you happily spend less time on for a new hobby?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would you happily spend less time on for a new hobby?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would you happily spend less time on for a new hobby?” / “新しい趣味のためなら、何に使う時間を喜んで減らせますか？” Tutor follow-ups: “Why would that be easy to reduce?” and “What time would you protect?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “新しい趣味のためなら、何に使う時間を喜んで減らせますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would you happily spend less time on for a new hobby?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Answer “What would you like to do with this interest next?” aloud, then develop whichever detail becomes most interesting.
-- Tutor action: React or share briefly, then use “What would be a good result in three months?” or another relevant probe rather than asking every printed follow-up.
-- Visible target or prompt: Conversation prompt: “Where could a new interest lead you after the first few months?”
-- Learning target: Explore the distinct “Where it goes (これから)” angle of “Something you've recently got into” with a concrete detail, reason, comparison, or personal example.
-- Pedagogical value: The answerable main prompt “What would you like to do with this interest next?” opens this angle; “What would be a good result in three months?” can turn a first response into a more specific exchange.
-- Failure diagnoses: If the answer remains vague after “What would be a good result in three months?”, the learner needs concrete-detail scaffolding for this topic rather than forced pattern practice.
-- Non-target support: The main prompt has aligned Japanese; the English follow-ups stay tutor-only so they support conversation without loading the learner’s page.
-- Article treatment: The prompt stands alone even if pre-study was skipped; article ideas may support the answer to “What would you like to do with this interest next?” but are never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What is one small next step?” offers a distinct optional direction for a genuine follow-up.
-- Component consistency: Matches the approved FT prompt component: one bilingual learner question, page-specific tutor probes, and a feedback box labeled Student’s sentence.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Where could a new interest lead you after the first few months?"]}`
+- Learner action: Answer the standalone question “What interest could grow into a bigger part of your life?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What interest could grow into a bigger part of your life?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What interest could grow into a bigger part of your life?” / “これから生活の中でもっと大きな存在になりそうな興味は何ですか？” Tutor follow-ups: “What would progress look like?” and “Is an interest easier to keep alone or with other people?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “これから生活の中でもっと大きな存在になりそうな興味は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What interest could grow into a bigger part of your life?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 
@@ -226,6 +226,6 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 - Choice/distractor quality: No distractors appear; the single written feedback field keeps the close selective and actionable.
 - Component consistency: Uses the approved FT closing feedback component with one strength, one next focus, and one repetition request.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": []}`
-- Visual QA: 360px **pass**; 480px **pass**
+- Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Source-level semantic inspection is complete; root rendered this exact page at 360px and 480px with no overflow and completed the visual and human page audit.
+- Notes: Post-rewrite visual inspection at 360px and 480px is pending.

@@ -36,6 +36,8 @@ spec:
     ko: 영어를 문장으로 말해 보는 25분 체험 레슨. 튜터가 수업 뒤에 레벨을 진단한다.
     ja: 英語を文で話してみる25分の体験レッスン。レッスン後にチューターがレベルを診断します。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

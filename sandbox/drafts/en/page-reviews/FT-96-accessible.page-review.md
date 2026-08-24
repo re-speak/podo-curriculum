@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-accessible/lessons/96-what-you-would-do-if-ai-did-your-job/lesson.html`
-- SHA-256: `cb707e982d4a4dd73fab4a3a5a60e09cccad232e33163712e715dbf452506bc1`
+- SHA-256: `502525fe4bfaa4ee6f0408e6f810944ce5269bd08bbc9aa73a5082b37dfc7816`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “If AI handled all your usual tasks, how would you use the free time?” and develop the most interesting concrete detail.
-- Tutor action: Ask “If AI handled all your usual tasks, how would you use the free time?”, react or share briefly, then choose at most one relevant probe such as “Which activity would replace the first hour of routine tasks?”.
-- Visible target or prompt: If AI handled all your usual tasks, how would you use the free time? / AIが普段の作業をすべてしたら、空いた時間をどう使いますか？ Follow-up pool: Which activity would replace the first hour of routine tasks? What would give the day a satisfying rhythm?
-- Learning target: Explore the distinct “Monday” angle of “What you would do if AI did your job” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which activity would replace the first hour of routine tasks?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which activity would replace the first hour of routine tasks?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “If AI handled all your usual tasks, how would you use the free time?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What would give the day a satisfying rhythm?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If AI handled all your usual tasks, how would you use the free time?"]}`
+- Learner action: Answer the standalone question “If AI handled your usual tasks for a week, what would you do with the extra time?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “If AI handled your usual tasks for a week, what would you do with the extra time?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “If AI handled your usual tasks for a week, what would you do with the extra time?” / “AIが普段の作業を一週間してくれたら、空いた時間をどう使いますか？” Tutor follow-ups: “Would you rest, see people, or start a project?” and “Would the extra time feel relaxing or strange at first?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “AIが普段の作業を一週間してくれたら、空いた時間をどう使いますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If AI handled your usual tasks for a week, what would you do with the extra time?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “How might three months of extra unstructured time change a person?” and develop the most interesting concrete detail.
-- Tutor action: Ask “How might three months of extra unstructured time change a person?”, react or share briefly, then choose at most one relevant probe such as “Which new routine would exist?”.
-- Visible target or prompt: How might three months of extra unstructured time change a person? / 予定のない自由な時間が三か月続くと、人はどう変わりますか？ Follow-up pool: Which new routine would exist? What might have become difficult by then?
-- Learning target: Explore the distinct “Month three” angle of “What you would do if AI did your job” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which new routine would exist?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which new routine would exist?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How might three months of extra unstructured time change a person?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What might have become difficult by then?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How might three months of extra unstructured time change a person?"]}`
+- Learner action: Answer the standalone question “How would you stop a week of free time from becoming boring?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How would you stop a week of free time from becoming boring?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How would you stop a week of free time from becoming boring?” / “一週間の自由時間が退屈にならないように、どうしますか？” Tutor follow-ups: “Would you make a plan or decide each morning?” and “What would you leave unplanned?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一週間の自由時間が退屈にならないように、どうしますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How would you stop a week of free time from becoming boring?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “Should people tell others when AI handles most of their tasks?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Should people tell others when AI handles most of their tasks?”, react or share briefly, then choose at most one relevant probe such as “Who would be affected by the arrangement?”.
-- Visible target or prompt: Should people tell others when AI handles most of their tasks? / AIがほとんどの作業を行うとき、周りに伝えるべきですか？ Follow-up pool: Who would be affected by the arrangement? What level of disclosure would be fair?
-- Learning target: Explore the distinct “Telling people” angle of “What you would do if AI did your job” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Who would be affected by the arrangement?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Who would be affected by the arrangement?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Should people tell others when AI handles most of their tasks?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What level of disclosure would be fair?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Should people tell others when AI handles most of their tasks?"]}`
+- Learner action: Answer the standalone question “When should people say that AI did most of their work?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When should people say that AI did most of their work?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When should people say that AI did most of their work?” / “AIが仕事の大部分をしたことを、どんなときに伝えるべきですか？” Tutor follow-ups: “Would a customer, teacher, or teammate need to know?” and “When would saying nothing be unfair?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “AIが仕事の大部分をしたことを、どんなときに伝えるべきですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When should people say that AI did most of their work?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “What part of work, study, care, or routine might you miss?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What part of work, study, care, or routine might you miss?”, react or share briefly, then choose at most one relevant probe such as “What would replace its structure?”.
-- Visible target or prompt: What part of work, study, care, or routine might you miss? / 仕事、勉強、ケア、または日課のどの部分が恋しくなりそうですか？ Follow-up pool: What would replace its structure? Which need did it meet?
-- Learning target: Explore the distinct “What work gave you” angle of “What you would do if AI did your job” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What would replace its structure?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What would replace its structure?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What part of work, study, care, or routine might you miss?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which need did it meet?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What part of work, study, care, or routine might you miss?"]}`
+- Learner action: Answer the standalone question “Which part of work, study, care, or daily routine would you miss?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which part of work, study, care, or daily routine would you miss?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which part of work, study, care, or daily routine would you miss?” / “仕事、勉強、ケア、日課のどの部分が恋しくなりますか？” Tutor follow-ups: “Would you miss the people, the routine, or finishing something?” and “What would you happily stop doing?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “仕事、勉強、ケア、日課のどの部分が恋しくなりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which part of work, study, care, or daily routine would you miss?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “Which self-chosen project could give unexpected free time direction?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which self-chosen project could give unexpected free time direction?”, react or share briefly, then choose at most one relevant probe such as “What would make the project meaningful?”.
-- Visible target or prompt: Which self-chosen project could give unexpected free time direction? / 予想外に空いた時間に方向を与える、自分で選ぶプロジェクトは何ですか？ Follow-up pool: What would make the project meaningful? How much open time would you preserve?
-- Learning target: Explore the distinct “Starting something” angle of “What you would do if AI did your job” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What would make the project meaningful?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What would make the project meaningful?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which self-chosen project could give unexpected free time direction?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “How much open time would you preserve?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which self-chosen project could give unexpected free time direction?"]}`
+- Learner action: Answer the standalone question “What project would you start with a month of free time?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What project would you start with a month of free time?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What project would you start with a month of free time?” / “一か月の自由な時間があれば、どんなプロジェクトを始めますか？” Tutor follow-ups: “Would you learn something, make something, or travel?” and “How would you use the first free week?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一か月の自由な時間があれば、どんなプロジェクトを始めますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What project would you start with a month of free time?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “How much is your identity connected to work or another role?” and develop the most interesting concrete detail.
-- Tutor action: Ask “How much is your identity connected to work or another role?”, react or share briefly, then choose at most one relevant probe such as “What shapes it more?”.
-- Visible target or prompt: How much is your identity connected to work or another role? / 自分らしさは、仕事や別の役割とどのくらい結びついていますか？ Follow-up pool: What shapes it more? What would remain after the tasks disappeared?
-- Learning target: Explore the distinct “Work identity” angle of “What you would do if AI did your job” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What shapes it more?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What shapes it more?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How much is your identity connected to work or another role?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What would remain after the tasks disappeared?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How much is your identity connected to work or another role?"]}`
+- Learner action: Answer the standalone question “Which daily task can make people feel useful?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which daily task can make people feel useful?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which daily task can make people feel useful?” / “どんな日々の作業が、人に役立っていると感じさせますか？” Tutor follow-ups: “Could cooking, caring for someone, or fixing something do that?” and “Could AI help without taking over?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな日々の作業が、人に役立っていると感じさせますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which daily task can make people feel useful?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “Which tasks might people still choose to do even when AI can handle them?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which tasks might people still choose to do even when AI can handle them?”, react or share briefly, then choose at most one relevant probe such as “What value comes from doing the task yourself?”.
-- Visible target or prompt: Which tasks might people still choose to do even when AI can handle them? / AIができても、人が自分で続けたい作業は何ですか？ Follow-up pool: What value comes from doing the task yourself? When would AI support still help?
-- Learning target: Explore the distinct “Going back” angle of “What you would do if AI did your job” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What value comes from doing the task yourself?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What value comes from doing the task yourself?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which tasks might people still choose to do even when AI can handle them?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “When would AI support still help?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which tasks might people still choose to do even when AI can handle them?"]}`
+- Learner action: Answer the standalone question “What task would you still choose to do yourself if AI could do it?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What task would you still choose to do yourself if AI could do it?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What task would you still choose to do yourself if AI could do it?” / “AIにできても、自分で続けたい作業は何ですか？” Tutor follow-ups: “Would you still cook, write, or make important decisions yourself?” and “When could AI still help?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “AIにできても、自分で続けたい作業は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What task would you still choose to do yourself if AI could do it?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “What task should people keep doing even if AI can do it?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What task should people keep doing even if AI can do it?”, react or share briefly, then choose at most one relevant probe such as “What human value would be lost?”.
-- Visible target or prompt: What task should people keep doing even if AI can do it? / AIにできても、人が続けるべき作業は何ですか？ Follow-up pool: What human value would be lost? Could people and AI share it instead?
-- Learning target: Explore the distinct “What stays human” angle of “What you would do if AI did your job” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What human value would be lost?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What human value would be lost?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What task should people keep doing even if AI can do it?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Could people and AI share it instead?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What task should people keep doing even if AI can do it?"]}`
+- Learner action: Answer the standalone question “Which task should never be handed over completely to AI?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which task should never be handed over completely to AI?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which task should never be handed over completely to AI?” / “どんな作業は、完全にAIへ任せるべきではありませんか？” Tutor follow-ups: “Should a person always make medical or legal decisions?” and “Could AI still give useful advice?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな作業は、完全にAIへ任せるべきではありませんか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which task should never be handed over completely to AI?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

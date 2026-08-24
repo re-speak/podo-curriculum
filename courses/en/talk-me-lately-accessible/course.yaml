@@ -31,6 +31,8 @@ spec:
     en: Pull a recent experience out in detail, and keep talking about it.
     ja: 最近の出来事を具体的に取り出して、長く話す。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

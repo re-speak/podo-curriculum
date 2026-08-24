@@ -4,7 +4,7 @@ metadata:
   slug: 06-jealousy
 
 spec:
-  week: 6                      # → CLASS_WEEK. 코스 안에서 1..N 연속이어야 한다.
+  week: 5                      # → CLASS_WEEK. 코스 안에서 1..N 연속이어야 한다.
 
   title:
     ko: 질투

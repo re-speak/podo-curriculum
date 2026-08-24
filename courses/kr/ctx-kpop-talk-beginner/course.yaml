@@ -33,6 +33,8 @@ spec:
     en: Introduce your bias and their group, say why, sell a song, ask who theirs is, and keep a fan conversation going politely.
     ja: 推しとグループを紹介し、好きな理由を語り、曲をすすめ、相手の推しをたずねながら、敬語でファントークを続けられる。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

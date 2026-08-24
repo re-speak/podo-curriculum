@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-work-and-money-accessible/lessons/67-something-youre-trying-to-get-better-at/lesson.html`
-- SHA-256: `e577ef7d8704b93f0a2d7181d5e1895f1685b3cb974c4805889fabbee6c16a67`
+- SHA-256: `9382f50304071d5310c1799a48b30a66b97203390e03b6c0cddf947963e67da6`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “What skill would you most like to improve?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What part of the skill needs the most attention?” rather than asking every follow-up.
-- Visible target or prompt: What skill would you most like to improve? / どのスキルを最も上達させたいですか？
-- Learning target: Explore the distinct “A skill to improve (上達したい技能)” angle of “Something you're trying to get better at” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What part of the skill needs the most attention?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What part of the skill needs the most attention?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What skill would you most like to improve?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What would improvement make possible?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What skill would you most like to improve?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What skill would you most like to improve?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What skill would you most like to improve?” / “どのスキルを最も上達させたいですか？” Tutor follow-ups: “What part of the skill needs the most attention?” and “What would improvement make possible?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どのスキルを最も上達させたいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What skill would you most like to improve?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “What is a good first method for improving a new skill?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How often should a beginner try that method?” rather than asking every follow-up.
-- Visible target or prompt: What is a good first method for improving a new skill? / 新しいスキルを上達させるための、よい最初の方法は何ですか？
-- Learning target: Explore the distinct “What you tried (試したこと)” angle of “Something you're trying to get better at” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “How often should a beginner try that method?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How often should a beginner try that method?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What is a good first method for improving a new skill?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What would make it easy to repeat?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What is a good first method for improving a new skill?"]}`
+- Learner action: Answer the standalone question “When learning a skill, which helps first: practice, a teacher, a video, or a book?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When learning a skill, which helps first: practice, a teacher, a video, or a book?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When learning a skill, which helps first: practice, a teacher, a video, or a book?” / “技能を学び始めるとき、練習、先生、動画、本のどれが最初に役立ちますか？” Tutor follow-ups: “How often should a beginner try that method?” and “What would make it easy to repeat?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “技能を学び始めるとき、練習、先生、動画、本のどれが最初に役立ちますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When learning a skill, which helps first: practice, a teacher, a video, or a book?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “What is the main obstacle to improving this skill?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Is the obstacle time, access, confidence, or something else?” rather than asking every follow-up.
-- Visible target or prompt: What is the main obstacle to improving this skill? / この技能を上達させるうえで、主な障害は何ですか？
-- Learning target: Explore the distinct “What gets in the way (妨げになること)” angle of “Something you're trying to get better at” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Is the obstacle time, access, confidence, or something else?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Is the obstacle time, access, confidence, or something else?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What is the main obstacle to improving this skill?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which part can the person influence?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What is the main obstacle to improving this skill?"]}`
+- Learner action: Answer the standalone question “What's the biggest thing that gets in the way of improving a skill?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's the biggest thing that gets in the way of improving a skill?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's the biggest thing that gets in the way of improving a skill?” / “技能を上達させるうえで、いちばん大きな妨げは何ですか？” Tutor follow-ups: “Is the problem time, money, confidence, or something else?” and “Which part can the person change?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “技能を上達させるうえで、いちばん大きな妨げは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's the biggest thing that gets in the way of improving a skill?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “What feedback would help with the next attempt?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Who or what could provide it?” rather than asking every follow-up.
-- Visible target or prompt: Conversation prompt: “What feedback would help with the next attempt?”
-- Learning target: Explore the distinct “Useful feedback (役立つフィードバック)” angle of “Something you're trying to get better at” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Who or what could provide it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Who or what could provide it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What feedback would help with the next attempt?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How specific should it be?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What feedback would help with the next attempt?"]}`
+- Learner action: Answer the standalone question “What feedback would help with the next try at a skill?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What feedback would help with the next try at a skill?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What feedback would help with the next try at a skill?” / “技能にもう一度取り組むとき、どんなフィードバックが役立ちますか？” Tutor follow-ups: “Who could give the feedback?” and “What should the feedback say to change?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “技能にもう一度取り組むとき、どんなフィードバックが役立ちますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What feedback would help with the next try at a skill?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Second-pass semantic review complete. Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “What small sign would show that the skill is improving?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Who might notice it first?” rather than asking every follow-up.
-- Visible target or prompt: What small sign would show that the skill is improving? / どんな小さな兆しがあれば、その技能が上達していると分かりますか？
-- Learning target: Explore the distinct “Signs of progress (上達の兆し)” angle of “Something you're trying to get better at” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Who might notice it first?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Who might notice it first?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What small sign would show that the skill is improving?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How could it be checked without a formal test?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What small sign would show that the skill is improving?"]}`
+- Learner action: Answer the standalone question “What's a small sign that someone is getting better at a skill?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's a small sign that someone is getting better at a skill?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's a small sign that someone is getting better at a skill?” / “技能が上達していると分かる小さなサインは何ですか？” Tutor follow-ups: “Who might notice it first?” and “Could you see it without a formal test?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “技能が上達していると分かる小さなサインは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's a small sign that someone is getting better at a skill?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “When is a skill no longer worth pursuing?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What would justify continuing?” rather than asking every follow-up.
-- Visible target or prompt: When is a skill no longer worth pursuing? / どんなときに、スキルを追い求め続ける価値がなくなりますか？
-- Learning target: Explore the distinct “Worth continuing (続ける価値)” angle of “Something you're trying to get better at” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What would justify continuing?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What would justify continuing?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “When is a skill no longer worth pursuing?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What would make stopping reasonable?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “When is a skill no longer worth pursuing?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When is a skill no longer worth pursuing?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When is a skill no longer worth pursuing?” / “どんなときに、スキルを追い求め続ける価値がなくなりますか？” Tutor follow-ups: “What would make it worth continuing?” and “What would make stopping reasonable?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんなときに、スキルを追い求め続ける価値がなくなりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When is a skill no longer worth pursuing?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “What small action can help someone improve this week?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “When could it fit?” rather than asking every follow-up.
-- Visible target or prompt: What small action can help someone improve this week? / 今週、上達の助けになる小さな行動は何ですか？
-- Learning target: Explore the distinct “One next step (次の一歩)” angle of “Something you're trying to get better at” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “When could it fit?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “When could it fit?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What small action can help someone improve this week?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What would make it easy to begin?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What small action can help someone improve this week?"]}`
+- Learner action: Answer the standalone question “What's one small action that can improve a skill this week?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's one small action that can improve a skill this week?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's one small action that can improve a skill this week?” / “今週、技能の上達に役立つ小さな行動は何ですか？” Tutor follow-ups: “When could it fit?” and “What would make it easy to begin?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “今週、技能の上達に役立つ小さな行動は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's one small action that can improve a skill this week?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “If you taught this skill to a beginner, what would you start with?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Why is that the best first step?” rather than asking every follow-up.
-- Visible target or prompt: If you taught this skill to a beginner, what would you start with? / この技能を初心者に教えるなら、何から始めますか？
-- Learning target: Explore the distinct “Teaching the skill (技能を教える)” angle of “Something you're trying to get better at” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Why is that the best first step?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Why is that the best first step?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “If you taught this skill to a beginner, what would you start with?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What common mistake would you normalize?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If you taught this skill to a beginner, what would you start with?"]}`
+- Learner action: Answer the standalone question “When teaching a skill to a beginner, what should come first?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When teaching a skill to a beginner, what should come first?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When teaching a skill to a beginner, what should come first?” / “初心者に技能を教えるなら、何を最初にすべきですか？” Tutor follow-ups: “Why is that the best first step?” and “What common mistake would you normalize?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “初心者に技能を教えるなら、何を最初にすべきですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When teaching a skill to a beginner, what should come first?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

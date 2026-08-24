@@ -228,7 +228,7 @@ TOPICS = {
             prompt("What people say", "人が話すこと", "How honestly do people usually describe what they do under stress?", "人は、ストレスがあるときにすることを、普段どのくらい正直に話すでしょうか？", ["Which response sounds better than it really is?", "Why might someone keep the real habit private?"], full="How accurately do people describe their own coping responses under stress?"),
             prompt("Then and now", "以前と今", "How has the way you handle stress changed over the past five years?", "ここ5年で、ストレスへの対処法はどう変わりましたか？", ["Which part has improved?", "Which part has stayed stubborn?"]),
             prompt("What makes it worse", "悪化する条件", "When is your usual stress response most unhelpful?", "いつものストレスへの対処が、いちばん役に立たないのはどんなときですか？", ["Which responsibility becomes harder?", "Who else can be affected?"], full="In which situation is your usual coping response most counterproductive?"),
-            prompt("A realistic alternative", "現実的な代わり", "What would you realistically like to do instead?", "代わりに、現実的には何をしたいですか？", ["What is the smallest possible version?", "What would make it easier to choose?"]),
+            prompt("A realistic alternative", "現実的な代わり", "What would you really like to do instead?", "代わりに、本当は何をしたいですか？", ["What is the smallest possible version?", "What would make it easier to choose?"]),
             prompt("Notice it sooner", "早く気づく", "What sign could help you notice stress earlier?", "どのようなサインがあれば、もっと早くストレスに気づけますか？", ["What could you do at that first sign?", "Which sign is easiest to ignore?"], full="What signal could help you recognize stress sooner?"),
         ],
     ),
@@ -254,7 +254,7 @@ TOPICS = {
         ],
         prompts=[
             prompt("A familiar superstition", "よく知る迷信", "Which superstition do you know best, whether or not you follow it?", "従っているかどうかに関係なく、いちばんよく知っている迷信は何ですか？", ["What action or sign is involved?", "Where did you first hear it?"]),
-            prompt("What should happen", "起きるとされること", "What is supposed to happen when someone follows—or breaks—it?", "その迷信に従ったり破ったりすると、何が起きるとされていますか？", ["Which outcome sounds most dramatic?", "How is the rule passed on?"]),
+            prompt("What should happen", "起きるとされること", "What is supposed to happen when someone follows—or breaks—a superstition?", "迷信に従ったり破ったりすると、何が起きるとされていますか？", ["Which outcome sounds most dramatic?", "How is the rule passed on?"]),
             prompt("Why it survives", "残る理由", "Why do people keep following a superstition they doubt?", "人は、疑っている迷信にもなぜ従い続けるのでしょうか？", ["What feeling makes the habit hard to drop?", "How can family or tradition matter?"]),
             prompt("A believable part", "信じられる部分", "What part of a superstition can feel believable even to a skeptic?", "迷信のどのような部分なら、疑う人にも信じられそうですか？", ["Could coincidence strengthen the belief?", "Might the rule contain practical wisdom?"], full="Which element of a superstition can remain plausible even to a skeptic?"),
             prompt("Break it on purpose", "わざと破る", "What would make you break a superstition on purpose?", "どのような理由があれば、迷信をわざと破りますか？", ["Would any uneasy feeling remain?", "What evidence would matter most?"]),
@@ -451,6 +451,70 @@ TOPICS = {
     ),
 }
 
+# A question page may be entered directly, so it cannot rely on a fact, habit,
+# or reaction named on the previous page. These small rewrites keep the topic
+# concrete while making the pool genuinely reorderable.
+STANDALONE_QUESTION_REVISIONS = {
+    (34, 2): ("Where do tiny everyday annoyances happen most often?", "ささいな日常の不満は、どこで最も起きやすいですか？"),
+    (35, 2): ("What's a useless fact about you that has been true for years?", "何年も当てはまっている、自分についての役に立たない事実は何ですか？"),
+    (35, 3): ("What fact about you would surprise someone who knows you?", "自分について、知り合いが驚きそうな事実は何ですか？"),
+    (35, 4): ("What makes a personal fact interesting even when it isn't useful?", "役に立たなくても個人的な事実が面白くなるのはなぜですか？"),
+    (36, 4): ("How might a visitor react to an unusual home habit?", "家での変わった習慣を見たら、訪問者はどう反応しそうですか？"),
+    (39, 2): ("When do unhelpful stress habits show up most often?", "ストレスへのよくない習慣は、どんなときに最も出やすいですか？"),
+    (39, 3): ("What's one stress habit that helps briefly but causes problems later?", "一時的には楽になっても、あとで問題になるストレス時の習慣は何ですか？"),
+    (41, 4): ("What can ruin an otherwise free Saturday?", "何も予定のない土曜日を台なしにするものは何ですか？"),
+}
+for (_topic_no, _prompt_no), (_question, _ja) in STANDALONE_QUESTION_REVISIONS.items():
+    _item = TOPICS[_topic_no]["prompts"][_prompt_no - 1]
+    _item.update(accessible=_question, full=_question, ja=_ja)
+
+# Full should invite a richer answer through the angle, not through essay-style
+# vocabulary. The follow-ups already provide the extra depth on these pages.
+PLAIN_FULL_QUESTION_REVISIONS = {
+    (34, 4): "How can someone bring up a small annoyance without making it sound huge?",
+    (34, 8): "Which small annoyance is worth fixing, and which is better ignored?",
+    (37, 6): "Which rainy-day problem would be hardest to deal with?",
+    (38, 1): "When you're completely drained, what brings your energy back?",
+    (38, 8): "What would you say to someone who felt completely exhausted?",
+    (39, 4): "How honestly do people describe what they really do under stress?",
+    (39, 6): "When does a usual stress habit make things worse?",
+    (40, 4): "What part of a superstition can feel believable even when you doubt it?",
+    (40, 7): "What's the strangest superstition you've heard of?",
+    (40, 8): "Which superstition is worth keeping as a tradition?",
+    (41, 8): "What mix of plans and free time makes a weekend satisfying?",
+    (43, 6): "What can suddenly bring back an old embarrassing memory?",
+    (44, 7): "What keeps a funny story funny when someone retells it?",
+    (46, 7): "How can someone tell when a personal rule no longer helps?",
+}
+for (_topic_no, _prompt_no), _question in PLAIN_FULL_QUESTION_REVISIONS.items():
+    TOPICS[_topic_no]["prompts"][_prompt_no - 1]["full"] = _question
+
+# Canonical openings approved in the full-corpus read-aloud.
+TOPICS[42]["prompts"][0].update(
+    accessible="Which house rule matters most: taking off your shoes, keeping quiet, or cleaning up?",
+    full="Which house rule matters most: taking off your shoes, keeping quiet, or cleaning up?",
+    ja="家のルールでは、靴を脱ぐこと、静かにすること、片づけることのどれが最も大切ですか？",
+)
+TOPICS[43]["prompts"][0].update(
+    accessible="Which is more embarrassing: saying the wrong name or messaging the wrong person?",
+    full="Which is more embarrassing: saying the wrong name or messaging the wrong person?",
+    ja="名前を間違えることと、違う人にメッセージを送ることでは、どちらがより恥ずかしいですか？",
+)
+
+_PLAIN_PROBE_PHRASES = (
+    ("What context makes it understandable?", "What situation would make it understandable?"),
+    ("What evidence would matter most?", "What new information would change your mind?"),
+    ("Which missing context matters most?", "Which missing detail matters most?"),
+    ("How much context is enough?", "How much background does the listener need?"),
+    ("Which missing context could explain it?", "Which missing detail could explain it?"),
+    ("What evidence supports keeping it?", "What shows that the rule still helps?"),
+    ("Which change would justify revising it?", "Which change would make you rewrite the rule?"),
+)
+for _topic in TOPICS.values():
+    for _item in _topic["prompts"]:
+        for _key in ("accessible_followups", "full_followups"):
+            _item[_key] = [dict(_PLAIN_PROBE_PHRASES).get(_probe, _probe) for _probe in _item[_key]]
+
 
 CLAIM_ORDER = {
     number: tuple(f"{number}-{index:02d}" for index in range(1, 11))
@@ -524,6 +588,311 @@ def article_page(topic_no: int, topic_data: dict, variant: str) -> str:
 ''' + "\n".join(rows) + '''
       </div>'''
     return base.page("article", title, title_ja, body)
+
+
+_FINAL_CONVERSATION_PATCHES = {
+    (34, 3): {
+        "accessible": "Which part of a small annoyance is hardest to ignore?",
+        "full": "Which part of a small annoyance is hardest to ignore?",
+        "ja": "小さなイライラのどの部分が、いちばん無視しにくいですか？",
+    },
+    (35, 5): {
+        "title": "Easy to talk about",
+        "title_ja": "話しやすい事実",
+        "accessible": "Which unusual fact is easiest to talk about: a habit, a preference, or a physical trait?",
+        "full": "Which unusual fact is easiest to talk about: a habit, a preference, or a physical trait?",
+        "ja": "習慣、好み、体の特徴では、どんな少し変わった事実がいちばん話しやすいですか？",
+        "accessible_followups": ("Which kind needs the least explanation?", "Which kind could lead to a good follow-up question?"),
+        "full_followups": ("Which kind needs the least explanation?", "Which kind could lead to a good follow-up question?"),
+    },
+    (39, 7): {
+        "accessible": "When you feel stressed, what would you rather do?",
+        "full": "When you feel stressed, what would you rather do?",
+        "ja": "ストレスを感じたとき、本当は何をしたいですか？",
+    },
+    (43, 6): {
+        "accessible": "What kinds of triggers bring old embarrassment back?",
+    },
+    (46, 7): {
+        "full": "How can someone tell whether a personal rule still helps?",
+    },
+}
+for (_topic_no, _prompt_no), _changes in _FINAL_CONVERSATION_PATCHES.items():
+    TOPICS[_topic_no]["prompts"][_prompt_no - 1].update(_changes)
+
+
+# Final spoken-load pass: each line must work after one hearing, including a
+# concrete route when the learner has no personal example.
+_THREE_SECOND_PATCHES = {
+    (35, 1): {
+        "accessible_followups": ("How did you discover it?", "Which is more interesting: a food fact, a habit, or a small skill?"),
+        "full_followups": ("How did you discover it?", "Which is more interesting: a food fact, a habit, or a small skill?"),
+    },
+    (34, 1): {
+        "accessible_followups": ("When is it most annoying?", "Which is worse: a repeated sound, a small mess, or waiting?"),
+        "full_followups": ("When is it most annoying?", "Which is worse: a repeated sound, a small mess, or waiting?"),
+    },
+    (34, 2): {
+        "accessible_followups": ("Do shared spaces or private spaces cause more small annoyances?", "Who usually notices first?"),
+        "full_followups": ("Do shared spaces or private spaces cause more small annoyances?", "Who usually notices first?"),
+    },
+    (34, 8): {
+        "accessible_followups": ("What is the smallest useful fix?", "When is ignoring it the easier choice?"),
+        "full_followups": ("What is the smallest useful fix?", "When is ignoring it the easier choice?"),
+    },
+    (35, 2): {
+        "accessible": "Which has been true longer about you: a food preference or a daily habit?",
+        "full": "Which has been true longer about you: a food preference or a daily habit?",
+        "ja": "食べ物の好みと毎日の習慣では、どちらがより長く自分に当てはまっていますか？",
+        "accessible_followups": ("What is one example?", "Has it ever changed?"),
+        "full_followups": ("What is one example?", "Has it ever changed?"),
+    },
+    (35, 3): {
+        "accessible_followups": ("What would they guess instead?", "Which would surprise people more: a hidden skill, a strong dislike, or an unusual habit?"),
+        "full_followups": ("What would they guess instead?", "Which would surprise people more: a hidden skill, a strong dislike, or an unusual habit?"),
+    },
+    (35, 4): {
+        "accessible": "Which is more interesting to hear about: a strange skill or a strong dislike?",
+        "full": "Which is more interesting to hear about: a strange skill or a strong dislike?",
+        "ja": "変わった特技と強い苦手意識では、どちらの話がより面白いですか？",
+        "accessible_followups": ("Why did you choose that one?", "What example comes to mind?"),
+        "full_followups": ("Why did you choose that one?", "What example comes to mind?"),
+    },
+    (35, 5): {
+        "accessible": "Which is easier to share: a strange habit or an unusual preference?",
+        "full": "Which is easier to share: a strange habit or an unusual preference?",
+        "ja": "変わった習慣と珍しい好みでは、どちらが話しやすいですか？",
+        "accessible_followups": ("Which one would you mention first?", "Which one would surprise a friend more?"),
+        "full_followups": ("Which one would you mention first?", "Which one would surprise a friend more?"),
+    },
+    (35, 7): {
+        "accessible": "Which would start a better conversation: a hidden skill or an unusual food opinion?",
+        "full": "Which would start a better conversation: a hidden skill or an unusual food opinion?",
+        "ja": "人に知られていない特技と珍しい食べ物の好みでは、どちらが会話のきっかけになりますか？",
+        "accessible_followups": ("What would you ask next?", "When might it feel too personal?"),
+        "full_followups": ("What would you ask next?", "When might it feel too personal?"),
+    },
+    (35, 6): {
+        "accessible_followups": ("When does it become useful?", "Which is more useful to know: someone's schedule, food allergy, or practical skill?"),
+        "full_followups": ("When does it become useful?", "Which is more useful to know: someone's schedule, food allergy, or practical skill?"),
+    },
+    (35, 8): {
+        "accessible": "What unusual fact would you include in a playful introduction?",
+        "full": "What unusual fact would you include in a playful introduction?",
+        "ja": "楽しい自己紹介に、どんな少し変わった事実を入れますか？",
+        "accessible_followups": ("What exact sentence would you say?", "Would a strange habit or a surprising preference be easier to introduce?"),
+        "full_followups": ("What exact sentence would you say?", "Would a strange habit or a surprising preference be easier to introduce?"),
+    },
+    (36, 1): {
+        "accessible_followups": ("Why does home make it feel normal?", "Which feels more private: talking to yourself or eating straight from the pan?"),
+        "full_followups": ("Why does home make it feel normal?", "Which feels more private: talking to yourself or eating straight from the pan?"),
+    },
+    (36, 2): {
+        "accessible_followups": ("What would another person notice first?", "Which seems most familiar: talking to yourself, eating from the pan, or wearing old clothes?"),
+        "full_followups": ("What would another person notice first?", "Which seems most familiar: talking to yourself, eating from the pan, or wearing old clothes?"),
+    },
+    (36, 6): {
+        "accessible_followups": ("What situation would make it understandable?", "Which differs more across homes: eating, cleaning, or sleeping habits?"),
+        "full_followups": ("What situation would make it understandable?", "Which differs more across homes: eating, cleaning, or sleeping habits?"),
+    },
+    (36, 7): {
+        "accessible": "What home habit might disappear if someone moved?",
+        "full": "What home habit might disappear if someone moved?",
+        "ja": "引っ越したら、どんな家での習慣がなくなりそうですか？",
+        "accessible_followups": ("Would living with someone new change it?", "Which changes fastest after a move: eating, cleaning, or sleeping habits?"),
+        "full_followups": ("Would living with someone new change it?", "Which changes fastest after a move: eating, cleaning, or sleeping habits?"),
+    },
+    (36, 8): {
+        "accessible_followups": ("Would you tell a visitor about the habit?", "When could the habit affect someone else?"),
+        "full_followups": ("Would you tell a visitor about the habit?", "When could the habit affect someone else?"),
+    },
+    (37, 2): {
+        "accessible": "On a rainy day, which sets the mood most: the sound, smell, or view?",
+        "full": "On a rainy day, which sets the mood most: the sound, smell, or view?",
+        "ja": "雨の日の雰囲気を最も作るのは、音、匂い、景色のどれですか？",
+    },
+    (38, 1): {
+        "accessible_followups": ("How quickly can you tell it is helping?", "When would rest not be enough?"),
+        "full_followups": ("How quickly can you tell it is helping?", "When would rest not be enough?"),
+    },
+    (38, 2): {
+        "accessible_followups": ("What gets better first?", "When might a different choice work better?"),
+        "full_followups": ("What gets better first?", "When might a different choice work better?"),
+    },
+    (38, 3): {
+        "accessible": "How can you tell that rest is helping?",
+        "full": "How can you tell that rest is helping?",
+        "ja": "休むことが役立っていると、どう分かりますか？",
+        "accessible_followups": ("What changes first in your body or mood?", "What if you still feel tired afterward?"),
+        "full_followups": ("What changes first in your body or mood?", "What if you still feel tired afterward?"),
+    },
+    (38, 7): {
+        "accessible": "After a break, how can you tell whether it really helped?",
+        "full": "After a break, how can you tell whether it really helped?",
+        "ja": "休憩のあと、本当に役立ったかどうかはどう分かりますか？",
+        "accessible_followups": ("How do you feel afterward?", "Can the same activity help one day but not another?"),
+        "full_followups": ("How do you feel afterward?", "Can the same activity help one day but not another?"),
+    },
+    (39, 2): {
+        "accessible_followups": ("What level of stress brings the habit out?", "Does it happen more at work, at home, or while travelling?"),
+        "full_followups": ("What level of stress brings the habit out?", "Does it happen more at work, at home, or while travelling?"),
+    },
+    (39, 4): {
+        "accessible_followups": ("What stress habit do people often hide?", "Why might someone keep it private?"),
+        "full_followups": ("What stress habit do people often hide?", "Why might someone keep it private?"),
+    },
+    (39, 7): {
+        "accessible_followups": ("Would five minutes of quiet help?", "What would make the better choice easier?"),
+        "full_followups": ("Would five minutes of quiet help?", "What would make the better choice easier?"),
+    },
+    (40, 2): {
+        "accessible": "What good or bad thing is a superstition supposed to cause?",
+        "full": "What good or bad thing is a superstition supposed to cause?",
+        "ja": "迷信は、どんなよいことや悪いことを起こすと言われていますか？",
+        "accessible_followups": ("Which result sounds most dramatic?", "Who usually teaches people the superstition?"),
+        "full_followups": ("Which result sounds most dramatic?", "Who usually teaches people the superstition?"),
+    },
+    (40, 1): {
+        "accessible_followups": ("What action or sign is involved?", "Which do you know better: the number 13, breaking a mirror, or a lucky charm?"),
+        "full_followups": ("What action or sign is involved?", "Which do you know better: the number 13, breaking a mirror, or a lucky charm?"),
+    },
+    (40, 6): {
+        "accessible_followups": ("Where might an outsider see it?", "Which is harder to explain: avoiding four, hiding your thumbs, or not cutting nails at night?"),
+        "full_followups": ("Where might an outsider see it?", "Which is harder to explain: avoiding four, hiding your thumbs, or not cutting nails at night?"),
+    },
+    (40, 7): {
+        "accessible_followups": ("Which detail makes it memorable?", "Which sounds strangest: a broken mirror, an itchy palm, or a black cat?"),
+        "full_followups": ("Which detail makes it memorable?", "Which sounds strangest: a broken mirror, an itchy palm, or a black cat?"),
+    },
+    (40, 4): {
+        "accessible": "What part of a superstition can feel believable even when someone doubts it?",
+        "ja": "疑っていても、迷信のどんな部分は信じられそうに感じますか？",
+    },
+    (40, 8): {
+        "accessible_followups": ("How could children learn about it?", "Which could be a harmless tradition: a lucky charm, a lucky food, or a lucky number?"),
+        "full_followups": ("How could children learn about it?", "Which could be a harmless tradition: a lucky charm, a lucky food, or a lucky number?"),
+    },
+    (41, 2): {
+        "accessible": "On a free Saturday morning, what would you do after waking up?",
+        "full": "On a free Saturday morning, what would you do after waking up?",
+        "ja": "予定のない土曜の朝、起きたあと何をしますか？",
+    },
+    (41, 3): {
+        "accessible": "What routine keeps a free day from feeling wasted?",
+        "full": "What routine keeps a free day from feeling wasted?",
+        "ja": "自由な一日を無駄に感じさせない習慣は何ですか？",
+        "accessible_followups": ("What happens if you skip it?", "Could breakfast, exercise, or a walk do the job?"),
+        "full_followups": ("What happens if you skip it?", "Could breakfast, exercise, or a walk do the job?"),
+    },
+    (41, 7): {
+        "accessible": "Would you spend a free day alone or with someone?",
+        "full": "Would you spend a free day alone or with someone?",
+        "ja": "自由な一日は、一人で過ごしますか、それとも誰かと過ごしますか？",
+        "accessible_followups": ("Why would that feel better?", "When would you choose the other option?"),
+        "full_followups": ("Why would that feel better?", "When would you choose the other option?"),
+    },
+    (41, 8): {
+        "accessible": "How many plans are enough for a good weekend?",
+        "full": "How many plans are enough for a good weekend?",
+        "ja": "よい週末には、予定はいくつあれば十分ですか？",
+        "accessible_followups": ("When does planning become too much?", "How much empty time feels good?"),
+        "full_followups": ("When does planning become too much?", "How much empty time feels good?"),
+    },
+    (42, 6): {
+        "accessible": "Which causes more house rules: meals, cleaning, noise, or privacy?",
+        "full": "Which causes more house rules: meals, cleaning, noise, or privacy?",
+        "ja": "食事、掃除、騒音、プライバシーでは、どれが最も多くの家のルールを生みますか？",
+        "accessible_followups": ("Why does that area need rules?", "Which rule could cause an argument?"),
+        "full_followups": ("Why does that area need rules?", "Which rule could cause an argument?"),
+    },
+    (42, 8): {
+        "accessible": "What small house rule would you recommend to other families?",
+        "full": "What small house rule would you recommend to other families?",
+        "ja": "ほかの家庭にすすめたい小さな家のルールは何ですか？",
+        "accessible_followups": ("What problem would it solve?", "When should the rule be flexible?"),
+        "full_followups": ("What problem would it solve?", "When should the rule be flexible?"),
+    },
+    (43, 2): {
+        "accessible_followups": ("What exactly makes the moment awkward?", "Why can a small mistake stay in memory?"),
+        "full_followups": ("What exactly makes the moment awkward?", "Why can a small mistake stay in memory?"),
+    },
+    (43, 4): {
+        "accessible_followups": ("Would you worry more about looking rude, foolish, or careless?", "What reaction might you imagine?"),
+        "full_followups": ("Would you worry more about looking rude, foolish, or careless?", "What reaction might you imagine?"),
+    },
+    (43, 6): {
+        "accessible_followups": ("Could a place, sound, or situation bring it back?", "Why can it return when nothing else is happening?"),
+        "full_followups": ("Could a place, sound, or situation bring it back?", "Why can it return when nothing else is happening?"),
+    },
+    (43, 8): {
+        "accessible_followups": ("What can make the memory feel lighter?", "What makes it safe to laugh about later?"),
+        "full_followups": ("What can make the memory feel lighter?", "What makes it safe to laugh about later?"),
+    },
+    (44, 1): {
+        "accessible_followups": ("What usually catches you off guard?", "How is a real laugh different from a polite laugh?"),
+        "full_followups": ("What usually catches you off guard?", "How is a real laugh different from a polite laugh?"),
+    },
+    (44, 2): {
+        "accessible": "Why does a joke sometimes need background information?",
+        "full": "Why does a joke sometimes need background information?",
+        "ja": "冗談に背景説明が必要なことがあるのはなぜですか？",
+        "accessible_followups": ("What happens if the listener misses it?", "Can a facial expression or tone make the joke clear?"),
+        "full_followups": ("What happens if the listener misses it?", "Can a facial expression or tone make the joke clear?"),
+    },
+    (44, 7): {
+        "accessible": "What keeps a funny story funny when someone retells it?",
+        "ja": "面白い話が、語り直しても面白さを保つのはなぜですか？",
+    },
+    (44, 8): {
+        "accessible_followups": ("What details do funny people notice?", "When does trying too hard stop working?"),
+        "full_followups": ("What details do funny people notice?", "When does trying too hard stop working?"),
+    },
+    (45, 4): {
+        "accessible": "How does going to bed late affect the next day?",
+        "full": "How does going to bed late affect the next day?",
+        "ja": "遅く寝ると、次の日にどんな影響がありますか？",
+        "accessible_followups": ("Which part of the day changes first?", "When does a late night matter less?"),
+        "full_followups": ("Which part of the day changes first?", "When does a late night matter less?"),
+    },
+    (45, 8): {
+        "accessible_followups": ("When would you start to wind down?", "What would you stop doing before bed?"),
+        "full_followups": ("When would you start to wind down?", "What would you stop doing before bed?"),
+    },
+    (46, 1): {
+        "accessible_followups": ("What choice would the rule make easier?", "What problem would it prevent?"),
+        "full_followups": ("What choice would the rule make easier?", "What problem would it prevent?"),
+    },
+    (46, 2): {
+        "accessible_followups": ("What exception would be reasonable?", "When would an exception go too far?"),
+        "full_followups": ("What exception would be reasonable?", "When would an exception go too far?"),
+    },
+    (46, 3): {
+        "accessible": "What could make someone turn a preference into a firm rule?",
+        "full": "What could make someone turn a preference into a firm rule?",
+        "ja": "何がきっかけで、好みが固いルールに変わることがありますか？",
+        "accessible_followups": ("Could one bad experience do it?", "What problem would the rule prevent?"),
+        "full_followups": ("Could one bad experience do it?", "What problem would the rule prevent?"),
+    },
+    (46, 4): {
+        "accessible_followups": ("How can you tell if it is an honest exception or just an excuse?", "What should happen afterward?"),
+        "full_followups": ("How can you tell if it is an honest exception or just an excuse?", "What should happen afterward?"),
+    },
+    (46, 6): {
+        "accessible": "If your personal rule affects someone else, how much should you explain?",
+        "full": "If a personal rule affects someone else, how much should you explain?",
+        "ja": "自分のルールがほかの人に影響するなら、どこまで理由を説明すべきですか？",
+    },
+    (46, 7): {
+        "accessible_followups": ("What problem does the rule solve now?", "What change would make you rewrite it?"),
+        "full_followups": ("What problem does the rule solve now?", "What change would make someone rewrite it?"),
+    },
+    (46, 8): {
+        "accessible_followups": ("How could you make the rule easy to try?", "What result would show that it helps?"),
+        "full_followups": ("How could you make the rule easy to try?", "What result would show that it helps?"),
+    },
+}
+for (_topic_no, _prompt_no), _changes in _THREE_SECOND_PATCHES.items():
+    TOPICS[_topic_no]["prompts"][_prompt_no - 1].update(_changes)
 
 
 def build(topic_no: int, variant: str) -> str:

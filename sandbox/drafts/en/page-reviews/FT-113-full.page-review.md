@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-balance-games-full/lessons/113-life-in-the-city-or-the-countryside/lesson.html`
-- SHA-256: `d8bdfab1a20e3a232097e66caf987440b953ab2afa464ebf28343e4e6f43af12`
+- SHA-256: `5226c4a41ae7c6205b2c3bf5d7d4db2e2010088659a9056782f5ac43a56d644b`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Answer the standalone question “Which form of local access saves the most time or difficulty each week?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which form of local access saves the most time or difficulty each week?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Which form of local access saves the most time or difficulty each week?” / “日常で、近くにあると最も助かるものは何ですか？” Follow-ups: “Which service produces the largest weekly time saving?” and “Could digital access replace physical proximity in that case?”
-- Learning target: Develop the distinct “Nearby convenience” angle of Life in the city or the countryside? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Nearby convenience” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Which form of local access saves the most time or difficulty each week?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “日常で、近くにあると最も助かるものは何ですか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which form of local access saves the most time or difficulty each week?"]}`
+- Learner action: Answer the standalone question “What do you most want within walking distance of your home?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What do you most want within walking distance of your home?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What do you most want within walking distance of your home?” / “家から歩いて行ける場所に、何がいちばんほしいですか？” Tutor follow-ups: “How often would you use it?” and “Would a ten-minute walk feel close enough?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “家から歩いて行ける場所に、何がいちばんほしいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What do you most want within walking distance of your home?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer the standalone question “Which view would improve an ordinary morning most?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which view would improve an ordinary morning most?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Which view would improve an ordinary morning most?” / “窓の外に何が見えたらうれしいですか？” Follow-ups: “What daily value does that view support?” and “How much housing cost or travel time would the view justify?”
-- Learning target: Develop the distinct “Your window view” angle of Life in the city or the countryside? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Your window view” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Which view would improve an ordinary morning most?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “窓の外に何が見えたらうれしいですか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which view would improve an ordinary morning most?"]}`
+- Learner action: Answer the standalone question “What would you choose to see outside your window?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would you choose to see outside your window?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would you choose to see outside your window?” / “窓の外に何が見えたらうれしいですか？” Tutor follow-ups: “Would you accept a longer commute for that view?” and “Would you rather see trees or city lights?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “窓の外に何が見えたらうれしいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would you choose to see outside your window?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer the standalone question “For daily life, would you prefer the energy of a city or the quiet of the countryside?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “For daily life, would you prefer the energy of a city or the quiet of the countryside?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “For daily life, would you prefer the energy of a city or the quiet of the countryside?” / “日常生活では、都会の活気と田舎の静けさのどちらを選びますか？” Follow-ups: “Which need—space, access, quiet, or community—decides the answer?” and “What cost of the preferred setting would be hardest to absorb?”
-- Learning target: Develop the distinct “City or countryside” angle of Life in the city or the countryside? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “City or countryside” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “For daily life, would you prefer the energy of a city or the quiet of the countryside?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “日常生活では、都会の活気と田舎の静けさのどちらを選びますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["For daily life, would you prefer the energy of a city or the quiet of the countryside?"]}`
+- Learner action: Answer the standalone question “For daily life, would you rather live in a busy city or a quiet town?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “For daily life, would you rather live in a busy city or a quiet town?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “For daily life, would you rather live in a busy city or a quiet town?” / “日常生活なら、にぎやかな都会と静かな町のどちらに住みたいですか？” Tutor follow-ups: “What would you use most in your chosen place?” and “Which would you miss more: quiet or convenience?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “日常生活なら、にぎやかな都会と静かな町のどちらに住みたいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["For daily life, would you rather live in a busy city or a quiet town?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer the standalone question “Which daily routine would shift most after moving to that setting?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which daily routine would shift most after moving to that setting?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Which daily routine would shift most after moving to that setting?” / “選んだ場所へ引っ越したら、最初に何が変わりますか？” Follow-ups: “Which routine would improve immediately after the move?” and “Which relationship or service would take longest to rebuild?”
-- Learning target: Develop the distinct “After the move” angle of Life in the city or the countryside? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “After the move” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Which daily routine would shift most after moving to that setting?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “選んだ場所へ引っ越したら、最初に何が変わりますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which daily routine would shift most after moving to that setting?"]}`
+- Learner action: Answer the standalone question “Which part of city life would someone miss most after moving to a quiet town?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which part of city life would someone miss most after moving to a quiet town?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which part of city life would someone miss most after moving to a quiet town?” / “静かな町へ引っ越したら、都会のどんな部分が最も恋しくなりますか？” Tutor follow-ups: “Which daily routine would become harder?” and “Which is harder without a car: shopping or seeing friends?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “静かな町へ引っ越したら、都会のどんな部分が最も恋しくなりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which part of city life would someone miss most after moving to a quiet town?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer the standalone question “Without access to a car, which setting remains practical?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Without access to a car, which setting remains practical?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Without access to a car, which setting remains practical?” / “車なしで暮らすなら、都会と田舎のどちらですか？” Follow-ups: “Which essential journey becomes the test case?” and “Would reliable regional transport erase the difference?”
-- Learning target: Develop the distinct “Life without a car” angle of Life in the city or the countryside? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Life without a car” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Without access to a car, which setting remains practical?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “車なしで暮らすなら、都会と田舎のどちらですか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Without access to a car, which setting remains practical?"]}`
+- Learner action: Answer the standalone question “Which place works better without a car: a city or the countryside?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which place works better without a car: a city or the countryside?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which place works better without a car: a city or the countryside?” / “車なしで暮らすなら、都会と田舎のどちらがよいですか？” Tutor follow-ups: “How would you buy food?” and “Could you live comfortably without a car where you are?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “車なしで暮らすなら、都会と田舎のどちらがよいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which place works better without a car: a city or the countryside?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer the standalone question “If a rural town had reliable services, which urban advantage would still matter?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “If a rural town had reliable services, which urban advantage would still matter?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “If a rural town had reliable services, which urban advantage would still matter?” / “病院や店が近い小さな町なら、選択は変わりますか？” Follow-ups: “Which remaining urban service would still justify city life?” and “Would stronger local ties compensate for less variety?”
-- Learning target: Develop the distinct “A well-served small town” angle of Life in the city or the countryside? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “A well-served small town” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “If a rural town had reliable services, which urban advantage would still matter?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “病院や店が近い小さな町なら、選択は変わりますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If a rural town had reliable services, which urban advantage would still matter?"]}`
+- Learner action: Answer the standalone question “Would a small town with a hospital and shops feel convenient enough?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would a small town with a hospital and shops feel convenient enough?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would a small town with a hospital and shops feel convenient enough?” / “病院や店がある小さな町なら、十分便利に感じますか？” Tutor follow-ups: “Which service might still be missing?” and “Which matters more nearby: a hospital or a train station?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “病院や店がある小さな町なら、十分便利に感じますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would a small town with a hospital and shops feel convenient enough?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer the standalone question “Which change in transport, family, or health would reverse your residential preference?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which change in transport, family, or health would reverse your residential preference?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Which change in transport, family, or health would reverse your residential preference?” / “どんな生活条件なら、反対の場所を選びますか？” Follow-ups: “Which life-stage change would reverse the location choice?” and “Would the reversal be permanent or linked to one responsibility?”
-- Learning target: Develop the distinct “Conditions for moving” angle of Life in the city or the countryside? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Conditions for moving” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Which change in transport, family, or health would reverse your residential preference?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “どんな生活条件なら、反対の場所を選びますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which change in transport, family, or health would reverse your residential preference?"]}`
+- Learner action: Answer the standalone question “For everyday life, which matters more: nearby services or a quiet home?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “For everyday life, which matters more: nearby services or a quiet home?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “For everyday life, which matters more: nearby services or a quiet home?” / “日常生活では、近くの便利なサービスと静かな家のどちらが大切ですか？” Tutor follow-ups: “Which service would you want nearby?” and “Would you accept more noise to live near a station?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “日常生活では、近くの便利なサービスと静かな家のどちらが大切ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["For everyday life, which matters more: nearby services or a quiet home?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Use the exact ask-back “Ask your tutor to choose between city life and country life, then compare the reasons behind both answers.” to invite the tutor’s real answer, then compare the two positions.
-- Tutor action: Let the learner ask “Ask your tutor to choose between city life and country life, then compare the reasons behind both answers.”, answer it genuinely and briefly, then use one topic-specific comparison probe if useful.
-- Visible target or prompt: Reciprocal ask-back: “Ask your tutor to choose between city life and country life, then compare the reasons behind both answers.” / “チューターに都会の生活と田舎の生活のどちらを選ぶか聞き、お互いの理由を比べてください。” Follow-ups: “How does the tutor value access against space and quiet?” and “Which life-stage change would reverse their location choice?”
-- Learning target: Turn the balance game into a two-way exchange by eliciting and comparing the tutor’s real position.
-- Pedagogical value: Prevents an interview-like ending and gives the learner a natural reason to listen, react, and compare.
-- Failure diagnoses: If the learner only states another personal answer, prompt the exact ask-back; do not model a preferred position.
-- Non-target support: The Japanese prompt “チューターに都会の生活と田舎の生活のどちらを選ぶか聞き、お互いの理由を比べてください。” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor to choose between city life and country life, then compare the reasons behind both answers."]}`
+- Learner action: Answer the standalone question “Ask your tutor which option they would choose and why.” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Ask your tutor which option they would choose and why.”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Ask your tutor which option they would choose and why.” / “チューターならどちらを選ぶか、その理由も聞いてください。” Tutor follow-ups: “Which daily convenience matters most to your tutor?” and “Would a shorter commute change the choice?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “チューターならどちらを選ぶか、その理由も聞いてください。” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor which option they would choose and why."]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

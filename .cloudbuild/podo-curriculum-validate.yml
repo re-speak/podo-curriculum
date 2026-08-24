@@ -256,13 +256,73 @@ steps:
         print('slack ok')
         PY
 
+  # 저작 게이트. validate.py 는 배포 가능성(스키마·패키징·계약·핀·은퇴)을 보고,
+  # 이 스텝은 내용을 본다 — 두 커리큘럼이 공유하는 규칙과 한국어 전용 규칙.
+  #
+  # 왜 이제야 게이트가 되나: 이 검사들은 지금까지 사람이 기억해서 손으로 돌리는
+  # 것이었고, 배포 빌드 주석이 그 사실을 이렇게 적어 두었다 — "커리큘럼은 나쁜 덱이
+  # 수업 중인 학습자에게 그대로 보이고, 그걸 잡아줄 lint 가 없다". 규칙이 언어를
+  # 넘지 못한 이유도 절반은 이것이었다. 검사가 머지를 막지 않으면 규칙의 사정거리는
+  # 그때 그 사람이 기억한 만큼이다.
+  #
+  # 대상은 sandbox/drafts 다. courses/ 는 promote.py 가 만든 산출물이고 이미
+  # validate.py 가 본다. 저작 규칙은 저작하는 자리에서 걸려야 고칠 수 있다.
+  - id: authoring-gate
+    name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
+    entrypoint: bash
+    waitFor: ['-']
+    args:
+      - -ceu
+      - |
+        pip install --break-system-packages --quiet -r tools/requirements.txt
+
+        rc=0
+        run() {
+          echo "────────── $$1 ──────────"
+          shift
+          "$$@" || rc=1
+        }
+
+        # 두 언어 공용. --all 이 아니라 초안만 본다.
+        run "덱 정적 검사(두 언어)" python3 tools/authoring/check_deck.py sandbox/drafts
+        run "영어 코퍼스 무결성"    python3 tools/authoring/en/corpus_integrity.py
+
+        # 한국어 전용. 판정을 내리는 검사만 게이트에 넣는다 —
+        # check_distractors 는 설계상 후보만 내놓으므로 --strict 없이는 판정이 아니다.
+        for check in check_structure check_teaching check_reorder check_freetalk check_syllabus check_chips; do
+          run "kr/$$check" python3 "tools/authoring/kr/$$check.py"
+        done
+
+        # 인용 부호는 아직 게이트가 아니다. 규약을 영어로 넓힌 직후라 한국어 111줄 ·
+        # 영어 277줄이 규약 이전에 쓰인 채로 남아 있고, 지금 막으면 모든 PR 이 막힌다.
+        # 쓸어낸 뒤 위 목록으로 올린다. 그때까지는 숫자를 보이게만 둔다.
+        # 교정 주장과 원장의 대조. 아직 게이트가 아니다 — 421개 중 395개가 통과하는
+        # 원장 없이 complete 를 주장하고 있고, 그 대부분은 실수가 아니라 아직 하지 않은
+        # 일(360·480px 시각 확인)이다. 숫자를 매 PR 에 보이게 두어 늘어나지 않게 한다.
+        echo "────────── 교정 주장 대조(조언, 게이트 아님) ──────────"
+        python3 tools/authoring/page_review.py audit-claims \
+          sandbox/drafts/en/tracks sandbox/drafts/en/page-reviews | tail -1 || true
+
+        echo "────────── 인용 부호(조언, 게이트 아님) ──────────"
+        python3 tools/authoring/check_quotes.py --all || true
+
+        echo "$$rc" > /workspace/authoring.rc
+        exit 0
+
   # 최종 판정. 검증이 실패했으면 여기서 빌드를 빨갛게 만든다.
   - id: verdict
     name: gcr.io/google.com/cloudsdktool/cloud-sdk:slim
     entrypoint: bash
+    # 두 게이트를 모두 기다린다. 기본값(바로 앞 스텝)에 맡기면 authoring-gate 가
+    # waitFor: ['-'] 로 먼저 시작하는 탓에 validate-and-plan 이 끝나기 전에
+    # 판정이 날 수 있다.
+    waitFor: [validate-and-plan, authoring-gate]
     args:
       - -ceu
       - |
         rc="$(cat /workspace/validate.rc)"
-        [ "$$rc" = "0" ] || { echo "검증 실패(rc=$$rc)"; exit 1; }
+        arc="$(cat /workspace/authoring.rc 2>/dev/null || echo 0)"
+        [ "$$rc" = "0" ]  || { echo "검증 실패(rc=$$rc)"; fail=1; }
+        [ "$$arc" = "0" ] || { echo "저작 게이트 실패(rc=$$arc)"; fail=1; }
+        [ -z "$${fail:-}" ] || exit 1
         echo "검증 통과"

@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-small-things-accessible/lessons/42-a-rule-that-only-made-sense-in-your-family/lesson.html`
-- SHA-256: `8f55330719dca3af3c9a0d43f4ccf246783102120d608d9b6fa9b5b27721aec2`
+- SHA-256: `2ea340b8b4d5b21b972d3fd7e2898cd544efb87dbb5182d0049540a2dd5deddc`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “What's a household rule that makes sense in one family but seems strange elsewhere?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What problem might it solve?” rather than asking every follow-up.
-- Visible target or prompt: What's a household rule that makes sense in one family but seems strange elsewhere? ある家庭では自然でも、別の場所では不思議に見える決まりは何ですか？
-- Learning target: Explore the distinct “A household rule (家庭の決まり)” angle of “A rule that only made sense in your family” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What problem might it solve?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What problem might it solve?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What's a household rule that makes sense in one family but seems strange elsewhere?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Why might an outsider misunderstand it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's a household rule that makes sense in one family but seems strange elsewhere?"]}`
+- Learner action: Answer the standalone question “Which house rule matters most: taking off your shoes, keeping quiet, or cleaning up?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which house rule matters most: taking off your shoes, keeping quiet, or cleaning up?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which house rule matters most: taking off your shoes, keeping quiet, or cleaning up?” / “家のルールでは、靴を脱ぐこと、静かにすること、片づけることのどれが最も大切ですか？” Tutor follow-ups: “What problem might it solve?” and “Why might an outsider misunderstand it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “家のルールでは、靴を脱ぐこと、静かにすること、片づけることのどれが最も大切ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which house rule matters most: taking off your shoes, keeping quiet, or cleaning up?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “How would an unusual household rule work day to day?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Who would be expected to follow it?” rather than asking every follow-up.
-- Visible target or prompt: How would an unusual household rule work day to day? 家庭の変わった決まりは、日常の中でどのように使われますか？
-- Learning target: Explore the distinct “How it works (決まりの内容)” angle of “A rule that only made sense in your family” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Who would be expected to follow it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Who would be expected to follow it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How would an unusual household rule work day to day?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What might happen when someone forgets?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “How would an unusual household rule work day to day?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How would an unusual household rule work day to day?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How would an unusual household rule work day to day?” / “家庭の変わった決まりは、日常の中でどのように使われますか？” Tutor follow-ups: “Who would be expected to follow it?” and “What might happen when someone forgets?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “家庭の変わった決まりは、日常の中でどのように使われますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How would an unusual household rule work day to day?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “How do people discover that other households have different rules?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which situation reveals the difference fastest?” rather than asking every follow-up.
-- Visible target or prompt: How do people discover that other households have different rules? 人は、ほかの家庭に違う決まりがあると、どのように気づくのでしょうか？
-- Learning target: Explore the distinct “Discovering differences (違いに気づく時)” angle of “A rule that only made sense in your family” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which situation reveals the difference fastest?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which situation reveals the difference fastest?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How do people discover that other households have different rules?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What reaction might follow?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “How do people discover that other households have different rules?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How do people discover that other households have different rules?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How do people discover that other households have different rules?” / “人は、ほかの家庭に違う決まりがあると、どのように気づくのでしょうか？” Tutor follow-ups: “Which situation reveals the difference fastest?” and “What reaction might follow?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “人は、ほかの家庭に違う決まりがあると、どのように気づくのでしょうか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How do people discover that other households have different rules?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “What makes an unfamiliar household rule feel reasonable?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which missing context matters most?” rather than asking every follow-up.
-- Visible target or prompt: What makes an unfamiliar household rule feel reasonable? 知らない家庭の決まりが、納得できるようになるのはどのようなときですか？
-- Learning target: Explore the distinct “Understanding the rule (決まりを理解する)” angle of “A rule that only made sense in your family” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which missing context matters most?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which missing context matters most?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What makes an unfamiliar household rule feel reasonable?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What value might the rule protect?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What makes an unfamiliar household rule feel reasonable?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What makes an unfamiliar household rule feel reasonable?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What makes an unfamiliar household rule feel reasonable?” / “知らない家庭の決まりが、納得できるようになるのはどのようなときですか？” Tutor follow-ups: “Which missing detail matters most?” and “What value might the rule protect?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “知らない家庭の決まりが、納得できるようになるのはどのようなときですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes an unfamiliar household rule feel reasonable?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “Which family rules are worth keeping as an adult?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What purpose do they still serve?” rather than asking every follow-up.
-- Visible target or prompt: Which family rules are worth keeping as an adult? どのような家庭の決まりは、大人になっても残す価値がありますか？
-- Learning target: Explore the distinct “Worth keeping (残す価値)” angle of “A rule that only made sense in your family” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What purpose do they still serve?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What purpose do they still serve?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which family rules are worth keeping as an adult?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How might they need updating?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Which family rules are worth keeping as an adult?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which family rules are worth keeping as an adult?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which family rules are worth keeping as an adult?” / “どのような家庭の決まりは、大人になっても残す価値がありますか？” Tutor follow-ups: “What purpose do they still serve?” and “How might they need updating?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どのような家庭の決まりは、大人になっても残す価値がありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which family rules are worth keeping as an adult?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “Which area of home life creates the most different rules?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Why does that area vary so much?” rather than asking every follow-up.
-- Visible target or prompt: Which area of home life creates the most different rules? 家庭生活のどの分野で、いちばん違う決まりが生まれますか？
-- Learning target: Explore the distinct “Where rules differ (決まりが違う分野)” angle of “A rule that only made sense in your family” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Why does that area vary so much?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Why does that area vary so much?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which area of home life creates the most different rules?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which difference could cause conflict?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which area of home life creates the most different rules?"]}`
+- Learner action: Answer the standalone question “Which causes more house rules: meals, cleaning, noise, or privacy?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which causes more house rules: meals, cleaning, noise, or privacy?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which causes more house rules: meals, cleaning, noise, or privacy?” / “食事、掃除、騒音、プライバシーでは、どれが最も多くの家のルールを生みますか？” Tutor follow-ups: “Why does that area need rules?” and “Which rule could cause an argument?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “食事、掃除、騒音、プライバシーでは、どれが最も多くの家のルールを生みますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which causes more house rules: meals, cleaning, noise, or privacy?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “How should a household explain a rule to a guest?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which rule needs advance warning?” rather than asking every follow-up.
-- Visible target or prompt: How should a household explain a rule to a guest? 家庭の決まりを、来客にどのように説明するとよいですか？
-- Learning target: Explore the distinct “Explaining it (説明の仕方)” angle of “A rule that only made sense in your family” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which rule needs advance warning?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which rule needs advance warning?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How should a household explain a rule to a guest?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Where should the household stay flexible?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “How should a household explain a rule to a guest?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How should a household explain a rule to a guest?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How should a household explain a rule to a guest?” / “家庭の決まりを、来客にどのように説明するとよいですか？” Tutor follow-ups: “Which rule needs advance warning?” and “Where should the household stay flexible?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “家庭の決まりを、来客にどのように説明するとよいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How should a household explain a rule to a guest?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “What small rule should a household be known for?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What value would the rule express?” rather than asking every follow-up.
-- Visible target or prompt: What small rule should a household be known for? 家庭は、どのような小さな決まりで知られるとよいですか？
-- Learning target: Explore the distinct “Known for (覚えられる決まり)” angle of “A rule that only made sense in your family” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What value would the rule express?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What value would the rule express?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What small rule should a household be known for?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How could it stay flexible?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What small rule should a household be known for?"]}`
+- Learner action: Answer the standalone question “What small house rule would you recommend to other families?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What small house rule would you recommend to other families?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What small house rule would you recommend to other families?” / “ほかの家庭にすすめたい小さな家のルールは何ですか？” Tutor follow-ups: “What problem would it solve?” and “When should the rule be flexible?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “ほかの家庭にすすめたい小さな家のルールは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What small house rule would you recommend to other families?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

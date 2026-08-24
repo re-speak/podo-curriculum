@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-accessible/lessons/99-where-you-imagine-yourself-in-ten-years/lesson.html`
-- SHA-256: `4542d70ccba61d45dd0d54184e47295898c8f38b3b111626b41c619aaf5bbedd`
+- SHA-256: `78a9e42872d437b8998a1f59e657ce669d5f767e7b69a0d23e429b338f10c96c`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “What would an ideal ordinary day look like ten years from now?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What would an ideal ordinary day look like ten years from now?”, react or share briefly, then choose at most one relevant probe such as “Which part of the day would matter most?”.
-- Visible target or prompt: What would an ideal ordinary day look like ten years from now? / 十年後の理想的な普通の一日は、どんな一日ですか？ Follow-up pool: Which part of the day would matter most? What would make the day feel ordinary rather than exceptional?
-- Learning target: Explore the distinct “Ten years on” angle of “Where you imagine yourself in ten years” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which part of the day would matter most?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which part of the day would matter most?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What would an ideal ordinary day look like ten years from now?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What would make the day feel ordinary rather than exceptional?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What would an ideal ordinary day look like ten years from now?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would an ideal ordinary day look like ten years from now?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would an ideal ordinary day look like ten years from now?” / “十年後の理想的な普通の一日は、どんな一日ですか？” Tutor follow-ups: “Would it begin in a quiet home, a busy city, or somewhere new?” and “What would make the day feel good?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “十年後の理想的な普通の一日は、どんな一日ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would an ideal ordinary day look like ten years from now?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “Which activity or purpose could organize an ordinary future day?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which activity or purpose could organize an ordinary future day?”, react or share briefly, then choose at most one relevant probe such as “What would you want the day to contain?”.
-- Visible target or prompt: Which activity or purpose could organize an ordinary future day? / 将来の普通の一日を形作る活動や目的は何ですか？ Follow-up pool: What would you want the day to contain? Would it be paid work, study, care, rest, or something else?
-- Learning target: Explore the distinct “What you are doing” angle of “Where you imagine yourself in ten years” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What would you want the day to contain?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What would you want the day to contain?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which activity or purpose could organize an ordinary future day?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Would it be paid work, study, care, rest, or something else?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which activity or purpose could organize an ordinary future day?"]}`
+- Learner action: Answer the standalone question “Where would you like to wake up on an ordinary morning ten years from now?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Where would you like to wake up on an ordinary morning ten years from now?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Where would you like to wake up on an ordinary morning ten years from now?” / “十年後の普通の朝、どこで目を覚ましたいですか？” Tutor follow-ups: “What would you want nearby?” and “Would the place be busy or quiet?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “十年後の普通の朝、どこで目を覚ましたいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Where would you like to wake up on an ordinary morning ten years from now?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “What balance of company and solitude would make a future day comfortable?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What balance of company and solitude would make a future day comfortable?”, react or share briefly, then choose at most one relevant probe such as “What kind of connection matters?”.
-- Visible target or prompt: What balance of company and solitude would make a future day comfortable? / 将来の一日を快適にする、人との時間と一人の時間のバランスはどのようなものですか？ Follow-up pool: What kind of connection matters? What makes the scene comfortable or useful?
-- Learning target: Explore the distinct “Who is around” angle of “Where you imagine yourself in ten years” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What kind of connection matters?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What kind of connection matters?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What balance of company and solitude would make a future day comfortable?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What makes the scene comfortable or useful?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What balance of company and solitude would make a future day comfortable?"]}`
+- Learner action: Answer the standalone question “How much contact with other people would you want on most days?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How much contact with other people would you want on most days?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How much contact with other people would you want on most days?” / “ほとんどの日に、ほかの人とどのくらい関わりたいですか？” Tutor follow-ups: “Who, if anyone, might be part of that contact?” and “How much time alone would still feel good?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “ほとんどの日に、ほかの人とどのくらい関わりたいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How much contact with other people would you want on most days?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “Is there anything you would like to keep the same for ten years?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Is there anything you would like to keep the same for ten years?”, react or share briefly, then choose at most one relevant probe such as “Why is it worth protecting?”.
-- Visible target or prompt: Is there anything you would like to keep the same for ten years? / 十年間、変えずに保ちたいことはありますか？ Follow-up pool: Why is it worth protecting? Which uncertainty makes choosing difficult?
-- Learning target: Explore the distinct “What stays the same” angle of “Where you imagine yourself in ten years” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Why is it worth protecting?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Why is it worth protecting?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Is there anything you would like to keep the same for ten years?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which uncertainty makes choosing difficult?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Is there anything you would like to keep the same for ten years?"]}`
+- Learner action: Answer the standalone question “What current habit would you like to still have in ten years?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What current habit would you like to still have in ten years?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What current habit would you like to still have in ten years?” / “今のどんな習慣を、十年後も続けたいですか？” Tutor follow-ups: “Would you keep exercise, reading, or time with friends?” and “What could make the habit hard to keep?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “今のどんな習慣を、十年後も続けたいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What current habit would you like to still have in ten years?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “What missing part would disappoint you, if any?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What missing part would disappoint you, if any?”, react or share briefly, then choose at most one relevant probe such as “Which value is behind it?”.
-- Visible target or prompt: What missing part would disappoint you, if any? / 欠けていたら失望するものがあるとすれば、何ですか？ Follow-up pool: Which value is behind it? What makes the picture flexible?
-- Learning target: Explore the distinct “What would disappoint you” angle of “Where you imagine yourself in ten years” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which value is behind it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which value is behind it?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What missing part would disappoint you, if any?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What makes the picture flexible?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What missing part would disappoint you, if any?"]}`
+- Learner action: Answer the standalone question “What would you hope not to spend time doing in ten years?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would you hope not to spend time doing in ten years?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would you hope not to spend time doing in ten years?” / “十年後、何に時間を使わずにすむことを望みますか？” Tutor follow-ups: “What would you rather spend that time on?” and “Would you rather spend less time commuting or doing housework?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “十年後、何に時間を使わずにすむことを望みますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would you hope not to spend time doing in ten years?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “What can reveal a broader life direction even when details are unclear?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What can reveal a broader life direction even when details are unclear?”, react or share briefly, then choose at most one relevant probe such as “Which value points that way?”.
-- Visible target or prompt: What can reveal a broader life direction even when details are unclear? / 細かいことが不明でも、人生の大きな方向を示すものは何ですか？ Follow-up pool: Which value points that way? What remains uncertain?
-- Learning target: Explore the distinct “Life direction” angle of “Where you imagine yourself in ten years” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which value points that way?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which value points that way?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What can reveal a broader life direction even when details are unclear?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What remains uncertain?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can reveal a broader life direction even when details are unclear?"]}`
+- Learner action: Answer the standalone question “Which matters more for the future: a clear plan or room to change?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which matters more for the future: a clear plan or room to change?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which matters more for the future: a clear plan or room to change?” / “将来には、明確な計画と変わる余地のどちらが大切ですか？” Tutor follow-ups: “Why does that matter more?” and “What is the main risk of the other approach?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “将来には、明確な計画と変わる余地のどちらが大切ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which matters more for the future: a clear plan or room to change?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “What small action this year could make a future direction clearer?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What small action this year could make a future direction clearer?”, react or share briefly, then choose at most one relevant probe such as “What makes it small enough to begin?”.
-- Visible target or prompt: What small action this year could make a future direction clearer? / 今年どんな小さな行動をすると、将来の方向が明確になりますか？ Follow-up pool: What makes it small enough to begin? What would need to become clearer first?
-- Learning target: Explore the distinct “This year” angle of “Where you imagine yourself in ten years” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What makes it small enough to begin?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What makes it small enough to begin?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What small action this year could make a future direction clearer?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What would need to become clearer first?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What small action this year could make a future direction clearer?"]}`
+- Learner action: Answer the standalone question “What small action this year could make your future direction clearer?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What small action this year could make your future direction clearer?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What small action this year could make your future direction clearer?” / “今年どんな小さな行動をすると、将来の方向がより明確になりますか？” Tutor follow-ups: “What could you try this month?” and “Would trying one new class or hobby make the future clearer?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “今年どんな小さな行動をすると、将来の方向がより明確になりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What small action this year could make your future direction clearer?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “What new opportunity could make someone happily change a ten-year plan?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What new opportunity could make someone happily change a ten-year plan?”, react or share briefly, then choose at most one relevant probe such as “Which new opportunity could matter more?”.
-- Visible target or prompt: What new opportunity could make someone happily change a ten-year plan? / どんな新しい機会があれば、十年計画を喜んで変えられますか？ Follow-up pool: Which new opportunity could matter more? Which experience or information could add clarity?
-- Learning target: Explore the distinct “Changing the picture” angle of “Where you imagine yourself in ten years” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which new opportunity could matter more?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which new opportunity could matter more?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What new opportunity could make someone happily change a ten-year plan?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which experience or information could add clarity?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What new opportunity could make someone happily change a ten-year plan?"]}`
+- Learner action: Answer the standalone question “What opportunity would make you happily throw away a ten-year plan?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What opportunity would make you happily throw away a ten-year plan?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What opportunity would make you happily throw away a ten-year plan?” / “どんな機会があれば、十年計画を喜んで手放しますか？” Tutor follow-ups: “Would a new relationship, place, or dream be enough?” and “What part of the old plan might you keep?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな機会があれば、十年計画を喜んで手放しますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What opportunity would make you happily throw away a ten-year plan?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

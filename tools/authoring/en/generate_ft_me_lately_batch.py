@@ -18,6 +18,7 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import generate_ft_course_batch as ft_contract
+import ft_conversation_rewrites_2_33 as conversation_rewrites
 import new_lesson
 
 
@@ -31,11 +32,11 @@ CANONICAL = {
 PRESERVED_FT9 = {
     "accessible": (
         TRACK / "courses/talk-me-lately-accessible/lessons/09-a-purchase-that-was-worth-it/lesson.html",
-        "a4f07a40cfd8d932008b40e20a823ccf716f69b6d0920d43f9663fd68101376e",
+        "25f28f342b575a98a105a6495e2ba6e79c0180c9ac54fa3e0601f3933a97ed04",
     ),
     "full": (
         TRACK / "courses/talk-me-lately-full/lessons/09-a-purchase-that-was-worth-it/lesson.html",
-        "7d7d332b91f1cd6695946221b5fb333b9d3755e0bf769c68e40e18c5af2595af",
+        "cc3d40ff4cb9c06214c3c4cc4301c0d8d6edb8a699decc5f66d8ed493208cd5e",
     ),
 }
 
@@ -240,7 +241,7 @@ TOPICS = {
             ("The useful question is whether the spending still matches the life we want.", "The useful question is not whether others approve, but whether the spending still supports the life we want.", "大切なのは、他人の評価ではなく、その支出が望む生活に合っているかです。"),
         ],
         "prompts": [
-            prompt("Extra spending", "楽しみのためのお金", "Do you ever spend money just for fun?", "楽しみのためだけにお金を使うことはありますか？", ["What kind of thing feels worth buying for enjoyment?", "What do you prefer to save for?"], full="Do you ever spend money mainly for enjoyment?", full_followups=["What kind of expense feels worth it for enjoyment?", "What do you prefer to save for?"]),
+            prompt("Extra spending", "楽しみのためのお金", "Do you ever spend money just for fun?", "楽しみのためだけにお金を使うことはありますか？", ["What kind of thing feels worth buying for enjoyment?", "What do you prefer to save for?"], full="Do you ever spend money just for fun?", full_followups=["What kind of fun feels worth paying for?", "What do you prefer to save for?"]),
             prompt("A recent expense", "最近考えた支出", "Which extra purchases are hardest to resist?", "必要ではなくても、いちばん我慢しにくい買い物は何ですか？", ["What catches people's attention?", "What can make passing it up easier?"], full="Which non-essential purchases are hardest to resist?", full_followups=["What makes them especially tempting?", "What can make walking away easier?"]),
             prompt("A comfortable range", "答えられる範囲", "If you want to share, about how much can you spend on extras each month?", "答えられる範囲で、毎月、自由に使うお金をどのくらいにしていますか？", ["Has the amount changed recently?", "What makes it go up or down?"], full="If you're comfortable sharing, what range do you allow for extra spending each month?", full_followups=["Has that range changed recently?", "What usually makes it rise or fall?"]),
             prompt("When it feels worth it", "価値を感じるとき", "When does extra spending feel worth it to you?", "どんなとき、自由に使ったお金に価値があったと感じますか？", ["Which benefit from that spending lasts the longest?", "When would it feel like too much?"], full="When does discretionary spending feel worthwhile to you?", full_followups=["Which benefit lasts the longest?", "When would it stop feeling worthwhile?"]),
@@ -407,6 +408,8 @@ TOPICS = {
     },
 }
 
+conversation_rewrites.apply_to(TOPICS)
+
 
 def vocab(*, new="", recycled="", assumed="", receptive=""):
     """Return one variant's editorial vocabulary contract."""
@@ -461,9 +464,9 @@ VOCABULARY = {
     },
     13: {
         "accessible": vocab(
-            new="backup plan|予備の案; fall through|予定がだめになる",
+            new="backup plan|予備の案",
             assumed="weekend|週末; weather|天気; rest|休息; time|時間; place|場所; cost|費用; activity|活動; health|体調; alone|一人で",
-            receptive="meaningful|意味のある; arranged|計画した; unplanned|予定外の",
+            receptive="fall through|予定がだめになる; meaningful|意味のある; arranged|計画した; unplanned|予定外の",
         ),
         "full": vocab(
             new="backup plan|予備の案; fall through|予定がだめになる",
@@ -516,9 +519,9 @@ VOCABULARY = {
             receptive="ongoing|続いている",
         ),
         "full": vocab(
-            new="small win|小さな成功; motivation|やる気",
+            new="small win|小さな成功",
             assumed="win|成功; month|月; praise|褒めること; progress|進歩; result|結果; record|記録; comparison|比較; difficulty|難しさ; effort|努力",
-            receptive="external praise|周囲からの評価; achievement|達成; validate|価値を認める; circumstance|状況; applause|拍手; gradual|少しずつの; performance|人に見せる行為; unreliable measure|信頼できない尺度",
+            receptive="motivation|やる気; external praise|周囲からの評価; achievement|達成; validate|価値を認める; circumstance|状況; applause|拍手; gradual|少しずつの; performance|人に見せる行為; unreliable measure|信頼できない尺度",
         ),
     },
     18: {

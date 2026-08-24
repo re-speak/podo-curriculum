@@ -55,8 +55,8 @@ LESSONS = {
         # already retrieve the complete frame, so omit that low-value choice.
         omit_choice=(1, 2),
         rules=(
-            ("Put ever before the past participle to ask about any time up to now.", "ever は過去分詞の前に置き、今までのどこかの時点での経験を聞きます。"),
-            ("Put never before the past participle, then keep but I'd like to as the positive close.", "never は過去分詞の前に置き、but I'd like to を前向きな結びとして続けます。"),
+            ("Put ever before the past participle to ask about any time up to now.", "「ever」 は過去分詞の前に置き、今までのどこかの時点での経験を聞きます。"),
+            ("Put never before the past participle, then keep but I'd like to as the positive close.", "「never」 は過去分詞の前に置き、「but I'd like to」 を前向きな結びとして続けます。"),
         ),
         prompt=("Tell me one thing you have never tried, then ask about my experience.", "まだしたことがないことを一つ話してから、私の経験も聞いてください。"),
     ),
@@ -80,7 +80,7 @@ LESSONS = {
         ),
         omit_choice=(1,),
         rules=(
-            ("Put already between have and the past participle in an affirmative update.", "肯定の進捗報告では、already を have と過去分詞の間に置きます。"),
+            ("Put already between have and the past participle in an affirmative update.", "肯定の進捗報告では、「already」 を have と過去分詞の間に置きます。"),
             ("Put yet at the end of a neutral question about whether something is done.", "完了したかを普通に確認する質問では、yet を文末に置きます。"),
         ),
         prompt=("Give me one real update, then ask whether one other task is done.", "実際の進捗を一つ伝えてから、別の作業が終わったか聞いてください。"),
@@ -128,8 +128,8 @@ LESSONS = {
             ("{t}I've been here for{/t} a day.", "ここには{t}1日います{/t}。", "I've been|here|for|a day."),
         ),
         rules=(
-            ("Keep how long at the front and use have been for a stay continuing now.", "how long を文頭に置き、今も続く滞在には have been を使います。"),
-            ("Use for with a length of time and since with a starting point.", "期間の長さには for、始まった時点には since を使います。"),
+            ("Keep how long at the front and use have been for a stay continuing now.", "「how long」 を文頭に置き、今も続く滞在には 「have been」 を使います。"),
+            ("Use for with a length of time and since with a starting point.", "期間の長さには for、始まった時点には 「since」 を使います。"),
         ),
         prompt=("Tell me how long you have been where you live, then ask me too.", "今住んでいる場所にどのくらいいるか答えてから、私にも聞いてください。"),
     ),
@@ -153,7 +153,7 @@ LESSONS = {
         ),
         rules=(
             ("Build the continuing activity with have been plus the -ing form.", "今まで続く活動は have been と -ing 形で作ります。"),
-            ("State the cause first, then use that's why before the effect you feel now.", "原因を先に伝え、今の結果の前に that's why を置きます。"),
+            ("State the cause first, then use that's why before the effect you feel now.", "原因を先に伝え、今の結果の前に 「that's why」 を置きます。"),
         ),
         prompt=("Answer honestly; if nothing has continued for long today, say that instead.", "正直に答え、今日は長く続けていることがなければ、代わりにそう伝えましょう。"),
     ),
@@ -178,8 +178,8 @@ LESSONS = {
         omit_choice=(1, 2),
         omit_reorder=(1,),
         rules=(
-            ("Use have plus finished for completed work that matters to the update now.", "今の進捗に関係する完了済みの作業には have と finished を使います。"),
-            ("Put still before need to when the task remains unfinished.", "作業が残っているときは、need to の前に still を置きます。"),
+            ("Use have plus finished for completed work that matters to the update now.", "今の進捗に関係する完了済みの作業には have と 「finished」 を使います。"),
+            ("Put still before need to when the task remains unfinished.", "作業が残っているときは、「need to」 の前に still を置きます。"),
         ),
         prompt=("Use a real countable project if you have one; otherwise say you do not have one right now.", "数えられる実際の作業があれば使い、今なければそう伝えましょう。"),
     ),
@@ -202,7 +202,7 @@ LESSONS = {
             ("My client was busy, {t}so{/t} we moved the meeting.", "顧客が忙しかったです。{t}だから{/t}会議を変更しました。", "My client|was busy,|so|we moved the meeting."),
         ),
         rules=(
-            ("Put because before the reason: result first, reason second.", "because は理由の前に置き、結果、理由の順にします。"),
+            ("Put because before the reason: result first, reason second.", "「because」 は理由の前に置き、結果、理由の順にします。"),
             ("Put so before the result: reason first, result second.", "so は結果の前に置き、理由、結果の順にします。"),
         ),
         prompt=("Use a real changed plan if you have one; otherwise say that none changed and ask about mine.", "実際に変わった予定があれば使い、なければ何も変わらなかったと伝えて私の予定を聞きましょう。"),
@@ -227,7 +227,7 @@ LESSONS = {
         ),
         rules=(
             ("Name the person first, then put who and the describing action after the noun.", "人を先に置き、そのあとに who と説明する動作を続けます。"),
-            ("Name the thing first, then put that and what it does after the noun.", "物を先に置き、そのあとに that とその働きを続けます。"),
+            ("Name the thing first, then put that and what it does after the noun.", "物を先に置き、そのあとに 「that」 とその働きを続けます。"),
         ),
         prompt=("Describe one real person and one object without saying their names first.", "名前を先に言わずに、実在する人と物を一つずつ説明してください。"),
     ),
@@ -251,7 +251,7 @@ LESSONS = {
         ),
         rules=(
             ("Use but between two equal statements when the second limits the first.", "二つの対等な文の間に but を置き、後半で前半に制限を加えます。"),
-            ("Put even though before the background fact, then give the surprising main point.", "背景になる事実の前に even though を置き、そのあとに意外な要点を伝えます。"),
+            ("Put even though before the background fact, then give the surprising main point.", "背景になる事実の前に 「even though」 を置き、そのあとに意外な要点を伝えます。"),
         ),
         prompt=("Describe one real option with a good point and a limitation, then ask mine.", "実際の選択肢についてよい点と問題点を話してから、私の意見も聞いてください。"),
     ),
@@ -275,8 +275,8 @@ LESSONS = {
         ),
         omit_choice=(2,),
         rules=(
-            ("Use the present form after if, then put will in the result clause.", "if のあとは現在形にし、結果の節に will を置きます。"),
-            ("Keep will in the question, but still use the present form after if.", "質問には will を残しますが、if のあとはやはり現在形にします。"),
+            ("Use the present form after if, then put will in the result clause.", "if のあとは現在形にし、結果の節に 「will」 を置きます。"),
+            ("Keep will in the question, but still use the present form after if.", "質問には 「will」 を残しますが、if のあとはやはり現在形にします。"),
         ),
         prompt=("Give a real plan if you have one; otherwise say you have not decided yet, then ask about mine.", "実際の予定があれば話し、まだ決めていなければそう伝えてから私の予定を聞きましょう。"),
     ),
@@ -299,8 +299,8 @@ LESSONS = {
             ("{t}Unless{/t} the soil is wet, {t}I'll{/t} water the plants.", "土が湿っていない{t}かぎり{/t}、{t}植物に水をやります{/t}。", "Unless|the soil is wet,|I'll|water the plants."),
         ),
         rules=(
-            ("Use the present form after when even though the main action is in the future.", "未来の話でも、when のあとは現在形を使います。"),
-            ("Unless means if not; use a positive present form after it.", "unless は if not の意味で、そのあとは肯定の現在形を使います。"),
+            ("Use the present form after when even though the main action is in the future.", "未来の話でも、「when」 のあとは現在形を使います。"),
+            ("Unless means if not; use a positive present form after it.", "「unless」 は 「if not」 の意味で、そのあとは肯定の現在形を使います。"),
         ),
         prompt=("Use a real contact plan if you have one; otherwise say you have none, then ask about mine.", "実際の連絡予定があれば使い、なければ予定がないと伝えてから私の予定を聞きましょう。"),
     ),
@@ -324,7 +324,7 @@ LESSONS = {
         ),
         rules=(
             ("Use to plus the plain verb to answer why you went somewhere.", "出かけた目的を答えるときは、to のあとに動詞の原形を置きます。"),
-            ("Keep the best way to and is to as the two anchors around the goal and method.", "目的と方法をはさむ二つの軸として、the best way to と is to を保ちます。"),
+            ("Keep the best way to and is to as the two anchors around the goal and method.", "目的と方法をはさむ二つの軸として、「the best way to」 と 「is to」 を保ちます。"),
         ),
         prompt=("If you went somewhere for a reason, say why; otherwise say you did not, then ask me for one best method.", "目的があって出かけたなら理由を話し、なければ出かけていないと伝えてから、一番よい方法を私に聞きましょう。"),
     ),
@@ -507,7 +507,7 @@ SPECS = {
     ),
     54: semantic_spec(
         (
-            ("Use because after a result when you want to add its reason.", "結果を話したあと、その理由を加えるときに because を使います。"),
+            ("Use because after a result when you want to add its reason.", "結果を話したあと、その理由を加えるときに 「because」 を使います。"),
             ("Use so after a reason when you want to add its result.", "理由を話したあと、その結果を加えるときに so を使います。"),
         ),
         (
@@ -697,13 +697,13 @@ VOCAB = {
         new="bill|請求書",
         recycled="",
         assumed="email|メール; report|レポート; table|テーブル; task|作業",
-        receptive="almost done|もうすぐ終わる; send|送る; finish|終える; launch|公開; just now|たった今; That's a relief.|ほっとしました。; Great. Let's go.|よかった。行きましょう。",
+        receptive="almost done|もうすぐ終わる; send|送る; finish|終える; launch|公開; just now|たった今; That's a relief.|ほっとしました。; Great. Let\'s go.|よかった。行きましょう。",
     ),
     50: dict(
         new="last summer|去年の夏; two months ago|2か月前",
         recycled="Canada|カナダ|CORE-2; café|カフェ|CORE-7",
         assumed="Kyoto|京都; museum|美術館; last year|去年; Friday|金曜日",
-        receptive="exhibit|展示; It's been a while.|久しぶりです。; back in 2022|振り返ると2022年に; Sure. I'll tell you about it.|もちろん。話しますね。; Let's go this weekend.|今週末に行きましょう。",
+        receptive="exhibit|展示; It's been a while.|久しぶりです。; back in 2022|振り返ると2022年に; Sure. I'll tell you about it.|もちろん。話しますね。; Let\'s go this weekend.|今週末に行きましょう。",
     ),
     51: dict(
         new="neighborhood|地域",
@@ -859,14 +859,14 @@ DIALOGUES = {
     ),
     50: dict(
         model=("Friend", 0, 0, ("You went to Kyoto last year, right? I'm planning a trip there.", "去年京都に行きましたよね？ 私も旅行を計画しています。"), ("Not yet. When did you go?", "まだありません。いつ行きましたか？"), ("I'd love to hear what you liked.", "気に入ったものをぜひ聞きたいです。"), ("Sure. I'll tell you about it.", "もちろん。話しますね。")),
-        wild=("Neighbor", 3, 2, ("You said you visited the new museum exhibit on Friday.", "金曜日に美術館の新しい展示を見たと言っていましたね。"), ("Not yet. When did you go?", "まだありません。いつ行きましたか？"), ("Is the exhibit still open?", "その展示はまだ開いていますか？"), ("Yes. Let's go this weekend.", "はい。今週末に行きましょう。")),
+        wild=("Neighbor", 3, 2, ("You said you visited the new museum exhibit on Friday.", "金曜日に美術館の新しい展示を見たと言っていましたね。"), ("Not yet. When did you go?", "まだありません。いつ行きましたか？"), ("Is the exhibit still open?", "その展示はまだ開いていますか？"), ("Yes. Let\'s go this weekend.", "はい。今週末に行きましょう。")),
     ),
     51: dict(
         model=("Neighbor", 0, 0, ("I just moved to Tokyo.", "東京に引っ越してきたばかりです。"), ("Only a week. What about you?", "まだ1週間です。あなたは？"), ("Then you know the neighborhood well.", "では、この地域をよく知っていますね。"), ("I do. I really like it.", "はい。とても気に入っています。")),
         wild=("Volunteer", 3, 2, ("I help new volunteers settle into this neighborhood.", "新しいボランティアがこの地域に慣れるのを手伝っています。"), ("I've been here since I was a kid, on and off. What about you?", "子どものころから、時々離れながらここにいます。あなたは？"), ("The people here are very friendly.", "ここの人たちはとても親切です。"), ("I agree.", "同感です。")),
     ),
     52: dict(
-        model=("Coworker", 0, 0, ("You look tired. What have you been doing?", "疲れて見えます。何をしていたんですか？"), ("Since nine? You've been working nonstop.", "9時からですか？休みなく働いていたんですね。"), ("Let's stop before the next task.", "次の作業の前に止めましょう。"), ("I need a break.", "休憩が必要です。")),
+        model=("Coworker", 0, 0, ("You look tired. What have you been doing?", "疲れて見えます。何をしていたんですか？"), ("Since nine? You've been working nonstop.", "9時からですか？休みなく働いていたんですね。"), ("Let\'s stop before the next task.", "次の作業の前に止めましょう。"), ("I need a break.", "休憩が必要です。")),
         wild=("Volunteer", 2, 2, ("The community hall looks much better.", "公民館がずっときれいになりました。"), ("Since eight? You've been cleaning nonstop.", "8時からですか？休みなく掃除していたんですね。"), ("We're done for today.", "今日は終わりです。"), ("I need a break.", "休憩が必要です。")),
     ),
     53: dict(
@@ -1061,7 +1061,7 @@ for _number in range(48, 60):
     SPECS[_number]["writes"] = REVIEWED_WRITES_48_59[_number]
     _question, _question_ja, _ask_back, _ask_back_ja = REVIEWED_LIVE_48_59[_number]
     LESSONS[_number]["prompt"] = (
-        "Let's talk about this topic. Answer my question, then ask me too.",
+        "Let\'s talk about this topic. Answer my question, then ask me too.",
         "この話題について話しましょう。私の質問に答えて、そのあと私にも聞いてください。",
     )
     LIVE_SCENES[_number] = (
@@ -1287,7 +1287,7 @@ def translate_page(number, part, pattern):
         f"p{part}-translate",
         "Say it in English",
         "英語にしよう",
-        '<p class="section-subtitle"><span class="ko">Read the Japanese, then say it in English.</span>'
+        '<p class="section-subtitle"><span class="ko">Let\'s read the Japanese, then say it in English.</span>'
         '<span class="ja">日本語を見て、英語で言ってみましょう。</span></p>'
         '<div class="tutor-note">Type the learner\'s complete English sentence exactly as they say it.</div>'
         + "".join(blocks),

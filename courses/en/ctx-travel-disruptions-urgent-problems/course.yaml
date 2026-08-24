@@ -31,6 +31,8 @@ spec:
     en: Rebook a missed connection, report lost baggage precisely, challenge a charge, and get medical help.
     ja: 乗り継ぎ失敗の取り直し、荷物の紛失申告、身に覚えのない請求への異議、医療の手配までこなす。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

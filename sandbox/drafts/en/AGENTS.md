@@ -1,14 +1,20 @@
 # Working in `english/`
 
-**Read [`../../../shared/ux-philosophy.md`](../../../shared/ux-philosophy.md) before touching anything in this
-folder — every time, including small edits.** It is the shared contract for every lesson page in
-this repo, not a Korean-only document: one activity per page, instant clarity, minimal everything,
-one blue tutor-script box, one boxed component that *fills* the page, receptive → productive.
-Substitute "English" for "Korean" as the target language and almost all of it applies unchanged.
-The places where it does **not** are listed under *English deltas* below — read those too.
+**Read [`../../../shared/ux-philosophy.md`](../../../shared/ux-philosophy.md) and
+[`../../../shared/deltas-en.md`](../../../shared/deltas-en.md) before touching anything in this
+folder — every time, including small edits.** The first is the language-neutral contract for
+every lesson page in this repo: one activity per page, instant clarity, minimal everything, one
+blue tutor-script box, one boxed component that *fills* the page, receptive → productive. The
+second is the complete list of places where English differs, and it is the only place those
+differences are recorded — this file no longer carries a copy.
 
 Do not design a page, add a component, or write copy here until you have read both. If a change
 you are about to make conflicts with either, say so and ask — don't quietly deviate.
+
+**Where a new rule goes.** If it would be just as true of Korean, it belongs in
+`ux-philosophy.md`, not here and not in `deltas-en.md`. The two curricula spent most of 2026-08
+re-deriving each other's rules a day apart because English had no way to write a shared rule
+down; putting a general rule in a delta file is how that starts again.
 
 **This folder is pre-production, not empty.** It has four TOCs (315 planned items), approved Core
 and Freetalking canonical decks, three production blueprints, strict parsers, generated briefs and
@@ -24,23 +30,14 @@ Pronunciation remains planning-only.
 ## Audience
 
 **Japanese speakers learning English.** Same learner as the Korean curriculum, different target
-language.
+language. The language rules that follow from that — support text is Japanese, tutor notes are
+English and carry no language lock, no Korean in a learner-facing deck — are in
+[`../../../shared/deltas-en.md`](../../../shared/deltas-en.md). What stays here is what is true
+of *this folder* rather than of the language.
 
-- **All learner-facing support text is Japanese** — glosses, hints, instructions, answer-box labels, the
-  translated half of the tutor's script. English is reserved for the target language itself.
-  No Korean anywhere in a learner-facing English deck.
 - **Every English deck declares `<meta name="podo:target-language" content="en">`.** The shared
   runtime uses that explicit signal for generated tutor controls. `<html lang="ja">` correctly
   describes the learner-support language and must not be repurposed as the teaching-language flag.
-- **Tutor notes are written in English here.** They are operating instructions for the
-  English-speaking tutor, not learner support. Keep them behind the tutor-only badge and the
-  teaching-mode switch, because an English learner can also read them. Follow-up prompts, correction
-  controls, and mode guidance are tutor-facing too and therefore stay in English. Do not write
-  answers into a note that the page already reveals.
-- **An English-speaking tutor never has to interpret Japanese to run an activity.** Japanese remains
-  the learner's support language, but a receptive meaning choice also exposes a short English sense
-  label, and any non-obvious read order is stated in an English tutor-only note. Japanese-only
-  alternatives may support the learner; they may not become the tutor's hidden answer key.
 - **Freetalking question-page notes are follow-ups, not coaching.** Put only 2–3 concise follow-up
   questions in the private band. Each one must make a different conversational move—for example,
   concretize, explain a cause, add another perspective, explore a consequence or invite hindsight.
@@ -51,38 +48,37 @@ language.
   non-question page may carry one short operational note only when the tutor cannot infer an
   essential contract from the page—for example, skipping the pre-study article rather than reading
   it in class.
+- **Every Freetalking prompt must pass the one-hearing, three-second test.** This applies to all
+  eight printed prompts and every private follow-up, not only the opening. After hearing the line
+  once, the learner should understand it without mentally rewriting it and should be able to begin
+  a real answer in about three seconds. Familiar vocabulary is not enough: reject abstract
+  packaging (`What risk creates the boundary?`), vague referents, hidden scenarios, meta-questions
+  about how to explain something, unrestricted searches for a memory or example, and choices whose
+  categories overlap. When recall may fail, name two or three concrete footholds in the question or
+  its rescue follow-up. Prefer direct verbs and concrete nouns (`Why wouldn't you trust AI with
+  that?`). Full may invite a deeper answer, but it
+  must not take longer to parse. Proofreading must include saying one plausible first answer aloud;
+  grammaticality, word counts and structural checks do not prove conversational immediacy. Each
+  follow-up set also needs a concrete route after `I don't know`, `none` or `never`; that rescue
+  question must pass the same three-second test.
 
-### **No katakana readings. Ever. At any level.**
+### No katakana readings. Ever. At any level.
 
-This is the one rule that *inverts* rather than copies its Korean counterpart, and it is the
-easiest mistake for an agent that has just read `korean/AGENTS.md` to make.
+The full rule and the reasoning behind it are in
+[`../../../shared/deltas-en.md`](../../../shared/deltas-en.md) § *No katakana readings*. It is
+kept there, once, because it is the one rule that **inverts** rather than copies its Korean
+counterpart, and an agent that has just read `deltas-kr.md` will otherwise reach for `.yomi` out
+of habit. Two copies of an inverted rule is how one of them ends up stale.
 
-Korean decks put a kana `.yomi` under the hangul through 초중급 because hangul is an unfamiliar
-script and a beginner genuinely cannot decode it. **English has no such problem** — a Japanese
-learner reads the Latin alphabet on day one, so the crutch scaffolds nothing.
-
-Worse, it would actively teach the error. Writing `マクドナルド` over *McDonald's* does not support
-the word; it installs mora-timed katakana English, which is the single most damaging Japanese-L1
-pronunciation habit in the language and the thing a speaking course exists to undo. This is the
-same reasoning that makes `1-hangul` carry no `.yomi` at all — printing the answer over the thing
-being learned cancels the learning — except that here it applies to **every English deck at every
-level**, not to one track.
-
-So:
-
-- English decks **do not load `yomi.js`** and carry no `.yomi`.
-- `<meta name="podo:level">` still declares the deck's level for other purposes; it does not gate a
-  reading, because there is no reading to gate.
-- Kana is fine wherever it is *not* pronouncing English: a Japanese gloss, a hint chip
-  (`JP:EN` vocabulary), a tutor note, a page title's parenthetical.
-- If a model line ever genuinely needs a pronunciation scaffold, it must be IPA or a stress/rhythm
-  mark, and it needs its own decision first (`BUILD-PLAN.md` → D3b). Do not reach for kana.
+Short form: English decks do not load `yomi.js` and carry no `.yomi`, at any level. Kana is fine
+wherever it is *not* pronouncing English — a Japanese gloss, a `JP:EN` hint chip, a tutor note, a
+title's parenthetical.
 
 ---
 
 ## Also true of this folder
 
-- **Shared design system:** `../runtime/css/lesson-card.css`. White cards on a 1px grey
+- **Shared design system:** `../../../shared/css/lesson-card.css`. White cards on a 1px grey
   outline; the palette lives in `:root` there — **use the tokens, never the hex**. Reuse the
   existing component vocabulary before inventing a new one — consistency over novelty.
 
@@ -99,7 +95,7 @@ So:
   | Target | Where | From a lesson deck |
   | --- | --- | --- |
   | the runtime | repo root, shared | seven `../` |
-  | `trial/assets/` | still inside `korean/` — **did not move** | six `../` |
+  | `trial/assets/` | still inside `../kr/` — **did not move** | six `../` |
 - **Every colour means one thing.** `green-500`/`green-100` = state (chosen, correct, active).
   `blue-100` = the tutor's spoken script. `blue-200` = the tutor-only band fused under it.
   `lime` = brand chrome only, never state. `gray-200` = ordinary outlines. Dashed grey = "write
@@ -195,18 +191,15 @@ canonical shell.
 
 ## English deltas from `ux-philosophy.md`
 
-Everything in that file holds except these. Each is a consequence of the target language changing,
-not a matter of taste.
+They now live in **[`../../../shared/deltas-en.md`](../../../shared/deltas-en.md)**, beside the
+contract they qualify and beside their Korean mirror
+[`deltas-kr.md`](../../../shared/deltas-kr.md). Keeping the table here made an English rule
+structurally unable to become a shared one: there was no file it could move *to*.
 
-| `ux-philosophy.md` says | For English |
-| --- | --- |
-| Korean-first title, Japanese gloss in parentheses | **English-first** title, Japanese gloss in parentheses. Same shape. |
-| Tutor notes in Korean; the language locks the answers | Tutor notes and tutor-only controls are in **English**. The language lock is gone — rely on the badge and switch, and never restate a revealed answer. |
-| A `.yomi` reading through 초중급; the よみがな switch | **None, at any level.** See the audience section. English decks do not load `yomi.js`. |
-| "Romanize the parts" — Latin letters as phonetic labels | Not applicable; the target language *is* Latin letters. If a page needs to show a sound apart from its spelling, that is IPA and it needs a decision first. |
-| Decoding arc: Listen and pick → Read aloud → Build from the parts | No decoding track exists yet (`BUILD-PLAN.md` → D6/T5.4). The sentence arc below is the only one in use. |
-| Sentence arc: Read → Choose → Reorder → Fill → Translate → Write | Unchanged, and it is the spine of every English lesson. |
-| Cream/pink seat colours = consonant/vowel | Hangul-specific. Those tokens are unused in English decks; do not repurpose them for something else. |
+Read that file. In short, and not a substitute for reading it: English-first titles, tutor notes
+in English with no language lock on the answers, **no katakana readings at any level**, no
+decoding track, `.ending` as the only inline accent, mixed reorder chip counts as a hard error,
+and `Pre-A1` as the band exempt from the teaching-set variation rule.
 
 ---
 
@@ -224,19 +217,20 @@ not a matter of taste.
 - **`shared/`** — `lesson-template.md`, the two-pattern lesson spec. Core and Contextual translate
   that hierarchy into page arcs; Freetalking deliberately uses a correction loop instead.
 - **`BUILD-PLAN.md`** — the ordered gap list and its decisions. Read it before proposing work.
-- **Archive — deliberately not here.** Retired drafts live in `_archive/` at the *repo* root. They
-  are **not part of the read path**: never cite one as precedent, never copy markup out of one.
-  If a grep turns up an `_archive/` hit, the live answer is elsewhere.
+- **Archive — deliberately not here.** Retired drafts live in `sandbox/archive/` at the *repo*
+  root. They are **not part of the read path**: never cite one as precedent, never copy markup
+  out of one. If a grep turns up a `sandbox/archive/` hit, the live answer is elsewhere.
 
 ## Getting a lesson to production
 
-**Lesson deployment is not yet possible, and nothing here should pretend otherwise.** English has
-approved course codes and `classLevel` mapping plus generated disabled `course.yaml` plans, but
-prestudy remains deferred, so the generator must not create `lesson.yaml` or represent a lesson as
-deployable (`BUILD-PLAN.md` → D4–D5 and Phase 7).
+**English is live.** As of 2026-08-21 there are 47 enabled courses under `courses/en/` carrying
+425 promoted lessons, and a merge to `main` changes what an English learner sees in class. This
+paragraph used to say deployment was not yet possible and that the generator must not create
+`lesson.yaml`; both were true when written and neither is true now. Treat an English change with
+the same care as a Korean one.
 
 Two constraints are already fixed and worth knowing before anyone designs around them, both from
-`../korean/AGENTS.md`:
+`../kr/AGENTS.md`:
 
 - **Stay `curriculumType: BASIC`.** It is a supported product line recognized by `podo-app`,
   `podo-backend` and `grape`. Do not create a version-suffixed variant.

@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-small-things-accessible/lessons/36-a-habit-you-only-have-at-home/lesson.html`
-- SHA-256: `bd01488fd0400cd78a5add127e9f880daa9c3b8a87396cdb213902cfff3abd40`
+- SHA-256: `168dbd09f0a2c432429a8ea6d7e05bf2e8ce393a6d9f4221422332fa262866fc`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “What's something people often do at home but hide in public?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Why does home make it feel normal?” rather than asking every follow-up.
-- Visible target or prompt: What's something people often do at home but hide in public? 家ではよくするけれど、人前では見せないことは何ですか？
-- Learning target: Explore the distinct “A home-only habit (家だけの習慣)” angle of “A habit you only have at home” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Why does home make it feel normal?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Why does home make it feel normal?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What's something people often do at home but hide in public?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which example seems most harmless?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What's something people often do at home but hide in public?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's something people often do at home but hide in public?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's something people often do at home but hide in public?” / “家ではよくするけれど、人前では見せないことは何ですか？” Tutor follow-ups: “Why does home make it feel normal?” and “Which feels more private: talking to yourself or eating straight from the pan?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “家ではよくするけれど、人前では見せないことは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's something people often do at home but hide in public?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “Choose one home-only habit and describe a typical moment.” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What would another person notice first?” rather than asking every follow-up.
-- Visible target or prompt: Choose one home-only habit and describe a typical moment. 家でだけする習慣を一つ選び、よくある場面を説明してください。
-- Learning target: Explore the distinct “One example (一つの例)” angle of “A habit you only have at home” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What would another person notice first?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What would another person notice first?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Choose one home-only habit and describe a typical moment.” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Why does the habit fit at home?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Choose one home-only habit and describe a typical moment.” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Choose one home-only habit and describe a typical moment.”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Choose one home-only habit and describe a typical moment.” / “家でだけする習慣を一つ選び、よくある場面を説明してください。” Tutor follow-ups: “What would another person notice first?” and “Which seems most familiar: talking to yourself, eating from the pan, or wearing old clothes?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “家でだけする習慣を一つ選び、よくある場面を説明してください。” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Choose one home-only habit and describe a typical moment."]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “How can a home-only habit begin?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What need might it meet?” rather than asking every follow-up.
-- Visible target or prompt: How can a home-only habit begin? 家でだけする習慣は、どのように始まるのでしょうか？
-- Learning target: Explore the distinct “How it begins (始まり方)” angle of “A habit you only have at home” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What need might it meet?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What need might it meet?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How can a home-only habit begin?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What could make it last for years?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “How can a home-only habit begin?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How can a home-only habit begin?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How can a home-only habit begin?” / “家でだけする習慣は、どのように始まるのでしょうか？” Tutor follow-ups: “What need might it meet?” and “What could make it last for years?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “家でだけする習慣は、どのように始まるのでしょうか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can a home-only habit begin?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “How might someone react if they saw the habit?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What could make the reaction kind instead of judgmental?” rather than asking every follow-up.
-- Visible target or prompt: How might someone react if they saw the habit? その習慣を見た人は、どのように反応しそうですか？
-- Learning target: Explore the distinct “Someone sees it (見られたとき)” angle of “A habit you only have at home” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What could make the reaction kind instead of judgmental?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What could make the reaction kind instead of judgmental?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How might someone react if they saw the habit?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What would be worth explaining?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How might someone react if they saw the habit?"]}`
+- Learner action: Answer the standalone question “How might a visitor react to an unusual home habit?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How might a visitor react to an unusual home habit?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How might a visitor react to an unusual home habit?” / “家での変わった習慣を見たら、訪問者はどう反応しそうですか？” Tutor follow-ups: “What could make the reaction kind instead of judgmental?” and “What would be worth explaining?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “家での変わった習慣を見たら、訪問者はどう反応しそうですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How might a visitor react to an unusual home habit?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “Why do people living together develop unusual routines?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What problem might a routine solve?” rather than asking every follow-up.
-- Visible target or prompt: Why do people living together develop unusual routines? 一緒に暮らす人たちは、なぜ独特の習慣を作るのでしょうか？
-- Learning target: Explore the distinct “Shared routines (一緒に暮らす人の習慣)” angle of “A habit you only have at home” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What problem might a routine solve?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What problem might a routine solve?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why do people living together develop unusual routines?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How can it become invisible to the people doing it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Why do people living together develop unusual routines?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why do people living together develop unusual routines?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why do people living together develop unusual routines?” / “一緒に暮らす人たちは、なぜ独特の習慣を作るのでしょうか？” Tutor follow-ups: “What problem might a routine solve?” and “How can it become invisible to the people doing it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一緒に暮らす人たちは、なぜ独特の習慣を作るのでしょうか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why do people living together develop unusual routines?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “What's a household habit that could seem unusual somewhere else?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What context makes it understandable?” rather than asking every follow-up.
-- Visible target or prompt: What's a household habit that could seem unusual somewhere else? 別の家庭では変わって見えそうな、家の習慣は何ですか？
-- Learning target: Explore the distinct “A household surprise (家庭の意外な習慣)” angle of “A habit you only have at home” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What context makes it understandable?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What context makes it understandable?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What's a household habit that could seem unusual somewhere else?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What might surprise a visitor?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What's a household habit that could seem unusual somewhere else?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's a household habit that could seem unusual somewhere else?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's a household habit that could seem unusual somewhere else?” / “別の家庭では変わって見えそうな、家の習慣は何ですか？” Tutor follow-ups: “What situation would make it understandable?” and “Which differs more across homes: eating, cleaning, or sleeping habits?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “別の家庭では変わって見えそうな、家の習慣は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's a household habit that could seem unusual somewhere else?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “Which home-only habit could disappear after a change in routine?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What change could end it?” rather than asking every follow-up.
-- Visible target or prompt: Which home-only habit could disappear after a change in routine? 生活の流れが変わると、どのような家だけの習慣がなくなりそうですか？
-- Learning target: Explore the distinct “A changing routine (変わる習慣)” angle of “A habit you only have at home” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What change could end it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What change could end it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which home-only habit could disappear after a change in routine?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Why might another habit survive?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which home-only habit could disappear after a change in routine?"]}`
+- Learner action: Answer the standalone question “What home habit might disappear if someone moved?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What home habit might disappear if someone moved?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What home habit might disappear if someone moved?” / “引っ越したら、どんな家での習慣がなくなりそうですか？” Tutor follow-ups: “Would living with someone new change it?” and “Which changes fastest after a move: eating, cleaning, or sleeping habits?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “引っ越したら、どんな家での習慣がなくなりそうですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What home habit might disappear if someone moved?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “When is it reasonable to keep a harmless private habit to yourself?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What makes privacy reasonable?” rather than asking every follow-up.
-- Visible target or prompt: When is it reasonable to keep a harmless private habit to yourself? 害のない私的な習慣を人に見せないほうがよいのは、どのようなときですか？
-- Learning target: Explore the distinct “Keep it private (私的なままにする)” angle of “A habit you only have at home” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What makes privacy reasonable?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What makes privacy reasonable?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; the two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “When is it reasonable to keep a harmless private habit to yourself?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When does a private habit become someone else's concern?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, two tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “When is it reasonable to keep a harmless private habit to yourself?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When is it reasonable to keep a harmless private habit to yourself?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When is it reasonable to keep a harmless private habit to yourself?” / “害のない私的な習慣を人に見せないほうがよいのは、どのようなときですか？” Tutor follow-ups: “Would you tell a visitor about the habit?” and “When could the habit affect someone else?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “害のない私的な習慣を人に見せないほうがよいのは、どのようなときですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When is it reasonable to keep a harmless private habit to yourself?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Main prompt, Japanese support, and every follow-up job were reviewed semantically in source; root visual inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

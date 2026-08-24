@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-work-and-money-accessible/lessons/72-someone-you-learned-a-lot-from/lesson.html`
-- SHA-256: `622c032c8b9528b0416eff86f18e1c5a02dcc3d6a51e572cb322a253e1183566`
+- SHA-256: `7001fc110b6ecb36bd499b2d2a585776e274b3b40fe647ddee6c48b771128a7e`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “What makes a manager, teacher, or coach worth learning from?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What was the learner trying to improve or understand?” rather than asking every follow-up.
-- Visible target or prompt: What makes a manager, teacher, or coach worth learning from? / マネージャー、先生、コーチから学ぶ価値が生まれるのは、どんなときですか？
-- Learning target: Explore the distinct “A person to learn from (学んだ人)” angle of “Someone you learned a lot from” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What was the learner trying to improve or understand?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What was the learner trying to improve or understand?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What makes a manager, teacher, or coach worth learning from?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “You need not give a name; what role did the person or example play?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What makes a manager, teacher, or coach worth learning from?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What makes a manager, teacher, or coach worth learning from?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What makes a manager, teacher, or coach worth learning from?” / “マネージャー、先生、コーチから学ぶ価値が生まれるのは、どんなときですか？” Tutor follow-ups: “What would you want to learn from them?” and “Would they explain, show, or give feedback?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “マネージャー、先生、コーチから学ぶ価値が生まれるのは、どんなときですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes a manager, teacher, or coach worth learning from?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “What actions make guidance useful?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Was it explanation, practice, feedback, or trust?” rather than asking every follow-up.
-- Visible target or prompt: What actions make guidance useful? / どんな行動が、指導を役立つものにしますか？
-- Learning target: Explore the distinct “What they did (行動)” angle of “Someone you learned a lot from” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Was it explanation, practice, feedback, or trust?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Was it explanation, practice, feedback, or trust?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What actions make guidance useful?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which moment shows it clearly?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What actions make guidance useful?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What actions make guidance useful?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What actions make guidance useful?” / “どんな行動が、指導を役立つものにしますか？” Tutor follow-ups: “Did they explain, show, or give practice?” and “What moment would show it clearly?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな行動が、指導を役立つものにしますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What actions make guidance useful?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “How should a good guide respond when something goes wrong?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What made the response useful or unhelpful?” rather than asking every follow-up.
-- Visible target or prompt: How should a good guide respond when something goes wrong? / 何かがうまくいかないとき、よい指導者はどう応じるべきですか？
-- Learning target: Explore the distinct “How feedback worked (フィードバックの方法)” angle of “Someone you learned a lot from” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What made the response useful or unhelpful?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What made the response useful or unhelpful?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How should a good guide respond when something goes wrong?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Did it leave a clear next step?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How should a good guide respond when something goes wrong?"]}`
+- Learner action: Answer the standalone question “What should a good guide say after someone makes a mistake?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What should a good guide say after someone makes a mistake?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What should a good guide say after someone makes a mistake?” / “誰かが間違えたあと、よい指導者は何と言うべきですか？” Tutor follow-ups: “What made the response useful or unhelpful?” and “Did it leave a clear next step?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “誰かが間違えたあと、よい指導者は何と言うべきですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What should a good guide say after someone makes a mistake?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “What should a person with authority do to make questions feel safe?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which reaction should they avoid?” rather than asking every follow-up.
-- Visible target or prompt: What should a person with authority do to make questions feel safe? / 権限のある人は、質問しやすくするために何をすべきですか？
-- Learning target: Explore the distinct “Respect and power (尊重と立場)” angle of “Someone you learned a lot from” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which reaction should they avoid?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which reaction should they avoid?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What should a person with authority do to make questions feel safe?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How can they show that uncertainty is normal?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What should a person with authority do to make questions feel safe?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What should a person with authority do to make questions feel safe?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What should a person with authority do to make questions feel safe?” / “権限のある人は、質問しやすくするために何をすべきですか？” Tutor follow-ups: “What reaction should they avoid?” and “How should they react when someone says, ‘I don't know’?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “権限のある人は、質問しやすくするために何をすべきですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What should a person with authority do to make questions feel safe?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “Which ideas from a good guide tend to last?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Where is it useful now?” rather than asking every follow-up.
-- Visible target or prompt: Which ideas from a good guide tend to last? / よい指導者から得た考えの中で、長く残りやすいのは何ですか？
-- Learning target: Explore the distinct “What remained (残った学び)” angle of “Someone you learned a lot from” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Where is it useful now?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Where is it useful now?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which ideas from a good guide tend to last?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Has it needed any adjustment?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Which ideas from a good guide tend to last?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which ideas from a good guide tend to last?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which ideas from a good guide tend to last?” / “よい指導者から得た考えの中で、長く残りやすいのは何ですか？” Tutor follow-ups: “Where could the lesson help now?” and “Would it need to change in a new situation?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “よい指導者から得た考えの中で、長く残りやすいのは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which ideas from a good guide tend to last?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “Should someone always respond when advice helps them?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What can a response communicate?” rather than asking every follow-up.
-- Visible target or prompt: Should someone always respond when advice helps them? / 助言が役に立ったとき、必ず反応を返すべきですか？
-- Learning target: Explore the distinct “How the learner responded (学ぶ人の反応)” angle of “Someone you learned a lot from” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What can a response communicate?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What can a response communicate?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Should someone always respond when advice helps them?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When might silence still be an honest response?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Should someone always respond when advice helps them?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Should someone always respond when advice helps them?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Should someone always respond when advice helps them?” / “助言が役に立ったとき、必ず反応を返すべきですか？” Tutor follow-ups: “What can a response communicate?” and “When might silence still be an honest response?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “助言が役に立ったとき、必ず反応を返すべきですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Should someone always respond when advice helps them?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “How can a guide help someone need less help over time?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What can be handed over first?” rather than asking every follow-up.
-- Visible target or prompt: How can a guide help someone need less help over time? / 指導者は、学ぶ人が徐々に助けを必要としなくなるよう、どう支援できますか？
-- Learning target: Explore the distinct “Learning to decide (自分で判断する)” angle of “Someone you learned a lot from” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What can be handed over first?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What can be handed over first?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How can a guide help someone need less help over time?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What support should remain available?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “How can a guide help someone need less help over time?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How can a guide help someone need less help over time?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How can a guide help someone need less help over time?” / “指導者は、学ぶ人が徐々に助けを必要としなくなるよう、どう支援できますか？” Tutor follow-ups: “Which decision could the learner make first?” and “What help should still be available?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “指導者は、学ぶ人が徐々に助けを必要としなくなるよう、どう支援できますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can a guide help someone need less help over time?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “What is one quality you would want to show when guiding someone?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What action would show it?” rather than asking every follow-up.
-- Visible target or prompt: What is one quality you would want to show when guiding someone? / 自分が誰かを導くとき、示したい性質を一つ挙げるとしたら何ですか？
-- Learning target: Explore the distinct “The guide you would be (自分ならどう導くか)” angle of “Someone you learned a lot from” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What action would show it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What action would show it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What is one quality you would want to show when guiding someone?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How would you know it helped?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What is one quality you would want to show when guiding someone?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What is one quality you would want to show when guiding someone?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What is one quality you would want to show when guiding someone?” / “自分が誰かを導くとき、示したい性質を一つ挙げるとしたら何ですか？” Tutor follow-ups: “What action would show it?” and “How would you know it helped?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “自分が誰かを導くとき、示したい性質を一つ挙げるとしたら何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What is one quality you would want to show when guiding someone?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

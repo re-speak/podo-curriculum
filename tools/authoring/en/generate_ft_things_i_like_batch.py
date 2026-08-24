@@ -15,6 +15,7 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import generate_ft_me_lately_batch as base
+import ft_conversation_rewrites_2_33 as conversation_rewrites
 import new_lesson
 
 
@@ -223,7 +224,7 @@ TOPICS = {
             prompt("Pineapple on pizza", "パイナップルのピザ", "Pineapple on pizza — yes or no?", "パイナップルのピザは、ありですか、なしですか？", ["Would you eat one slice right now?", "Would your answer change if someone else ordered it?"]),
             prompt("What pineapple adds", "パイナップルの役割", "What do you think pineapple adds to a pizza?", "パイナップルはピザに何を加えると思いますか？", ["How might the sweetness work or clash?", "Would texture matter more than flavor?"]),
             prompt("Why your side", "その立場の理由", "What matters most in your answer: taste, texture, or the idea itself?", "答えを決めるうえで、味、食感、組み合わせのイメージのどれがいちばん大切ですか？", ["Which detail is hardest to accept?", "What detail might work better than expected?"]),
-            prompt("Your own combination", "自分の組み合わせ", "Invent an unusual food combination that might actually work.", "意外でも、実際には合いそうな食べ合わせを考えてください。", ["What would make the flavors work together?", "Who might enjoy it most?"]),
+            prompt("A surprising combination", "意外な組み合わせ", "Which sounds better to try: chocolate with chili, fries with ice cream, or something else?", "試すなら、チョコレートと唐辛子、フライドポテトとアイスクリーム、それとも別の組み合わせのどれがよさそうですか？", ["What might make the flavors work?", "Would you try one bite?"]),
             prompt("Hard to understand", "理解しにくい組み合わせ", "Which popular food pairing is hardest for you to understand?", "人気はあるけれど、自分にはいちばん理解しにくい食べ合わせは何ですか？", ["What exactly feels wrong about it?", "What could make a better version of it?"]),
             prompt("A changed mind", "変わるかもしれない好み", "What food combination could you imagine changing your mind about?", "どんな食べ合わせなら、考えが変わるかもしれませんか？", ["What would persuade you to try it again?", "Whose version would you trust?"]),
             prompt("A firm no", "絶対に無理", "What food combination would you refuse to try?", "どんな食べ合わせなら、試すのを断りますか？", ["Is the limit about one ingredient?", "Could any setting change your answer?"]),
@@ -411,7 +412,7 @@ TOPICS = {
             prompt("How old", "古さ", "How old is the object?", "その物はどのくらい古いですか？", ["How certain are you about its age?", "What else has changed since you got it?"]),
             prompt("How you got it", "手に入れた方法", "How did you get it?", "それをどうやって手に入れましたか？", ["Was it new at the time?", "Who chose it?"]),
             prompt("Why you kept it", "残した理由", "Why have you kept using it?", "なぜそれを使い続けていますか？", ["Which quality matters most?", "Has it ever needed repair?"]),
-            prompt("Keeper or thrower", "残す人？捨てる人？", "Are you generally a keeper or a thrower?", "普段、物を残すほうですか、捨てるほうですか？", ["What is easiest for you to discard?", "Which category is hardest?"]),
+            prompt("Keep or let go?", "残す？手放す？", "Do you usually keep things or get rid of them quickly?", "物を取っておくほうですか、それともすぐに手放すほうですか？", ["What is easiest to get rid of?", "Which kind is hardest?"]),
             prompt("Repair or replace", "修理か買い替えか", "When do you repair something instead of replacing it?", "どんなとき、買い替えずに修理しますか？", ["What makes a repair worth the effort?", "When is replacement the better choice?"]),
             prompt("Never get rid of", "手放さない物", "What will you never get rid of?", "絶対に手放さない物は何ですか？", ["Is its value practical or personal?", "Who might use it after you?"]),
         ],
@@ -437,7 +438,7 @@ TOPICS = {
             ("Good table manners protect both the relationship and a person's real limits.", "Good table manners make room for both the relationship and a person's genuine limits.", "よい食卓の礼儀は、人間関係も、その人の本当の限界も守ります。"),
         ],
         prompts=[
-            prompt("Eating to be polite", "礼儀のために食べるもの", "Is there something you eat to be polite?", "礼儀のために食べるものはありますか？", ["Which food comes closest?", "What would make it hard to refuse?"]),
+            prompt("Eating to be polite", "礼儀のために食べるもの", "When might someone eat a food just to be polite?", "礼儀のために、食べ物を食べることがあるのはどんなときですか？", ["Which situation comes to mind?", "What makes refusing difficult?"], full_followups=["Which situation creates the most pressure?", "When is it still reasonable to refuse?"]),
             prompt("An awkward table", "困る食卓", "In what situation might food you do not want end up on your plate?", "食べたくないものが皿にのるとしたら、どんな場面ですか？", ["Who would have served it?", "Why would refusing feel awkward?"]),
             prompt("The food", "その食べ物", "What food would you only eat out of politeness?", "礼儀のためだけなら食べるものは何ですか？", ["Which taste or texture would be difficult?", "Could you enjoy any part of it?"]),
             prompt("Where it happens", "食べる場面", "Where would you be most likely to have to eat it?", "それを食べる可能性がいちばん高いのは、どんな場面ですか？", ["How formal would the situation be?", "Would your response change somewhere else?"]),
@@ -540,6 +541,8 @@ ARTICLE_JA_OVERRIDES = {
         (33, 7): "思いやりのあるホストは、明らかに本心ではない褒め言葉や反応より、役立つ情報を好むことがあります。",
     },
 }
+
+conversation_rewrites.apply_to(TOPICS)
 
 
 ARTICLE_JA = {

@@ -1,7 +1,7 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-between-two-countries-full/lessons/01-this-surprised-me/lesson.html`
-- SHA-256: `41e64e396037b0830b964b3ca27f0c0d484e31a9b63ba37b7cef7eeaeaeb6b3a`
+- SHA-256: `86a7a61452b70c65b820fcbbba88356d51ddd11a1f97226cd347f243166d8f7a`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Answer the exact visible question with a real example or opinion. Exact focus: What's one thing about another country that caught you off guard—in a good or bad way?
-- Tutor action: React genuinely and use only the most interesting follow-up. Exact focus: What's one thing about another country that caught you off guard—in a good or bad way?
-- Visible target or prompt: What's one thing about another country that caught you off guard—in a good or bad way?
-- Learning target: Perform the exact target or conversation move in context: What's one thing about another country that caught you off guard—in a good or bad way?
-- Pedagogical value: The prompt opens one distinct, answerable angle for natural conversation. Reviewed focus: What's one thing about another country that caught you off guard—in a good or bad way?
-- Failure diagnoses: A duplicate, compound, defensive, or unanswerable prompt would fail the page. Checked page: warm-1.
-- Non-target support: Non-target language remains visible; declared support stage is not-applicable.
-- Article treatment: No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.
-- Choice/distractor quality: No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.
-- Component consistency: The approved warm-1 component carries one visible job with no competing activity.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's one thing about another country that caught you off guard—in a good or bad way?"]}`
+- Learner action: Answer the standalone question “What's one thing about another country that genuinely surprised you?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's one thing about another country that genuinely surprised you?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's one thing about another country that genuinely surprised you?” / “ほかの国について、本当に驚いたことを一つ挙げるとしたら何ですか？” Tutor follow-ups: “Did you notice it in person, online, or somewhere else?” and “Which kinds of cultural differences are easiest to notice?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “ほかの国について、本当に驚いたことを一つ挙げるとしたら何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's one thing about another country that genuinely surprised you?"]}`
 - Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer the exact visible question with a real example or opinion. Exact focus: What's a tiny everyday difference from another culture that you find oddly fascinating?
-- Tutor action: React genuinely and use only the most interesting follow-up. Exact focus: What's a tiny everyday difference from another culture that you find oddly fascinating?
-- Visible target or prompt: What's a tiny everyday difference from another culture that you find oddly fascinating?
-- Learning target: Perform the exact target or conversation move in context: What's a tiny everyday difference from another culture that you find oddly fascinating?
-- Pedagogical value: The prompt opens one distinct, answerable angle for natural conversation. Reviewed focus: What's a tiny everyday difference from another culture that you find oddly fascinating?
-- Failure diagnoses: A duplicate, compound, defensive, or unanswerable prompt would fail the page. Checked page: warm-2.
-- Non-target support: Non-target language remains visible; declared support stage is not-applicable.
-- Article treatment: No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.
-- Choice/distractor quality: No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.
-- Component consistency: The approved warm-2 component carries one visible job with no competing activity.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's a tiny everyday difference from another culture that you find oddly fascinating?"]}`
+- Learner action: Answer the standalone question “What's one small everyday difference between cultures that you find interesting?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's one small everyday difference between cultures that you find interesting?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's one small everyday difference between cultures that you find interesting?” / “文化による日常の小さな違いで、面白いと感じるものは何ですか？” Tutor follow-ups: “Why does it stand out to you?” and “Where do you notice cultural differences most: food, manners, or daily life?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “文化による日常の小さな違いで、面白いと感じるものは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's one small everyday difference between cultures that you find interesting?"]}`
 - Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer the exact visible question with a real example or opinion. Exact focus: Tell me what happened the first time you noticed that difference.
-- Tutor action: React genuinely and use only the most interesting follow-up. Exact focus: Tell me what happened the first time you noticed that difference.
-- Visible target or prompt: Tell me what happened the first time you noticed that difference.
-- Learning target: Perform the exact target or conversation move in context: Tell me what happened the first time you noticed that difference.
-- Pedagogical value: The prompt opens one distinct, answerable angle for natural conversation. Reviewed focus: Tell me what happened the first time you noticed that difference.
-- Failure diagnoses: A duplicate, compound, defensive, or unanswerable prompt would fail the page. Checked page: q1.
-- Non-target support: Non-target language remains visible; declared support stage is not-applicable.
-- Article treatment: No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.
-- Choice/distractor quality: No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.
-- Component consistency: The approved q1 component carries one visible job with no competing activity.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Tell me what happened the first time you noticed that difference."]}`
+- Learner action: Answer the standalone question “What might surprise someone visiting Japan for the first time?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What might surprise someone visiting Japan for the first time?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What might surprise someone visiting Japan for the first time?” / “初めて日本を訪れる人は、何に驚くかもしれませんか？” Tutor follow-ups: “Which situation would make it most noticeable?” and “When you enter an unfamiliar place, what do you usually notice first?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “初めて日本を訪れる人は、何に驚くかもしれませんか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What might surprise someone visiting Japan for the first time?"]}`
 - Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer the exact visible question with a real example or opinion. Exact focus: Why do you think you expected something different?
-- Tutor action: React genuinely and use only the most interesting follow-up. Exact focus: Why do you think you expected something different?
-- Visible target or prompt: Why do you think you expected something different?
-- Learning target: Perform the exact target or conversation move in context: Why do you think you expected something different?
-- Pedagogical value: The prompt opens one distinct, answerable angle for natural conversation. Reviewed focus: Why do you think you expected something different?
-- Failure diagnoses: A duplicate, compound, defensive, or unanswerable prompt would fail the page. Checked page: q2.
-- Non-target support: Non-target language remains visible; declared support stage is not-applicable.
-- Article treatment: No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.
-- Choice/distractor quality: No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.
-- Component consistency: The approved q2 component carries one visible job with no competing activity.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why do you think you expected something different?"]}`
+- Learner action: Answer the standalone question “Which country would you most like to visit to see what everyday life is really like?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which country would you most like to visit to see what everyday life is really like?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which country would you most like to visit to see what everyday life is really like?” / “実際の日常生活を見るために、最も訪れてみたい国はどこですか？” Tutor follow-ups: “Which part of ordinary life would you want to see?” and “Would you rather learn about a place through a local person, a documentary, or a book?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “実際の日常生活を見るために、最も訪れてみたい国はどこですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which country would you most like to visit to see what everyday life is really like?"]}`
 - Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer the exact visible question with a real example or opinion. Exact focus: What's the best explanation you've heard for that cultural difference?
-- Tutor action: React genuinely and use only the most interesting follow-up. Exact focus: What's the best explanation you've heard for that cultural difference?
-- Visible target or prompt: What's the best explanation you've heard for that cultural difference?
-- Learning target: Perform the exact target or conversation move in context: What's the best explanation you've heard for that cultural difference?
-- Pedagogical value: The prompt opens one distinct, answerable angle for natural conversation. Reviewed focus: What's the best explanation you've heard for that cultural difference?
-- Failure diagnoses: A duplicate, compound, defensive, or unanswerable prompt would fail the page. Checked page: q3.
-- Non-target support: Non-target language remains visible; declared support stage is not-applicable.
-- Article treatment: No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.
-- Choice/distractor quality: No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.
-- Component consistency: The approved q3 component carries one visible job with no competing activity.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's the best explanation you've heard for that cultural difference?"]}`
+- Learner action: Answer the standalone question “Which Japanese custom would be easiest for a visitor to misunderstand?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which Japanese custom would be easiest for a visitor to misunderstand?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which Japanese custom would be easiest for a visitor to misunderstand?” / “日本の習慣の中で、訪れた人が最も誤解しやすそうなものは何ですか？” Tutor follow-ups: “What might they assume?” and “Which is easier to explain: bowing or taking off your shoes?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “日本の習慣の中で、訪れた人が最も誤解しやすそうなものは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which Japanese custom would be easiest for a visitor to misunderstand?"]}`
 - Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer the exact visible question with a real example or opinion. Exact focus: What do visitors often misunderstand about Japan until they experience it?
-- Tutor action: React genuinely and use only the most interesting follow-up. Exact focus: What do visitors often misunderstand about Japan until they experience it?
-- Visible target or prompt: What do visitors often misunderstand about Japan until they experience it?
-- Learning target: Perform the exact target or conversation move in context: What do visitors often misunderstand about Japan until they experience it?
-- Pedagogical value: The prompt opens one distinct, answerable angle for natural conversation. Reviewed focus: What do visitors often misunderstand about Japan until they experience it?
-- Failure diagnoses: A duplicate, compound, defensive, or unanswerable prompt would fail the page. Checked page: q4.
-- Non-target support: Non-target language remains visible; declared support stage is not-applicable.
-- Article treatment: No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.
-- Choice/distractor quality: No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.
-- Component consistency: The approved q4 component carries one visible job with no competing activity.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What do visitors often misunderstand about Japan until they experience it?"]}`
+- Learner action: Answer the standalone question “Which custom from another culture would fit easily into your life?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which custom from another culture would fit easily into your life?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which custom from another culture would fit easily into your life?” / “ほかの文化の習慣で、自分の生活に無理なく取り入れられそうなものは何ですか？” Tutor follow-ups: “What would make it easy to keep doing?” and “Would you rather try another culture's food, celebration, or daily habit?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “ほかの文化の習慣で、自分の生活に無理なく取り入れられそうなものは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which custom from another culture would fit easily into your life?"]}`
 - Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer the exact visible question with a real example or opinion. Exact focus: Which cultural difference would be hardest for you to get used to?
-- Tutor action: React genuinely and use only the most interesting follow-up. Exact focus: Which cultural difference would be hardest for you to get used to?
-- Visible target or prompt: Which cultural difference would be hardest for you to get used to?
-- Learning target: Perform the exact target or conversation move in context: Which cultural difference would be hardest for you to get used to?
-- Pedagogical value: The prompt opens one distinct, answerable angle for natural conversation. Reviewed focus: Which cultural difference would be hardest for you to get used to?
-- Failure diagnoses: A duplicate, compound, defensive, or unanswerable prompt would fail the page. Checked page: q5.
-- Non-target support: Non-target language remains visible; declared support stage is not-applicable.
-- Article treatment: No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.
-- Choice/distractor quality: No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.
-- Component consistency: The approved q5 component carries one visible job with no competing activity.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which cultural difference would be hardest for you to get used to?"]}`
+- Learner action: Answer the standalone question “Which cultural difference would take you the longest to get used to?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which cultural difference would take you the longest to get used to?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which cultural difference would take you the longest to get used to?” / “あなたにとって、慣れるまでに最も時間がかかりそうな文化の違いは何ですか？” Tutor follow-ups: “Which part would challenge your normal routine?” and “Which adjustment is usually hardest: food, language, or daily routines?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “あなたにとって、慣れるまでに最も時間がかかりそうな文化の違いは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which cultural difference would take you the longest to get used to?"]}`
 - Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Answer the exact visible question with a real example or opinion. Exact focus: What's one habit from another culture you would happily bring into your own life?
-- Tutor action: React genuinely and use only the most interesting follow-up. Exact focus: What's one habit from another culture you would happily bring into your own life?
-- Visible target or prompt: What's one habit from another culture you would happily bring into your own life?
-- Learning target: Perform the exact target or conversation move in context: What's one habit from another culture you would happily bring into your own life?
-- Pedagogical value: The prompt opens one distinct, answerable angle for natural conversation. Reviewed focus: What's one habit from another culture you would happily bring into your own life?
-- Failure diagnoses: A duplicate, compound, defensive, or unanswerable prompt would fail the page. Checked page: q6.
-- Non-target support: Non-target language remains visible; declared support stage is not-applicable.
-- Article treatment: No accidental article test is introduced; required articles stay visible or belong to a supported lexical answer.
-- Choice/distractor quality: No fixed choice set is used; the page elicits comprehension, speech, roleplay, or open response.
-- Component consistency: The approved q6 component carries one visible job with no competing activity.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's one habit from another culture you would happily bring into your own life?"]}`
+- Learner action: Answer the standalone question “What part of your everyday life might surprise someone from another country?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What part of your everyday life might surprise someone from another country?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What part of your everyday life might surprise someone from another country?” / “あなたの日常生活のどんな部分が、ほかの国の人を驚かせるかもしれませんか？” Tutor follow-ups: “Which detail would be hardest for them to understand?” and “Which causes more confusion for visitors: food rules or social rules?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “あなたの日常生活のどんな部分が、ほかの国の人を驚かせるかもしれませんか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What part of your everyday life might surprise someone from another country?"]}`
 - Visual QA: 360px **pass**; 480px **pass**
 - Verdict: **pass**
-- Notes: Owner-approved pilot; root reread the current instruction, prompt or target, support, and response contract, then rendered this exact page at 360px and 480px with no overflow.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

@@ -44,12 +44,12 @@ TOC_RETRIEVAL = {
 TOC_RETRIEVAL_AUDIT_ONLY = True
 
 BRIEF_OPENINGS = {
-    101: "How long does a social-media break need to be before it changes anything?",
-    102: "Which part of human work is easiest for AI to misunderstand?",
-    103: "What does ‘enough money’ need to make possible?",
-    104: "Which life stage seems most attractive to freeze in time?",
-    105: "Which decision from history, fiction or everyday life could have been handled differently?",
-    106: "What difference between English and Japanese has become more noticeable since you started speaking English?",
+    101: "Would three days away from social media feel too short, too long, or about right?",
+    102: "What is one thing AI does badly when it tries to do human work?",
+    103: "When someone says, ‘I have enough money,’ what do you imagine they can afford?",
+    104: "If you could stay one age for ten years, which age would you choose?",
+    105: "Would you rather change a movie ending or a real historical decision?",
+    106: "What has speaking English made you notice about Japanese?",
 }
 
 
@@ -263,6 +263,453 @@ REVISED_PROMPTS = {
 for _number in TOPIC_NUMBERS:
     TOPICS[_number]["goal"] = REVISED_GOALS[_number]
     TOPICS[_number]["prompts"] = REVISED_PROMPTS[_number]
+
+
+def _conversation(a, ja, f=None, f_ja=None):
+    return (a, ja, a if f is None else f, ja if f_ja is None else f_ja)
+
+
+CONVERSATIONAL_MAIN_REVISIONS = {
+    101: (
+        _conversation("Would three days away from social media feel too short, too long, or about right?", "SNSから三日間離れるのは、短すぎますか、長すぎますか、それともちょうどよいですか？"),
+        _conversation("Which app or social-media feature would you miss first?", "どのアプリやSNSの機能が最初に恋しくなりますか？"),
+        _conversation("What would you do instead of checking social media?", "SNSを確認する代わりに、何をしますか？"),
+        _conversation("Which useful thing on social media is hardest to replace?", "SNSの役立つもののうち、最も代えにくいものは何ですか？"),
+        _conversation("What sign shows that scrolling is wasting your time?", "スクロールが時間を無駄にしていると分かるサインは何ですか？"),
+        _conversation("What's one healthy rule for using social media?", "SNSを使うための健全なルールを一つ挙げるとしたら何ですか？", "Which simple rule keeps social media useful without letting it take over?", "SNSに時間を奪われず、役立つものに保つ簡単なルールは何ですか？"),
+        _conversation("What social-media rule would you give a fourteen-year-old?", "十四歳の人に、どんなSNSのルールを伝えますか？"),
+        _conversation("If you could keep only one social-media feature, which would you choose?", "SNSの機能を一つだけ残せるなら、どれを選びますか？"),
+    ),
+    102: (
+        _conversation("What is one thing AI does badly when it tries to do human work?", "AIが人の仕事をしようとするとき、うまくできないことを一つ挙げるとしたら何ですか？"),
+        _conversation("What human situation is hardest for AI to read correctly?", "AIが正しく理解するのが最も難しい人間の状況は何ですか？"),
+        _conversation("What's a funny or worrying AI mistake you've seen or heard about?", "見たり聞いたりしたAIの面白い、または心配な間違いは何ですか？"),
+        _conversation("Which boring part of human work should AI help with?", "人の仕事の地味な部分で、AIに手伝ってほしいものは何ですか？"),
+        _conversation("Which AI mistake could seriously hurt someone?", "AIのどんな間違いが、人を深く傷つける可能性がありますか？"),
+        _conversation("Which decision should always have a person responsible for it?", "どんな決断には、必ず責任を持つ人が必要ですか？"),
+        _conversation("What human skill will matter more as AI improves?", "AIが進歩するほど、どんな人間の技能がより大切になりますか？"),
+        _conversation("What do people often expect AI to do better than it can?", "人はAIに、実際よりもうまくできると何を期待しがちですか？"),
+    ),
+    103: (
+        _conversation("When someone says, ‘I have enough money,’ what do you imagine they can afford?", "誰かが「十分なお金がある」と言うとき、何を無理なく払えると想像しますか？"),
+        _conversation("Which money worry would you remove first?", "お金の心配を一つなくせるなら、最初にどれをなくしますか？"),
+        _conversation("What's something important that more money can't fix?", "お金が増えても解決できない大切なことは何ですか？"),
+        _conversation("Why can the same income feel enough for one person but not another?", "同じ収入でも、一人には十分で、別の人には足りないと感じるのはなぜですか？"),
+        _conversation("When does extra money make the biggest difference?", "お金が増えることが最も大きな違いを生むのは、どんなときですか？"),
+        _conversation("What would you do with the mental space left by fewer money worries?", "お金の心配が減ってできた心の余裕を、何に使いますか？"),
+        _conversation("Would you rather have a fixed amount saved or reliable income every month?", "決まった額の貯金と、毎月の安定した収入のどちらがよいですか？", "Which creates a stronger feeling of security: savings or reliable monthly income?", "貯金と毎月の安定した収入のどちらが、より強い安心を生みますか？"),
+        _conversation("What kind of security matters most besides money?", "お金以外では、どんな安心が最も重要ですか？"),
+    ),
+    104: (
+        _conversation("If you could stay one age for ten years, which age would you choose?", "一つの年齢のまま十年間過ごせるなら、何歳を選びますか？"),
+        _conversation("Which age gives the best mix of energy and freedom?", "どの年齢が、元気さと自由の最もよい組み合わせを持っていますか？"),
+        _conversation("What's hard about the age many people call the best?", "多くの人が最高だと言う年齢にも、どんな大変さがありますか？"),
+        _conversation("What's one good thing about your age now?", "今の年齢のよいところを一つ挙げるとしたら何ですか？"),
+        _conversation("What future experience would you not want to miss by staying the same age?", "同じ年齢にとどまることで、どんな将来の経験を逃したくありませんか？"),
+        _conversation("How do health or money change which age seems best?", "健康やお金によって、どの年齢が最高に見えるかはどう変わりますか？"),
+        _conversation("Can the same age be best for two people with very different lives?", "生活が大きく違う二人にとって、同じ年齢が最高になることはありますか？"),
+        _conversation("What's underrated about getting older?", "年を重ねることの、もっと評価されるべき点は何ですか？"),
+    ),
+    105: (
+        _conversation("What is one decision you would change in a film, book, or real event?", "映画、本、現実の出来事で、変えたい決断を一つ挙げるとしたら何ですか？"),
+        _conversation("What's one choice that looked wrong but led to something good?", "間違って見えても、よいことにつながった選択は何ですか？"),
+        _conversation("How can we know whether another choice would really have been better?", "別の選択が本当によかったかを、どう判断できますか？"),
+        _conversation("Which matters more when judging a decision: what was known then or what happened later?", "決断を評価するとき、当時分かっていたことと、その後起きたことのどちらが大切ですか？"),
+        _conversation("What new problem can a better choice create?", "よりよい選択が、どんな新しい問題を生むことがありますか？"),
+        _conversation("Why can a bad decision make sense at the time?", "悪い決断でも、そのときには納得できることがあるのはなぜですか？"),
+        _conversation("When does looking back help with the next decision?", "振り返ることが、次の決断に役立つのはどんなときですか？"),
+        _conversation("What can 'no regrets' mean without saying every choice was right?", "すべての選択が正しかったと言わずに、「後悔はない」とはどんな意味になりますか？"),
+    ),
+    106: (
+        _conversation("What has speaking English made you notice about Japanese?", "英語を話すことで、日本語について何に気づきましたか？"),
+        _conversation("What English phrase is hard to say naturally in Japanese?", "日本語で自然に言うのが難しい英語の表現は何ですか？"),
+        _conversation("When do English speakers say something directly that Japanese speakers may leave unsaid?", "英語では直接言っても、日本語では言わないことがあるのはどんなときですか？"),
+        _conversation("Who can you talk to now because of English?", "英語のおかげで、今はどんな人と話せますか？"),
+        _conversation("Which part of speaking English still takes the most effort?", "英語を話すとき、今も最も努力が必要な部分は何ですか？"),
+        _conversation("What was easier or harder about speaking English than you expected?", "英語を話すことは、予想より簡単でしたか、それとも難しかったですか？"),
+        _conversation("Do you feel slightly different when you speak English?", "英語を話すとき、自分が少し違って感じますか？", "How can speaking another language bring out a different side of someone?", "別の言語を話すことで、人の違う一面が出るのはどうしてですか？"),
+        _conversation("What would you practise first if you started learning English again?", "もう一度英語学習を始めるなら、最初に何を練習しますか？"),
+    ),
+}
+
+for _number, _rows in CONVERSATIONAL_MAIN_REVISIONS.items():
+    if len(_rows) != 8:
+        raise ValueError(f"FT-{_number} must have eight conversational prompts")
+    for _item, (_a, _a_ja, _f, _f_ja) in zip(TOPICS[_number]["prompts"], _rows, strict=True):
+        _item.update(
+            accessible=_a,
+            accessible_ja=_a_ja,
+            full=_f,
+            full_ja=_f_ja,
+            full_followups=_item["accessible_followups"],
+            safety="standalone-conversation-pool",
+        )
+
+CONVERSATIONAL_FULL_DEEPENING = {
+    (101, 5): ("How can you tell when useful scrolling has turned into wasted time?", "役立つスクロールが時間の無駄に変わったと、どう見分けられますか？"),
+    (102, 2): ("Which human situation is easy for a person to read but hard for AI?", "人には分かりやすくても、AIには理解しにくい人間の状況は何ですか？"),
+    (102, 6): ("Which decisions need a person who can explain the result and take responsibility for it?", "結果を説明し、責任を持つ人が必要なのは、どんな決断ですか？"),
+    (103, 4): ("What can make the same income feel comfortable for one person and stressful for another?", "同じ収入でも、一人には余裕があり、別の人には苦しく感じられるのはなぜですか？"),
+    (104, 3): ("What hidden difficulty comes with an age people often call the best?", "多くの人が最高だと言う年齢には、どんな見えにくい大変さがありますか？"),
+    (104, 7): ("Could the same age be best for two people with very different health, money, or responsibilities?", "健康、お金、責任が大きく違う二人にとって、同じ年齢が最高になることはありますか？"),
+    (105, 3): ("What evidence would convince you that a different choice would really have worked better?", "違う選択のほうが本当によかったと納得するには、どんな証拠が必要ですか？"),
+    (105, 4): ("When judging a decision, how should we balance what was known then with what happened later?", "決断を評価するとき、当時分かっていたことと、その後の結果をどう両方考えるべきですか？"),
+    (106, 3): ("When does English encourage direct wording where Japanese might rely on tone or silence?", "日本語では口調や沈黙に頼る場面で、英語はどんなときに直接的な言い方を促しますか？"),
+}
+for (_number, _index), (_full, _full_ja) in CONVERSATIONAL_FULL_DEEPENING.items():
+    TOPICS[_number]["prompts"][_index - 1].update(full=_full, full_ja=_full_ja)
+
+CONVERSATIONAL_PAGE_TITLES = {
+    (101, 1): ("Three days away", "SNSから離れる三日間"),
+    (101, 2): ("The first feature you would miss", "最初に恋しくなる機能"),
+    (101, 3): ("Instead of checking", "確認する代わりに"),
+    (101, 5): ("When scrolling wastes time", "スクロールが時間を無駄にするとき"),
+    (101, 8): ("One feature to keep", "残したい一つの機能"),
+    (102, 1): ("Something AI does badly", "AIが苦手なこと"),
+    (102, 2): ("A situation AI misreads", "AIが読み違える状況"),
+    (102, 3): ("A funny or worrying mistake", "面白い、または心配な間違い"),
+    (102, 4): ("A boring task AI can help with", "AIが手伝える地味な仕事"),
+    (102, 5): ("A mistake that can hurt someone", "人を傷つける可能性のある間違い"),
+    (102, 6): ("A person must be responsible", "責任を持つ人が必要なこと"),
+    (102, 7): ("A human skill that will matter more", "もっと大切になる人間の技能"),
+    (102, 8): ("Expecting too much from AI", "AIに期待しすぎること"),
+    (103, 1): ("What enough money can cover", "十分なお金で払えるもの"),
+    (103, 2): ("The first money worry to remove", "最初になくしたいお金の心配"),
+    (103, 5): ("When extra money matters most", "お金が最も役立つとき"),
+    (103, 6): ("Space after money worries", "お金の心配が減った後の余裕"),
+    (103, 7): ("Savings or steady income", "貯金か安定した収入か"),
+    (104, 1): ("One age for ten years", "一つの年齢で過ごす十年間"),
+    (104, 2): ("Energy and freedom", "元気さと自由"),
+    (104, 3): ("The hard side of the best age", "最高の年齢の大変な面"),
+    (104, 5): ("A future experience you would miss", "逃したくない将来の経験"),
+    (104, 7): ("The same best age for different lives", "違う人生でも同じ最高の年齢か"),
+    (104, 8): ("The underrated side of getting older", "年を重ねることの隠れたよさ"),
+    (105, 2): ("A wrong-looking choice with a good result", "間違って見えたよい選択"),
+    (105, 3): ("Would another choice be better?", "別の選択は本当によいか"),
+    (105, 4): ("What was known then, or what happened later?", "当時の情報か、その後の結果か"),
+    (105, 5): ("A new problem from a better choice", "よりよい選択が生む新しい問題"),
+    (105, 7): ("Looking back to decide better", "次の決断のために振り返ること"),
+    (106, 2): ("A phrase that is hard to translate", "訳しにくい表現"),
+    (106, 3): ("Direct in English, unsaid in Japanese", "英語では直接、日本語では言わないこと"),
+    (106, 4): ("Who English lets you talk to", "英語で話せる相手"),
+    (106, 5): ("The part that still takes effort", "今も努力が必要な部分"),
+    (106, 8): ("What you would practise first", "最初に練習すること"),
+}
+for (_number, _index), (_title, _title_ja) in CONVERSATIONAL_PAGE_TITLES.items():
+    TOPICS[_number]["prompts"][_index - 1].update(title=_title, title_ja=_title_ja)
+
+CONVERSATIONAL_FOLLOWUP_REVISIONS = {
+    (101, 3): ("What would fill the first few minutes instead?", "What might make you open the app again?"),
+    (101, 6): ("When would the rule apply?", "What could make the rule hard to keep?"),
+    (102, 1): ("Which job gives a clear example?", "What does AI miss in that job?"),
+    (102, 2): ("What makes that situation hard for AI?", "Who would understand it better?"),
+    (102, 3): ("What did the AI get wrong?", "How could a person spot the mistake?"),
+    (102, 5): ("Who could be hurt?", "Who should check the AI's work?"),
+    (102, 7): ("Why will that skill matter more?", "How could someone practise it now?"),
+    (102, 8): ("Why does the task look easier than it is?", "What example shows the real limit?"),
+    (103, 1): ("Does enough include housing, food, and emergencies?", "Which cost would be hardest to cover?"),
+    (103, 6): ("Would you use the space for rest, care, learning, or something else?", "What worry might still remain?"),
+    (103, 7): ("Why does your choice feel safer?", "What is the main weakness of the other option?"),
+    (104, 1): ("What makes that age attractive?", "What would be difficult about staying there?"),
+    (104, 2): ("Which freedom matters most?", "What does that age still make difficult?"),
+    (104, 4): ("Why is that good thing easy to overlook?", "Did it take time to develop?"),
+    (104, 5): ("Why would that experience matter?", "Could the same age still allow personal growth?"),
+    (105, 2): ("Why did the choice look wrong at first?", "What good result came from it?"),
+    (105, 4): ("Why did you choose that side?", "What would make you judge the decision differently?"),
+    (105, 5): ("Who might pay the new cost?", "Would the original problem still be solved?"),
+    (106, 1): ("What experience made you notice it?", "Did the difference surprise you?"),
+    (106, 2): ("What does the English phrase express?", "What would sound more natural in Japanese?"),
+    (106, 6): ("Which part was easier?", "What still surprises you about the difficult part?"),
+    (106, 7): ("Which side of you comes out more in English?", "What still feels the same in both languages?"),
+    (106, 8): ("Why would you start there?", "What did you spend too much time on before?"),
+}
+for (_number, _index), _followups in CONVERSATIONAL_FOLLOWUP_REVISIONS.items():
+    TOPICS[_number]["prompts"][_index - 1].update(
+        accessible_followups=_followups,
+        full_followups=_followups,
+    )
+
+FINAL_SEMANTIC_REPAIRS = {
+    (101, 1): dict(accessible_followups=("What would make three days feel useful?", "What would make it feel too long?"), full_followups=("What would make three days feel useful?", "What would make it feel too long?")),
+    (101, 4): dict(accessible_followups=("What makes it hard to replace?", "What could partly replace it?"), full_followups=("What makes it hard to replace?", "What could partly replace it?")),
+    (104, 6): dict(accessible_followups=("Which matters more for your answer: health or money?", "Could either one change your choice completely?"), full_followups=("Which matters more for your answer: health or money?", "Could either one change your choice completely?")),
+    (105, 3): dict(accessible_followups=("What could we never know for certain?", "Which new problem could appear?"), full_followups=("What could we never know for certain?", "Which new problem could appear?")),
+    (105, 4): dict(accessible_followups=("What makes your balance fair?", "Which kind of case could change it?"), full_followups=("What makes your balance fair?", "Which kind of case could change it?")),
+    (105, 8): dict(title="A decision people can fix", title_ja="直すことができる決断", accessible="What is one bad decision people can usually fix?", accessible_ja="人がたいてい直すことのできる悪い決断は何ですか？", full="Which bad decision is easier to repair than people expect?", full_ja="人が思うより直しやすい悪い決断は何ですか？", accessible_followups=("What is the first repair step?", "When is it too late to fix?"), full_followups=("What is the first repair step?", "When is it too late to fix?")),
+    (106, 4): dict(title="A conversation English makes easier", title_ja="英語でしやすくなる会話", accessible="What kind of conversation becomes easier with English?", accessible_ja="英語があると、どんな会話がしやすくなりますか？", full="Which conversation can English make possible between people who do not share another language?", full_ja="ほかに共通の言語がない人同士でも、英語があるとどんな会話ができますか？", accessible_followups=("Who might have that conversation?", "What could still be difficult?"), full_followups=("Who might have that conversation?", "What could still be difficult?")),
+    (106, 7): dict(title="A different side in English", title_ja="英語で出る違う一面", accessible="Which side of you, if any, comes out more when you speak English?", accessible_ja="英語を話すとき、いつもより出やすい自分の一面はありますか？", full="What different side of you can come out when you speak English?", full_ja="英語を話すとき、自分のどんな違う一面が出ることがありますか？", accessible_followups=("What makes that side appear?", "What stays the same in both languages?"), full_followups=("What makes that side appear?", "What stays the same in both languages?")),
+}
+for (_number, _index), _changes in FINAL_SEMANTIC_REPAIRS.items():
+    TOPICS[_number]["prompts"][_index - 1].update(**_changes)
+
+FINAL_REVIEW_REPAIRS = {
+    (101, 2): dict(title="The first change you would notice", title_ja="最初に気づく変化", accessible="What would you notice first after three days away from social media?", accessible_ja="SNSから三日間離れたら、最初にどんな変化に気づきますか？", full="What change would you notice first during three days away from social media?", full_ja="SNSから三日間離れている間、最初にどんな変化に気づきますか？", accessible_followups=("Would it affect communication, information, or entertainment?", "What might not change at all?"), full_followups=("Would it affect communication, information, or entertainment?", "What might not change at all?")),
+    (102, 3): dict(title="A mistake that starts funny", title_ja="最初は面白く見える間違い", accessible="What kind of AI mistake seems funny at first but could become worrying?", accessible_ja="最初は面白く見えても、心配につながりうるAIの間違いは何ですか？", full="Which AI mistake can look funny until it affects a real decision?", full_ja="実際の決断に影響するまでは面白く見えるAIの間違いは何ですか？", accessible_followups=("What could the AI get wrong?", "How could a person catch the mistake?"), full_followups=("What could the AI get wrong?", "How could a person catch the mistake?")),
+    (104, 7): dict(accessible_followups=("What part of life could make their answers different?", "Who would reasonably disagree?")),
+    (105, 4): dict(accessible_followups=("Why does that matter more to you?", "What kind of result could change your answer?")),
+    (105, 7): dict(accessible_followups=("What future action could it change?", "When is it better to stop looking back?"), full_followups=("What future action could it change?", "When is it better to stop looking back?")),
+}
+for (_number, _index), _changes in FINAL_REVIEW_REPAIRS.items():
+    TOPICS[_number]["prompts"][_index - 1].update(**_changes)
+
+# The learner hears these questions once.  The first follow-up extends a real
+# answer; the second gives a new, concrete foothold after "I don't know" or no
+# matching experience.  Keep the same conversational jobs across variants.
+THREE_SECOND_MAIN_REPAIRS = {
+    (103, 6): dict(
+        accessible="If you worried less about money, what would you spend more time thinking about?",
+        accessible_ja="お金の心配が減ったら、何について考える時間を増やしたいですか？",
+        full="If money worries took less of your attention, what would you focus on instead?",
+        full_ja="お金の心配に注意を取られなくなったら、代わりに何に集中したいですか？",
+    ),
+    (104, 7): dict(
+        accessible="Why might the same age feel great for one person and difficult for another?",
+        accessible_ja="同じ年齢でも、一人には最高で、別の人には大変に感じられるのはなぜですか？",
+        full="Why can the same age feel freeing for one person and limiting for another?",
+        full_ja="同じ年齢でも、一人には自由に、別の人には制約が多く感じられるのはなぜですか？",
+    ),
+    (105, 3): dict(
+        accessible="What proof would show that a different choice was better?",
+        accessible_ja="別の選択のほうがよかったと分かる証拠は何ですか？",
+        full="What evidence would show that a different choice led to a better result?",
+        full_ja="別の選択がよりよい結果につながったと分かる証拠は何ですか？",
+    ),
+    (105, 4): dict(
+        full="When judging a decision, which matters more: what was known then or what happened later?",
+        full_ja="決断を評価するとき、当時分かっていたことと、その後起きたことのどちらがより大切ですか？",
+    ),
+    (102, 6): dict(
+        full="Which decisions need a person who can explain the result and accept responsibility?",
+        full_ja="結果を説明し、責任を引き受ける人が必要なのは、どんな決断ですか？",
+    ),
+    (106, 3): dict(
+        full="When do English speakers say something directly that Japanese speakers may leave unsaid?",
+        full_ja="英語では直接言っても、日本語では言わないことがあるのはどんなときですか？",
+    ),
+    (106, 4): dict(
+        full="What kind of conversation becomes possible because of English?",
+        full_ja="英語があることで、どんな会話ができるようになりますか？",
+    ),
+    (106, 6): dict(
+        full="Which part of speaking English was most different from what you expected?",
+        full_ja="英語を話すことで、予想と最も違っていた部分は何ですか？",
+    ),
+    (106, 7): dict(
+        full="Which side of you, if any, comes out more when you speak English?",
+        full_ja="英語を話すとき、いつもより出やすい自分の一面はありますか？",
+    ),
+}
+for (_number, _index), _changes in THREE_SECOND_MAIN_REPAIRS.items():
+    TOPICS[_number]["prompts"][_index - 1].update(**_changes)
+
+THREE_SECOND_FOLLOWUPS = {
+    101: (
+        ("What would make three days feel useful?", "Which app would be easiest to leave for three days?"),
+        ("Would you miss messages, news, or entertainment first?", "Which of those do you check most now?"),
+        ("What would fill the first few minutes instead?", "When do you check social media most: morning, breaks, or evening?"),
+        ("What makes that feature hard to replace?", "Which feature do you use most: messages, news, or videos?"),
+        ("How do you feel after that kind of scrolling?", "Do you ever open an app without a clear reason?"),
+        ("When would the rule apply?", "Which is easier: turning off notifications or setting a time limit?"),
+        ("Why would that rule be realistic?", "Which is safer for a teenager: a private account or a public one?"),
+        ("Why would you keep that feature?", "Which feature do you use most: messages, photos, or short videos?"),
+    ),
+    102: (
+        ("Which job gives a clear example?", "Would you trust AI more with numbers or feelings?"),
+        ("Why does AI struggle with the situation you named?", "Which is harder for AI to read: sarcasm or sadness?"),
+        ("Who could be affected by that mistake?", "Have you ever seen AI give a strange answer?"),
+        ("How could a person check the result?", "Would you rather let AI sort emails or write a complaint reply?"),
+        ("Who could be hurt?", "Should AI choose who gets a job by itself?"),
+        ("What could go wrong without a person in charge?", "Who should have the final say in a hiring decision?"),
+        ("Why will that skill matter more?", "Which matters more with AI: asking good questions or checking answers?"),
+        ("What example shows the real limit?", "Which does AI do better: summarizing text or understanding feelings?"),
+    ),
+    103: (
+        ("Which cost matters most?", "Would a home and emergency savings count as enough?"),
+        ("How would removing that worry change daily life?", "Which is more stressful: an unexpected bill or rising monthly costs?"),
+        ("Could money still help indirectly?", "Can money buy trust?"),
+        ("Which cost varies most?", "Who usually needs more money: one person or a family of four?"),
+        ("Which need is being met?", "Does extra money matter more for rent or entertainment?"),
+        ("Why would that deserve more attention?", "Would you use the extra focus for rest, family, or learning?"),
+        ("Why does your choice feel safer?", "What's one bill people need to plan for every month?"),
+        ("How can that kind of security help?", "Which gives more security: good health or people you can rely on?"),
+    ),
+    104: (
+        ("What makes that age attractive?", "Would you rather keep youthful energy or later-life experience?"),
+        ("Which freedom matters most?", "Which age seems most independent: twenty, forty, or sixty?"),
+        ("Why is that part difficult?", "Which seems harder: being twenty or being sixty?"),
+        ("Why is that good thing easy to overlook?", "What's easier for you now than when you were younger?"),
+        ("Why would that experience matter?", "Would you rather see the future or relive the past?"),
+        ("Which matters more for your answer: health or money?", "Would good health make almost any age feel better?"),
+        ("Which life detail creates that difference?", "Could age thirty feel different with and without children?"),
+        ("What has become clearer with age?", "Which improves more with age: confidence or patience?"),
+    ),
+    105: (
+        ("What was the original choice?", "Would you rather change a movie ending or a real historical decision?"),
+        ("What good result followed?", "Can a mistake ever create a good opportunity?"),
+        ("What could we never know for certain?", "Is a good result always proof of a good decision?"),
+        ("Why does that matter more to you?", "Should a doctor be judged by the decision or only the result?"),
+        ("Who might pay the new cost?", "Can saving money now create a bigger cost later?"),
+        ("What information was available then?", "Which matters more under pressure: more time or better information?"),
+        ("What future action could looking back change?", "Is it useful to think about a small mistake after the mistake is fixed?"),
+        ("What is the first repair step?", "Which is easier to fix: being late or sending the wrong message?"),
+    ),
+    106: (
+        ("Which experience made the language difference clear?", "Which feels more direct to you: English or Japanese?"),
+        ("What would sound more natural in Japanese?", "Which is harder to translate: a joke or an apology?"),
+        ("What might a listener misunderstand?", "Which language feels more direct in requests?"),
+        ("Who might have that conversation?", "Would English help more while travelling or working online?"),
+        ("What support actually helps?", "Which is harder: speaking quickly or finding the right word?"),
+        ("Which part was easier or harder?", "Which surprised you more: pronunciation or listening?"),
+        ("What makes that side appear?", "Do you feel more direct in English?"),
+        ("Why would you start there?", "Would you start with listening or speaking?"),
+    ),
+}
+for _number, _rows in THREE_SECOND_FOLLOWUPS.items():
+    if len(_rows) != 8:
+        raise ValueError(f"FT-{_number} must have eight three-second follow-up sets")
+    for _item, _followups in zip(TOPICS[_number]["prompts"], _rows, strict=True):
+        _item.update(accessible_followups=_followups, full_followups=_followups)
+
+# Final spoken review: every line must be understood after one hearing and let
+# a learner begin a real answer within about three seconds.  These repairs also
+# keep each page usable after "I don't know" and stop later questions from
+# merely rephrasing an earlier one.
+FINAL_ONE_HEARING_REPAIRS = {
+    (101, 4): dict(
+        accessible_followups=("Why would you miss it?", "Which would you miss most: messages, news, or videos?"),
+        full_followups=("Why would you miss it?", "Which would you miss most: messages, news, or videos?"),
+    ),
+    (101, 6): dict(
+        accessible_followups=("When would that rule be hardest to follow?", "Which is easier: turning off notifications or setting a time limit?"),
+        full_followups=("When would that rule be hardest to follow?", "Which is easier: turning off notifications or setting a time limit?"),
+    ),
+    (101, 7): dict(
+        accessible="Should a fourteen-year-old use a private or public social-media account?",
+        accessible_ja="十四歳なら、SNSのアカウントは非公開と公開のどちらがよいですか？",
+        full="Should a fourteen-year-old use a private or public social-media account?",
+        full_ja="十四歳なら、SNSのアカウントは非公開と公開のどちらがよいですか？",
+        accessible_followups=("Why would that be safer?", "Should strangers be able to send messages?"),
+        full_followups=("Why would that be safer?", "Should strangers be able to send messages?"),
+    ),
+    (101, 8): dict(
+        title="One part to lose",
+        title_ja="なくしたい一つの部分",
+        accessible="Which part of social media would you be happiest to lose?",
+        accessible_ja="SNSのどんな部分なら、なくなってもうれしいですか？",
+        full="Which part of social media would you be happiest to lose?",
+        full_ja="SNSのどんな部分なら、なくなってもうれしいですか？",
+        accessible_followups=("Why would life be better without it?", "Would social media feel calmer with no public comments?"),
+        full_followups=("Why would life be better without it?", "Would social media feel calmer with no public comments?"),
+    ),
+    (102, 2): dict(
+        title="Sarcasm or sadness",
+        title_ja="皮肉、それとも悲しみ",
+        accessible="Which is harder for AI to understand: sarcasm or sadness?",
+        accessible_ja="AIにとって理解しにくいのは、皮肉と悲しみのどちらですか？",
+        full="Which is harder for AI to understand: sarcasm or sadness?",
+        full_ja="AIにとって理解しにくいのは、皮肉と悲しみのどちらですか？",
+        accessible_followups=("What clue would a person notice?", "Could AI misunderstand 'I'm fine' in a text message?"),
+        full_followups=("What clue would a person notice?", "Could AI misunderstand 'I'm fine' in a text message?"),
+    ),
+    (104, 5): dict(
+        title="An experience for later",
+        title_ja="将来してみたい経験",
+        accessible="What is one experience you hope to have when you're older?",
+        accessible_ja="年を重ねたときに、どんな経験をしてみたいですか？",
+        full="What is one experience you hope to have when you're older?",
+        full_ja="年を重ねたときに、どんな経験をしてみたいですか？",
+    ),
+    (105, 1): dict(
+        accessible="Would you rather change a movie ending or a real historical decision?",
+        accessible_ja="映画の結末と現実の歴史上の決断なら、どちらを変えたいですか？",
+        full="Would you rather change a movie ending or a real historical decision?",
+        full_ja="映画の結末と現実の歴史上の決断なら、どちらを変えたいですか？",
+        accessible_followups=("Which ending or decision would you change?", "Would you make a sad movie ending happy?"),
+        full_followups=("Which ending or decision would you change?", "Would you make a sad movie ending happy?"),
+    ),
+    (105, 2): dict(
+        title="A choice that works out well",
+        title_ja="結果的にうまくいく選択",
+        accessible="Can a choice look wrong at first but work out well?",
+        accessible_ja="最初は間違って見える選択が、結果的にうまくいくことはありますか？",
+        full="Can a choice look wrong at first but work out well?",
+        full_ja="最初は間違って見える選択が、結果的にうまくいくことはありますか？",
+        accessible_followups=("What's a simple example?", "Does a good result mean it was a good choice?"),
+        full_followups=("What's a simple example?", "Does a good result mean it was a good choice?"),
+    ),
+    (105, 3): dict(
+        title="What shows a good choice",
+        title_ja="よい選択を示すもの",
+        accessible="Which better shows a good choice: fewer problems or happier people?",
+        accessible_ja="問題が減ることと、人が幸せになることのどちらが、よい選択だったと分かりやすいですか？",
+        full="When people disagree, which better shows a good choice: fewer problems or happier people?",
+        full_ja="意見が分かれるとき、問題が減ることと、人が幸せになることのどちらが、よい選択だったと分かりやすいですか？",
+        accessible_followups=("Can luck create a good result?", "Can a good choice still end badly?"),
+        full_followups=("Can luck create a good result?", "Can a good choice still end badly?"),
+    ),
+    (105, 5): dict(
+        title="One solution, another problem",
+        title_ja="一つを解決して別の問題",
+        accessible="Can solving one problem create a new one?",
+        accessible_ja="一つの問題を解決すると、新しい問題が生まれることはありますか？",
+        full="Can solving one problem create a new one?",
+        full_ja="一つの問題を解決すると、新しい問題が生まれることはありますか？",
+        accessible_followups=("What's a simple example?", "Can saving money now create a bigger cost later?"),
+        full_followups=("What's a simple example?", "Can saving money now create a bigger cost later?"),
+    ),
+    (105, 8): dict(
+        title="A fixable mistake",
+        title_ja="直しやすい間違い",
+        accessible="Which is easier to fix: being late or sending the wrong message?",
+        accessible_ja="遅刻と、間違ったメッセージを送ることでは、どちらが直しやすいですか？",
+        full="Which is easier to fix: being late or sending the wrong message?",
+        full_ja="遅刻と、間違ったメッセージを送ることでは、どちらが直しやすいですか？",
+        accessible_followups=("What would you do first?", "Which mistake gets worse if you wait?"),
+        full_followups=("What would you do first?", "Which mistake gets worse if you wait?"),
+    ),
+    (106, 2): dict(
+        title="A joke or an apology",
+        title_ja="冗談、それとも謝罪",
+        accessible="Which is harder to translate naturally: an English joke or an apology?",
+        accessible_ja="自然に訳すのが難しいのは、英語の冗談と謝罪のどちらですか？",
+        full="Which is harder to translate naturally: an English joke or an apology?",
+        full_ja="自然に訳すのが難しいのは、英語の冗談と謝罪のどちらですか？",
+        accessible_followups=("Does the tone change in Japanese?", "Which matters more in translation: the exact words or the feeling?"),
+        full_followups=("Does the tone change in Japanese?", "Which matters more in translation: the exact words or the feeling?"),
+    ),
+    (106, 3): dict(
+        title="Easier to say directly",
+        title_ja="直接言いやすいこと",
+        accessible="Which is easier to say directly in English: a request, an opinion, or a refusal?",
+        accessible_ja="英語で直接言いやすいのは、お願い、意見、断りのどれですか？",
+        full="Which is easier to say directly in English: a request, an opinion, or a refusal?",
+        full_ja="英語で直接言いやすいのは、お願い、意見、断りのどれですか？",
+        accessible_followups=("How would you say it differently in Japanese?", "Can a direct answer sound rude?"),
+        full_followups=("How would you say it differently in Japanese?", "Can a direct answer sound rude?"),
+    ),
+    (106, 6): dict(
+        title="A surprise in speaking English",
+        title_ja="英語を話して驚いたこと",
+        accessible="What surprised you most about speaking English?",
+        accessible_ja="英語を話してみて、最も驚いたことは何ですか？",
+        full="What surprised you most when English became part of a real conversation?",
+        full_ja="実際の会話で英語を使ったとき、最も驚いたことは何ですか？",
+        accessible_followups=("Was it easier or harder than expected?", "Which is harder for you: pronunciation or listening?"),
+        full_followups=("Was it easier or harder than expected?", "Which is harder for you: pronunciation or listening?"),
+    ),
+    (106, 7): dict(
+        title="Feeling different in English",
+        title_ja="英語で感じる違い",
+        accessible="Do you feel different when you speak English?",
+        accessible_ja="英語を話すとき、いつもと違う自分を感じますか？",
+        full="Do you feel different when you speak English?",
+        full_ja="英語を話すとき、いつもと違う自分を感じますか？",
+        accessible_followups=("Are you more direct, friendly, or quiet?", "Which is easier in English: making jokes or sharing opinions?"),
+        full_followups=("Are you more direct, friendly, or quiet?", "Which is easier in English: making jokes or sharing opinions?"),
+    ),
+}
+for (_number, _index), _changes in FINAL_ONE_HEARING_REPAIRS.items():
+    TOPICS[_number]["prompts"][_index - 1].update(**_changes)
 
 CLAIM_ORDER = {number: tuple(f"ft{number}-c{i:02d}" for i in range(1, 11)) for number in TOPIC_NUMBERS}
 

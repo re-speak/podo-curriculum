@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-worth-thinking-about-full/lessons/102-what-ai-gets-wrong-about-human-work/lesson.html`
-- SHA-256: `7bfe3c095e6d650429d2ed37d6b434b02fc790ee44ceba45023d9c5f6e2a1ea6`
+- SHA-256: `72061308fdba84ec5a03b365d5b6f334ae829038e49221a3313dc81543ed874d`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Answer the standalone question “Which part of human work most clearly exposes the limits of AI understanding?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which part of human work most clearly exposes the limits of AI understanding?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Which part of human work most clearly exposes the limits of AI understanding? / 人の仕事のどの部分が、AIの理解の限界を最も明確に示しますか？ Follow-up pool: Which role provides the clearest case? Why is that case important?
-- Learning target: Develop the distinct “opening” angle of What AI gets wrong about human work in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “A human context AI misses” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “Which part of human work most clearly exposes the limits of AI understanding?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “人の仕事のどの部分が、AIの理解の限界を最も明確に示しますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which part of human work most clearly exposes the limits of AI understanding?"]}`
+- Learner action: Answer the standalone question “What is one thing AI does badly when it tries to do human work?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What is one thing AI does badly when it tries to do human work?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What is one thing AI does badly when it tries to do human work?” / “AIが人の仕事をしようとするとき、うまくできないことを一つ挙げるとしたら何ですか？” Tutor follow-ups: “Which job gives a clear example?” and “Would you trust AI more with numbers or feelings?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “AIが人の仕事をしようとするとき、うまくできないことを一つ挙げるとしたら何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What is one thing AI does badly when it tries to do human work?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer the standalone question “Which relationship, history, or value would remain invisible to the system?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which relationship, history, or value would remain invisible to the system?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Which relationship, history, or value would remain invisible to the system? / どんな人間関係、過去、価値が、そのシステムには見えないままになりますか？ Follow-up pool: Why is that context difficult to encode? Who is positioned to interpret it?
-- Learning target: Develop the distinct “reason” angle of What AI gets wrong about human work in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “The missing context” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “Which relationship, history, or value would remain invisible to the system?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “どんな人間関係、過去、価値が、そのシステムには見えないままになりますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which relationship, history, or value would remain invisible to the system?"]}`
+- Learner action: Answer the standalone question “Which is harder for AI to understand: sarcasm or sadness?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which is harder for AI to understand: sarcasm or sadness?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which is harder for AI to understand: sarcasm or sadness?” / “AIにとって理解しにくいのは、皮肉と悲しみのどちらですか？” Tutor follow-ups: “What clue would a person notice?” and “Could AI misunderstand 'I'm fine' in a text message?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “AIにとって理解しにくいのは、皮肉と悲しみのどちらですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which is harder for AI to understand: sarcasm or sadness?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer the standalone question “Which observable failure would reveal that blind spot most clearly?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which observable failure would reveal that blind spot most clearly?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Which observable failure would reveal that blind spot most clearly? / どんな観察できる失敗が、その見落としを最も明確に示しますか？ Follow-up pool: Which output would expose the error? What independent check could verify it?
-- Learning target: Develop the distinct “evidence” angle of What AI gets wrong about human work in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “A visible mistake” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “Which observable failure would reveal that blind spot most clearly?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “どんな観察できる失敗が、その見落としを最も明確に示しますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which observable failure would reveal that blind spot most clearly?"]}`
+- Learner action: Answer the standalone question “Which AI mistake can look funny until it affects a real decision?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which AI mistake can look funny until it affects a real decision?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which AI mistake can look funny until it affects a real decision?” / “実際の決断に影響するまでは面白く見えるAIの間違いは何ですか？” Tutor follow-ups: “Who could be affected by that mistake?” and “Have you ever seen AI give a strange answer?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “実際の決断に影響するまでは面白く見えるAIの間違いは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which AI mistake can look funny until it affects a real decision?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer the standalone question “Which component of the role is genuinely suitable for AI assistance?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which component of the role is genuinely suitable for AI assistance?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Which component of the role is genuinely suitable for AI assistance? / その役割のどの部分が、本当にAIの支援に適していますか？ Follow-up pool: What makes the task verifiable? Which judgment still requires review?
-- Learning target: Develop the distinct “strength” angle of What AI gets wrong about human work in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “A useful capability” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “Which component of the role is genuinely suitable for AI assistance?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “その役割のどの部分が、本当にAIの支援に適していますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which component of the role is genuinely suitable for AI assistance?"]}`
+- Learner action: Answer the standalone question “Which boring part of human work should AI help with?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which boring part of human work should AI help with?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which boring part of human work should AI help with?” / “人の仕事の地味な部分で、AIに手伝ってほしいものは何ですか？” Tutor follow-ups: “How could a person check the result?” and “Would you rather let AI sort emails or write a complaint reply?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “人の仕事の地味な部分で、AIに手伝ってほしいものは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which boring part of human work should AI help with?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer the standalone question “Which systematic blind spot creates the greatest risk in this role?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which systematic blind spot creates the greatest risk in this role?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Which systematic blind spot creates the greatest risk in this role? / この役割では、どの体系的な見落としが最大の危険を生みますか？ Follow-up pool: Which warning signal matters most? Who has enough context to detect it?
-- Learning target: Develop the distinct “blind-spot” angle of What AI gets wrong about human work in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “The dangerous blind spot” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “Which systematic blind spot creates the greatest risk in this role?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “この役割では、どの体系的な見落としが最大の危険を生みますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which systematic blind spot creates the greatest risk in this role?"]}`
+- Learner action: Answer the standalone question “Which AI mistake could seriously hurt someone?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which AI mistake could seriously hurt someone?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which AI mistake could seriously hurt someone?” / “AIのどんな間違いが、人を深く傷つける可能性がありますか？” Tutor follow-ups: “Who could be hurt?” and “Should AI choose who gets a job by itself?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “AIのどんな間違いが、人を深く傷つける可能性がありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which AI mistake could seriously hurt someone?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer the standalone question “Which responsibility must remain under meaningful and identifiable human control?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which responsibility must remain under meaningful and identifiable human control?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Which responsibility must remain under meaningful and identifiable human control? / どの責任を、実質的で担当者が明確な人の管理下に残す必要がありますか？ Follow-up pool: What failure cost requires accountability? Where could automation still reduce effort?
-- Learning target: Develop the distinct “boundary” angle of What AI gets wrong about human work in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “A named human owner” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “Which responsibility must remain under meaningful and identifiable human control?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “どの責任を、実質的で担当者が明確な人の管理下に残す必要がありますか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which responsibility must remain under meaningful and identifiable human control?"]}`
+- Learner action: Answer the standalone question “Which decisions need a person who can explain the result and accept responsibility?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which decisions need a person who can explain the result and accept responsibility?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which decisions need a person who can explain the result and accept responsibility?” / “結果を説明し、責任を引き受ける人が必要なのは、どんな決断ですか？” Tutor follow-ups: “What could go wrong without a person in charge?” and “Who should have the final say in a hiring decision?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “結果を説明し、責任を引き受ける人が必要なのは、どんな決断ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which decisions need a person who can explain the result and accept responsibility?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer the standalone question “How might AI redistribute tasks, status, and accountability in this role over five years?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “How might AI redistribute tasks, status, and accountability in this role over five years?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: How might AI redistribute tasks, status, and accountability in this role over five years? / AIは五年間で、この役割の作業、立場、説明責任をどう再配分するかもしれませんか？ Follow-up pool: Which task is most likely to contract? Which new responsibility may emerge?
-- Learning target: Develop the distinct “future” angle of What AI gets wrong about human work in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “The role in five years” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “How might AI redistribute tasks, status, and accountability in this role over five years?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “AIは五年間で、この役割の作業、立場、説明責任をどう再配分するかもしれませんか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How might AI redistribute tasks, status, and accountability in this role over five years?"]}`
+- Learner action: Answer the standalone question “What human skill will matter more as AI improves?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What human skill will matter more as AI improves?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What human skill will matter more as AI improves?” / “AIが進歩するほど、どんな人間の技能がより大切になりますか？” Tutor follow-ups: “Why will that skill matter more?” and “Which matters more with AI: asking good questions or checking answers?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “AIが進歩するほど、どんな人間の技能がより大切になりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What human skill will matter more as AI improves?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Answer the standalone question “Which popular claim about AI capability most needs qualification?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which popular claim about AI capability most needs qualification?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Which popular claim about AI capability most needs qualification? / AIの能力について広く言われる主張のうち、最も条件を加える必要があるものは何ですか？ Follow-up pool: Which assumption makes the claim misleading? What evidence would produce a better judgment?
-- Learning target: Develop the distinct “flip” angle of What AI gets wrong about human work in spontaneous conversation.
-- Pedagogical value: Adds the specific conversational job “A claim people overstate” without requiring private history or repeating another page.
-- Failure diagnoses: A thin answer to “Which popular claim about AI capability most needs qualification?” calls for one contextual follow-up, not a presumed personal experience or model answer.
-- Non-target support: The Japanese prompt “AIの能力について広く言われる主張のうち、最も条件を加える必要があるものは何ですか？” is meaning-aligned; the two English follow-ups remain tutor-only and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; the learner and tutor can both contribute a relevant, supportable view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which popular claim about AI capability most needs qualification?"]}`
+- Learner action: Answer the standalone question “What do people often expect AI to do better than it can?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What do people often expect AI to do better than it can?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What do people often expect AI to do better than it can?” / “人はAIに、実際よりもうまくできると何を期待しがちですか？” Tutor follow-ups: “What example shows the real limit?” and “Which does AI do better: summarizing text or understanding feelings?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “人はAIに、実際よりもうまくできると何を期待しがちですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What do people often expect AI to do better than it can?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: The exact final wording, bilingual alignment, single page job, prompt independence, adjacent-page distinction, and Accessible/Full pairing were read against these lesson bytes. The 360/480 DOM overflow probe passed, but screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

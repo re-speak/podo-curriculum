@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-balance-games-full/lessons/110-morning-person-or-night-owl/lesson.html`
-- SHA-256: `38f0644dc57af9bc749043659b69466c419eb7b97b7a4dbde00d34b5bc6a45bf`
+- SHA-256: `5c5b14e3b07d4d06f8363581e41942b75a7d1530b967e1e14bfb43d137ceb03e`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Answer the standalone question “At what time does your attention tend to be most reliable?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “At what time does your attention tend to be most reliable?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “At what time does your attention tend to be most reliable?” / “頭がいちばんさえるのは、何時ごろですか？” Follow-ups: “Which kind of task best reveals that peak?” and “How stable is the pattern across workdays and free days?”
-- Learning target: Develop the distinct “Your clearest hour” angle of Morning person or night owl? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Your clearest hour” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “At what time does your attention tend to be most reliable?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “頭がいちばんさえるのは、何時ごろですか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["At what time does your attention tend to be most reliable?"]}`
+- Learner action: Answer the standalone question “What usually helps your mind become clear and ready to work?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What usually helps your mind become clear and ready to work?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What usually helps your mind become clear and ready to work?” / “頭がすっきりして作業の準備が整うには、普段何が役立ちますか？” Tutor follow-ups: “What makes it harder to feel alert?” and “Which wakes you up faster: light, food, or movement?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “頭がすっきりして作業の準備が整うには、普段何が役立ちますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What usually helps your mind become clear and ready to work?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer the standalone question “What sleep schedule would you choose with no external commitments tomorrow?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What sleep schedule would you choose with no external commitments tomorrow?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “What sleep schedule would you choose with no external commitments tomorrow?” / “明日何も予定がなければ、何時に寝て起きますか？” Follow-ups: “How much would the chosen timing differ from the current one?” and “Which part reflects sleep debt rather than a preferred rhythm?”
-- Learning target: Develop the distinct “A day with no schedule” angle of Morning person or night owl? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “A day with no schedule” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “What sleep schedule would you choose with no external commitments tomorrow?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “明日何も予定がなければ、何時に寝て起きますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What sleep schedule would you choose with no external commitments tomorrow?"]}`
+- Learner action: Answer the standalone question “When would you sleep and wake if tomorrow had no schedule?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When would you sleep and wake if tomorrow had no schedule?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When would you sleep and wake if tomorrow had no schedule?” / “明日何も予定がなければ、何時に寝て起きますか？” Tutor follow-ups: “How much sleep would that give you?” and “Would you sleep later on a completely free day?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “明日何も予定がなければ、何時に寝て起きますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When would you sleep and wake if tomorrow had no schedule?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer the standalone question “When the work matters most, do you function better early in the morning or late at night?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “When the work matters most, do you function better early in the morning or late at night?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “When the work matters most, do you function better early in the morning or late at night?” / “重要な作業では、朝早くと夜遅くのどちらのほうが力を発揮できますか？” Follow-ups: “Which fixed commitment makes one rhythm more practical?” and “What benefit of the rejected rhythm would still be valuable?”
-- Learning target: Develop the distinct “Early or late” angle of Morning person or night owl? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Early or late” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “When the work matters most, do you function better early in the morning or late at night?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “重要な作業では、朝早くと夜遅くのどちらのほうが力を発揮できますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
+- Learner action: Answer the standalone question “When the work matters most, do you function better early in the morning or late at night?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When the work matters most, do you function better early in the morning or late at night?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When the work matters most, do you function better early in the morning or late at night?” / “重要な作業では、朝早くと夜遅くのどちらのほうが力を発揮できますか？” Tutor follow-ups: “When would you do your hardest work?” and “Which is quieter for you: early morning or late night?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “重要な作業では、朝早くと夜遅くのどちらのほうが力を発揮できますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When the work matters most, do you function better early in the morning or late at night?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer the standalone question “Which parts of an ordinary day would shift under your chosen rhythm?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which parts of an ordinary day would shift under your chosen rhythm?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Which parts of an ordinary day would shift under your chosen rhythm?” / “その生活時間なら、食事、運動、人と会う時間はどう変わりますか？” Follow-ups: “Which shared activity would be hardest to coordinate?” and “How would light exposure and meal timing shift together?”
-- Learning target: Develop the distinct “A changed day” angle of Morning person or night owl? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “A changed day” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Which parts of an ordinary day would shift under your chosen rhythm?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “その生活時間なら、食事、運動、人と会う時間はどう変わりますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which parts of an ordinary day would shift under your chosen rhythm?"]}`
+- Learner action: Answer the standalone question “Which is hardest to change: sleep, meals, or social plans?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which is hardest to change: sleep, meals, or social plans?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which is hardest to change: sleep, meals, or social plans?” / “睡眠、食事、人と会う予定のうち、最も変えにくいのはどれですか？” Tutor follow-ups: “Why is that hardest to change?” and “Would changing your sleep schedule affect your mood?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “睡眠、食事、人と会う予定のうち、最も変えにくいのはどれですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which is hardest to change: sleep, meals, or social plans?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer the standalone question “What rules would make opposite rhythms workable in one home?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What rules would make opposite rhythms workable in one home?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “What rules would make opposite rhythms workable in one home?” / “反対の生活時間の人と暮らすなら、どう調整しますか？” Follow-ups: “Which boundary around noise and light would be non-negotiable?” and “Where would both schedules need a shared hour?”
-- Learning target: Develop the distinct “Opposite schedules” angle of Morning person or night owl? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Opposite schedules” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “What rules would make opposite rhythms workable in one home?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “反対の生活時間の人と暮らすなら、どう調整しますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What rules would make opposite rhythms workable in one home?"]}`
+- Learner action: Answer the standalone question “What rule helps two people with opposite sleep schedules share a home?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What rule helps two people with opposite sleep schedules share a home?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What rule helps two people with opposite sleep schedules share a home?” / “睡眠時間が反対の二人が一緒に暮らすには、どんなルールが役立ちますか？” Tutor follow-ups: “When would the home need to be quiet?” and “Would you set quiet hours at night or in the morning?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “睡眠時間が反対の二人が一緒に暮らすには、どんなルールが役立ちますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What rule helps two people with opposite sleep schedules share a home?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer the standalone question “How much of your current rhythm would survive without fixed morning commitments?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “How much of your current rhythm would survive without fixed morning commitments?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “How much of your current rhythm would survive without fixed morning commitments?” / “朝の予定がなくても、同じ生活時間を選びますか？” Follow-ups: “Would the new pattern remain stable after several weeks?” and “What evidence would separate preference from recovery sleep?”
-- Learning target: Develop the distinct “No early obligation” angle of Morning person or night owl? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “No early obligation” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “How much of your current rhythm would survive without fixed morning commitments?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “朝の予定がなくても、同じ生活時間を選びますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How much of your current rhythm would survive without fixed morning commitments?"]}`
+- Learner action: Answer the standalone question “Would you stay up later if nothing required you to wake early?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would you stay up later if nothing required you to wake early?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would you stay up later if nothing required you to wake early?” / “早起きする必要が何もなければ、もっと夜更かししますか？” Tutor follow-ups: “Could staying up late affect your health?” and “Would you still wake early on weekends?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “早起きする必要が何もなければ、もっと夜更かししますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you stay up later if nothing required you to wake early?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer the standalone question “Which fixed commitment would be strong enough to reverse your preferred rhythm?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which fixed commitment would be strong enough to reverse your preferred rhythm?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Which fixed commitment would be strong enough to reverse your preferred rhythm?” / “どんな予定なら、反対の生活時間を選びますか？” Follow-ups: “Which obligation could justify changing the body-clock routine?” and “How gradually would the schedule need to move?”
-- Learning target: Develop the distinct “A schedule that changes you” angle of Morning person or night owl? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “A schedule that changes you” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Which fixed commitment would be strong enough to reverse your preferred rhythm?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “どんな予定なら、反対の生活時間を選びますか？” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which fixed commitment would be strong enough to reverse your preferred rhythm?"]}`
+- Learner action: Answer the standalone question “Which important responsibility can force someone to change their sleep schedule?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which important responsibility can force someone to change their sleep schedule?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which important responsibility can force someone to change their sleep schedule?” / “どんな大切な責任が、睡眠時間を変えるきっかけになりますか？” Tutor follow-ups: “Why could that responsibility change a schedule?” and “Which changes sleep faster: a new job or a new baby?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな大切な責任が、睡眠時間を変えるきっかけになりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which important responsibility can force someone to change their sleep schedule?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Use the exact ask-back “Ask your tutor to choose between a morning schedule and a night schedule, then compare the reasons behind both answers.” to invite the tutor’s real answer, then compare the two positions.
-- Tutor action: Let the learner ask “Ask your tutor to choose between a morning schedule and a night schedule, then compare the reasons behind both answers.”, answer it genuinely and briefly, then use one topic-specific comparison probe if useful.
-- Visible target or prompt: Reciprocal ask-back: “Ask your tutor to choose between a morning schedule and a night schedule, then compare the reasons behind both answers.” / “チューターに朝型の生活と夜型の生活のどちらを選ぶか聞き、お互いの理由を比べてください。” Follow-ups: “How much of the tutor's rhythm is biological rather than imposed?” and “Which fixed commitment would reverse their preference?”
-- Learning target: Turn the balance game into a two-way exchange by eliciting and comparing the tutor’s real position.
-- Pedagogical value: Prevents an interview-like ending and gives the learner a natural reason to listen, react, and compare.
-- Failure diagnoses: If the learner only states another personal answer, prompt the exact ask-back; do not model a preferred position.
-- Non-target support: The Japanese prompt “チューターに朝型の生活と夜型の生活のどちらを選ぶか聞き、お互いの理由を比べてください。” is meaning-aligned; the two Full follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor to choose between a morning schedule and a night schedule, then compare the reasons behind both answers."]}`
+- Learner action: Answer the standalone question “Ask your tutor which option they would choose and why.” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Ask your tutor which option they would choose and why.”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Ask your tutor which option they would choose and why.” / “チューターならどちらを選ぶか、その理由も聞いてください。” Tutor follow-ups: “When does your tutor think most clearly?” and “Would a free weekend change the answer?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “チューターならどちらを選ぶか、その理由も聞いてください。” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor which option they would choose and why."]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

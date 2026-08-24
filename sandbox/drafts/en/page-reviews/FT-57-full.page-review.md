@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-love-and-marriage-full/lessons/57-a-little-thing-that-makes-you-like-someone/lesson.html`
-- SHA-256: `58397e77f5c61c490169967e320735c92bfcf431c488248e1991e4eafe521a89`
+- SHA-256: `8d290135c937993e634f88e77331bf6d45e8ee4b8ec071060297e7911e99fe5c`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “Which small gesture or quality can make someone especially appealing to you?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “In which setting does it stand out?” rather than asking every follow-up.
-- Visible target or prompt: Which small gesture or quality can make someone especially appealing to you? / どんな小さな行動や特徴に、特に魅力を感じますか？
-- Learning target: Explore the distinct “A small attraction (小さな魅力)” angle of “A little thing that makes you like someone” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “In which setting does it stand out?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “In which setting does it stand out?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which small gesture or quality can make someone especially appealing to you?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which value might explain its appeal?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which small gesture or quality can make someone especially appealing to you?"]}`
+- Learner action: Answer the standalone question “What small gesture or quality makes someone more attractive to you?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What small gesture or quality makes someone more attractive to you?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What small gesture or quality makes someone more attractive to you?” / “どんな小さな行動や特徴が、その人をより魅力的に感じさせますか？” Tutor follow-ups: “When do you notice it most?” and “Why do you like it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな小さな行動や特徴が、その人をより魅力的に感じさせますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What small gesture or quality makes someone more attractive to you?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “What might an understated gesture suggest about someone's character, without proving it?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which trait could it indicate?” rather than asking every follow-up.
-- Visible target or prompt: What might an understated gesture suggest about someone's character, without proving it? / さりげない行動は、人柄について何を示唆しても、証明まではできないと思いますか？
-- Learning target: Explore the distinct “What it suggests (そこから感じること)” angle of “A little thing that makes you like someone” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which trait could it indicate?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which trait could it indicate?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What might an understated gesture suggest about someone's character, without proving it?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What other evidence would you want before judging?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What might an understated gesture suggest about someone's character, without proving it?"]}`
+- Learner action: Answer the standalone question “What can a small kind gesture suggest about a person?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What can a small kind gesture suggest about a person?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What can a small kind gesture suggest about a person?” / “小さな親切から、その人のどんな人柄が感じられますか？” Tutor follow-ups: “Which quality could it show?” and “What else would you want to see before judging?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “小さな親切から、その人のどんな人柄が感じられますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can a small kind gesture suggest about a person?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “Would you name an understated quality you find attractive to the person who has it?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What would make the compliment feel genuine?” rather than asking every follow-up.
-- Visible target or prompt: Would you name an understated quality you find attractive to the person who has it? / その人のさりげない特徴に魅力を感じると、本人に伝えますか？
-- Learning target: Explore the distinct “Saying it aloud (本人に伝える)” angle of “A little thing that makes you like someone” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What would make the compliment feel genuine?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What would make the compliment feel genuine?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Would you name an understated quality you find attractive to the person who has it?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which context could make it uncomfortable?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you name an understated quality you find attractive to the person who has it?"]}`
+- Learner action: Answer the standalone question “Would you tell someone about a small quality you quietly find attractive?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would you tell someone about a small quality you quietly find attractive?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would you tell someone about a small quality you quietly find attractive?” / “その人のさりげない特徴に魅力を感じると、本人に伝えますか？” Tutor follow-ups: “What would make the compliment feel genuine?” and “Which situation could make it uncomfortable?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “その人のさりげない特徴に魅力を感じると、本人に伝えますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you tell someone about a small quality you quietly find attractive?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “Which ordinary situation reveals genuine consideration most clearly?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which action would make it visible?” rather than asking every follow-up.
-- Visible target or prompt: Which ordinary situation reveals genuine consideration most clearly? / 本当の思いやりが最もはっきり現れるのは、どんな日常の場面ですか？
-- Learning target: Explore the distinct “Noticing it (気づいた場面)” angle of “A little thing that makes you like someone” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which action would make it visible?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which action would make it visible?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which ordinary situation reveals genuine consideration most clearly?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Why would that moment carry weight?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which ordinary situation reveals genuine consideration most clearly?"]}`
+- Learner action: Answer the standalone question “Where does kindness show most clearly: at home, at work, or with strangers?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Where does kindness show most clearly: at home, at work, or with strangers?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Where does kindness show most clearly: at home, at work, or with strangers?” / “親切が最もはっきり表れるのは、家、職場、知らない人との場面のどこですか？” Tutor follow-ups: “Which action would show kindness there?” and “Who would notice the benefit first?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “親切が最もはっきり表れるのは、家、職場、知らない人との場面のどこですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Where does kindness show most clearly: at home, at work, or with strangers?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “At the beginning of an attraction, how do appearance and ordinary behaviour compete for attention?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which tends to matter first?” rather than asking every follow-up.
-- Visible target or prompt: At the beginning of an attraction, how do appearance and ordinary behaviour compete for attention? / 人にひかれ始めるとき、見た目と日常の行動はどう影響し合いますか？
-- Learning target: Explore the distinct “What you say you want (理想との違い)” angle of “A little thing that makes you like someone” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which tends to matter first?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which tends to matter first?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “At the beginning of an attraction, how do appearance and ordinary behaviour compete for attention?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which behaviour could overturn the first impression?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["At the beginning of an attraction, how do appearance and ordinary behaviour compete for attention?"]}`
+- Learner action: Answer the standalone question “Which matters more after the first meeting: appearance or everyday behaviour?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which matters more after the first meeting: appearance or everyday behaviour?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which matters more after the first meeting: appearance or everyday behaviour?” / “初対面のあとにより大切になるのは、外見と日常の行動のどちらですか？” Tutor follow-ups: “Which one matters first?” and “What behaviour could change the first impression?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “初対面のあとにより大切になるのは、外見と日常の行動のどちらですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which matters more after the first meeting: appearance or everyday behaviour?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “What can make the same endearing habit lose its charm?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How much does intention affect the meaning?” rather than asking every follow-up.
-- Visible target or prompt: What can make the same endearing habit lose its charm? / 同じ愛らしい癖が魅力を失うのは、どんなときですか？
-- Learning target: Explore the distinct “What turns it off (魅力が消えるとき)” angle of “A little thing that makes you like someone” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “How much does intention affect the meaning?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How much does intention affect the meaning?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What can make the same endearing habit lose its charm?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which context could reverse your judgment?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can make the same endearing habit lose its charm?"]}`
+- Learner action: Answer the standalone question “When can a charming habit start to feel annoying?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When can a charming habit start to feel annoying?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When can a charming habit start to feel annoying?” / “魅力的な癖が、うっとうしく感じ始めるのはどんなときですか？” Tutor follow-ups: “Would a good intention change how the habit feels?” and “What repeated behaviour could make it irritating?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “魅力的な癖が、うっとうしく感じ始めるのはどんなときですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When can a charming habit start to feel annoying?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “How have age and experience changed which understated qualities you value?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which quality carries more weight now?” rather than asking every follow-up.
-- Visible target or prompt: How have age and experience changed which understated qualities you value? / 年齢や経験によって、大切に感じるさりげない特徴はどう変わりましたか？
-- Learning target: Explore the distinct “Changing with age (年齢による変化)” angle of “A little thing that makes you like someone” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which quality carries more weight now?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which quality carries more weight now?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How have age and experience changed which understated qualities you value?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which preference has remained stable?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How have age and experience changed which understated qualities you value?"]}`
+- Learner action: Answer the standalone question “How have age and experience changed which small qualities you value?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How have age and experience changed which small qualities you value?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How have age and experience changed which small qualities you value?” / “年齢や経験によって、大切に感じるさりげない特徴はどう変わりましたか？” Tutor follow-ups: “What matters more to you now?” and “Which preference has stayed the same?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “年齢や経験によって、大切に感じるさりげない特徴はどう変わりましたか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How have age and experience changed which small qualities you value?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “Which understated quality would you be glad to have someone notice in you?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How would it become visible naturally?” rather than asking every follow-up.
-- Visible target or prompt: Which understated quality would you be glad to have someone notice in you? / 自分のどんなさりげない特徴に気づいてもらえたら、うれしいですか？
-- Learning target: Explore the distinct “What others notice (自分の小さな魅力)” angle of “A little thing that makes you like someone” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “How would it become visible naturally?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How would it become visible naturally?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which understated quality would you be glad to have someone notice in you?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Would naming it improve the moment or make it awkward?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which understated quality would you be glad to have someone notice in you?"]}`
+- Learner action: Answer the standalone question “Which small quality would you be glad to have someone notice in you?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which small quality would you be glad to have someone notice in you?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which small quality would you be glad to have someone notice in you?” / “自分のどんなさりげない特徴に気づいてもらえたら、うれしいですか？” Tutor follow-ups: “How would people notice it in daily life?” and “Would you want them to mention it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “自分のどんなさりげない特徴に気づいてもらえたら、うれしいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which small quality would you be glad to have someone notice in you?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

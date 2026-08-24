@@ -118,7 +118,7 @@ LESSONS = {
             ("{t}What I'd suggest is{/t} asking the client.", "{t}私が提案したいのは{/t}、顧客に聞くことです。", "What I'd suggest|is|asking|the client."),
             ("{t}What I'd suggest is{/t} starting tomorrow.", "{t}私が提案したいのは{/t}、明日始めることです。", "What I'd suggest|is|starting|tomorrow."),
         ),
-        rules=(("Keep the whole What-clause before is; the important point comes after is.", "What 節全体を is の前に置き、重要な点を is の後ろに置きます。"), ("After What I'd suggest is, use a noun phrase or an -ing action.", "What I'd suggest is の後ろには、名詞句または -ing の行動を置きます。")),
+        rules=(("Keep the whole What-clause before is; the important point comes after is.", "What 節全体を is の前に置き、重要な点を is の後ろに置きます。"), ("After What I'd suggest is, use a noun phrase or an -ing action.", "「What I'd suggest is」 の後ろには、名詞句または -ing の行動を置きます。")),
         prompt=("Name a real concern and suggestion, or say you have no decision to discuss today.", "実際の懸念と提案を言うか、今日は相談する判断がないと伝えましょう。"),
     ),
     104: dict(
@@ -137,7 +137,7 @@ LESSONS = {
             ("{t}It was Ken who changed the date{/t}.", "{t}日付を変更したのはケンです{/t}。", "It was|Ken|who changed|the date."),
             ("{t}It was Yuki who sent the final version{/t}.", "{t}最終版を送ったのはユキです{/t}。", "It was|Yuki|who sent|the final version."),
         ),
-        rules=(("Use It is plus a thing and that to focus the deciding element.", "物事を強調するときは It is＋物事＋that を使います。"), ("Use It was plus a person and who to focus who did the action.", "行動した人を強調するときは It was＋人＋who を使います。")),
+        rules=(("Use It is plus a thing and that to focus the deciding element.", "物事を強調するときは 「It is」＋物事＋「that」 を使います。"), ("Use It was plus a person and who to focus who did the action.", "行動した人を強調するときは 「It was」＋人＋who を使います。")),
         prompt=("Name the deciding point and the person responsible, or say there is no current decision.", "決め手と担当した人を言うか、今は判断することがないと伝えましょう。"),
     ),
     105: dict(
@@ -156,7 +156,7 @@ LESSONS = {
             ("{t}The sooner we decide, the sooner we can book{/t}.", "{t}早く決めるほど、早く予約できます{/t}。", "The sooner we decide,|the sooner|we can|book."),
             ("{t}The sooner we ask, the sooner we can know{/t}.", "{t}早く聞くほど、早く分かります{/t}。", "The sooner we ask,|the sooner|we can|know."),
         ),
-        rules=(("Repeat the plus a comparative in both halves to link the two changes.", "二つの変化を結ぶため、両方の節で the＋比較級を繰り返します。"), ("Keep each half complete: the sooner plus a clause, then another the sooner clause.", "それぞれを the sooner＋節の形にし、二つの節をそろえます。")),
+        rules=(("Repeat the plus a comparative in both halves to link the two changes.", "二つの変化を結ぶため、両方の節で the＋比較級を繰り返します。"), ("Keep each half complete: the sooner plus a clause, then another the sooner clause.", "それぞれを 「the sooner」＋節の形にし、二つの節をそろえます。")),
         prompt=("Explain one real linked change, or say no urgent decision comes to mind.", "実際に連動する変化を一つ説明するか、急ぐ判断は思いつかないと伝えましょう。"),
     ),
     106: dict(
@@ -175,7 +175,7 @@ LESSONS = {
             ("{t}There are three details worth checking{/t}.", "{t}確認する価値のある詳細が三つあります{/t}。", "There are|three details|worth|checking."),
             ("{t}There are a few options worth reviewing{/t}.", "{t}見直す価値のある選択肢がいくつかあります{/t}。", "There are|a few options|worth|reviewing."),
         ),
-        rules=(("Use There's with the singular one thing, then say what you would do.", "単数の one thing には There's を使い、そのあとにしたいことを続けます。"), ("Use There are with plural items, and put an -ing action after worth.", "複数の項目には There are を使い、worth の後ろには -ing 形を置きます。")),
+        rules=(("Use There's with the singular one thing, then say what you would do.", "単数の 「one thing」 には There's を使い、そのあとにしたいことを続けます。"), ("Use There are with plural items, and put an -ing action after worth.", "複数の項目には 「There are」 を使い、worth の後ろには -ing 形を置きます。")),
         prompt=("Announce one real point and any further issues, or say everything looks fine.", "実際の一点と追加の問題を予告するか、すべて問題ないと伝えましょう。"),
     ),
     107: dict(
@@ -194,7 +194,7 @@ LESSONS = {
             ("{t}Coming back to the meeting{/t}, we need a firm decision.", "{t}会議の話に戻ると{/t}、確定した判断が必要です。", "Coming back to|the meeting,|we need|a firm decision."),
             ("{t}Coming back to the second option{/t}, we need a firm date.", "{t}二つ目の案の話に戻ると{/t}、確定日が必要です。", "Coming back to|the second option,|we need|a firm date."),
         ),
-        rules=(("Put a noun topic after As for and use a comma before the message.", "As for の後ろに名詞の話題を置き、本文の前にコンマを置きます。"), ("Put the earlier noun topic after Coming back to, followed by a comma.", "Coming back to の後ろに前の話題を名詞で置き、そのあとにコンマを置きます。")),
+        rules=(("Put a noun topic after As for and use a comma before the message.", "「As for」 の後ろに名詞の話題を置き、本文の前にコンマを置きます。"), ("Put the earlier noun topic after Coming back to, followed by a comma.", "「Coming back to」 の後ろに前の話題を名詞で置き、そのあとにコンマを置きます。")),
         prompt=("Move between two real topics, or say there are no updates to organise.", "実際の二つの話題を切り替えるか、整理する更新はないと伝えましょう。"),
     ),
     108: dict(
@@ -213,7 +213,7 @@ LESSONS = {
             ("{t}Can you call me when you get a sec{/t}?", "時間があるときに{t}電話してくれる{/t}？", "Can you|call me|when you|get a sec?"),
             ("{t}Can you check the date when you get a sec{/t}?", "時間があるときに{t}日付を確認してくれる{/t}？", "Can you|check the date|when you|get a sec?"),
         ),
-        rules=(("After Would you be able to, use a plain verb; the longer frame adds distance.", "Would you be able to の後ろは動詞の原形にし、長い形で丁寧な距離を作ります。"), ("After Can you, use a plain verb; when you get a sec makes the request informal and unhurried.", "Can you の後ろは動詞の原形にし、when you get a sec でくだけた急がない依頼にします。")),
+        rules=(("After Would you be able to, use a plain verb; the longer frame adds distance.", "「Would you be able to」 の後ろは動詞の原形にし、長い形で丁寧な距離を作ります。"), ("After Can you, use a plain verb; when you get a sec makes the request informal and unhurried.", "「Can you」 の後ろは動詞の原形にし、「when you get a sec」 でくだけた急がない依頼にします。")),
         prompt=("Make one request that fits our relationship, or say you do not need help right now.", "私たちの関係に合う依頼を一つするか、今は手伝いが必要ないと伝えましょう。"),
     ),
     109: dict(
@@ -233,7 +233,7 @@ LESSONS = {
             ("{t}Honestly? I'd choose the other option{/t}.", "{t}正直に言うと、私ならもう一つの案を選びます{/t}。", "Honestly?|I'd choose|the other|option."),
         ),
         omit_reorder=(2,),
-        rules=(("Use To put it bluntly before a full clause and a comma to warn that you will be direct.", "To put it bluntly のあとにコンマと完全な節を置き、率直に言う合図にします。"), ("Use sentence-level Honestly before your full reaction; the question mark adds a spoken pause.", "文全体にかかる Honestly のあとに反応を続け、疑問符で話し言葉の間を示します。")),
+        rules=(("Use To put it bluntly before a full clause and a comma to warn that you will be direct.", "「To put it bluntly」 のあとにコンマと完全な節を置き、率直に言う合図にします。"), ("Use sentence-level Honestly before your full reaction; the question mark adds a spoken pause.", "文全体にかかる 「Honestly」 のあとに反応を続け、疑問符で話し言葉の間を示します。")),
         prompt=("Give a direct view on a low-stakes option, or say you would rather not judge it.", "重要度の低い案に率直な意見を言うか、判断は控えたいと伝えましょう。"),
     ),
     110: dict(
@@ -252,7 +252,7 @@ LESSONS = {
             ("{t}I'm afraid there's been a mistake{/t}.", "{t}残念ですが、間違いがありました{/t}。", "I'm afraid|there's been|a mistake."),
             ("{t}I'm afraid the room is already booked{/t}.", "{t}残念ですが、その部屋はすでに予約されています{/t}。", "I'm afraid|the room is|already booked."),
         ),
-        rules=(("Put the unwelcome clause after I hate to say it, but; do not hide the news.", "I hate to say it, but のあとに好ましくない内容を置き、知らせを曖昧にしません。"), ("Here I'm afraid introduces bad news; it does not mean the speaker feels fear.", "ここでの I'm afraid は悪い知らせを導き、話し手の恐怖を表すものではありません。")),
+        rules=(("Put the unwelcome clause after I hate to say it, but; do not hide the news.", "「I hate to say it, but」 のあとに好ましくない内容を置き、知らせを曖昧にしません。"), ("Here I'm afraid introduces bad news; it does not mean the speaker feels fear.", "ここでの 「I'm afraid」 は悪い知らせを導き、話し手の恐怖を表すものではありません。")),
         prompt=("Deliver one clear piece of practice bad news, or say there is no bad news today.", "練習用の悪い知らせを一つ明確に伝えるか、今日は悪い知らせがないと伝えましょう。"),
     ),
     111: dict(
@@ -271,7 +271,7 @@ LESSONS = {
             ("{t}Heads up — the train is delayed{/t}.", "{t}先に知らせておくと、電車が遅れています{/t}。", "Heads up —|the train|is delayed."),
             ("{t}Heads up — Sam called earlier{/t}.", "{t}先に知らせておくと、サムから先ほど電話がありました{/t}。", "Heads up —|Sam|called earlier."),
         ),
-        rules=(("Follow Just so you know with a full clause; it frames the information as a neutral update.", "Just so you know のあとには完全な節を続け、中立的な更新として伝えます。"), ("Heads up stands outside the clause as an informal alert, so pause before the news.", "Heads up は節の外に置くくだけた注意喚起なので、知らせの前で間を置きます。")),
+        rules=(("Follow Just so you know with a full clause; it frames the information as a neutral update.", "「Just so you know」 のあとには完全な節を続け、中立的な更新として伝えます。"), ("Heads up stands outside the clause as an informal alert, so pause before the news.", "「Heads up」 は節の外に置くくだけた注意喚起なので、知らせの前で間を置きます。")),
         prompt=("Pass on one real neutral update, or say there is nothing new to report.", "実際の中立的な更新を一つ伝えるか、知らせることはないと伝えましょう。"),
     ),
     112: dict(
@@ -290,7 +290,7 @@ LESSONS = {
             ("{t}I didn't mean to sound impatient{/t}.", "{t}いら立って聞こえるつもりはありませんでした{/t}。", "I didn't|mean to|sound|impatient."),
             ("{t}I didn't mean to sound quite so blunt{/t}.", "{t}そこまでぶっきらぼうに聞こえるつもりはありませんでした{/t}。", "I didn't|mean to|sound|quite so blunt."),
         ),
-        rules=(("Use came across as plus an adjective to describe the listener's impression.", "聞き手が受けた印象には came across as＋形容詞を使います。"), ("Use mean to plus plain sound, then an adjective for the unintended tone.", "意図しなかった調子には mean to＋動詞の原形 sound＋形容詞を使います。")),
+        rules=(("Use came across as plus an adjective to describe the listener's impression.", "聞き手が受けた印象には 「came across as」＋形容詞を使います。"), ("Use mean to plus plain sound, then an adjective for the unintended tone.", "意図しなかった調子には 「mean to」＋動詞の原形 sound＋形容詞を使います。")),
         prompt=("Describe one low-stakes wording problem and repair it, or say none comes to mind.", "重要度の低い言い方の問題と修復を述べるか、思いつかないと伝えましょう。"),
     ),
 }
@@ -331,14 +331,14 @@ SPECS = {
         (("Imagine a service or plan and announce one change.", "サービスや計画を想像し、変更点を一つ予告しましょう。"), ("Announce a small set of issues worth discussing.", "話し合う価値がある少数の問題を予告しましょう。")),
         (tuple((jp, "There", "'s", " are", tail) for jp, tail in (("一つなので{t}単数形{/t}：変えたい点があります。", " one thing I'd change."), ("一つなので{t}単数形{/t}：確認したい点があります。", " one thing I'd check."), ("一つなので{t}単数形{/t}：加えたい点があります。", " one thing I'd add."), ("一つなので{t}単数形{/t}：提案したい点があります。", " one thing I'd suggest."))), (("{t}取り上げる{/t}価値があります。", "There are a couple of issues worth ", "raising", "to raise", "."), ("{t}話し合う{/t}価値があります。", "There are two points worth ", "discussing", "to discuss", "."), ("{t}確認する{/t}価値があります。", "There are three details worth ", "checking", "to check", "."), ("{t}見直す{/t}価値があります。", "There are a few options worth ", "reviewing", "to review", "."))),
         (rule("Singular agreement", "単数との一致", "<b>There's one thing</b> + clause", "One announced point", "一点を予告", ("<b>There's one thing</b> I'd change.", "<b>There's one thing</b> I'd add.")), rule("Plural plus worth -ing", "複数＋worth -ing", "<b>There are</b> + plural + worth + 動詞<b>-ing</b>", "A small set of points", "少数の項目", ("There are two points worth <b>discussing</b>.", "There are a few options worth <b>reviewing</b>."))),
-        tip("A couple of or two?", "およその少数・正確な二つ", "In conversation, “a couple of” often means a small number around two. Use “two” when the count itself matters.", "会話の a couple of は二つ前後の少数を表すことがあります。数が重要なら two を使います。", ("Small approximate set", "およその少数", "There are a couple of issues worth raising.", "取り上げたい問題が二つほどあります。"), ("Exact count", "正確に二つ", "There are two issues worth raising.", "取り上げたい問題が二つあります。")),
+        tip("A couple of or two?", "およその少数・正確な二つ", "In conversation, “a couple of” often means a small number around two. Use “two” when the count itself matters.", "会話の 「a couple of」 は二つ前後の少数を表すことがあります。数が重要なら two を使います。", ("Small approximate set", "およその少数", "There are a couple of issues worth raising.", "取り上げたい問題が二つほどあります。"), ("Exact count", "正確に二つ", "There are two issues worth raising.", "取り上げたい問題が二つあります。")),
     ),
     107: semantic_spec(
         (("Use this to introduce a new noun topic.", "新しい名詞の話題を導入します。"), ("Use this to return explicitly to an earlier noun topic.", "前に出た名詞の話題へ明示的に戻ります。")),
         (("Introduce one topic and give an update.", "話題を一つ導入し、最新情報を伝えましょう。"), ("Return to one earlier topic and update it.", "前の話題に一つ戻り、最新情報を伝えましょう。")),
         (tuple((jp, "As ", "for", "to", tail) for jp, tail in (("予算{t}については{/t}、まだ待っています。", " the budget, we're still waiting."), ("配達{t}については{/t}、まだ待っています。", " the delivery, we're still waiting."), ("会場{t}については{/t}、予約済みです。", " the venue, it's already booked."), ("日程{t}については{/t}、変更になるかもしれません。", " the schedule, it may change."))), tuple((jp, "Coming back ", "to", "at", tail) for jp, tail in (("予定表{t}の話に戻ると{/t}、確定日が必要です。", " the timeline, we need a firm date."), ("価格{t}の話に戻ると{/t}、はっきりした返事が必要です。", " the price, we need a firm answer."), ("会議{t}の話に戻ると{/t}、確定した判断が必要です。", " the meeting, we need a firm decision."), ("二つ目の案{t}の話に戻ると{/t}、確定日が必要です。", " the second option, we need a firm date.")))),
         (rule("Introduce with As for", "As for で話題を導入", "<b>As for + noun</b>, + message", "New topic", "新しい話題", ("<b>As for the budget</b>, we're still waiting.", "<b>As for the venue</b>, it's booked.")), rule("Return with Coming back to", "Coming back to で戻る", "<b>Coming back to + noun</b>, + message", "Earlier topic", "前に出た話題", ("<b>Coming back to the timeline</b>, we need a date.", "<b>Coming back to the price</b>, we need an answer."))),
-        tip("As for or speaking of?", "話題を整理・連想で話題転換", "“As for” deliberately organises a topic. “Speaking of” changes topic because the last thing reminded you of it.", "As for は話題を意図的に整理します。Speaking of は直前の話から連想して話題を変えます。", ("Organise the agenda", "議題を整理", "As for the budget, we're still waiting.", "予算については、まだ返事を待っています。"), ("Follow an association", "連想で話題転換", "Speaking of Sam, did he reply?", "サムと言えば、返事は来ましたか？")),
+        tip("As for or speaking of?", "話題を整理・連想で話題転換", "“As for” deliberately organises a topic. “Speaking of” changes topic because the last thing reminded you of it.", "「As for」 は話題を意図的に整理します。「Speaking of」 は直前の話から連想して話題を変えます。", ("Organise the agenda", "議題を整理", "As for the budget, we're still waiting.", "予算については、まだ返事を待っています。"), ("Follow an association", "連想で話題転換", "Speaking of Sam, did he reply?", "サムと言えば、返事は来ましたか？")),
     ),
     108: semantic_spec(
         (("Use this careful request with distance or a less familiar person.", "距離を保ちたい相手や、あまり親しくない相手への丁寧な依頼です。"), ("Use this informal request with a close colleague.", "親しい同僚へのくだけた依頼です。")),
@@ -352,28 +352,28 @@ SPECS = {
         (("Give a direct judgment about a low-stakes choice.", "重要度の低い選択について率直に判断しましょう。"), ("Say honestly what you would do.", "自分ならどうするか率直に言いましょう。")),
         (tuple((jp, "To put it ", "bluntly", "blunt", tail) for jp, tail in (("{t}率直に{/t}言えば、うまくいきません。", ", it won't work."), ("{t}率直に{/t}言えば、費用がかかりすぎます。", ", it costs too much."), ("{t}率直に{/t}言えば、遅すぎます。", ", it's too late."), ("{t}率直に{/t}言えば、別の案が必要です。", ", we need another plan."))), (("{t}正直に言うと{/t}、私なら見送ります。", "", "Honestly", "Honest", "? I'd walk away."), ("{t}正直に言うと{/t}、私なら今は待ちます。", "", "Honestly", "Honest", "? I'd wait for now."), ("{t}正直に言うと{/t}、私なら断ります。", "", "Honestly", "Honest", "? I'd say no."), ("{t}正直に言うと{/t}、私ならもう一つを選びます。", "", "Honestly", "Honest", "? I'd choose the other option."))),
         (rule("Announce bluntness", "率直さを予告", "<b>To put it bluntly</b>, + full clause", "Direct judgment", "直接的な判断", ("To put it bluntly, <b>it won't work</b>.", "To put it bluntly, <b>it costs too much</b>.")), rule("Honestly comments on the sentence", "Honestly は文全体にかかる", "<b>Honestly?</b> + personal reaction", "Candid spoken choice", "率直な話し言葉の選択", ("Honestly? <b>I'd walk away</b>.", "Honestly? <b>I'd say no</b>."))),
-        tip("Honestly, or Honestly?", "穏やかな前置き・独立した率直な反応", "A comma smoothly introduces an opinion. A question mark makes Honestly a separate, more conversational beat.", "コンマなら意見を滑らかに導きます。疑問符なら Honestly が独立し、より会話的な間になります。", ("Smooth introduction", "滑らかな前置き", "Honestly, I don't think it'll work.", "正直に言うと、うまくいかないと思います。"), ("Spoken beat", "会話的な間", "Honestly? I'd walk away.", "正直に言うと、私なら見送ります。")),
+        tip("Honestly, or Honestly?", "穏やかな前置き・独立した率直な反応", "A comma smoothly introduces an opinion. A question mark makes Honestly a separate, more conversational beat.", "コンマなら意見を滑らかに導きます。疑問符なら 「Honestly」 が独立し、より会話的な間になります。", ("Smooth introduction", "滑らかな前置き", "Honestly, I don't think it'll work.", "正直に言うと、うまくいかないと思います。"), ("Spoken beat", "会話的な間", "Honestly? I'd walk away.", "正直に言うと、私なら見送ります。")),
     ),
     110: semantic_spec(
         (("Use this when you dislike having to state the bad news.", "悪い知らせを言わなければならないのが心苦しいときに使います。"), ("Use this conventional cushion before a clear problem statement.", "明確な問題を述べる前の定型的な和らげ表現です。")),
         (("Imagine a problem and state it clearly but gently.", "問題を想像し、やわらかく、はっきり伝えましょう。"), ("Imagine a delay or mistake and deliver the bad news clearly.", "遅れや間違いを想像し、悪い知らせを明確に伝えましょう。")),
         (tuple((jp, "I hate to say it, ", "but", "so", tail) for jp, tail in (("言いにくいのですが、{t}しかし{/t}遅れています。", " we're behind."), ("言いにくいのですが、{t}しかし{/t}今日は終えられません。", " we can't finish today."), ("言いにくいのですが、{t}しかし{/t}注文が遅れています。", " the order is delayed."), ("言いにくいのですが、{t}しかし{/t}価格が変わりました。", " the price has changed."))), (("残念ですが、{t}問題{/t}が起きました。", "I'm afraid there's been ", "a problem", "problems", "."), ("残念ですが、まだ{t}確定できません{/t}。", "I'm afraid we ", "can't", "don't", " confirm that yet."), ("残念ですが、{t}間違い{/t}がありました。", "I'm afraid there's been ", "a mistake", "mistakes", "."), ("残念ですが、その部屋は{t}すでに{/t}予約されています。", "I'm afraid the room is ", "already", "yet", " booked."))),
         (rule("Behind or behind schedule?", "behind / behind schedule", "<b>behind</b>（文脈）／<b>behind schedule</b>（明示）", "After the cushion", "和らげ表現のあと", ("I hate to say it, but <b>we're behind</b>.", "I hate to say it, but <b>we're behind schedule</b>.")), rule("Afraid as a news cushion", "知らせを和らげる afraid", "I'm afraid + <b>full clause</b>", "Not literal fear", "文字どおりの恐怖ではない", ("I'm afraid <b>there's been a problem</b>.", "I'm afraid <b>there's been a delay</b>."))),
-        tip("I'm sorry, but or I'm afraid?", "責任を認める・悪い知らせを和らげる", "Use “I'm sorry, but” when you own an inconvenience. “I'm afraid” can introduce bad news without claiming personal fault.", "自分が迷惑をかけたなら I'm sorry, but を使います。I'm afraid は自分の責任を認めずに悪い知らせを導くこともできます。", ("Own the inconvenience", "自分の責任", "I'm sorry, but I sent the wrong file.", "すみません、間違ったファイルを送りました。"), ("Introduce bad news", "悪い知らせを導入", "I'm afraid there's been a delay.", "残念ですが、遅れが出ました。")),
+        tip("I'm sorry, but or I'm afraid?", "責任を認める・悪い知らせを和らげる", "Use “I'm sorry, but” when you own an inconvenience. “I'm afraid” can introduce bad news without claiming personal fault.", "自分が迷惑をかけたなら 「I'm sorry, but」 を使います。「I'm afraid」 は自分の責任を認めずに悪い知らせを導くこともできます。", ("Own the inconvenience", "自分の責任", "I'm sorry, but I sent the wrong file.", "すみません、間違ったファイルを送りました。"), ("Introduce bad news", "悪い知らせを導入", "I'm afraid there's been a delay.", "残念ですが、遅れが出ました。")),
     ),
     111: semantic_spec(
         (("Use this for a neutral update the listener may find useful.", "相手に役立つかもしれない中立的な更新に使います。"), ("Use this informal alert before timely news.", "早めに伝えたい知らせの前に使うくだけた注意喚起です。")),
         (("Imagine a plan and give one neutral update.", "計画を想像し、中立的な更新を一つ伝えましょう。"), ("Give one timely informal alert about a change.", "変更について、早めに伝えるくだけた知らせを一つ言いましょう。")),
         (tuple((jp, "Just ", "so", "for", tail) for jp, tail in (("{t}念のためお知らせすると{/t}、部屋は予約済みです。", " you know, the room's booked."), ("{t}念のためお知らせすると{/t}、会議が変更になりました。", " you know, the meeting has moved."), ("{t}念のためお知らせすると{/t}、チケットは準備できています。", " you know, the tickets are ready."), ("{t}念のためお知らせすると{/t}、顧客から電話がありました。", " you know, the client called."))), (("{t}先に知らせておくと{/t}、会議が変更になりました。", "", "Heads", "Head", " up — they moved the meeting."), ("{t}先に知らせておくと{/t}、価格が変わりました。", "", "Heads", "Head", " up — the price has changed."), ("{t}先に知らせておくと{/t}、電車が遅れています。", "", "Heads", "Head", " up — the train is delayed."), ("{t}先に知らせておくと{/t}、サムから先ほど電話がありました。", "", "Heads", "Head", " up — Sam called earlier."))),
         (rule("Neutral full-clause update", "中立的な完全節の更新", "Just so you know, + <b>full clause</b>", "Information, not a request", "依頼ではなく情報", ("Just so you know, <b>the room's booked</b>.", "Just so you know, <b>the report is ready</b>.")), rule("Informal alert outside the clause", "節の外に置く注意喚起", "<b>Heads up</b> — + full clause", "Timely informal news", "早めのくだけた知らせ", ("Heads up — <b>they moved the meeting</b>.", "Heads up — <b>the train is delayed</b>."))),
-        tip("Heads up or just a heads-up?", "簡潔な注意喚起・少し柔らかい名詞句", "“Heads up” is brisk. “Just a heads-up” often sounds a little softer before the same news.", "Heads up は簡潔です。Just a heads-up は同じ知らせの前で少し柔らかく聞こえることがあります。", ("Brisk alert", "簡潔", "Heads up — they moved the meeting.", "先に知らせておくと、会議が変更になりました。"), ("Softer lead-in", "少し柔らかい", "Just a heads-up: they moved the meeting.", "念のためお知らせすると、会議が変更になりました。")),
+        tip("Heads up or just a heads-up?", "簡潔な注意喚起・少し柔らかい名詞句", "“Heads up” is brisk. “Just a heads-up” often sounds a little softer before the same news.", "「Heads up」 は簡潔です。「Just a heads-up」 は同じ知らせの前で少し柔らかく聞こえることがあります。", ("Brisk alert", "簡潔", "Heads up — they moved the meeting.", "先に知らせておくと、会議が変更になりました。"), ("Softer lead-in", "少し柔らかい", "Just a heads-up: they moved the meeting.", "念のためお知らせすると、会議が変更になりました。")),
     ),
     112: semantic_spec(
         (("Use this to describe the impression created by wording.", "言い方が与えた印象を説明します。"), ("Use this to separate your intention from an unintended tone.", "自分の意図と、意図しなかった調子を分けて伝えます。")),
         (("Name how one low-stakes message sounded.", "重要度の低いメッセージがどう聞こえたか言いましょう。"), ("Repair one unintended tone.", "意図しない調子を一つ修復しましょう。")),
         ((("as の後ろは{t}形容詞「失礼な」{/t}。", "That came across as ", "rude", "rudely", "."), ("as の後ろは{t}形容詞「冷たい」{/t}。", "That came across as a little ", "cold", "coldly", "."), ("as の後ろは{t}形容詞「いら立っている」{/t}。", "That came across as ", "impatient", "impatiently", "."), ("as の後ろは{t}形容詞「批判的な」{/t}。", "That came across as more ", "critical", "critically", " than you meant.")), (("sound の後ろは{t}形容詞「失礼な」{/t}。", "I didn't mean to sound ", "rude", "rudely", "."), ("sound の後ろは{t}形容詞「冷たい」{/t}。", "I didn't mean to sound so ", "cold", "coldly", "."), ("sound の後ろは{t}形容詞「いら立っている」{/t}。", "I didn't mean to sound ", "impatient", "impatiently", "."), ("sound の後ろは{t}形容詞「ぶっきらぼうな」{/t}。", "I didn't mean to sound quite so ", "blunt", "bluntly", "."))),
         (rule("Impact as an impression", "印象としての影響", "come across as + <b>adjective</b>", "Name how it sounded", "どう聞こえたかを示す", ("That came across as <b>rude</b>.", "That came across as <b>cold</b>.")), rule("Intent plus sound adjective", "意図＋sound＋形容詞", "didn't mean to + <b>sound + adjective</b>", "Separate intent from effect", "意図と影響を分ける", ("I didn't mean to sound <b>rude</b>.", "I didn't mean to sound <b>impatient</b>."))),
-        tip("Came across as rude or sounded rude?", "印象に焦点・直接的な評価", "“Came across as” foregrounds the listener's impression and can feel less absolute. “Sounded rude” is a more direct judgment.", "came across as は聞き手の印象に焦点を置き、断定を弱められます。sounded rude はより直接的な評価です。", ("Focus on impression", "受けた印象", "That came across as rude.", "その言い方は失礼に聞こえました。"), ("Direct judgment", "直接的な評価", "That sounded rude.", "それは失礼に聞こえました。")),
+        tip("Came across as rude or sounded rude?", "印象に焦点・直接的な評価", "“Came across as” foregrounds the listener's impression and can feel less absolute. “Sounded rude” is a more direct judgment.", "「came across as」 は聞き手の印象に焦点を置き、断定を弱められます。「sounded rude」 はより直接的な評価です。", ("Focus on impression", "受けた印象", "That came across as rude.", "その言い方は失礼に聞こえました。"), ("Direct judgment", "直接的な評価", "That sounded rude.", "それは失礼に聞こえました。")),
     ),
 }
 

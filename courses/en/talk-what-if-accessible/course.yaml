@@ -31,6 +31,8 @@ spec:
     en: Pick fast in a hypothetical, then open out the reason and what would follow.
     ja: 仮の選択を素早く決め、理由と結果を広げて話す。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

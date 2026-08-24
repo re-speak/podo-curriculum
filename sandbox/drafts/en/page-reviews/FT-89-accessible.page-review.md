@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-accessible/lessons/89-what-you-would-really-do-if-you-won-the-lottery/lesson.html`
-- SHA-256: `63c88d58b50f4c9dff41bc6cccf571d03530795f53be3b4c1f5cb0a18f9cee06`
+- SHA-256: `ec77694ba54cdcedb4653b10faa0369a2938add0102a49dde7efffe11e10df20`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “Imagine you win a large lottery prize tomorrow. What would you do first?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Imagine you win a large lottery prize tomorrow. What would you do first?”, react or share briefly, then choose at most one relevant probe such as “What would you deliberately avoid doing?”.
-- Visible target or prompt: Imagine you win a large lottery prize tomorrow. What would you do first? / 明日、宝くじで大当たりしたと想像してください。最初に何をしますか？ Follow-up pool: What would you deliberately avoid doing? What makes that the safest first move?
-- Learning target: Explore the distinct “The first move” angle of “What you would really do if you won the lottery” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What would you deliberately avoid doing?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What would you deliberately avoid doing?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Imagine you win a large lottery prize tomorrow. What would you do first?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What makes that the safest first move?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Imagine you win a large lottery prize tomorrow. What would you do first?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Imagine you win a large lottery prize tomorrow. What would you do first?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Imagine you win a large lottery prize tomorrow. What would you do first?” / “明日、宝くじで大当たりしたと想像してください。最初に何をしますか？” Tutor follow-ups: “Would you call someone, make a plan, or do nothing for a day?” and “What would you avoid doing immediately?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “明日、宝くじで大当たりしたと想像してください。最初に何をしますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Imagine you win a large lottery prize tomorrow. What would you do first?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “What should someone consider before making the first decision after a lottery win?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What should someone consider before making the first decision after a lottery win?”, react or share briefly, then choose at most one relevant probe such as “Which problem or hope would it address?”.
-- Visible target or prompt: What should someone consider before making the first decision after a lottery win? / 宝くじに当たった後、最初の決断をする前に何を考えるべきですか？ Follow-up pool: Which problem or hope would it address? What would you wait for?
-- Learning target: Explore the distinct “Why first” angle of “What you would really do if you won the lottery” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which problem or hope would it address?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which problem or hope would it address?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What should someone consider before making the first decision after a lottery win?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What would you wait for?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What should someone consider before making the first decision after a lottery win?"]}`
+- Learner action: Answer the standalone question “Whose advice, if anyone, would you want before buying anything?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Whose advice, if anyone, would you want before buying anything?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Whose advice, if anyone, would you want before buying anything?” / “何かを買う前に、相談したい相手はいますか？” Tutor follow-ups: “What could that person help you notice?” and “If you asked no one, how would you slow the decision down?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “何かを買う前に、相談したい相手はいますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Whose advice, if anyone, would you want before buying anything?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “Would you tell anyone about the jackpot?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Would you tell anyone about the jackpot?”, react or share briefly, then choose at most one relevant probe such as “Who would have a practical reason to know?”.
-- Visible target or prompt: Would you tell anyone about the jackpot? / 大当たりしたことを誰かに話しますか？ Follow-up pool: Who would have a practical reason to know? What benefit could privacy provide?
-- Learning target: Explore the distinct “Who knows” angle of “What you would really do if you won the lottery” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Who would have a practical reason to know?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Who would have a practical reason to know?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Would you tell anyone about the jackpot?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What benefit could privacy provide?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you tell anyone about the jackpot?"]}`
+- Learner action: Answer the standalone question “Would you tell family or friends about the win, or keep it private?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would you tell family or friends about the win, or keep it private?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would you tell family or friends about the win, or keep it private?” / “当選を家族や友人に話しますか、それとも秘密にしますか？” Tutor follow-ups: “Who would have a practical reason to know?” and “What benefit could privacy provide?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “当選を家族や友人に話しますか、それとも秘密にしますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you tell family or friends about the win, or keep it private?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “Would you keep your current work, study, care, or routine?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Would you keep your current work, study, care, or routine?”, react or share briefly, then choose at most one relevant probe such as “What routine would you want?”.
-- Visible target or prompt: Would you keep your current work, study, care, or routine? / 今の仕事、勉強、ケア、または日課を続けますか？ Follow-up pool: What routine would you want? What would you keep even without financial pressure?
-- Learning target: Explore the distinct “Work after the win” angle of “What you would really do if you won the lottery” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What routine would you want?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What routine would you want?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Would you keep your current work, study, care, or routine?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What would you keep even without financial pressure?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you keep your current work, study, care, or routine?"]}`
+- Learner action: Answer the standalone question “Which part of your current routine would you keep even if you didn't need the money?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which part of your current routine would you keep even if you didn't need the money?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which part of your current routine would you keep even if you didn't need the money?” / “お金のために必要でなくても、今の日課のどの部分を続けますか？” Tutor follow-ups: “Would you keep the same home, hobbies, or daily schedule?” and “How might money still change it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “お金のために必要でなくても、今の日課のどの部分を続けますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which part of your current routine would you keep even if you didn't need the money?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “What, if anything, would you buy first?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What, if anything, would you buy first?”, react or share briefly, then choose at most one relevant probe such as “What would change after it?”.
-- Visible target or prompt: What, if anything, would you buy first? / 最初に買うものがあるとすれば、何ですか？ Follow-up pool: What would change after it? Where would the money go first?
-- Learning target: Explore the distinct “Buying or not buying” angle of “What you would really do if you won the lottery” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What would change after it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What would change after it?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What, if anything, would you buy first?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Where would the money go first?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What, if anything, would you buy first?"]}`
+- Learner action: Answer the standalone question “What's the first thing you would buy for someone else?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's the first thing you would buy for someone else?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's the first thing you would buy for someone else?” / “ほかの人のために最初に買うものは何ですか？” Tutor follow-ups: “Would you choose a gift, a trip, or practical help?” and “If you bought nothing, how else could you share the money?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “ほかの人のために最初に買うものは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's the first thing you would buy for someone else?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “What choice might you regret—or do you expect no regret?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What choice might you regret—or do you expect no regret?”, react or share briefly, then choose at most one relevant probe such as “What would cause it?”.
-- Visible target or prompt: What choice might you regret—or do you expect no regret? / どんな選択を後悔しそうですか。それとも、後悔しないと思いますか？ Follow-up pool: What would cause it? What would keep the decision sound?
-- Learning target: Explore the distinct “A possible regret” angle of “What you would really do if you won the lottery” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What would cause it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What would cause it?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What choice might you regret—or do you expect no regret?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What would keep the decision sound?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What choice might you regret—or do you expect no regret?"]}`
+- Learner action: Answer the standalone question “What's the easiest mistake for a lottery winner to make?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What's the easiest mistake for a lottery winner to make?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What's the easiest mistake for a lottery winner to make?” / “宝くじの当選者が最もしやすい失敗は何ですか？” Tutor follow-ups: “What would cause that mistake?” and “Would spending too fast or trusting the wrong person be more dangerous?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “宝くじの当選者が最もしやすい失敗は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What's the easiest mistake for a lottery winner to make?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “Would life feel different after the jackpot, or would you keep it mostly the same?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Would life feel different after the jackpot, or would you keep it mostly the same?”, react or share briefly, then choose at most one relevant probe such as “What would become ordinary first?”.
-- Visible target or prompt: Would life feel different after the jackpot, or would you keep it mostly the same? / 大当たりのあと、生活は変わったと感じますか。それとも、ほとんど変えませんか？ Follow-up pool: What would become ordinary first? What would you deliberately keep the same?
-- Learning target: Explore the distinct “A new normal” angle of “What you would really do if you won the lottery” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What would become ordinary first?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What would become ordinary first?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Would life feel different after the jackpot, or would you keep it mostly the same?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What would you deliberately keep the same?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would life feel different after the jackpot, or would you keep it mostly the same?"]}`
+- Learner action: Answer the standalone question “What would you want to keep normal after becoming rich?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would you want to keep normal after becoming rich?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would you want to keep normal after becoming rich?” / “お金持ちになっても、何を普通のままにしておきたいですか？” Tutor follow-ups: “Why is that part worth protecting?” and “Would sudden wealth make ordinary friendships harder?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “お金持ちになっても、何を普通のままにしておきたいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would you want to keep normal after becoming rich?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “What important part of life would the jackpot not solve?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What important part of life would the jackpot not solve?”, react or share briefly, then choose at most one relevant probe such as “What would that still require?”.
-- Visible target or prompt: What important part of life would the jackpot not solve? / 大当たりしても解決できない大切なことは何ですか？ Follow-up pool: What would that still require? Could the money make it easier without solving it?
-- Learning target: Explore the distinct “What money cannot choose” angle of “What you would really do if you won the lottery” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What would that still require?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What would that still require?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What important part of life would the jackpot not solve?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Could the money make it easier without solving it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “What important part of life would the jackpot not solve?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What important part of life would the jackpot not solve?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What important part of life would the jackpot not solve?” / “大当たりしても解決できない大切なことは何ですか？” Tutor follow-ups: “Would money solve loneliness or poor health?” and “What else would help?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “大当たりしても解決できない大切なことは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What important part of life would the jackpot not solve?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

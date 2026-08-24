@@ -39,8 +39,8 @@ FUTURE_CORE_DEPENDENCIES = {65: ("CORE-56",), 66: ("CORE-56", "CORE-58"), 68: ("
 REACHABLE_CORE_RETRIEVAL = {64: ("CORE-30", "CORE-32"), 65: ("CORE-30",), 67: ("CORE-51", "CORE-52"), 68: ("CORE-12",), 70: ("CORE-12", "CORE-18"), 73: ("CORE-15",)}
 BRIEF_OPENINGS = {
     64: "What are some memorable ways people use their first paycheck?",
-    65: "What makes finishing something feel genuinely satisfying?",
-    66: "What can make an ordinary moment feel like success?",
+    65: "Which feels better: finishing a long job or fixing a small annoying problem?",
+    66: "Which small success feels best: arriving on time, cooking well, or finishing a task?",
     67: "What skill would you most like to improve?",
     68: "Besides spending it, what can people do with money?",
     69: "Which career would you be curious to try for one year?",
@@ -82,7 +82,7 @@ TOPICS = {
         ],
         [
             p("opening", "First earnings", "初めての収入", BRIEF_OPENINGS[64] + " If you haven't earned money yet, use a familiar or imagined example.", "初めて自分で得たお金は何で、何に使いましたか？ まだ経験がなければ、身近な人や想像上の例でもかまいません。", ("What made that payment memorable?", "What did receiving it make possible for the first time?"), "What was the first money you earned, and how did you use it? A familiar or hypothetical example is equally welcome.", "初めて得た収入は何で、どのように使いましたか？ 身近な例や仮定の例でもかまいません。", ("Which part of the experience made it memorable?", "What did the payment make possible that had not been possible before?"), "personal-familiar-or-imagined"),
-            p("amount", "The amount", "金額", "Did the amount feel large, small, or simply exciting at the time?", "その金額は当時、大きく感じましたか、小さく感じましたか、それとも金額よりうれしさがありましたか？", ("A rough answer is enough; what made it feel that way?", "If you prefer no figure, what could the money cover?"), "Did the amount feel substantial, modest, or important mainly because it was your first?", "その金額は大きく感じましたか、少なく感じましたか、それとも初めてだったことが主に重要でしたか？", ("A broad range is enough; what shaped that perception?", "Without disclosing a figure, what could the payment realistically cover?"), "rough-or-no-number"),
+            p("amount", "The amount", "金額", "Did the amount feel large, small, or simply exciting at the time?", "その金額は当時、大きく感じましたか、小さく感じましたか、それとも金額よりうれしさがありましたか？", ("A rough answer is enough; what made it feel that way?", "If you prefer no figure, what could the money cover?"), "Did the amount feel substantial, modest, or important mainly because it was your first?", "その金額は大きく感じましたか、少なく感じましたか、それとも初めてだったことが主に重要でしたか？", ("A broad range is enough; what made it feel that way?", "Without giving a figure, what could the payment actually cover?"), "rough-or-no-number"),
             p("source", "The work behind it", "お金を得た方法", "What job, task, or other activity produced the money?", "そのお金は、どんな仕事、作業、または活動で得ましたか？", ("How long did the work take?", "What part was harder than you expected?"), "Which job, task, sale, or other activity generated the first earnings?", "最初の収入は、どんな仕事、作業、販売、または活動から得ましたか？", ("How much time or preparation did it require?", "Which part demanded more effort than expected?"), "work-task-sale-or-example"),
             p("use", "What it paid for", "使い道", "What was the first thing the money paid for—or what might it pay for in your example?", "そのお金で最初に何を買いましたか。それとも、選んだ例では何に使いそうですか？", ("Why did that use come first?", "Did any of the money remain afterward?"), "What was the first use of the money, or what would be the first use in your example?", "そのお金を最初に何に使いましたか。それとも、選んだ例なら最初の使い道は何ですか？", ("Which priority made that use come first?", "Was any part saved, shared, or left unspent?"), "actual-or-example-use"),
             p("sharing", "Who knew", "誰に話したか", "Did you tell anyone about earning it—or would the person in your example tell someone?", "その収入について誰かに話しましたか。それとも、例の人なら誰かに話しますか？", ("If someone knew, how did they respond?", "If it stayed private, what made privacy comfortable?"), "Did anyone know about the earnings, or would the person in your example keep them private?", "その収入を誰かが知っていましたか。それとも、例の人なら自分だけにしておきますか？", ("If someone knew, what recognition or advice did they offer?", "If it remained private, what purpose did privacy serve?"), "shared-or-private"),
@@ -167,7 +167,7 @@ TOPICS = {
         [
             p("opening", "A skill to improve", "上達したい技能", BRIEF_OPENINGS[67] + " You may use a past, familiar, or imagined effort instead.", "今、何をもっと上達させようとしていますか？ 過去の取り組み、身近な人、想像上の例でもかまいません。", ("What part of the skill needs the most attention?", "If the attempt has stopped, what did it reveal?"), "What are you currently trying to improve? A past, familiar, or hypothetical effort is equally valid.", "今、何を上達させようとしていますか？ 過去、身近な人、仮定の取り組みでもかまいません。", ("Which component of the skill needs focused work?", "If the effort ended, what did it reveal about learning conditions?"), "current-past-familiar-or-imagined"),
             p("attempt", "What you tried", "試したこと", "What have you or the person in your example tried so far?", "自分や例の人は、これまで何を試しましたか？", ("How long did that attempt last?", "What made it easy or hard to repeat?"), "What methods have you or the selected person attempted so far?", "自分や選んだ人は、これまでどんな方法を試しましたか？", ("How long was each method sustained?", "Which condition supported or disrupted repetition?"), "active-or-ended-attempt"),
-            p("obstacle", "What gets in the way", "妨げになること", "What is the main obstacle to improving this skill?", "この技能を上達させるうえで、主な障害は何ですか？", ("Is the obstacle time, access, confidence, or something else?", "Which part can the person influence?"), "What is the most persistent barrier to improvement in this example?", "この例で、上達を最も妨げ続けているものは何ですか？", ("Does it involve time, access, feedback, confidence, or another factor?", "Which part is realistically within the person's influence?"), "selected-example-obstacle"),
+            p("obstacle", "What gets in the way", "妨げになること", "What is the main obstacle to improving this skill?", "この技能を上達させるうえで、主な障害は何ですか？", ("Is the obstacle time, access, confidence, or something else?", "Which part can the person influence?"), "What is the most persistent barrier to improvement in this example?", "この例で、上達を最も妨げ続けているものは何ですか？", ("Does it involve time, access, feedback, confidence, or another factor?", "Which part can the person actually change?"), "selected-example-obstacle"),
             p("feedback", "Useful feedback", "役立つフィードバック", "What feedback would help with the next attempt?", "次の取り組みに役立つのは、どんなフィードバックですか？", ("Who or what could provide it?", "Which detail should the feedback identify?"), "What kind of feedback would make the next attempt more effective?", "次の取り組みをより効果的にするのは、どんなフィードバックですか？", ("Which source could provide credible feedback?", "What concrete adjustment should it identify?"), "general-or-selected-example"),
             p("evidence", "Signs of progress", "上達の兆し", "What small sign would show that the skill is improving?", "どんな小さな兆しがあれば、その技能が上達していると分かりますか？", ("Who might notice it first?", "How could it be checked without a formal test?"), "What observable evidence would indicate genuine improvement?", "どんな観察可能な証拠があれば、本当に上達していると判断できますか？", ("Who would be well placed to notice it?", "How could the change be assessed without relying on one formal test?"), "evidence-not-feeling-only"),
             p("priority", "Worth continuing", "続ける価値", "Is this skill still worth pursuing, or have priorities changed?", "この技能は今も伸ばす価値がありますか。それとも優先順位が変わりましたか？", ("What would justify continuing?", "What would make stopping reasonable?"), "Does this skill still justify sustained effort, or have other priorities become more important?", "この技能は今も継続的な努力に値しますか。それとも、ほかの優先事項のほうが重要になりましたか？", ("Which benefit would justify continuing?", "Which changed circumstance would make stopping sensible?"), "continue-pause-or-stop"),
@@ -198,7 +198,7 @@ TOPICS = {
             p("start", "When it began", "始めた時期", "When did that practice begin, or is it only an idea for now?", "その習慣はいつ始まりましたか。それとも、今はまだ考えているだけですか？", ("What prompted the beginning?", "If it has not begun, what would need to be true first?"), "When did that financial practice begin, or does it remain a possible future choice?", "そのお金の扱い方はいつ始まりましたか。それとも、将来の選択肢のままですか？", ("Which event or need prompted it?", "If it remains hypothetical, which condition would make it realistic?"), "started-or-not-started"),
             p("progress", "How it is going", "今の状況", "How is that approach going, or what would make it workable?", "その方法はうまくいっていますか。それとも、実行しやすくするには何が必要ですか？", ("What has helped so far?", "What has made it difficult?"), "How effective has that approach been, or what would determine its viability?", "その方法はどの程度効果がありましたか。それとも、実行可能かどうかを何が決めますか？", ("Which condition has supported it?", "Which constraint has limited or prevented it?"), "active-or-hypothetical-progress"),
             p("influence", "Where the idea came from", "考えのきっかけ", "Did a person, experience, or common idea influence that approach?", "その方法には、人、経験、よく聞く考えのどれかが影響しましたか？", ("If there was an influence, what part did you accept?", "If there was none, how did the approach develop?"), "Which person, experience, institution, or familiar idea influenced that approach, if any?", "その方法に影響した人、経験、組織、またはよくある考えがあるとすれば、何ですか？", ("If there was an influence, which part was useful?", "If there was none, how did the approach develop?"), "person-experience-idea-or-none"),
-            p("recommend", "Would it suit someone else", "人に合うか", "Would you recommend that approach to everyone, only in some situations, or not at all?", "その方法を全員に勧めますか。一部の状況だけですか。それとも勧めませんか？", ("If you would recommend it anywhere, what makes it suitable?", "If not, what risk or limit leads you to reject it?"), "Would you recommend the approach broadly, conditionally, or not at all?", "その方法を広く勧めますか、条件つきで勧めますか、それとも勧めませんか？", ("If you would recommend it, which circumstances make it appropriate?", "If not, which constraint or risk rules it out?"), "broad-conditional-or-no-recommendation"),
+            p("recommend", "Would it suit someone else", "人に合うか", "Would you recommend that approach to everyone, only in some situations, or not at all?", "その方法を全員に勧めますか。一部の状況だけですか。それとも勧めませんか？", ("If you would recommend it anywhere, what makes it suitable?", "If not, what risk or limit leads you to reject it?"), "Would you recommend the approach broadly, conditionally, or not at all?", "その方法を広く勧めますか、条件つきで勧めますか、それとも勧めませんか？", ("If you would recommend it, which situations make it appropriate?", "If not, which constraint or risk rules it out?"), "broad-conditional-or-no-recommendation"),
             p("never", "A financial boundary", "しないこと", "What is one thing you would never do with money, or would treat with great caution?", "お金に関して、絶対にしないこと、または特に慎重にすることは何ですか？", ("What value or risk creates that boundary?", "Can you answer generally without personal details?"), "Which financial action would you reject or approach only with strict safeguards?", "どの金銭的な行動なら、避けるか、厳しい安全策がある場合だけ検討しますか？", ("Which risk, duty, or value justifies the boundary?", "How can the principle be explained without disclosing private finances?"), "general-boundary-not-advice"),
             p("flip", "More than money", "お金以外", "What important kind of support cannot be replaced by money?", "お金では代えられない大切な支援には何がありますか？", ("Why does that support matter?", "Can money still make it easier to provide?"), "Which valuable form of support cannot be reduced to a financial transfer?", "金銭の受け渡しだけでは表せない大切な支援は何ですか？", ("What distinctive need does that support meet?", "Can financial resources still help make it possible?"), "nonfinancial-close"),
         ],
@@ -223,7 +223,7 @@ TOPICS = {
         [
             p("opening", "Another path", "別の進路", BRIEF_OPENINGS[69] + " If you do not have a current career, imagine a familiar or fictional path.", "別のキャリアの進路を選んでいたら、何をしていると思いますか？ 現在のキャリアがなければ、身近な人や架空の進路でもかまいません。", ("When did this alternative first become interesting?", "Is this curiosity, regret, or neither?"), "What might you be doing if a different career path had been available? You may use a familiar, public, or fictional example.", "別のキャリアの進路を選べたとしたら、何をしていると思いますか？ 身近な人、公に知られた人、架空の人物の例でもかまいません。", ("When did this alternative first become worth considering?", "Does the comparison evoke curiosity, regret, relief, or none of these?"), "personal-familiar-public-or-fictional"),
             p("daily", "An ordinary day", "普通の一日", "What would an ordinary day on that path include?", "その進路では、普通の一日に何をするでしょうか？", ("Which task would take most time?", "Which part might be less appealing?"), "What activities and responsibilities would define an ordinary day on that path?", "その進路の普通の一日は、どんな活動や責任で成り立つでしょうか？", ("Which task would occupy the largest share of time?", "Which responsibility might be less attractive than it first appears?"), "imagined-role-not-current-job"),
-            p("attraction", "Why it appeals", "魅力を感じる理由", "What is the strongest reason that path appeals to you or the person in your example?", "その進路に自分や例の人が魅力を感じる最大の理由は何ですか？", ("Is it the work, impact, freedom, or setting?", "Which value does it match?"), "What is the principal source of attraction in that alternative path?", "その別の進路の主な魅力はどこにありますか？", ("Does it concern the work, social contribution, autonomy, learning, or conditions?", "Which underlying value does it express?"), "selected-example-attraction"),
+            p("attraction", "Why it appeals", "魅力を感じる理由", "What is the strongest reason that path appeals to you or the person in your example?", "その進路に自分や例の人が魅力を感じる最大の理由は何ですか？", ("Is it the work, impact, freedom, or setting?", "Which value does it match?"), "What is the principal source of attraction in that alternative path?", "その別の進路の主な魅力はどこにありますか？", ("Is the appeal the work, helping people, independence, learning, or the daily conditions?", "What personal value does it match?"), "selected-example-attraction"),
             p("realism", "What made it possible", "可能にする条件", "What would have needed to be different for that path to be realistic?", "その進路を現実的にするには、何が違う必要がありましたか？", ("Was timing, access, money, or responsibility important?", "Could any part of the path still be explored?"), "Which conditions would have needed to change for that path to become genuinely available?", "その進路を実際に選べるようにするには、どの条件が変わる必要がありましたか？", ("Did timing, access, resources, location, or responsibility matter most?", "Can any element of the path still be pursued on a smaller scale?"), "counterfactual-not-blame"),
             p("example", "Someone who changed paths", "進路を変えた人", "Do you know, know of, or can you imagine someone who chose a very different path?", "大きく違う進路を選んだ人を知っていますか、聞いたことがありますか、それとも想像できますか？", ("What made their change possible?", "Which trade-off did they face?"), "Can you identify a familiar, public, fictional, or hypothetical person who chose a substantially different path?", "大きく違う進路を選んだ、身近な人、公人、架空の人物、仮定の人物を挙げられますか？", ("Which condition enabled the transition?", "Which meaningful benefit or security did the choice put at risk?"), "familiar-public-fictional-or-imagined-person"),
             p("feeling", "How it feels now", "今の気持ち", "How do you feel about the path not taken: curious, relieved, regretful, or neutral?", "選ばなかった進路について、好奇心、安堵、後悔、無関心のどれに近いですか？", ("What creates that feeling?", "Has it changed over time?"), "What response does the unrealized path produce now—curiosity, relief, regret, indifference, or a mixture?", "実現しなかった進路に今どんな気持ちがありますか。好奇心、安堵、後悔、無関心、または複雑な気持ちですか？", ("Which comparison produces that response?", "How has the response evolved over time?"), "open-emotion-menu"),
@@ -251,7 +251,7 @@ TOPICS = {
         [
             p("opening", "One actual change", "実際の変化", BRIEF_OPENINGS[70] + " If you do not use AI, discuss a familiar or public example.", "AIによって、日常の何かが実際に変わりましたか？ 使っていなければ、身近な例や公に知られた例でもかまいません。", ("Which task changed—or stayed the same?", "What evidence shows the difference?"), "Has AI materially changed any part of your day? If not, analyze a familiar, public, or hypothetical routine.", "AIは日常の一部を実際に変えましたか？ 変わっていなければ、身近な例、公の例、仮定の習慣を考えてください。", ("Which task changed or remained unaffected?", "What observable evidence supports that conclusion?"), "self-or-general-no-use"),
             p("before", "Before and after", "導入前と後", "How was the selected task done before, and how is it done now?", "選んだ作業は以前どのように行われ、今はどう行われていますか？", ("Which step disappeared or changed?", "If there was no change, what kept the process stable?"), "How did the process operate before and after AI entered the example, or why did it remain unchanged?", "選んだ例では、AIの導入前後で手順はどう変わりましたか。それとも、なぜ変わりませんでしたか？", ("Which step was removed, added, or reassigned?", "If the process remained stable, which condition prevented change?"), "changed-or-unchanged"),
-            p("quality", "The result", "結果", "Did the result become better, worse, mixed, or unchanged?", "結果はよくなりましたか、悪くなりましたか、両方ですか、それとも変わりませんか？", ("Which quality changed?", "What still needs a person's judgment?"), "Did the output improve, deteriorate, become mixed, or remain equivalent?", "出力は改善しましたか、悪化しましたか、長所と短所が混在していますか、それとも同等ですか？", ("Which dimension of quality changed?", "Where does human judgment remain indispensable?"), "open-result-evaluation"),
+            p("quality", "The result", "結果", "Did the result become better, worse, mixed, or unchanged?", "結果はよくなりましたか、悪くなりましたか、両方ですか、それとも変わりませんか？", ("Which quality changed?", "What still needs a person's judgment?"), "Did the output improve, deteriorate, become mixed, or remain equivalent?", "出力は改善しましたか、悪化しましたか、長所と短所が混在していますか、それとも同等ですか？", ("Which part of the quality changed?", "Where is human judgment still necessary?"), "open-result-evaluation"),
             p("newwork", "Work it created", "増えた作業", "What new work did the tool create, if any?", "その道具で新たに増えた作業はありますか？", ("If new work appeared, who checks or corrects it?", "If none appeared, what kept the extra burden low?"), "Which verification, correction, documentation, or policy tasks did the tool create, if any?", "その道具で新たに増えたものがあるとすれば、確認、修正、記録、規則対応のどんな作業ですか？", ("If additional work appeared, who performs it?", "If none appeared, which condition kept the extra burden low?"), "new-work-or-none"),
             p("boundary", "A clear boundary", "明確な境界", "What is one task or kind of information you would not hand over to AI?", "AIに任せない作業や情報を一つ挙げるとしたら何ですか？", ("What risk creates the boundary?", "Could AI support a smaller part safely?"), "Which task, decision, or category of information should remain outside AI use in this context?", "この状況で、どの作業、判断、情報をAIの利用範囲外にすべきですか？", ("Which risk justifies the boundary?", "Could a limited supporting role remain acceptable?"), "general-safety-boundary"),
             p("responsibility", "Who remains responsible", "残る責任", "If AI helps with the task, who should check the result?", "AIが作業を手伝う場合、誰が結果を確認すべきですか？", ("What should that person verify?", "What cannot be blamed on the tool?"), "When part of a task is handed over to AI, who retains responsibility for reviewing the result?", "作業の一部をAIに任せたとき、結果を確認する責任は誰に残りますか？", ("Which claims or consequences require verification?", "Which accountability cannot be transferred to the tool?"), "general-accountability"),
@@ -277,9 +277,9 @@ TOPICS = {
             ("The key question is what a change is meant to improve.", "A credible transition begins with a defined problem or value rather than the appeal of novelty alone.", "大切なのは、変更によって何をよくしたいかです。", "信頼できる転換は、新しさの魅力だけでなく、解決したい問題や実現したい価値から始まります。"),
         ],
         [
-            p("opening", "A possible change", "考えた変更", BRIEF_OPENINGS[71] + " You may discuss someone familiar, a public case, or a hypothetical choice.", "今していることを変えようと真剣に考えたことがありますか？ 身近な人、公の事例、仮定の選択でもかまいません。", ("What kind of change was considered?", "Was it a change of field, role, schedule, or something else?"), "Have you ever seriously considered changing careers or working patterns? A familiar, public, or hypothetical case is equally valid.", "キャリアや働き方を変えようと真剣に考えたことがありますか？ 身近な例、公の例、仮定の事例でもかまいません。", ("Which form of change was under consideration?", "Did it concern field, role, schedule, paid work, or another dimension?"), "personal-familiar-public-or-hypothetical"),
+            p("opening", "A possible change", "考えた変更", BRIEF_OPENINGS[71] + " You may discuss someone familiar, a public case, or a hypothetical choice.", "今していることを変えようと真剣に考えたことがありますか？ 身近な人、公の事例、仮定の選択でもかまいません。", ("What kind of change was considered?", "Was it a change of field, role, schedule, or something else?"), "Have you ever seriously considered changing careers or working patterns? A familiar, public, or hypothetical case is equally valid.", "キャリアや働き方を変えようと真剣に考えたことがありますか？ 身近な例、公の例、仮定の事例でもかまいません。", ("Which kind of change were they thinking about?", "Was it the field, role, schedule, paid work, or another part of working life?"), "personal-familiar-public-or-hypothetical"),
             p("pressure", "What pushed the question", "考えるきっかけ", "What made the person consider a change?", "その人が変更を考えたきっかけは何ですか？", ("Was the pressure temporary or ongoing?", "Which part needed to improve?"), "Which condition made a change worth serious consideration?", "どのような状況によって、変更を真剣に考えるようになりましたか？", ("Was that pressure temporary, structural, or still unclear?", "Which outcome needed to improve?"), "selected-case-pressure"),
-            p("attraction", "What pulled the other way", "新しい方向の魅力", "What was attractive about the other direction?", "別の方向のどこに魅力がありましたか？", ("Was it the work, meaning, freedom, or conditions?", "Which attraction was strongest?"), "What made the alternative direction appealing?", "別の方向にはどんな魅力がありましたか？", ("Did the appeal concern tasks, meaning, growth, autonomy, or conditions?", "Which attraction carried the greatest weight?"), "selected-alternative"),
+            p("attraction", "What pulled the other way", "新しい方向の魅力", "What was attractive about the other direction?", "別の方向のどこに魅力がありましたか？", ("Was it the work, meaning, freedom, or conditions?", "Which attraction was strongest?"), "What made the alternative direction appealing?", "別の方向にはどんな魅力がありましたか？", ("Did the appeal concern tasks, meaning, growth, independence, or daily conditions?", "Which attraction carried the greatest weight?"), "selected-alternative"),
             p("risk", "What was at risk", "懸念したこと", "What made changing difficult or risky?", "変更を難しくしたことやリスクは何ですか？", ("Which risk was most concrete?", "Could any part be reduced?"), "Which constraint or potential loss made the transition difficult?", "どの制約や失う可能性が、移行を難しくしましたか？", ("Which risk was most immediate and evidence-based?", "Could a staged approach reduce any part of it?"), "no-pressure-to-disclose"),
             p("decision", "What happened", "その後", "Did the person change, stay, postpone, or remain undecided?", "その人は変更しましたか、続けましたか、延期しましたか、それともまだ決めていませんか？", ("What most influenced that outcome?", "Does the question feel settled now?"), "Did the case end in transition, staying, postponement, or an unresolved decision?", "その事例は、移行、継続、延期、未決定のどれに至りましたか？", ("Which evidence or responsibility most influenced the outcome?", "What, if anything, remains unsettled?"), "changed-stayed-postponed-or-open"),
             p("experiment", "A smaller test", "小さく試す", "What smaller experiment could test the new direction?", "新しい方向を試すために、どんな小さな実験ができますか？", ("What would the person learn?", "What limit would keep the test safe?"), "What reversible experiment could provide evidence about the alternative direction?", "別の方向について証拠を得るために、元に戻せるどんな試行ができますか？", ("Which uncertainty would the experiment reduce?", "Which boundary would limit the cost or risk?"), "general-or-selected-case"),
@@ -306,13 +306,13 @@ TOPICS = {
         ],
         [
             p("opening", "A person to learn from", "学んだ人", BRIEF_OPENINGS[72] + " If no one comes to mind, use a public, fictional, or general example.", "学んだことのある上司、先生、コーチを思い浮かべてください。どんな人でしたか？ 思い浮かばなければ、公の人、架空の人物、一般的な例でもかまいません。", ("What was the learner trying to improve or understand?", "You need not give a name; what role did the person or example play?"), "Consider a manager, teacher, coach, peer, public figure, or fictional guide you could learn from. What made the guidance useful or instructive?", "学びにつながった上司、先生、コーチ、仲間、公人、または架空の指導者の例を考えてください。その指導の何が役立った、または参考になりましたか？", ("What was the learner trying to improve or understand?", "Without naming anyone, what form did the guidance take?"), "personal-public-fictional-or-general"),
-            p("behavior", "What they did", "行動", "What did the person or example actually do that helped learning?", "その人や例は、学びを助けるために実際に何をしましたか？", ("Was it explanation, practice, feedback, or trust?", "Which moment shows it clearly?"), "Which observable practice made the guidance effective?", "どの観察可能な行動によって、その指導が効果的になりましたか？", ("Did it involve explanation, practice, feedback, standards, or autonomy?", "Which incident illustrates the practice most clearly?"), "behavior-not-personality-only"),
+            p("behavior", "What they did", "行動", "What did the person or example actually do that helped learning?", "その人や例は、学びを助けるために実際に何をしましたか？", ("Was it explanation, practice, feedback, or trust?", "Which moment shows it clearly?"), "Which observable practice made the guidance effective?", "どの観察可能な行動によって、その指導が効果的になりましたか？", ("Did it involve explanation, practice, feedback, standards, or independence?", "Which incident illustrates the practice most clearly?"), "behavior-not-personality-only"),
             p("feedback", "How feedback worked", "フィードバックの方法", "How did the guide respond when something went wrong?", "何かがうまくいかなかったとき、その指導者はどう対応しましたか？", ("What made the response useful or unhelpful?", "Did it leave a clear next step?"), "How did the guide handle mistakes, uncertainty, or weak performance?", "間違い、不確実さ、十分でない成果に、その指導者はどう対応しましたか？", ("Which feature made the response constructive or damaging?", "Did it produce a clear and realistic next action?"), "positive-or-negative-example"),
-            p("power", "Respect and power", "尊重と立場", "What should a person with authority do to make questions feel safe?", "権限のある人は、質問しやすくするために何をすべきですか？", ("Which reaction should they avoid?", "How can they show that uncertainty is normal?"), "How can someone in authority make disagreement, questions, and uncertainty safer?", "権限を持つ人は、反対意見、質問、不確実さをどうすればより安全に表明できるようにできますか？", ("Which response would silence honest questions?", "What visible behavior would demonstrate that uncertainty is acceptable?"), "general-power-sensitive"),
+            p("power", "Respect and power", "尊重と立場", "What should a person with authority do to make questions feel safe?", "権限のある人は、質問しやすくするために何をすべきですか？", ("Which reaction should they avoid?", "How can they show that uncertainty is normal?"), "How can someone in authority make disagreement, questions, and uncertainty safer?", "権限を持つ人は、反対意見、質問、不確実さをどうすればより安全に表明できるようにできますか？", ("Which response would silence honest questions?", "What visible behavior would show that uncertainty is acceptable?"), "general-power-sensitive"),
             p("lesson", "What remained", "残った学び", "What idea or habit did the learner keep from that example?", "その例から、学ぶ人はどんな考えや習慣を残しましたか？", ("Where is it useful now?", "Has it needed any adjustment?"), "Which principle or practice continued to matter after the guidance ended?", "指導が終わったあとも、どの原則や実践が大切なまま残りましたか？", ("Where does it remain applicable?", "How has it been adapted to a different context?"), "selected-example-continuity"),
             p("response", "How the learner responded", "学ぶ人の反応", "Did the learner respond to the guidance, keep the response private, or not respond at all?", "学ぶ人はその指導に反応しましたか、反応を自分の中に留めましたか、それとも何も反応しませんでしたか？", ("If the response was spoken or private, what did it communicate?", "If there was no response, why might that be the honest account?"), "Did the learner respond directly to the guidance, indirectly, or not at all?", "学ぶ人はその指導に直接、間接的に反応しましたか。それとも反応を示しませんでしたか？", ("If the response was direct or indirect, what did it communicate?", "If there was no response, why might that be the honest account?"), "direct-indirect-private-or-none"),
             p("independence", "Learning to decide", "自分で判断する", "How can a guide help someone need less help over time?", "指導者は、学ぶ人が徐々に助けを必要としなくなるよう、どう支援できますか？", ("What can be handed over first?", "What support should remain available?"), "How can guidance deliberately transfer judgment and responsibility to the learner?", "指導は、判断と責任をどのように意識して学ぶ人へ移せますか？", ("Which decision should be handed over first?", "Which safety net should remain available during the transition?"), "general-autonomy"),
-            p("flip", "The guide you would be", "自分ならどう導くか", "What is one quality you would want to show when guiding someone?", "自分が誰かを導くとき、示したい性質を一つ挙げるとしたら何ですか？", ("What action would show it?", "How would you know it helped?"), "Which quality would you want your own guidance to be known for?", "自分の指導がどんな性質で知られてほしいですか？", ("Which repeatable behavior would demonstrate it?", "What evidence would show that it expanded the learner's judgment?"), "general-reflective-close"),
+            p("flip", "The guide you would be", "自分ならどう導くか", "What is one quality you would want to show when guiding someone?", "自分が誰かを導くとき、示したい性質を一つ挙げるとしたら何ですか？", ("What action would show it?", "How would you know it helped?"), "Which quality would you want your own guidance to be known for?", "自分の指導がどんな性質で知られてほしいですか？", ("Which repeatable behavior would show it?", "What evidence would show that it expanded the learner's judgment?"), "general-reflective-close"),
         ],
     ),
     73: topic(
@@ -481,6 +481,47 @@ for (_topic_no, _prompt_no), (_a, _a_ja, _f, _f_ja) in MAIN_REVISIONS.items():
     _item = TOPICS[_topic_no]["prompts"][_prompt_no - 1]
     _item.update(accessible=_a, accessible_ja=_a_ja, full=_f, full_ja=_f_ja)
 
+
+# FT-74 is a deliberately non-sequential conversation pool. Each prompt opens a
+# fresh route into daily routines, so a learner who skips one page can still
+# answer the next one without inventing details from an earlier response.
+REVIEWED_FT74_PROMPTS = (
+    ("Think about the last two hours. What did you do?", "直近の二時間を思い出してください。何をしましたか？", ("Which part took the longest?", "Was that a normal two hours for you?"), "Think about a recent two-hour stretch. What filled the time?", "最近の二時間を思い出してください。その時間を何に使いましたか？", ("Which activity took up the largest part?", "How typical was that stretch for you?")),
+    ("Which part of your day takes more time than people think?", "一日の中で、人が思うより時間のかかることは何ですか？", ("Why does it take so long?", "What part of it is easy to miss?"), "Which part of your day takes more time than other people might expect?", "一日の中で、ほかの人が思うより時間のかかることは何ですか？", ("What makes the time hard to see from the outside?", "Could any part of it be made faster?")),
+    ("What part of your routine do you enjoy most?", "日課の中で、いちばん楽しんでいることは何ですか？", ("What do you like about it?", "Would you want more time for it?"), "Which part of your routine feels most satisfying?", "日課の中で、最も満足感があることは何ですか？", ("What makes that part rewarding?", "Would it still feel satisfying if you did more of it?")),
+    ("What part of your day drains your energy?", "一日の中で、いちばん疲れることは何ですか？", ("Is it physically tiring or mentally tiring?", "What helps you recover?"), "Which part of the day takes the most energy out of you?", "一日の中で、最もエネルギーを使うことは何ですか？", ("Is the strain physical, mental, or social?", "What change would make it easier?")),
+    ("What's one small task that causes a lot of extra work?", "小さな作業なのに、たくさんの追加の仕事を生むものは何ですか？", ("Why does the work grow?", "Who else is affected by it?"), "What's one small task that creates a surprising amount of extra work?", "小さな作業なのに、驚くほど多くの追加の仕事を生むものは何ですか？", ("Where does the extra work come from?", "What would happen if nobody did it?")),
+    ("If you could remove one task from your day, what would it be?", "一日の中から一つの作業をなくせるなら、何を選びますか？", ("What would you do with the saved time?", "Would someone else still need to do it?"), "If you could remove or shorten one task, which would you choose?", "一つの作業をなくすか短くできるなら、どれを選びますか？", ("What would improve first?", "Could removing it create a new problem?")),
+    ("What helps a busy day go smoothly?", "忙しい一日を順調に進めるのに、何が役立ちますか？", ("Do you prepare anything in advance?", "Who or what helps most?"), "What preparation helps the rest of a busy day run better?", "どんな準備をすると、忙しい一日の残りがうまく進みますか？", ("When does the preparation happen?", "Which problem does it prevent?")),
+    ("What would surprise someone who followed your routine for a day?", "あなたの日課を一日体験した人は、何に驚くと思いますか？", ("What would be harder than they expected?", "What might they enjoy?"), "What would surprise someone who swapped routines with you for a day?", "あなたと一日だけ日課を交換した人は、何に驚くと思いますか？", ("Which part would challenge them most?", "What might they understand better afterward?")),
+)
+for _item, (_a, _a_ja, _a_followups, _f, _f_ja, _f_followups) in zip(
+    TOPICS[74]["prompts"], REVIEWED_FT74_PROMPTS, strict=True
+):
+    _item.update(
+        accessible=_a,
+        accessible_ja=_a_ja,
+        accessible_followups=_a_followups,
+        full=_f,
+        full_ja=_f_ja,
+        full_followups=_f_followups,
+    )
+
+FT74_PAGE_TITLES = (
+    ("The last two hours", "直近の二時間"),
+    ("Where the time goes", "時間がかかること"),
+    ("The best part", "いちばん好きな部分"),
+    ("What drains your energy", "エネルギーを使うこと"),
+    ("A small task that grows", "大きくなる小さな作業"),
+    ("Remove one task", "一つなくす"),
+    ("A smooth busy day", "忙しい一日を順調に"),
+    ("Swap routines for a day", "一日日課を交換する"),
+)
+for _item, (_title, _title_ja) in zip(
+    TOPICS[74]["prompts"], FT74_PAGE_TITLES, strict=True
+):
+    _item.update(title=_title, title_ja=_title_ja)
+
 # Tutor-only probes stay optional and deepen the page. These replacements remove
 # administrative branching while retaining two useful directions.
 for _topic in TOPICS.values():
@@ -634,7 +675,7 @@ TOPICS[71]["prompts"][4]["full_followups"] = (
 )
 TOPICS[71]["prompts"][6]["accessible_followups"] = (
     "What could that person help clarify?",
-    "Which details would be inappropriate to share?",
+    "Which details would be too private to share?",
 )
 TOPICS[71]["prompts"][6]["full_followups"] = (
     "Which uncertainty could that perspective reduce?",
@@ -686,6 +727,323 @@ TOPICS[75]["prompts"][5]["full_followups"] = (
 )
 
 
+# FT74 is the approved calibration. Elsewhere, remove the artificial language
+# jump in Full while preserving the harder conversational angle.
+_PLAIN_FULL_PHRASES = (
+    ("first earnings", "first paycheck"),
+    ("emotional value", "personal meaning"),
+    ("monetary value", "amount"),
+    ("Which forms of work", "What kinds of work"),
+    ("lasting meaning", "a lasting memory"),
+    ("mark a first paycheck", "celebrate a first paycheck"),
+    ("prescribing how it must be used", "telling someone how to spend it"),
+    ("completing an effort", "finishing something difficult"),
+    ("demanding effort", "hard project"),
+    ("external recognition", "praise from other people"),
+    ("completed effort", "finished work"),
+    ("significance", "importance"),
+    ("associated with your name or contribution", "people to remember you for"),
+    ("earned pride", "real pride"),
+    ("vague flattery", "empty praise"),
+    ("register as genuine success", "feel like real success"),
+    ("precede a meaningful success", "come before a successful moment"),
+    ("being witnessed", "another person seeing it"),
+    ("emotional response", "feeling"),
+    ("qualify as meaningful progress", "count as real progress"),
+    ("comparable person", "someone in a similar situation"),
+    ("reshape a definition", "change someone's idea"),
+    ("be acknowledged without imposing your own standard", "be celebrated without comparing it to your own"),
+    ("most worthwhile", "most useful"),
+    ("useful evidence", "a clear idea"),
+    ("persistent barrier", "biggest thing getting in the way"),
+    ("observable evidence", "clear sign"),
+    ("redirect effort away from", "stop putting time into"),
+    ("modest repeatable action can produce useful progress", "small action can create real progress"),
+    ("which foundation would you teach first", "what would you teach first"),
+    ("serve besides immediate spending", "do besides pay for things"),
+    ("deserves the highest priority", "should come first"),
+    ("makes setting money aside realistic", "helps someone start saving"),
+    ("financial approach remains viable", "money plan keeps working"),
+    ("allocate money", "use money"),
+    ("financial practices", "money habits"),
+    ("conditionally", "only in some situations"),
+    ("strictest safeguards", "most caution"),
+    ("valuable form of support cannot be reduced to a financial transfer", "important kind of support cannot be replaced by money"),
+    ("activities and responsibilities would define", "tasks would fill"),
+    ("strongest source of attraction", "most appealing part"),
+    ("genuinely available", "realistic"),
+    ("instructive example", "good example"),
+    ("unrealized career path produce", "career not chosen bring up"),
+    ("incorporated without a complete transition", "added to life without changing careers"),
+    ("evaluate a career path without pretending the choice is permanent", "think about a career without treating the choice as permanent"),
+    ("everyday process", "everyday task"),
+    ("most substantially", "the most"),
+    ("output", "results"),
+    ("verification or correction tasks", "checking and correction work"),
+    ("category of information", "kind of information"),
+    ("retain responsibility for reviewing", "remain responsible for checking"),
+    ("primarily human", "mainly human"),
+    ("limited, low-risk AI experiment", "small, low-risk AI test"),
+    ("produce useful evidence rather than hype", "show something useful instead of just sounding exciting"),
+    ("conditions make a career change worth serious consideration", "situations make changing careers worth considering seriously"),
+    ("structural pressure", "outside pressure"),
+    ("career transition genuinely risky", "career change risky"),
+    ("postponing a career transition be a rational decision", "waiting to change careers make sense"),
+    ("reversible experiment could provide evidence", "small test could show something useful"),
+    ("Whose perspective is most useful", "Who is most useful to talk to"),
+    ("which intended improvement should a person be able to articulate", "what improvement should a person be able to explain clearly"),
+    ("genuinely instructive", "worth learning from"),
+    ("observable practices", "things they do"),
+    ("handle mistakes or weak performance", "respond to mistakes or poor work"),
+    ("transfer judgment and responsibility", "help the learner make their own decisions"),
+    ("Which quality would you want your own guidance to be known for", "What quality would you want people to remember about your guidance"),
+    ("official finishing times match actual practice", "official finishing times match real life"),
+    ("Which practical change", "What practical change"),
+    ("equitable", "fair"),
+    ("transition out of", "end a day of"),
+    ("clearly defined workplace or school problem remain unresolved", "clear problem at work or school remain unfixed"),
+    ("legitimate concern", "reasonable concern"),
+    ("implementation create", "making the change create"),
+    ("unnecessary risk", "extra risk"),
+    ("Which process should follow", "What should happen"),
+    ("decision-maker", "person in charge"),
+    ("limited trial", "small test"),
+    ("protected channel", "safe way to report it"),
+    ("reject or defer", "reject or delay"),
+    ("dismissing", "ignoring"),
+)
+
+
+def _plain_full(value: str) -> str:
+    for _old, _new in _PLAIN_FULL_PHRASES:
+        value = value.replace(_old, _new)
+    return value
+
+
+for _topic_no, _topic in TOPICS.items():
+    if _topic_no == 74:
+        continue
+    for _item in _topic["prompts"]:
+        _item["full"] = _plain_full(_item["full"])
+        _item["full_followups"] = tuple(_plain_full(_probe) for _probe in _item["full_followups"])
+
+_STANDALONE_REVISIONS = {
+    (67, 3): ("What's the biggest thing that gets in the way of improving a skill?", "技能を上達させるうえで、いちばん大きな妨げは何ですか？", "What usually gets in the way when someone is trying to improve a skill?", "技能を上達させようとするとき、通常は何が妨げになりますか？"),
+    (67, 5): ("What's a small sign that someone is getting better at a skill?", "技能が上達していると分かる小さなサインは何ですか？", "What clear sign shows that practice is leading to real improvement?", "練習が本当の上達につながっていると分かる明確なサインは何ですか？"),
+    (67, 7): ("What's one small action that can improve a skill this week?", "今週、技能の上達に役立つ小さな行動は何ですか？", "Which small action could create real progress in one week?", "一週間で本当の進歩につながる小さな行動は何ですか？"),
+    (67, 8): ("When teaching a skill to a beginner, what should come first?", "初心者に技能を教えるなら、何を最初にすべきですか？", "If you introduced a skill to a beginner, what would you teach first?", "初心者に技能を紹介するなら、最初に何を教えますか？"),
+    (69, 2): ("What does an ordinary day look like in a career that interests you?", "興味のあるキャリアでは、普通の一日はどのようなものですか？", "Which tasks would fill an ordinary day in a career you'd like to try?", "試してみたいキャリアでは、普通の一日をどんな仕事が占めますか？"),
+    (69, 3): ("What's most appealing about a career you haven't tried?", "経験したことのないキャリアの、最も魅力的な点は何ですか？", "What is the most appealing part of a career you might try for a year?", "一年間試すかもしれないキャリアの、最も魅力的な部分は何ですか？"),
+    (69, 4): ("What would make a different career realistic to try?", "別のキャリアを試すことを現実的にする条件は何ですか？", "Which condition matters most when making a different career realistic?", "別のキャリアを現実的にするには、どの条件が最も重要ですか？"),
+    (75, 8): ("How should someone respond when they cannot accept a suggestion at work or school?", "職場や学校で提案を受け入れられないとき、どのように応じるべきですか？", "How can a person in charge reject or delay a suggestion without ignoring the person who raised it?", "責任者は、提案した人を無視せずに、提案を却下または延期するにはどうすればよいですか？"),
+}
+for (_topic_no, _prompt_no), (_a, _a_ja, _f, _f_ja) in _STANDALONE_REVISIONS.items():
+    TOPICS[_topic_no]["prompts"][_prompt_no - 1].update(
+        accessible=_a, accessible_ja=_a_ja, full=_f, full_ja=_f_ja
+    )
+
+_FINAL_FULL_QUESTIONS = {
+    (64, 1): "What's a memorable way someone might use a first paycheck?",
+    (64, 2): "Why can a first paycheck matter even when the amount is small?",
+    (64, 3): "What kinds of work can lead to someone's first paycheck?",
+    (64, 4): "What could make the first use of a paycheck memorable for years?",
+    (64, 5): "Who do people usually tell about their first paycheck?",
+    (64, 6): "How would you use a small unexpected payment today?",
+    (64, 7): "What can earning money for the first time teach someone?",
+    (64, 8): "What's a meaningful way to celebrate a first paycheck?",
+    (65, 1): "What makes finishing something difficult feel especially satisfying?",
+    (65, 2): "What kind of hard project feels best to finish?",
+    (65, 3): "How does praise from other people change how proud someone feels?",
+    (65, 5): "Why can one finished task matter much more than another?",
+    (65, 6): "What can someone finish without feeling proud of it?",
+    (65, 7): "What kind of finished work would you want people to remember you for?",
+    (65, 8): "How can we praise real effort without sounding empty?",
+    (66, 2): "What often happens just before a moment of success?",
+    (66, 3): "How does being seen by another person change a successful moment?",
+    (66, 4): "Which feeling best matches success for you: excitement, relief, confidence, or calm?",
+    (66, 5): "What remains after the first feeling of success fades?",
+    (66, 6): "What would count as real progress for you right now?",
+    (66, 7): "How can someone's idea of success change over time?",
+    (66, 8): "How can you celebrate someone else's success without comparing it to your own?",
+    (67, 1): "Which skill would make the biggest difference if you improved it?",
+    (67, 2): "What's a good first method for improving a new skill?",
+    (67, 4): "What kind of feedback makes the next attempt better?",
+    (67, 6): "When is a skill no longer worth the time it takes?",
+    (68, 1): "Besides spending it, what useful jobs can money do?",
+    (68, 2): "Which use of money besides spending should come first?",
+    (68, 3): "What helps someone start setting money aside?",
+    (68, 4): "What makes a saving or investment plan workable over time?",
+    (68, 5): "What most shapes the way people use money they do not spend?",
+    (68, 6): "Which money habits only make sense in some situations?",
+    (68, 7): "Which financial choice deserves the most caution?",
+    (68, 8): "What important kind of support cannot be replaced by money?",
+    (69, 5): "Who is a good example of someone who changed careers dramatically?",
+    (69, 6): "How might someone feel about a career they never chose?",
+    (70, 2): "How was a common task done before AI, and how is it done now?",
+    (70, 3): "Does AI usually make results better, worse, or simply different?",
+    (70, 4): "What new checking or correction work can AI create?",
+    (70, 5): "What task, decision, or information should never be handed to AI?",
+    (70, 6): "Who should be responsible for checking AI-assisted work?",
+    (70, 7): "What activity should stay mainly human even if AI can do part of it?",
+    (70, 8): "What's one small, low-risk way to test an AI tool?",
+    (71, 2): "Which pressure most often pushes someone toward a career change?",
+    (71, 3): "What can make another career direction especially attractive?",
+    (71, 4): "What can make changing careers genuinely risky?",
+    (71, 5): "Why can waiting to change careers be a sensible choice?",
+    (71, 6): "What small experiment could test a new career direction?",
+    (71, 7): "Who is worth talking to before a major career change?",
+    (71, 8): "Before changing careers, what improvement should someone be able to explain clearly?",
+    (72, 1): "What makes a manager, teacher, or coach especially good to learn from?",
+    (72, 2): "What does a good teacher, manager, or coach actually do?",
+    (72, 3): "How should a good guide respond when someone makes a mistake?",
+    (72, 4): "How can a person in charge make questions and disagreement feel safe?",
+    (72, 5): "What lesson from a good guide tends to stay useful for years?",
+    (72, 6): "Do you always need to tell someone when their advice helped you?",
+    (72, 7): "How can a good guide help someone become more independent?",
+    (72, 8): "What quality would you want people to remember about your guidance?",
+    (73, 2): "How different are official and real finishing times where you live?",
+    (73, 3): "How are people treated when they leave work or school before others?",
+    (73, 4): "What words describe someone who always works or studies late where you live?",
+    (73, 5): "What finishing-time habit from another place would surprise people where you live?",
+    (73, 6): "How can finishing times differ between two places you know about?",
+    (73, 7): "What practical change could make finishing times more predictable or fair?",
+    (73, 8): "Besides the time, what helps a work or school day end well?",
+    (75, 3): "Who might disagree with a change at work or school, and why?",
+    (75, 4): "What extra time, money, or work could a proposed change require?",
+    (75, 5): "What's a safe way to raise a problem at work or school?",
+    (75, 6): "What should happen after someone raises a problem?",
+    (75, 7): "When should people try a small test, gather more evidence, or use a protected reporting route?",
+}
+for (_topic_no, _prompt_no), _question in _FINAL_FULL_QUESTIONS.items():
+    TOPICS[_topic_no]["prompts"][_prompt_no - 1]["full"] = _question
+
+_CONCRETE_MAIN_QUESTIONS = {
+    (64, 4): ("Which first use feels most meaningful: a gift, a treat, savings, or something else?", "What first use can turn a paycheck into a lasting memory?"),
+    (65, 3): ("Would you feel as proud if nobody noticed what you finished?", "How much should other people's recognition affect pride in finished work?"),
+    (66, 4): ("Does success feel more like excitement, relief, confidence, or calm to you?", "Which feeling tells you most clearly that something was a real success?"),
+    (67, 2): ("When learning a skill, which helps first: practice, a teacher, a video, or a book?", "When starting a skill, which method gives useful feedback fastest?"),
+    (68, 2): ("If a little money is left this month, what should come first?", "If a small amount is left after essentials, which purpose should come first?"),
+    (69, 2): ("What would you actually do during one normal day in that career?", "Which part of an ordinary day in that career would interest you most?"),
+    (70, 3): ("For everyday tasks, does AI usually make the result better, worse, or just faster?", "When does AI improve a result, and when does it only make the work faster?"),
+    (71, 6): ("What small test could someone try before changing careers?", "What low-risk experiment could reveal what a new career is actually like?"),
+    (72, 3): ("What should a good guide say after someone makes a mistake?", "How should a good guide turn a mistake into a useful next step?"),
+    (73, 5): ("Would it surprise you if everyone left work or school exactly on time?", "In what kind of place would leaving exactly on time feel surprising?"),
+    (75, 3): ("Who might disagree with a change at work or school, and what would worry them?", "What reasonable concern could make someone oppose a useful change?"),
+    (75, 7): ("When is a small test better than a big change?", "When should a group test a change on a small scale before deciding?"),
+}
+for (_topic_no, _prompt_no), (_accessible, _full) in _CONCRETE_MAIN_QUESTIONS.items():
+    TOPICS[_topic_no]["prompts"][_prompt_no - 1].update(
+        accessible=_accessible, full=_full
+    )
+
+_CONCRETE_JAPANESE = {
+    (64, 4): ("初めての給料の使い道では、贈り物、自分へのごほうび、貯金、それとも別のもののどれが最も意味がありますか？", "どんな最初の使い道が、給料を長く残る思い出にできますか？"),
+    (65, 3): ("終えたことに誰も気づかなくても、同じように誇らしく感じますか？", "他人からの評価は、終えた仕事への誇りにどのくらい影響すべきですか？"),
+    (66, 4): ("成功は、興奮、安心、自信、落ち着きのどれに近く感じますか？", "本当の成功だったと最もはっきり分かる感情は何ですか？"),
+    (67, 2): ("技能を学び始めるとき、練習、先生、動画、本のどれが最初に役立ちますか？", "技能を始めるとき、最も早く役立つフィードバックが得られる方法は何ですか？"),
+    (68, 2): ("今月少しお金が残ったら、何を最優先にしますか？", "必要な支出のあとに少額が残ったら、どの目的を最優先にしますか？"),
+    (69, 2): ("そのキャリアの普通の一日には、実際に何をしますか？", "そのキャリアの普通の一日で、どの部分に最も興味がありますか？"),
+    (70, 3): ("日常の作業では、AIは結果を良くしますか、悪くしますか、それとも速くするだけですか？", "AIが結果を良くするのはいつで、作業を速くするだけなのはいつですか？"),
+    (71, 6): ("キャリアを変える前に試せる小さなテストは何ですか？", "新しいキャリアの実際を知るために、どんな低リスクの試みができますか？"),
+    (72, 3): ("誰かが間違えたあと、よい指導者は何と言うべきですか？", "よい指導者は、間違いを役立つ次の一歩にどう変えますか？"),
+    (73, 5): ("全員が仕事や学校を時間どおりに終えたら、意外に感じますか？", "時間どおりに終えることが意外に感じられるのは、どんな場所ですか？"),
+    (75, 3): ("職場や学校の変更に反対するのは誰で、何を心配すると思いますか？", "役立つ変更に反対する、もっともな心配は何ですか？"),
+    (75, 7): ("大きく変えるより、小さく試すほうがよいのはいつですか？", "決める前に、変更を小さな規模で試すべきなのはいつですか？"),
+}
+for (_topic_no, _prompt_no), (_accessible_ja, _full_ja) in _CONCRETE_JAPANESE.items():
+    TOPICS[_topic_no]["prompts"][_prompt_no - 1].update(
+        accessible_ja=_accessible_ja, full_ja=_full_ja
+    )
+
+TOPICS[68]["prompts"][1]["accessible_ja"] = "今月少しお金が残ったら、何を最優先にしますか？"
+TOPICS[73]["prompts"][4].update(
+    accessible_ja="全員が仕事や学校を時間どおりに終えたら、意外に感じますか？",
+    full_ja="時間どおりに終えることが意外に感じられるのは、どんな場所ですか？",
+)
+
+TOPICS[64]["prompts"][4]["full"] = "Who is most likely to hear about someone's first paycheck?"
+TOPICS[64]["prompts"][5]["full"] = "How would you divide a small unexpected payment today?"
+TOPICS[64]["prompts"][6]["full"] = "What can a first paycheck teach someone about independence?"
+TOPICS[68]["prompts"][7]["full"] = "Which kind of human support can money never fully replace?"
+TOPICS[71]["prompts"][1]["full"] = "Which pressure is most likely to turn career-change thoughts into action?"
+TOPICS[73]["prompts"][1]["full"] = "How closely do official finishing times match real life where you live?"
+TOPICS[73]["prompts"][7]["full"] = "Beyond the clock, what makes a work or school day end well?"
+TOPICS[70]["prompts"][0]["full"] = "Which everyday task feels most different because of AI?"
+TOPICS[65]["prompts"][2]["accessible"] = "Would you feel as proud when no one noticed what you finished?"
+TOPICS[65]["prompts"][0].update(
+    accessible="Which feels better: finishing a long job or fixing a small annoying problem?",
+    accessible_ja="長い仕事を終えることと、小さな困りごとを直すことでは、どちらが気持ちいいですか？",
+    full="Which feels more satisfying: completing a long project or finally fixing a small annoyance?",
+)
+TOPICS[66]["prompts"][0].update(
+    accessible="Which small success feels best: arriving on time, cooking well, or finishing a task?",
+    accessible_ja="時間どおりに着くこと、上手に料理すること、作業を終えることでは、どの小さな成功がいちばんうれしいですか？",
+    full="Which everyday success feels best: arriving on time, cooking something well, or finishing a task?",
+)
+
+_PLAIN_PROBE_REVISIONS = {
+    "Could the process still justify a different kind of recognition?": "Could finishing it still deserve a different kind of praise?",
+    "Which concrete contribution should be named?": "Which part of the person's work should be named?",
+    "Which condition sustained the feeling?": "What kept the feeling going?",
+    "Did the achievement retain meaning after the emotion changed?": "Did the success still matter after the first feeling faded?",
+    "Which current condition gives it importance?": "What makes it important right now?",
+    "What observable sign would confirm it?": "What clear sign would confirm it?",
+    "Which component of the skill needs focused work?": "Which part of the skill needs the most work?",
+    "Which condition would support consistent repetition?": "What would make regular practice easier?",
+    "Which source could provide credible feedback?": "Who could give useful, honest feedback?",
+    "What would justify continuing?": "What would make it worth continuing?",
+    "Which benefit would justify continuing?": "Which benefit would make it worth continuing?",
+    "Why does that foundation come first?": "Why should that part come first?",
+    "Which condition makes it sustainable rather than temporary?": "What would make the habit last?",
+    "Which condition has supported it?": "What has helped it work?",
+    "Which constraint has limited or prevented it?": "What has made it difficult or impossible?",
+    "Which constraint or risk rules it out?": "What limit or risk makes it a bad fit?",
+    "What distinctive need does that support meet?": "What special need does that support meet?",
+    "Does it concern the work, social contribution, autonomy, learning, or conditions?": "Is the appeal the work, helping people, independence, learning, or the daily conditions?",
+    "Could one element of the path be tested without a complete transition?": "Could one part be tried without changing careers completely?",
+    "Which condition enabled the transition?": "What made the career change possible?",
+    "What makes it inseparable from a complete transition?": "Why would it require a complete career change?",
+    "What evidence shows the difference?": "What clear result shows the difference?",
+    "Which condition prevented change?": "What stopped the task from changing?",
+    "Which condition kept the extra burden low?": "What kept the extra work small?",
+    "Which accountability cannot be transferred to the tool?": "Which responsibility must stay with a person?",
+    "Was that pressure temporary, structural, or still unclear?": "Was the pressure temporary, built into the job, or still unclear?",
+    "Which risk was most immediate and evidence-based?": "Which risk was most immediate and real?",
+    "What new evidence could change the decision?": "What new information could change the decision?",
+    "Which evidence, responsibility, or constraint makes delay rational?": "Which fact, responsibility, or limit makes waiting sensible?",
+    "What development could justify reconsidering the decision?": "What new change could make the person reconsider?",
+    "Which uncertainty could that perspective reduce?": "What uncertainty could that person help reduce?",
+    "Which information should remain confidential?": "Which details should stay private?",
+    "Which problem is the transition meant to address?": "Which problem is the career change meant to solve?",
+    "How has it been adapted to a different context?": "How has it been adjusted for a different situation?",
+    "Which safety net should remain available during the transition?": "What support should remain while the learner becomes independent?",
+    "What evidence would show that it expanded the learner's judgment?": "What would show that the learner can make better decisions alone?",
+    "Which role, institution, or routine does the example represent?": "Which kind of work, school, or routine does the example show?",
+    "Which event or condition marks the end?": "What tells people that the day is really over?",
+    "Which difference, if any, needs context rather than a national explanation?": "Which difference is about the setting rather than the whole country?",
+    "Whose authority or cooperation would implementation require?": "Whose approval or help would the change require?",
+    "Which occasional exception would remain legitimate?": "Which occasional exception would still be fair?",
+    "Does the main barrier concern authority, resources, evidence, or disagreement?": "Is the main barrier authority, money, information, or disagreement?",
+    "Which practical constraint could still delay action?": "Which practical limit could still delay action?",
+    "Which nonfinancial constraint remains?": "Which limit remains besides money?",
+    "When would a representative or formal route help?": "When would asking someone to speak for you or using an official process help?",
+    "How do direct, confidential, representative, and formal routes differ?": "How do speaking directly, speaking privately, asking someone to speak for you, and reporting officially differ?",
+    "What would a credible next step look like?": "What would a believable next step look like?",
+    "Which first response would keep the process credible?": "Which first response would show that the issue is being taken seriously?",
+    "Which measure and stop condition would make it safe?": "What would be measured, and when should the test stop?",
+    "Which protection, representative, or formal support must come first?": "Which protection or support must come first?",
+    "What next route or evidence could they offer?": "What next step or new information could they offer?",
+    "Which concern or contribution should be acknowledged explicitly?": "Which concern or useful idea should be acknowledged clearly?",
+    "Which next review point, alternative, or evidence could keep the process credible?": "Which next check, alternative, or new fact would keep the response useful?",
+}
+for _topic_no, _topic in TOPICS.items():
+    if _topic_no == 74:
+        continue
+    for _item in _topic["prompts"]:
+        for _key in ("accessible_followups", "full_followups"):
+            _item[_key] = tuple(_PLAIN_PROBE_REVISIONS.get(_probe, _probe) for _probe in _item[_key])
+
+
 CLAIM_ORDER = {number: tuple(f"ft{number}-c{index:02d}" for index in range(1, 11)) for number in TOPIC_NUMBERS}
 
 VOCABULARY = {
@@ -699,7 +1057,7 @@ VOCABULARY = {
     71: {"new": (("change careers", "キャリアを変える"),), "recycled": (), "assumed": (("risk", "リスク"), ("stay", "続ける")), "receptive": (("transition", "移行"),)},
     72: {"new": (), "recycled": (), "assumed": (("feedback", "フィードバック"), ("guide", "導く")), "receptive": (("formal authority", "正式な権限"), ("learn from", "〜から学ぶ"))},
     73: {"new": (("leave on time", "定時に帰る"),), "recycled": (), "assumed": (("finish", "終える"), ("official", "決まった")), "receptive": (("unpaid", "無給の"),)},
-    74: {"new": (("behind the scenes", "表に見えないところで"),), "recycled": (), "assumed": (("prepare", "準備する"), ("check", "確認する")), "receptive": (("preventive", "予防の"),)},
+    74: {"new": (), "recycled": (), "assumed": (("prepare", "準備する"), ("check", "確認する")), "receptive": (("behind the scenes", "表に見えないところで"), ("preventive", "予防の"))},
     75: {"new": (("raise an issue", "問題を提起する"),), "recycled": (), "assumed": (("change", "変更"), ("proposal", "提案")), "receptive": (("unintended effect", "予期しない影響"),)},
 }
 
@@ -802,6 +1160,640 @@ def _question_page(page_id: str, number: str, item: dict[str, object], variant: 
         '<button class="fb-add" data-add="note" type="button">＋ Note</button></div>'
     )
     return base.page(page_id, item["title"], item["title_ja"], body)
+
+
+_FINAL_CONVERSATION_PATCHES = {
+    (64, 2): {
+        "full_followups": ("What made the amount feel that way?", "What could the payment actually cover?"),
+    },
+    (64, 6): {
+        "accessible_followups": ("Would you spend it, save it, share it, or use it in more than one way?", "Which current priority would guide you?"),
+        "full": "Would you spend, save, share, or split a small unexpected payment?",
+        "full_ja": "予想外の少額の収入があったら、使いますか、貯めますか、人と分けますか、それともいくつかに分けますか？",
+        "full_followups": ("Which choice would come first?", "Why would that choice matter now?"),
+    },
+    (64, 8): {
+        "title": "Unhelpful advice",
+        "title_ja": "いらない助言",
+        "accessible": "What advice about a first paycheck should people avoid giving?",
+        "accessible_ja": "初めての給料について、言わないほうがよい助言は何ですか？",
+        "accessible_followups": ("Why can that advice feel unfair?", "What would be more helpful to say?"),
+        "full": "What pressure should someone be free from when deciding what to do with a first paycheck?",
+        "full_ja": "初めての給料の使い道を決めるとき、どんなプレッシャーから自由であるべきですか？",
+        "full_followups": ("What assumption does that pressure make?", "How can someone offer help without controlling the choice?"),
+    },
+    (65, 1): {
+        "full_ja": "長い仕事を終えることと、小さな困りごとをやっと直すことでは、どちらがより満足できますか？",
+    },
+    (65, 3): {
+        "accessible_followups": ("Why might finishing the work still matter?", "How much should other people's silence matter?"),
+        "full_followups": ("When can recognition add to a person's pride?", "When might the work feel valuable without any praise?"),
+    },
+    (66, 1): {
+        "full_ja": "時間どおりに着くこと、上手に料理すること、作業を終えることでは、どの成功がいちばんうれしいですか？",
+    },
+    (66, 3): {
+        "accessible": "Does a successful moment matter more when another person sees it?",
+        "accessible_ja": "成功した瞬間は、誰かに見てもらうと、より大切に感じられますか？",
+    },
+    (66, 7): {
+        "full_followups": ("What used to count as success but matters less now?", "What still matters most?"),
+    },
+    (67, 1): {
+        "full_followups": ("Which part of the skill needs the most work?", "What would get easier if the skill improved?"),
+    },
+    (67, 3): {
+        "full_followups": ("Is the main problem time, access, feedback, confidence, or something else?", "Which part can the person actually change?"),
+    },
+    (67, 4): {
+        "accessible": "What feedback would help with the next try at a skill?",
+        "accessible_ja": "技能にもう一度取り組むとき、どんなフィードバックが役立ちますか？",
+        "full_followups": ("Who could give useful, honest feedback?", "What specific change should the feedback suggest?"),
+    },
+    (67, 7): {
+        "full_followups": ("Where could it fit into the week?", "What reminder or resource would make it easier to start?"),
+    },
+    (68, 1): {
+        "accessible": "After essential spending, what useful things can someone do with money left over?",
+        "accessible_ja": "必要な支出のあと、残ったお金をどんなことに役立てられますか？",
+        "full": "Once essentials are covered, what are the best uses for money left over?",
+        "full_ja": "必要な支出を終えたら、残ったお金を何に使うのがよいですか？",
+    },
+    (68, 5): {
+        "accessible_followups": ("Which influence helps people make a good choice?", "How can the choice change over time?"),
+        "full_followups": ("Which part of that influence is useful?", "How has the way of using the money changed over time?"),
+    },
+    (68, 4): {
+        "accessible_followups": ("What makes a plan easy to continue?", "What can make even a good plan fail?"),
+        "full_ja": "貯蓄や投資の計画を長く続けやすくするのは何ですか？",
+        "full_followups": ("What makes a plan easy to keep over time?", "What usually causes a sensible plan to break down?"),
+    },
+    (68, 7): {
+        "accessible_followups": ("What could go wrong?", "What would make the choice safer?"),
+        "full_ja": "どんなお金の選択に、いちばん注意が必要ですか？",
+        "full_followups": ("Who else could be affected by the choice?", "What would you want to check before deciding?"),
+    },
+    (69, 2): {
+        "accessible": "What would you actually do during one normal day in a career you might try?",
+        "accessible_ja": "試してみたいキャリアの普通の一日には、実際に何をしますか？",
+        "full": "Which part of an ordinary day in a career you might try would interest you most?",
+        "full_ja": "試してみたいキャリアの普通の一日で、どの部分に最も興味がありますか？",
+    },
+    (69, 4): {
+        "full": "What would make a different career possible to try?",
+        "full_ja": "別のキャリアを試せるようにするには、何が必要ですか？",
+    },
+    (69, 5): {
+        "full_followups": ("What made the career change possible?", "What important benefit or sense of security did the choice put at risk?"),
+    },
+    (69, 8): {
+        "full_followups": ("Which appealing idea about the career should be checked?", "Whose experience could reveal the less visible parts of the career?"),
+    },
+    (70, 3): {
+        "full_followups": ("Which part of the result became better or worse?", "Where is a person's judgment still necessary?"),
+    },
+    (70, 5): {
+        "full_followups": ("What risk makes that boundary necessary?", "Could AI still help with one small part?"),
+    },
+    (70, 6): {
+        "full_followups": ("Which facts or possible effects need to be checked?", "Which responsibility must stay with a person?"),
+    },
+    (70, 7): {
+        "title": "A skill to protect",
+        "title_ja": "守りたい人の力",
+        "accessible": "Which human skill could weaken if people rely on AI too much?",
+        "accessible_ja": "AIに頼りすぎると、どんな人の力が弱くなるかもしれませんか？",
+        "accessible_followups": ("Where do people practice that skill now?", "How could they keep using it?"),
+        "full": "Which human skill is most at risk when people rely heavily on AI?",
+        "full_ja": "AIに大きく頼るとき、どの人間の力が最も失われやすいですか？",
+        "full_followups": ("What would people lose if the skill weakened?", "How could schools or workplaces protect it?"),
+    },
+    (70, 8): {
+        "full_ja": "AIツールを試す、小さくてリスクの低い方法は何ですか？",
+        "full_followups": ("What result would show whether it helped?", "Which data and decisions should stay outside the test?"),
+    },
+    (71, 1): {
+        "full": "When is changing careers worth serious thought?",
+        "full_ja": "どんなときに、キャリアチェンジを真剣に考える価値がありますか？",
+        "full_followups": ("What kind of change is the person thinking about?", "Is it the field, role, schedule, paid work, or another part of working life?"),
+    },
+    (71, 2): {
+        "full_ja": "どんなプレッシャーが、キャリアチェンジの考えを行動に変えやすいですか？",
+        "full_followups": ("Was the pressure temporary, built into the job, or still unclear?", "What needed to get better?"),
+    },
+    (71, 3): {
+        "full_followups": ("Was the attraction the work, meaning, growth, independence, or daily conditions?", "Which part was most attractive?"),
+    },
+    (71, 4): {
+        "full_followups": ("Which risk felt most immediate and real?", "Could changing careers in stages reduce the risk?"),
+    },
+    (71, 6): {
+        "full": "What small, low-risk test could show what a new career is really like?",
+        "full_ja": "新しいキャリアの実際を知るために、どんな小さくてリスクの低い試し方ができますか？",
+        "full_followups": ("What question would the test answer?", "How could someone keep the test cheap and easy to stop?"),
+    },
+    (71, 8): {
+        "full_followups": ("Which problem should the career change solve?", "What existing value or responsibility should the change protect?"),
+    },
+    (72, 2): {
+        "full_ja": "よい先生、上司、コーチは実際に何をしますか？",
+        "full_followups": ("Did they explain, give practice, offer feedback, set standards, or build independence?", "Which moment shows this most clearly?"),
+    },
+    (72, 3): {
+        "full_followups": ("What made the response helpful or harmful?", "Did it give the learner a clear next step?"),
+    },
+    (72, 6): {
+        "full_followups": ("What can a direct response tell the guide?", "When might it be understandable not to respond?"),
+    },
+    (72, 7): {
+        "full_ja": "よい指導者は、学ぶ人がもっと自分で判断できるようにどう助けられますか？",
+    },
+    (72, 8): {
+        "full_followups": ("What action would show that quality?", "What would show that the learner can make better decisions alone?"),
+    },
+    (73, 3): {
+        "full_followups": ("Is the response supportive, neutral, mixed, or critical?", "Does the person's role or reason change the response?"),
+    },
+    (73, 5): {
+        "accessible_followups": ("What finishing-time pattern would you like to hear about?", "Which detail would make a comparison useful?"),
+        "full_followups": ("Which finishing-time pattern from another place would be most useful?", "Which detail would help you compare the two settings?"),
+    },
+    (73, 6): {
+        "full_followups": ("Which similarity matters most?", "Which difference is about the setting rather than the whole country?"),
+    },
+    (73, 8): {
+        "full_followups": ("Do people need to finish a task, hand work over, plan tomorrow, or set a clear stopping point?", "What keeps unfinished work from taking over the next part of the day?"),
+    },
+    (74, 5): {
+        "full_followups": ("Why do other people not notice the work?", "Which problem does that hidden work prevent?"),
+    },
+    (74, 2): {
+        "full_followups": ("Which activity usually sets the order of everything else?", "Which interruption usually changes that order?"),
+    },
+    (74, 6): {
+        "accessible_followups": ("What would become easier if you removed or shortened it?", "Who else would notice the change?"),
+        "full_followups": ("What would become easier in your routine if you removed or shortened it?", "Who else might notice the change?"),
+    },
+}
+for (_topic_no, _prompt_no), _changes in _FINAL_CONVERSATION_PATCHES.items():
+    TOPICS[_topic_no]["prompts"][_prompt_no - 1].update(_changes)
+
+
+_THREE_SECOND_PATCHES = {
+    (64, 1): {
+        "accessible_followups": ("Which use would be easiest to remember?", "Could even a small payment make something new possible?"),
+        "full_followups": ("Which use would be easiest to remember?", "Could even a small payment make something new possible?"),
+    },
+    (64, 2): {
+        "accessible_followups": ("Is the first payment more important than the amount?", "What could a small paycheck still pay for?"),
+        "full_followups": ("Is the first payment more important than the amount?", "What could a small paycheck still pay for?"),
+    },
+    (64, 3): {
+        "accessible_followups": ("Could it come from a part-time job or a one-time task?", "Which kind of work needs more preparation?"),
+        "full_followups": ("Could it come from a part-time job or a one-time task?", "Which kind of work needs more preparation?"),
+    },
+    (64, 4): {
+        "accessible": "Which first use feels most special: a gift, a treat, savings, or something else?",
+        "accessible_ja": "初めての給料の使い道で最も特別に感じるのは、贈り物、ご褒美、貯金、それとも別のものですか？",
+        "full": "Which first-paycheck use feels most memorable: a gift, a treat, savings, or something else?",
+        "full_ja": "初めての給料では、贈り物、ご褒美、貯金、それとも別の使い道のどれがいちばんよい思い出になりますか？",
+        "accessible_followups": ("Why would that use come first?", "Would you use all of the money?"),
+        "full_followups": ("Why would that use come first?", "Would you use all of the money?"),
+    },
+    (64, 5): {
+        "accessible_followups": ("Would they celebrate or give advice?", "Why might someone keep it private?"),
+        "full_followups": ("Would they celebrate or give advice?", "Why might someone keep it private?"),
+    },
+    (64, 7): {
+        "accessible_followups": ("Can earning it teach more than spending it?", "Which lesson might stay useful?"),
+        "full_followups": ("Can earning it teach more than spending it?", "Which lesson might affect a later choice?"),
+    },
+    (64, 8): {
+        "accessible_followups": ("Why could that advice feel unfair?", "What would be more helpful to say?"),
+        "full_followups": ("Why could that pressure feel unfair?", "How could someone help without controlling the choice?"),
+    },
+    (65, 1): {
+        "accessible_followups": ("How do you know the job is finished?", "Why does the result matter?"),
+        "full_followups": ("How do you know the job is finished?", "Why does the result matter?"),
+    },
+    (65, 2): {
+        "full_followups": ("How long might it take?", "What could almost stop it?"),
+    },
+    (65, 3): {
+        "full": "Can finished work still feel valuable when nobody praises it?",
+        "full_ja": "誰にも褒められなくても、終えた仕事には価値を感じられますか？",
+        "full_followups": ("When can praise add to the pride?", "What can make the work valuable by itself?"),
+    },
+    (65, 4): {
+        "accessible_followups": ("Are people afraid of sounding proud?", "How else could they show the feeling?"),
+        "full_followups": ("Are people afraid of sounding proud?", "How else could they show the feeling?"),
+    },
+    (65, 5): {
+        "accessible_followups": ("Did the effort, result, or promise matter most?", "What does finishing it show about the person?"),
+        "full_followups": ("Did the effort, result, or promise matter most?", "What does finishing it show about the person?"),
+    },
+    (65, 6): {
+        "full_followups": ("What might be disappointing about the result?", "Could the effort still deserve praise?"),
+    },
+    (65, 7): {
+        "full_followups": ("What quality should people notice?", "Would the size of the project matter?"),
+    },
+    (65, 8): {
+        "accessible_followups": ("Which specific effort could you mention?", "What could you ask the person about the work?"),
+        "full_followups": ("Which specific effort could you mention?", "What could you ask the person about the work?"),
+    },
+    (66, 1): {
+        "full_followups": ("What might be happening in that moment?", "Why would it count as a success?"),
+    },
+    (66, 2): {
+        "accessible": "What small action can lead to a successful moment?",
+        "accessible_ja": "どんな小さな行動が、成功した瞬間につながりますか？",
+        "full": "Which small step often comes before success?",
+        "full_ja": "成功の前には、どんな小さな一歩がよくありますか？",
+        "accessible_followups": ("What problem could that action solve?", "Would planning, practice, or asking for help come first?"),
+        "full_followups": ("What problem could that step solve?", "Would preparation, practice, or feedback matter most?"),
+    },
+    (66, 3): {
+        "accessible_followups": ("What might the other person notice?", "How could they show that they noticed?"),
+        "full_followups": ("What response from the other person would matter?", "What can make the success feel important on its own?"),
+    },
+    (66, 4): {
+        "full": "Which feeling fits success best for you: excitement, relief, confidence, or calm?",
+        "full_ja": "成功にいちばん合う感情は、興奮、安心、自信、落ち着きのどれですか？",
+        "accessible_followups": ("Why does that feeling fit?", "Could another success feel different?"),
+        "full_followups": ("Why does that feeling fit?", "Could another success feel different?"),
+    },
+    (66, 5): {
+        "full_followups": ("What can make the feeling last?", "Does the success still matter after the feeling fades?"),
+    },
+    (66, 6): {
+        "accessible_followups": ("Why would it matter now?", "What small sign would show progress?"),
+        "full_followups": ("Why would it matter now?", "What small sign would show progress?"),
+    },
+    (66, 7): {
+        "accessible_followups": ("What mattered before but matters less now?", "What still matters?"),
+        "full_followups": ("What mattered before but matters less now?", "What still matters?"),
+    },
+    (66, 8): {
+        "accessible_followups": ("What effort could you mention?", "What comparison should you avoid?"),
+        "full_followups": ("What effort could you mention?", "What comparison should you avoid?"),
+    },
+    (67, 2): {
+        "full": "When starting a skill, what helps most at first: practice, a teacher, a video, or a book?",
+        "full_ja": "技能を始めるとき、最初に最も役立つのは、練習、先生、動画、本のどれですか？",
+        "full_followups": ("How long would you try that method?", "What would make it easy to repeat?"),
+    },
+    (67, 3): {
+        "accessible_followups": ("Is the problem time, money, confidence, or something else?", "Which part can the person change?"),
+        "full_followups": ("Is the problem time, money, feedback, confidence, or something else?", "Which part can the person change?"),
+    },
+    (67, 4): {
+        "accessible_followups": ("Who could give the feedback?", "What should the feedback say to change?"),
+        "full_followups": ("Who could give the feedback?", "What should the feedback say to change?"),
+    },
+    (67, 5): {
+        "full": "What is the clearest small sign that practice is working?",
+        "full_ja": "練習が役立っていると分かる、いちばん明確な小さなサインは何ですか？",
+        "accessible_followups": ("Who might notice it first?", "Could you see it without a formal test?"),
+        "full_followups": ("Who might notice it first?", "Could you see it without a formal test?"),
+    },
+    (67, 6): {
+        "full_followups": ("What benefit would make it worth continuing?", "What change would make stopping sensible?"),
+    },
+    (67, 7): {
+        "full": "Which small action would help someone improve a skill this week?",
+        "full_ja": "今週、誰かの技能上達に役立つ小さな行動はどれですか？",
+        "full_followups": ("When could it fit into the week?", "What would make it easy to start?"),
+    },
+    (68, 1): {
+        "accessible_followups": ("Would you save it, invest it, or keep it ready for a surprise?", "Which future need matters most?"),
+        "full_followups": ("Would you save it, invest it, or keep it ready for a surprise?", "Which future need matters most?"),
+    },
+    (68, 2): {
+        "accessible_followups": ("What need would it meet?", "Would it help now or later?"),
+        "full_followups": ("What need would it meet?", "Would it help now or later?"),
+    },
+    (68, 3): {
+        "accessible_followups": ("Could a bill, goal, or pay raise start the habit?", "What would make saving feel possible?"),
+        "full_followups": ("Could a bill, goal, or pay raise start the habit?", "What would make the habit last?"),
+    },
+    (68, 4): {
+        "accessible": "What makes a saving plan easy to continue?",
+        "accessible_ja": "貯蓄の計画を続けやすくするのは何ですか？",
+        "full": "What makes a saving or investment plan easy to continue?",
+        "full_ja": "貯蓄や投資の計画を続けやすくするのは何ですか？",
+        "accessible_followups": ("Would an automatic transfer help?", "What could make the plan fail?"),
+        "full_followups": ("Would an automatic transfer help?", "What could make the plan fail?"),
+    },
+    (68, 5): {
+        "accessible": "Who or what influences how people save or invest money?",
+        "accessible_ja": "人がお金を貯めたり投資したりする方法に、誰や何が影響しますか？",
+        "full": "What has the strongest influence on how people save or invest?",
+        "full_ja": "人の貯蓄や投資のしかたに、最も強く影響するのは何ですか？",
+        "accessible_followups": ("Do family, advice, or past experience matter most?", "Can that influence change with age?"),
+        "full_followups": ("Do family, advice, or past experience matter most?", "Can that influence change with age?"),
+    },
+    (68, 6): {
+        "accessible": "Which money habit is helpful for some people but risky for others?",
+        "accessible_ja": "ある人には役立っても、別の人には危険なお金の習慣は何ですか？",
+        "full": "What money habit can help one person but create trouble for another?",
+        "full_ja": "ある人には役立っても、別の人には問題を起こすお金の習慣は何ですか？",
+        "accessible_followups": ("Who might benefit from it?", "What could go wrong?"),
+        "full_followups": ("Who might benefit from it?", "What could go wrong?"),
+    },
+    (68, 7): {
+        "accessible": "Which needs more caution: borrowing money or investing it?",
+        "accessible_ja": "より注意が必要なのは、お金を借りることと投資することのどちらですか？",
+        "full": "Where should people be more careful: borrowing money or making an investment?",
+        "full_ja": "人がより注意すべきなのは、お金を借りるときと投資するときのどちらですか？",
+    },
+    (69, 1): {
+        "accessible_followups": ("What first made it interesting?", "Would you feel curious, regretful, or neither?"),
+        "full_followups": ("What first made it interesting?", "Would you feel curious, regretful, relieved, or none of these?"),
+    },
+    (69, 2): {
+        "full_followups": ("Which task would take most of the day?", "Which part might be less enjoyable?"),
+    },
+    (69, 3): {
+        "accessible_followups": ("Is it the work, freedom, people, or setting?", "Why does that part matter to you?"),
+        "full_followups": ("Is it the work, freedom, people, learning, or daily routine?", "Why does that part matter to you?"),
+    },
+    (69, 4): {
+        "accessible_followups": ("Would time, money, training, or family duties matter most?", "Could you try one small part first?"),
+        "full_followups": ("Would time, money, training, location, or family duties matter most?", "Could you try one small part first?"),
+    },
+    (69, 5): {
+        "accessible": "What can make a big career change possible?",
+        "accessible_ja": "大きなキャリアチェンジを可能にするのは何ですか？",
+        "full": "What usually makes a major career change possible?",
+        "full_ja": "大きなキャリアチェンジを可能にするのは、普通何ですか？",
+        "accessible_followups": ("Would savings, training, or support help most?", "What might the person have to give up?"),
+        "full_followups": ("Would savings, training, or support help most?", "What might the person have to give up?"),
+    },
+    (69, 6): {
+        "accessible_followups": ("Would the feeling be curiosity, regret, or relief?", "Could the feeling change over time?"),
+        "full_followups": ("Would the feeling be curiosity, regret, or relief?", "Could the feeling change over time?"),
+    },
+    (69, 7): {
+        "accessible": "What part of another career could you try as a hobby or side project?",
+        "accessible_ja": "別のキャリアのどんな部分を、趣味や小さなプロジェクトとして試せますか？",
+        "full": "Which part of another career could fit into life as a hobby or side project?",
+        "full_ja": "別のキャリアのどの部分なら、趣味や小さなプロジェクトとして生活に取り入れられますか？",
+        "accessible_followups": ("Could a class or volunteer role help?", "Which part would still need a full career change?"),
+        "full_followups": ("Could a class or volunteer role help?", "Which part would still need a full career change?"),
+    },
+    (69, 8): {
+        "full": "What should a young person ask before choosing a career?",
+        "full_ja": "若い人は、キャリアを選ぶ前に何を質問すべきですか？",
+        "accessible_followups": ("What attractive idea should they check?", "Whose experience could broaden the picture?"),
+        "full_followups": ("Which attractive promise should they check carefully?", "Who could tell them about the difficult parts?"),
+    },
+    (70, 1): {
+        "accessible_followups": ("What changed in that task?", "What result proves the change?"),
+        "full_followups": ("What changed in that task?", "What result proves the change?"),
+    },
+    (70, 2): {
+        "accessible_followups": ("Which step disappeared or changed?", "Which part stayed the same?"),
+        "full_followups": ("Which step disappeared or changed?", "Which part stayed the same?"),
+    },
+    (70, 3): {
+        "accessible": "For one task you know, what has AI improved most: speed, quality, or neither?",
+        "accessible_ja": "知っている作業の一つで、AIが最も改善したのは、速さ、質、それともどちらでもないですか？",
+        "full": "For one task you know, what did AI improve first: speed or quality?",
+        "full_ja": "知っている作業の一つで、AIが先に改善したのは、速さと質のどちらですか？",
+        "accessible_followups": ("What result shows the improvement?", "What still needs a person's judgment?"),
+        "full_followups": ("What result shows the improvement?", "What still needs a person's judgment?"),
+    },
+    (70, 4): {
+        "accessible_followups": ("Who has to check or correct the result?", "When is checking it more work than doing it yourself?"),
+        "full_followups": ("Who has to check or correct the result?", "When is checking it more work than doing it yourself?"),
+    },
+    (70, 5): {
+        "accessible_followups": ("Why would you not trust AI with that?", "Would you give AI a password, medical record, or final hiring decision?"),
+        "full_followups": ("Why would you not trust AI with that?", "Would you give AI a password, medical record, or final hiring decision?"),
+    },
+    (70, 6): {
+        "accessible_followups": ("What fact should the person check?", "What decision must stay with a person?"),
+        "full_followups": ("What fact should the person check?", "What decision must stay with a person?"),
+    },
+    (70, 8): {
+        "accessible_followups": ("What result would show that it helped?", "What private information should stay out?"),
+        "full_followups": ("What result would show that it helped?", "What private information should stay out?"),
+    },
+    (71, 1): {
+        "accessible_followups": ("Would the person change fields, roles, or working hours?", "Which change would be smallest?"),
+        "full_followups": ("Would the person change fields, roles, or working hours?", "Which change would be smallest?"),
+    },
+    (71, 2): {
+        "accessible_followups": ("Is the pressure temporary or ongoing?", "What needs to get better?"),
+        "full_followups": ("Is the pressure temporary or ongoing?", "What needs to get better?"),
+    },
+    (71, 3): {
+        "accessible_followups": ("Is it the work, pay, freedom, or daily routine?", "Which part matters most?"),
+        "full_followups": ("Is it the work, pay, freedom, growth, or daily routine?", "Which part matters most?"),
+    },
+    (71, 4): {
+        "accessible_followups": ("Would money, training, or family duties be the biggest risk?", "Could one part of the risk be reduced?"),
+        "full_followups": ("Would money, training, or family duties be the biggest risk?", "Could changing in stages reduce it?"),
+    },
+    (71, 5): {
+        "accessible_followups": ("Is money, timing, or family responsibility causing the delay?", "What new information could change the decision?"),
+        "full_followups": ("Is money, timing, or family responsibility causing the delay?", "What new information could change the decision?"),
+    },
+    (71, 7): {
+        "accessible_followups": ("What question could that person answer?", "What details should stay private?"),
+        "full_followups": ("What question could that person answer?", "What details should stay private?"),
+    },
+    (71, 8): {
+        "accessible": "What must improve for a career change to be worth it?",
+        "accessible_ja": "キャリアチェンジに価値があるためには、何が改善しなければなりませんか？",
+        "full": "What needs to get better before a career change is worth the risk?",
+        "full_ja": "キャリアチェンジがリスクに見合うには、何がよくなる必要がありますか？",
+        "accessible_followups": ("Would pay, time, interest, or health need to improve?", "What should not get worse?"),
+        "full_followups": ("Would pay, time, interest, or health need to improve?", "What should not get worse?"),
+    },
+    (72, 1): {
+        "accessible_followups": ("What would you want to learn from them?", "Would they explain, show, or give feedback?"),
+        "full_followups": ("What would you want to learn from them?", "Would they explain, show, or give feedback?"),
+    },
+    (72, 2): {
+        "accessible_followups": ("Did they explain, show, or give practice?", "What moment would show it clearly?"),
+        "full_followups": ("Did they explain, show, or give practice?", "What moment would show it clearly?"),
+    },
+    (72, 4): {
+        "accessible_followups": ("What reaction should they avoid?", "How should they react when someone says, ‘I don't know’?"),
+        "full_followups": ("What reaction would stop honest questions?", "How should they react when someone says, ‘I don't know’?"),
+    },
+    (72, 5): {
+        "accessible_followups": ("Where could the lesson help now?", "Would it need to change in a new situation?"),
+        "full_followups": ("Where could the lesson help now?", "Would it need to change in a new situation?"),
+    },
+    (72, 7): {
+        "accessible_followups": ("Which decision could the learner make first?", "What help should still be available?"),
+        "full_followups": ("Which decision could the learner make first?", "What help should still be available?"),
+    },
+    (72, 8): {
+        "full_followups": ("What action would show that quality?", "How would you know the guidance helped?"),
+    },
+    (73, 1): {
+        "full": "When do people usually finish work or school where you live?",
+        "full_ja": "住んでいる場所では、人は普段いつ仕事や学校を終えますか？",
+        "full_followups": ("Do most people finish near that time?", "Which kind of work or school are you thinking of?"),
+    },
+    (73, 2): {
+        "accessible": "Do people usually leave at the official finishing time where you live?",
+        "accessible_ja": "住んでいる場所では、人は普通、決められた終了時間に帰りますか？",
+        "full": "How often do people leave at the official finishing time where you live?",
+        "full_ja": "住んでいる場所では、人はどのくらいの頻度で決められた終了時間に帰りますか？",
+        "accessible_followups": ("If there is no official time, what ends the day?", "What tells people it is really time to leave?"),
+        "full_followups": ("If there is no official time, what ends the day?", "What tells people it is really time to leave?"),
+    },
+    (73, 3): {
+        "accessible_followups": ("Do others react positively, negatively, or not at all?", "Does the person's job or reason matter?"),
+        "full_followups": ("Do others react positively, negatively, or not at all?", "Does the person's job or reason matter?"),
+    },
+    (73, 4): {
+        "accessible_followups": ("Does the phrase sound positive, negative, or neutral?", "What would you say if there is no special phrase?"),
+        "full_followups": ("Does the phrase sound positive, negative, or neutral?", "What would you say if there is no special phrase?"),
+    },
+    (73, 5): {
+        "accessible_followups": ("Would leaving early or staying late surprise you more?", "What detail would help you compare?"),
+        "full_followups": ("Would leaving early or staying late surprise you more?", "What detail would help you compare?"),
+    },
+    (73, 6): {
+        "accessible_followups": ("What is one clear similarity?", "If you are unsure, which sounds better: leaving early with work unfinished or leaving late after finishing?"),
+        "full_followups": ("What is one clear similarity?", "If you are unsure, which sounds better: leaving early with work unfinished or leaving late after finishing?"),
+    },
+    (73, 7): {
+        "accessible_followups": ("Who would need to agree?", "When would staying late still be reasonable?"),
+        "full_followups": ("Who would need to agree?", "When would staying late still be reasonable?"),
+    },
+    (73, 8): {
+        "accessible_followups": ("Would finishing a task or making a plan for tomorrow help more?", "How can people stop unfinished work from following them home?"),
+        "full_followups": ("Would finishing a task or making a plan for tomorrow help more?", "How can people stop unfinished work from following them home?"),
+    },
+    (75, 1): {
+        "accessible_followups": ("What problem would the change solve?", "Who would notice the change first?"),
+        "full_followups": ("What problem would the change solve?", "Who would notice the change first?"),
+    },
+    (75, 2): {
+        "accessible_followups": ("Is the main problem money, authority, or disagreement?", "Who could act first?"),
+        "full_followups": ("Is the main problem money, authority, or disagreement?", "Who could act first?"),
+    },
+    (75, 3): {
+        "accessible": "Why might people resist a useful change at work or school?",
+        "accessible_ja": "職場や学校で役立つ変化に、人が反対することがあるのはなぜですか？",
+        "full": "Why might someone oppose a useful change at work or school?",
+        "full_ja": "職場や学校で役立つ変化に、誰かが反対するのはなぜですか？",
+        "accessible_followups": ("Would they worry about cost, fairness, or extra work?", "What could make them less worried?"),
+        "full_followups": ("Would they worry about cost, fairness, or extra work?", "What could make them less worried?"),
+    },
+    (75, 4): {
+        "accessible_followups": ("Which cost would be hardest to accept?", "Who would carry that cost?"),
+        "full_followups": ("Which cost would be hardest to accept?", "Who would carry that cost?"),
+    },
+    (75, 5): {
+        "accessible_followups": ("Would you speak directly, speak privately, or report it?", "What would make the person feel safe?"),
+        "full_followups": ("Would you speak directly, speak privately, or report it?", "What would make the person feel safe?"),
+    },
+    (75, 6): {
+        "accessible_followups": ("How quickly should someone reply?", "What clear next step could they give?"),
+        "full_followups": ("How quickly should someone reply?", "Who should own the next step?"),
+    },
+    (75, 7): {
+        "full": "When is a small test better than making a big change at once?",
+        "full_ja": "大きな変化を一度に行うより、小さく試すほうがよいのはどんなときですか？",
+        "accessible_followups": ("What result would count as better?", "What protection is needed first?"),
+        "full_followups": ("What result would count as better?", "When should the test stop?"),
+    },
+    (75, 8): {
+        "full": "How should a manager respond when they cannot accept a suggestion?",
+        "full_ja": "提案を受け入れられないとき、責任者はどう答えるべきですか？",
+        "accessible_followups": ("What useful part should they mention?", "What next step could they offer?"),
+        "full_followups": ("What useful part should they mention?", "What next step could they offer?"),
+    },
+}
+for (_topic_no, _prompt_no), _changes in _THREE_SECOND_PATCHES.items():
+    TOPICS[_topic_no]["prompts"][_prompt_no - 1].update(_changes)
+
+
+# Full keeps the same conversational job while earning its depth through the
+# answer. These probes are deliberately distinct from the Accessible wording.
+_THREE_SECOND_FULL_FOLLOWUPS = {
+    (64, 1): ("Which detail would make the memory last?", "What new choice could even a small payment open up?"),
+    (64, 2): ("Would the moment matter as much if the amount were tiny?", "Which ordinary expense could the payment cover?"),
+    (64, 3): ("Would a short job or a one-time task count?", "What would someone need to learn before doing that work?"),
+    (64, 4): ("What would make that use memorable?", "Would keeping part of the money change your choice?"),
+    (64, 5): ("Would the first reaction be celebration, advice, or concern?", "What might make the earner avoid telling anyone?"),
+    (64, 7): ("Which lesson comes from earning the money rather than using it?", "Which lesson could shape a later decision?"),
+    (65, 1): ("What is the clearest sign that the work is complete?", "Who benefits from the finished result?"),
+    (65, 4): ("Why might someone hide their pride?", "Could their face, voice, or actions show it instead?"),
+    (65, 5): ("Which mattered most: the effort, the result, or keeping a promise?", "What personal quality does finishing the work show?"),
+    (65, 8): ("Which part of the effort deserves attention?", "What question would help the person talk about the work?"),
+    (66, 2): ("What problem could that step solve?", "Would preparation, practice, or feedback matter most?"),
+    (66, 4): ("What makes that feeling match success?", "Which kind of success might create a different feeling?"),
+    (66, 6): ("What makes the goal important at this point in life?", "Which early change would count as progress?"),
+    (66, 7): ("Which old measure of success has become less important?", "Which part of success has stayed important?"),
+    (66, 8): ("What exact effort would you praise?", "Which comparison could make the praise feel smaller?"),
+    (67, 2): ("How long would you test that way of learning?", "Could it fit into a normal week?"),
+    (67, 3): ("Is time, money, feedback, or confidence the main problem?", "What is one part the learner can control?"),
+    (67, 4): ("Would feedback from a teacher, friend, or customer help most?", "What is one change the feedback should name?"),
+    (67, 5): ("Would the learner or another person notice first?", "What could show progress without a test or score?"),
+    (68, 1): ("Would you keep it safe, invest it, or leave it ready for an emergency?", "Which future expense would you prepare for first?"),
+    (68, 2): ("Which present or future need would the money cover?", "How would the choice help six months from now?"),
+    (68, 3): ("Would a bill, a goal, or extra income start the new habit?", "What would help the habit survive a difficult month?"),
+    (68, 4): ("Could automation make the plan easier?", "Which change in income or expenses could break the plan?"),
+    (68, 5): ("Which matters more: family, advice, or past experience?", "How might the strongest influence change later in life?"),
+    (68, 6): ("What kind of person could benefit from that habit?", "Which situation could make the habit risky?"),
+    (69, 1): ("What first drew your attention to the career?", "If no career comes to mind, which sounds better: creative, practical, or people-focused work?"),
+    (69, 3): ("Would the work, freedom, people, learning, or routine attract you most?", "How would that part improve an ordinary day?"),
+    (69, 4): ("Would time, money, training, location, or family duties be hardest?", "What small test could happen before a full career change?"),
+    (69, 5): ("Which would help most: savings, training, or another person's support?", "Which comfort might the person need to lose?"),
+    (69, 6): ("Would you feel curious, regretful, relieved, or none of these?", "What could make that reaction different later?"),
+    (69, 7): ("Could a course, volunteer role, or weekend project test it?", "What would remain impossible without changing careers?"),
+    (70, 1): ("Which part of the task became different?", "What result would convince someone who doubts the change?"),
+    (70, 2): ("Which step became shorter or disappeared?", "What part still takes the same amount of effort?"),
+    (70, 3): ("Which visible result shows that improvement?", "Where is a person's judgment still necessary?"),
+    (70, 4): ("Who is responsible for checking or fixing the output?", "When would using AI create more checking than it saves?"),
+    (70, 5): ("What makes that task too risky for AI?", "Which is most sensitive: a password, a medical record, or a hiring decision?"),
+    (70, 6): ("Which claim in the result needs checking first?", "Which final choice should a person make?"),
+    (70, 8): ("What clear result would count as success?", "Which personal or company information must stay out?"),
+    (71, 1): ("Would the change affect the field, role, schedule, or all three?", "What is the smallest version of that career change?"),
+    (71, 2): ("Has the pressure lasted days, months, or years?", "Which part of the situation must improve soon?"),
+    (71, 3): ("Is the main attraction the work, pay, freedom, growth, or routine?", "Which benefit would affect daily life most?"),
+    (71, 4): ("Which risk is biggest: money, training, or family duties?", "Could changing one step at a time reduce it?"),
+    (71, 5): ("Is money, timing, or a family duty holding the decision back?", "Which new fact could turn waiting into action?"),
+    (71, 7): ("What useful question could an experienced person answer?", "Which personal facts would you avoid sharing?"),
+    (71, 8): ("Which must improve most: pay, time, interest, or health?", "Which good part of the current career should remain?"),
+    (72, 1): ("Which skill or decision would you want help with?", "Would an explanation, an example, or direct feedback help most?"),
+    (72, 2): ("Did the person show, explain, or let you practise?", "Which part of the experience proves the guidance worked?"),
+    (72, 4): ("What response would make honest questions feel unsafe?", "If the learner says, ‘I don't know,’ what should happen next?"),
+    (72, 5): ("Which current problem could the old lesson help with?", "What would need to change before using it in a new setting?"),
+    (72, 7): ("What is the first choice the learner could make alone?", "Which support should remain available afterward?"),
+    (73, 2): ("Without an official time, what event marks the end of the day?", "Which signal tells everyone that leaving is acceptable?"),
+    (73, 3): ("Would coworkers react well, badly, or barely notice?", "How might the person's role or reason change the reaction?"),
+    (73, 4): ("Does the expression feel warm, cold, or neutral?", "If no expression exists, how would you describe the person in plain words?"),
+    (73, 5): ("Which would feel stranger: leaving early or staying late?", "What fact about the workplace would help explain the difference?"),
+    (73, 6): ("Which workday habit is clearly similar?", "If unsure, which is healthier: leaving on time or staying until every task is done?"),
+    (73, 7): ("Whose agreement would the new rule need?", "Which urgent situation could still justify staying late?"),
+    (73, 8): ("Would completing one task or planning tomorrow make leaving easier?", "What boundary could keep unfinished work out of home life?"),
+    (75, 1): ("Which daily problem would disappear first?", "Would students, workers, or managers notice first?"),
+    (75, 2): ("Is money, decision-making power, or disagreement blocking the change?", "Who has enough power to take the first step?"),
+    (75, 3): ("Would cost, fairness, or extra work worry them most?", "What evidence could reduce that worry?"),
+    (75, 4): ("Which price of the change would people resist most?", "Who would do the extra work or pay the extra money?"),
+    (75, 5): ("Would a direct talk, a private talk, or a report be safest?", "What protection would make speaking up easier?"),
+    (75, 6): ("Would a reply be needed today, this week, or later?", "Who should be responsible for the next action?"),
+    (75, 7): ("Which result would prove the test helped?", "What warning sign should end the test?"),
+    (75, 8): ("Which useful idea in the suggestion could they recognize?", "What alternative action could they offer?"),
+}
+for (_topic_no, _prompt_no), _followups in _THREE_SECOND_FULL_FOLLOWUPS.items():
+    TOPICS[_topic_no]["prompts"][_prompt_no - 1]["full_followups"] = _followups
+
+# Keep the two Accessible money-risk probes distinct.
+TOPICS[68]["prompts"][5]["accessible_followups"] = (
+    "Who might benefit from that habit?",
+    "Which risk would matter most?",
+)
 
 
 def build(topic_no: int, variant: str) -> str:

@@ -16,6 +16,7 @@ import re
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import ft_conversation_rewrites_2_33 as conversation_rewrites
 import new_lesson
 
 
@@ -33,11 +34,11 @@ CANONICAL = {
 PRESERVED_FT7 = {
     "accessible": (
         TRACK / "courses/talk-between-two-countries-accessible/lessons/07-japan-does-especially-well/lesson.html",
-        "bfb2ee44ea84d4d55c9249179872a5eb5ad76fe29977ec680a47f92508f494bb",
+        "ccccdaa1bbda4c1389d02dabfaa0337539b02c0e91f3b9ce5ea5a54dca39d85e",
     ),
     "full": (
         TRACK / "courses/talk-between-two-countries-full/lessons/07-japan-does-especially-well/lesson.html",
-        "991ce831d4c89e4882c3ecd138fc0896c2bb212ba2762c40a34ddb4e198e1268",
+        "93061f193a30eb70ed5e69a312b883ff43e83c2f73c3c5cfee7de26fb9b490f1",
     ),
 }
 
@@ -151,7 +152,7 @@ TOPICS = {
         "ja": "国によって違う食事のマナー",
         "goal": ("Let's compare one table habit and the meaning people give it.", "食卓での習慣を一つ比べ、その意味について話しましょう。"),
         "opening": ("Do you pick your bowl up when you eat?", "食べるとき、お椀を手に持ちますか？"),
-        "opening_followups": ["When did you learn that habit?", "Does everyone in your home do the same?"],
+        "opening_followups": ["What do you usually do with the bowl?", "Does the answer change with the kind of bowl?"],
         "warm2": ("A confusing moment", "迷った場面", "What might make a guest unsure what to do at someone else's table?", "ほかの人の食卓で、客がどうすればよいか迷うのはどんなときですか？", ["Which quiet rule could cause hesitation?", "How could the guest decide what to do?"]),
         "article_title": ("The hidden rules at a table", "食卓にある見えないルール"),
         "article": [
@@ -325,6 +326,8 @@ TOPICS = {
         ],
     },
 }
+
+conversation_rewrites.apply_early(TOPICS)
 
 
 def esc(value: str) -> str:

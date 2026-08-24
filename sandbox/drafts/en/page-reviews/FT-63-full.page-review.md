@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-love-and-marriage-full/lessons/63-choosing-not-to-marry-or-have-children/lesson.html`
-- SHA-256: `f476f6a5f6a3a678c77bef4b765a4de77fe4759a2660e9e14dcfed2e51964278`
+- SHA-256: `0c183019fec168373ca63e985d798659dfdf5e8ea6962afabc8c471d278c8f61`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “Which values or circumstances can lead someone to choose neither marriage nor parenthood?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which motivations are commonly underestimated?” rather than asking every follow-up.
-- Visible target or prompt: Which values or circumstances can lead someone to choose neither marriage nor parenthood? / どのような価値観や状況が、結婚も親になることも選ばない決定につながるのでしょうか？
-- Learning target: Explore the distinct “Someone's decision (誰かの選択)” angle of “Choosing not to marry or have children” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which motivations are commonly underestimated?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which motivations are commonly underestimated?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which values or circumstances can lead someone to choose neither marriage nor parenthood?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Why should the two decisions remain distinct?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which values or circumstances can lead someone to choose neither marriage nor parenthood?"]}`
+- Learner action: Answer the standalone question “Why might someone choose not to marry or become a parent?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why might someone choose not to marry or become a parent?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why might someone choose not to marry or become a parent?” / “どのような価値観や状況が、結婚も親になることも選ばない決定につながるのでしょうか？” Tutor follow-ups: “Which reasons do people often forget about?” and “Why are marriage and children separate choices?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どのような価値観や状況が、結婚も親になることも選ばない決定につながるのでしょうか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why might someone choose not to marry or become a parent?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “Does anyone owe other people an explanation for choosing not to marry or become a parent?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which details should remain private?” rather than asking every follow-up.
-- Visible target or prompt: Does anyone owe other people an explanation for choosing not to marry or become a parent? / 結婚しない、または親にならない選択について、他人に説明する義務はあるでしょうか？
-- Learning target: Explore the distinct “Their reason (その理由)” angle of “Choosing not to marry or have children” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which details should remain private?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which details should remain private?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Does anyone owe other people an explanation for choosing not to marry or become a parent?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What makes a question respectful rather than intrusive?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Does anyone owe other people an explanation for choosing not to marry or become a parent?"]}`
+- Learner action: Answer the standalone question “Does anyone owe others an explanation for not wanting marriage or children?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Does anyone owe others an explanation for not wanting marriage or children?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Does anyone owe others an explanation for not wanting marriage or children?” / “結婚や子どもを望まない理由を、ほかの人に説明する義務はありますか？” Tutor follow-ups: “Which questions cross a privacy line?” and “What wording would make honest curiosity feel respectful?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “結婚や子どもを望まない理由を、ほかの人に説明する義務はありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Does anyone owe others an explanation for not wanting marriage or children?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “How do people commonly respond to someone who rejects marriage or parenthood?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which response may disguise pressure as concern?” rather than asking every follow-up.
-- Visible target or prompt: How do people commonly respond to someone who rejects marriage or parenthood? / 結婚や親になることを選ばない人に、周りは通常どう反応しますか？
-- Learning target: Explore the distinct “What people say (周りの反応)” angle of “Choosing not to marry or have children” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which response may disguise pressure as concern?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which response may disguise pressure as concern?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How do people commonly respond to someone who rejects marriage or parenthood?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What would curiosity without advocacy sound like?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How do people commonly respond to someone who rejects marriage or parenthood?"]}`
+- Learner action: Answer the standalone question “How can someone ask about a choice not to marry or have children without sounding judgmental?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How can someone ask about a choice not to marry or have children without sounding judgmental?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How can someone ask about a choice not to marry or have children without sounding judgmental?” / “結婚しない、または子どもを持たない選択について、批判的に聞こえずにどう質問できますか？” Tutor follow-ups: “Which question would feel respectful?” and “How can someone ask without trying to change the person's mind?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “結婚しない、または子どもを持たない選択について、批判的に聞こえずにどう質問できますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can someone ask about a choice not to marry or have children without sounding judgmental?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “Which experiences or conditions can reshape a person's view of marriage and parenthood?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which material condition might carry weight?” rather than asking every follow-up.
-- Visible target or prompt: Which experiences or conditions can reshape a person's view of marriage and parenthood? / どのような経験や条件が、結婚や親になることへの考えを変えるのでしょうか？
-- Learning target: Explore the distinct “Your view (自分の考えの変化)” angle of “Choosing not to marry or have children” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which material condition might carry weight?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which material condition might carry weight?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which experiences or conditions can reshape a person's view of marriage and parenthood?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Why can uncertainty remain reasonable?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which experiences or conditions can reshape a person's view of marriage and parenthood?"]}`
+- Learner action: Answer the standalone question “What can change someone's views on marriage or children over time?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What can change someone's views on marriage or children over time?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What can change someone's views on marriage or children over time?” / “どのような経験や条件が、結婚や親になることへの考えを変えるのでしょうか？” Tutor follow-ups: “Which change could matter most: money, health, or a relationship?” and “Is ‘I haven't decided’ a complete answer?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どのような経験や条件が、結婚や親になることへの考えを変えるのでしょうか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can change someone's views on marriage or children over time?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “How can family and social expectations shape decisions about marriage or parenthood?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which messages carry the most pressure?” rather than asking every follow-up.
-- Visible target or prompt: How can family and social expectations shape decisions about marriage or parenthood? / 家族や社会の期待は、結婚や親になることへの決定をどう形作りますか？
-- Learning target: Explore the distinct “Family expectations (家族の期待)” angle of “Choosing not to marry or have children” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which messages carry the most pressure?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which messages carry the most pressure?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How can family and social expectations shape decisions about marriage or parenthood?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which boundary should the conversation respect?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can family and social expectations shape decisions about marriage or parenthood?"]}`
+- Learner action: Answer the standalone question “How can family expectations affect decisions about marriage or children?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How can family expectations affect decisions about marriage or children?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How can family expectations affect decisions about marriage or children?” / “家族や社会の期待は、結婚や親になることへの決定をどう形作りますか？” Tutor follow-ups: “Which family comment creates the strongest pressure?” and “What is one question relatives should avoid?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “家族や社会の期待は、結婚や親になることへの決定をどう形作りますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can family expectations affect decisions about marriage or children?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “Without social pressure, which values and conditions should guide decisions about marriage or parenthood?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which principle supports autonomy?” rather than asking every follow-up.
-- Visible target or prompt: Without social pressure, which values and conditions should guide decisions about marriage or parenthood? / 社会的なプレッシャーがなければ、どの価値観や条件が結婚や親になる決定を導くべきですか？
-- Learning target: Explore the distinct “With no pressure (圧力がないなら)” angle of “Choosing not to marry or have children” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which principle supports autonomy?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which principle supports autonomy?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Without social pressure, which values and conditions should guide decisions about marriage or parenthood?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which material condition carries legitimate weight?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Without social pressure, which values and conditions should guide decisions about marriage or parenthood?"]}`
+- Learner action: Answer the standalone question “If social pressure disappeared, what should guide a choice about marriage or children?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “If social pressure disappeared, what should guide a choice about marriage or children?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “If social pressure disappeared, what should guide a choice about marriage or children?” / “社会的な圧力がなくなったら、結婚や子どもについての選択を何が導くべきですか？” Tutor follow-ups: “Which should guide the choice first: personal wishes, health, or money?” and “Which real-life limit still deserves attention?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “社会的な圧力がなくなったら、結婚や子どもについての選択を何が導くべきですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["If social pressure disappeared, what should guide a choice about marriage or children?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “Why should marriage and parenthood be treated as separate life decisions?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which commitments and consequences differ?” rather than asking every follow-up.
-- Visible target or prompt: Why should marriage and parenthood be treated as separate life decisions? / なぜ、結婚と親になることは別々の人生の決定として扱うべきですか？
-- Learning target: Explore the distinct “Two different decisions (二つの別の決定)” angle of “Choosing not to marry or have children” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which commitments and consequences differ?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which commitments and consequences differ?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why should marriage and parenthood be treated as separate life decisions?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which expectation tends to merge the two?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why should marriage and parenthood be treated as separate life decisions?"]}`
+- Learner action: Answer the standalone question “Why should marriage and having children be treated as separate decisions?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why should marriage and having children be treated as separate decisions?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why should marriage and having children be treated as separate decisions?” / “なぜ、結婚と親になることは別々の人生の決定として扱うべきですか？” Tutor follow-ups: “How do the daily duties of marriage and parenting differ?” and “What makes people talk about the two decisions together?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “なぜ、結婚と親になることは別々の人生の決定として扱うべきですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why should marriage and having children be treated as separate decisions?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “What makes a response to decisions about marriage or parenthood genuinely respectful?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which explanation should nobody demand?” rather than asking every follow-up.
-- Visible target or prompt: What makes a response to decisions about marriage or parenthood genuinely respectful? / 結婚や親になることについての決定への、本当に敬意ある反応とは何ですか？
-- Learning target: Explore the distinct “Responding with respect (敬意のある応じ方)” angle of “Choosing not to marry or have children” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which explanation should nobody demand?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which explanation should nobody demand?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What makes a response to decisions about marriage or parenthood genuinely respectful?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which wording preserves neutrality?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes a response to decisions about marriage or parenthood genuinely respectful?"]}`
+- Learner action: Answer the standalone question “How can people discuss marriage and children without assuming one right choice?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How can people discuss marriage and children without assuming one right choice?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How can people discuss marriage and children without assuming one right choice?” / “結婚や子どもについて、一つの正解を決めつけずにどう話せますか？” Tutor follow-ups: “Which private reason should nobody demand proof of?” and “What could someone say to welcome more than one life path?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “結婚や子どもについて、一つの正解を決めつけずにどう話せますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can people discuss marriage and children without assuming one right choice?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, page job, adjacent-page distinction, and variant parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

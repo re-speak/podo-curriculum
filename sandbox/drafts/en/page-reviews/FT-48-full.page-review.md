@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-people-and-ties-full/lessons/48-a-first-impression-that-was-completely-wrong/lesson.html`
-- SHA-256: `db83a4edfea17aecfed1535e82514c3e99bda817be84a0574b384f4c5f6e08cc`
+- SHA-256: `fa1727e78ad73f72f600592fd21b8db680b5dc27f480e1628b8a8d3d223fe11c`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “Why can a confident first impression still be deeply inaccurate?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which detail is especially easy to misinterpret?” rather than asking every follow-up.
-- Visible target or prompt: Why can a confident first impression still be deeply inaccurate? / 確信のある第一印象でも、大きく間違うことがあるのはなぜですか？
-- Learning target: Explore the distinct “Why it can be wrong (間違う理由)” angle of “A first impression that was completely wrong” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which detail is especially easy to misinterpret?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which detail is especially easy to misinterpret?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why can a confident first impression still be deeply inaccurate?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What crucial context is unavailable at first?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why can a confident first impression still be deeply inaccurate?"]}`
+- Learner action: Answer the standalone question “Who is easier to misread at first: someone very quiet or someone very talkative?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Who is easier to misread at first: someone very quiet or someone very talkative?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Who is easier to misread at first: someone very quiet or someone very talkative?” / “最初に誤解しやすいのは、とても静かな人ととてもよく話す人のどちらですか？” Tutor follow-ups: “Would you trust a quiet person or a talkative person faster?” and “What important fact is missing at first?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “最初に誤解しやすいのは、とても静かな人ととてもよく話す人のどちらですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who is easier to misread at first: someone very quiet or someone very talkative?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “Which signals shape an initial judgment most quickly?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Why does that signal appear revealing?” rather than asking every follow-up.
-- Visible target or prompt: Which signals shape an initial judgment most quickly? / どのような合図が、最初の判断を最も早く作りますか？
-- Learning target: Explore the distinct “What shapes it (印象を作るもの)” angle of “A first impression that was completely wrong” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Why does that signal appear revealing?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Why does that signal appear revealing?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which signals shape an initial judgment most quickly?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How might the surrounding context alter it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which signals shape an initial judgment most quickly?"]}`
+- Learner action: Answer the standalone question “Which small detail can affect a first impression too much?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which small detail can affect a first impression too much?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which small detail can affect a first impression too much?” / “どんな小さな点が、第一印象に影響しすぎることがありますか？” Tutor follow-ups: “Why does that detail seem important?” and “How could the setting change the impression?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな小さな点が、第一印象に影響しすぎることがありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which small detail can affect a first impression too much?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “What kind of evidence is strong enough to overturn an initial impression?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “When can one action be decisive?” rather than asking every follow-up.
-- Visible target or prompt: What kind of evidence is strong enough to overturn an initial impression? / どのような証拠なら、最初の印象を覆すほど強いですか？
-- Learning target: Explore the distinct “Evidence that changes it (印象を変える証拠)” angle of “A first impression that was completely wrong” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “When can one action be decisive?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “When can one action be decisive?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What kind of evidence is strong enough to overturn an initial impression?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When is a pattern more persuasive?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of evidence is strong enough to overturn an initial impression?"]}`
+- Learner action: Answer the standalone question “What kind of moment can completely overturn a first impression?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kind of moment can completely overturn a first impression?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kind of moment can completely overturn a first impression?” / “どのような証拠なら、最初の印象を覆すほど強いですか？” Tutor follow-ups: “When can one action be enough to change the impression?” and “When is a repeated pattern more convincing?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どのような証拠なら、最初の印象を覆すほど強いですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of moment can completely overturn a first impression?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “Why are some first impressions revised quickly while others remain resistant?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What makes a judgment resistant to contrary evidence?” rather than asking every follow-up.
-- Visible target or prompt: Why are some first impressions revised quickly while others remain resistant? / すぐ見直される第一印象と、なかなか変わらない第一印象があるのはなぜですか？
-- Learning target: Explore the distinct “Fast or slow (速い変化と遅い変化)” angle of “A first impression that was completely wrong” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What makes a judgment resistant to contrary evidence?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What makes a judgment resistant to contrary evidence?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why are some first impressions revised quickly while others remain resistant?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What might accelerate a fair revision?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why are some first impressions revised quickly while others remain resistant?"]}`
+- Learner action: Answer the standalone question “Why do some first impressions change quickly while others stick?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why do some first impressions change quickly while others stick?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why do some first impressions change quickly while others stick?” / “すぐ見直される第一印象と、なかなか変わらない第一印象があるのはなぜですか？” Tutor follow-ups: “Why might someone ignore new information?” and “What could help the impression change?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “すぐ見直される第一印象と、なかなか変わらない第一印象があるのはなぜですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why do some first impressions change quickly while others stick?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “Which missing context most often makes an initial judgment unfair?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Could fatigue or anxiety explain the behaviour?” rather than asking every follow-up.
-- Visible target or prompt: Which missing context most often makes an initial judgment unfair? / どのような背景が欠けると、最初の判断が最も不公平になりやすいですか？
-- Learning target: Explore the distinct “Missing context (足りない背景)” angle of “A first impression that was completely wrong” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Could fatigue or anxiety explain the behaviour?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Could fatigue or anxiety explain the behaviour?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which missing context most often makes an initial judgment unfair?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which fact would you want before reaching a conclusion?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which missing context most often makes an initial judgment unfair?"]}`
+- Learner action: Answer the standalone question “What could explain someone's bad first impression?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What could explain someone's bad first impression?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What could explain someone's bad first impression?” / “誰かの悪い第一印象は、何が原因かもしれませんか？” Tutor follow-ups: “Could tiredness or nervousness explain the behaviour?” and “What would you want to know before judging?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “誰かの悪い第一印象は、何が原因かもしれませんか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What could explain someone's bad first impression?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “How can a favourable first impression deteriorate over time?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which warning sign is commonly overlooked?” rather than asking every follow-up.
-- Visible target or prompt: How can a favourable first impression deteriorate over time? / 好ましい第一印象が、時間とともに悪くなるのはどのようなときですか？
-- Learning target: Explore the distinct “The other direction (逆の変化)” angle of “A first impression that was completely wrong” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which warning sign is commonly overlooked?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which warning sign is commonly overlooked?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How can a favourable first impression deteriorate over time?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How much evidence would justify the revision?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can a favourable first impression deteriorate over time?"]}`
+- Learner action: Answer the standalone question “What warning sign can completely reverse a good first impression?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What warning sign can completely reverse a good first impression?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What warning sign can completely reverse a good first impression?” / “どんな危険信号が、よい第一印象を完全に変えることがありますか？” Tutor follow-ups: “Which warning sign is commonly overlooked?” and “How much new information would make the change fair?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな危険信号が、よい第一印象を完全に変えることがありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What warning sign can completely reverse a good first impression?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “When can a rapid first impression be useful?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “When does speed make the judgment unfair?” rather than asking every follow-up.
-- Visible target or prompt: When can a rapid first impression be useful? / すぐに持つ第一印象が役立つのは、どのようなときですか？
-- Learning target: Explore the distinct “Judging quickly (すぐ判断すること)” angle of “A first impression that was completely wrong” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “When does speed make the judgment unfair?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “When does speed make the judgment unfair?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “When can a rapid first impression be useful?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which signal should make us suspend judgment?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When can a rapid first impression be useful?"]}`
+- Learner action: Answer the standalone question “When can a quick first impression be useful?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When can a quick first impression be useful?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When can a quick first impression be useful?” / “すぐに持つ第一印象が役立つのは、どのようなときですか？” Tutor follow-ups: “When can a quick impression become unfair?” and “What should make us wait before judging?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “すぐに持つ第一印象が役立つのは、どのようなときですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When can a quick first impression be useful?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “Which aspects of a person are most easily misread during a first meeting?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which impression can quietness create?” rather than asking every follow-up.
-- Visible target or prompt: Which aspects of a person are most easily misread during a first meeting? / 初対面では、人のどのような面が最も誤解されやすいですか？
-- Learning target: Explore the distinct “Easy to misread (誤解されやすい点)” angle of “A first impression that was completely wrong” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which impression can quietness create?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which impression can quietness create?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which aspects of a person are most easily misread during a first meeting?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which quality usually takes longer to recognize?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which aspects of a person are most easily misread during a first meeting?"]}`
+- Learner action: Answer the standalone question “Which parts of someone's personality are easiest to misread at first?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which parts of someone's personality are easiest to misread at first?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which parts of someone's personality are easiest to misread at first?” / “初対面では、人のどのような面が最も誤解されやすいですか？” Tutor follow-ups: “Which impression can quietness create?” and “Which quality usually takes longer to recognize?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “初対面では、人のどのような面が最も誤解されやすいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which parts of someone's personality are easiest to misread at first?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

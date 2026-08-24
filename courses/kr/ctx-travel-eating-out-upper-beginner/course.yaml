@@ -33,6 +33,8 @@ spec:
     en: Get a table, ask what is good, order around spice and allergies, raise a problem politely, and settle how to pay.
     ja: 席を取り、おすすめを聞き、辛さやアレルギーを調整して注文し、問題が起きたら丁寧に伝え、会計の仕方を決められる。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

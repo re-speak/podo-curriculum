@@ -54,7 +54,12 @@ class ProofreadingPacketTests(unittest.TestCase):
         expected = {
             "1-hangul": (14, 1),
             "2-core-patterns": (116, 12),
-            "3-contextual-korean": (140, 14),
+            # 16 courses / 160 decks since the drama arc was recut into four
+            # (friends · dating · long-distance added, makeup retired). The
+            # fixture was left at the old shape by that change and this test
+            # has been failing on `stage` since; the packets themselves are
+            # regenerated in the same commit.
+            "3-contextual-korean": (160, 16),
         }
         for track_name, (deck_count, packet_count) in expected.items():
             with self.subTest(track=track_name):

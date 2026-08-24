@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-people-and-ties-full/lessons/50-something-you-would-never-do-alone/lesson.html`
-- SHA-256: `862366066ce1aadc89de5a6bea3703322799d58d6ccf4f1fa7d56b6f4b0d517b`
+- SHA-256: `a604c2e0b57d678e1b6ee27ee9b1db3231a498b1afeb6d8c053b61c987c34330`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “Which activity lies furthest outside your comfort zone when done alone?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What distinguishes it from ordinary solo activities?” rather than asking every follow-up.
-- Visible target or prompt: Which activity lies furthest outside your comfort zone when done alone? / 一人でするとき、どの活動が自分の安心できる範囲から最も遠く感じますか？
-- Learning target: Explore the distinct “Where the line is (一人でできる境界)” angle of “Something you would never do alone” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What distinguishes it from ordinary solo activities?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What distinguishes it from ordinary solo activities?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which activity lies furthest outside your comfort zone when done alone?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Is the main barrier safety, confidence, or enjoyment?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which activity lies furthest outside your comfort zone when done alone?"]}`
+- Learner action: Answer the standalone question “Which activity would feel hardest for you to do alone?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which activity would feel hardest for you to do alone?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which activity would feel hardest for you to do alone?” / “一人でするとき、どの活動が自分の安心できる範囲から最も遠く感じますか？” Tutor follow-ups: “What makes it different from ordinary solo activities?” and “Is the main barrier safety, confidence, or enjoyment?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一人でするとき、どの活動が自分の安心できる範囲から最も遠く感じますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which activity would feel hardest for you to do alone?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “What makes one solo activity feel significantly bolder than another?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How strongly do social expectations shape the feeling?” rather than asking every follow-up.
-- Visible target or prompt: What makes one solo activity feel significantly bolder than another? / 一人での活動の中でも、特に大胆に感じるものがあるのはなぜですか？
-- Learning target: Explore the distinct “Why it feels bold (大胆に感じる理由)” angle of “Something you would never do alone” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How strongly do social expectations shape the feeling?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How strongly do social expectations shape the feeling?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What makes one solo activity feel significantly bolder than another?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which practical obstacle carries the most weight?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes one solo activity feel significantly bolder than another?"]}`
+- Learner action: Answer the standalone question “Which feels hardest alone: eating out, travelling, or going to an event?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which feels hardest alone: eating out, travelling, or going to an event?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which feels hardest alone: eating out, travelling, or going to an event?” / “一人でするのが最も難しく感じるのは、外食、旅行、イベント参加のどれですか？” Tutor follow-ups: “Do other people's reactions matter?” and “Which practical problem matters most?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一人でするのが最も難しく感じるのは、外食、旅行、イベント参加のどれですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which feels hardest alone: eating out, travelling, or going to an event?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “Imagine a solo activity just beyond your current comfort zone. How might it unfold?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which moment would test you most?” rather than asking every follow-up.
-- Visible target or prompt: Imagine a solo activity just beyond your current comfort zone. How might it unfold? / 今の安心できる範囲を少し超える一人での活動を想像してください。どのように進みそうですか？
-- Learning target: Explore the distinct “Just outside the line (境界の少し外)” angle of “Something you would never do alone” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which moment would test you most?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which moment would test you most?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Imagine a solo activity just beyond your current comfort zone. How might it unfold?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What could make the experience genuinely rewarding?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Imagine a solo activity just beyond your current comfort zone. How might it unfold?"]}`
+- Learner action: Answer the standalone question “Which solo plan would you try first: a restaurant meal, a movie, or a day trip?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which solo plan would you try first: a restaurant meal, a movie, or a day trip?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which solo plan would you try first: a restaurant meal, a movie, or a day trip?” / “最初に一人で試すなら、レストランでの食事、映画、日帰り旅行のどれですか？” Tutor follow-ups: “Which moment would feel hardest?” and “What could make it enjoyable?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “最初に一人で試すなら、レストランでの食事、映画、日帰り旅行のどれですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which solo plan would you try first: a restaurant meal, a movie, or a day trip?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “What are the greatest freedom and the greatest pressure in doing an activity alone?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which decisions become simpler?” rather than asking every follow-up.
-- Visible target or prompt: What are the greatest freedom and the greatest pressure in doing an activity alone? / 何かを一人でするとき、最大の自由と最大の負担は何ですか？
-- Learning target: Explore the distinct “Freedom and pressure (自由と負担)” angle of “Something you would never do alone” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which decisions become simpler?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which decisions become simpler?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What are the greatest freedom and the greatest pressure in doing an activity alone?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which responsibility would you prefer to share?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What are the greatest freedom and the greatest pressure in doing an activity alone?"]}`
+- Learner action: Answer the standalone question “What is the biggest freedom in doing something alone?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What is the biggest freedom in doing something alone?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What is the biggest freedom in doing something alone?” / “何かを一人でするときの、いちばん大きな自由は何ですか？” Tutor follow-ups: “Which decision becomes easier?” and “Which responsibility would you rather share?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “何かを一人でするときの、いちばん大きな自由は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What is the biggest freedom in doing something alone?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “What enables some people to act alone with greater confidence?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which skill reduces uncertainty most effectively?” rather than asking every follow-up.
-- Visible target or prompt: What enables some people to act alone with greater confidence? / 一人でもより自信を持って行動できる人がいるのはなぜですか？
-- Learning target: Explore the distinct “Comfort alone (一人で平気な理由)” angle of “Something you would never do alone” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which skill reduces uncertainty most effectively?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which skill reduces uncertainty most effectively?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What enables some people to act alone with greater confidence?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How does previous success reshape confidence?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What enables some people to act alone with greater confidence?"]}`
+- Learner action: Answer the standalone question “What helps some people feel comfortable doing more things alone?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What helps some people feel comfortable doing more things alone?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What helps some people feel comfortable doing more things alone?” / “一人でもより自信を持って行動できる人がいるのはなぜですか？” Tutor follow-ups: “What skill makes going alone easier?” and “How can one good experience build confidence?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一人でもより自信を持って行動できる人がいるのはなぜですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What helps some people feel comfortable doing more things alone?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “How can a person's boundary for solo activities shift over time?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which experience could expand the boundary?” rather than asking every follow-up.
-- Visible target or prompt: How can a person's boundary for solo activities shift over time? / 一人での活動に対する境界は、時間とともにどう変化しますか？
-- Learning target: Explore the distinct “A moving line (変わった境界)” angle of “Something you would never do alone” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which experience could expand the boundary?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which experience could expand the boundary?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How can a person's boundary for solo activities shift over time?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What might cause it to contract again?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can a person's boundary for solo activities shift over time?"]}`
+- Learner action: Answer the standalone question “How can a person's comfort with doing things alone change over time?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How can a person's comfort with doing things alone change over time?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How can a person's comfort with doing things alone change over time?” / “一人で行動することへの気楽さは、時間とともにどう変わりますか？” Tutor follow-ups: “What experience could make going alone easier?” and “What could make it feel harder again?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一人で行動することへの気楽さは、時間とともにどう変わりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can a person's comfort with doing things alone change over time?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “Which smaller solo activity could prepare someone to go further?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How could the experiment be made safer?” rather than asking every follow-up.
-- Visible target or prompt: Which smaller solo activity could prepare someone to go further? / さらに挑戦するために、どのような小さな一人での活動が準備になりますか？
-- Learning target: Explore the distinct “A smaller step (小さな一歩)” angle of “Something you would never do alone” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How could the experiment be made safer?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How could the experiment be made safer?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which smaller solo activity could prepare someone to go further?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which sign would demonstrate readiness?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which smaller solo activity could prepare someone to go further?"]}`
+- Learner action: Answer the standalone question “What small activity can prepare someone to do more things alone?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What small activity can prepare someone to do more things alone?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What small activity can prepare someone to do more things alone?” / “一人でできることを増やすために、どんな小さな活動が準備になりますか？” Tutor follow-ups: “How could they make it feel safer?” and “What would show they are ready for more?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一人でできることを増やすために、どんな小さな活動が準備になりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What small activity can prepare someone to do more things alone?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “What conditions help expand a person's comfort zone responsibly?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Would information, practice, or temporary support matter most?” rather than asking every follow-up.
-- Visible target or prompt: What conditions help expand a person's comfort zone responsibly? / どのような条件があれば、人の安心できる範囲を無理なく広げられますか？
-- Learning target: Explore the distinct “What would push it (境界を広げる条件)” angle of “Something you would never do alone” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Would information, practice, or temporary support matter most?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Would information, practice, or temporary support matter most?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What conditions help expand a person's comfort zone responsibly?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which boundary should remain respected?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What conditions help expand a person's comfort zone responsibly?"]}`
+- Learner action: Answer the standalone question “What helps someone expand their comfort zone without taking a silly risk?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What helps someone expand their comfort zone without taking a silly risk?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What helps someone expand their comfort zone without taking a silly risk?” / “どのような条件があれば、人の安心できる範囲を無理なく広げられますか？” Tutor follow-ups: “Would information, practice, or temporary help matter most?” and “When would the activity still be too risky?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どのような条件があれば、人の安心できる範囲を無理なく広げられますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What helps someone expand their comfort zone without taking a silly risk?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

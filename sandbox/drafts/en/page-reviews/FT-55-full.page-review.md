@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-people-and-ties-full/lessons/55-advice-that-stayed-with-you/lesson.html`
-- SHA-256: `68f94fd9513f18fdafdc4b3c96a2d518c65bfcda673e93713f3f09bf3b1354da`
+- SHA-256: `177f07df7d514b6dfc012244a1f20807aaad7d812fc570d40f71f297c684732c`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “Why does certain advice remain memorable long after it is first heard?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How strongly does the moment of hearing it matter?” rather than asking every follow-up.
-- Visible target or prompt: Why does certain advice remain memorable long after it is first heard? / 最初に聞いてから長い時間がたっても、心に残る助言があるのはなぜですか？
-- Learning target: Explore the distinct “Why it stays (心に残る理由)” angle of “Advice that stayed with you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How strongly does the moment of hearing it matter?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How strongly does the moment of hearing it matter?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why does certain advice remain memorable long after it is first heard?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Why might a simple principle outlast a more complex message?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why does certain advice remain memorable long after it is first heard?"]}`
+- Learner action: Answer the standalone question “Which stays with people longer: a short piece of advice or the story behind it?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which stays with people longer: a short piece of advice or the story behind it?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which stays with people longer: a short piece of advice or the story behind it?” / “短い助言と、その背景にある話では、どちらが長く心に残りますか？” Tutor follow-ups: “Did hearing it at the right time matter?” and “Why can a simple idea be easier to remember than a long explanation?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “短い助言と、その背景にある話では、どちらが長く心に残りますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which stays with people longer: a short piece of advice or the story behind it?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “Which qualities make the wording of advice especially memorable?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How much does brevity contribute?” rather than asking every follow-up.
-- Visible target or prompt: Which qualities make the wording of advice especially memorable? / 助言の言い方を特に記憶に残りやすくするのは、どのような特徴ですか？
-- Learning target: Explore the distinct “Memorable wording (記憶に残る言葉)” angle of “Advice that stayed with you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How much does brevity contribute?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How much does brevity contribute?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which qualities make the wording of advice especially memorable?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Why can an image or concrete example strengthen the message?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which qualities make the wording of advice especially memorable?"]}`
+- Learner action: Answer the standalone question “What wording can make a piece of advice easy to remember?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What wording can make a piece of advice easy to remember?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What wording can make a piece of advice easy to remember?” / “助言の言い方を特に記憶に残りやすくするのは、どのような特徴ですか？” Tutor follow-ups: “Does being short make it easier to remember?” and “Why can an image or example make the advice stronger?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “助言の言い方を特に記憶に残りやすくするのは、どのような特徴ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What wording can make a piece of advice easy to remember?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “Why can the source of advice matter as much as the words themselves?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “What gives the speaker credibility?” rather than asking every follow-up.
-- Visible target or prompt: Why can the source of advice matter as much as the words themselves? / 助言では、言葉そのものと同じくらい、誰が言ったかが重要になるのはなぜですか？
-- Learning target: Explore the distinct “Who says it (言う人)” angle of “Advice that stayed with you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “What gives the speaker credibility?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What gives the speaker credibility?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why can the source of advice matter as much as the words themselves?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How might identical advice feel different from another source?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why can the source of advice matter as much as the words themselves?"]}`
+- Learner action: Answer the standalone question “Why can the person giving advice matter as much as the words?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why can the person giving advice matter as much as the words?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why can the person giving advice matter as much as the words?” / “助言では、言葉そのものと同じくらい、誰が言ったかが重要になるのはなぜですか？” Tutor follow-ups: “What makes you trust the person?” and “Would the same advice feel different from someone else?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “助言では、言葉そのものと同じくらい、誰が言ったかが重要になるのはなぜですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why can the person giving advice matter as much as the words?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “What makes advice suddenly relevant at a particular moment in someone's life?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Can valuable advice be given before someone is ready for it?” rather than asking every follow-up.
-- Visible target or prompt: What makes advice suddenly relevant at a particular moment in someone's life? / ある瞬間に、助言が急に自分に関係するように感じられるのはなぜですか？
-- Learning target: Explore the distinct “The right moment (意味を持つ時)” angle of “Advice that stayed with you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Can valuable advice be given before someone is ready for it?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Can valuable advice be given before someone is ready for it?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What makes advice suddenly relevant at a particular moment in someone's life?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which change can make an old message newly visible?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes advice suddenly relevant at a particular moment in someone's life?"]}`
+- Learner action: Answer the standalone question “What kind of advice can sound ordinary until the right moment arrives?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What kind of advice can sound ordinary until the right moment arrives?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What kind of advice can sound ordinary until the right moment arrives?” / “適切な時が来るまでは普通に聞こえる助言には、どんなものがありますか？” Tutor follow-ups: “Can good advice arrive before someone is ready for it?” and “What change can make old advice suddenly feel useful?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “適切な時が来るまでは普通に聞こえる助言には、どんなものがありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What kind of advice can sound ordinary until the right moment arrives?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “Why can experience make old advice clearer in hindsight?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which kind of experience can change its interpretation?” rather than asking every follow-up.
-- Visible target or prompt: Why can experience make old advice clearer in hindsight? / 経験を重ねると、昔の助言が振り返って分かりやすくなるのはなぜですか？
-- Learning target: Explore the distinct “Understanding later (あとで分かること)” angle of “Advice that stayed with you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which kind of experience can change its interpretation?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which kind of experience can change its interpretation?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why can experience make old advice clearer in hindsight?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Can someone understand advice without ultimately agreeing with it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why can experience make old advice clearer in hindsight?"]}`
+- Learner action: Answer the standalone question “When should someone question advice from a person they trust?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When should someone question advice from a person they trust?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When should someone question advice from a person they trust?” / “信頼している人の助言でも、どんなときには疑って考えるべきですか？” Tutor follow-ups: “What might the adviser not understand about the situation?” and “How can someone say no without rejecting the relationship?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “信頼している人の助言でも、どんなときには疑って考えるべきですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When should someone question advice from a person they trust?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “Which conditions make advice useful, and which conditions expose its limits?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How strongly does context determine its usefulness?” rather than asking every follow-up.
-- Visible target or prompt: Which conditions make advice useful, and which conditions expose its limits? / どのような条件で助言は役立ち、どのような条件で限界が見えますか？
-- Learning target: Explore the distinct “When it helps (役立つ時)” angle of “Advice that stayed with you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How strongly does context determine its usefulness?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How strongly does context determine its usefulness?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which conditions make advice useful, and which conditions expose its limits?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When should the underlying idea be adapted rather than followed literally?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which conditions make advice useful, and which conditions expose its limits?"]}`
+- Learner action: Answer the standalone question “What can make good advice stop fitting someone's situation?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What can make good advice stop fitting someone's situation?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What can make good advice stop fitting someone's situation?” / “よい助言が、その人の状況に合わなくなるのは何ですか？” Tutor follow-ups: “Did the situation change?” and “Could the advice be adjusted?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “よい助言が、その人の状況に合わなくなるのは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can make good advice stop fitting someone's situation?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “What makes a piece of advice valuable enough to pass on?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which part of the person's situation should be understood first?” rather than asking every follow-up.
-- Visible target or prompt: What makes a piece of advice valuable enough to pass on? / ある助言を人に伝える価値があると判断するのは、どのようなときですか？
-- Learning target: Explore the distinct “Worth sharing (伝える価値)” angle of “Advice that stayed with you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which part of the person's situation should be understood first?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which part of the person's situation should be understood first?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What makes a piece of advice valuable enough to pass on?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How can advice be offered without becoming an instruction?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes a piece of advice valuable enough to pass on?"]}`
+- Learner action: Answer the standalone question “When is advice good enough to pass on to someone else?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When is advice good enough to pass on to someone else?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When is advice good enough to pass on to someone else?” / “ある助言を人に伝える価値があると判断するのは、どのようなときですか？” Tutor follow-ups: “Which part of the person's situation should be understood first?” and “How can advice be offered without becoming an instruction?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “ある助言を人に伝える価値があると判断するのは、どのようなときですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When is advice good enough to pass on to someone else?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “Why might people reject advice that appears sensible?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “How can timing weaken an otherwise sound message?” rather than asking every follow-up.
-- Visible target or prompt: Why might people reject advice that appears sensible? / もっともらしい助言でも、人が受け入れないことがあるのはなぜですか？
-- Learning target: Explore the distinct “Advice ignored (助言に従わない理由)” angle of “Advice that stayed with you” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “How can timing weaken an otherwise sound message?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How can timing weaken an otherwise sound message?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why might people reject advice that appears sensible?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When can a different choice be reasonable despite the advice?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why might people reject advice that appears sensible?"]}`
+- Learner action: Answer the standalone question “Why do people sometimes reject good advice?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why do people sometimes reject good advice?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why do people sometimes reject good advice?” / “もっともらしい助言でも、人が受け入れないことがあるのはなぜですか？” Tutor follow-ups: “How can bad timing weaken good advice?” and “When can ignoring the advice be reasonable?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “もっともらしい助言でも、人が受け入れないことがあるのはなぜですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why do people sometimes reject good advice?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

@@ -52,14 +52,18 @@ Rule 5's budget is deliberately loose (the contextual track's own median is 48)
 
   python3 tools/authoring/kr/check_teaching.py                    # whole repo
   python3 tools/authoring/kr/check_teaching.py <deck…>            # named decks
+  python3 tools/authoring/kr/check_teaching.py 2-core-patterns    # one track
   python3 tools/authoring/kr/check_teaching.py --rule ref         # one rule
 """
+import argparse
 import re
 import sys
 from pathlib import Path
 from collections import Counter
 
 REPO = Path(__file__).resolve().parents[3]
+KR = REPO / "sandbox/drafts/kr"
+TRACKS = KR / "tracks"
 
 LIMIT = 60            # 자, the spoken line of an anchored teach box
 UNANCHORED_LIMIT = 90 # 자, a box with no anchor — it carries the meaning too
@@ -280,18 +284,38 @@ def check(path, want):
     return out
 
 
+def deck_paths(paths, every):
+    """check_deck.py’s argument shape. A bare name that is no path on disk is a
+    track under sandbox/drafts/kr/tracks — the form kr/AGENTS.md advertises."""
+    roots = [KR] if every else [
+        Path(p).resolve() if Path(p).exists() else TRACKS / p for p in paths] or [TRACKS]
+    out = []
+    for r in roots:
+        if r.is_dir():
+            out += sorted(r.rglob("lesson.html"))
+        elif r.exists():
+            out.append(r)
+        else:
+            print(f"! no such path: {r}", file=sys.stderr)
+    return out
+
+
 def main(argv):
+    ap = argparse.ArgumentParser(description=__doc__,
+                                 formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("paths", nargs="*", help="deck files, directories, or track names")
+    ap.add_argument("--all", action="store_true", help="every Korean deck in the repo")
+    ap.add_argument("--rule", help=f"one of {', '.join(RULES)}")
+    args = ap.parse_args(argv)
+
     want = set(RULES)
-    if "--rule" in argv:
-        i = argv.index("--rule")
-        want = {argv[i + 1]}
-        del argv[i:i + 2]
+    if args.rule:
+        want = {args.rule}
         bad = want - set(RULES)
         if bad:
             print(f"unknown rule {bad}; pick from {RULES}")
             return 2
-    paths = argv or [str(p) for p in sorted(
-        (REPO / "sandbox/drafts/kr/tracks").glob("**/lesson.html"))]
+    paths = deck_paths(args.paths, args.all)
 
     tally, decks = Counter(), Counter()
     for p in paths:

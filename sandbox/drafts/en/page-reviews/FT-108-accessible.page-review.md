@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-balance-games-accessible/lessons/108-a-hundred-friends-or-three-close-ones/lesson.html`
-- SHA-256: `1d501ea3f1708fb715e182dce337de5e5849ee675de70616a764d6887fd99cf0`
+- SHA-256: `33990a349fa23457ecb54aed7fbcf25b6a445898c73e461893ecac7c2e8cf20d`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Answer the standalone question “What makes a long conversation with one friend feel worthwhile?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What makes a long conversation with one friend feel worthwhile?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “What makes a long conversation with one friend feel worthwhile?” / “一人の友人とゆっくり話すなら、何が大切ですか？” Follow-ups: “What makes it easy to be honest?” and “Does frequency matter?”
-- Learning target: Develop the distinct “A long conversation” angle of A hundred friends or three close ones? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “A long conversation” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “What makes a long conversation with one friend feel worthwhile?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “一人の友人とゆっくり話すなら、何が大切ですか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes a long conversation with one friend feel worthwhile?"]}`
+- Learner action: Answer the standalone question “Who, if anyone, is easy for you to talk to for hours?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Who, if anyone, is easy for you to talk to for hours?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Who, if anyone, is easy for you to talk to for hours?” / “何時間でも話しやすい相手がいるとしたら、誰ですか？” Tutor follow-ups: “What makes a long conversation easy or difficult?” and “Is a long conversation easier in person or on the phone?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “何時間でも話しやすい相手がいるとしたら、誰ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who, if anyone, is easy for you to talk to for hours?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Answer the standalone question “How do you start a conversation in a room full of strangers?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “How do you start a conversation in a room full of strangers?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “How do you start a conversation in a room full of strangers?” / “知らない人が多い集まりでは、どう会話を始めますか？” Follow-ups: “What opening question works well?” and “Which kind of event feels easiest?”
-- Learning target: Develop the distinct “A room of strangers” angle of A hundred friends or three close ones? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “A room of strangers” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “How do you start a conversation in a room full of strangers?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “知らない人が多い集まりでは、どう会話を始めますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How do you start a conversation in a room full of strangers?"]}`
+- Learner action: Answer the standalone question “What makes it easy to meet new people?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What makes it easy to meet new people?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What makes it easy to meet new people?” / “新しい人と知り合いやすくするものは何ですか？” Tutor follow-ups: “What opening question works well?” and “Where is it easier to meet people: a class, a party, or online?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “新しい人と知り合いやすくするものは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes it easy to meet new people?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Answer the standalone question “For one difficult week, would you rather have a hundred friendly contacts or three close friends?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “For one difficult week, would you rather have a hundred friendly contacts or three close friends?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “For one difficult week, would you rather have a hundred friendly contacts or three close friends?” / “大変な一週間なら、顔見知りの友人百人と親しい友人三人のどちらがよいですか？” Follow-ups: “What does your choice provide?” and “What does the other side provide?”
-- Learning target: Develop the distinct “Choose a circle” angle of A hundred friends or three close ones? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Choose a circle” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “For one difficult week, would you rather have a hundred friendly contacts or three close friends?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “大変な一週間なら、顔見知りの友人百人と親しい友人三人のどちらがよいですか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
+- Learner action: Answer the standalone question “For one difficult week, would you rather have a hundred friendly contacts or three close friends?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “For one difficult week, would you rather have a hundred friendly contacts or three close friends?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “For one difficult week, would you rather have a hundred friendly contacts or three close friends?” / “大変な一週間なら、顔見知りの友人百人と親しい友人三人のどちらがよいですか？” Tutor follow-ups: “What kind of support would your choice provide?” and “Who helps more in a crisis: close friends or many contacts?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “大変な一週間なら、顔見知りの友人百人と親しい友人三人のどちらがよいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["For one difficult week, would you rather have a hundred friendly contacts or three close friends?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Answer the standalone question “How would daily life change if you could keep only that kind of friendship?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “How would daily life change if you could keep only that kind of friendship?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “How would daily life change if you could keep only that kind of friendship?” / “その種類の友人関係だけなら、日常はどう変わりますか？” Follow-ups: “Who would you contact most often?” and “Which kind of interaction would disappear?”
-- Learning target: Develop the distinct “Daily contact” angle of A hundred friends or three close ones? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “Daily contact” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “How would daily life change if you could keep only that kind of friendship?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “その種類の友人関係だけなら、日常はどう変わりますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How would daily life change if you could keep only that kind of friendship?"]}`
+- Learner action: Answer the standalone question “What would be missing if you knew many people but had no close friends?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would be missing if you knew many people but had no close friends?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would be missing if you knew many people but had no close friends?” / “知り合いは多くても親しい友人がいないとしたら、何が足りませんか？” Tutor follow-ups: “Who would you call after a bad day?” and “Would you rather share good news with one person or a large group?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “知り合いは多くても親しい友人がいないとしたら、何が足りませんか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would be missing if you knew many people but had no close friends?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Answer the standalone question “When is the other kind of social circle more useful?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “When is the other kind of social circle more useful?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “When is the other kind of social circle more useful?” / “どんなときに、反対の人間関係のほうが役立ちますか？” Follow-ups: “What kind of support is needed?” and “How quickly is it needed?”
-- Learning target: Develop the distinct “When the other helps” angle of A hundred friends or three close ones? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “When the other helps” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “When is the other kind of social circle more useful?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “どんなときに、反対の人間関係のほうが役立ちますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When is the other kind of social circle more useful?"]}`
+- Learner action: Answer the standalone question “When is a wide circle more useful than a few close friends?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When is a wide circle more useful than a few close friends?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When is a wide circle more useful than a few close friends?” / “少数の親友より、広い人間関係のほうが役立つのはどんなときですか？” Tutor follow-ups: “What kind of support would a wide circle provide?” and “Which helps more when job hunting: close friends or many contacts?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “少数の親友より、広い人間関係のほうが役立つのはどんなときですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When is a wide circle more useful than a few close friends?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Answer the standalone question “Which circle would help more after moving to a new city?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “Which circle would help more after moving to a new city?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “Which circle would help more after moving to a new city?” / “新しい町へ引っ越したら、どちらの人間関係が先に役立ちますか？” Follow-ups: “How would you meet people?” and “How long does closeness take to build?”
-- Learning target: Develop the distinct “A new city” angle of A hundred friends or three close ones? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “A new city” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “Which circle would help more after moving to a new city?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “新しい町へ引っ越したら、どちらの人間関係が先に役立ちますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which circle would help more after moving to a new city?"]}`
+- Learner action: Answer the standalone question “After moving to a new city, would you build a wide circle or one close friendship first?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “After moving to a new city, would you build a wide circle or one close friendship first?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “After moving to a new city, would you build a wide circle or one close friendship first?” / “新しい町へ移ったら、広い人間関係と一つの親しい友情のどちらを先に作りますか？” Tutor follow-ups: “How would you meet people?” and “Where would you start: work, a class, or a hobby group?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “新しい町へ移ったら、広い人間関係と一つの親しい友情のどちらを先に作りますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["After moving to a new city, would you build a wide circle or one close friendship first?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Answer the standalone question “What change in your social life could make you choose differently?” aloud and develop the most interesting relevant detail.
-- Tutor action: Ask “What change in your social life could make you choose differently?”, react naturally, use one useful follow-up when needed, and share a brief real answer or relevant perspective.
-- Visible target or prompt: Conversation prompt: “What change in your social life could make you choose differently?” / “人間関係にどんな変化があれば、反対を選びますか？” Follow-ups: “Would more free time matter?” and “Would moving somewhere new matter?”
-- Learning target: Develop the distinct “What changes the answer” angle of A hundred friends or three close ones? in spontaneous conversation.
-- Pedagogical value: Adds the topic-specific conversational job “What changes the answer” without assuming a private experience or repeating another page.
-- Failure diagnoses: A thin answer to “What change in your social life could make you choose differently?” calls for one contextual follow-up, not a presumed experience or model answer.
-- Non-target support: The Japanese prompt “人間関係にどんな変化があれば、反対を選びますか？” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What change in your social life could make you choose differently?"]}`
+- Learner action: Answer the standalone question “What can a wide circle of friends offer that three close friends may not?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What can a wide circle of friends offer that three close friends may not?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What can a wide circle of friends offer that three close friends may not?” / “広い友人関係には、三人の親しい友人にはないどんなよさがありますか？” Tutor follow-ups: “Which opportunity is a good example?” and “Which brings more new information: one close friend or many contacts?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “広い友人関係には、三人の親しい友人にはないどんなよさがありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can a wide circle of friends offer that three close friends may not?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Use the exact ask-back “Ask your tutor whether they would choose a hundred friends or three close friends, and why.” to invite the tutor’s real answer, then compare the two positions.
-- Tutor action: Let the learner ask “Ask your tutor whether they would choose a hundred friends or three close friends, and why.”, answer it genuinely and briefly, then use one topic-specific comparison probe if useful.
-- Visible target or prompt: Reciprocal ask-back: “Ask your tutor whether they would choose a hundred friends or three close friends, and why.” / “チューターなら百人の友人と三人の親しい友人のどちらを選ぶか、その理由も聞いてください。” Follow-ups: “Does your tutor value reach or trust more?” and “Which friendship need changed the comparison?”
-- Learning target: Turn the balance game into a two-way exchange by eliciting and comparing the tutor’s real position.
-- Pedagogical value: Prevents an interview-like ending and gives the learner a natural reason to listen, react, and compare.
-- Failure diagnoses: If the learner only states another personal answer, prompt the exact ask-back; do not model a preferred position.
-- Non-target support: The Japanese prompt “チューターなら百人の友人と三人の親しい友人のどちらを選ぶか、その理由も聞いてください。” is meaning-aligned; the two Accessible follow-ups are tutor-only, independently authored, and supply no answer.
-- Article treatment: The learner may use an article idea or another relevant example; the page does not test article recall.
-- Choice/distractor quality: No fixed answer choices appear; learner and tutor can both contribute a defensible view.
-- Component consistency: Uses the approved one-question Freetalking page with two distinct tutor follow-ups and one correction area.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor whether they would choose a hundred friends or three close friends, and why."]}`
+- Learner action: Answer the standalone question “Ask your tutor which option they would choose and why.” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Ask your tutor which option they would choose and why.”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Ask your tutor which option they would choose and why.” / “チューターならどちらを選ぶか、その理由も聞いてください。” Tutor follow-ups: “What mattered most in your tutor's choice?” and “Which is easier to build first: one close friendship or many contacts?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “チューターならどちらを選ぶか、その理由も聞いてください。” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Ask your tutor which option they would choose and why."]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Every final sentence, Japanese alignment, page action, distinct conversational angle, and Accessible/Full pairing was read against these exact lesson bytes; screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-accessible/lessons/100-the-one-thing-you-would-save-in-a-fire/lesson.html`
-- SHA-256: `67239fe22fba92372e766265131d3f6deea2337ef649927b658ff8d01e02551d`
+- SHA-256: `c95178fceb97a813e58a6bcce558fa7c519912f89b0b732ccc24f3645e1ae4c0`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “Once everyone is safe, which possession would be hardest to lose?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Once everyone is safe, which possession would be hardest to lose?”, react or share briefly, then choose at most one relevant probe such as “What memory or meaning gives it that value?”.
-- Visible target or prompt: Once everyone is safe, which possession would be hardest to lose? / 全員が安全になった後、失うのが最もつらい持ち物は何ですか？ Follow-up pool: What memory or meaning gives it that value? How could you preserve part of that value beforehand?
-- Learning target: Explore the distinct “One thing” angle of “The one thing you would save in a fire” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What memory or meaning gives it that value?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What memory or meaning gives it that value?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Once everyone is safe, which possession would be hardest to lose?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “How could you preserve part of that value beforehand?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Once everyone is safe, which possession would be hardest to lose?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Once everyone is safe, which possession would be hardest to lose?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Once everyone is safe, which possession would be hardest to lose?” / “全員が安全になった後、失うのが最もつらい持ち物は何ですか？” Tutor follow-ups: “Would you choose photos, a gift, or something you use every day?” and “Could a photo or copy protect part of it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “全員が安全になった後、失うのが最もつらい持ち物は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Once everyone is safe, which possession would be hardest to lose?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “What can make one possession feel irreplaceable?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What can make one possession feel irreplaceable?”, react or share briefly, then choose at most one relevant probe such as “Is the value practical, historical, or emotional?”.
-- Visible target or prompt: What can make one possession feel irreplaceable? / 一つの持ち物が、かけがえのないものに感じられるのはなぜですか？ Follow-up pool: Is the value practical, historical, or emotional? Could a copy preserve any part of it?
-- Learning target: Explore the distinct “Why that one” angle of “The one thing you would save in a fire” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Is the value practical, historical, or emotional?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Is the value practical, historical, or emotional?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What can make one possession feel irreplaceable?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Could a copy preserve any part of it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can make one possession feel irreplaceable?"]}`
+- Learner action: Answer the standalone question “What makes one old object impossible to replace?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What makes one old object impossible to replace?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What makes one old object impossible to replace?” / “一つの古い物が、代えられないものになるのはなぜですか？” Tutor follow-ups: “Do you use it, or is it tied to a memory?” and “Would a photo or copy keep what matters?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一つの古い物が、代えられないものになるのはなぜですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What makes one old object impossible to replace?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “Which possession do people often value more than expected?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which possession do people often value more than expected?”, react or share briefly, then choose at most one relevant probe such as “Why might people overlook its value?”.
-- Visible target or prompt: Which possession do people often value more than expected? / 人が予想以上に大切にすることが多い持ち物は何ですか？ Follow-up pool: Why might people overlook its value? Which need or memory does it represent?
-- Learning target: Explore the distinct “Your own answer” angle of “The one thing you would save in a fire” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Why might people overlook its value?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Why might people overlook its value?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which possession do people often value more than expected?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which need or memory does it represent?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which possession do people often value more than expected?"]}`
+- Learner action: Answer the standalone question “Which ordinary object can hold the most memories?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which ordinary object can hold the most memories?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which ordinary object can hold the most memories?” / “どんな普通の物が、最も多くの思い出を持てますか？” Tutor follow-ups: “Why might people miss its importance?” and “What memory does it bring back?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どんな普通の物が、最も多くの思い出を持てますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which ordinary object can hold the most memories?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “What might another person take even if you would take nothing?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What might another person take even if you would take nothing?”, react or share briefly, then choose at most one relevant probe such as “Why might it matter to them?”.
-- Visible target or prompt: What might another person take even if you would take nothing? / 自分は何も持ち出さない場合でも、ほかの人なら何を持ち出すかもしれませんか？ Follow-up pool: Why might it matter to them? Why would you still leave it?
-- Learning target: Explore the distinct “A different choice” angle of “The one thing you would save in a fire” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Why might it matter to them?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Why might it matter to them?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What might another person take even if you would take nothing?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Why would you still leave it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What might another person take even if you would take nothing?"]}`
+- Learner action: Answer the standalone question “Would you save photos, letters, or one practical item?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Would you save photos, letters, or one practical item?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Would you save photos, letters, or one practical item?” / “写真、手紙、実用的な物一つのどれを持ち出しますか？” Tutor follow-ups: “Which of those would be hardest to replace?” and “What would you save instead of those three?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “写真、手紙、実用的な物一つのどれを持ち出しますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Would you save photos, letters, or one practical item?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “Why can losing an ordinary object feel deeply important?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Why can losing an ordinary object feel deeply important?”, react or share briefly, then choose at most one relevant probe such as “Which meaning could make an ordinary object important?”.
-- Visible target or prompt: Why can losing an ordinary object feel deeply important? / 普通の物を失っても、とても大切に感じられるのはなぜですか？ Follow-up pool: Which meaning could make an ordinary object important? Can the memory remain after the object is gone?
-- Learning target: Explore the distinct “A past loss” angle of “The one thing you would save in a fire” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which meaning could make an ordinary object important?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which meaning could make an ordinary object important?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why can losing an ordinary object feel deeply important?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Can the memory remain after the object is gone?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why can losing an ordinary object feel deeply important?"]}`
+- Learner action: Answer the standalone question “Can a digital copy preserve what matters about an old object?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Can a digital copy preserve what matters about an old object?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Can a digital copy preserve what matters about an old object?” / “デジタルのコピーで、古い物の大切なところを残せますか？” Tutor follow-ups: “What can a copy keep?” and “What disappears without the original object?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “デジタルのコピーで、古い物の大切なところを残せますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Can a digital copy preserve what matters about an old object?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “What can losing an object teach us?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What can losing an object teach us?”, react or share briefly, then choose at most one relevant probe such as “Does it change what we protect?”.
-- Visible target or prompt: What can losing an object teach us? / 物を失うことから、何を学べますか？ Follow-up pool: Does it change what we protect? Can a memory remain without the object?
-- Learning target: Explore the distinct “What loss teaches” angle of “The one thing you would save in a fire” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Does it change what we protect?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Does it change what we protect?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What can losing an object teach us?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Can a memory remain without the object?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What can losing an object teach us?"]}`
+- Learner action: Answer the standalone question “What object would you be sad to lose but never risk safety for?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What object would you be sad to lose but never risk safety for?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What object would you be sad to lose but never risk safety for?” / “失うと悲しくても、安全を危険にしてまで取りに行かない物は何ですか？” Tutor follow-ups: “Would a family photo or old letter be a good example?” and “How could you protect the memory safely?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “失うと悲しくても、安全を危険にしてまで取りに行かない物は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What object would you be sad to lose but never risk safety for?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “How can people protect important possessions before an emergency?” and develop the most interesting concrete detail.
-- Tutor action: Ask “How can people protect important possessions before an emergency?”, react or share briefly, then choose at most one relevant probe such as “Would a backup, list, or safer storage help most?”.
-- Visible target or prompt: How can people protect important possessions before an emergency? / 緊急事態の前に、大切な持ち物をどう守れますか？ Follow-up pool: Would a backup, list, or safer storage help most? Which evacuation preparation should come first?
-- Learning target: Explore the distinct “Preparing safely” angle of “The one thing you would save in a fire” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Would a backup, list, or safer storage help most?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Would a backup, list, or safer storage help most?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How can people protect important possessions before an emergency?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which evacuation preparation should come first?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How can people protect important possessions before an emergency?"]}`
+- Learner action: Answer the standalone question “What important object could you back up or photograph now?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What important object could you back up or photograph now?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What important object could you back up or photograph now?” / “今、バックアップしたり写真に撮ったりできる大切な物は何ですか？” Tutor follow-ups: “Would photos, documents, or messages need a backup?” and “Where would you keep the backup?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “今、バックアップしたり写真に撮ったりできる大切な物は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What important object could you back up or photograph now?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “What important part of life cannot be saved or destroyed as an object?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What important part of life cannot be saved or destroyed as an object?”, react or share briefly, then choose at most one relevant probe such as “How is it protected instead?”.
-- Visible target or prompt: What important part of life cannot be saved or destroyed as an object? / 物として救ったり失ったりできない、人生の大切なものは何ですか？ Follow-up pool: How is it protected instead? Can an object still help us remember it?
-- Learning target: Explore the distinct “What cannot burn” angle of “The one thing you would save in a fire” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “How is it protected instead?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “How is it protected instead?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What important part of life cannot be saved or destroyed as an object?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Can an object still help us remember it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What important part of life cannot be saved or destroyed as an object?"]}`
+- Learner action: Answer the standalone question “What memory or relationship can stay important without any object?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What memory or relationship can stay important without any object?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What memory or relationship can stay important without any object?” / “物がなくても大切であり続ける思い出や人とのつながりは何ですか？” Tutor follow-ups: “Could a story, habit, or relationship carry the memory?” and “Can an object still help?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “物がなくても大切であり続ける思い出や人とのつながりは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What memory or relationship can stay important without any object?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

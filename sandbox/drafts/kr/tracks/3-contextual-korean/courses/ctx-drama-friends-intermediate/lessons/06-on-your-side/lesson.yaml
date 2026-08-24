@@ -1,0 +1,21 @@
+apiVersion: podo.curriculum/v1
+kind: Lesson
+metadata:
+  slug: 06-on-your-side
+spec:
+  week: 6
+  title:
+    ko: 네 편이야
+    en: I'm on your side
+    ja: あなたの味方だよ
+  decks:
+    lecture: { entry: lecture/index.html }
+    prestudy: { entry: prestudy/index.html }
+  teaches:
+    patterns:
+      - ~(으)ㄹ 만하다
+      - 아무리 ~아/어도
+    canDo: 편을 들어 주고, 그럴 만했다고 인정해 준다.
+  scene: 유진이 오늘 겪은 억울한 일을 털어놓는다.
+  prerequisites: []
+  source: podo-curriculum-public 3-contextual-korean/ctx-drama-friends-intermediate · 6

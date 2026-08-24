@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-work-and-money-full/lessons/69-a-different-career-you-might-have-chosen/lesson.html`
-- SHA-256: `cfa996fd66fe6c861c3aaba1ce35e6b6eaebf93597233247c21756ac6d360b91`
+- SHA-256: `c0ffea92bb2ddb07dd5dda90b157eed67b6f93d7d47f4045502706e95a36b717`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “Which alternative career would be most interesting to try for one year?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “When did this alternative first become worth considering?” rather than asking every follow-up.
-- Visible target or prompt: Which alternative career would be most interesting to try for one year? / どの別のキャリアを一年間試すと最も面白そうですか？
-- Learning target: Explore the distinct “Another path (別の進路)” angle of “A different career you might have chosen” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “When did this alternative first become worth considering?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “When did this alternative first become worth considering?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which alternative career would be most interesting to try for one year?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Does the comparison evoke curiosity, regret, relief, or none of these?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
+- Learner action: Answer the standalone question “Which alternative career would be most interesting to try for one year?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which alternative career would be most interesting to try for one year?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which alternative career would be most interesting to try for one year?” / “どの別のキャリアを一年間試すと最も面白そうですか？” Tutor follow-ups: “What first drew your attention to the career?” and “If no career comes to mind, which sounds better: creative, practical, or people-focused work?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どの別のキャリアを一年間試すと最も面白そうですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
 - Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which alternative career would be most interesting to try for one year?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “Which activities and responsibilities would define an ordinary day in that career?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which task would occupy the largest share of time?” rather than asking every follow-up.
-- Visible target or prompt: Which activities and responsibilities would define an ordinary day in that career? / その仕事の普通の一日を形作る活動や責任は何ですか？
-- Learning target: Explore the distinct “An ordinary day (普通の一日)” angle of “A different career you might have chosen” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which task would occupy the largest share of time?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which task would occupy the largest share of time?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which activities and responsibilities would define an ordinary day in that career?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which responsibility might be less attractive than it first appears?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which activities and responsibilities would define an ordinary day in that career?"]}`
+- Learner action: Answer the standalone question “Which part of an ordinary day in a career you might try would interest you most?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which part of an ordinary day in a career you might try would interest you most?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which part of an ordinary day in a career you might try would interest you most?” / “試してみたいキャリアの普通の一日で、どの部分に最も興味がありますか？” Tutor follow-ups: “Which task would take most of the day?” and “Which part might be less enjoyable?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “試してみたいキャリアの普通の一日で、どの部分に最も興味がありますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which part of an ordinary day in a career you might try would interest you most?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “What is the strongest source of attraction in that career?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Does it concern the work, social contribution, autonomy, learning, or conditions?” rather than asking every follow-up.
-- Visible target or prompt: What is the strongest source of attraction in that career? / その仕事の最も強い魅力は何ですか？
-- Learning target: Explore the distinct “Why it appeals (魅力を感じる理由)” angle of “A different career you might have chosen” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Does it concern the work, social contribution, autonomy, learning, or conditions?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Does it concern the work, social contribution, autonomy, learning, or conditions?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What is the strongest source of attraction in that career?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which underlying value does it express?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What is the strongest source of attraction in that career?"]}`
+- Learner action: Answer the standalone question “What is the most appealing part of a career you might try for a year?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What is the most appealing part of a career you might try for a year?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What is the most appealing part of a career you might try for a year?” / “一年間試すかもしれないキャリアの、最も魅力的な部分は何ですか？” Tutor follow-ups: “Would the work, freedom, people, learning, or routine attract you most?” and “How would that part improve an ordinary day?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一年間試すかもしれないキャリアの、最も魅力的な部分は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What is the most appealing part of a career you might try for a year?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “Which conditions would make that career genuinely available?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Would timing, access, resources, location, or responsibility matter most?” rather than asking every follow-up.
-- Visible target or prompt: Which conditions would make that career genuinely available? / どのような条件があれば、そのキャリアが本当に選べるものになりますか？
-- Learning target: Explore the distinct “What made it possible (可能にする条件)” angle of “A different career you might have chosen” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Would timing, access, resources, location, or responsibility matter most?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Would timing, access, resources, location, or responsibility matter most?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which conditions would make that career genuinely available?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Could one element of the path be tested without a complete transition?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which conditions would make that career genuinely available?"]}`
+- Learner action: Answer the standalone question “What would make a different career possible to try?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What would make a different career possible to try?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What would make a different career possible to try?” / “別のキャリアを試せるようにするには、何が必要ですか？” Tutor follow-ups: “Would time, money, training, location, or family duties be hardest?” and “What small test could happen before a full career change?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “別のキャリアを試せるようにするには、何が必要ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would make a different career possible to try?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “Who offers an instructive example of a major career change?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which condition enabled the transition?” rather than asking every follow-up.
-- Visible target or prompt: Who offers an instructive example of a major career change? / 大きなキャリアチェンジの参考になる例は誰ですか？
-- Learning target: Explore the distinct “Someone who changed paths (進路を変えた人)” angle of “A different career you might have chosen” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which condition enabled the transition?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which condition enabled the transition?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Who offers an instructive example of a major career change?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which meaningful benefit or security did the choice put at risk?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Who offers an instructive example of a major career change?"]}`
+- Learner action: Answer the standalone question “What usually makes a major career change possible?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What usually makes a major career change possible?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What usually makes a major career change possible?” / “大きなキャリアチェンジを可能にするのは、普通何ですか？” Tutor follow-ups: “Which would help most: savings, training, or another person's support?” and “Which comfort might the person need to lose?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “大きなキャリアチェンジを可能にするのは、普通何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What usually makes a major career change possible?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “What emotions can an unrealized career path produce over time?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which comparison produces that response?” rather than asking every follow-up.
-- Visible target or prompt: What emotions can an unrealized career path produce over time? / 実現しなかったキャリアは、時間とともにどんな感情を生み得ますか？
-- Learning target: Explore the distinct “How it feels now (今の気持ち)” angle of “A different career you might have chosen” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which comparison produces that response?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which comparison produces that response?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What emotions can an unrealized career path produce over time?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “How has the response evolved over time?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What emotions can an unrealized career path produce over time?"]}`
+- Learner action: Answer the standalone question “How might someone feel about a career they never chose?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How might someone feel about a career they never chose?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How might someone feel about a career they never chose?” / “実現しなかったキャリアは、時間とともにどんな感情を生み得ますか？” Tutor follow-ups: “Would you feel curious, regretful, relieved, or none of these?” and “What could make that reaction different later?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “実現しなかったキャリアは、時間とともにどんな感情を生み得ますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How might someone feel about a career they never chose?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “Which value or activity from another career can be incorporated without a complete transition?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Could it take the form of study, volunteering, a project, or a smaller responsibility?” rather than asking every follow-up.
-- Visible target or prompt: Which value or activity from another career can be incorporated without a complete transition? / 完全に転職せずに、別のキャリアのどの価値や活動を取り入れられますか？
-- Learning target: Explore the distinct “A value to use now (今生かせる価値)” angle of “A different career you might have chosen” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Could it take the form of study, volunteering, a project, or a smaller responsibility?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Could it take the form of study, volunteering, a project, or a smaller responsibility?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which value or activity from another career can be incorporated without a complete transition?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “What makes it inseparable from a complete transition?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which value or activity from another career can be incorporated without a complete transition?"]}`
+- Learner action: Answer the standalone question “Which part of another career could fit into life as a hobby or side project?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which part of another career could fit into life as a hobby or side project?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which part of another career could fit into life as a hobby or side project?” / “別のキャリアのどの部分なら、趣味や小さなプロジェクトとして生活に取り入れられますか？” Tutor follow-ups: “Could a course, volunteer role, or weekend project test it?” and “What would remain impossible without changing careers?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “別のキャリアのどの部分なら、趣味や小さなプロジェクトとして生活に取り入れられますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which part of another career could fit into life as a hobby or side project?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “Which question would help a younger person evaluate a career path without pretending the choice is permanent?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which attractive assumption should be tested?” rather than asking every follow-up.
-- Visible target or prompt: Which question would help a younger person evaluate a career path without pretending the choice is permanent? / 選択が永遠に変えられないと思い込まずに、若い人がキャリアの進路を考えるための問いは何ですか？
-- Learning target: Explore the distinct “Advice to a younger person (若い人への考え)” angle of “A different career you might have chosen” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which attractive assumption should be tested?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which attractive assumption should be tested?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which question would help a younger person evaluate a career path without pretending the choice is permanent?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Whose experience could reveal the less visible parts of the path?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which question would help a younger person evaluate a career path without pretending the choice is permanent?"]}`
+- Learner action: Answer the standalone question “What should a young person ask before choosing a career?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What should a young person ask before choosing a career?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What should a young person ask before choosing a career?” / “若い人は、キャリアを選ぶ前に何を質問すべきですか？” Tutor follow-ups: “Which attractive promise should they check carefully?” and “Who could tell them about the difficult parts?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “若い人は、キャリアを選ぶ前に何を質問すべきですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What should a young person ask before choosing a career?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

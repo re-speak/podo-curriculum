@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-what-if-accessible/lessons/95-going-a-week-without-your-phone/lesson.html`
-- SHA-256: `b086907bc2379d96eb4888fbc036ec3232e380dcbbe6ec0d9e946046003d93ce`
+- SHA-256: `1263aa24420d90f7c67814e4dde7494fadd72ba06fcfb72bcb0ffedc7e56a0f5`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “Which part of a week with no optional phone use would be hardest?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which part of a week with no optional phone use would be hardest?”, react or share briefly, then choose at most one relevant probe such as “Which routine would need a new plan?”.
-- Visible target or prompt: Which part of a week with no optional phone use would be hardest? / 携帯電話の任意の利用をやめた一週間で、最も難しい部分は何ですか？ Follow-up pool: Which routine would need a new plan? What could make that challenge manageable?
-- Learning target: Explore the distinct “Seven days” angle of “Going a week without your phone” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which routine would need a new plan?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which routine would need a new plan?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which part of a week with no optional phone use would be hardest?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What could make that challenge manageable?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which part of a week with no optional phone use would be hardest?"]}`
+- Learner action: Answer the standalone question “Which phone feature would you miss most for one week?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which phone feature would you miss most for one week?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which phone feature would you miss most for one week?” / “一週間、携帯電話のどの機能が最も恋しくなりますか？” Tutor follow-ups: “Would you miss maps, messages, or payments most?” and “What could you use instead?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “一週間、携帯電話のどの機能が最も恋しくなりますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which phone feature would you miss most for one week?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “Which daily routine would be most disrupted by less phone use?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which daily routine would be most disrupted by less phone use?”, react or share briefly, then choose at most one relevant probe such as “Is it essential or only convenient?”.
-- Visible target or prompt: Which daily routine would be most disrupted by less phone use? / 携帯電話の利用を減らすと、どの日課が最も影響を受けますか？ Follow-up pool: Is it essential or only convenient? What keeps the experiment bounded?
-- Learning target: Explore the distinct “What stops working” angle of “Going a week without your phone” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Is it essential or only convenient?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Is it essential or only convenient?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which daily routine would be most disrupted by less phone use?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What keeps the experiment bounded?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which daily routine would be most disrupted by less phone use?"]}`
+- Learner action: Answer the standalone question “What, if anything, do you usually use your phone for first?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What, if anything, do you usually use your phone for first?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What, if anything, do you usually use your phone for first?” / “普段、最初にスマートフォンを使うとしたら、何に使いますか？” Tutor follow-ups: “Could that first task be done another way?” and “What happens on a day when you do not use it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “普段、最初にスマートフォンを使うとしたら、何に使いますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What, if anything, do you usually use your phone for first?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “Which useful phone function would be hardest to replace for a week?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which useful phone function would be hardest to replace for a week?”, react or share briefly, then choose at most one relevant probe such as “What need does that function meet?”.
-- Visible target or prompt: Which useful phone function would be hardest to replace for a week? / 一週間、代わりを用意するのが最も難しい携帯電話の機能は何ですか？ Follow-up pool: What need does that function meet? What non-phone alternative could meet part of the need?
-- Learning target: Explore the distinct “What you would miss” angle of “Going a week without your phone” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What need does that function meet?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What need does that function meet?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which useful phone function would be hardest to replace for a week?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What non-phone alternative could meet part of the need?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which useful phone function would be hardest to replace for a week?"]}`
+- Learner action: Answer the standalone question “Which phone feature would be easiest to live without?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which phone feature would be easiest to live without?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which phone feature would be easiest to live without?” / “なくても最も困りにくいスマートフォンの機能は何ですか？” Tutor follow-ups: “What would you use instead?” and “Why is another feature harder to lose?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “なくても最も困りにくいスマートフォンの機能は何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which phone feature would be easiest to live without?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “What might improve during the week?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What might improve during the week?”, react or share briefly, then choose at most one relevant probe such as “Which part of the day might feel calmer?”.
-- Visible target or prompt: What might improve during the week? / その一週間で何がよくなりそうですか？ Follow-up pool: Which part of the day might feel calmer? What evidence would show a real improvement?
-- Learning target: Explore the distinct “What might improve” angle of “Going a week without your phone” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which part of the day might feel calmer?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which part of the day might feel calmer?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What might improve during the week?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What evidence would show a real improvement?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What might improve during the week?"]}`
+- Learner action: Answer the standalone question “What might improve, if anything, after three days with less phone use?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What might improve, if anything, after three days with less phone use?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What might improve, if anything, after three days with less phone use?” / “スマホをあまり使わずに三日過ごしたら、何かよくなりそうですか？” Tutor follow-ups: “Would sleep, focus, or free time change?” and “What could become harder with less phone use?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “スマホをあまり使わずに三日過ごしたら、何かよくなりそうですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What might improve, if anything, after three days with less phone use?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “When is the easiest time to put a phone away for a while?” and develop the most interesting concrete detail.
-- Tutor action: Ask “When is the easiest time to put a phone away for a while?”, react or share briefly, then choose at most one relevant probe such as “What makes that time suitable for a break?”.
-- Visible target or prompt: When is the easiest time to put a phone away for a while? / しばらく携帯電話を置いておくのに、最も簡単な時間はいつですか？ Follow-up pool: What makes that time suitable for a break? How long would the break need to be useful?
-- Learning target: Explore the distinct “A past break” angle of “Going a week without your phone” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What makes that time suitable for a break?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What makes that time suitable for a break?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “When is the easiest time to put a phone away for a while?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “How long would the break need to be useful?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When is the easiest time to put a phone away for a while?"]}`
+- Learner action: Answer the standalone question “When is it easiest to leave your phone in another room?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “When is it easiest to leave your phone in another room?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “When is it easiest to leave your phone in another room?” / “携帯電話を別の部屋に置きやすいのは、どんなときですか？” Tutor follow-ups: “Would meals, exercise, or bedtime be easiest?” and “What makes a phone hard to leave?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “携帯電話を別の部屋に置きやすいのは、どんなときですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["When is it easiest to leave your phone in another room?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “What support would make a reduced-phone week safe and practical?” and develop the most interesting concrete detail.
-- Tutor action: Ask “What support would make a reduced-phone week safe and practical?”, react or share briefly, then choose at most one relevant probe such as “Which tool or person could provide that support?”.
-- Visible target or prompt: What support would make a reduced-phone week safe and practical? / 携帯電話を減らす一週間を安全で現実的にするには、どんな支えが必要ですか？ Follow-up pool: Which tool or person could provide that support? How would it protect essential access?
-- Learning target: Explore the distinct “Making it work” angle of “Going a week without your phone” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Which tool or person could provide that support?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which tool or person could provide that support?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What support would make a reduced-phone week safe and practical?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “How would it protect essential access?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What support would make a reduced-phone week safe and practical?"]}`
+- Learner action: Answer the standalone question “How could you stay reachable in an emergency while using your phone less?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How could you stay reachable in an emergency while using your phone less?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How could you stay reachable in an emergency while using your phone less?” / “携帯電話を減らしながら、緊急時に連絡を受けられるようにするにはどうしますか？” Tutor follow-ups: “Who would need another way to contact you?” and “Which emergency feature would stay available?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “携帯電話を減らしながら、緊急時に連絡を受けられるようにするにはどうしますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How could you stay reachable in an emergency while using your phone less?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “Which phone function should remain available during a reduced-use week?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which phone function should remain available during a reduced-use week?”, react or share briefly, then choose at most one relevant probe such as “Why should that function remain available?”.
-- Visible target or prompt: Which phone function should remain available during a reduced-use week? / 携帯電話の利用を減らす一週間でも、どの機能は使えるようにしておくべきですか？ Follow-up pool: Why should that function remain available? Which optional use could be limited around it?
-- Learning target: Explore the distinct “One use to keep” angle of “Going a week without your phone” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “Why should that function remain available?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Why should that function remain available?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which phone function should remain available during a reduced-use week?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “Which optional use could be limited around it?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which phone function should remain available during a reduced-use week?"]}`
+- Learner action: Answer the standalone question “Which phone feature would you keep during a break?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which phone feature would you keep during a break?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which phone feature would you keep during a break?” / “携帯電話を休む間でも、どの機能は使えるようにしますか？” Tutor follow-ups: “Why should that function remain available?” and “Which optional use could be limited around it?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “携帯電話を休む間でも、どの機能は使えるようにしますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which phone feature would you keep during a break?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “Which phone habit would be most useful to redesign?” and develop the most interesting concrete detail.
-- Tutor action: Ask “Which phone habit would be most useful to redesign?”, react or share briefly, then choose at most one relevant probe such as “What current habit works well?”.
-- Visible target or prompt: Which phone habit would be most useful to redesign? / どの携帯電話の習慣を見直すと、最も役立ちますか？ Follow-up pool: What current habit works well? What small change could last?
-- Learning target: Explore the distinct “After the week” angle of “Going a week without your phone” through a specific example, reason, comparison, or position.
-- Pedagogical value: The standalone main prompt opens one answerable conversational job; “What current habit works well?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “What current habit works well?”, the learner needs concrete-detail or reasoning support, not a forced answer route.
-- Non-target support: The main prompt has direct Japanese support; two distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which phone habit would be most useful to redesign?” but is never required.
-- Choice/distractor quality: No artificial distractors or forced frame appears; “What small change could last?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which phone habit would be most useful to redesign?"]}`
+- Learner action: Answer the standalone question “Which phone habit would you most like to change?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which phone habit would you most like to change?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which phone habit would you most like to change?” / “どの携帯電話の習慣を最も変えたいですか？” Tutor follow-ups: “Would you change late-night use or constant checking?” and “Which phone habit is worth keeping?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “どの携帯電話の習慣を最も変えたいですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which phone habit would you most like to change?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact final wording, bilingual alignment, standalone answerability, article value, page job, adjacent-page distinction, and Accessible/Full parity were reviewed against these lesson bytes; 360/480 screenshot inspection and owner approval remain pending. Automated 360/480 DOM overflow probing passed for every page; screenshot inspection and owner approval remain pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 

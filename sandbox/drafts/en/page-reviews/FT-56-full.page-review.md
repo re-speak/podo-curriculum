@@ -1,11 +1,11 @@
 # Page review ledger
 
 - Lesson: `sandbox/drafts/en/tracks/3-freetalking/courses/talk-people-and-ties-full/lessons/56-the-person-you-would-call-in-an-emergency/lesson.html`
-- SHA-256: `cfa9c40264f05c184ebdcc4b91bb94f60f12d2c4a0b89b13999064d1b13914dd`
+- SHA-256: `e3ef70262ac19bdb1715d9c0715341eb6496d0403ae231b67284dd3a127288ce`
 - Generated: **pass**
 - Mechanical validation: **pass**
 - Human page audit: **pass**
-- Owner approval: **pending**
+- Owner approval: **pass**
 
 A changed lesson hash invalidates this ledger. Owner approval remains separate from the human audit.
 
@@ -79,139 +79,139 @@ A changed lesson hash invalidates this ledger. Owner approval remains separate f
 
 ## 5. `warm-1`
 
-- Learner action: Respond aloud to “In an emergency, which immediate need should determine the first point of contact?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which situations require professional help before personal support?” rather than asking every follow-up.
-- Visible target or prompt: In an emergency, which immediate need should determine the first point of contact? / 緊急時には、どのような差し迫った必要によって最初の連絡先を決めるべきですか？
-- Learning target: Explore the distinct “First call (最初の連絡先)” angle of “The person you would call in an emergency” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which situations require professional help before personal support?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which situations require professional help before personal support?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “In an emergency, which immediate need should determine the first point of contact?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “When is a trusted individual the more useful first contact?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["In an emergency, which immediate need should determine the first point of contact?"]}`
+- Learner action: Answer the standalone question “In an emergency, what makes one person the best first call?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “In an emergency, what makes one person the best first call?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “In an emergency, what makes one person the best first call?” / “緊急時に、ある人が最初の電話相手として最適なのはなぜですか？” Tutor follow-ups: “When should you call a professional service first?” and “When is a trusted person more useful?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “緊急時に、ある人が最初の電話相手として最適なのはなぜですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["In an emergency, what makes one person the best first call?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 6. `warm-2`
 
-- Learner action: Respond aloud to “Which qualities make a person or service the appropriate first point of contact in an emergency?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which immediate need could they meet?” rather than asking every follow-up.
-- Visible target or prompt: Which qualities make a person or service the appropriate first point of contact in an emergency? / 緊急時の最初の連絡先として人やサービスを選ぶとき、どのような条件が重要ですか？
-- Learning target: Explore the distinct “The right first contact (適切な最初の連絡先)” angle of “The person you would call in an emergency” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which immediate need could they meet?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which immediate need could they meet?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which qualities make a person or service the appropriate first point of contact in an emergency?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Where would their expertise or role end?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which qualities make a person or service the appropriate first point of contact in an emergency?"]}`
+- Learner action: Answer the standalone question “Which emergencies require a service before a friend or relative?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Which emergencies require a service before a friend or relative?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Which emergencies require a service before a friend or relative?” / “友人や親族より先にサービスへ電話すべき緊急事態はどれですか？” Tutor follow-ups: “What could the service do immediately?” and “When would you call someone you know too?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “友人や親族より先にサービスへ電話すべき緊急事態はどれですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which emergencies require a service before a friend or relative?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 7. `q1`
 
-- Learner action: Respond aloud to “Which information would you communicate first?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which detail would enable useful action?” rather than asking every follow-up.
-- Visible target or prompt: Which information would you communicate first? / 最初にどの情報を伝えますか？
-- Learning target: Explore the distinct “What you would say (伝えること)” angle of “The person you would call in an emergency” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which detail would enable useful action?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which detail would enable useful action?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which information would you communicate first?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which information could safely wait?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which information would you communicate first?"]}`
+- Learner action: Answer the standalone question “What information should you give first in an emergency call?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What information should you give first in an emergency call?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What information should you give first in an emergency call?” / “緊急電話では、最初にどの情報を伝えるべきですか？” Tutor follow-ups: “Which detail would help them act?” and “What could wait until later?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “緊急電話では、最初にどの情報を伝えるべきですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What information should you give first in an emergency call?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 8. `q2`
 
-- Learner action: Respond aloud to “Imagine a manageable emergency. What sequence of first steps would be most effective?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which information must be established immediately?” rather than asking every follow-up.
-- Visible target or prompt: Imagine a manageable emergency. What sequence of first steps would be most effective? / 対応可能な緊急事態を想像してください。最初にどのような順序で行動するのが効果的ですか？
-- Learning target: Explore the distinct “First steps (最初の行動)” angle of “The person you would call in an emergency” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which information must be established immediately?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which information must be established immediately?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Imagine a manageable emergency. What sequence of first steps would be most effective?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which person or service should receive that information first?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Imagine a manageable emergency. What sequence of first steps would be most effective?"]}`
+- Learner action: Answer the standalone question “What should someone do first after losing a phone and wallet away from home?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What should someone do first after losing a phone and wallet away from home?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What should someone do first after losing a phone and wallet away from home?” / “外出先で携帯電話と財布をなくしたら、最初に何をすべきですか？” Tutor follow-ups: “Which information is needed immediately?” and “Who or which service should get it first?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “外出先で携帯電話と財布をなくしたら、最初に何をすべきですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What should someone do first after losing a phone and wallet away from home?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 9. `q3`
 
-- Learner action: Respond aloud to “Which useful role can a non-professional realistically play during an emergency?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which practical need could they reliably meet?” rather than asking every follow-up.
-- Visible target or prompt: Which useful role can a non-professional realistically play during an emergency? / 緊急時に、専門家ではない人が現実的に担える役割は何ですか？
-- Learning target: Explore the distinct “A support role (支える役割)” angle of “The person you would call in an emergency” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which practical need could they reliably meet?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which practical need could they reliably meet?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Which useful role can a non-professional realistically play during an emergency?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “At what point should responsibility pass to a professional?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Which useful role can a non-professional realistically play during an emergency?"]}`
+- Learner action: Answer the standalone question “While professional help is coming, what can an ordinary person safely do?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “While professional help is coming, what can an ordinary person safely do?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “While professional help is coming, what can an ordinary person safely do?” / “専門家の助けが来るまでの間、普通の人が安全にできることは何ですか？” Tutor follow-ups: “What practical help could they give?” and “When should they step back?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “専門家の助けが来るまでの間、普通の人が安全にできることは何ですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["While professional help is coming, what can an ordinary person safely do?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 10. `q4`
 
-- Learner action: Respond aloud to “Why might someone's preferred emergency contact change as circumstances evolve?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which transition can most strongly reorder the network?” rather than asking every follow-up.
-- Visible target or prompt: Why might someone's preferred emergency contact change as circumstances evolve? / 状況の変化によって、緊急時に最初に連絡したい相手が変わるのはなぜですか？
-- Learning target: Explore the distinct “Changing contacts (変わる連絡先)” angle of “The person you would call in an emergency” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which transition can most strongly reorder the network?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which transition can most strongly reorder the network?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “Why might someone's preferred emergency contact change as circumstances evolve?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which qualities allow one contact to remain dependable over time?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why might someone's preferred emergency contact change as circumstances evolve?"]}`
+- Learner action: Answer the standalone question “Why might the best emergency contact change over time?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “Why might the best emergency contact change over time?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “Why might the best emergency contact change over time?” / “状況の変化によって、緊急時に最初に連絡したい相手が変わるのはなぜですか？” Tutor follow-ups: “Which life change can most affect who someone calls first?” and “Which qualities allow one contact to remain dependable over time?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “状況の変化によって、緊急時に最初に連絡したい相手が変わるのはなぜですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["Why might the best emergency contact change over time?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 11. `q5`
 
-- Learner action: Respond aloud to “How does physical distance change the value of an emergency contact?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which forms of help require proximity?” rather than asking every follow-up.
-- Visible target or prompt: How does physical distance change the value of an emergency contact? / 物理的な距離は、緊急時の連絡先の価値をどのように変えますか？
-- Learning target: Explore the distinct “Distance (距離)” angle of “The person you would call in an emergency” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which forms of help require proximity?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which forms of help require proximity?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “How does physical distance change the value of an emergency contact?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which forms of support remain possible at a distance?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How does physical distance change the value of an emergency contact?"]}`
+- Learner action: Answer the standalone question “How does distance affect who is useful in an emergency?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “How does distance affect who is useful in an emergency?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “How does distance affect who is useful in an emergency?” / “物理的な距離は、緊急時の連絡先の価値をどのように変えますか？” Tutor follow-ups: “Which kinds of help need someone nearby?” and “What help can still be given from far away?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “物理的な距離は、緊急時の連絡先の価値をどのように変えますか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["How does distance affect who is useful in an emergency?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 12. `q6`
 
-- Learner action: Respond aloud to “What would make a support network of people and services more resilient before an emergency occurs?” and develop the most interesting concrete detail.
-- Tutor action: React or share briefly, then choose a relevant probe such as “Which information should be immediately accessible?” rather than asking every follow-up.
-- Visible target or prompt: What would make a support network of people and services more resilient before an emergency occurs? / 緊急事態が起きる前に、人やサービスを含む支援体制をもっと強くするには何が必要ですか？
-- Learning target: Explore the distinct “A stronger network (より強い支援体制)” angle of “The person you would call in an emergency” through a specific example, reason, comparison, or position.
-- Pedagogical value: The main prompt opens one answerable conversational job; “Which information should be immediately accessible?” adds a specific next layer without repeating it.
-- Failure diagnoses: If the answer remains vague after “Which information should be immediately accessible?,” the learner needs concrete-detail or reasoning support for this topic, not a forced grammar pattern.
-- Non-target support: The main prompt has direct Japanese support; distinct English follow-ups remain tutor-only and do not crowd the learner page.
-- Article treatment: This prompt stands alone if pre-study was skipped; the article may seed ideas for “What would make a support network of people and services more resilient before an emergency occurs?” but is never required.
-- Choice/distractor quality: There are no artificial distractors or forced frames; “Which person's or service's role or limit should be clarified in advance?” opens a second nonduplicate conversational direction.
-- Component consistency: Matches the approved Freetalking prompt component: one bilingual talking job, tutor-only probes, and a Student's sentence feedback box.
-- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What would make a support network of people and services more resilient before an emergency occurs?"]}`
+- Learner action: Answer the standalone question “What should people prepare before an emergency happens?” aloud and develop one interesting detail, example, or reason.
+- Tutor action: Ask “What should people prepare before an emergency happens?”, react naturally, and use the most relevant follow-up instead of forcing both.
+- Visible target or prompt: Conversation prompt: “What should people prepare before an emergency happens?” / “緊急事態が起きる前に、人は何を準備しておくべきですか？” Tutor follow-ups: “Which contact detail should be easy to find?” and “Who should know what to do?”
+- Learning target: Answer and develop this page's distinct conversation question in spontaneous English.
+- Pedagogical value: The standalone prompt opens one answerable angle, and the follow-ups broaden or deepen the learner's answer.
+- Failure diagnoses: A no, an I-don't-know answer, or a general answer must still leave a natural next move; repeated or answer-presuming follow-ups fail the page.
+- Non-target support: The Japanese prompt “緊急事態が起きる前に、人は何を準備しておくべきですか？” is meaning-aligned; the English follow-ups are tutor-only and do not supply an answer.
+- Article treatment: The learner may use an article idea or any relevant example; the page does not test article recall.
+- Choice/distractor quality: No fixed answer is implied; the learner and tutor can contribute different defensible views or examples.
+- Component consistency: Uses one visible conversation question, one tutor-only follow-up pool, and no competing learner task.
+- Extracted evidence: `{"targetHighlights": [], "blankAnswers": [], "hintChips": [], "supportStage": "not-applicable", "substantivePrompts": ["What should people prepare before an emergency happens?"]}`
 - Visual QA: 360px **pending**; 480px **pending**
 - Verdict: **pass**
-- Notes: Exact English/Japanese wording, page job, semantic value, and adjacent-page distinction were reviewed against final lesson bytes; 360/480 screenshot inspection remains pending.
+- Notes: Semantic conversation audit completed against the current English prompt, Japanese prompt, and tutor follow-ups; visual status is recorded separately.
 
 ## 13. `feedback`
 
