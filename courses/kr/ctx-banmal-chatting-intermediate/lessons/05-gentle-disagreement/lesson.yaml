@@ -7,9 +7,9 @@ spec:
   week: 5
 
   title:
-    ko: "부드러운 반박"
-    en: "Gentle disagreement"
-    ja: "やわらかい反論"
+    ko: "반대 생각 말하기"
+    en: "Saying you see it differently"
+    ja: "反対の考えを言う"
 
   decks:
     lecture:  { entry: lecture/index.html }

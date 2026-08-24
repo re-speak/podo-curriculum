@@ -80,6 +80,64 @@ human review instead of silently rejecting them. A proofreading round is not com
 the cited line changed; it must state which tracks and candidate set were searched so the same
 colleague does not have to repeat the same comment lesson by lesson.
 
+## Revising from a proofreader's PR
+
+The proofreader now works in the admin and their accepted takes arrive as a branch: one commit
+against `courses/`, a PR body carrying before/after excerpts and dated reviewer comments per
+lesson. That PR is **evidence, not a change to merge.** Three things are wrong with merging it as
+it stands, and all three have happened:
+
+- **It edits `courses/`, which `promote.py` regenerates.** The corrections survive exactly until
+  the next promotion, and nothing reports their disappearance.
+- **It targets `main`.** Merging it is a production deploy that skipped stage.
+- **The edits are applied mechanically, so some of them are damaged.** A round of 96 edits
+  arrived with three: a deleted sentence that took the following space with it
+  (`이번엔 진짜 이야기예요제 질문에…`), a stray Hangul syllable inside a Japanese line
+  (`住んでいらっ허しゃいます`), and a dropped conjunction (`진짜아무도`). A title edit whose search
+  string is two words long also lands in every body sentence that happens to contain those two
+  words: 24 of the 96 leaked that way.
+
+The round is worked like this. Branch off `origin/stage`, never off the proofreader's branch.
+
+1. **Read the whole body before touching anything.** Both halves matter: the applied edits say
+   what the reviewer did, the comments say why. A comment with no edit beside it is not a lower
+   priority — it is the reviewer telling you something they could not fix from the admin.
+2. **Separate the rule from the correction.** For each edit and each comment, write down the
+   reason in one sentence, then ask whether that sentence is true of decks the reviewer never
+   opened. 「이 덱은 습관이 맞다」 is a correction. 「지시문은 진짜라고 주장하지 않는다」 is a rule,
+   and it is a rule because the same comment came back on four courses across four weeks.
+3. **Put every rule that generalises into the standard**, `tools/authoring/{kr,en}/copy-standard.json`,
+   with the reviewer's words quoted in `why`. That file is the deliverable of the round; the deck
+   edits are its output. A rule that stays in a commit message reaches exactly as far as whoever
+   remembered it.
+4. **Sweep with the standard, at the draft source.**
+
+   ```sh
+   python3 tools/authoring/copy_standard.py --lang kr            # what would change
+   python3 tools/authoring/copy_standard.py --lang kr --fix      # change it
+   ```
+
+   Both languages of a bilingual field move together — that is the `pair` rule kind, and it exists
+   because 85 of 88 decks had a Korean line and a Japanese line saying different things after an
+   earlier round corrected only one side.
+5. **Replay the reviewer's own edits into the drafts, and audit the replay.** Skip anything that
+   the standard has already produced, skip anything corrupted, and for a short search string,
+   apply it only where it belongs — a title edit at title positions, not everywhere the words
+   occur. Then read the diff for the decks with the shortest search strings first.
+6. **Answer the comments that have no edit.** Most of what a reviewer cannot fix from the admin is
+   structural: a broken page, a duplicated face, a register that slips inside one scene, a topic
+   they do not think earns its place. Fix what is a defect, and *report* what is a product or art
+   decision rather than quietly redesigning a course.
+7. **Run both gates and promote only the courses you touched.** `promote.py` rebuilds every
+   directory it is given; give it targets or a one-course change becomes a whole-tree diff.
+8. **Say what you searched.** The PR body names the rules added, the corpus counts each one moved,
+   and the findings handed back as questions. Without that the reviewer cannot tell a rule that was
+   generalised from a line that happened to be fixed, and next round they comment lesson by lesson
+   again.
+
+Nothing here replaces the reviewer. The standard only holds decisions a human already made, and
+every rule in it points at the sentence that made it.
+
 ## Why the projection is one-way
 
 Automatically merging edited Markdown back into HTML would create two editable sources and make

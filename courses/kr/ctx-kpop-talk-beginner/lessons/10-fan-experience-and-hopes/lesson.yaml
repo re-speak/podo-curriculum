@@ -7,9 +7,9 @@ spec:
   week: 10
 
   title:
-    ko: "덕질 경험과 바람"
+    ko: "덕질 경험과 소망"
     en: "Fan experiences and hopes"
-    ja: "オタ活の経験と願い"
+    ja: "推し活の経験と願い"
 
   decks:
     lecture:  { entry: lecture/index.html }

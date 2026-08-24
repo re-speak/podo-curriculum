@@ -257,7 +257,11 @@ def check(path, want):
                     break
 
         # ---- rule 3: lesson numbers, in any element on the page ----
-        for m in LESSON_REF.finditer(chunk):
+        # The trial decks' curriculum panel is the one place a lesson number is
+        # not a reference: 「23ユニット116課」 is how big the course is, a selling
+        # point on a page the prospect reads before enrolling, and there is
+        # nothing for anyone to look up.
+        for m in () if pid == "plan-curriculum" else LESSON_REF.finditer(chunk):
             if PARTICLE_CTX.search(chunk[max(0, m.start() - 12):m.start()]):
                 continue                      # 파트 1과 — the particle 과
             seg = strip(chunk[max(0, m.start() - 60):m.end() + 30])
@@ -274,7 +278,11 @@ def check(path, want):
                 hit("tail", pid, "상투적 마무리", ko)
 
         # ---- rule 7: settled Hangul-track copy conventions ----
-        if is_hangul:
+        # The trial decks teach the same Hangul pages and were outside this
+        # check for as long as it existed, because the default root is tracks/.
+        # That is why a reviewer had to report 위에 쓴 대로 a second time in
+        # PR #116 on trial-lv1 after the same fix landed in the Hangul track.
+        if is_hangul or "/trial/" in path_s:
             visible = strip(chunk)
             for pattern, detail in HANGUL_COPY:
                 m = pattern.search(visible)
@@ -288,11 +296,20 @@ def deck_paths(paths, every):
     """check_deck.py’s argument shape. A bare name that is no path on disk is a
     track under sandbox/drafts/kr/tracks — the form kr/AGENTS.md advertises."""
     roots = [KR] if every else [
-        Path(p).resolve() if Path(p).exists() else TRACKS / p for p in paths] or [TRACKS]
+        Path(p).resolve() if Path(p).exists() else TRACKS / p for p in paths] or [KR]
     out = []
     for r in roots:
         if r.is_dir():
-            out += sorted(r.rglob("lesson.html"))
+            # Not rglob("lesson.html"). Trial decks are named for their track
+            # (trial/full-trials/trial-1-hangul.html), so that glob excluded the
+            # first lesson a prospect ever sees — and the Hangul copy rules
+            # below never reached it. check_deck.py's test is the right one:
+            # a page is a deck if it carries data-page-id.
+            out += sorted(q for q in r.rglob("*.html")
+                          if not {"_archive", "archive"} & set(q.parts)
+                          and not q.name.startswith("_")
+                          and q.name != "viewer.html"
+                          and 'data-page-id="' in q.read_text(encoding="utf-8"))
         elif r.exists():
             out.append(r)
         else:
