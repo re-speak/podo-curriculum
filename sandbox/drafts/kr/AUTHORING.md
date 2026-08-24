@@ -116,12 +116,17 @@ closing
 | 무엇 | 마크업 |
 | --- | --- |
 | 표지 | `<div class="brand-page" data-page-id="cover">` + `.podo-badge` + `.brand-title` |
-| 파트 구분(라임) | `<div class="brand-page divider">` + `.brand-mascot` + `.brand-title` + `.brand-sub` |
+| 파트 구분(라임) | `<div class="brand-page divider">` + `.brand-title` + `.brand-sub` + `.brand-art.study` |
 | 파트 전환(어두운) | `<div class="transition-page" data-act="N이에요 / 예요">` + `.transition-kicker` + `.transition-title` + `.transition-copy` |
 | 학습 페이지 | `<div class="section" data-page-id="p1-teach">` |
 | 마무리 | `<div class="brand-page end">` |
 
 `data-act` 는 페이저 왼쪽에 뜨는 장 이름입니다. 붙인 페이지에서 새 장이 시작됩니다.
+
+**라임 장은 카드가 아니라 화면입니다.** `.brand-page` 넷 다 여백 없이 화면을 통째로
+먹습니다 — 그림이 있든 없든 같습니다. 그림을 놓을 자리는 `.brand-art` 하나뿐이고
+(장 아래끝), 자리잡기는 변형이 정합니다: 기본은 흘러넘치고, `.menu` 와 `.study` 는
+가운데에 온전히 섭니다. 예전의 `.brand-mascot` 흰 스티커는 체험 덱에서 물러났습니다.
 
 어두운 `partN-intro` 는 문법 설명 상자가 아니라 호흡과 장면을 잇는 페이지입니다.
 `.transition-copy` 에는 일본어 장면 다리 한 줄만 두고, 뜻과 쓰임은 다음 학습 페이지로
