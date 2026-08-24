@@ -31,6 +31,8 @@ spec:
     en: Talk about work and money with real numbers and a real scene attached.
     ja: 数字と場面のある仕事とお金の経験を話す。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

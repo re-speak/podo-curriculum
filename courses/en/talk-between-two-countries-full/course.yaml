@@ -36,6 +36,8 @@ spec:
     en: Explain what surprised you about another country, and what would surprise a visitor to Japan.
     ja: 他の国について驚いたことを説明し、日本に来た人が何に驚くかを話す。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

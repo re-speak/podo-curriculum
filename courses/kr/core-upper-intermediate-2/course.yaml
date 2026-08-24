@@ -33,6 +33,8 @@ spec:
     en: Measure degree and limits, and let regret and attitude show without overstating.
     ja: 程度と限界を測って話し、後悔や態度をにじませながら断定を避ける。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

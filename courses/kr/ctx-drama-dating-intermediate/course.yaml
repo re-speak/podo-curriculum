@@ -33,6 +33,8 @@ spec:
     en: Handle a relationship in Korean — pet names, anniversaries, introductions, looking after someone, and saying you were hurt without blaming.
     ja: 恋人同士の呼び方・記念日・紹介・看病をタメ口でこなし、不満は相手を責めずに伝えられる。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

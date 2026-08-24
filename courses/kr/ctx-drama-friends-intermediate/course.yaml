@@ -33,6 +33,8 @@ spec:
     en: Talk your way from a stranger into a close friend — take sides, ask favours, pick up the bill and share what you tell nobody else.
     ja: 初対面から親友になるまでを話しきる。味方になり、気軽に頼み、おごり、誰にも言えない話を打ち明ける。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

@@ -33,6 +33,8 @@ spec:
     en: Plan what you want and have to do, handle permission and obligation, and switch into casual speech.
     ja: したいことと予定を組み立て、許可と義務を扱い、タメ口に切り替えて話す。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

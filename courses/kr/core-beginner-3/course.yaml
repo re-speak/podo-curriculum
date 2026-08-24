@@ -33,6 +33,8 @@ spec:
     en: Join and compare sentences, and talk about what happened — when, and why.
     ja: 文をつなげて比べながら、過ぎたことを「いつ・なぜ」まで話す。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

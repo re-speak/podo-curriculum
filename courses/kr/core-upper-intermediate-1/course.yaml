@@ -33,6 +33,8 @@ spec:
     en: Infer from evidence, suppose a situation, and point out when it turns out otherwise.
     ja: 根拠を挙げて推測し、仮の状況を立て、期待とずれた結果を指摘する。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

@@ -33,6 +33,8 @@ spec:
     en: Tell apart what happened by itself and what someone was made to do.
     ja: 自然にそうなったことと、人にさせたことを区別して話す。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

@@ -33,6 +33,8 @@ spec:
     en: Ask the way, use the subway, buses and taxis, and get help when lost — and follow the announcements and the answers you get back.
     ja: 道をたずね、地下鉄・バス・タクシーを使い、迷ったときに助けを求められる。車内放送や通行人の返事も聞き取れる。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []
