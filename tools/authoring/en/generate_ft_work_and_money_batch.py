@@ -1439,7 +1439,7 @@ _THREE_SECOND_PATCHES = {
         "full_followups": ("What effort could you mention?", "What comparison should you avoid?"),
     },
     (67, 2): {
-        "full": "When starting a skill, what helps most at first: practice, a teacher, a video, or a book?",
+        "full": "When learning a skill, what helps most: practice, a teacher, a video, or a book?",
         "full_ja": "技能を始めるとき、最初に最も役立つのは、練習、先生、動画、本のどれですか？",
         "full_followups": ("How long would you try that method?", "What would make it easy to repeat?"),
     },
@@ -1813,7 +1813,7 @@ def build(topic_no: int, variant: str) -> str:
         head,
         review_id=f"FT-{topic_no}",
         lesson_id=slug,
-        level="B1 accessible" if variant == "accessible" else "B2-C1 full",
+        level="B1 accessible" if variant == "accessible" else "C1 full",
         title=data["title"],
         title_ko=data["ko"],
         title_ja=data["ja"],
@@ -1849,9 +1849,10 @@ def build(topic_no: int, variant: str) -> str:
         for (page_id, number), item in zip(prompt_ids, data["prompts"], strict=True)
     )
     pages.append(base.extract_page(canonical, "feedback"))
-    return new_lesson.redepth(
+    import ft_question_bank  # noqa: PLC0415
+    return ft_question_bank.apply(new_lesson.redepth(
         head + "\n".join(pages) + foot, output_path(topic_no, variant)
-    )
+    ), topic_no, variant)
 
 
 def main() -> int:

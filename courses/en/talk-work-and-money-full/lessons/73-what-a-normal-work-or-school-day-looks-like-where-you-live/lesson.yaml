@@ -7,9 +7,9 @@ spec:
   week: 10
 
   title:
-    ko: "사는 곳의 보통 일·학교 하루"
-    en: "What a normal work or school day looks like where you live"
-    ja: "住んでいる地域の普通の仕事・学校の一日"
+    ko: "내가 사는 곳의 진짜 점심시간"
+    en: "What a real lunch break looks like where you live"
+    ja: "住んでいる場所のリアルな昼休み"
 
   decks:
     lecture:  { entry: lecture/index.html }

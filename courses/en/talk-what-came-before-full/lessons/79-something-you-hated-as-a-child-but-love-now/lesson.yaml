@@ -7,9 +7,9 @@ spec:
   week: 4
 
   title:
-    ko: "어릴 때 싫었지만 지금은 좋아하는 것"
-    en: "Something you hated as a child but love now"
-    ja: "子どもの頃は嫌いで今は好きなもの"
+    ko: "어릴 때는 싫어했지만 지금은 좋아하는 음식"
+    en: "A food you hated as a child but like now"
+    ja: "子どもの頃は嫌いだったけれど、今は好きな食べ物"
 
   decks:
     lecture:  { entry: lecture/index.html }

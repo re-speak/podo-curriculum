@@ -20,9 +20,9 @@ spec:
       slug: 10-something-youve-recently-got-into
       week: 2
       title:
-        ko: "최근 새로 빠진 것"
-        en: "Something you've recently got into"
-        ja: "最近夢中になっていること"
+        ko: "요즘 하루 중 가장 좋은 시간"
+        en: "The best part of your day lately"
+        ja: "最近、一日の中でいちばん好きな時間"
     - source: 11-a-show-you-cant-stop-watching/lesson.html
       slug: 11-a-show-you-cant-stop-watching
       week: 3

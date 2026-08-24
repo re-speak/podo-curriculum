@@ -32,7 +32,7 @@ BRIEF_OPENINGS = {
     93: "Which food would be hardest for you to get tired of?",
     94: "If one everyday service were free for life, which would you choose?",
     95: "Which phone feature would you miss most for one week?",
-    96: "If AI handled your usual tasks for a week, what would you do with the extra time?",
+    96: "If AI did your usual tasks for a week, how would you use the extra time?",
     97: "Which animal best represents your personality?",
     98: "If you had grown up in another country, which one would you choose?",
     99: "What would an ideal ordinary day look like ten years from now?",
@@ -807,7 +807,7 @@ CONVERSATIONAL_MAIN_REVISIONS = {
         _conversation("Which phone habit would you most like to change?", "どの携帯電話の習慣を最も変えたいですか？"),
     ),
     96: (
-        _conversation("If AI handled your usual tasks for a week, what would you do with the extra time?", "AIが普段の作業を一週間してくれたら、空いた時間をどう使いますか？"),
+        _conversation("If AI did your usual tasks for a week, how would you use the extra time?", "AIが普段の作業を一週間してくれたら、空いた時間をどう使いますか？"),
         _conversation("What would you do on the first morning with no tasks waiting?", "待っている作業がない最初の朝、何をしますか？"),
         _conversation("When should people say that AI did most of their work?", "AIが仕事の大部分をしたことを、どんなときに伝えるべきですか？", "Who deserves to know when AI produced most of a result?", "AIが結果の大部分を作ったとき、誰に知らせる必要がありますか？"),
         _conversation("Which part of work, study, care, or daily routine would you miss?", "仕事、勉強、ケア、日課のどの部分が恋しくなりますか？"),
@@ -1554,7 +1554,7 @@ def build(topic_no: int, variant: str) -> str:
     slug = f'{topic_no:02d}-{data["slug"]}'
     head = new_lesson.retarget(
         head, review_id=f"FT-{topic_no}", lesson_id=slug,
-        level="B1 accessible" if variant == "accessible" else "B2-C1 full",
+        level="B1 accessible" if variant == "accessible" else "C1 full",
         title=data["title"], title_ko=data["ko"], title_ja=data["ja"], version="2026-08-21",
     )
     head = _set_pending(head)
@@ -1571,7 +1571,8 @@ def build(topic_no: int, variant: str) -> str:
     prompt_ids = (("warm-1", "WARM-UP 1"), ("warm-2", "WARM-UP 2")) + tuple((f"q{i}", f"QUESTION {i}") for i in range(1, 7))
     pages.extend(_question_page(page_id, number, item, variant, base) for (page_id, number), item in zip(prompt_ids, data["prompts"], strict=True))
     pages.append(base.extract_page(canonical, "feedback"))
-    return new_lesson.redepth(head + "\n".join(pages) + foot, output_path(topic_no, variant))
+    import ft_question_bank  # noqa: PLC0415
+    return ft_question_bank.apply(new_lesson.redepth(head + "\n".join(pages) + foot, output_path(topic_no, variant)), topic_no, variant)
 
 
 def main() -> int:

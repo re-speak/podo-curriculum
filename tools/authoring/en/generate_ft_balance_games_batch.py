@@ -270,9 +270,9 @@ FINAL_ONE_HEARING_REPAIRS = {
         full_followups=("What helped you improve?", "Which is easier to improve: cooking, exercise, or language?"),
     ),
     (121, "team"): dict(
-        accessible="On a small team, which is more useful: one specialist or one person who can do several jobs?",
+        accessible="On a small team, who helps more: a specialist or someone who can do several jobs?",
         accessible_ja="小さなチームでは、一人の専門家と、いくつもの仕事ができる人のどちらが役立ちますか？",
-        full="On a small team, which is more useful: one specialist or one person who can do several jobs?",
+        full="On a small team, who helps more: a specialist or someone who can do several jobs?",
         full_ja="小さなチームでは、一人の専門家と、いくつもの仕事ができる人のどちらが役立ちますか？",
         accessible_followups=("Why would that person help the team?", "Can a flexible worker help when a teammate is absent?"),
         full_followups=("Why would that person help the team?", "Can a flexible worker help when a teammate is absent?"),
@@ -578,7 +578,7 @@ def build(topic_number, variant):
     slug = f'{topic_number:02d}-{data["slug"]}'
     head = new_lesson.retarget(
         head, review_id=f"FT-{topic_number}", lesson_id=slug,
-        level="B1 accessible" if variant == "accessible" else "B2-C1 full",
+        level="B1 accessible" if variant == "accessible" else "C1 full",
         title=data["title"], title_ko=data["ko"], title_ja=data["ja"], version="2026-08-21",
     )
     head = _set_complete(head)
@@ -598,7 +598,8 @@ def build(topic_number, variant):
     prompt_ids = (("warm-1", "WARM-UP 1"), ("warm-2", "WARM-UP 2")) + tuple((f"q{i}", f"QUESTION {i}") for i in range(1, 7))
     pages.extend(_question_page(page_id, number, item, variant, base) for (page_id, number), item in zip(prompt_ids, data["prompts"], strict=True))
     pages.append(base.extract_page(canonical, "feedback"))
-    return new_lesson.redepth(head + "\n".join(pages) + foot, output_path(topic_number, variant))
+    import ft_question_bank  # noqa: PLC0415
+    return ft_question_bank.apply(new_lesson.redepth(head + "\n".join(pages) + foot, output_path(topic_number, variant)), topic_number, variant)
 
 
 def main() -> int:

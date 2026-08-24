@@ -125,15 +125,23 @@ slow talkative one stops halfway, and neither is behind. Do not cut an answer sh
 
 ## Two versions of every topic
 
-Same theme, same question, same shape; only the **language load** differs.
+Same theme, same conversation, same intellectual depth; only the **language load** differs.
 
 | Version | How it is made |
 | --- | --- |
-| **B2–C1 · full** | Written **first**, unconstrained — the most natural way to run this topic |
-| **B1 · accessible** | Derived from it: simplify the opening passage first, then change **only** the questions that genuinely block |
+| **C1 · full** | Written first: the most natural, interesting and immediately answerable way to run the topic |
+| **B1 · accessible** | Derived from Full: change only questions or article language that create a real B1 barrier |
 
-**The accessible version is not an abridgement.** Same facts, same positions, same depth of
-thinking — cut those and the later rungs lose the anchor they refer back to.
+The Full version is not required to sound advanced. `What have you bought that was really worth
+the money?` is already a strong C1 question: a learner can answer at once and the tutor can keep
+digging. Replacing it with `Which of your purchases has earned its price back?` makes the wording
+less natural without making the conversation better.
+
+The Accessible version is not an abridgement, and it is not a quota of rewritten lines. Keep a
+short natural question identical when a B1 learner can already understand and answer it. Adapt
+rare vocabulary, long modification, several ideas in one sentence, stacked hypotheticals and
+unnecessary abstraction. If the *idea itself* is hard to answer in the learner's first language,
+replace the question at both levels rather than calling it C1.
 
 **Entry floor: Core 53.** Below that the learner lacks the past, the perfect and the connectors a
 story needs. Individual topics name a higher floor where they need one.
@@ -158,12 +166,10 @@ you say anything at the time → has it changed how you see it → what would su
 *Moves:* `I expected ___, but ___.` **(Core 56)** · `It turned out ___.` **(Core 73)** `chunk`
 *Shared:* KR 1-1, rewritten so contact is not required
 
-**2. What people often get wrong about Japan** `両国`
-*Opens:* "What do people often get wrong about Japan?"
-*Ladder:* what do they assume → where do they get it → what's the reality → what do *you* assume
-about my country → have you ever been wrong about somewhere → what should people ask instead
-*Moves:* `People think ___, but ___.` **(Core 56)** · `That's only true if ___.` **(Core 57)**
-*Shared:* KR 1-2
+**2. The first hour in a new country** `両国`
+*Opens:* "When you arrive in a new country, what do you notice first?"
+*Ladder:* What's the first thing you want to eat or drink after a long trip → What's the first local phrase you try to learn → Which part of arriving feels most confusing: signs, transport, or money → What small thing helps you relax after arriving → Who would you ask first if you needed help → What might surprise a visitor during their first hour in Japan → If I arrived in your town tonight, what should I do first
+*Shared:* EN replacement after the 2026-08-24 content-lead audit; Korean counterpart unchanged
 
 **3. A Japanese food everyone should try** `両国`
 *Opens:* "What food would you make me eat if I came to Japan?"
@@ -227,12 +233,10 @@ regret buying → would you buy it again
 *Moves:* `The best thing I've ___ is ___.` `chunk` · `I use it ___.` **(Core 12)**
 *Shared:* KR 2-1
 
-**10. Something you've recently got into** `story`
-*Opens:* "What's something new you might enjoy trying?"
-*Ladder:* what → how did you discover it → how often → who knows → do you prefer sharing interests
-or keeping them private → where does it go from here
-*Moves:* `I've been ___ing lately.` **(Core 52)** · `I got into it because ___.` **(Core 54)** `chunk`
-*Shared:* KR 2-2
+**10. The best part of your day lately** `story`
+*Opens:* "What was the best part of yesterday?"
+*Ladder:* What part of today have you enjoyed most → What time of day do you look forward to lately → What's a small routine that's making your days better → Who have you enjoyed spending time with lately → Where have you felt most relaxed lately → What ordinary thing made you smile this week → What would make tomorrow a really good day
+*Shared:* EN replacement after the 2026-08-24 content-lead audit; Korean counterpart unchanged
 
 **11. A show you can't stop watching** `story`
 *Opens:* "Are you watching any shows at the moment?"
@@ -358,12 +362,10 @@ gets popular → what makes a place worth keeping quiet
 *Moves:* `I'd rather keep ___ quiet.` **(Core 97)** `chunk` · `It's been there ___.` **(Core 51)** `chunk`
 *Shared:* KR 3-7
 
-**28. A book you chose for someone else** `story`
-*Opens:* "Who would you enjoy choosing a book for?"
-*Ladder:* what → who for → why that book → how would you know it fit → what makes a good book gift →
-what would you choose for me
-*Moves:* `I bought it for ___.` **(Core 32)** · `I don't know if they ___.` **(Core 62)**
-*Shared:* KR 3-8
+**28. A gift that was exactly right** `story`
+*Opens:* "What's the last gift you received?"
+*Ladder:* What's a gift you still use → Who is easiest for you to choose a gift for → What's a gift that showed someone really knew you → Would you rather receive something useful or something surprising → What's a good gift that doesn't cost much → When is it better to ask what someone wants → What small gift would you choose for me
+*Shared:* EN replacement after the 2026-08-24 content-lead audit; Korean counterpart unchanged
 
 **29. A hobby other people underestimate** `story`
 *Opens:* "What's a hobby that is more interesting than it looks?"
@@ -372,12 +374,10 @@ in it → what would convince me to try
 *Moves:* `People think it's ___, but ___.` **(Core 56)** · `The best part is ___.` **(Core 103)** `chunk`
 *Shared:* KR 3-9
 
-**30. Something in your room you would never throw away** `story`
-*Opens:* "What kind of object is hardest to throw away?"
-*Ladder:* what → how did you get it → how long → who else knows it matters → what have you thrown
-away and regretted → what will you still have in ten years
-*Moves:* `I've had it since ___.` **(Core 51)** `chunk` · `I keep it because ___.` **(Core 54)**
-*Shared:* KR 3-10
+**30. Your favorite corner at home** `story`
+*Opens:* "Where do you sit most often at home?"
+*Ladder:* What makes one corner of a home feel comfortable → What can you see from your favorite spot at home → Where do you go at home when you need a break → What object makes your room feel like yours → What's one thing you would change about your room → Which room feels most different in the morning and at night → If you described your room to me, what would you mention first
+*Shared:* EN replacement after the 2026-08-24 content-lead audit; Korean counterpart unchanged
 
 **31. What you actually wear** `story`
 *Opens:* "What colour is most of your wardrobe?"
@@ -543,12 +543,10 @@ unresolved differences → when not to reconcile → fair repair
 *Moves:* `I'm usually the one who ___.` **(Core 55)** · `It took us ___ to ___.` **(Core 51)** `chunk`
 *Shared:* KR 5-6
 
-**53. Why some friendships fade** `opinion` `深く`
-*Opens:* "Why do people's social circles change over time?"
-*Ladder:* changing circles → changing routines → drifting while caring → nobody's fault → main causes →
-normal transition or problem → worth renewing → responding thoughtfully
-*Moves:* `It's not that ___, it's more that ___.` **(Core 89)** · `Overall, I'd say ___.` **(Core 117)** `chunk`
-*Shared:* KR 5-7
+**53. Someone you can completely relax around** `opinion` `深く`
+*Opens:* "Who makes it easiest for you to relax and be yourself?"
+*Ladder:* What's something you can do around them that you wouldn't do with everyone → What makes you feel safe around them → Do you need to talk, or is comfortable silence enough → Has this person changed the way you see yourself → Can the same person make you feel relaxed in every situation → What side of you do they bring out most → Now the opposite: what kind of person makes you watch every word
+*Shared:* EN replacement after the 2026-08-24 content-lead audit; Korean counterpart unchanged
 
 **54. The person you talk to most** `story`
 *Opens:* "What makes someone easy to talk to?"
@@ -590,12 +588,10 @@ stays off-limits → rebuilding trust → stating a boundary → one green flag
 *Moves:* `The moment someone says ___, I'm done.` **(Core 58)** · `I couldn't get past ___.` `chunk`
 *Shared:* KR 6-2
 
-**59. Something you could never compromise on in a partner** `story` `深く`
-*Opens:* "What's one thing you could never compromise on in a partner?"
-*Ladder:* one non-negotiable → why preferences become boundaries → safe flexibility → what changes
-with age → why boundaries get judged → when to reconsider → incompatible boundaries → no control
-*Moves:* `I could live without ___, but not ___.` **(Core 66, Core 56)** · `It's not negotiable.` `chunk`
-*Shared:* KR 6-3
+**59. A date you would actually enjoy** `story` `深く`
+*Opens:* "Which sounds better for a first date: coffee, a meal, a walk, or an activity?"
+*Ladder:* What would make that date feel relaxed rather than awkward → Would you rather talk the whole time or have an activity to focus on → Would you want the other person to plan everything, or decide together → What's one small detail that could make the date memorable → What would make you want to end the date early → Does a good date need romance, or can it simply be fun → Now the opposite: what popular date idea would be terrible for you
+*Shared:* EN replacement after the 2026-08-24 content-lead audit; Korean counterpart unchanged
 
 **60. A relationship habit you know you should change** `story` `深く`
 *Opens:* "Which relationship habit do you think is hardest to change?"
@@ -645,13 +641,10 @@ without pride → work worth being known for
 *Moves:* `I was actually proud of ___.` **(Core 30)** · `Nobody said anything, but ___.` **(Core 56)**
 *Shared:* KR 7-2
 
-**66. A moment when you felt successful** `story`
-*Opens:* "Which small success feels best: arriving on time, cooking well, or finishing a task?"
-*Ladder:* what comes before → being witnessed → the feeling → what remains → meaningful progress →
-how definitions change
-*Moves:* `It wasn't big, but ___.` **(Core 56)** · `That's when I felt ___.` **(Core 58)**
-*Shared:* KR 7-3 · deliberately **not** "what is success" — that title is the essay prompt this
-track exists to avoid, and this opening line is what rescues it
+**66. A boring task you secretly enjoy** `story`
+*Opens:* "Which boring task do you mind least: cleaning, sorting, or waiting?"
+*Ladder:* What's a repetitive task you sometimes enjoy → What can make a boring task feel satisfying → Do you prefer doing repetitive tasks alone or with someone → What do you listen to while doing repetitive work → Which boring task do you always put off → When is it worth paying someone else to do a boring task → What small change would make your least favorite task easier
+*Shared:* EN replacement after the 2026-08-24 content-lead audit; Korean counterpart unchanged
 
 **67. Something you're trying to get better at** `story`
 *Opens:* "What skill would you most like to improve?"
@@ -681,11 +674,10 @@ stay human
 *Moves:* `I use it for ___ now.` **(Core 12)** · `It still can't ___.` **(Core 18)**
 *Shared:* KR 7-7
 
-**71. A time you seriously considered changing careers** `story` `深く`
-*Opens:* "What makes someone seriously consider changing careers?"
-*Ladder:* pressure → attraction → risk → rational delay → reversible experiment → useful perspective
-*Moves:* `I came close to ___ing.` `chunk` · `What stopped me was ___.` **(Core 103)** `chunk`
-*Shared:* KR 7-8
+**71. A job benefit you would actually use** `story` `深く`
+*Opens:* "Which would you choose: more paid vacation, flexible hours, or free lunch?"
+*Ladder:* Which job benefit would improve your ordinary week most → Which job benefit sounds good but you probably wouldn't use → Would you accept slightly lower pay for a four-day workweek → Which matters more: flexible hours or a predictable schedule → What is one benefit every job should offer → Can a good job benefit ever be a sign of a bad workplace? → Besides pay, what would make you stay at a job longer
+*Shared:* EN replacement after the 2026-08-24 content-lead audit; Korean counterpart unchanged
 
 **72. Someone you learned a lot from** `story` `深く`
 *Opens:* "What makes a manager, teacher, or coach worth learning from?"
@@ -694,14 +686,10 @@ advice → helping people become independent
 *Moves:* `___ was the kind of person who ___.` **(Core 55)** · `What made the difference was ___.` **(Core 103)** `chunk`
 *Shared:* KR 7-9
 
-**73. What a normal work or school day looks like where you live** `両国`
-*Opens:* "What time do people usually finish work or school where you live?"
-*Ladder:* official versus actual → leaving before others → local labels → tutor's example → comparing
-settings → a fair change
-*Moves:* `Officially it's ___, but ___.` **(Core 56)** · `Nobody actually ___.` **(Core 15)**
-*Shared:* KR 1-6, **moved here and reworded.** In Korean it sat in 두 나라 사이 and asked only about
-companies, which excludes students, homemakers and retirees — the exclusion 일과 돈's own note warns
-against. Opening on *leaving time* lets anyone answer.
+**73. What a real lunch break looks like where you live** `両国`
+*Opens:* "What do people usually eat for lunch on a work or school day where you live?"
+*Ladder:* How long does a real lunch break usually last → Do people usually eat alone or with coworkers or classmates → What makes a lunch break feel like a real break → When do people skip lunch or eat at their desk → What lunch habit from another country would you like to try → Should people be expected to answer work messages during lunch → What one change would improve lunch breaks where you live
+*Shared:* EN replacement after the 2026-08-24 content-lead audit; Korean counterpart unchanged
 
 **74. What your workday actually looks like** `story`
 *Opens:* "Choose any recent two-hour period. What filled that time?"
@@ -743,7 +731,7 @@ nicknames → where friendliness ends
 *Moves:* `Everyone called me ___.` `chunk` · `I never found out who ___.` **(Core 62)**
 *Shared:* KR 8-3
 
-**79. Something you hated as a child but love now** `story`
+**79. A food you hated as a child but like now** `story`
 *Opens:* "Which food do many children dislike but learn to enjoy later?"
 *Ladder:* what makes it difficult → what changes the response → how tastes develop → one lasting dislike
 → respecting preferences → what may change with age
@@ -785,12 +773,10 @@ meet → what you would ask → how returning might feel
 *Moves:* `I'd go back to ___.` **(Core 66)** · `I wouldn't change it, I'd just ___.` **(Core 66)**
 *Shared:* KR 8-9
 
-**85. A turning point in your life** `story` `深く`
-*Opens:* "Think of a small choice that changed someone's life. What happened?"
-*Ladder:* one example → when its importance became clear → plausible alternative → strongest influence
-→ what might differ now → luck versus choice
-*Moves:* `That's when everything ___.` **(Core 58)** · `If that hadn't happened, ___.` `chunk`
-*Shared:* KR 8-10
+**85. A family tradition that changed as you grew up** `story` `深く`
+*Opens:* "Which family tradition do you remember most clearly?"
+*Ladder:* What small detail made that tradition feel special → Who kept the tradition going → How did the tradition change as people got older or moved away → Which part of an old family tradition is worth keeping → What part would you happily change or stop → Can a new family tradition become meaningful quickly → What tradition would you like to start for the future
+*Shared:* EN replacement after the 2026-08-24 content-lead audit; Korean counterpart unchanged
 
 **86. What you were like as a child** `story`
 *Opens:* "What were you like as a child?"
@@ -917,12 +903,10 @@ when usefulness becomes a time sink → healthy habits → advice for a fourteen
 *Moves:* `I'd last about ___.` **(Core 51)** `chunk` · `It's not so much ___ as ___.` **(Core 89)** `chunk`
 *Shared:* KR 10-1
 
-**102. What AI gets wrong about human work** `opinion`
-*Opens:* "What is one thing AI does badly when it tries to do human work?"
-*Ladder:* choose one role → missing context → one observable example → useful capability → blind spot
-→ responsibility humans keep → how the role may change
-*Moves:* `It still can't ___.` **(Core 18)** · `That suggests that ___.` **(Core 99)** `chunk`
-*Shared:* KR 10-3
+**102. A convenience you could live without** `opinion`
+*Opens:* "Which could you give up for a week: delivery, streaming, or same-day shipping?"
+*Ladder:* Which everyday convenience saves you the most time → Which convenience sometimes makes things less enjoyable → What can people forget how to do because an app or service does it for them → Which convenience creates the most unnecessary waste → When can faster service put too much pressure on workers → Which convenience would you avoid if it needed too much personal data → When would you choose the slower option even if both cost the same
+*Shared:* EN replacement after the 2026-08-24 content-lead audit; Korean counterpart unchanged
 
 **103. How much money is enough?** `opinion` `深く`
 *Opens:* "When someone says, ‘I have enough money,’ what do you imagine they can afford?"
@@ -938,13 +922,10 @@ prevents → conditions that change the answer → can one age be best → what 
 *Moves:* `If anything, ___.` **(Core 116)** `chunk` · `That's true, but it doesn't account for ___.` **(Core 115)** `chunk`
 *Shared:* KR 10-5
 
-**105. A decision worth revisiting** `opinion` `深く`
-*Opens:* "Would you rather change a movie ending or a real historical decision?"
-*Ladder:* alternative choice → would it work → actual gains and costs → alternative gains and costs →
-why the original made sense → useful regret → what “no regrets” really means
-*Moves:* `I'd have ___ differently.` `chunk` · `It still made sense at the time.` `chunk`
-*Shared:* KR 10-6 · the former personal title assumed regret; the bounded title and opening let the
-learner choose a historical, fictional or everyday case instead of giving a prepared confession
+**105. When it's okay to cancel plans** `opinion` `深く`
+*Opens:* "What is a good reason to cancel plans at the last minute?"
+*Ladder:* How much notice feels fair when someone cancels → Is a text message enough, or should the person call → When should someone offer to pay for a cost caused by cancelling → How many cancellations would make you stop inviting someone → Can being exhausted be a good enough reason to cancel → What makes an apology for cancelling feel sincere → Which plan would you almost never cancel
+*Shared:* EN replacement after the 2026-08-24 content-lead audit; Korean counterpart unchanged
 
 **106. What speaking English has made you notice** `opinion`
 *Opens:* "What has speaking English made you notice about Japanese?"
@@ -966,7 +947,10 @@ real scene → a time you chose the opposite → change the conditions → what 
 where your choice flips. Neither side is correct, and **the tutor must be able to give their own
 pick and a reason** — otherwise it is a quiz.*
 
-**107. More money or more time?** — *"If tomorrow came with one extra hour or fifty extra dollars, which would help more?"* `KR 11-1`
+**107. Do it yourself or pay someone?** — *"If tomorrow came with one extra hour or fifty extra dollars, which would help more?"* `KR 11-1`
+*Opens:* "What’s one job at home you usually do yourself?"
+*Ladder:* What’s one job you’d happily pay someone else to do → If some furniture arrived in a box, would you build it yourself or pay for help → When is paying someone worth the time it saves → What’s something you learned because you didn’t want to pay for help → Which job would you never try without a professional → If a friend offered free help, what would you still prefer to do yourself → If you suddenly earned more, what would you stop doing yourself first
+*Shared:* EN replacement after the 2026-08-24 content-lead audit; Korean counterpart unchanged
 **108. A hundred friends or three close ones?** — *"For one difficult week, would you rather have a hundred friendly contacts or three close friends?"* `KR 11-2`
 **109. Endless summer or endless winter?** — *"If one season had to last all year, would you choose summer or winter?"* `KR 11-3`
 **110. Morning person or night owl?** — *"For your most important tasks, would you rather start early or work late?"* `KR 11-4`
@@ -976,10 +960,16 @@ pick and a reason** — otherwise it is a quiz.*
 **114. A summer without internet or air conditioning?** — *"For one summer, would you give up internet or air conditioning?"* `KR 11-8`
 **115. Better work-life balance or a higher salary?** — *"For the next year, would you choose more free time or a higher income?"* `KR 11-9`
 **116. Working from home or going into the office?** — *"For focused work, would you choose home or a shared workplace?"* `KR 11-10`
-**117. Studying in a café or at home?** — *"For two hours of serious study, would you choose a café or home?"* `KR 11-11`
+**117. Learn on your own or take a class?** — *"For two hours of serious study, would you choose a café or home?"* `KR 11-11`
+*Opens:* "What’s one skill you taught yourself?"
+*Ladder:* What’s one class that was worth your time → If you started a new language or instrument, would you learn alone or take a class → Which part of learning is easier to do alone → What skill needs feedback from another person → Would a free online course keep you motivated for three months → When is a class worth paying for → What would make you switch from one learning method to the other
+*Shared:* EN replacement after the 2026-08-24 content-lead audit; Korean counterpart unchanged
 **118. Shopping online or in a shop?** — *"For an important purchase, would you rather buy online or in a shop?"* `KR 11-12`
 **119. Remembering everything or forgetting bad memories?** — *"Would you rather remember every ordinary detail or be able to forget painful memories?"* `KR 11-13`
-**120. Being rich and anonymous or respected on an ordinary income?** — *"Would you rather be rich and unknown or respected on an average income?"* `KR 11-14` `深く`
+**120. Praise from one person or recognition from many?** — *"Would you rather be rich and unknown or respected on an average income?"* `KR 11-14` `深く`
+*Opens:* "Whose praise means the most to you?"
+*Ladder:* Would you enjoy being praised in front of a large group → Would you rather receive a thoughtful message from one person or a public award → What could public recognition help you do next → When can public praise feel uncomfortable → What kind of achievement deserves public recognition → If recognition brought criticism too, would you still want it → What would make you switch to the other kind of praise
+*Shared:* EN replacement after the 2026-08-24 content-lead audit; Korean counterpart unchanged
 **121. Being great at one thing or good at many?** — *"Would you rather master one skill or become good at many?"* **NEW → KR**
 
 *Every entry's italic line is its `Opens:`* — each one converts an abstract either/or into a

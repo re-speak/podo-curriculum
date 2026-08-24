@@ -1178,7 +1178,7 @@ class DeckCheckTests(unittest.TestCase):
                     f'<div data-page-id="article">{rows}</div>'
                 )
 
-            full.write_text(deck("B2-C1 full", 12), encoding="utf-8")
+            full.write_text(deck("C1 full", 12), encoding="utf-8")
             accessible.write_text(deck("B1 accessible", 11), encoding="utf-8")
             errors, _ = check_deck.freetalk_pair_issues([full, accessible])
             self.assertTrue(any("different row counts" in item for item in errors[accessible]))

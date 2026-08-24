@@ -21,9 +21,9 @@ spec:
   # label. Both come from tools/course-copy.json, never from the TOC — a
   # generated title was English in all three slots and 72 characters long.
   title:
-    ko: 프리토킹 · 만약에 · B2–C1
-    en: Free talking · What if · B2–C1
-    ja: フリートーキング · もしも · B2–C1
+    ko: 프리토킹 · 만약에 · C1
+    en: Free talking · What if · C1
+    ja: フリートーキング · もしも · C1
 
   description:
     ko: 가상의 선택을 빠르게 고르고 이유와 결과를 확장해서 말한다.

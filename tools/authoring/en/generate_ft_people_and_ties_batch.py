@@ -11,6 +11,7 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import generate_ft_me_lately_batch as base
+import ft_question_bank
 import new_lesson
 
 
@@ -25,11 +26,11 @@ CANONICAL = {
 PRESERVED = {
     "accessible": (
         TRACK / "courses/talk-people-and-ties-accessible/lessons/49-how-accurate-is-your-mbti/lesson.html",
-        "a8a9b80bf45188b69a0a42a8eed771b33baf9d618c37c847110916943b7ea9e1",
+        "407b0132d8e795c526f80410278fe26ac2e767741202efdeb323797670868fde",
     ),
     "full": (
         TRACK / "courses/talk-people-and-ties-full/lessons/49-how-accurate-is-your-mbti/lesson.html",
-        "add4cf3c3e9d052ee6370da7f15da16ffeddfb0bd6243c1b6df92d0e2bc7700b",
+        "4b0464ca8a956345232373416c16ab2be3e40bf1d29c7ad6dda9c88b2b285e16",
     ),
 }
 esc = base.esc
@@ -955,7 +956,7 @@ def build(topic_no: int, variant: str) -> str:
     head, foot = new_lesson.split_shell(canonical)
     slug = f'{topic_no:02d}-{data["slug"]}'
     head = new_lesson.retarget(head, review_id=f"FT-{topic_no}", lesson_id=slug,
-        level="B1 accessible" if variant == "accessible" else "B2-C1 full",
+        level="B1 accessible" if variant == "accessible" else "C1 full",
         title=data["title"], title_ko=data["ko"], title_ja=data["ja"], version="2026-08-21")
     head = set_complete(head)
     head = base.set_meta(head, "podo:vocabulary-status", "reviewed")
@@ -972,7 +973,7 @@ def build(topic_no: int, variant: str) -> str:
     prompt_ids = (("warm-1", "WARM-UP 1"), ("warm-2", "WARM-UP 2")) + tuple((f"q{i}", f"QUESTION {i}") for i in range(1, 7))
     pages.extend(question_page(page_id, number, item, variant) for (page_id, number), item in zip(prompt_ids, data["prompts"], strict=True))
     pages.append(base.extract_page(canonical, "feedback"))
-    return new_lesson.redepth(head + "\n".join(pages) + foot, output_path(topic_no, variant))
+    return ft_question_bank.apply(new_lesson.redepth(head + "\n".join(pages) + foot, output_path(topic_no, variant)), topic_no, variant)
 
 
 def main() -> int:

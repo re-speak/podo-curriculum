@@ -13,9 +13,9 @@ spec:
       slug: 107-more-money-or-more-time
       week: 1
       title:
-        ko: "더 많은 돈, 더 많은 시간?"
-        en: "More money or more time?"
-        ja: "もっとお金、それとももっと時間？"
+        ko: "직접 하기, 돈 내고 맡기기?"
+        en: "Do it yourself or pay someone?"
+        ja: "自分でやる？お金を払って頼む？"
     - source: 108-a-hundred-friends-or-three-close-ones/lesson.html
       slug: 108-a-hundred-friends-or-three-close-ones
       week: 2
@@ -83,9 +83,9 @@ spec:
       slug: 117-studying-in-a-cafe-or-at-home
       week: 11
       title:
-        ko: "카페 공부, 집 공부?"
-        en: "Studying in a café or at home?"
-        ja: "カフェで勉強、それとも家？"
+        ko: "독학하기, 수업 듣기?"
+        en: "Learn on your own or take a class?"
+        ja: "独学する？教室で学ぶ？"
     - source: 118-shopping-online-or-in-a-shop/lesson.html
       slug: 118-shopping-online-or-in-a-shop
       week: 12
@@ -104,9 +104,9 @@ spec:
       slug: 120-being-rich-and-anonymous-or-respected-on-an-ordinary-income
       week: 14
       title:
-        ko: "부유하고 무명, 평범한 수입과 존중?"
-        en: "Being rich and anonymous or respected on an ordinary income?"
-        ja: "裕福で無名、それとも普通の収入で尊敬？"
+        ko: "한 사람의 칭찬, 많은 사람의 인정?"
+        en: "Praise from one person or recognition from many?"
+        ja: "一人からの言葉？多くの人からの評価？"
     - source: 121-being-great-at-one-thing-or-good-at-many/lesson.html
       slug: 121-being-great-at-one-thing-or-good-at-many
       week: 15

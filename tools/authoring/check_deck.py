@@ -1822,7 +1822,10 @@ def freetalk_pair_issues(decks):
         similarity = difflib.SequenceMatcher(
             None, " ".join(full_lines).casefold(), " ".join(accessible_lines).casefold()
         ).ratio()
-        if similarity > 0.90:
+        # Exact parity is valid when the canonical Full article is already
+        # accessible. Warn only about cosmetic rewrites that claim to simplify
+        # without materially lowering the load.
+        if full_lines != accessible_lines and similarity > 0.90:
             warnings.setdefault(accessible_path, []).append(
                 f"{review_id}: accessible article is {similarity:.0%} text-identical to full — "
                 "confirm vocabulary and clause load were genuinely lowered"

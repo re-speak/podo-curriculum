@@ -7,9 +7,9 @@ spec:
   week: 3
 
   title:
-    ko: "성공했다고 느낀 순간"
-    en: "A moment when you felt successful"
-    ja: "うまくいっていると感じた瞬間"
+    ko: "은근히 즐기는 단순한 일"
+    en: "A boring task you secretly enjoy"
+    ja: "実は嫌いではない地味な作業"
 
   decks:
     lecture:  { entry: lecture/index.html }
