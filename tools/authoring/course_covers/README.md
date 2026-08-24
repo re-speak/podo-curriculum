@@ -15,6 +15,8 @@ The visual grammar comes from Figma section `1367:5422` in file
   `#F0473D`;
 - white title, 70%-white secondary copy, a quiet oversized backdrop mark, and
   one glossy toy-like object anchored low/right.
+- word-safe title wrapping (never through an English word) and a fitted title
+  size, with secondary labels kept large enough to survive the 144×180 card.
 
 The motif PNGs were generated with the built-in image-generation tool. Every
 prompt used the Figma six-object sheet as a style reference and this shared
