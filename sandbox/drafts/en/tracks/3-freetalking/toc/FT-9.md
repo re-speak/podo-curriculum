@@ -33,7 +33,7 @@
 ## Neighbouring items
 
 - **Previous:** FT-8 · How you spend New Year's Day
-- **Next:** FT-10 · Something you've recently got into
+- **Next:** FT-10 · The best part of your day lately
 
 ## Authoring inputs — read in order
 

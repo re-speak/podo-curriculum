@@ -32,7 +32,7 @@
 
 ## Neighbouring items
 
-- **Previous:** FT-2 · What people often get wrong about Japan
+- **Previous:** FT-2 · The first hour in a new country
 - **Next:** FT-4 · A table manner that differs between countries
 
 ## Authoring inputs — read in order

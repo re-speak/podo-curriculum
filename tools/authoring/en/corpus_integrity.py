@@ -51,7 +51,6 @@ LEGACY_FT_CLAIM_WAIVERS = {
         for variant in ("accessible", "full")
         for number, slug in (
             (1, "this-surprised-me"),
-            (2, "what-people-get-wrong-about-japan"),
             (3, "a-japanese-food-everyone-should-try"),
             (4, "a-table-manner-that-differs"),
             (5, "a-place-you-would-show-a-visitor"),

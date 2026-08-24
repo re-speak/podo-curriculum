@@ -294,9 +294,9 @@
     },
     "talk-between-two-countries-full": {
       "title": {
-        "ko": "프리토킹 · 두 나라 사이 · B2–C1",
-        "en": "Free talking · Two countries · B2–C1",
-        "ja": "フリートーキング · ふたつの国 · B2–C1"
+        "ko": "프리토킹 · 두 나라 사이 · C1",
+        "en": "Free talking · Two countries · C1",
+        "ja": "フリートーキング · ふたつの国 · C1"
       },
       "description": {
         "ko": "다른 나라에서 놀란 점을 설명하고, 일본에 온 사람은 무엇에 놀랄지 말한다.",
@@ -318,9 +318,9 @@
     },
     "talk-me-lately-full": {
       "title": {
-        "ko": "프리토킹 · 요즘의 나 · B2–C1",
-        "en": "Free talking · Me lately · B2–C1",
-        "ja": "フリートーキング · 最近のわたし · B2–C1"
+        "ko": "프리토킹 · 요즘의 나 · C1",
+        "en": "Free talking · Me lately · C1",
+        "ja": "フリートーキング · 最近のわたし · C1"
       },
       "description": {
         "ko": "최근 경험을 구체적으로 꺼내 길게 말한다.",
@@ -342,9 +342,9 @@
     },
     "talk-things-i-like-full": {
       "title": {
-        "ko": "프리토킹 · 좋아하는 것 · B2–C1",
-        "en": "Free talking · Things I like · B2–C1",
-        "ja": "フリートーキング · 好きなもの · B2–C1"
+        "ko": "프리토킹 · 좋아하는 것 · C1",
+        "en": "Free talking · Things I like · C1",
+        "ja": "フリートーキング · 好きなもの · C1"
       },
       "description": {
         "ko": "좋아하는 대상과 이유를 구체적인 경험으로 설명한다.",
@@ -366,9 +366,9 @@
     },
     "talk-small-things-full": {
       "title": {
-        "ko": "프리토킹 · 사소한 것들 · B2–C1",
-        "en": "Free talking · Small things · B2–C1",
-        "ja": "フリートーキング · ささいなこと · B2–C1"
+        "ko": "프리토킹 · 사소한 것들 · C1",
+        "en": "Free talking · Small things · C1",
+        "ja": "フリートーキング · ささいなこと · C1"
       },
       "description": {
         "ko": "사소하고 웃긴 경험을 구체적으로 풀어 말한다.",
@@ -390,9 +390,9 @@
     },
     "talk-people-and-ties-full": {
       "title": {
-        "ko": "프리토킹 · 사람과 관계 · B2–C1",
-        "en": "Free talking · People and ties · B2–C1",
-        "ja": "フリートーキング · 人と関係 · B2–C1"
+        "ko": "프리토킹 · 사람과 관계 · C1",
+        "en": "Free talking · People and ties · C1",
+        "ja": "フリートーキング · 人と関係 · C1"
       },
       "description": {
         "ko": "실제 관계 경험을 꺼내고 그 경험에서 생긴 의견을 설명한다.",
@@ -414,9 +414,9 @@
     },
     "talk-love-and-marriage-full": {
       "title": {
-        "ko": "프리토킹 · 연애와 결혼 · B2–C1",
-        "en": "Free talking · Love and marriage · B2–C1",
-        "ja": "フリートーキング · 恋愛と結婚 · B2–C1"
+        "ko": "프리토킹 · 연애와 결혼 · C1",
+        "en": "Free talking · Love and marriage · C1",
+        "ja": "フリートーキング · 恋愛と結婚 · C1"
       },
       "description": {
         "ko": "민감도를 조절하며 연애와 결혼 경험·생각을 말한다.",
@@ -438,9 +438,9 @@
     },
     "talk-work-and-money-full": {
       "title": {
-        "ko": "프리토킹 · 일과 돈 · B2–C1",
-        "en": "Free talking · Work and money · B2–C1",
-        "ja": "フリートーキング · 仕事とお金 · B2–C1"
+        "ko": "프리토킹 · 일과 돈 · C1",
+        "en": "Free talking · Work and money · C1",
+        "ja": "フリートーキング · 仕事とお金 · C1"
       },
       "description": {
         "ko": "숫자와 장면이 있는 일·돈 경험을 말한다.",
@@ -462,9 +462,9 @@
     },
     "talk-what-came-before-full": {
       "title": {
-        "ko": "프리토킹 · 지나온 것 · B2–C1",
-        "en": "Free talking · What came before · B2–C1",
-        "ja": "フリートーキング · 過ぎてきたもの · B2–C1"
+        "ko": "프리토킹 · 지나온 것 · C1",
+        "en": "Free talking · What came before · C1",
+        "ja": "フリートーキング · 過ぎてきたもの · C1"
       },
       "description": {
         "ko": "이미 겪은 기억을 시간 순서와 디테일로 이야기한다.",
@@ -486,9 +486,9 @@
     },
     "talk-what-if-full": {
       "title": {
-        "ko": "프리토킹 · 만약에 · B2–C1",
-        "en": "Free talking · What if · B2–C1",
-        "ja": "フリートーキング · もしも · B2–C1"
+        "ko": "프리토킹 · 만약에 · C1",
+        "en": "Free talking · What if · C1",
+        "ja": "フリートーキング · もしも · C1"
       },
       "description": {
         "ko": "가상의 선택을 빠르게 고르고 이유와 결과를 확장해서 말한다.",
@@ -510,9 +510,9 @@
     },
     "talk-worth-thinking-about-full": {
       "title": {
-        "ko": "프리토킹 · 생각해 볼 것 · B2–C1",
-        "en": "Free talking · Worth a thought · B2–C1",
-        "ja": "フリートーキング · 考えたいこと · B2–C1"
+        "ko": "프리토킹 · 생각해 볼 것 · C1",
+        "en": "Free talking · Worth a thought · C1",
+        "ja": "フリートーキング · 考えたいこと · C1"
       },
       "description": {
         "ko": "일상에서 답할 수 있는 근거로 의견을 말하고 반대 입장까지 검토한다.",
@@ -534,9 +534,9 @@
     },
     "talk-balance-games-full": {
       "title": {
-        "ko": "프리토킹 · 밸런스 게임 · B2–C1",
-        "en": "Free talking · Balance games · B2–C1",
-        "ja": "フリートーキング · 究極の二択 · B2–C1"
+        "ko": "프리토킹 · 밸런스 게임 · C1",
+        "en": "Free talking · Balance games · C1",
+        "ja": "フリートーキング · 究極の二択 · C1"
       },
       "description": {
         "ko": "두 선택 중 하나를 빠르게 고르고, 구체적인 생활 장면과 조건 변화로 선택의 이유를 길게 설명한다.",

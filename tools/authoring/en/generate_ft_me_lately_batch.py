@@ -19,6 +19,7 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import generate_ft_course_batch as ft_contract
 import ft_conversation_rewrites_2_33 as conversation_rewrites
+import ft_question_bank
 import new_lesson
 
 
@@ -32,11 +33,11 @@ CANONICAL = {
 PRESERVED_FT9 = {
     "accessible": (
         TRACK / "courses/talk-me-lately-accessible/lessons/09-a-purchase-that-was-worth-it/lesson.html",
-        "25f28f342b575a98a105a6495e2ba6e79c0180c9ac54fa3e0601f3933a97ed04",
+        "dfdde5570c095a4c613cc8f58a0746e3b93998ddaad37cd642c0aa69f3190a19",
     ),
     "full": (
         TRACK / "courses/talk-me-lately-full/lessons/09-a-purchase-that-was-worth-it/lesson.html",
-        "cc3d40ff4cb9c06214c3c4cc4301c0d8d6edb8a699decc5f66d8ed493208cd5e",
+        "09bdd2bece5c85a501183f83423be22ca720b411f033438afe3d77562bb3248c",
     ),
 }
 
@@ -773,7 +774,7 @@ def build(topic_no: int, variant: str) -> str:
     canonical = CANONICAL[variant].read_text(encoding="utf-8")
     head, foot = new_lesson.split_shell(canonical)
     slug = f'{topic_no:02d}-{topic["slug"]}'
-    level = "B1 accessible" if variant == "accessible" else "B2-C1 full"
+    level = "B1 accessible" if variant == "accessible" else "C1 full"
     head = new_lesson.retarget(
         head,
         review_id=f"FT-{topic_no}", lesson_id=slug, level=level,
@@ -808,7 +809,7 @@ def build(topic_no: int, variant: str) -> str:
     )
     pages.append(extract_page(canonical, "feedback"))
     output = TRACK / "courses" / f"{COURSE}-{variant}" / "lessons" / slug / "lesson.html"
-    return new_lesson.redepth(head + "\n".join(pages) + foot, output)
+    return ft_question_bank.apply(new_lesson.redepth(head + "\n".join(pages) + foot, output), topic_no, variant)
 
 
 def main() -> int:
