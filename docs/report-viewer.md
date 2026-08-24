@@ -77,6 +77,15 @@ them without carrying the tutor's controls:
 
 `report-viewer.py --check` compares both against the decks.
 
+## Published runtime
+
+The viewer cannot run directly from jsDelivr: repository HTML is returned as
+`text/plain` with `X-Content-Type-Options: nosniff`. `publish-shared.py` therefore
+publishes the complete versioned `shared/{view,css,js,assets}` tree to the GCS
+mirror configured in `curriculum.yaml`. Keeping the complete tree together is
+required because the generated viewer deliberately uses relative runtime URLs.
+An existing version is byte-compared and never overwritten.
+
 ## Known, not fixed here
 
 The report header reads 「体験レッスン・25分」 in every deck. That is right for the

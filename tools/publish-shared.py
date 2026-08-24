@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Publish `shared/{css,js}` to the public mirror as an immutable tag.
+Publish `shared/{css,js,assets,view}` to immutable public mirrors.
 
 Decks do not carry their own copy of the shared runtime any more; they point at
 `spec.sharedRuntime` in curriculum.yaml. That URL has to be live *before* a deck
@@ -64,19 +64,68 @@ def run(cmd: list[str], cwd: pathlib.Path | None = None) -> str:
 
 
 def tree_differs(a: pathlib.Path, b: pathlib.Path) -> list[str]:
-    """Names that differ between two directories, compared by content."""
-    names = {p.name for p in a.iterdir() if p.is_file()} | \
-            {p.name for p in b.iterdir() if p.is_file()} if a.is_dir() and b.is_dir() else set()
+    """Relative paths that differ between two directories, compared by content."""
     if not a.is_dir():
         return ["<missing in published tag>"]
     if not b.is_dir():
-        return sorted(p.name for p in a.iterdir() if p.is_file())
+        return sorted(str(p.relative_to(a)) for p in a.rglob("*") if p.is_file())
+    names = ({str(p.relative_to(a)) for p in a.rglob("*") if p.is_file()} |
+             {str(p.relative_to(b)) for p in b.rglob("*") if p.is_file()})
     out = []
     for name in sorted(names):
         pa, pb = a / name, b / name
         if not pa.is_file() or not pb.is_file() or not filecmp.cmp(pa, pb, shallow=False):
             out.append(name)
     return out
+
+
+def publish_gcs(shared: pathlib.Path, version: str, config: dict, dry_run: bool) -> None:
+    """Create or verify the immutable GCS copy used for executable HTML."""
+    bucket, prefix = config["bucket"], config["prefix"].strip("/")
+    target = f"gs://{bucket}/{prefix}/{version}"
+    public = f"{config['publicBaseUrl'].rstrip('/')}/{version}"
+
+    with tempfile.TemporaryDirectory() as tmp:
+        root = pathlib.Path(tmp) / "shared"
+        root.mkdir()
+        for sub in MIRRORED:
+            shutil.copytree(shared / sub, root / sub)
+
+        exists = subprocess.run(
+            ["gcloud", "storage", "ls", f"{target}/**"],
+            capture_output=True, text=True,
+        ).returncode == 0
+        if exists:
+            remote = pathlib.Path(tmp) / "published"
+            remote.mkdir()
+            run(["gcloud", "storage", "rsync", target, str(remote), "--recursive"])
+            drift = tree_differs(root, remote)
+            if drift:
+                shown = "\n".join(f"    {item}" for item in drift[:20])
+                raise PublishError(
+                    f"GCS runtime {target} already exists with different bytes:\n{shown}\n"
+                    "Versioned runtime paths are immutable; bump sharedRuntime.version."
+                )
+            print(f"gcs     : ✓ {target} already matches ({len(list(root.rglob('*')))} entries)")
+        elif dry_run:
+            print(f"gcs     : would publish immutable runtime to {target}")
+            return
+        else:
+            run(["gcloud", "storage", "rsync", str(root), target, "--recursive",
+                 "--cache-control=public,max-age=31536000,immutable"])
+            print(f"gcs     : published immutable runtime to {target}")
+
+        if not dry_run:
+            rel = "view/report.html"
+            request = urllib.request.Request(f"{public}/{rel}", method="GET")
+            with urllib.request.urlopen(request, timeout=20) as response:
+                served, content_type = response.read(), response.headers.get_content_type()
+            if served != (shared / rel).read_bytes() or content_type != "text/html":
+                raise PublishError(
+                    f"public GCS verification failed for {public}/{rel}: "
+                    f"content-type={content_type}, bytes={len(served)}"
+                )
+            print(f"gcs     : ✓ {public}/{rel} ({content_type}, bytes match)")
 
 
 def cdn_bytes(url: str) -> tuple[bytes | None, str]:
@@ -174,6 +223,7 @@ def main() -> int:
 
     repo, version = rt["repo"], rt["version"]
     base, join = rt["baseUrl"], rt.get("join", "@")
+    gcs = rt.get("gcsMirror")
     shared = model.REPO / "shared"
     url = f"https://github.com/{repo}.git"
 
@@ -203,6 +253,8 @@ def main() -> int:
                 for sub, rel in (("css", "css/trial.css"), ("js", "js/activities.js")):
                     if (shared / rel).is_file():
                         print(verify_cdn(base, join, version, rel, shared / rel))
+                if gcs:
+                    publish_gcs(shared, version, gcs, args.dry_run)
                 if not args.dry_run:
                     # --dry-run 은 아무것도 건드리지 않는다. purge 는 바깥으로 나가는 부작용이다.
                     refresh_latest(shared, repo, base, join)
@@ -254,6 +306,8 @@ def main() -> int:
                 print(verify_cdn(base, join, version, rel, shared / rel))
 
         refresh_latest(shared, repo, base, join)
+        if gcs:
+            publish_gcs(shared, version, gcs, args.dry_run)
 
     print()
     print(f"✓ published. Now repoint the decks:  python3 tools/repoint-shared.py")
