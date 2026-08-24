@@ -7,9 +7,9 @@ spec:
   week: 10
 
   title:
-    ko: "인생의 전환점"
-    en: "A turning point in your life"
-    ja: "人生の転機"
+    ko: "자라면서 달라진 가족의 전통"
+    en: "A family tradition that changed as you grew up"
+    ja: "成長とともに変わった家族の習慣"
 
   decks:
     lecture:  { entry: lecture/index.html }

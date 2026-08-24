@@ -56,8 +56,12 @@ of *this folder* rather than of the language.
   about how to explain something, unrestricted searches for a memory or example, and choices whose
   categories overlap. When recall may fail, name two or three concrete footholds in the question or
   its rescue follow-up. Prefer direct verbs and concrete nouns (`Why wouldn't you trust AI with
-  that?`). Full may invite a deeper answer, but it
-  must not take longer to parse. Proofreading must include saying one plausible first answer aloud;
+  that?`). Write Full first as the most natural, interesting, immediately answerable version of
+  the conversation. Derive Accessible from it, changing a question only when its language or
+  processing load is a genuine B1 barrier. A short, natural question may—and usually should—stay
+  identical. Never rewrite merely to make the pair look different; see the level contract in
+  `tracks/3-freetalking/lesson-blueprint.md`.
+  Proofreading must include saying one plausible first answer aloud;
   grammaticality, word counts and structural checks do not prove conversational immediacy. Each
   follow-up set also needs a concrete route after `I don't know`, `none` or `never`; that rescue
   question must pass the same three-second test.

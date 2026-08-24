@@ -27,9 +27,9 @@ spec:
       slug: 66-a-moment-when-you-felt-successful
       week: 3
       title:
-        ko: "성공했다고 느낀 순간"
-        en: "A moment when you felt successful"
-        ja: "うまくいっていると感じた瞬間"
+        ko: "은근히 즐기는 단순한 일"
+        en: "A boring task you secretly enjoy"
+        ja: "実は嫌いではない地味な作業"
     - source: 67-something-youre-trying-to-get-better-at/lesson.html
       slug: 67-something-youre-trying-to-get-better-at
       week: 4
@@ -62,9 +62,9 @@ spec:
       slug: 71-a-time-you-seriously-considered-changing-careers
       week: 8
       title:
-        ko: "진로 변경을 진지하게 고민한 때"
-        en: "A time you seriously considered changing careers"
-        ja: "キャリア変更を真剣に考えたとき"
+        ko: "실제로 쓰고 싶은 복지 혜택"
+        en: "A job benefit you would actually use"
+        ja: "実際に使いたい仕事の福利厚生"
     - source: 72-someone-you-learned-a-lot-from/lesson.html
       slug: 72-someone-you-learned-a-lot-from
       week: 9
@@ -76,9 +76,9 @@ spec:
       slug: 73-what-a-normal-work-or-school-day-looks-like-where-you-live
       week: 10
       title:
-        ko: "사는 곳의 보통 일·학교 하루"
-        en: "What a normal work or school day looks like where you live"
-        ja: "住んでいる地域の普通の仕事・学校の一日"
+        ko: "내가 사는 곳의 진짜 점심시간"
+        en: "What a real lunch break looks like where you live"
+        ja: "住んでいる場所のリアルな昼休み"
     - source: 74-what-your-workday-actually-looks-like/lesson.html
       slug: 74-what-your-workday-actually-looks-like
       week: 11

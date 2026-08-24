@@ -33,7 +33,7 @@
 ## Neighbouring items
 
 - **Previous:** track opening
-- **Next:** FT-2 · What people often get wrong about Japan
+- **Next:** FT-2 · The first hour in a new country
 
 ## Authoring inputs — read in order
 

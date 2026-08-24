@@ -3,7 +3,7 @@ kind: Course
 metadata:
   # Generated from the approved 3-freetalking course cut.
   # LANG_TYPE is not stored here: podo-curriculum derives EN from courses/en/.
-  # podo:level: B2-C1
+  # podo:level: C1
   slug: talk-me-lately-full
 
 spec:
@@ -22,9 +22,9 @@ spec:
   # label. Both come from tools/course-copy.json, never from the TOC — a
   # generated title was English in all three slots and 72 characters long.
   title:
-    ko: 프리토킹 · 요즘의 나 · B2–C1
-    en: Free talking · Me lately · B2–C1
-    ja: フリートーキング · 最近のわたし · B2–C1
+    ko: 프리토킹 · 요즘의 나 · C1
+    en: Free talking · Me lately · C1
+    ja: フリートーキング · 最近のわたし · C1
 
   description:
     ko: 최근 경험을 구체적으로 꺼내 길게 말한다.

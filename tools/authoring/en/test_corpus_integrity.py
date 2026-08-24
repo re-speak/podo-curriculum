@@ -695,8 +695,8 @@ class FreetalkClaimMutationTests(unittest.TestCase):
         self.assertFalse(errors)
         return integrity._freetalk_claim_issues(parsed)
 
-    def test_waiver_set_is_exactly_twenty_paths(self) -> None:
-        self.assertEqual(len(integrity.LEGACY_FT_CLAIM_WAIVERS), 20)
+    def test_waiver_set_is_exactly_eighteen_paths(self) -> None:
+        self.assertEqual(len(integrity.LEGACY_FT_CLAIM_WAIVERS), 18)
         self.assertTrue(all(relative.endswith("/lesson.html") for relative in integrity.LEGACY_FT_CLAIM_WAIVERS))
 
     def test_unauthorized_legacy_claim_waiver_is_rejected(self) -> None:

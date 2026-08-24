@@ -19,7 +19,7 @@ import generate_core_nuance_at_work_batch as batch
 import vocabulary
 
 EXPECTED = set(batch.NUMBERS)
-CORE82_SHA256 = "ef2e4f77c900074c8ef8d6373445c6966ada1fc08bbd5c432a4fdf99d6d5e000"
+CORE82_SHA256 = "38e112173d0b62361c9e354085957c1e0000a71c0bec67fc8543b48fd18cde39"
 
 
 class CoreNuanceAtWorkBatchTests(unittest.TestCase):
@@ -79,6 +79,8 @@ class CoreNuanceAtWorkBatchTests(unittest.TestCase):
         # deck. Two of the four scripts had an English half commanding while
         # their own Japanese half invited (`言ってみましょう`); the two halves of
         # one line agree again.
+        # Bumped once more when stage gave English decks their approved
+        # English `Good Job!` completion stamp.
         self.assertEqual(hashlib.sha256(source).hexdigest(), CORE82_SHA256)
 
     def test_core82_translation_hints_support_content_without_revealing_the_frame(self):

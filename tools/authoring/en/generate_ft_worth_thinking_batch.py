@@ -789,7 +789,7 @@ def build(topic_no: int, variant: str) -> str:
     data = TOPICS[topic_no]
     head, foot = new_lesson.split_shell(canonical)
     slug = f'{topic_no:02d}-{data["slug"]}'
-    head = new_lesson.retarget(head, review_id=f"FT-{topic_no}", lesson_id=slug, level="B1 accessible" if variant == "accessible" else "B2-C1 full", title=data["title"], title_ko=data["ko"], title_ja=data["ja"], version="2026-08-20")
+    head = new_lesson.retarget(head, review_id=f"FT-{topic_no}", lesson_id=slug, level="B1 accessible" if variant == "accessible" else "C1 full", title=data["title"], title_ko=data["ko"], title_ja=data["ja"], version="2026-08-20")
     head = _set_pending(head)
     head = base.set_meta(head, "podo:vocabulary-status", "reviewed")
     for category in ("new", "recycled", "assumed", "receptive"):
@@ -799,7 +799,8 @@ def build(topic_no: int, variant: str) -> str:
     prompt_ids = (("warm-1", "WARM-UP 1"), ("warm-2", "WARM-UP 2")) + tuple((f"q{i}", f"QUESTION {i}") for i in range(1, 7))
     pages.extend(_question_page(page_id, number, item, variant, base) for (page_id, number), item in zip(prompt_ids, data["prompts"], strict=True))
     pages.append(base.extract_page(canonical, "feedback"))
-    return new_lesson.redepth(head + "\n".join(pages) + foot, output_path(topic_no, variant))
+    import ft_question_bank  # noqa: PLC0415
+    return ft_question_bank.apply(new_lesson.redepth(head + "\n".join(pages) + foot, output_path(topic_no, variant)), topic_no, variant)
 
 
 def main() -> int:

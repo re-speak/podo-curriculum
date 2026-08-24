@@ -16,6 +16,7 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import generate_ft_me_lately_batch as base
 import ft_conversation_rewrites_2_33 as conversation_rewrites
+import ft_question_bank
 import new_lesson
 
 
@@ -635,7 +636,7 @@ def build(topic_no: int, variant: str) -> str:
     canonical = CANONICAL[variant].read_text(encoding="utf-8")
     head, foot = new_lesson.split_shell(canonical)
     slug = f'{topic_no:02d}-{topic_data["slug"]}'
-    level = "B1 accessible" if variant == "accessible" else "B2-C1 full"
+    level = "B1 accessible" if variant == "accessible" else "C1 full"
     head = new_lesson.retarget(
         head,
         review_id=f"FT-{topic_no}",
@@ -671,7 +672,7 @@ def build(topic_no: int, variant: str) -> str:
     )
     pages.append(base.extract_page(canonical, "feedback"))
     output = TRACK / "courses" / f"{COURSE}-{variant}" / "lessons" / slug / "lesson.html"
-    return new_lesson.redepth(head + "\n".join(pages) + foot, output)
+    return ft_question_bank.apply(new_lesson.redepth(head + "\n".join(pages) + foot, output), topic_no, variant)
 
 
 def output_path(topic_no: int, variant: str) -> pathlib.Path:

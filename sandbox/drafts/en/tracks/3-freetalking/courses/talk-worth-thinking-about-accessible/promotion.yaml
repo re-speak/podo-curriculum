@@ -20,9 +20,9 @@ spec:
       slug: 102-what-ai-gets-wrong-about-human-work
       week: 2
       title:
-        ko: "AI가 인간의 일을 잘못 이해하는 부분"
-        en: "What AI gets wrong about human work"
-        ja: "AIが人の仕事を誤解するところ"
+        ko: "없어도 살 수 있는 편리한 것"
+        en: "A convenience you could live without"
+        ja: "なくても暮らせる便利なもの"
     - source: 103-how-much-money-is-enough/lesson.html
       slug: 103-how-much-money-is-enough
       week: 3
@@ -41,9 +41,9 @@ spec:
       slug: 105-a-decision-worth-revisiting
       week: 5
       title:
-        ko: "다시 생각해 볼 만한 결정"
-        en: "A decision worth revisiting"
-        ja: "見直す価値のある決断"
+        ko: "약속을 취소해도 괜찮을 때"
+        en: "When it's okay to cancel plans"
+        ja: "予定をキャンセルしてもよいとき"
     - source: 106-what-speaking-english-has-made-you-notice/lesson.html
       slug: 106-what-speaking-english-has-made-you-notice
       week: 6

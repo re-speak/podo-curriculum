@@ -7,9 +7,9 @@ spec:
   week: 10
 
   title:
-    ko: "방에서 절대 버리지 않을 물건"
-    en: "Something in your room you would never throw away"
-    ja: "部屋にある絶対に捨てないもの"
+    ko: "집에서 가장 좋아하는 한구석"
+    en: "Your favorite corner at home"
+    ja: "家の中のお気に入りの場所"
 
   decks:
     lecture:  { entry: lecture/index.html }

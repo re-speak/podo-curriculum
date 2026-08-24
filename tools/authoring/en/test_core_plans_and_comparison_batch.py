@@ -31,9 +31,11 @@ class CorePlansAndComparisonBatchTests(unittest.TestCase):
         #      lessons are copied from.
         #   2. 2026-08-23 — the approved shared activity scripts moved to the
         #      invitational form the tutor-register standard asks for.
+        #   3. 2026-08-24 — stage moved English completion pages to the
+        #      approved English `Good Job!` stamp.
         self.assertEqual(
             hashlib.sha256(preserved.read_bytes()).hexdigest(),
-            "157baf80f48314295d44bf3c147a6362453aa254ba89d6e2c269c769e92d7552",
+            "26c4e44eccbfb8a09e093f3b91b0fe42e4c73ee203e20a4e77ef77c13715c085",
         )
 
     def test_every_semantic_field_is_explicit(self):

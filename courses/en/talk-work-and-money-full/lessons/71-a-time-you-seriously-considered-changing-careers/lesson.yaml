@@ -7,9 +7,9 @@ spec:
   week: 8
 
   title:
-    ko: "진로 변경을 진지하게 고민한 때"
-    en: "A time you seriously considered changing careers"
-    ja: "キャリア変更を真剣に考えたとき"
+    ko: "실제로 쓰고 싶은 복지 혜택"
+    en: "A job benefit you would actually use"
+    ja: "実際に使いたい仕事の福利厚生"
 
   decks:
     lecture:  { entry: lecture/index.html }

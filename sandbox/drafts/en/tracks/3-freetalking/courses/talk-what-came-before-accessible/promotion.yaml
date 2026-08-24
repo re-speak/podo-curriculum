@@ -34,9 +34,9 @@ spec:
       slug: 79-something-you-hated-as-a-child-but-love-now
       week: 4
       title:
-        ko: "어릴 때 싫었지만 지금은 좋아하는 것"
-        en: "Something you hated as a child but love now"
-        ja: "子どもの頃は嫌いで今は好きなもの"
+        ko: "어릴 때는 싫어했지만 지금은 좋아하는 음식"
+        en: "A food you hated as a child but like now"
+        ja: "子どもの頃は嫌いだったけれど、今は好きな食べ物"
     - source: 80-a-mistake-people-still-remind-you-about/lesson.html
       slug: 80-a-mistake-people-still-remind-you-about
       week: 5
@@ -76,9 +76,9 @@ spec:
       slug: 85-a-turning-point-in-your-life
       week: 10
       title:
-        ko: "인생의 전환점"
-        en: "A turning point in your life"
-        ja: "人生の転機"
+        ko: "자라면서 달라진 가족의 전통"
+        en: "A family tradition that changed as you grew up"
+        ja: "成長とともに変わった家族の習慣"
     - source: 86-what-you-were-like-as-a-child/lesson.html
       slug: 86-what-you-were-like-as-a-child
       week: 11

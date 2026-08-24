@@ -3,7 +3,7 @@ kind: Course
 metadata:
   # Generated from the approved 3-freetalking course cut.
   # LANG_TYPE is not stored here: podo-curriculum derives EN from courses/en/.
-  # podo:level: B2-C1
+  # podo:level: C1
   slug: talk-people-and-ties-full
 
 spec:
@@ -22,9 +22,9 @@ spec:
   # label. Both come from tools/course-copy.json, never from the TOC — a
   # generated title was English in all three slots and 72 characters long.
   title:
-    ko: 프리토킹 · 사람과 관계 · B2–C1
-    en: Free talking · People and ties · B2–C1
-    ja: フリートーキング · 人と関係 · B2–C1
+    ko: 프리토킹 · 사람과 관계 · C1
+    en: Free talking · People and ties · C1
+    ja: フリートーキング · 人と関係 · C1
 
   description:
     ko: 실제 관계 경험을 꺼내고 그 경험에서 생긴 의견을 설명한다.

@@ -60,9 +60,11 @@ class CoreDailyLifeAndPastBatchTests(unittest.TestCase):
         #   2. the approved shared activity scripts moved from a bare imperative
         #      to the invitational form the tutor-register standard asks for, and
         #      this golden carries those scripts like every other deck.
+        #   3. the English completion stamp moved from the Korean artwork to the
+        #      approved English `Good Job!` asset on stage.
         self.assertEqual(
             digest,
-            "813b5f089c7dc4f4992cf9e99d2f5fc88d91349738c7fddc7e298d99e1af5153",
+            "a12432638faa9f146420a466276841b5a2758031d5e61a471a9a18729044c5d7",
         )
         core32 = vocabulary.parse(batch.PRESERVED.read_text(encoding="utf-8"))["categories"]
         self.assertEqual(
