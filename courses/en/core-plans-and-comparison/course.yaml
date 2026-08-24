@@ -31,6 +31,8 @@ spec:
     en: Talk about plans, rules and advice, and describe and compare things.
     ja: 予定・決まり・助言を話し、ものを描写して比べる。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

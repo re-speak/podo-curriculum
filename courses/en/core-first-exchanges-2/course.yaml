@@ -36,6 +36,8 @@ spec:
     en: Say what you do and what you don't, and ask for what you need.
     ja: することとしないことを言い、必要なものを頼む。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

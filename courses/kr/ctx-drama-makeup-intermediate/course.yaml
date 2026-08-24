@@ -33,6 +33,8 @@ spec:
     en: Say what hurt, clear up a misunderstanding, apologise, and end things — controlling the temperature throughout.
     ja: 不満を言葉にし、誤解を解き、謝り、関係を終わらせる言葉まで、感情の温度を調節しながら言える。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

@@ -33,6 +33,8 @@ spec:
     en: Give reasons and excuses, and set out a purpose and the conditions it needs.
     ja: 理由や言い訳を述べ、目的と条件を立てて何が必要かを説明する。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

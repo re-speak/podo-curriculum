@@ -31,6 +31,8 @@ spec:
     en: Bring up real experiences with people, and the opinions those experiences left you with.
     ja: 実際の人間関係の経験を出し、そこから生まれた考えを説明する。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

@@ -36,6 +36,8 @@ spec:
     en: Check in, clear immigration, confirm a number you did not hear, and get to your accommodation.
     ja: チェックイン、入国審査、聞き取れなかった数字の確認、宿までの移動まで、到着日の用事を片づける。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

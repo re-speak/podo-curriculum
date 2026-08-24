@@ -31,6 +31,8 @@ spec:
     en: Reframe the problem, make a conditional proposal, push back on an unsafe commitment, and break a deadlock.
     ja: 問題を捉え直し、条件つきで提案し、無理な約束を押し返し、膠着を動かす。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

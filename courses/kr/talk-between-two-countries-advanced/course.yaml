@@ -33,6 +33,8 @@ spec:
     en: Explain and compare the Korea–Japan differences the two of you are each half an expert in.
     ja: 互いに半分ずつ専門家である日韓の違いを説明し、比べる。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

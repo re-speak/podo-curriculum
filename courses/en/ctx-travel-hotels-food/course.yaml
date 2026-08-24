@@ -31,6 +31,8 @@ spec:
     en: Handle a room that is not ready, a dish you cannot eat, a wrong order, and a booking that has to change.
     ja: まだ使えない部屋、食べられない料理、間違った注文、変更したい予約に対処する。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []

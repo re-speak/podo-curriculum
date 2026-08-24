@@ -31,6 +31,8 @@ spec:
     en: Unpack the small, funny things that happen to you, in detail.
     ja: ささいで笑える経験を、具体的にほどいて話す。
 
+  thumbnail: assets/cover.png
+
   tutorGroups:
     allowRandom: []
     assignedOnly: []
