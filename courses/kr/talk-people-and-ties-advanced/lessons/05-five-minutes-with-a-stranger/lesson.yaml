@@ -23,6 +23,7 @@ spec:
     patterns: []
     canDo: 술자리에서 뭘 물어보나
     canDoJa: 飲みの席で何を聞くか
+    canDoEn: What do you ask over drinks
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-people-and-ties-advanced/lessons/05-five-minutes-with-a-stranger/lesson.html
 

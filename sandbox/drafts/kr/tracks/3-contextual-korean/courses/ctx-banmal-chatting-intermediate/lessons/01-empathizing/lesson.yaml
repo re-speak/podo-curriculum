@@ -21,6 +21,7 @@ spec:
       - ~(으)ㄹ 만하다
     canDo: 상대가 겪은 일에 공감하고, 그럴 만하다고 인정해 준다.
     canDoJa: 相手が経験したことに共感し、それも無理はないと認めてあげる。
+    canDoEn: "Empathise with what the other person went through, and grant that it was fair enough."
   scene: 친구가 오늘 있었던 일을 쏟아 놓는다. 들어 주는 쪽이 되었다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-banmal-chatting-intermediate · 1

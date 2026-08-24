@@ -23,6 +23,7 @@ spec:
     patterns: []
     canDo: 누가, 뭐라고 했나
     canDoJa: 誰が、何と言ったか
+    canDoEn: Who said it, and what
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-me-lately-intermediate/lessons/04-recent-compliment/lesson.html
 

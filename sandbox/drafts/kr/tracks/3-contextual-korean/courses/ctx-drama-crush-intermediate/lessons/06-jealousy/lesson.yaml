@@ -21,6 +21,7 @@ spec:
       - ~잖아
     canDo: 상대의 다른 관계를 떠보고, 신경 쓰인다고 인정한다.
     canDoJa: 相手のほかの関係を探りつつ、気になっていると認める。
+    canDoEn: "Sound out their other relationships, and admit that it bothers you."
   scene: 상대가 다른 사람 이름으로 온 연락을 보고 웃는다. 그걸 봤다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-crush-intermediate · 6

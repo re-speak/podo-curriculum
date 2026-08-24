@@ -23,6 +23,7 @@ spec:
     patterns: []
     canDo: 편의점·전철·택시·배달, 어느 쪽이 이기나
     canDoJa: コンビニ・電車・タクシー・デリバリー、どちらに軍配が上がるか
+    canDoEn: Convenience stores, trains, taxis, delivery — which country wins
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-between-two-countries-advanced/lessons/08-convenience-showdown/lesson.html
 

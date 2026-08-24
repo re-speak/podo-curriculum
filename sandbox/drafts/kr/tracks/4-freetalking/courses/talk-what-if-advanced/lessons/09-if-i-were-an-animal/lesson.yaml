@@ -20,6 +20,7 @@ spec:
       []
     canDo: 왜 그 동물인가
     canDoJa: なぜその動物なのか
+    canDoEn: "Why that animal"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-what-if-advanced · 9
 

@@ -22,8 +22,12 @@ spec:
     patternsJa:
     - "失敗したときの立て直し"
     - "~(으)면 좋겠어요"
+    patternsEn:
+    - "Recovering from a slip"
+    - "~(으)면 좋겠어요"
     canDo: 말이 짧았다고 사과해 수습하고, 말 놓기 제안을 완곡하게 거절한다.
     canDoJa: なれなれしい言い方だったと謝って収め、タメ口の提案を遠回しに断る。
+    canDoEn: "Apologise for being too familiar to patch it up, and turn down the offer gently."
   scene: 친한 줄 알고 말을 놨는데 분위기가 싸늘해졌다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-banmal-dropping-formality-upper-beginner · 10

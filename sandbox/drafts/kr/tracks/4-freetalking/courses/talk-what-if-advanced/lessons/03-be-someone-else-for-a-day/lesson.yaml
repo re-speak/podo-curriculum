@@ -20,6 +20,7 @@ spec:
       []
     canDo: 누구의 하루를 살아 볼까
     canDoJa: 誰の一日を生きてみるか
+    canDoEn: "Whose day would you live"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-what-if-advanced · 3
 

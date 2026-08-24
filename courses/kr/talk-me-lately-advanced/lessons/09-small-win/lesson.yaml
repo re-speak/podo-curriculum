@@ -23,6 +23,7 @@ spec:
     patterns: []
     canDo: 아무도 몰라주는 것
     canDoJa: 誰にもわかってもらえないこと
+    canDoEn: The thing nobody appreciates
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-me-lately-advanced/lessons/09-small-win/lesson.html
 

@@ -20,6 +20,7 @@ spec:
       []
     canDo: 남한테 사서 준 적 있는 책
     canDoJa: 人に買って贈ったことのある本
+    canDoEn: "A book you've bought for someone else"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-things-i-like-intermediate · 8
 

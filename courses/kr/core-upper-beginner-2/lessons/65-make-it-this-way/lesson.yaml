@@ -25,6 +25,7 @@ spec:
     - -게 해 주세요
     canDo: 어떤 상태가 되도록 해 달라고 구체적으로 부탁한다.
     canDoJa: どんな状態にしてほしいかを具体的に頼む。
+    canDoEn: Ask specifically for something to be brought to a particular state.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-upper-beginner-2/lessons/65-make-it-this-way/lesson.html
 

@@ -25,6 +25,7 @@ spec:
     - 제일 잘 ~
     canDo: 누가 어떤 포지션을 맡고 있는지 소개한다.
     canDoJa: 誰がどのポジションを担当しているかを紹介する。
+    canDoEn: Introduce who takes which position.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-talk-beginner/lessons/03-member-roles/lesson.html
 

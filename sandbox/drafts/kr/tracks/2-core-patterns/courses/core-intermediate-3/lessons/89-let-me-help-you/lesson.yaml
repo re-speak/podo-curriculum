@@ -21,6 +21,7 @@ spec:
       - 주다 / 받다
     canDo: 어른이나 손님을 위해 무언가를 해 드리겠다고 나선다.
     canDoJa: 目上の人やお客さんのために、何かをして差し上げると申し出る。
+    canDoEn: "Offer to do something for an elder or a guest."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-intermediate-3 · 89
 

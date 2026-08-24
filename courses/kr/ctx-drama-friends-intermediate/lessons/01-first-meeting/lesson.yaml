@@ -25,6 +25,7 @@ spec:
     - ~아/어도 돼요?
     canDo: 처음 본 사람에게 아는 사이인지 떠보고, 연락처를 물어본다.
     canDoJa: 初対面の人に、知り合いかどうかを探りつつ、連絡先を尋ねる。
+    canDoEn: Sound out a stranger on whether you've met, and ask for their number.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-friends-intermediate/lessons/01-first-meeting/lesson.html
 

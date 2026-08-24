@@ -25,6 +25,7 @@ spec:
     - ~아/어 주시겠어요?
     canDo: 반찬을 더 달라고 하고, 메뉴를 추가로 주문한다.
     canDoJa: おかずのおかわりを頼み、メニューを追加で注文する。
+    canDoEn: Ask for more side dishes, and order extra items.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-eating-out-upper-beginner/lessons/04-refills-and-extras/lesson.html
 

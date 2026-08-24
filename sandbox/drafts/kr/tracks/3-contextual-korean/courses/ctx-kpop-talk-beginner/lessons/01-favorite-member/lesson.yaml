@@ -21,6 +21,7 @@ spec:
       - 혹시 ~(으)세요?
     canDo: 자기 최애가 누구인지 소개하고, 상대가 그 그룹을 아는지 묻는다.
     canDoJa: 自分の推しが誰かを紹介し、相手がそのグループを知っているかを尋ねる。
+    canDoEn: "Introduce who your favourite is, and ask whether they know the group."
   scene: 온라인 팬 모임에서 처음 만난 사람과 인사를 나눈 직후. 아직 서로 존댓말이다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-kpop-talk-beginner · 1

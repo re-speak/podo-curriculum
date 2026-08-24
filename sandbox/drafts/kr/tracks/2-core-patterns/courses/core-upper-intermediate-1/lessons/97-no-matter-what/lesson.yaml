@@ -21,6 +21,7 @@ spec:
       - "-든지 -든지 / -든 -든"
     canDo: 어떤 조건이 붙어도 결과가 바뀌지 않는다고 못 박는다.
     canDoJa: どんな条件がついても結果は変わらないと念を押す。
+    canDoEn: "Insist that whatever condition is attached, the result does not change."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-upper-intermediate-1 · 97
 

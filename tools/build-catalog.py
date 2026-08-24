@@ -472,7 +472,7 @@ def lesson_entry(course: model.Course, lesson: model.Lesson, deck_hrefs: dict,
 
     # 낱자를 가르치는 과. 배우는 것은 글자 그 자체라, 낱자는 한 덩어리로 묶어 하나의
     # 칸에 넣는다 — 그 과가 얹는 글자 묶음이 하나의 배울 거리이지, 아홉 개가 아니다.
-    entry_chips_ja = None
+    entry_chips_ja: dict[str, list[str]] = {}
     letters = teaches.get("letters")
     if letters:
         chips = [" ".join(str(x) for x in letters)]
@@ -480,12 +480,11 @@ def lesson_entry(course: model.Course, lesson: model.Lesson, deck_hrefs: dict,
     else:
         chips = [str(x) for x in (teaches.get("patterns") or [])]
         # 패턴 자체는 배우는 한국어라 번역하지 않는다. 몇몇 줄에 붙은 설명·상호참조만
-        # 일본어를 따로 들고 있어서, 길이가 맞을 때만 통째로 갈아 끼운다.
-        pja = [str(x) for x in (teaches.get("patternsJa") or [])]
-        if pja and len(pja) == len(chips):
-            entry_chips_ja = pja
-        else:
-            entry_chips_ja = None
+        # 다른 언어를 따로 들고 있어서, 길이가 맞을 때만 통째로 갈아 끼운다.
+        for code in ("ja", "en"):
+            alt = [str(x) for x in (teaches.get(f"patterns{code.title()}") or [])]
+            if alt and len(alt) == len(chips):
+                entry_chips_ja[code] = alt
 
     entry = {
         "n": lesson.week,
@@ -503,18 +502,19 @@ def lesson_entry(course: model.Course, lesson: model.Lesson, deck_hrefs: dict,
     }
 
     if entry_chips_ja:
-        entry["chipsJa"] = entry_chips_ja
+        entry["chipsL10n"] = entry_chips_ja
 
     can = teaches.get("canDo") or lesson.spec.get("outcome")
     if can:
         entry["can"] = str(can)
         entry["canLabel"] = CAN_LABEL.get(family["slug"], "")
         # canDo 는 학습자가 말하는 문장이 아니라 "무엇을 할 수 있게 되는가" 의 설명이다.
-        # 일본어 화자가 읽는 자리라 일본어가 있어야 하고, 없으면 한국어가 그대로 남는다.
-        # 한글 트랙에서는 낱말 목록 뒤에 붙는 지시문만 옮긴다 — 낱말은 배우는 대상이다.
-        ja = teaches.get("canDoJa")
-        if ja:
-            entry["canJa"] = str(ja)
+        # 읽는 사람의 말로 있어야 하고, 없는 언어는 한국어가 그대로 남는다. 한글
+        # 트랙에서는 낱말 목록 뒤에 붙는 지시문만 옮긴다 — 낱말은 배우는 대상이다.
+        cans = {code: str(teaches[f"canDo{code.title()}"])
+                for code in ("ja", "en") if teaches.get(f"canDo{code.title()}")}
+        if cans:
+            entry["cans"] = cans
 
     # 덱이 스스로 말하는 목표와 질문. canDo 와 나란히 두되 대체하지는 않는다 —
     # canDo 는 커리큘럼이 적어 둔 목표이고, goal 은 학습자가 덱에서 실제로 읽는 문장이다.

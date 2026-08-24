@@ -25,6 +25,7 @@ spec:
     - ~(으)ㄹ수록 ~아/어지다
     canDo: 반복해서 듣게 된다고, 들을수록 좋아진다고 평가한다.
     canDoJa: 繰り返し聴いてしまう、聴くほど良くなると評価する。
+    canDoEn: Say you keep it on repeat, and that it grows on you with each listen.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-stage-upper-beginner/lessons/02-song-review/lesson.html
 

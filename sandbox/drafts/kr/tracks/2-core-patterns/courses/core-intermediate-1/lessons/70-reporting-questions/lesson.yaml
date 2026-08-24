@@ -21,6 +21,7 @@ spec:
       - "-지 말라고 하다"
     canDo: 누가 무엇을 물었는지, 하지 말라고 했는지 전한다.
     canDoJa: 誰が何を尋ねたか、するなと言ったかを伝える。
+    canDoEn: "Report who asked what, and who told you not to."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-intermediate-1 · 70
 

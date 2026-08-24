@@ -25,6 +25,7 @@ spec:
     - -아/어 주세요
     canDo: 물건을 달라고 하고, 어떤 행동을 해 달라고 부탁한다.
     canDoJa: 物をくださいと言い、ある行動をしてほしいと頼む。
+    canDoEn: Ask for a thing, and ask someone to do something.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-2/lessons/19-asking-a-favour/lesson.html
 

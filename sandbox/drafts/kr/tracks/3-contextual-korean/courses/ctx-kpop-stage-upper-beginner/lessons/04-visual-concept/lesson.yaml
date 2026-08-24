@@ -21,6 +21,7 @@ spec:
       - N이/가 N에 어울리다
     canDo: 이번 콘셉트의 비주얼과 의상에 대한 감상을 전한다.
     canDoJa: 今回のコンセプトのビジュアルと衣装についての感想を伝える。
+    canDoEn: "Give your impressions of this comeback's visuals and styling."
   scene: 이번 콘셉트 포토가 공개됐다. 둘 다 말을 잃었다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-kpop-stage-upper-beginner · 4

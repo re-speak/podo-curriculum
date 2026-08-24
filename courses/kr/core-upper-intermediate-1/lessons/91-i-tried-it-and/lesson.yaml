@@ -25,6 +25,7 @@ spec:
     - -나 보다 / -(으)ㄴ가 보다
     canDo: 직접 해 보고 알게 된 결과를 전하고, 상대를 보고 상태를 짐작해 준다.
     canDoJa: 自分でやってみてわかった結果を伝え、相手を見て状態を推し量ってあげる。
+    canDoEn: Report what you found by trying it yourself, and read the other person's state for them.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-upper-intermediate-1/lessons/91-i-tried-it-and/lesson.html
 

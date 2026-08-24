@@ -21,6 +21,7 @@ spec:
       - "-기로 했어요"
     canDo: 새해 계획이나 요즘 결심을 이야기하며, 아직 마음만 먹은 것과 이미 정해 버린 것을 함께 밝힌다.
     canDoJa: 新年の計画や最近の決意を話しながら、まだ思っているだけのことと、もう決めてしまったことを合わせて明かす。
+    canDoEn: "Talk about new year plans or recent resolutions, separating what you have only decided in your head from what is already settled."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-4 · 36
 

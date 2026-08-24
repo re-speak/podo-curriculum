@@ -20,6 +20,7 @@ spec:
       []
     canDo: 한국에 알리고 싶은 일본 음식, 일본에 알리고 싶은 한국 음식
     canDoJa: 韓国に知ってほしい日本の料理、日本に知ってほしい韓国の料理
+    canDoEn: "Japanese food Korea should know, and Korean food Japan should know"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-between-two-countries-intermediate · 3
 

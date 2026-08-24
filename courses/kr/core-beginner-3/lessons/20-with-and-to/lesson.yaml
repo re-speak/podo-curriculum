@@ -25,6 +25,7 @@ spec:
     - N한테 · N에게
     canDo: 누구와 함께 하는지, 누구에게 하는지를 말한다.
     canDoJa: 誰と一緒にするのか、誰にするのかを言う。
+    canDoEn: Say who you are doing it with, and who you are doing it for.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-3/lessons/20-with-and-to/lesson.html
 

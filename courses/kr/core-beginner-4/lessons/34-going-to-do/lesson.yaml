@@ -25,6 +25,7 @@ spec:
     - 같이 ~아/어요
     canDo: 무엇을 하러 가는지 말하고, 같이 하자고 권한다.
     canDoJa: 何をしに行くのかを言い、一緒にやろうと誘う。
+    canDoEn: Say what you are going somewhere to do, and invite someone along.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-4/lessons/34-going-to-do/lesson.html
 

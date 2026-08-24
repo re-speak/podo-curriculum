@@ -20,6 +20,7 @@ spec:
       []
     canDo: 자기 생각과 그 이유 말하기
     canDoJa: 自分の考えと、その理由を話す
+    canDoEn: "State what you think, and why"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-love-and-marriage-advanced · 7
 

@@ -21,6 +21,7 @@ spec:
       - ~지 말고
     canDo: 진지한 이야기를 꺼내겠다고 예고하고, 마음의 준비를 시킨다.
     canDoJa: まじめな話を切り出すと予告し、心の準備をさせる。
+    canDoEn: "Signal that a serious talk is coming, and let them brace for it."
   scene: 헤어지기 직전, 버스 정류장. 보내기 전에 붙잡는다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-crush-intermediate · 7

@@ -23,6 +23,7 @@ spec:
     patterns: []
     canDo: 요즘 보고 있는 작품과 멈출 수 없는 이유
     canDoJa: 最近見ている作品と、やめられない理由
+    canDoEn: What you're watching now, and why you can't stop
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-me-lately-advanced/lessons/03-binge-watching/lesson.html
 

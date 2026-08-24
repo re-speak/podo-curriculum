@@ -20,6 +20,7 @@ spec:
       []
     canDo: 며칠까지 가능한가
     canDoJa: 何日まで耐えられるか
+    canDoEn: "How many days could you manage"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-worth-thinking-about-advanced · 1
 

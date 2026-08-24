@@ -20,6 +20,7 @@ spec:
       []
     canDo: 찍먹·부먹, 민트초코, 파인애플 피자
     canDoJa: つけ派・かけ派、チョコミント、パイナップルのピザ
+    canDoEn: "Dip it or drown it, mint choc chip, pineapple on pizza"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-things-i-like-intermediate · 6
 

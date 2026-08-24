@@ -20,6 +20,7 @@ spec:
       []
     canDo: 양보 못 하는 딱 하나
     canDoJa: どうしても譲れない、たった一つ
+    canDoEn: "The one thing you won't give up"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-love-and-marriage-intermediate · 3
 

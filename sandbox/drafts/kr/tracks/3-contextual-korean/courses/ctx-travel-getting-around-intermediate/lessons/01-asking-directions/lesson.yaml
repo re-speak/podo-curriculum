@@ -21,6 +21,7 @@ spec:
       - ~(으)ㄹ 수 있을 만큼
     canDo: 모르는 역이 어디인지 정중하게 묻고, 걸어갈 만한 거리인지 확인한다.
     canDoJa: 知らない駅がどこかをていねいに尋ね、歩いて行ける距離かを確かめる。
+    canDoEn: "Ask politely where an unfamiliar station is, and check whether it's walkable."
   scene: 공항에서 나와 첫 목적지를 찾는 중. 지도 앱이 안 되고, 지나가는 사람을 붙잡는다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-travel-getting-around-intermediate · 1

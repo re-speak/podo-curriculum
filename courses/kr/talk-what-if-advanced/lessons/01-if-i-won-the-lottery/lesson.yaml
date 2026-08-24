@@ -23,6 +23,7 @@ spec:
     patterns: []
     canDo: 가장 먼저 할 일
     canDoJa: まず最初にすること
+    canDoEn: The first thing you'd do
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-what-if-advanced/lessons/01-if-i-won-the-lottery/lesson.html
 

@@ -20,6 +20,7 @@ spec:
       []
     canDo: 언제 어떤 노래를 듣나
     canDoJa: いつ、どんな曲を聴くか
+    canDoEn: "When do you play what"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-things-i-like-intermediate · 3
 

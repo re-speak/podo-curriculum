@@ -23,6 +23,7 @@ spec:
     patterns: []
     canDo: 얼마면 충분할까
     canDoJa: いくらあれば十分か
+    canDoEn: How much would be enough
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-worth-thinking-about-advanced/lessons/04-money-and-happiness/lesson.html
 

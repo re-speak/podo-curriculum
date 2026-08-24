@@ -20,6 +20,7 @@ spec:
       []
     canDo: 누가 붙였나
     canDoJa: 誰がつけたのか
+    canDoEn: "Who gave it to you"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-what-came-before-advanced · 3
 

@@ -25,6 +25,7 @@ spec:
     - ~길래
     canDo: 실시간 트렌드에 오른 것을 알리고, 바로 캡쳐했다고 전한다.
     canDoJa: リアルタイムトレンドに入ったことを知らせ、すぐスクショしたと伝える。
+    canDoEn: Announce it has hit the live trends, and say you screenshotted it straight away.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-online-intermediate/lessons/01-trending/lesson.html
 

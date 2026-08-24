@@ -21,6 +21,7 @@ spec:
       - "-아/어서 그런지"
     canDo: 좋은 결과의 공을 상대에게 돌리고, 확실하지 않은 원인은 짐작으로 댄다.
     canDoJa: 良い結果の手柄を相手に譲り、はっきりしない原因は推測で挙げる。
+    canDoEn: "Give the other person credit for a good outcome, and offer an uncertain cause as a guess."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-intermediate-2 · 77
 

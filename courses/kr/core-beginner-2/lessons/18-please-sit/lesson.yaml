@@ -25,6 +25,7 @@ spec:
     - -지 마세요
     canDo: 교실과 가게에서 듣는 지시를 알아듣고, 상대에게 정중히 권한다.
     canDoJa: 教室や店で聞く指示を聞き取り、相手にていねいに勧める。
+    canDoEn: Follow the instructions you hear in a classroom or a shop, and offer politely in return.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-2/lessons/18-please-sit/lesson.html
 

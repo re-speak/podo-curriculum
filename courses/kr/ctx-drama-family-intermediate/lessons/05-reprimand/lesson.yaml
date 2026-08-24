@@ -25,6 +25,7 @@ spec:
     - ~지 그랬어
     canDo: 그러게 내가 말했지 않냐고 핀잔을 주고, 진작 말하지 그랬냐고 나무란다.
     canDoJa: だから言ったじゃないかと小言を言い、もっと早く言えばよかったのにとたしなめる。
+    canDoEn: Chide them with "I told you so", and scold them for not saying sooner.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-family-intermediate/lessons/05-reprimand/lesson.html
 

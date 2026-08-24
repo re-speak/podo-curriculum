@@ -21,6 +21,7 @@ spec:
       - ~(으)려고
     canDo: 생카에 가기로 한 계획과 그 목적을 말한다.
     canDoJa: センイル（誕生日）カフェに行く計画と、その目的を話す。
+    canDoEn: "Talk about your plan to go to a birthday cafe event, and what it's for."
   scene: 최애 생일 주간. 생카 지도를 띄워 놓고 계획을 짠다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-kpop-fan-life-intermediate · 5

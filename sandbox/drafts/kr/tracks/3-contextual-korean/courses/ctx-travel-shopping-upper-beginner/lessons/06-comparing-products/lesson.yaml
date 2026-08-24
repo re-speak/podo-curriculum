@@ -21,6 +21,7 @@ spec:
       - N한테는
     canDo: 두 상품 중 더 잘나가는 것을 묻고, 나에게 맞는 것을 고른다.
     canDoJa: 二つの商品のうちよく売れているほうを尋ね、自分に合うものを選ぶ。
+    canDoEn: "Ask which of the two sells better, and pick the one that suits you."
   scene: 비슷한 두 개를 양손에 들고 결정을 못 하고 있다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-travel-shopping-upper-beginner · 6

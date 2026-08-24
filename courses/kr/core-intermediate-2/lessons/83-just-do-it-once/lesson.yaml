@@ -25,6 +25,7 @@ spec:
     - -기만 해도
     canDo: 그것 하나만 충족되면 결과가 정해져 있다고 말한다.
     canDoJa: それ一つさえ満たされれば結果は決まっていると言う。
+    canDoEn: Say that once that one thing is met, the result is a given.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-intermediate-2/lessons/83-just-do-it-once/lesson.html
 

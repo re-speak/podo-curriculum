@@ -25,6 +25,7 @@ spec:
     - 또 ~네
     canDo: 상대의 말을 비꼬아 받아치고, 또 시작이라고 놀린다.
     canDoJa: 相手の言葉を皮肉って言い返し、また始まったとからかう。
+    canDoEn: Answer back with a jab, and tease that they're off again.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-banmal-chatting-intermediate/lessons/06-teasing/lesson.html
 

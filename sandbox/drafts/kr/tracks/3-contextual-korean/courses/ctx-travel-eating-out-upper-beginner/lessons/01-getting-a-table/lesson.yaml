@@ -21,6 +21,7 @@ spec:
       - ~아/어도 될까요?
     canDo: 자리가 있는지 묻고, 원하는 자리를 요청한다.
     canDoJa: 席が空いているかを尋ね、希望の席をお願いする。
+    canDoEn: "Ask whether there's a table free, and request the seat you want."
   scene: 붐비는 식당에 두 명이 들어섰다. 직원이 다가온다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-travel-eating-out-upper-beginner · 1

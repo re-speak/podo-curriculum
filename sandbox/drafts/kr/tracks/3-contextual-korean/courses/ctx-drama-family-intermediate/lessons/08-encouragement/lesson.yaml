@@ -21,6 +21,7 @@ spec:
       - ~(으)면 언제든(지) ~아/어
     canDo: 지금도 충분하다고 인정해 주고, 언제든 연락하라고 문을 열어 둔다.
     canDoJa: 今のままで十分だと認めてあげ、いつでも連絡してと言って扉を開けておく。
+    canDoEn: "Tell them they're enough as they are, and leave the door open to call any time."
   scene: 올라가는 날 아침. 현관에서.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-family-intermediate · 8

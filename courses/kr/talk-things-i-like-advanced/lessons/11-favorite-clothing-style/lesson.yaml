@@ -23,6 +23,7 @@ spec:
     patterns: []
     canDo: 옷장에서 제일 많은 색
     canDoJa: クローゼットで一番多い色
+    canDoEn: The colour your wardrobe has most of
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-things-i-like-advanced/lessons/11-favorite-clothing-style/lesson.html
 

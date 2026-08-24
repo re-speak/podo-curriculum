@@ -23,6 +23,7 @@ spec:
     patterns: []
     canDo: 누가 붙였나
     canDoJa: 誰がつけたのか
+    canDoEn: Who gave it to you
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-what-came-before-intermediate/lessons/03-school-nickname/lesson.html
 

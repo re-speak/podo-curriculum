@@ -21,6 +21,7 @@ spec:
       - ~지?
     canDo: 반말로 질문하고, 확인하듯 되묻는다.
     canDoJa: タメ口で質問し、確かめるように聞き返す。
+    canDoEn: "Ask questions in casual speech, and check back as if confirming."
   scene: 반말로 질문을 하려는데 어디를 올려야 할지 모르겠다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-banmal-dropping-formality-upper-beginner · 5

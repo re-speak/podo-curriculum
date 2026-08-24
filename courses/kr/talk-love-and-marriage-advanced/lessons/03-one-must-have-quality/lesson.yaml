@@ -23,6 +23,7 @@ spec:
     patterns: []
     canDo: 양보 못 하는 딱 하나
     canDoJa: どうしても譲れない、たった一つ
+    canDoEn: The one thing you won't give up
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-love-and-marriage-advanced/lessons/03-one-must-have-quality/lesson.html
 

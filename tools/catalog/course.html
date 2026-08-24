@@ -536,11 +536,12 @@ function markedJamo(text) {
     아직 없는 줄만 한국어 원문으로 남는다. */
 /** 배울 거리 칩. 패턴 자체는 한국어 그대로지만, 몇몇 줄에 붙은 설명은 일본어를 갖는다. */
 function chipList(l) {
-  return (L === "ja" && l.chipsJa && l.chipsJa.length) ? l.chipsJa : (l.chips || []);
+  const alt = l.chipsL10n && l.chipsL10n[L];
+  return (alt && alt.length) ? alt : (l.chips || []);
 }
 
 function canText(l, fallback) {
-  return (L === "ja" && l.canJa) ? l.canJa : (fallback || "");
+  return (l.cans && l.cans[L]) || fallback || "";
 }
 
 function detail(l) {

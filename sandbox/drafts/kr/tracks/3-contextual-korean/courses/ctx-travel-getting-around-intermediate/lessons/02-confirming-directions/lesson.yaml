@@ -21,6 +21,7 @@ spec:
       - ~(으)면 되는 거죠?
     canDo: 이 길이 맞는지 확인하고, 들은 길 안내를 되짚어 확인한다.
     canDoJa: この道で合っているかを確かめ、聞いた道案内を復唱して確認する。
+    canDoEn: "Check you're on the right road, and repeat the directions back to confirm."
   scene: 설명을 들었는데 절반만 알아들었다. 들은 대로 되짚어 확인한다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-travel-getting-around-intermediate · 2

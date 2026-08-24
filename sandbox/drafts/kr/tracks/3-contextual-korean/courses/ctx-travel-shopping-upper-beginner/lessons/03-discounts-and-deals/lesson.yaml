@@ -21,6 +21,7 @@ spec:
       - ~죠?
     canDo: 현금 결제로 할인을 요청하고, 묶음 할인을 확인한다.
     canDoJa: 現金払いでの割引をお願いし、まとめ買いの割引を確かめる。
+    canDoEn: "Ask for a discount if you pay cash, and check for a bundle deal."
   scene: 시장. 두 개를 같이 사면 깎아 줄 것 같은 분위기다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-travel-shopping-upper-beginner · 3

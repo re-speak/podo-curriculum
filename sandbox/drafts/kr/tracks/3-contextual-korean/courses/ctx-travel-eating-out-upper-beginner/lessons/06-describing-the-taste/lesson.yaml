@@ -22,8 +22,12 @@ spec:
     patternsJa:
     - "기대했던 것보다 훨씬 + A"
     - "~(으)ㄴ 것 같다（コア61・~(으)ㄴ데は56の復習）"
+    patternsEn:
+    - "기대했던 것보다 훨씬 + A"
+    - "~(으)ㄴ 것 같다 (Core 61; ~(으)ㄴ데 revisits 56)"
     canDo: 기대와 비교해 맛을 평가하고, 간을 조절해 달라고 부탁한다.
     canDoJa: 期待と比べて味を評価し、味つけを調節してほしいと頼む。
+    canDoEn: "Judge the taste against what you expected, and ask for the seasoning to be adjusted."
   scene: 직원이 "맛있으세요?"라고 물었다. 사실 조금 짜다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-travel-eating-out-upper-beginner · 6

@@ -20,6 +20,7 @@ spec:
       []
     canDo: 그런데 지금 말해 주세요
     canDoJa: でも、今言ってください
+    canDoEn: "But tell me now"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-things-i-like-intermediate · 7
 

@@ -21,6 +21,7 @@ spec:
       - ~(으)ㄹ 때
     canDo: 최애의 매력을 구체적인 순간으로 묘사하고 동의를 구한다.
     canDoJa: 推しの魅力を具体的な場面で描写し、同意を求める。
+    canDoEn: "Describe your favourite's appeal through a specific moment, and ask them to agree."
   scene: 휴대폰을 꺼내 사진을 보여 주면서.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-kpop-talk-beginner · 7

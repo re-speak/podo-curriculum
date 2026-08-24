@@ -23,6 +23,7 @@ spec:
     patterns: []
     canDo: 내 일 중에서
     canDoJa: 自分の仕事の中で
+    canDoEn: Out of the work you do
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-worth-thinking-about-intermediate/lessons/03-work-ai-cannot-do/lesson.html
 

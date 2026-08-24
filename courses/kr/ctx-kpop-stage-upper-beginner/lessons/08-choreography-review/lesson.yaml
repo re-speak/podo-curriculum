@@ -25,6 +25,7 @@ spec:
     - 얼마나 ~(으)ㄴ/는지
     canDo: 안무의 난이도를 평가하고, 연습량을 짐작해 감탄한다.
     canDoJa: 振り付けの難しさを評価し、練習量を想像して感嘆する。
+    canDoEn: Rate how hard the choreography is, and marvel at the practice it must have taken.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-stage-upper-beginner/lessons/08-choreography-review/lesson.html
 

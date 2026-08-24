@@ -21,6 +21,7 @@ spec:
       - ~지 그랬어
     canDo: 그러게 내가 말했지 않냐고 핀잔을 주고, 진작 말하지 그랬냐고 나무란다.
     canDoJa: だから言ったじゃないかと小言を言い、もっと早く言えばよかったのにとたしなめる。
+    canDoEn: "Chide them with \"I told you so\", and scold them for not saying sooner."
   scene: 미리 말했으면 안 생겼을 일이 생겼다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-family-intermediate · 5

@@ -25,6 +25,7 @@ spec:
     - ~아/어 두다
     canDo: 늦지 않게 준비하라고 챙기고, 미리 해 둘 일을 알려 준다.
     canDoJa: 遅れないように準備してと気を配り、前もってやっておくことを教える。
+    canDoEn: Nudge them to get ready in good time, and tell them what to do in advance.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-fan-life-intermediate/lessons/03-concert-prep/lesson.html
 

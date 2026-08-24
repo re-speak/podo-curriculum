@@ -25,6 +25,7 @@ spec:
     - ~기도 전에
     canDo: 스포당하기 전에 봐야 한다고 서두르고, 스포하지 말라고 부탁한다.
     canDoJa: ネタバレされる前に見なければと急ぎ、ネタバレしないでと頼む。
+    canDoEn: Rush to watch it before you're spoiled, and ask them not to spoil it.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-fan-life-intermediate/lessons/08-avoiding-spoilers/lesson.html
 

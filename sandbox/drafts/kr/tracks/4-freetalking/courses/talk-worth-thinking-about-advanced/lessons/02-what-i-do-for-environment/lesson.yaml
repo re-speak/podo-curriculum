@@ -20,6 +20,7 @@ spec:
       []
     canDo: 하다가 그만둔 것도
     canDoJa: 途中でやめたことも
+    canDoEn: "Including the ones you gave up on"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-worth-thinking-about-advanced · 2
 

@@ -20,6 +20,7 @@ spec:
       []
     canDo: 이 말 하는 순간 끝
     canDoJa: このひと言を言った瞬間、終わり
+    canDoEn: "Say this, and it's over"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-love-and-marriage-advanced · 2
 

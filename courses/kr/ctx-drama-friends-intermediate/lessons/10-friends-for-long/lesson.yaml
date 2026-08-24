@@ -25,6 +25,7 @@ spec:
     - ~자
     canDo: 잘 맞는 사이라고 말하고, 앞으로도 보자고 약속한다.
     canDoJa: 気が合う仲だと伝え、これからも会おうと約束する。
+    canDoEn: Say you get on well, and promise to keep meeting.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-friends-intermediate/lessons/10-friends-for-long/lesson.html
 

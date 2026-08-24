@@ -21,6 +21,7 @@ spec:
       - 몇 + 단위 명사
     canDo: 필요한 개수를 세어 주문하고, 몇 개인지 묻는다.
     canDoJa: 必要な数を数えて注文し、何個かを尋ねる。
+    canDoEn: "Count out how many you need to order, and ask how many there are."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-2 · 12
 

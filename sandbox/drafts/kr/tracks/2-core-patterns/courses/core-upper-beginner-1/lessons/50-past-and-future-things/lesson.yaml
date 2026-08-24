@@ -21,6 +21,7 @@ spec:
       - "-(으)ㄹ N"
     canDo: 냉장고나 가방 속을 정리하며 어제 먹은 것과 내일 먹을 것을 갈라 말한다.
     canDoJa: 冷蔵庫やかばんの中を整理しながら、昨日食べた物と明日食べる物を分けて言う。
+    canDoEn: "Sort out a fridge or a bag, separating what you ate yesterday from what you will eat tomorrow."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-upper-beginner-1 · 50
 

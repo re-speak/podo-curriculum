@@ -26,6 +26,9 @@ spec:
     patternsJa:
     - まず覚える6組 ㄺ ㄻ ㅀ
     - ㅄ ㄳ ㄶ *(どちらか一方だけ音が出ます — どちらがそれかがルール)*
+    patternsEn:
+    - 'The first six clusters to learn: ㄺ ㄻ ㅀ'
+    - ㅄ ㄳ ㄶ *(only one of the two is voiced — which one is the rule)*
     canDo: 닭 · 삶 · 싫다 · 값 · 몫 · 많다
   prerequisites: []
   source: sandbox/drafts/kr/tracks/1-hangul/courses/hangul-starter/lessons/12-double-batchim/lesson.html

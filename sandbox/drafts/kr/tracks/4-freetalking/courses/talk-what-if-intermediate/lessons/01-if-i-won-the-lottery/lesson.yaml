@@ -20,6 +20,7 @@ spec:
       []
     canDo: 가장 먼저 할 일
     canDoJa: まず最初にすること
+    canDoEn: "The first thing you'd do"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-what-if-intermediate · 1
 

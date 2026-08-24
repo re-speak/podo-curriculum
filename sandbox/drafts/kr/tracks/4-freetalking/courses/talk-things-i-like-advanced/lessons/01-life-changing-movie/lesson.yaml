@@ -20,6 +20,7 @@ spec:
       []
     canDo: 몇 번을 봐도 좋은 그 작품
     canDoJa: 何度見てもいい、あの作品
+    canDoEn: "The one you can watch any number of times"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-things-i-like-advanced · 1
 

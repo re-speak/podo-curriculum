@@ -25,6 +25,7 @@ spec:
     - ~(으)ㄹ 때
     canDo: 같이 덕질하는 즐거움을 확인하고, 혼자일 때와 비교한다.
     canDoJa: 一緒に推し活する楽しさを確かめ、一人のときと比べる。
+    canDoEn: Confirm how good it is to be a fan together, and compare it with going it alone.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-fan-life-intermediate/lessons/06-fandom-friends/lesson.html
 

@@ -21,6 +21,7 @@ spec:
       - N(으)로
     canDo: 어떻게 가는지 묻고, 교통수단을 넣어 답한다.
     canDoJa: どうやって行くかを尋ね、交通手段を入れて答える。
+    canDoEn: "Ask how to get there, and answer naming the means of transport."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-3 · 29
 

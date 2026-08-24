@@ -23,6 +23,7 @@ spec:
     patterns: []
     canDo: 기운을 되찾게 해 주는 행동이나 사람 이야기하기
     canDoJa: 元気を取り戻させてくれる行動や人について話す
+    canDoEn: Talk about what, or who, brings your energy back
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-small-things-intermediate/lessons/05-energy-reset/lesson.html
 

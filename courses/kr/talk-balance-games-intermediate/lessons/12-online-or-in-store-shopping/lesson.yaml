@@ -23,6 +23,7 @@ spec:
     patterns: []
     canDo: 속도·확인·반품 경험을 근거로 구매 방식을 고르기
     canDoJa: 速さ・現物確認・返品の経験を根拠に、買い方を選ぶ
+    canDoEn: Choose how you shop, based on speed, seeing the goods, and returns
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-balance-games-intermediate/lessons/12-online-or-in-store-shopping/lesson.html
 

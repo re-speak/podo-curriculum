@@ -25,6 +25,7 @@ spec:
     - -자고 하다
     canDo: 누가 무엇을 하라고 했는지, 하자고 했는지 전한다.
     canDoJa: 誰が何をしろと言ったか、しようと言ったかを伝える。
+    canDoEn: Report who told you to do what, and who suggested doing it.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-intermediate-1/lessons/69-reporting-commands/lesson.html
 

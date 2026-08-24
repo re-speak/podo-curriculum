@@ -25,6 +25,7 @@ spec:
     - ~아/어서
     canDo: 어떻게 팬이 되었는지 계기를 순서대로 이야기한다.
     canDoJa: どうやってファンになったのか、きっかけを順を追って話す。
+    canDoEn: Tell the story of how you became a fan, in order.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-talk-beginner/lessons/04-becoming-a-fan/lesson.html
 

@@ -21,6 +21,7 @@ spec:
       - ~는 건 아니다
     canDo: 호불호가 갈린다고 조심스럽게 말하고, 무조건 비판은 아니라고 선을 긋는다.
     canDoJa: 好みが分かれると控えめに言い、頭ごなしの批判ではないと線を引く。
+    canDoEn: "Say carefully that opinions divide on it, and make clear it isn't blanket criticism."
   scene: 이번 콘셉트를 두고 타임라인이 둘로 갈렸다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-kpop-online-intermediate · 6

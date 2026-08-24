@@ -21,6 +21,7 @@ spec:
       - ~더라
     canDo: 들은 소문을 전하고, 그럴 줄 알았다고 자기 관찰을 덧붙인다.
     canDoJa: 聞いたうわさを伝え、そうだと思ったと自分の見立てを付け加える。
+    canDoEn: "Pass on a rumour you heard, and add that you saw it coming."
   scene: 들은 소문을 전하면서, 나는 진작 알았다고 덧붙인다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-banmal-chatting-intermediate · 4

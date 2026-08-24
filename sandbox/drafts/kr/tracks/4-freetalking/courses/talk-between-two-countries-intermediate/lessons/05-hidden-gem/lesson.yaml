@@ -20,6 +20,7 @@ spec:
       []
     canDo: 친구가 온다면 어디로 데려갈까
     canDoJa: 友だちが来たら、どこへ連れて行くか
+    canDoEn: "Where would you take a friend who came to visit"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-between-two-countries-intermediate · 5
 

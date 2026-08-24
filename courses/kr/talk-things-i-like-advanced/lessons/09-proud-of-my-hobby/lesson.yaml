@@ -23,6 +23,7 @@ spec:
     patterns: []
     canDo: 남들은 모르는 내 취미의 매력
     canDoJa: 周りは知らない、自分の趣味の魅力
+    canDoEn: What's good about your hobby that others miss
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-things-i-like-advanced/lessons/09-proud-of-my-hobby/lesson.html
 

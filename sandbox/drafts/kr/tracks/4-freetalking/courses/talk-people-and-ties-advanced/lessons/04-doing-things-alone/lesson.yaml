@@ -20,6 +20,7 @@ spec:
       []
     canDo: 어디까지 혼자 가능한가
     canDoJa: どこまで一人でできるか
+    canDoEn: "How far can you go alone"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-people-and-ties-advanced · 4
 

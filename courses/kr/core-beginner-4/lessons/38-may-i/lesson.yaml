@@ -25,6 +25,7 @@ spec:
     - -(으)면 안 돼요
     canDo: 해도 되는지 묻고, 안 된다고 답한다.
     canDoJa: してもいいかを尋ね、だめだと答える。
+    canDoEn: Ask whether something is allowed, and answer that it isn't.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-4/lessons/38-may-i/lesson.html
 

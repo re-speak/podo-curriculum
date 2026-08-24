@@ -23,6 +23,7 @@ spec:
     patterns: []
     canDo: 무조건 넣는 그 곡
     canDoJa: 必ず入れる、あの曲
+    canDoEn: The track that always makes the list
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-things-i-like-intermediate/lessons/04-karaoke-favorite/lesson.html
 

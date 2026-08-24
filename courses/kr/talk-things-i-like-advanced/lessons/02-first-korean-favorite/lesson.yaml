@@ -23,6 +23,7 @@ spec:
     patterns: []
     canDo: 나를 여기까지 데려온 그것
     canDoJa: 自分をここまで連れてきてくれたもの
+    canDoEn: The thing that got you this far
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-things-i-like-advanced/lessons/02-first-korean-favorite/lesson.html
 

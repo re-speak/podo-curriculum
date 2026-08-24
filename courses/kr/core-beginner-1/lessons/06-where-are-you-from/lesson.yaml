@@ -25,6 +25,7 @@ spec:
     - N도
     canDo: 어느 나라·어떤 종류인지 묻고, 상대와 같은 점을 덧붙인다.
     canDoJa: どの国か・どんな種類かを尋ね、相手との共通点を付け加える。
+    canDoEn: Ask which country or which kind, and add what you have in common.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-1/lessons/06-where-are-you-from/lesson.html
 

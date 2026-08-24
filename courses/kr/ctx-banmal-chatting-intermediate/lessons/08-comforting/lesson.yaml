@@ -25,6 +25,7 @@ spec:
     - ~아/어 오다
     canDo: 다 그런 거라고 다독이고, 지금까지 잘해 왔다고 응원한다.
     canDoJa: みんなそんなものだとなだめ、今までよくやってきたと励ます。
+    canDoEn: Soothe them that it's how it goes, and say they have done well so far.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-banmal-chatting-intermediate/lessons/08-comforting/lesson.html
 

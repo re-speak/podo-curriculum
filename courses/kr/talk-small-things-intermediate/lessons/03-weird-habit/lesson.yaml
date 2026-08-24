@@ -23,6 +23,7 @@ spec:
     patterns: []
     canDo: 가족만 아는 것
     canDoJa: 家族だけが知っていること
+    canDoEn: What only your family knows
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-small-things-intermediate/lessons/03-weird-habit/lesson.html
 

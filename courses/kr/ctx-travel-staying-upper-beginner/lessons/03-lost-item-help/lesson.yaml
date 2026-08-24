@@ -25,6 +25,7 @@ spec:
     - 어디로 ~(으)면 되나요?
     canDo: 물건을 두고 왔다고 알리고, 어디로 연락하면 되는지 묻는다.
     canDoJa: 忘れ物をしたと伝え、どこに連絡すればいいかを尋ねる。
+    canDoEn: Report that you left something behind, and ask where to get in touch.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-staying-upper-beginner/lessons/03-lost-item-help/lesson.html
 

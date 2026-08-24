@@ -23,6 +23,7 @@ spec:
     patterns: []
     canDo: 그리고 작심삼일로 끝난 것
     canDoJa: そして三日坊主で終わったこと
+    canDoEn: And the one that fizzled out in three days
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-work-and-money-advanced/lessons/04-what-i-am-learning-now/lesson.html
 

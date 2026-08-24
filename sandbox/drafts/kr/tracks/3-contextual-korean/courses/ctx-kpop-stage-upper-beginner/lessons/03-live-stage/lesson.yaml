@@ -21,6 +21,7 @@ spec:
       - ~(으)면서
     canDo: 라이브 실력을 구체적으로 칭찬하고, 믿기지 않는다고 감탄한다.
     canDoJa: ライブの実力を具体的にほめ、信じられないと感嘆する。
+    canDoEn: "Praise the live singing in specifics, and marvel that it's hard to believe."
   scene: 음악방송 무대를 같이 보고 있다. 라이브가 흔들리지 않는다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-kpop-stage-upper-beginner · 3

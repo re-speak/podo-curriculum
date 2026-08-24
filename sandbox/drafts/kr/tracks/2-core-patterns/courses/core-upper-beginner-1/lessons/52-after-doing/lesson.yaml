@@ -21,6 +21,7 @@ spec:
       - "-고 나면"
     canDo: 일의 순서를 정확히 정해 말하고, 다 끝나야 되는 일을 말한다.
     canDoJa: 物事の順序を正確に決めて言い、全部終わってからすることを言う。
+    canDoEn: "Set out the order of things precisely, and say what only happens once it is all finished."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-upper-beginner-1 · 52
 

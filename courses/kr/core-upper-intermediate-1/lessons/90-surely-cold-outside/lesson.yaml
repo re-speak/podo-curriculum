@@ -25,6 +25,7 @@ spec:
     - -(으)ㄹ 테니까
     canDo: 확실한 짐작을 근거로 상대에게 조언하거나 안심시킨다.
     canDoJa: 確信のある推測を根拠に、相手に助言したり安心させたりする。
+    canDoEn: Advise or reassure the other person on the strength of a confident inference.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-upper-intermediate-1/lessons/90-surely-cold-outside/lesson.html
 

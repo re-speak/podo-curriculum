@@ -20,6 +20,7 @@ spec:
       []
     canDo: 내 결과와 실제 성격
     canDoJa: 診断の結果と、実際の性格
+    canDoEn: "What the test says, and what you're actually like"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-people-and-ties-advanced · 3
 

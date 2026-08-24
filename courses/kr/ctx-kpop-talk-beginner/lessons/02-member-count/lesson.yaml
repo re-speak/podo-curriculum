@@ -25,6 +25,7 @@ spec:
     - N 년/개월
     canDo: 멤버가 몇 명인지 세어서 말하고, 몇 년 차인지 말한다.
     canDoJa: メンバーが何人かを数えて言い、デビューから何年目かを言う。
+    canDoEn: Count off how many members there are, and say how many years since debut.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-talk-beginner/lessons/02-member-count/lesson.html
 

@@ -20,6 +20,7 @@ spec:
       []
     canDo: 스스로 아는 것
     canDoJa: 自分でわかっていること
+    canDoEn: "What you know about yourself"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-love-and-marriage-advanced · 4
 

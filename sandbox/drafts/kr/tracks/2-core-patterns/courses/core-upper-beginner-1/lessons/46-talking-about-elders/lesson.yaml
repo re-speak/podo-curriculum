@@ -21,6 +21,7 @@ spec:
       - N께서
     canDo: 웃어른이 하는 일을 남에게 높여서 전한다.
     canDoJa: 目上の人がすることを、他の人に敬語で伝える。
+    canDoEn: "Relay what an elder does to someone else, in honorific form."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-upper-beginner-1 · 46
 

@@ -23,6 +23,7 @@ spec:
     patterns: []
     canDo: 이 말 하는 순간 끝
     canDoJa: このひと言を言った瞬間、終わり
+    canDoEn: Say this, and it's over
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-love-and-marriage-advanced/lessons/02-words-that-kill-the-mood/lesson.html
 

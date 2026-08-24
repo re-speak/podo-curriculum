@@ -22,8 +22,12 @@ spec:
     patternsJa:
     - "꼭 ~아/어 보세요"
     - "~게 되다（コア60・~(으)ㄹ 거예요は32の復習）"
+    patternsEn:
+    - "꼭 ~아/어 보세요"
+    - "~게 되다 (Core 60; ~(으)ㄹ 거예요 revisits 32)"
     canDo: 상대에게 노래를 권하고, 들으면 반할 거라고 장담한다.
     canDoJa: 相手に曲を勧め、聴いたら惚れると請け合う。
+    canDoEn: "Recommend a song, and promise they'll fall for it."
   scene: 상대가 아직 안 들어 본 곡이 있다는 걸 알았다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-kpop-talk-beginner · 8

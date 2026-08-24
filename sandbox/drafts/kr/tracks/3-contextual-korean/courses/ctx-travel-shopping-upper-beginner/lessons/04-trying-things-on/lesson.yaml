@@ -21,6 +21,7 @@ spec:
       - N까지
     canDo: 입어 봐도 되는지 묻고, 한 번에 몇 개까지 가능한지 확인한다.
     canDoJa: 試着してもいいかを尋ね、一度に何点まで可能かを確かめる。
+    canDoEn: "Ask whether you can try it on, and check how many at a time is allowed."
   scene: 입어 보고 싶은 옷을 여러 벌 들고 있다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-travel-shopping-upper-beginner · 4

@@ -23,6 +23,7 @@ spec:
     patterns: []
     canDo: 산속 리조트에서 버틸 수 있나
     canDoJa: 山の中のリゾートで耐えられるか
+    canDoEn: Could you last at a resort up in the mountains
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-what-if-intermediate/lessons/07-one-week-without-a-smartphone/lesson.html
 

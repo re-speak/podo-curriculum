@@ -25,6 +25,7 @@ spec:
     - N 같은 거
     canDo: 몸이 안 좋다고 사정을 설명하고, 약국이나 상비약을 찾는다.
     canDoJa: 体調が悪いと事情を説明し、薬局や常備薬を探す。
+    canDoEn: Explain that you're unwell, and look for a pharmacy or basic medicine.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-staying-upper-beginner/lessons/08-feeling-sick/lesson.html
 

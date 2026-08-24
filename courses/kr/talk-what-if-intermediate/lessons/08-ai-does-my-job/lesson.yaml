@@ -23,6 +23,7 @@ spec:
     patterns: []
     canDo: 남는 시간에 뭘 할까
     canDoJa: 余った時間に何をするか
+    canDoEn: What would you do with the time left over
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-what-if-intermediate/lessons/08-ai-does-my-job/lesson.html
 

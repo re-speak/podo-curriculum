@@ -20,6 +20,7 @@ spec:
       []
     canDo: 돈·평판·사생활 중 무엇을 지키고 싶은지 설명하기
     canDoJa: お金・評判・プライバシーのうち、何を守りたいかを説明する
+    canDoEn: "Say which you'd protect — money, reputation or privacy"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-balance-games-intermediate · 14
 

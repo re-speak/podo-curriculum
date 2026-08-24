@@ -25,6 +25,7 @@ spec:
     - ~자
     canDo: 같이 가자고 제안하고, 시간을 맞춘다.
     canDoJa: 一緒に行こうと提案し、時間を合わせる。
+    canDoEn: Propose going together, and line up a time.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-friends-intermediate/lessons/04-go-together/lesson.html
 

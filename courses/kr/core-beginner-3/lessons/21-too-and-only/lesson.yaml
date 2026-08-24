@@ -25,6 +25,7 @@ spec:
     - N만
     canDo: 앞사람과 같은 것을 고르거나, 그것만 달라고 한정한다.
     canDoJa: 前の人と同じものを選んだり、それだけをくださいと限定したりする。
+    canDoEn: Order the same as the person before you, or narrow it to just that one thing.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-beginner-3/lessons/21-too-and-only/lesson.html
 

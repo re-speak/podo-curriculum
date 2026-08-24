@@ -25,6 +25,7 @@ spec:
     - -아/어야(지)
     canDo: 목표를 이루려면 무엇이 필요한지, 무엇이 있어야 되는지 말한다.
     canDoJa: 目標を叶えるには何が必要か、何がなければならないかを言う。
+    canDoEn: Say what it takes to reach a goal, and what has to be there.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-intermediate-2/lessons/81-if-you-want-to/lesson.html
 

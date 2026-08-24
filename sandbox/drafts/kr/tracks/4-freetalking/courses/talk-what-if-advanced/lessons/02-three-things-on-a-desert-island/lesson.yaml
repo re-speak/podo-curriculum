@@ -20,6 +20,7 @@ spec:
       []
     canDo: 딱 세 개만
     canDoJa: たった三つだけ
+    canDoEn: "Just three"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-what-if-advanced · 2
 

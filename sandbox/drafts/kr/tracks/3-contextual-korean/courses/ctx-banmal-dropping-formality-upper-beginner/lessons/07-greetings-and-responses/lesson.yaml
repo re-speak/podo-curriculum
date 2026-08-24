@@ -22,8 +22,12 @@ spec:
     patternsJa:
     - "~(으)ㄹ게（コア33・復習）+ あいさつとして定着した命令形"
     - "네 → 응 / 어 · 알겠습니다 → 알겠어 · ~자"
+    patternsEn:
+    - "~(으)ㄹ게 (Core 33, review) + imperatives fixed as greetings"
+    - "네 → 응 / 어 · 알겠습니다 → 알겠어 · ~자"
     canDo: 만남·헤어짐의 인사와 짧은 대답을 반말로 반사적으로 낸다.
     canDoJa: 出会いと別れのあいさつ、短い返事を、タメ口で反射的に出す。
+    canDoEn: "Produce hellos, goodbyes and short replies in casual speech without thinking."
   scene: 헤어지는 자리. 「안녕히 가세요」가 튀어나오려 하고, 대답은 자꾸 「네」가 나온다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-banmal-dropping-formality-upper-beginner · 7

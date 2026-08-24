@@ -21,6 +21,7 @@ spec:
       - ~고 있었다
     canDo: 예상과 다른 상황에 놀라고, 마침 같은 생각을 하고 있었다고 말한다.
     canDoJa: 予想と違う状況に驚き、ちょうど同じことを考えていたと言う。
+    canDoEn: "Register surprise at an unexpected turn, and say you were just thinking the same."
   scene: 예상과 정반대의 이야기가 나왔다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-banmal-chatting-intermediate · 3

@@ -25,6 +25,7 @@ spec:
     - 보이다 · 들리다
     canDo: 누가 했는지 말하지 않고, 어떤 상태가 되어 버렸다고 말한다.
     canDoJa: 誰がしたかを言わずに、ある状態になってしまったと言う。
+    canDoEn: Say that something has ended up in a certain state, without naming who did it.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-intermediate-3/lessons/85-it-just-happened/lesson.html
 

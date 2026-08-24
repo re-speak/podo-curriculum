@@ -21,6 +21,7 @@ spec:
       - 이러다(가) ~겠어
     canDo: 남 탓할 때가 아니라고 상황을 정리하고, 더 커질 거라고 경고한다.
     canDoJa: 人のせいにしている場合ではないと状況を整理し、もっと大きくなると警告する。
+    canDoEn: "Cut through with \"this isn't the time for blame\", and warn it will only grow."
   scene: 서로 탓하는 사이에 일이 더 커지고 있다. 한 사람이 먼저 멈춘다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-boundaries-intermediate · 6

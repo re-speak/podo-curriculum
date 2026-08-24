@@ -30,6 +30,11 @@ spec:
     - '**パッチム7つの音** のルール *(ㅋㄲ→ㄱ'
     - ㅅㅆㅈㅊㅌㅎ→ㄷ
     - ㅍ→ㅂ)*
+    patternsEn:
+    - ㄱ ㄷ ㅂ *(close to っ — stop the sound without releasing it)*
+    - '**The seven batchim sounds** rule *(ㅋㄲ→ㄱ'
+    - ㅅㅆㅈㅊㅌㅎ→ㄷ
+    - ㅍ→ㅂ)*
     canDo: 책 · 밥 · 옷 · 부엌 · 낮 · 앞 · 한국 · 김밥
   prerequisites: []
   source: sandbox/drafts/kr/tracks/1-hangul/courses/hangul-starter/lessons/11-batchim-stops/lesson.html

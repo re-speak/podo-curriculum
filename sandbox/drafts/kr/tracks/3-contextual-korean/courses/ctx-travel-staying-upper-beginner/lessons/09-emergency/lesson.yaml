@@ -21,6 +21,7 @@ spec:
       - ~아/어야 할 것 같다
     canDo: 도난을 알리고, 지금 무엇을 해야 하는지 확인한다.
     canDoJa: 盗難を伝え、今何をすべきかを確かめる。
+    canDoEn: "Report a theft, and check what you need to do now."
   scene: 가방이 없어졌다. 누가 가져간 것 같다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-travel-staying-upper-beginner · 9

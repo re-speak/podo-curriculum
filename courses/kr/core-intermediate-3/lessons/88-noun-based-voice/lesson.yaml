@@ -25,6 +25,7 @@ spec:
     - N + 당하다 / 되다
     canDo: 시킨 일과 당한 일을 명사에 붙여 간단히 말한다.
     canDoJa: させたことと、されたことを名詞につけて簡単に言う。
+    canDoEn: Express causing and undergoing simply, by attaching them to a noun.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-intermediate-3/lessons/88-noun-based-voice/lesson.html
 

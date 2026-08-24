@@ -21,6 +21,7 @@ spec:
       - N이/가 같다 / 다르다
     canDo: 처음 보는 계정에 맞팔을 요청하고, 이유를 밝힌다.
     canDoJa: 初めて見るアカウントに相互フォローを頼み、その理由を伝える。
+    canDoEn: "Ask an unfamiliar account to follow back, and say why."
   scene: 처음 보는 계정에 먼저 말을 건다. 서로 모르는 사이라 존댓말이다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-kpop-online-intermediate · 5

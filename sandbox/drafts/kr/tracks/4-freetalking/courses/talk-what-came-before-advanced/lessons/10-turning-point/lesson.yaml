@@ -20,6 +20,7 @@ spec:
       []
     canDo: 삶의 방향이 바뀐 계기와 전후 이야기하기
     canDoJa: 人生の向きが変わったきっかけと、その前後を話す
+    canDoEn: "Talk about what turned your life, and the before and after"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-what-came-before-advanced · 10
 

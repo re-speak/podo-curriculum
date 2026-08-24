@@ -20,6 +20,7 @@ spec:
       []
     canDo: 스트레스를 풀 때 실제로 하는 것 설명하기
     canDoJa: ストレスを発散するとき、実際にやっていることを説明する
+    canDoEn: "Describe what you actually do to let off steam"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-small-things-intermediate · 6
 

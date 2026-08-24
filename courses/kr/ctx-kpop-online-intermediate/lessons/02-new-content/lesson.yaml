@@ -25,6 +25,7 @@ spec:
     - ~자마자
     canDo: 자고 일어나 보니 새 소식이 떴다고, 타임라인이 뒤집혔다고 전한다.
     canDoJa: 寝て起きたら新しい知らせが出ていた、タイムラインがひっくり返ったと伝える。
+    canDoEn: Report that news broke while you slept, and the timeline has turned upside down.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-online-intermediate/lessons/02-new-content/lesson.html
 

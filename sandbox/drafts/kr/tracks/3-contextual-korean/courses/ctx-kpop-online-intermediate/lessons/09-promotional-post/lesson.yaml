@@ -21,6 +21,7 @@ spec:
       - ~기만 하면
     canDo: 일단 하나만 보라고 밀어붙이고, 보면 빠질 거라고 장담한다.
     canDoJa: まず一つだけ見てと押し、見たらはまると請け合う。
+    canDoEn: "Push them to watch just one, and guarantee they'll be hooked."
   scene: 관심 없다던 친구가 드디어 "뭐 볼까"라고 물었다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-kpop-online-intermediate · 9

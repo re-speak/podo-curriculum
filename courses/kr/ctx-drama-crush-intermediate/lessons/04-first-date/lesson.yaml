@@ -25,6 +25,7 @@ spec:
     - ~(으)ㄹ까?
     canDo: 상대의 오늘 모습을 칭찬하고, 다음 만남을 제안한다.
     canDoJa: 今日の相手の様子をほめ、次に会う約束を提案する。
+    canDoEn: Compliment how they look today, and propose meeting again.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-crush-intermediate/lessons/04-first-date/lesson.html
 

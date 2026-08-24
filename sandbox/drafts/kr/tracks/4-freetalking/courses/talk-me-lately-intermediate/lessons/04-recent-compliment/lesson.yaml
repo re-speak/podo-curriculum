@@ -20,6 +20,7 @@ spec:
       []
     canDo: 누가, 뭐라고 했나
     canDoJa: 誰が、何と言ったか
+    canDoEn: "Who said it, and what"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-me-lately-intermediate · 4
 

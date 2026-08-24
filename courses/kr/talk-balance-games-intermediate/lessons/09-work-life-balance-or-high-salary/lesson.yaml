@@ -23,6 +23,7 @@ spec:
     patterns: []
     canDo: 시간과 수입의 교환 조건을 편한 범위에서 구체적으로 설명하기
     canDoJa: 時間と収入の引き換え条件を、話せる範囲で具体的に説明する
+    canDoEn: Spell out, as far as you're comfortable, the trade you'd make between time and income
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-balance-games-intermediate/lessons/09-work-life-balance-or-high-salary/lesson.html
 

@@ -21,6 +21,7 @@ spec:
       - ~(으)ㄴ 게 없다
     canDo: 더 맞춰 줄 생각이 없다고 밝히고, 남은 게 없다고 관계를 끝낸다.
     canDoJa: もう合わせるつもりはないと明かし、残っているものはないと関係を終える。
+    canDoEn: "Make clear you won't accommodate any further, and end it saying nothing is left."
   scene: 마지막으로 마주 앉았다. 소리 지르는 사람은 없다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-boundaries-intermediate · 10

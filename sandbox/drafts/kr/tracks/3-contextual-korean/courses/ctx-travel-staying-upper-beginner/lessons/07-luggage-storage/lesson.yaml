@@ -22,8 +22,12 @@ spec:
     patternsJa:
     - "N 전까지（コア51 + 15）+ ~아/어 두다"
     - "N쯤에 ~(으)러 오다"
+    patternsEn:
+    - "N 전까지 (Core 51 + 15) + ~아/어 두다"
+    - "N쯤에 ~(으)러 오다"
     canDo: 짐을 맡겨도 되는지 묻고, 언제 찾으러 올지 말한다.
     canDoJa: 荷物を預けてもいいかを尋ね、いつ取りに来るかを伝える。
+    canDoEn: "Ask whether you can leave your bags, and say when you'll collect them."
   scene: 체크아웃은 했는데 비행기까지 여섯 시간이 남았다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-travel-staying-upper-beginner · 7

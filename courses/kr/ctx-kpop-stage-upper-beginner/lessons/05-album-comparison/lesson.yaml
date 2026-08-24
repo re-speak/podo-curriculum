@@ -25,6 +25,7 @@ spec:
     - ~지만
     canDo: 이전 앨범과 비교하고, 타이틀곡과 수록곡 중 취향을 밝힌다.
     canDoJa: 前のアルバムと比べ、タイトル曲と収録曲のどちらが好みかを明かす。
+    canDoEn: Compare it with the last album, and say whether you prefer the title track or the B-sides.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-stage-upper-beginner/lessons/05-album-comparison/lesson.html
 

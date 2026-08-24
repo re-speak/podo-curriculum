@@ -21,6 +21,7 @@ spec:
       - ~고 싶으면
     canDo: 음식이 식기 전에 먹으라고 재촉하고, 더 먹고 싶으면 말하라고 챙긴다.
     canDoJa: 料理が冷めないうちに食べてと急かし、おかわりがほしければ言ってと気を配る。
+    canDoEn: "Urge them to eat before it goes cold, and tell them to say if they want more."
   scene: 핀잔이 끝나고 어색해진 자리. 엄마가 말없이 밥상을 차린다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-family-intermediate · 6

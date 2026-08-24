@@ -21,6 +21,7 @@ spec:
       - "-(으)ㄴ 적 있다 / 없다"
     canDo: 한번 해 보라고 권하고, 해 본 적이 있는지 주고받는다.
     canDoJa: 一度やってみてと勧め、やったことがあるかをやりとりする。
+    canDoEn: "Urge someone to give it a try, and trade questions about whether you have done it before."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-4 · 42
 

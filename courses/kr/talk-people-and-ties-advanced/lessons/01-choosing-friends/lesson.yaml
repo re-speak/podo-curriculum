@@ -23,6 +23,7 @@ spec:
     patterns: []
     canDo: 이것만은 못 참는다
     canDoJa: これだけは我慢できない
+    canDoEn: This is the one thing you can't stand
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-people-and-ties-advanced/lessons/01-choosing-friends/lesson.html
 

@@ -21,6 +21,7 @@ spec:
       - ~(으)ㄴ/는 것 같아
     canDo: 상대만 보인다고 말하고, 잘 맞는 사이라고 관계를 확정한다.
     canDoJa: 相手しか目に入らないと伝え、相性のいい仲だと関係を確かなものにする。
+    canDoEn: "Say you see no one else, and settle it as a good match."
   scene: 다 지나간 뒤, 처음 만난 그 편의점 앞을 다시 지나간다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-crush-intermediate · 10

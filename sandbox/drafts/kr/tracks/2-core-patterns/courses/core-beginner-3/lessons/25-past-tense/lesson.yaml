@@ -21,6 +21,7 @@ spec:
       - 이었어요 / 였어요
     canDo: 어제 있었던 일을 말하고, 상대에게 무엇을 했는지 묻는다.
     canDoJa: 昨日あったことを話し、相手に何をしたかを尋ねる。
+    canDoEn: "Talk about what happened yesterday, and ask what the other person did."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-3 · 25
 

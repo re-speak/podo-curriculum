@@ -25,6 +25,7 @@ spec:
     - 왜 ~는 거야?
     canDo: 하기 싫다고 떼를 쓰고, 왜 나만 시키냐고 항의한다.
     canDoJa: やりたくないと駄々をこね、なぜ自分にばかり言うのかと抗議する。
+    canDoEn: Whine that you don't want to, and protest that it's always you.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-family-intermediate/lessons/04-complaining/lesson.html
 

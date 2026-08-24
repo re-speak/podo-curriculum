@@ -21,6 +21,7 @@ spec:
       - "-아/어 보이다"
     canDo: 확실하지 않은 것을 조심스럽게 말하고, 겉모습을 보고 짐작한다.
     canDoJa: はっきりしないことを控えめに言い、見た目から推測する。
+    canDoEn: "State something uncertain with care, and guess from appearances."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-upper-beginner-2 · 61
 

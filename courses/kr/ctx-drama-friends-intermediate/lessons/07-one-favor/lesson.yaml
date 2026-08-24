@@ -25,6 +25,7 @@ spec:
     - ~아/어도 돼
     canDo: 편하게 부탁하고, 물러설 자리를 만들어 준다.
     canDoJa: 気軽に頼み、断れる余地も残してあげる。
+    canDoEn: Ask casually, and leave them room to say no.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-friends-intermediate/lessons/07-one-favor/lesson.html
 

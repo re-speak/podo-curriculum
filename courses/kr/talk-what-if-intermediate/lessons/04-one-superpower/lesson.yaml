@@ -23,6 +23,7 @@ spec:
     patterns: []
     canDo: 어디에 쓸 건가
     canDoJa: 何に使うか
+    canDoEn: What would you spend it on
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-what-if-intermediate/lessons/04-one-superpower/lesson.html
 

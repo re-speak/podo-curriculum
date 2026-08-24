@@ -23,6 +23,7 @@ spec:
     patterns: []
     canDo: 몇 번을 봐도 좋은 그 작품
     canDoJa: 何度見てもいい、あの作品
+    canDoEn: The one you can watch any number of times
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-things-i-like-advanced/lessons/01-life-changing-movie/lesson.html
 

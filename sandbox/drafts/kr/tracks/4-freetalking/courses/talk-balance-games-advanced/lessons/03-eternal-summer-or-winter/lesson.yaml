@@ -20,6 +20,7 @@ spec:
       []
     canDo: 날씨가 생활·기분·활동에 주는 영향을 비교하기
     canDoJa: 天気が暮らし・気分・行動に与える影響を比べる
+    canDoEn: "Compare how weather affects daily life, mood and what you do"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-balance-games-advanced · 3
 

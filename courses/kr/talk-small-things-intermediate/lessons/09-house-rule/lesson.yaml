@@ -23,6 +23,7 @@ spec:
     patterns: []
     canDo: 밖에 나가서 알게 된 것
     canDoJa: 外に出て初めてわかったこと
+    canDoEn: What you only learned by going out
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-small-things-intermediate/lessons/09-house-rule/lesson.html
 

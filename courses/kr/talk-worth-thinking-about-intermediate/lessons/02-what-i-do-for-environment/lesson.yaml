@@ -23,6 +23,7 @@ spec:
     patterns: []
     canDo: 하다가 그만둔 것도
     canDoJa: 途中でやめたことも
+    canDoEn: Including the ones you gave up on
   prerequisites: []
   source: sandbox/drafts/kr/tracks/4-freetalking/courses/talk-worth-thinking-about-intermediate/lessons/02-what-i-do-for-environment/lesson.html
 

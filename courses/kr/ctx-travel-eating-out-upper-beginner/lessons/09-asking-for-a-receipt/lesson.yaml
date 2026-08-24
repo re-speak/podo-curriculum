@@ -25,6 +25,7 @@ spec:
     - 방금 ~(으)ㄴ 거
     canDo: 영수증을 챙기고, 다시 뽑아 달라고 요청한다.
     canDoJa: レシートを受け取り、もう一度出してほしいとお願いする。
+    canDoEn: Take the receipt, and ask for it to be printed again.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-eating-out-upper-beginner/lessons/09-asking-for-a-receipt/lesson.html
 

@@ -21,6 +21,7 @@ spec:
       - ~(으)면 ~아/어 주시겠어요?
     canDo: 대기 시간을 묻고, 자리가 나면 연락해 달라고 부탁한다.
     canDoJa: 待ち時間を尋ね、席が空いたら連絡してほしいと頼む。
+    canDoEn: "Ask how long the wait is, and ask to be called when a table frees up."
   scene: 가게 앞에 줄이 길다. 기다릴지 말지 정해야 한다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-travel-eating-out-upper-beginner · 10

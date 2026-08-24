@@ -26,8 +26,12 @@ spec:
     patternsJa:
     - ~아/어서요
     - ~아/어 있다（コア41）+ ~(으)ㄴ데요
+    patternsEn:
+    - ~아/어서요
+    - ~아/어 있다 (Core 41) + ~(으)ㄴ데요
     canDo: 주문이 안 나왔다고 알리고, 음식에 이물질이 있다고 정중하게 말한다.
     canDoJa: 注文したものが来ていないと伝え、料理に異物が入っているとていねいに伝える。
+    canDoEn: Point out that an order hasn't arrived, and mention politely that there's something in the food.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-eating-out-upper-beginner/lessons/07-raising-a-problem/lesson.html
 

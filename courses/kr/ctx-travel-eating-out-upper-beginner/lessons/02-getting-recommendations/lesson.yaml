@@ -25,6 +25,7 @@ spec:
     - ~(으)ㄹ까요?
     canDo: 잘나가는 메뉴를 묻고, 외국인 입맛에 맞는 것을 추천받는다.
     canDoJa: 人気のメニューを尋ね、外国人の口に合うものを勧めてもらう。
+    canDoEn: Ask what sells well, and get a recommendation suited to a foreign palate.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-eating-out-upper-beginner/lessons/02-getting-recommendations/lesson.html
 

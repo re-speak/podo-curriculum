@@ -21,6 +21,7 @@ spec:
       - N이/가 어디에 있어요?
     canDo: 어떤 것이 있는지 묻고, 없으면 없다고 답한다.
     canDoJa: 何があるかを尋ね、なければないと答える。
+    canDoEn: "Ask what there is, and answer that there isn't any when there isn't."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-2 · 16
 

@@ -25,6 +25,7 @@ spec:
     - N밖에 없다
     canDo: 속엣말을 털어놓고, 들어 주는 사람이 되어 준다.
     canDoJa: 本音を打ち明け、聞き役にもなってあげる。
+    canDoEn: Open up about what's inside, and be the one who listens.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-friends-intermediate/lessons/09-just-between-us/lesson.html
 

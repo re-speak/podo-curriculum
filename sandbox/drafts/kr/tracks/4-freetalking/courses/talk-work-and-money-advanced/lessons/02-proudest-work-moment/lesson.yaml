@@ -20,6 +20,7 @@ spec:
       []
     canDo: 어떤 일이었고 왜 뿌듯했는지 이야기하기
     canDoJa: どんな出来事で、なぜ誇らしかったのかを話す
+    canDoEn: "Tell what it was, and why it made you proud"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-work-and-money-advanced · 2
 

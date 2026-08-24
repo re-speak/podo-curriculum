@@ -17,6 +17,7 @@ spec:
       - ~자
     canDo: 잘 맞는 사이라고 말하고, 앞으로도 보자고 약속한다.
     canDoJa: 気が合う仲だと伝え、これからも会おうと約束する。
+    canDoEn: "Say you get on well, and promise to keep meeting."
   scene: 처음 만났던 그 편의점 앞. 그새 계절이 바뀌었다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-drama-friends-intermediate · 10

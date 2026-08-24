@@ -20,6 +20,7 @@ spec:
       []
     canDo: 밖에 나가서 알게 된 것
     canDoJa: 外に出て初めてわかったこと
+    canDoEn: "What you only learned by going out"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-small-things-advanced · 9
 

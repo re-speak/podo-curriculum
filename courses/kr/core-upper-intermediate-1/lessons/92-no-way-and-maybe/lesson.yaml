@@ -25,6 +25,7 @@ spec:
     - -(으)ㄹ지도 모르다
     canDo: 소문 하나를 두고 주고받는다 — 한쪽은 절대 그럴 리 없다고 잘라 말하고, 다른 쪽은 혹시 모른다고 여지를 둔다.
     canDoJa: 一つのうわさをめぐってやりとりする — 一方は絶対にありえないと言い切り、もう一方はもしかしたらと余地を残す。
+    canDoEn: Trade views on a rumour — one side rules it out flatly, the other leaves room for maybe.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-upper-intermediate-1/lessons/92-no-way-and-maybe/lesson.html
 

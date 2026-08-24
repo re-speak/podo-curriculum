@@ -20,6 +20,7 @@ spec:
       []
     canDo: 나라를 고르고 그곳에서 살고 싶은 이유 말하기
     canDoJa: 国を一つ選び、そこで暮らしたい理由を話す
+    canDoEn: "Pick a country, and say why you'd want to live there"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-what-if-advanced · 10
 

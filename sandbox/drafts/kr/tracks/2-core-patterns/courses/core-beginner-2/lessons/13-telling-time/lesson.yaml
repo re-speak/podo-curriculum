@@ -21,6 +21,7 @@ spec:
       - N시 N분
     canDo: 지금 몇 시인지 묻고, 약속 시간을 말한다.
     canDoJa: 今何時かを尋ね、約束の時間を言う。
+    canDoEn: "Ask what time it is now, and say the time you have arranged."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-2 · 13
 

@@ -21,6 +21,7 @@ spec:
       - ~(으)ㄹ걸
     canDo: 큰일 날 뻔했다고 가슴을 쓸어내리고, 하지 말걸 그랬다고 후회한다.
     canDoJa: 大事になりかけたと胸をなでおろし、やらなければよかったと悔やむ。
+    canDoEn: "Breathe out that it nearly went badly, and wish you hadn't done it."
   scene: 큰일 날 뻔했던 이야기를 하다가, 그때 한 말이 떠오른다.
   prerequisites: []
   source: podo-curriculum-public 3-contextual-korean/ctx-banmal-chatting-intermediate · 9

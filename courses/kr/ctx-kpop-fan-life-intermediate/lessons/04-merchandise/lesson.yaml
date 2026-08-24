@@ -25,6 +25,7 @@ spec:
     - ~아/어야겠다
     canDo: 품절 가능성을 걱정하고, 그 자리에서 사겠다고 마음먹는다.
     canDoJa: 売り切れそうだと心配し、その場で買うと心を決める。
+    canDoEn: Worry it may sell out, and decide on the spot to buy.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-fan-life-intermediate/lessons/04-merchandise/lesson.html
 

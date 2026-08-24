@@ -20,6 +20,7 @@ spec:
       []
     canDo: 무조건 넣는 그 곡
     canDoJa: 必ず入れる、あの曲
+    canDoEn: "The track that always makes the list"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-things-i-like-intermediate · 4
 

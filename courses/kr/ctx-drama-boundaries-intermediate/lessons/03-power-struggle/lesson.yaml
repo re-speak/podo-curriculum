@@ -25,6 +25,7 @@ spec:
     - ~지도 않고
     canDo: 핑계도 못 대게 막고, 상의 없이 결정한 것을 따진다.
     canDoJa: 言い訳もできないように封じ、相談なしに決めたことを問いただす。
+    canDoEn: Cut off any excuse, and challenge them for deciding without consulting you.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-boundaries-intermediate/lessons/03-power-struggle/lesson.html
 

@@ -25,6 +25,7 @@ spec:
     - ~아/어다 주다
     canDo: 청소를 사양하고, 방으로 물건을 가져다 달라고 요청한다.
     canDoJa: 清掃を断り、部屋まで物を持ってきてほしいとお願いする。
+    canDoEn: Decline housekeeping, and ask for something to be brought to your room.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-staying-upper-beginner/lessons/05-housekeeping-and-room-service/lesson.html
 

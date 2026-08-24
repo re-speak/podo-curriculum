@@ -21,6 +21,7 @@ spec:
       - 무슨 요일
     canDo: 오늘 날짜와 요일을 말하고, 생일과 일정을 묻는다.
     canDoJa: 今日の日付と曜日を言い、誕生日と予定を尋ねる。
+    canDoEn: "Give today's date and day of the week, and ask about birthdays and plans."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-beginner-2 · 14
 

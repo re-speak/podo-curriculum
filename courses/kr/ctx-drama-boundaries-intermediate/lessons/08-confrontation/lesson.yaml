@@ -25,6 +25,7 @@ spec:
     - 도대체 왜 ~(으)ㄴ 거야?
     canDo: 처음부터 알고 있었던 것 아니냐고 추궁하고, 왜 거짓말했는지 따진다.
     canDoJa: 最初から知っていたのではないかと問い詰め、なぜうそをついたのかを追及する。
+    canDoEn: Press them on whether they knew all along, and demand why they lied.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-drama-boundaries-intermediate/lessons/08-confrontation/lesson.html
 

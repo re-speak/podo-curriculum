@@ -20,6 +20,7 @@ spec:
       []
     canDo: 내 일 중에서
     canDoJa: 自分の仕事の中で
+    canDoEn: "Out of the work you do"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-worth-thinking-about-intermediate · 3
 

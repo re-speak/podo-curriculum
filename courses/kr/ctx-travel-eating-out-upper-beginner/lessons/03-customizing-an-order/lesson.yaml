@@ -25,6 +25,7 @@ spec:
     - N 빼고
     canDo: 맵기를 조절해 달라고 하고, 특정 재료를 빼 달라고 한다.
     canDoJa: 辛さを調節してほしいと頼み、特定の材料を抜いてほしいと言う。
+    canDoEn: Ask for the spice level to be adjusted, and for a particular ingredient to be left out.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-eating-out-upper-beginner/lessons/03-customizing-an-order/lesson.html
 

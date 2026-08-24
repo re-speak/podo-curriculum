@@ -20,6 +20,7 @@ spec:
       []
     canDo: 계획대로 안 됐던 그날
     canDoJa: 計画どおりにいかなかった、あの日
+    canDoEn: "The day nothing went to plan"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-what-came-before-advanced · 6
 

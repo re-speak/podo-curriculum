@@ -25,6 +25,7 @@ spec:
     - ~(으)ㄹ 지경이다
     canDo: 최애가 잘나간다고 자랑하고, 자랑스러운 감정을 과장해 표현한다.
     canDoJa: 推しが売れていると自慢し、誇らしい気持ちを大げさに表す。
+    canDoEn: Boast that your favourite is doing well, and lay the pride on thick.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-online-intermediate/lessons/07-bragging-about-your-fave/lesson.html
 

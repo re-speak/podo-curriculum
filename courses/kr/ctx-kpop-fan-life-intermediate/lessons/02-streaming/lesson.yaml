@@ -26,8 +26,12 @@ spec:
     patternsJa:
     - ~아/어야지（コア81・~(으)니까は54の復習）
     - ~(으)려면 ~아/어야 되다
+    patternsEn:
+    - ~아/어야지 (Core 81; ~(으)니까 revisits 54)
+    - ~(으)려면 ~아/어야 되다
     canDo: 스밍을 돌리자고 다짐하고, 목표를 위해 더 해야 한다고 독려한다.
     canDoJa: ストリーミングを回そうと誓い、目標のためにもっとやろうと励ます。
+    canDoEn: Commit to keeping the streams going, and rally for more to hit the target.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-fan-life-intermediate/lessons/02-streaming/lesson.html
 

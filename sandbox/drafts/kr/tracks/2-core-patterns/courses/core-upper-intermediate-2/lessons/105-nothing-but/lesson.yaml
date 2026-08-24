@@ -21,6 +21,7 @@ spec:
       - N밖에 없다
     canDo: 다른 선택지가 없어 그렇게 할 수밖에 없다고 말한다.
     canDoJa: ほかに選択肢がなく、そうするしかないと言う。
+    canDoEn: "Say there was no other option, so it had to be that way."
   prerequisites: []
   source: podo-curriculum-public 2-core-patterns/core-upper-intermediate-2 · 105
 

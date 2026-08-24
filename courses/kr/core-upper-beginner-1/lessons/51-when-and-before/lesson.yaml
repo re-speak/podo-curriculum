@@ -25,6 +25,7 @@ spec:
     - -기 전에
     canDo: 어떤 때에 하는 일인지 말하고, 그 전에 할 일을 덧붙인다.
     canDoJa: どんなときにすることかを言い、その前にすることを付け加える。
+    canDoEn: Say what occasion you do it on, and add what comes before it.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-upper-beginner-1/lessons/51-when-and-before/lesson.html
 

@@ -25,6 +25,7 @@ spec:
     - 피동사 + -아/어 있다
     canDo: 어떤 것이 망가지거나 놓인 결과를 그 상태 그대로 전한다.
     canDoJa: 何かが壊れた・置かれた結果を、その状態のまま伝える。
+    canDoEn: Report the result of something broken or put in place, as the state it is in.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-intermediate-3/lessons/86-broken-and-left/lesson.html
 

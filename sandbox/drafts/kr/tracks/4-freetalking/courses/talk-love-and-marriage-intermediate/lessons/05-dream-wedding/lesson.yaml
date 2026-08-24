@@ -20,6 +20,7 @@ spec:
       []
     canDo: 하고 싶은 것, 절대 안 하고 싶은 것
     canDoJa: やってみたいこと、絶対にやりたくないこと
+    canDoEn: "What you'd like to try, and what you never would"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-love-and-marriage-intermediate · 5
 

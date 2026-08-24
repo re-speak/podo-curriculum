@@ -25,6 +25,7 @@ spec:
     - ~(으)ㄴ/는지 알 수 있을까요?
     canDo: 포카 교환이 가능한지 묻고, 가격을 정중하게 문의한다.
     canDoJa: トレカの交換ができるかを尋ね、値段をていねいに問い合わせる。
+    canDoEn: Ask whether a photocard trade is possible, and enquire politely about price.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-kpop-fan-life-intermediate/lessons/10-merch-trading/lesson.html
 

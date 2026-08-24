@@ -20,6 +20,7 @@ spec:
       []
     canDo: 좋았던 사람과 힘들었던 사람의 차이 설명하기
     canDoJa: よかった人と、しんどかった人の違いを説明する
+    canDoEn: "Explain the difference between the good ones and the hard ones"
   prerequisites: []
   source: podo-curriculum-public 4-freetalking/talk-work-and-money-advanced · 9
 

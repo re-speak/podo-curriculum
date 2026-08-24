@@ -25,6 +25,7 @@ spec:
     - -다가
     canDo: 공부하거나 일하는 습관을 이야기한다 — 무엇을 하면서 같이 하는지, 그러다 결국 무엇으로 새는지.
     canDoJa: 勉強や仕事の習慣を話す — 何をしながら一緒にするのか、そのうち結局何に脱線するのか。
+    canDoEn: Talk about how you study or work — what you do alongside it, and what you end up drifting into.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/2-core-patterns/courses/core-upper-beginner-2/lessons/59-while-and-midway/lesson.html
 

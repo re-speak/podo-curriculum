@@ -25,6 +25,7 @@ spec:
     - N(으)로 바꾸다
     canDo: 객실 설비가 작동하지 않는다고 알리고, 방 교체를 요청한다.
     canDoJa: 客室の設備が動かないと伝え、部屋の交換をお願いする。
+    canDoEn: Report that something in the room isn't working, and ask to change rooms.
   prerequisites: []
   source: sandbox/drafts/kr/tracks/3-contextual-korean/courses/ctx-travel-staying-upper-beginner/lessons/02-room-problems/lesson.html
 
