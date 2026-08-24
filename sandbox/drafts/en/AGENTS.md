@@ -65,6 +65,11 @@ of *this folder* rather than of the language.
   grammaticality, word counts and structural checks do not prove conversational immediacy. Each
   follow-up set also needs a concrete route after `I don't know`, `none` or `never`; that rescue
   question must pass the same three-second test.
+  Record that judgment in the hash-bound page-review ledger for every question page:
+  `plausibleFirstAnswer` is what the reviewer actually said, `answerExpansion` names the
+  detail or reason that can naturally extend it, and `noAnswerFollowup` quotes the current
+  tutor follow-up that works after `I don't know`, `none` or `never`. A generic claim such
+  as “looks answerable” is not evidence, and a changed lesson hash invalidates the record.
 
 ### No katakana readings. Ever. At any level.
 

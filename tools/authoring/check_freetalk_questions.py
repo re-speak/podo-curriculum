@@ -15,9 +15,10 @@ near-identical pair whose only change is `surprised` → `genuinely surprised` i
 reported as a warning because that is cosmetic adaptation, not because the two
 levels are required to diverge.
 
-**The learner must be in the question.**  `What can make a useful item stop
-feeling worth it?` has no person in it, so there is nothing to retrieve and
-nothing to follow up.  A prompt addressed to nobody is a survey item.
+**The learner needs an immediate foothold.** `What can make a useful item stop
+feeling worth it?` introduces a generic item and then asks the learner to reason
+about it. Personal wording is one solution, but not a requirement: a direct,
+concrete opinion question can be excellent without saying `you`.
 
 **A prompt is one job.**  Two question marks, or two requests joined by `and`,
 give the learner a choice to make before they can start answering.
@@ -60,20 +61,11 @@ QUESTION = re.compile(
 FOLLOWUP_BLOCK = re.compile(r'<ul class="tn-more">(.*?)</ul>', re.S)
 FOLLOWUP_ITEM = re.compile(r"<li>(.*?)</li>", re.S)
 
-# The defect is not a missing "you" — it is a prompt with no one and nothing in
-# it.  `What can make a useful item stop feeling worth it?` fails because
-# `a useful item` is an indefinite the learner has to invent before answering,
-# while `When is that dish at its best?` is fine: `that dish` is the thing they
-# named one page earlier.  So a prompt passes when it reaches *someone in the
-# room* (you / I / we) or *something already on the table* (that, it, those) —
-# and when it does neither, the generic subject is the reason it is dead.
-EN_ADDRESS = re.compile(r"\b(you|your|yours|yourself)\b", re.I)
-EN_ROOM = re.compile(r"\b(i|me|my|mine|we|us|our)\b", re.I)
-EN_DEICTIC = re.compile(r"\b(that|those|it|its|them|their|this|these|there)\b", re.I)
-EN_IMPERATIVE = re.compile(r"^(tell|sell|talk|ask|describe|give|choose|pick|convince|imagine|think|walk|take)\b", re.I)
-KR_ADDRESS = re.compile(r"(요\?|까\?|나요|세요|봐요|어요|아요|예요|이에요)")
-
-INVERSION = {"en": re.compile(r"^now the opposite\b", re.I), "kr": re.compile(r"(반대로|거꾸로)")}
+# This narrow pattern catches one known dead shape without asserting that every
+# excellent opinion question must literally contain ``you``.
+EN_INDEFINITE_IT = re.compile(
+    r"\b(a|an|any|some|something|anything)\b[^?]*\b(it|its)\b", re.I
+)
 
 
 def text(value: str) -> str:
@@ -124,6 +116,10 @@ def audit(lang: str, root: Path, variants: tuple[str, str]):
 
             for variant, prompt in ((variants[0], low_en), (variants[1], up_en)):
                 errors.extend(f"{where} {slot} {variant}: {problem}" for problem in prompt_problems(lang, prompt))
+                warnings.extend(
+                    f"{where} {slot} {variant}: {problem}"
+                    for problem in prompt_warnings(lang, prompt)
+                )
                 limit = PROMPT_WORDS_MAX["lower" if variant == variants[0] else "upper"]
                 words = len(re.findall(r"[^\s]+", prompt))
                 if words > limit:
@@ -141,6 +137,20 @@ def prompt_problems(lang: str, prompt: str) -> list[str]:
     if prompt.count("?") > 1:
         problems.append(f'two questions in one prompt — "{prompt}"')
     return problems
+
+
+def prompt_warnings(lang: str, prompt: str) -> list[str]:
+    """Surface likely dead prompts for a human; never pretend to judge interest."""
+    # An ``it`` that merely repeats an indefinite noun introduced inside this
+    # same prompt is not an established conversational referent. Keep this
+    # deliberately narrow: questions can be concrete and engaging without
+    # explicitly saying ``you``.
+    if lang != "en" or not EN_INDEFINITE_IT.search(prompt):
+        return []
+    return [
+        "indefinite subject with no established referent — confirm that the question has an "
+        f'immediate personal answer and a follow-up path — "{prompt}"'
+    ]
 
 
 def main() -> int:
