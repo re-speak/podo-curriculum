@@ -3276,7 +3276,7 @@ HTML이 원본이다. 이 파일은 중요한 텍스트만 모은 검수용 투�
 ### 고급
 
 - source: `sandbox/drafts/kr/tracks/4-freetalking/courses/talk-things-i-like-advanced/lessons/09-proud-of-my-hobby/lesson.html`
-- sha256: `6ffbb3b0e0138a6fcfb0174671fb6e821cbe5ccc8cb07923126a653b40027aa0`
+- sha256: `89164619189eeef400b3badd7d2f6db2992c918dfe1173c179141831d3b64d52`
 - source kind: `article`
 
 #### `metadata`
@@ -3383,7 +3383,7 @@ HTML이 원본이다. 이 파일은 중요한 텍스트만 모은 검수용 투�
 - `line.10.vocabulary.1.ja` · JA: 比較
 - `line.10.vocabulary.2.ko` · KO: 줄이다
 - `line.10.vocabulary.2.ja` · JA: 減らす
-- `line.11.ko` · KO: 잘하는 사람과 자꾸 견주면 취미가 일처럼 느껴져요.
+- `line.11.ko` · KO: 잘하는 사람과 자꾸 비교하면 취미가 일처럼 느껴져요.
 - `line.11.ja` · JA: 上手な人とばかり比べると、趣味が仕事のように感じられます。
 - `line.11.highlight.1.ko` · KO: 일
 - `line.11.highlight.2.ko` · KO: 느껴져
@@ -3479,7 +3479,7 @@ HTML이 원본이다. 이 파일은 중요한 텍스트만 모은 검수용 투�
 ### 중급
 
 - source: `sandbox/drafts/kr/tracks/4-freetalking/courses/talk-things-i-like-intermediate/lessons/09-proud-of-my-hobby/lesson.html`
-- sha256: `555e3b4d74b9db33680f488fd486ab15f4db154b377488860cc1c85faa74cd5c`
+- sha256: `7db63cbd9753f929ee50785b093c10dddab55c55656f888d4b75a4966da3e49b`
 - source kind: `article`
 
 #### `metadata`
@@ -3578,7 +3578,7 @@ HTML이 원본이다. 이 파일은 중요한 텍스트만 모은 검수용 투�
 - `line.9.vocabulary.1.ja` · JA: 代わり
 - `line.9.vocabulary.2.ko` · KO: 않다
 - `line.9.vocabulary.2.ja` · JA: ~ない
-- `line.10.ko` · KO: 오래 즐기려면 남과 견주지 말아야 해요.
+- `line.10.ko` · KO: 오래 즐기려면 남과 비교하지 말아야 해요.
 - `line.10.ja` · JA: 長く楽しむには、他人と比べないようにするべきです。
 - `line.10.highlight.1.ko` · KO: 남
 - `line.10.highlight.2.ko` · KO: 말

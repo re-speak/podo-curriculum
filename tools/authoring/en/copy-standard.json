@@ -1,0 +1,24 @@
+{
+  "_note": [
+    "Settled English copy decisions, read by tools/authoring/copy_standard.py.",
+    "",
+    "This file is empty on purpose, and the emptiness is the point. The Korean",
+    "table exists because two proofreading rounds produced rules; the English",
+    "corpus has had a pilot review but has never had its accepted wording written",
+    "down anywhere a check could reach. Until then the mechanism runs green here",
+    "and costs nothing.",
+    "",
+    "It is here rather than waiting to be created because of what happened the",
+    "last time a general rule was filed under one language: the contract was a",
+    "Korean document with an English appendix until 2026-08-22, and both curricula",
+    "spent a week re-deriving each other's rules a day apart. A rule that is true",
+    "of both languages belongs in shared/ux-philosophy.md; a wording decision that",
+    "is true only of English belongs here, in the same shape as the Korean one.",
+    "",
+    "Rule kinds and fields: see the header of tools/authoring/copy_standard.py.",
+    "Note that kana sound anchors are a Korean-only device, so the Korean table's",
+    "`pair` rules have no English analogue — but `run` and `glossary` do, and the",
+    "slang-gloss rule in particular would transfer to English as written."
+  ],
+  "rules": []
+}

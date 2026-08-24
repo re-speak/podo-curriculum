@@ -100,6 +100,39 @@ its delta file.
 - **Fix the support language in the same change.** When the target-language line moves to this
   register, the Japanese moves with it — same subject, same strength of invitation, same
   reassurance.
+- **Never claim the activity is the real one.** "This time it's a real question", "now for the
+  real thing" — the frame is doing nothing except telling the learner that everything up to here
+  was pretend. Say whose turn it is and what they produce. This was the single most repeated
+  comment across two Korean proofreading rounds, on four courses, in four separate weeks.
+- **An instruction says what to do, not how it should feel.** Cut the atmospheric rider and keep
+  the task: "read the four sentences" is the instruction; "without rushing the ending, letting it
+  linger" is direction for a performance the page never asked for. Mood belongs in the scene the
+  learner reads and in the tutor note, not in the imperative.
+- **Prefer the ordinary word to the pretty one.** A support line's job is to be understood at
+  speed by someone reading in their second language. Where a literary synonym and an everyday
+  word mean the same thing, the everyday word wins — and where the deck has already taught the
+  everyday word elsewhere, using its synonym here costs the learner the connection.
+- **Name the thing the learner is looking at.** An instruction that calls the on-screen chips
+  something other than what they visibly are ("place the four chunks in order") makes the learner
+  hunt for an object that is not on the page.
+
+### An activity title is a verb phrase
+A title names what the learner will do, with enough context that it is unambiguous on its own —
+"ask for a table at a restaurant", not "getting a table"; "report a problem with the room", not
+"room problems". A bare noun label reads as a chapter heading, and the learner arrives at the page
+still not knowing what is being asked of them. Fourteen titles were rewritten this way in a single
+proofreading round, which is what turned it from a preference into a rule.
+
+Titles are also the one place an inline gloss does *not* go: a title is two or three words, and a
+parenthetical inside one attaches itself to the last word only.
+
+### Slang is glossed where the learner first meets it
+A curriculum that teaches fandom or internet language has to teach it, not just use it. The gloss
+goes on the first learner-facing line that uses the short form — the scene, the goal, the question
+— as `줄임말(원말)` or by writing the full form. A gloss in the vocabulary strip on a later page
+does not count: that is exactly the deck state a reviewer was reading when they wrote "what is
+생카? I don't know either." The short form is welcome in the dialogue the lesson is teaching, once
+the learner has been told what it is.
 
 ### The learner reads the model; the tutor does not read it first
 On a page whose models are already printed on screen, the learner reads them. Do **not** build
@@ -213,6 +246,13 @@ deck at all. The two halves are one mechanism.
 - **Show a short speaker name beside every avatar.** An avatar supports recognition; it does not
   replace an explicit identity. Use the same canonical name throughout the scene and do not add
   titles or descriptions to individual turns.
+- **Two names in one scene are two faces, and one name keeps one face across a course.** A
+  reviewer reported this four times in one round — "지민, 선배 and 형 have the same face", "the
+  friend and 소희 look identical", "지훈 is a woman" — and every instance had the same cause: the
+  shared runtime ships two portraits, so every partner in every scene pointed at the same one.
+  Assign faces per course, not per deck: a 직원 who is one person in lesson 4 and someone else in
+  lesson 7 is worse than the collision it was meant to fix. Where the cast outgrows the portraits
+  that exist, that is an asset request, not something to paper over by reusing a face.
 
 ## Visual system
 - **White cards on a 1px grey outline.** Weight is carried by type and by fills, not by

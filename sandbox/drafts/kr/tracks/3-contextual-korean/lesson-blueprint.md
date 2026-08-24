@@ -73,7 +73,7 @@
 | `pN-read` | `.model-line` ×4 | 튜터가 장면의 감정을 보여 준 뒤 학습자가 직접 읽는다 | 있음 |
 | `pN-rule` | `.batchim` / `.batchim.ending-rule` | 실제 형태 분기당 규칙 상자 하나 | — |
 | `pN-choose` (조건부) | `.choose-row sentence` ×4 | 실제 두 형태를 구별할 때만 | 있음 |
-| `pN-reorder` | `.task-block` ×4 + `.answer-box small` | 문장마다 의미 덩어리 4개 배열 | 없음 |
+| `pN-reorder` | `.task-block` ×4 + `.answer-box small` | 문장마다 낱말 덩어리 4개 배열 | 없음 |
 | `pN-fill` | `.task-block` ×4 + `.answer-box` | 빈칸은 패턴 자리만 | 없음 |
 | `pN-translate` | `.task-block` ×4 + `.answer-box` | 일본어 → 한국어 | 없음 |
 | `pN-write` | `.answer-box tall` | 자기 이야기 / 자기 질문 | 없음 |

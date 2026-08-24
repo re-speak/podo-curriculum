@@ -7,9 +7,9 @@ spec:
   week: 2
 
   title:
-    ko: "스밍"
+    ko: "스트리밍 (반복재생)"
     en: "Streaming"
-    ja: "ストリーミング"
+    ja: "ストリーミング（リピート再生）"
 
   decks:
     lecture:  { entry: lecture/index.html }
