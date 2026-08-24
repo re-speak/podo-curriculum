@@ -8,10 +8,12 @@ brief. Component markup and tutor voice come from the matching approved canonica
   and [`courses/talk-between-two-countries-accessible/lessons/01-this-surprised-me/lesson.html`](./courses/talk-between-two-countries-accessible/lessons/01-this-surprised-me/lesson.html).
   Use the full shell for full lessons and the accessible shell for accessible lessons. Preserve
   their semantic pairing while lowering language load only in the accessible version.
-- **Live runtime state:** shared runtime `v1.12.1` is published and live. It localizes generated
-  teaching-mode labels from `<meta name="podo:target-language" content="en">`, so the approved
-  English behavior has no outstanding publish or repoint dependency. Future runtime changes still
-  require a coordinated publish and repoint; do not hide runtime gaps with deck-local overrides.
+- **Live runtime state:** the immutable tag in
+  [`../../../../curriculum.yaml`](../../../../curriculum.yaml) at
+  `spec.sharedRuntime.version` is the source of truth. It localizes generated teaching-mode labels
+  from `<meta name="podo:target-language" content="en">`. Future runtime changes still require a
+  coordinated publish and repoint; do not copy a version into this blueprint or hide runtime gaps
+  with deck-local overrides.
 - **Structural counterpart:**
   [`../../../korean/tracks/4-freetalking/sample-lesson.html`](../../../korean/tracks/4-freetalking/sample-lesson.html).
   Its 10–15-sentence pre-study article, correction contract and question-page rhythm are the
@@ -30,7 +32,7 @@ brief. Component markup and tutor voice come from the matching approved canonica
 This track has no pattern ladder and no answer key. Its instructional unit is the learner's own
 sentence becoming more natural, precise or intelligible without stopping the conversation.
 
-> **The blueprint, both approved canonical decks and `english/tools/check_deck.py` are one spec in
+> **The blueprint, both approved canonical decks and `tools/authoring/check_deck.py` are one spec in
 > four forms.** When a countable rule changes, update all four in the same change. A prose-only rule
 > is too easy for a generated course to miss, while a checker-only rule leaves writers copying a
 > stale canonical deck.

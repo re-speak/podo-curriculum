@@ -131,13 +131,18 @@ python3 tools/build.py courses/kr/hangul-lv1/lessons/01-block-and-first-sounds/l
 python3 tools/build-catalog.py                 # the public catalog → site/
 python3 -m http.server -d site 8000            # …look at it
 
-python3 tools/make-promotion.py --lang en      # derive promotion.yaml from the decks
-python3 tools/promote.py --check               # what promotion would change
-python3 tools/promote.py                       # promote every reviewed draft
+python3 tools/make-promotion.py <course-draft-dir> --force
+python3 tools/promote.py --check <course-draft-dir>/promotion.yaml
+python3 tools/promote.py <course-draft-dir>/promotion.yaml
+python3 tools/repoint-shared.py <lang/course-slug>
 
 python3 tools/authoring/kr/check_structure.py  # the Korean deck checkers
-python3 tools/authoring/en/check_deck.py --all # …and the English one
+python3 tools/authoring/check_deck.py sandbox/drafts  # shared content gate
 ```
+
+The positional scope is intentional: without it, promotion and repointing walk
+the whole repository. Use the no-argument forms only for a deliberate full-corpus
+regeneration.
 
 Promotion reads `sandbox/drafts/`, which `tools/model.py` refuses to walk, and
 writes `courses/`. It is never called by CI — putting a lesson in front of a
@@ -151,8 +156,8 @@ claiming a change works.
 
 Read [`shared/ux-philosophy.md`](shared/ux-philosophy.md) first — every time,
 including small edits. It is the contract for every page: one activity per page,
-Korean-first titles, one blue tutor-script box, one boxed component that fills the
-page, receptive → productive.
+target-language-first titles, one blue tutor-script box, one boxed component that
+fills the page, receptive → productive.
 
 Anything the learner taps, types or drags goes through lemonboard's `data-sync`
 contract. The implementation in lemonboard is the SSOT; the working summary lives

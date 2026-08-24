@@ -4,6 +4,10 @@
 **Scope:** Japanese-market learners studying English
 **Decision status:** owner decisions recorded 2026-08-13; no product rows or identifiers reserved
 
+> **Historical decision record.** The product choices remain evidence, but the repository workflow,
+> deployability, prestudy, importer, and course-state descriptions below reflect 2026-08-13. Do not
+> use them as current operating instructions; follow `../AGENTS.md` and inspect the current tree.
+
 > **Contextual direction approved 2026-08-13:** five standalone Travel English courses and five
 > standalone Business English courses, both beginning at low-intermediate and rising to B2–C1
 > bridge work. The earlier show/season and interim four-area identifiers are retired.

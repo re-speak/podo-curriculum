@@ -369,9 +369,9 @@ Static checks:
 ### Run the checker
 
 ```sh
-python3 tools/authoring/en/check_deck.py sandbox/drafts/en/tracks      # English tree
-python3 tools/authoring/en/check_deck.py path/to/lesson.html           # one deck
-python3 tools/authoring/en/check_deck.py --all                         # every English deck
+python3 tools/authoring/check_deck.py sandbox/drafts/en/tracks         # English tree
+python3 tools/authoring/check_deck.py path/to/lesson.html              # one deck
+python3 tools/authoring/check_deck.py --all                            # every deck
 python3 tools/authoring/en/build_running_lexicon.py                     # regenerate author ledger
 ```
 
@@ -460,10 +460,18 @@ python3 tools/authoring/en/build_catalog.py
 python3 tools/authoring/en/build_running_lexicon.py
 ```
 
-If shared runtime files changed, publish a new immutable tag before repointing decks. Then run
-`python3 tools/repoint-shared.py` and `python3 tools/validate.py --contract --env stage`; the latter
-checks that the referenced tag is live and matches the repository bytes.
+Once the integrated course passes, refresh its reviewed `promotion.yaml`, promote only that
+manifest, repoint only that promoted course, and run the deployability gate:
 
-Only after the integrated course passes should it move toward production, which means adding a
-reviewed `promotion.yaml` and using `tools/promote.py`. That step remains blocked by the deferred
-prestudy contract; authoring and review do not.
+```sh
+python3 tools/promote.py --check <course-draft-dir>/promotion.yaml
+python3 tools/promote.py <course-draft-dir>/promotion.yaml
+python3 tools/repoint-shared.py en/<course-slug>
+python3 tools/validate.py --env stage
+```
+
+With no positional arguments the promotion and repoint commands walk the whole repository, so do
+not omit the scope during ordinary course work. If shared runtime files changed, publish the new
+immutable tag before the scoped repoint. The authenticated contract check may also be run locally
+with `--contract` when `PODO_LEMONBOARD_API_KEY` is already present; otherwise the required PR
+check owns that verdict.

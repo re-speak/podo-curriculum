@@ -48,10 +48,15 @@ licensed textbook scans, and nothing syncs from it.
 vim sandbox/drafts/kr/tracks/…/lessons/<NN-slug>/lesson.html   # write
 python3 tools/authoring/kr/check_structure.py                  # check
 python3 tools/make-promotion.py <course-draft-dir> --force     # refresh promotion.yaml
-python3 tools/promote.py --check                               # see what would ship
-python3 tools/promote.py                                       # write courses/
-python3 tools/repoint-shared.py && python3 tools/validate.py    # pin + gate
+python3 tools/promote.py --check <course-draft-dir>/promotion.yaml  # see this course
+python3 tools/promote.py <course-draft-dir>/promotion.yaml          # write this target
+python3 tools/repoint-shared.py <lang/course-slug>                  # pin this target
+python3 tools/validate.py                                           # gate
 ```
+
+Pass the exact manifest and course key for ordinary course work. With no positional
+arguments, `promote.py` and `repoint-shared.py` walk the whole repository; that is a
+deliberate full-corpus regeneration, not shorthand for “promote my changed course.”
 
 - **`tools/authoring/`** holds the checks that are true of both curricula —
   `check_deck.py`, `check_quotes.py`, `vocabulary.py`, `page_review.py`. Run them

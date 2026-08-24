@@ -74,6 +74,18 @@ class FullFirstContractTests(unittest.TestCase):
                 source = paths[0].read_text(encoding="utf-8")
                 self.assertIn('<meta name="podo:proofread-status" content="pending">', source)
 
+    def test_balance_game_generator_matches_committed_decks(self):
+        import generate_ft_balance_games_batch as generator
+
+        retired_prompt = "Ask your tutor which option " + "they would choose and why."
+        for topic in generator.TOPIC_NUMBERS:
+            for variant in generator.VARIANTS:
+                with self.subTest(topic=topic, variant=variant):
+                    built = generator.build(topic, variant)
+                    committed = generator.output_path(topic, variant).read_text(encoding="utf-8")
+                    self.assertNotIn(retired_prompt, built)
+                    self.assertEqual(built, committed)
+
     def test_preserved_hand_authored_pairs_match_their_content_locks(self):
         import generate_ft_course_batch
         import generate_ft_me_lately_batch

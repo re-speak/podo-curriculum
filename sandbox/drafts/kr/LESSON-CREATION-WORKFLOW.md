@@ -44,8 +44,8 @@ grammar slots is not a narrative course plan.
 Then generate and validate the course plan:
 
 ```sh
-python3 korean/tools/plan_courses.py korean/tracks/<track>
-python3 korean/tools/plan_courses.py --all --dry-run
+python3 tools/authoring/kr/plan_courses.py sandbox/drafts/kr/tracks/<track>
+python3 tools/authoring/kr/plan_courses.py --all --dry-run
 ```
 
 `course.yaml` is generated. Do not hand-edit its course code, class level or planned lesson
@@ -54,9 +54,9 @@ comments; change the TOC/parser and rerun.
 ## 2. Generate textual lesson briefs
 
 ```sh
-python3 korean/tools/build_lesson_briefs.py korean/tracks/<track>
+python3 tools/authoring/kr/build_lesson_briefs.py sandbox/drafts/kr/tracks/<track>
 # or, after a cross-curriculum change
-python3 korean/tools/build_lesson_briefs.py --all
+python3 tools/authoring/kr/build_lesson_briefs.py --all
 ```
 
 For course-numbered tracks this writes:
@@ -75,7 +75,7 @@ the TOC or parser and regenerate it.
 Choose a representative lesson and scaffold it with the exact course code:
 
 ```sh
-python3 korean/tools/new_lesson.py \
+python3 tools/authoring/kr/new_lesson.py \
   --track <track> \
   --course <course-code> \
   --lesson <number> \
@@ -239,10 +239,10 @@ disappears below the fold.
 Finally regenerate plans and catalog after decks or TOCs change:
 
 ```sh
-python3 korean/tools/plan_courses.py korean/tracks/<track>
-python3 korean/tools/build_catalog.py
-python3 korean/tools/check_runtime_drift.py
+python3 tools/authoring/kr/plan_courses.py sandbox/drafts/kr/tracks/<track>
+python3 tools/authoring/kr/build_catalog.py
+python3 tools/authoring/check_deck.py sandbox/drafts/kr/tracks
 ```
 
-Only after the integrated course passes should it move through the production sync and
-validation sequence documented in `AGENTS.md`.
+Only after the integrated course passes should it move through the scoped promotion and validation
+sequence documented in `AGENTS.md`.

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Static checks for lesson decks — the ones that otherwise fail silently.
 
-    python3 tools/authoring/en/check_deck.py sandbox/drafts/en/tracks            # a tree
-    python3 tools/authoring/en/check_deck.py path/to/lesson.html ...   # named decks
-    python3 tools/authoring/en/check_deck.py --all                     # every deck in the repo
+    python3 tools/authoring/check_deck.py sandbox/drafts/en/tracks     # a tree
+    python3 tools/authoring/check_deck.py path/to/lesson.html ...      # named decks
+    python3 tools/authoring/check_deck.py --all                        # every deck in the repo
 
 Why this exists
 ---------------
