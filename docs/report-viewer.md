@@ -94,6 +94,40 @@ An existing version is byte-compared and never overwritten.
 
 ## Known, not fixed here
 
+The two 項目別診断 headings wrap on every phone. 「よくできています！」 is 132px of
+text, and the heading box offers 82px at a 360px viewport and 98px at 393px — so it
+breaks mid-word into 「よくできてい／ます！」. The chips under it used to break the same
+way; that was a layout bug and `trial.css` fixes it. The headings cannot be fixed the
+same way, because the deficit is 50px and every margin worth shaving on that row adds
+up to about 15px: report page padding 20→16 (+4), card 20→16 (+4), box 12→10 (+4),
+icon gap 4→2 (+2). Buying the rest would narrow every other card on the page.
+
+So it is a copy question, not a CSS one. Measured at the shipped 16px/800/-.02em:
+
+| heading | width | one line from |
+|---|---:|---|
+| よくできています！ | 132px | 480 only |
+| よくできています | 117px | 430 |
+| できています！ | 103px | 430 |
+| いいですね！ | 88px | 375 |
+| **いいところ** | **73px** | **every width** |
+| もう一歩です！ | 105px | 430 |
+| **のばすところ** | **88px** | **375** |
+| もう一歩！ | 75px | every width |
+
+**「いいところ」／「のばすところ」 is the pair to use.** One line from 375px up, the icon
+stays on the line with the words, and the card gains no height. At 360px 「のばすところ」
+is still 6px over: trimming padding to buy those 6px lands *exactly* on the boundary and
+wraps anyway, which is the zero-slack failure the chip rule was just rewritten to remove.
+Take the 360px tail or shorten further — do not spend the page's margins on it.
+
+Like the header below, this is deck copy. It lives in the four decks under
+`sandbox/drafts/kr/trial/full-trials/` and the drafts in `sandbox/drafts/kr/trial/reports/`,
+and reaches the viewer through a re-promotion and `report-viewer.py` — not by editing a
+generated file.
+
+
+
 The report header reads 「体験レッスン・25分」 in every deck. That is right for the
 English trial and wrong for the Korean one, which is 55 minutes
 (`GT_CLASS_COURSE.LESSON_TIME`). It is deck copy, so the fix belongs in the draft
