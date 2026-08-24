@@ -6,7 +6,7 @@
   <meta name="google" content="notranslate">
   <meta name="podo:lesson-id" content="trial-2-full">
   <meta name="podo:level" content="초급">
-  <meta name="podo:content-version" content="2026-08-04">
+  <meta name="podo:content-version" content="2026-08-24">
   <!-- 리포트는 대역 없이 한 언어로 간다. 그 언어가 무엇인지 CSS 가 알아야 해서
        마크업이 선언한다 — 일본어 리포트는 줄바꿈 규칙이 한국어와 반대라
        (keep-all 이면 일본어 문장은 끊길 자리가 없어 카드를 뚫고 나간다),
@@ -878,7 +878,12 @@
             <button type="button" class="rung-row" data-val="9" data-sync-option="9" data-say="韓国の方の速さで話しても、ニュアンスまで正確に聞き取れます"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">いつもの速さで話しても聞き取れました</span></button>
           </div>
         </div>
-          <p class="axq-done">五つの項目を見終わりました。上を押せば直せます。</p>
+          <div class="rep-send">
+            <span class="rep-send-h">この診断でよろしいですか？ <small>先生のみ表示</small></span>
+            <p class="rs-confirm">直す項目は上から選び、問題なければ診断を送信してください。</p>
+            <button class="rs-btn" type="button" disabled>診断を送信する</button>
+            <p class="rs-msg"></p>
+          </div>
         </div>
 
         <!-- 다섯 줄 · 좋아요/아쉬운 점 · 추천 모두 renderAspects() 가 그린다 -->
@@ -1004,19 +1009,6 @@
         </div>
       </div>
 
-      <!-- ⑤ 리포트 저장 · 튜터만
-           상담이 끝나면 이 화면 그대로를 남긴다. 리포트가 끝나는
-           자리에 두는 이유는 여기가 값이 다 모이는 자리라서다 — 앞의 네 칸을
-           채우고 나서야 누를 수 있고, 안 채운 항목은 버튼 밑에 이름으로 뜬다.
-           학습자 화면에는 아예 없는 블록이라(teaching 모드에서만 뜬다) 리포트를
-           읽는 흐름은 그대로다.
-           덱은 부모 창(보드)으로 보내기만 하고, 백엔드에 남기는 일은 앱이 한다.
-           보내는 값과 le_level_test 컬럼 대응: ../report-submit.md -->
-      <div class="rep-send">
-        <span class="rep-send-h">レポート保存 <small>先生のみ表示</small></span>
-        <button class="rs-btn" type="button" disabled>レポートを保存する</button>
-        <p class="rs-msg"></p>
-      </div>
     </div>
 
     <!-- ============ 포도 안내 ============

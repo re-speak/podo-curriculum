@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google" content="notranslate">
   <meta name="podo:lesson-id" content="trial-1-report">
-  <meta name="podo:content-version" content="2026-08-06">
+  <meta name="podo:content-version" content="2026-08-24">
   <title>ニーズ把握 ＆ 리포트 &amp; 플랜 — PODO 韓国語</title>
   <!-- ============================================================
        한국어 리포트 · 사내 확인용
@@ -266,7 +266,12 @@
             <button type="button" class="rung-row" data-val="9" data-sync-option="9" data-say="한국인 속도로 말해도 뉘앙스까지 정확히 알아들어요"><span class="rung" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span class="rung-t">평소 속도로 말해도 알아들었어요</span></button>
           </div>
         </div>
-          <p class="axq-done">다섯 항목을 다 봤어요. 위를 눌러 다시 고칠 수 있어요.</p>
+          <div class="rep-send">
+            <span class="rep-send-h">이 진단으로 제출할까요? <small>튜터만 보여요</small></span>
+            <p class="rs-confirm">고칠 항목은 위에서 고르고, 괜찮으면 진단을 제출해 주세요.</p>
+            <button class="rs-btn" type="button" disabled>진단 제출하기</button>
+            <p class="rs-msg"></p>
+          </div>
         </div>
 
         <!-- 다섯 줄 · 좋아요/아쉬운 점 · 추천 모두 renderAspects() 가 그린다 -->
@@ -407,19 +412,6 @@
         </div>
       </div>
 
-      <!-- ⑤ 리포트 저장 · 튜터만
-           상담이 끝나면 이 화면 그대로를 남긴다. 리포트가 끝나는
-           자리에 두는 이유는 여기가 값이 다 모이는 자리라서다 — 앞의 네 칸을
-           채우고 나서야 누를 수 있고, 안 채운 항목은 버튼 밑에 이름으로 뜬다.
-           학습자 화면에는 아예 없는 블록이라(teaching 모드에서만 뜬다) 리포트를
-           읽는 흐름은 그대로다.
-           덱은 부모 창(보드)으로 보내기만 하고, 백엔드에 남기는 일은 앱이 한다.
-           보내는 값과 le_level_test 컬럼 대응: ../report-submit.md -->
-      <div class="rep-send">
-        <span class="rep-send-h">리포트 저장 <small>튜터만 보여요</small></span>
-        <button class="rs-btn" type="button" disabled>리포트 저장하기</button>
-        <p class="rs-msg"></p>
-      </div>
     </div>
 
   </div>
