@@ -238,10 +238,14 @@ deleted with the move, not deprecated. A course reaches learners by being named 
 `promotion.yaml` and promoted into `courses/kr/`:
 
 ```sh
-python3 tools/promote.py --check      # what would ship
-python3 tools/promote.py              # write courses/
-python3 tools/repoint-shared.py && python3 tools/validate.py
+python3 tools/promote.py --check <course-draft-dir>/promotion.yaml
+python3 tools/promote.py <course-draft-dir>/promotion.yaml
+python3 tools/repoint-shared.py kr/<course-slug>
+python3 tools/validate.py --env stage
 ```
+
+Omitting the manifest or course key walks the whole repository. Use that only
+for a deliberate full-corpus regeneration.
 
 `podo:lesson-id` and `podo:title-{ko,en,ja}` are load-bearing — `new_lesson.py` writes them
 and they must not be removed.

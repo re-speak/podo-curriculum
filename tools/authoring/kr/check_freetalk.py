@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Pedagogical audit of the freetalking track.
 
-check_structure.py and tools/authoring/en/check_deck.py both verify *mechanics* —
+check_structure.py and tools/authoring/check_deck.py both verify *mechanics* —
 tag balance, dead refs, duplicate sync-ids. Both reported 0 problems on a track
 that contained a double-barrelled question, three 중급 decks whose page 2 was
 byte-identical to the 고급 sibling, and page-2 lengths spanning 295–480 chars.

@@ -160,7 +160,7 @@ experience.
 
 1. Compare the whole lesson with the matching canonical lesson, not one page in isolation.
 2. Read every prompt, follow-up, answer, hint, and tutor-only note aloud for naturalness and purpose.
-3. Run `python3 tools/authoring/en/check_deck.py sandbox/drafts/en/tracks` and the English tool test suite.
+3. Run `python3 tools/authoring/check_deck.py sandbox/drafts/en/tracks` and the English tool test suite.
 4. Render every new or changed lesson at 480 px and 360 px. Inspect every page manually, including
    long inputs, Core
    model/replay/transfer, Freetalking article/style/questions, and the final page—not only the

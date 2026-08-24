@@ -109,9 +109,13 @@ def apply(source: str, topic_no: int, variant: str) -> str:
     if topic_no in TOPIC_OVERRIDES:
         pages.update(TOPIC_OVERRIDES[topic_no].get("questions", {}))
     for page_id, variants in pages.items():
-        item = variants.get(variant)
-        if item is None:
+        # Full is the authored source. An Accessible row is active only when
+        # its exact page is recorded as a real B1 adaptation; older batch data
+        # still contains now-retired "make every pair differ" rewrites.
+        if variant == "accessible" and not _has_explicit_accessible(topic_no, page_id):
             item = variants["full"]
+        else:
+            item = variants.get(variant) or variants["full"]
         title, title_ja, prompt, prompt_ja, followups = item
         source = _replace_page(source, page_id, title, title_ja, prompt, prompt_ja, followups)
     return source
@@ -250,14 +254,25 @@ def normalize_course_pairs(track: pathlib.Path, course: str) -> int:
         if not review:
             raise SystemExit(f"question bank: missing FT review id in {full_path}")
         topic_no = int(review.group(1))
-        for page_id in PAGES:
-            if _has_explicit_accessible(topic_no, page_id):
-                continue
-            accessible = _copy_question_bundle(full, accessible, page_id)
+        accessible = normalize_accessible_pair(full, accessible, topic_no)
         if accessible != accessible_path.read_text(encoding="utf-8"):
             accessible_path.write_text(accessible, encoding="utf-8")
             changed += 1
     return changed
+
+
+def normalize_accessible_pair(full: str, accessible: str, topic_no: int) -> str:
+    """Return an Accessible deck whose question pool follows the Full source.
+
+    This is pure so a batch generator can enforce the pair contract before it
+    writes anything. ``normalize_course_pairs`` remains the bulk repair path
+    for already-rendered courses.
+    """
+    for page_id in PAGES:
+        if _has_explicit_accessible(topic_no, page_id):
+            continue
+        accessible = _copy_question_bundle(full, accessible, page_id)
+    return accessible
 
 
 def _has_explicit_accessible(topic_no: int, page_id: str) -> bool:
