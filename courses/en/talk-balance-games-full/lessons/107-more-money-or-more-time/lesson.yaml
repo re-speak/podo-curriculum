@@ -7,9 +7,9 @@ spec:
   week: 1
 
   title:
-    ko: "더 많은 돈, 더 많은 시간?"
-    en: "More money or more time?"
-    ja: "もっとお金、それとももっと時間？"
+    ko: "직접 하기, 돈 내고 맡기기?"
+    en: "Do it yourself or pay someone?"
+    ja: "自分でやる？お金を払って頼む？"
 
   decks:
     lecture:  { entry: lecture/index.html }

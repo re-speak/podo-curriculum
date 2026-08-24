@@ -398,7 +398,7 @@ QUESTION_POOLS.update({
         _cq("choice", "Choose a circle", "人間関係を選ぶ", "For one difficult week, would you rather have a hundred friendly contacts or three close friends?", "大変な一週間なら、親しい知り合い百人と親友三人のどちらがよいですか？"),
         _cq("daily-life", "Many contacts, no close friend", "知り合いは多いが親友はいない", "What would be missing from life with many friendly contacts but no close friend?", "親しい知り合いは多くても親友がいない生活では、何が足りませんか？"),
         _cq("opposite", "A wide circle helps", "広い人間関係が役立つとき", "When is a wide circle more useful than a few close friends?", "少数の親友より、広い人間関係のほうが役立つのはどんなときですか？"),
-        _cq("new-city", "Starting in a new city", "新しい町で始める", "After moving to a new city, would you build a wide circle or one close friendship first?", "新しい町へ移ったら、広い人間関係と一つの親しい友情のどちらを先に作りますか？"),
+        _cq("new-city", "Starting in a new city", "新しい町で始める", "In a new city, would you build a wide circle or one close friendship first?", "新しい町へ移ったら、広い人間関係と一つの親しい友情のどちらを先に作りますか？"),
         _cq("change", "Help in a difficult week", "大変な週の助け", "During a difficult week, which helps more: small help from many people or steady help from one person?", "大変な一週間では、多くの人からの小さな助けと、一人からの続く助けのどちらが役立ちますか？"),
     ),
     109: (

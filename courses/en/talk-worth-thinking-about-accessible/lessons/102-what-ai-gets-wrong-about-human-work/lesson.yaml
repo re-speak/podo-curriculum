@@ -7,9 +7,9 @@ spec:
   week: 2
 
   title:
-    ko: "AI가 인간의 일을 잘못 이해하는 부분"
-    en: "What AI gets wrong about human work"
-    ja: "AIが人の仕事を誤解するところ"
+    ko: "없어도 살 수 있는 편리한 것"
+    en: "A convenience you could live without"
+    ja: "なくても暮らせる便利なもの"
 
   decks:
     lecture:  { entry: lecture/index.html }

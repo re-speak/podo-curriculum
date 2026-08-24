@@ -7,9 +7,9 @@ spec:
   week: 8
 
   title:
-    ko: "누군가를 위해 고른 책"
-    en: "A book you chose for someone else"
-    ja: "誰かのために選んだ本"
+    ko: "정말 딱 맞았던 선물"
+    en: "A gift that was exactly right"
+    ja: "ぴったりだったプレゼント"
 
   decks:
     lecture:  { entry: lecture/index.html }

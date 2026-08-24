@@ -7,9 +7,9 @@ spec:
   week: 2
 
   title:
-    ko: "사람들이 일본에 대해 자주 오해하는 것"
-    en: "What people often get wrong about Japan"
-    ja: "日本についてよく誤解されること"
+    ko: "새로운 나라에 도착한 첫 한 시간"
+    en: "The first hour in a new country"
+    ja: "初めての国に着いた最初の1時間"
 
   decks:
     lecture:  { entry: lecture/index.html }

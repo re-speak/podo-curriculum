@@ -29,7 +29,7 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parents[3]
 TRACKS = ROOT / "sandbox/drafts/en/tracks"
 OUT_DIR = ROOT / "sandbox/drafts/en/trial/decks"
-CONTENT_VERSION = "2026-08-21"
+CONTENT_VERSION = "2026-08-24"
 
 
 # ============================================================================
@@ -390,7 +390,7 @@ def tutor_score():
 
     That leaves the tutor's judgement, which still has to be captured. It sits **after**
     the farewell so the tutor can take their time with it once the learner has gone.
-    All three blocks below (.lvcheck, .axsteps, .rep-send) are `display:none` outside
+    Both blocks below (.lvcheck and .axsteps) are `display:none` outside
     teaching mode, so a learner who is still in the room when the tutor pages forward
     lands on nothing but the sign-off line.
     """
@@ -423,13 +423,12 @@ def tutor_score():
 
       <div class="axsteps">
         <div class="axst-chips"></div>{axq}
-        <p class="axq-done">All five done. Tap above to change any of them.</p>
-      </div>
-
-      <div class="rep-send">
-        <span class="rep-send-h">Save report <small>tutor only</small></span>
-        <button class="rs-btn" type="button" disabled>Save this report</button>
-        <p class="rs-msg"></p>
+        <div class="rep-send">
+          <span class="rep-send-h">Ready to submit? <small>tutor only</small></span>
+          <p class="rs-confirm">Check any answer above, then submit this diagnosis.</p>
+          <button class="rs-btn" type="button" disabled>Submit diagnosis</button>
+          <p class="rs-msg"></p>
+        </div>
       </div>
     </div>
 '''

@@ -7,9 +7,9 @@ spec:
   week: 3
 
   title:
-    ko: "파트너에게서 절대 타협할 수 없는 것"
-    en: "Something you could never compromise on in a partner"
-    ja: "パートナーについて絶対に妥協できないこと"
+    ko: "내가 정말 즐길 수 있는 데이트"
+    en: "A date you would actually enjoy"
+    ja: "自分が本当に楽しめるデート"
 
   decks:
     lecture:  { entry: lecture/index.html }

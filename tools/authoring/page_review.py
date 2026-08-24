@@ -37,6 +37,11 @@ REQUIRED_PAGE_FIELDS = (
     "visual480",
     "verdict",
 )
+FREETALK_REVIEW_FIELDS = (
+    "plausibleFirstAnswer",
+    "answerExpansion",
+    "noAnswerFollowup",
+)
 PASS_STAGES = ("generated", "mechanicalValidation", "humanPageAudit")
 VISUAL_VALUES = {"pass"}
 VERDICTS = {"pass", "revise", "remove"}
@@ -183,6 +188,17 @@ def scaffold(path: pathlib.Path, audit_path: pathlib.Path | None = None) -> dict
                 "verdict": "revise",
                 "notes": "",
                 "evidence": evidence[page_id],
+                **(
+                    {
+                        "conversationReview": {
+                            "plausibleFirstAnswer": "",
+                            "answerExpansion": "",
+                            "noAnswerFollowup": "",
+                        }
+                    }
+                    if page_id in check_deck.FREETALK_QUESTION_PAGES
+                    else {}
+                ),
             }
             for page_id in page_ids(path)
         ],
@@ -373,6 +389,27 @@ def validate(
                     errors.append(f"{page_id}: verdict is {value}, not pass")
             elif not _meaningful(value):
                 errors.append(f"{page_id}: {field} is missing or too vague")
+        if page_id in check_deck.FREETALK_QUESTION_PAGES:
+            conversation = page.get("conversationReview")
+            if not isinstance(conversation, dict):
+                errors.append(
+                    f"{page_id}: conversationReview must record the spoken-answer checks"
+                )
+            else:
+                for field in FREETALK_REVIEW_FIELDS:
+                    if not _meaningful(conversation.get(field)):
+                        errors.append(
+                            f"{page_id}: conversationReview.{field} is missing or too vague"
+                        )
+                details = freetalk_question_details(lesson_path).get(page_id)
+                rescue = _normalized_text(str(conversation.get("noAnswerFollowup", "")))
+                if details and rescue and not any(
+                    rescue == _normalized_text(followup)
+                    for followup in details["followups"]
+                ):
+                    errors.append(
+                        f"{page_id}: conversationReview.noAnswerFollowup must quote one current tutor follow-up"
+                    )
 
     stages = review.get("stages")
     if not isinstance(stages, dict):
@@ -479,6 +516,15 @@ def markdown(review: dict[str, Any]) -> str:
                 f"- Extracted evidence: `{json.dumps(page.get('evidence', {}), ensure_ascii=False)}`",
                 f"- Visual QA: 360px **{page.get('visual360', '')}**; 480px **{page.get('visual480', '')}**",
                 f"- Verdict: **{page.get('verdict', '')}**",
+                *(
+                    [
+                        f"- Plausible first answer: {page.get('conversationReview', {}).get('plausibleFirstAnswer', '')}",
+                        f"- Expansion path: {page.get('conversationReview', {}).get('answerExpansion', '')}",
+                        f"- No-answer follow-up: {page.get('conversationReview', {}).get('noAnswerFollowup', '')}",
+                    ]
+                    if page.get("conversationReview") is not None
+                    else []
+                ),
                 f"- Notes: {page.get('notes', '') or 'None.'}",
                 "",
             ]

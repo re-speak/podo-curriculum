@@ -7,9 +7,9 @@ spec:
   week: 11
 
   title:
-    ko: "카페 공부, 집 공부?"
-    en: "Studying in a café or at home?"
-    ja: "カフェで勉強、それとも家？"
+    ko: "독학하기, 수업 듣기?"
+    en: "Learn on your own or take a class?"
+    ja: "独学する？教室で学ぶ？"
 
   decks:
     lecture:  { entry: lecture/index.html }

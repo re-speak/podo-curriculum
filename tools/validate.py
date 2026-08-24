@@ -382,6 +382,16 @@ def main() -> int:
 
     problems: list[str] = []
 
+    # 리포트는 수업 중(덱)과 수업 뒤(앱)에 각각 열리지만 같은 문서여야 한다. 뷰어가
+    # 덱에서 잘라 온 마크업과 로케일 표를 최신으로 들고 있는지 여기서 본다 — 어긋난
+    # 채로 나가면 학생이 수업에서 읽은 것과 다른 리포트를 다시 받는다.
+    viewer = subprocess.run(
+        [sys.executable, str(model.REPO / "tools" / "report-viewer.py"), "--check"],
+        capture_output=True, text=True)
+    print("\n" + (viewer.stdout.rstrip() or viewer.stderr.rstrip()))
+    if viewer.returncode != 0:
+        problems.append("report viewer is out of date — python3 tools/report-viewer.py")
+
     # Layer 5 setup. A deck that still bundles its own runtime simply has no URL on
     # this prefix and is not checked — leaving a course on its bundled copy stays a
     # legitimate choice, it just opts out of the CDN, not out of validation.

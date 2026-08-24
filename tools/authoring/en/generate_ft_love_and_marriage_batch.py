@@ -2005,7 +2005,7 @@ def build(topic_no: int, variant: str) -> str:
         head,
         review_id=f"FT-{topic_no}",
         lesson_id=slug,
-        level="B1 accessible" if variant == "accessible" else "B2-C1 full",
+        level="B1 accessible" if variant == "accessible" else "C1 full",
         title=data["title"],
         title_ko=data["ko"],
         title_ja=data["ja"],
@@ -2039,9 +2039,10 @@ def build(topic_no: int, variant: str) -> str:
         for (page_id, number), item in zip(prompt_ids, data["prompts"], strict=True)
     )
     pages.append(base.extract_page(canonical, "feedback"))
-    return new_lesson.redepth(
+    import ft_question_bank  # noqa: PLC0415
+    return ft_question_bank.apply(new_lesson.redepth(
         head + "\n".join(pages) + foot, output_path(topic_no, variant)
-    )
+    ), topic_no, variant)
 
 
 def main() -> int:

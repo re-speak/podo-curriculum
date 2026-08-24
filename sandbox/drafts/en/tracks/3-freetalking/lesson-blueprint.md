@@ -130,8 +130,11 @@ verbs: use, lose, pay, tolerate, switch—not “which do you choose?” seven m
 
 ## Two language-load versions, one intellectual session
 
-Write the **B2–C1 full version first**, then derive the **B1 accessible version**. Until product
-level codes are decided, these are curriculum labels only; do not invent `classLevel` values.
+Write the **C1 full version first** as the best version of the conversation: the most natural,
+interesting and immediately answerable questions the topic can support. A question that is already
+plain and easy to answer does not become better because it sounds more advanced. Then derive the
+**B1 accessible version** from that deck. Until product level codes are decided, these are
+curriculum labels only; do not invent `classLevel` values.
 
 Both versions retain:
 
@@ -141,8 +144,18 @@ Both versions retain:
 - the same point where a `深く` topic becomes appropriate.
 
 The accessible version lowers rare vocabulary, sentence length, nested clauses, stacked
-hypotheticals and unnecessary abstraction. It does **not** remove the difficult idea or replace
-later questions with small talk. A short natural question may remain identical in both versions.
+hypotheticals and unnecessary abstraction. It does **not** remove the difficult idea, replace
+later questions with small talk or force a rewrite of every line.
+
+| Full question | Accessible decision |
+| --- | --- |
+| `What have you bought that was really worth the money?` | Keep it. Natural, interesting and easy to answer at B1. |
+| `What kind of purchase most often becomes a regret?` | Rewrite: `Is there anything you regret buying? Why?` |
+| `What can make a useful item stop feeling worth it?` | Replace at both levels. The task is hard even in the learner's first language. |
+
+**Identical is not the defect; unnecessary adaptation is.** A pair should differ only when the
+Full line contains a real B1 barrier. Tiny synonym swaps (`genuinely`, `especially`, `revive`) are
+not level adaptation, and making C1 abstract or clever is never a level strategy.
 
 The track's working entry floor is Core 53. Freetalking retrieves Core language; it never quietly
 introduces a new grammar sequence.
@@ -175,12 +188,27 @@ the deck author turns that compact arrow chain into eight single-prompt pages.
 
 | Page | Job |
 | --- | --- |
-| `warm-1` | An answer available in about three seconds: recent fact, yes/no setup or concrete pick |
-| `warm-2` | One visible detail from the learner's actual experience |
-| `q1` | The topic's central story, choice or position |
-| `q2`–`q3` | Expand toward people, work, money, time or a contrasting experience |
-| `q4`–`q5` | The most demanding reasoning or changed condition |
-| `q6` | Flip the topic and close it; do not open a new subject |
+| `warm-1` | **Put one concrete thing on the table.** A recent fact, a yes/no setup or a named pick, answerable in about three seconds |
+| `warm-2` | One visible detail **of that same thing** |
+| `q1` | The topic's central story, choice or position — now that the referent exists |
+| `q2`–`q3` | Stay on that referent: when, who with, what changed, what it replaced |
+| `q4`–`q5` | Widen — compare it, price it, put it in the other country, change a condition |
+| `q6` | **Flip it.** `Now the opposite — …` Close the topic; do not open a new subject |
+
+### The eight prompts are one thread, not eight survey items
+
+`warm-1` names something — a dish, a show, a purchase, a person — and the next six prompts talk
+about *that*. `it`, `that dish`, `them` are correct here and are what makes a follow-up possible.
+
+This is the difference between a session and a questionnaire, and it is the second defect the
+content-lead review found: eight independent prompts, each asking the learner to search their whole
+life afresh, produce a topic where the tutor has nothing to dig into. Korean's decks have always
+threaded one referent (`그걸 언제 제일 자주 써요?` — *when do you use **it** most?*) and close with
+`그럼 반대로…`; English decks now do the same.
+
+A prompt with no person (`you`, `I`, `we`) **and** no referent (`that`, `it`, `them`) is dead on
+arrival — there is nothing in it to retrieve. `What can make a useful item stop feeling worth it?`
+is the shape to recognise; `When do you use it most?` is the same page done right.
 
 ### The one-hearing, three-second test
 
@@ -220,6 +248,11 @@ aloud. For every follow-up set, test two paths: one after a substantive answer a
 don't know`, `none` or `never`. At least one follow-up must give the second path a concrete new
 foothold. A slightly tangential rescue is better than repeating the question the learner could not
 answer.
+
+The completed page-review ledger records the evidence rather than a generic pass: write the actual
+`plausibleFirstAnswer`, name its `answerExpansion`, and quote the current `noAnswerFollowup` that
+rescues the conversation. Because the ledger is bound to the lesson hash, changing the prompt or
+follow-ups requires this spoken test again.
 
 ### One printed prompt
 
