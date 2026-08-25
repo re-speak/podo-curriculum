@@ -21,9 +21,9 @@ spec:
   # label. Both come from tools/course-copy.json, never from the TOC — a
   # generated title was English in all three slots and 72 characters long.
   title:
-    ko: 여행 영어 · 따지고 요구하기 · C1
-    en: Travel English · Making your case · C1
-    ja: 旅行英語 · 主張と交渉 · C1
+    ko: (고급) 여행 · 따지고 요구하기
+    en: (Advanced) Travel · Making your case
+    ja: (上級) 旅行 · 主張と交渉
 
   description:
     ko: 취소 건을 윗선으로 올리고, 사고를 기록으로 남기고, 필요한 배려를 요구하고, 정보가 부족한 채로 안전한 결정을 내린다.

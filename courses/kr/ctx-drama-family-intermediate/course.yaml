@@ -17,7 +17,15 @@ spec:
   classLevel: "300.030"
   lessonTime: 25
   # 검수 전까지는 false. true 로 바꾸는 순간 apply 가 학습자에게 노출시킨다.
-  enabled: true
+  #
+  # 2026-08-25 폐지. 드라마 묶음은 「친구 → 설렘 & 고백 → 연애 → 떨어져 있는 시간」
+  # 4부작만 남긴다. 이 코스는 그 이야기 밖의 단독 코스로 함께 두었던 것인데, 검수
+  # 피드백에 따라 묶음에서 뺀다 — 이 슬롯(300.030)을 대체하는 코스는 없다.
+  #
+  # 이 줄이 false 로 배포된 다음에야 디렉터리를 지운다. apply.py 는 delete path 가
+  # 없는 순수 upsert라, 먼저 지우면 row 가 USE_YN='Y' 로 남아 학습자 화면에서
+  # 사라지지 않는다. validate.py layer 6 이 그 순서를 강제한다.
+  enabled: false
   difficulty: INTERMEDIATE
 
   title:

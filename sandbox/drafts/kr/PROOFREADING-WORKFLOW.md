@@ -138,6 +138,18 @@ The round is worked like this. Branch off `origin/stage`, never off the proofrea
 Nothing here replaces the reviewer. The standard only holds decisions a human already made, and
 every rule in it points at the sentence that made it.
 
+**Write the round down before you close it.** Two artefacts, both in the repository, because a PR
+body scrolls out of reach and a chat link expires with the conversation:
+
+- `reference/proofread-round-<date>.md` — what generalised into the standard, what was applied as a
+  one-off, and what the round could not answer.
+- `proofread-decisions.html` — the open questions, each with the deck as the learner sees it, the
+  reviewer's words, and a proposed answer. Open it in a browser; it keeps your answers and hands
+  them back. `tools/authoring/test_decision_console.py` checks it still opens offline and still
+  returns what it records.
+
+The most recent round is [2026-08-24](./reference/proofread-round-2026-08-24.md).
+
 ## Why the projection is one-way
 
 Automatically merging edited Markdown back into HTML would create two editable sources and make

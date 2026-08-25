@@ -21,9 +21,9 @@ spec:
   # label. Both come from tools/course-copy.json, never from the TOC — a
   # generated title was English in all three slots and 72 characters long.
   title:
-    ko: 영어 핵심 패턴 · 완곡함과 근거 · B2
-    en: English Core · Diplomacy and reason · B2
-    ja: 英語コアパターン · 婉曲と論拠 · B2
+    ko: (중고급) 핵심 패턴 · 완곡함과 근거
+    en: (Upper Intermediate) Core · Diplomacy and reason
+    ja: (中上級) コアパターン · 婉曲と論拠
 
   description:
     ko: 부드럽게 반대하고, 원인과 근거와 결과를 논리대로 편다.

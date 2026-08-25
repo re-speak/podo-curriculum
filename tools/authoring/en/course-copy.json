@@ -24,13 +24,12 @@
     "siblings share a description — same topics, different language load — the",
     "same way the Korean track's 중급/고급 pairs do."
   ],
-
   "courses": {
     "core-first-exchanges-1": {
       "title": {
-        "ko": "영어 핵심 패턴 · 첫 문장 · A1",
-        "en": "English Core · First words · A1",
-        "ja": "英語コアパターン · 最初の一文 · A1"
+        "ko": "(초급) 핵심 패턴 · 첫 문장",
+        "en": "(Beginner) Core · First words",
+        "ja": "(初級) コアパターン · 最初の一文"
       },
       "description": {
         "ko": "자기소개를 하고, 주변의 사물을 말하고, 영어가 반드시 요구하는 주어를 빠뜨리지 않는다.",
@@ -40,9 +39,9 @@
     },
     "core-first-exchanges-2": {
       "title": {
-        "ko": "영어 핵심 패턴 · 하기와 부탁 · A1",
-        "en": "English Core · Doing and asking · A1",
-        "ja": "英語コアパターン · 動作と依頼 · A1"
+        "ko": "(초급) 핵심 패턴 · 하기와 부탁",
+        "en": "(Beginner) Core · Doing and asking",
+        "ja": "(初級) コアパターン · 動作と依頼"
       },
       "description": {
         "ko": "하는 일과 안 하는 일을 말하고, 필요한 것을 부탁한다.",
@@ -52,9 +51,9 @@
     },
     "core-daily-life-and-past": {
       "title": {
-        "ko": "영어 핵심 패턴 · 지금과 과거 · A2",
-        "en": "English Core · Now and before · A2",
-        "ja": "英語コアパターン · 今と過去 · A2"
+        "ko": "(초중급) 핵심 패턴 · 지금과 과거",
+        "en": "(Upper Beginner) Core · Now and before",
+        "ja": "(初中級) コアパターン · 今と過去"
       },
       "description": {
         "ko": "늘 하는 일과 지금 하고 있는 일을 구분하고, 있었던 일을 말한다.",
@@ -64,9 +63,9 @@
     },
     "core-plans-and-comparison": {
       "title": {
-        "ko": "영어 핵심 패턴 · 계획과 비교 · A2",
-        "en": "English Core · Plans and comparison · A2",
-        "ja": "英語コアパターン · 予定と比較 · A2"
+        "ko": "(초중급) 핵심 패턴 · 계획과 비교",
+        "en": "(Upper Beginner) Core · Plans and comparison",
+        "ja": "(初中級) コアパターン · 予定と比較"
       },
       "description": {
         "ko": "계획과 규칙과 조언을 말하고, 사물을 묘사하고 비교한다.",
@@ -76,9 +75,9 @@
     },
     "core-experience-and-ideas": {
       "title": {
-        "ko": "영어 핵심 패턴 · 경험과 연결 · B1",
-        "en": "English Core · Experience and ideas · B1",
-        "ja": "英語コアパターン · 経験と連結 · B1"
+        "ko": "(중급) 핵심 패턴 · 경험과 연결",
+        "en": "(Intermediate) Core · Experience and ideas",
+        "ja": "(中級) コアパターン · 経験と連結"
       },
       "description": {
         "ko": "경험과 기간을 말하고, 생각을 이어 붙여 길게 말한다.",
@@ -88,9 +87,9 @@
     },
     "core-careful-interaction": {
       "title": {
-        "ko": "영어 핵심 패턴 · 조심스러운 요청 · B1",
-        "en": "English Core · Careful requests · B1",
-        "ja": "英語コアパターン · 慎重な依頼 · B1"
+        "ko": "(중급) 핵심 패턴 · 조심스러운 요청",
+        "en": "(Intermediate) Core · Careful requests",
+        "ja": "(中級) コアパターン · 慎重な依頼"
       },
       "description": {
         "ko": "조심스럽게 부탁하고, 무례하지 않게 정보를 묻고, 그럴 법한 일을 짚는다.",
@@ -100,9 +99,9 @@
     },
     "core-work-and-arrangements": {
       "title": {
-        "ko": "영어 핵심 패턴 · 일 처리하기 · B1+",
-        "en": "English Core · Getting things done · B1+",
-        "ja": "英語コアパターン · 段取りをつける · B1+"
+        "ko": "(중고급) 핵심 패턴 · 일 처리하기",
+        "en": "(Upper Intermediate) Core · Getting things done",
+        "ja": "(中上級) コアパターン · 段取りをつける"
       },
       "description": {
         "ko": "지난 일을 돌아보고, 누가 언제까지 무엇을 할지 정한다.",
@@ -112,9 +111,9 @@
     },
     "core-nuance-at-work": {
       "title": {
-        "ko": "영어 핵심 패턴 · 직장의 뉘앙스 · B2",
-        "en": "English Core · Nuance at work · B2",
-        "ja": "英語コアパターン · 職場のニュアンス · B2"
+        "ko": "(중고급) 핵심 패턴 · 직장의 뉘앙스",
+        "en": "(Upper Intermediate) Core · Nuance at work",
+        "ja": "(中上級) コアパターン · 職場のニュアンス"
       },
       "description": {
         "ko": "직장에서 쓰는 말을 다루고, 정도와 양을 뉘앙스까지 조절해 말한다.",
@@ -124,9 +123,9 @@
     },
     "core-diplomacy-and-reasoning": {
       "title": {
-        "ko": "영어 핵심 패턴 · 완곡함과 근거 · B2",
-        "en": "English Core · Diplomacy and reason · B2",
-        "ja": "英語コアパターン · 婉曲と論拠 · B2"
+        "ko": "(중고급) 핵심 패턴 · 완곡함과 근거",
+        "en": "(Upper Intermediate) Core · Diplomacy and reason",
+        "ja": "(中上級) コアパターン · 婉曲と論拠"
       },
       "description": {
         "ko": "부드럽게 반대하고, 원인과 근거와 결과를 논리대로 편다.",
@@ -136,9 +135,9 @@
     },
     "core-emphasis-and-tone": {
       "title": {
-        "ko": "영어 핵심 패턴 · 강조와 어조 · C1",
-        "en": "English Core · Emphasis and tone · C1",
-        "ja": "英語コアパターン · 強調と語調 · C1"
+        "ko": "(고급) 핵심 패턴 · 강조와 어조",
+        "en": "(Advanced) Core · Emphasis and tone",
+        "ja": "(上級) コアパターン · 強調と語調"
       },
       "description": {
         "ko": "중요한 부분을 앞에 두고, 자리에 맞게 어조와 격식을 맞춘다.",
@@ -148,9 +147,9 @@
     },
     "core-advanced-stance": {
       "title": {
-        "ko": "영어 핵심 패턴 · 논증과 태도 · C1",
-        "en": "English Core · Argument and stance · C1",
-        "ja": "英語コアパターン · 論証と含み · C1"
+        "ko": "(고급) 핵심 패턴 · 논증과 태도",
+        "en": "(Advanced) Core · Argument and stance",
+        "ja": "(上級) コアパターン · 論証と含み"
       },
       "description": {
         "ko": "추상적으로 논증하고, 말한 것이 아니라 뜻한 것을 알아듣는다.",
@@ -158,12 +157,11 @@
         "ja": "抽象的に論じ、言われたことではなく含意を聞き取る。"
       }
     },
-
     "ctx-travel-arrivals-transport": {
       "title": {
-        "ko": "여행 영어 · 공항과 이동 · A2–B1",
-        "en": "Travel English · Arrivals · A2–B1",
-        "ja": "旅行英語 · 空港と移動 · A2–B1"
+        "ko": "(중급) 여행 · 공항과 이동",
+        "en": "(Intermediate) Travel · Arrivals",
+        "ja": "(中級) 旅行 · 空港と移動"
       },
       "description": {
         "ko": "체크인·입국심사·못 들은 숫자 확인·숙소까지의 이동까지 도착 당일의 일을 처리한다.",
@@ -173,9 +171,9 @@
     },
     "ctx-travel-hotels-food": {
       "title": {
-        "ko": "여행 영어 · 숙소와 식사 · B1",
-        "en": "Travel English · Hotels and food · B1",
-        "ja": "旅行英語 · 宿と食事 · B1"
+        "ko": "(중급) 여행 · 숙소와 식사",
+        "en": "(Intermediate) Travel · Hotels and food",
+        "ja": "(中級) 旅行 · 宿と食事"
       },
       "description": {
         "ko": "아직 준비 안 된 방, 못 먹는 음식, 잘못 나온 주문, 바꿔야 하는 예약을 처리한다.",
@@ -185,9 +183,9 @@
     },
     "ctx-travel-disruptions-urgent-problems": {
       "title": {
-        "ko": "여행 영어 · 문제가 생겼을 때 · B2",
-        "en": "Travel English · When it goes wrong · B2",
-        "ja": "旅行英語 · トラブル対応 · B2"
+        "ko": "(중고급) 여행 · 문제가 생겼을 때",
+        "en": "(Upper Intermediate) Travel · When it goes wrong",
+        "ja": "(中上級) 旅行 · トラブル対応"
       },
       "description": {
         "ko": "놓친 환승을 다시 잡고, 분실 수하물을 신고하고, 부당한 청구에 이의를 제기하고, 진료를 받는다.",
@@ -197,9 +195,9 @@
     },
     "ctx-travel-independent-social": {
       "title": {
-        "ko": "여행 영어 · 혼자 하는 여행 · B2",
-        "en": "Travel English · Travelling alone · B2",
-        "ja": "旅行英語 · ひとり旅と交流 · B2"
+        "ko": "(중고급) 여행 · 혼자 하는 여행",
+        "en": "(Upper Intermediate) Travel · Travelling alone",
+        "ja": "(中上級) 旅行 · ひとり旅と交流"
       },
       "description": {
         "ko": "나에게 맞는 추천을 받고, 무리에 끼고, 처음 만난 사람과 계획을 짜고, 적대적이지 않게 단호히 항의한다.",
@@ -209,9 +207,9 @@
     },
     "ctx-travel-complex-decisions": {
       "title": {
-        "ko": "여행 영어 · 따지고 요구하기 · C1",
-        "en": "Travel English · Making your case · C1",
-        "ja": "旅行英語 · 主張と交渉 · C1"
+        "ko": "(고급) 여행 · 따지고 요구하기",
+        "en": "(Advanced) Travel · Making your case",
+        "ja": "(上級) 旅行 · 主張と交渉"
       },
       "description": {
         "ko": "취소 건을 윗선으로 올리고, 사고를 기록으로 남기고, 필요한 배려를 요구하고, 정보가 부족한 채로 안전한 결정을 내린다.",
@@ -221,9 +219,9 @@
     },
     "ctx-business-workplace-essentials": {
       "title": {
-        "ko": "비즈니스 영어 · 사무실 기본 · A2–B1",
-        "en": "Business English · At the office · A2–B1",
-        "ja": "ビジネス英語 · 職場の基本 · A2–B1"
+        "ko": "(중급) 비즈니스 · 사무실 기본",
+        "en": "(Intermediate) Business · At the office",
+        "ja": "(中級) ビジネス · 職場の基本"
       },
       "description": {
         "ko": "맡은 역할을 소개하고, 통화 문제를 해결하고, 시차를 넘어 일정을 잡고, 전달되는 진행 보고를 한다.",
@@ -233,9 +231,9 @@
     },
     "ctx-business-projects-deadlines": {
       "title": {
-        "ko": "비즈니스 영어 · 프로젝트와 마감 · B1",
-        "en": "Business English · Projects · B1",
-        "ja": "ビジネス英語 · 案件と締め切り · B1"
+        "ko": "(중급) 비즈니스 · 프로젝트와 마감",
+        "en": "(Intermediate) Business · Projects",
+        "ja": "(中級) ビジネス · 案件と締め切り"
       },
       "description": {
         "ko": "우선순위를 확인하고, 담당을 분명히 하고, 위험을 일찍 알리고, 나쁜 소식을 다음 수와 함께 전한다.",
@@ -245,9 +243,9 @@
     },
     "ctx-business-meetings-decisions": {
       "title": {
-        "ko": "비즈니스 영어 · 회의와 발표 · B2",
-        "en": "Business English · Meetings · B2",
-        "ja": "ビジネス英語 · 会議と発表 · B2"
+        "ko": "(중고급) 비즈니스 · 회의와 발표",
+        "en": "(Upper Intermediate) Business · Meetings",
+        "ja": "(中上級) ビジネス · 会議と発表"
       },
       "description": {
         "ko": "확인하려고 끼어들고, 결정된 것을 정리하고, 결론부터 제안하고, 윗사람에게도 건설적으로 반대한다.",
@@ -257,9 +255,9 @@
     },
     "ctx-business-negotiation-diplomacy": {
       "title": {
-        "ko": "비즈니스 영어 · 협상과 완곡함 · B2",
-        "en": "Business English · Negotiation · B2",
-        "ja": "ビジネス英語 · 交渉と婉曲表現 · B2"
+        "ko": "(중고급) 비즈니스 · 협상과 완곡함",
+        "en": "(Upper Intermediate) Business · Negotiation",
+        "ja": "(中上級) ビジネス · 交渉と婉曲表現"
       },
       "description": {
         "ko": "문제를 다시 규정하고, 조건을 걸어 제안하고, 무리한 약속을 되밀고, 교착을 푼다.",
@@ -269,9 +267,9 @@
     },
     "ctx-business-leadership-high-stakes": {
       "title": {
-        "ko": "비즈니스 영어 · 리더의 말 · C1",
-        "en": "Business English · Leading · C1",
-        "ja": "ビジネス英語 · リーダーの言葉 · C1"
+        "ko": "(고급) 비즈니스 · 리더의 말",
+        "en": "(Advanced) Business · Leading",
+        "ja": "(上級) ビジネス · リーダーの言葉"
       },
       "description": {
         "ko": "어려운 평가 면담을 열고, 행동으로 이어지는 피드백을 주고, 불확실한 가운데 제언한다.",
@@ -279,12 +277,11 @@
         "ja": "厳しい評価面談を切り出し、行動につながるフィードバックを渡し、不確実さの中で提言する。"
       }
     },
-
     "talk-between-two-countries-accessible": {
       "title": {
-        "ko": "프리토킹 · 두 나라 사이 · B1",
-        "en": "Free talking · Two countries · B1",
-        "ja": "フリートーキング · ふたつの国 · B1"
+        "ko": "(중급) 두 나라 사이",
+        "en": "(Intermediate) Two countries",
+        "ja": "(中級) ふたつの国"
       },
       "description": {
         "ko": "다른 나라에서 놀란 점을 설명하고, 일본에 온 사람은 무엇에 놀랄지 말한다.",
@@ -294,9 +291,9 @@
     },
     "talk-between-two-countries-full": {
       "title": {
-        "ko": "프리토킹 · 두 나라 사이 · C1",
-        "en": "Free talking · Two countries · C1",
-        "ja": "フリートーキング · ふたつの国 · C1"
+        "ko": "(고급) 두 나라 사이",
+        "en": "(Advanced) Two countries",
+        "ja": "(上級) ふたつの国"
       },
       "description": {
         "ko": "다른 나라에서 놀란 점을 설명하고, 일본에 온 사람은 무엇에 놀랄지 말한다.",
@@ -306,9 +303,9 @@
     },
     "talk-me-lately-accessible": {
       "title": {
-        "ko": "프리토킹 · 요즘의 나 · B1",
-        "en": "Free talking · Me lately · B1",
-        "ja": "フリートーキング · 最近のわたし · B1"
+        "ko": "(중급) 요즘의 나",
+        "en": "(Intermediate) Me lately",
+        "ja": "(中級) 最近のわたし"
       },
       "description": {
         "ko": "최근 경험을 구체적으로 꺼내 길게 말한다.",
@@ -318,9 +315,9 @@
     },
     "talk-me-lately-full": {
       "title": {
-        "ko": "프리토킹 · 요즘의 나 · C1",
-        "en": "Free talking · Me lately · C1",
-        "ja": "フリートーキング · 最近のわたし · C1"
+        "ko": "(고급) 요즘의 나",
+        "en": "(Advanced) Me lately",
+        "ja": "(上級) 最近のわたし"
       },
       "description": {
         "ko": "최근 경험을 구체적으로 꺼내 길게 말한다.",
@@ -330,9 +327,9 @@
     },
     "talk-things-i-like-accessible": {
       "title": {
-        "ko": "프리토킹 · 좋아하는 것 · B1",
-        "en": "Free talking · Things I like · B1",
-        "ja": "フリートーキング · 好きなもの · B1"
+        "ko": "(중급) 좋아하는 것",
+        "en": "(Intermediate) Things I like",
+        "ja": "(中級) 好きなもの"
       },
       "description": {
         "ko": "좋아하는 대상과 이유를 구체적인 경험으로 설명한다.",
@@ -342,9 +339,9 @@
     },
     "talk-things-i-like-full": {
       "title": {
-        "ko": "프리토킹 · 좋아하는 것 · C1",
-        "en": "Free talking · Things I like · C1",
-        "ja": "フリートーキング · 好きなもの · C1"
+        "ko": "(고급) 좋아하는 것",
+        "en": "(Advanced) Things I like",
+        "ja": "(上級) 好きなもの"
       },
       "description": {
         "ko": "좋아하는 대상과 이유를 구체적인 경험으로 설명한다.",
@@ -354,9 +351,9 @@
     },
     "talk-small-things-accessible": {
       "title": {
-        "ko": "프리토킹 · 사소한 것들 · B1",
-        "en": "Free talking · Small things · B1",
-        "ja": "フリートーキング · ささいなこと · B1"
+        "ko": "(중급) 사소한 것들",
+        "en": "(Intermediate) Small things",
+        "ja": "(中級) ささいなこと"
       },
       "description": {
         "ko": "사소하고 웃긴 경험을 구체적으로 풀어 말한다.",
@@ -366,9 +363,9 @@
     },
     "talk-small-things-full": {
       "title": {
-        "ko": "프리토킹 · 사소한 것들 · C1",
-        "en": "Free talking · Small things · C1",
-        "ja": "フリートーキング · ささいなこと · C1"
+        "ko": "(고급) 사소한 것들",
+        "en": "(Advanced) Small things",
+        "ja": "(上級) ささいなこと"
       },
       "description": {
         "ko": "사소하고 웃긴 경험을 구체적으로 풀어 말한다.",
@@ -378,9 +375,9 @@
     },
     "talk-people-and-ties-accessible": {
       "title": {
-        "ko": "프리토킹 · 사람과 관계 · B1",
-        "en": "Free talking · People and ties · B1",
-        "ja": "フリートーキング · 人と関係 · B1"
+        "ko": "(중급) 사람과 관계",
+        "en": "(Intermediate) People and ties",
+        "ja": "(中級) 人と関係"
       },
       "description": {
         "ko": "실제 관계 경험을 꺼내고 그 경험에서 생긴 의견을 설명한다.",
@@ -390,9 +387,9 @@
     },
     "talk-people-and-ties-full": {
       "title": {
-        "ko": "프리토킹 · 사람과 관계 · C1",
-        "en": "Free talking · People and ties · C1",
-        "ja": "フリートーキング · 人と関係 · C1"
+        "ko": "(고급) 사람과 관계",
+        "en": "(Advanced) People and ties",
+        "ja": "(上級) 人と関係"
       },
       "description": {
         "ko": "실제 관계 경험을 꺼내고 그 경험에서 생긴 의견을 설명한다.",
@@ -402,9 +399,9 @@
     },
     "talk-love-and-marriage-accessible": {
       "title": {
-        "ko": "프리토킹 · 연애와 결혼 · B1",
-        "en": "Free talking · Love and marriage · B1",
-        "ja": "フリートーキング · 恋愛と結婚 · B1"
+        "ko": "(중급) 연애와 결혼",
+        "en": "(Intermediate) Love and marriage",
+        "ja": "(中級) 恋愛と結婚"
       },
       "description": {
         "ko": "민감도를 조절하며 연애와 결혼 경험·생각을 말한다.",
@@ -414,9 +411,9 @@
     },
     "talk-love-and-marriage-full": {
       "title": {
-        "ko": "프리토킹 · 연애와 결혼 · C1",
-        "en": "Free talking · Love and marriage · C1",
-        "ja": "フリートーキング · 恋愛と結婚 · C1"
+        "ko": "(고급) 연애와 결혼",
+        "en": "(Advanced) Love and marriage",
+        "ja": "(上級) 恋愛と結婚"
       },
       "description": {
         "ko": "민감도를 조절하며 연애와 결혼 경험·생각을 말한다.",
@@ -426,9 +423,9 @@
     },
     "talk-work-and-money-accessible": {
       "title": {
-        "ko": "프리토킹 · 일과 돈 · B1",
-        "en": "Free talking · Work and money · B1",
-        "ja": "フリートーキング · 仕事とお金 · B1"
+        "ko": "(중급) 일과 돈",
+        "en": "(Intermediate) Work and money",
+        "ja": "(中級) 仕事とお金"
       },
       "description": {
         "ko": "숫자와 장면이 있는 일·돈 경험을 말한다.",
@@ -438,9 +435,9 @@
     },
     "talk-work-and-money-full": {
       "title": {
-        "ko": "프리토킹 · 일과 돈 · C1",
-        "en": "Free talking · Work and money · C1",
-        "ja": "フリートーキング · 仕事とお金 · C1"
+        "ko": "(고급) 일과 돈",
+        "en": "(Advanced) Work and money",
+        "ja": "(上級) 仕事とお金"
       },
       "description": {
         "ko": "숫자와 장면이 있는 일·돈 경험을 말한다.",
@@ -450,9 +447,9 @@
     },
     "talk-what-came-before-accessible": {
       "title": {
-        "ko": "프리토킹 · 지나온 것 · B1",
-        "en": "Free talking · What came before · B1",
-        "ja": "フリートーキング · 過ぎてきたもの · B1"
+        "ko": "(중급) 지나온 것",
+        "en": "(Intermediate) What came before",
+        "ja": "(中級) 過ぎてきたもの"
       },
       "description": {
         "ko": "이미 겪은 기억을 시간 순서와 디테일로 이야기한다.",
@@ -462,9 +459,9 @@
     },
     "talk-what-came-before-full": {
       "title": {
-        "ko": "프리토킹 · 지나온 것 · C1",
-        "en": "Free talking · What came before · C1",
-        "ja": "フリートーキング · 過ぎてきたもの · C1"
+        "ko": "(고급) 지나온 것",
+        "en": "(Advanced) What came before",
+        "ja": "(上級) 過ぎてきたもの"
       },
       "description": {
         "ko": "이미 겪은 기억을 시간 순서와 디테일로 이야기한다.",
@@ -474,9 +471,9 @@
     },
     "talk-what-if-accessible": {
       "title": {
-        "ko": "프리토킹 · 만약에 · B1",
-        "en": "Free talking · What if · B1",
-        "ja": "フリートーキング · もしも · B1"
+        "ko": "(중급) 만약에",
+        "en": "(Intermediate) What if",
+        "ja": "(中級) もしも"
       },
       "description": {
         "ko": "가상의 선택을 빠르게 고르고 이유와 결과를 확장해서 말한다.",
@@ -486,9 +483,9 @@
     },
     "talk-what-if-full": {
       "title": {
-        "ko": "프리토킹 · 만약에 · C1",
-        "en": "Free talking · What if · C1",
-        "ja": "フリートーキング · もしも · C1"
+        "ko": "(고급) 만약에",
+        "en": "(Advanced) What if",
+        "ja": "(上級) もしも"
       },
       "description": {
         "ko": "가상의 선택을 빠르게 고르고 이유와 결과를 확장해서 말한다.",
@@ -498,9 +495,9 @@
     },
     "talk-worth-thinking-about-accessible": {
       "title": {
-        "ko": "프리토킹 · 생각해 볼 것 · B1",
-        "en": "Free talking · Worth a thought · B1",
-        "ja": "フリートーキング · 考えたいこと · B1"
+        "ko": "(중급) 생각해 볼 것",
+        "en": "(Intermediate) Worth a thought",
+        "ja": "(中級) 考えたいこと"
       },
       "description": {
         "ko": "일상에서 답할 수 있는 근거로 의견을 말하고 반대 입장까지 검토한다.",
@@ -510,9 +507,9 @@
     },
     "talk-worth-thinking-about-full": {
       "title": {
-        "ko": "프리토킹 · 생각해 볼 것 · C1",
-        "en": "Free talking · Worth a thought · C1",
-        "ja": "フリートーキング · 考えたいこと · C1"
+        "ko": "(고급) 생각해 볼 것",
+        "en": "(Advanced) Worth a thought",
+        "ja": "(上級) 考えたいこと"
       },
       "description": {
         "ko": "일상에서 답할 수 있는 근거로 의견을 말하고 반대 입장까지 검토한다.",
@@ -522,9 +519,9 @@
     },
     "talk-balance-games-accessible": {
       "title": {
-        "ko": "프리토킹 · 밸런스 게임 · B1",
-        "en": "Free talking · Balance games · B1",
-        "ja": "フリートーキング · 究極の二択 · B1"
+        "ko": "(중급) 밸런스 게임",
+        "en": "(Intermediate) Balance games",
+        "ja": "(中級) 究極の二択"
       },
       "description": {
         "ko": "두 선택 중 하나를 빠르게 고르고, 구체적인 생활 장면과 조건 변화로 선택의 이유를 길게 설명한다.",
@@ -534,9 +531,9 @@
     },
     "talk-balance-games-full": {
       "title": {
-        "ko": "프리토킹 · 밸런스 게임 · C1",
-        "en": "Free talking · Balance games · C1",
-        "ja": "フリートーキング · 究極の二択 · C1"
+        "ko": "(고급) 밸런스 게임",
+        "en": "(Advanced) Balance games",
+        "ja": "(上級) 究極の二択"
       },
       "description": {
         "ko": "두 선택 중 하나를 빠르게 고르고, 구체적인 생활 장면과 조건 변화로 선택의 이유를 길게 설명한다.",

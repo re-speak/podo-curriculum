@@ -22,9 +22,9 @@ spec:
   # label. Both come from tools/course-copy.json, never from the TOC — a
   # generated title was English in all three slots and 72 characters long.
   title:
-    ko: 프리토킹 · 연애와 결혼 · B1
-    en: Free talking · Love and marriage · B1
-    ja: フリートーキング · 恋愛と結婚 · B1
+    ko: (중급) 연애와 결혼
+    en: (Intermediate) Love and marriage
+    ja: (中級) 恋愛と結婚
 
   description:
     ko: 민감도를 조절하며 연애와 결혼 경험·생각을 말한다.

@@ -21,9 +21,9 @@ spec:
   # label. Both come from tools/course-copy.json, never from the TOC — a
   # generated title was English in all three slots and 72 characters long.
   title:
-    ko: 프리토킹 · 사소한 것들 · C1
-    en: Free talking · Small things · C1
-    ja: フリートーキング · ささいなこと · C1
+    ko: (고급) 사소한 것들
+    en: (Advanced) Small things
+    ja: (上級) ささいなこと
 
   description:
     ko: 사소하고 웃긴 경험을 구체적으로 풀어 말한다.

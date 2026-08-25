@@ -22,9 +22,9 @@ spec:
   # label. Both come from tools/course-copy.json, never from the TOC — a
   # generated title was English in all three slots and 72 characters long.
   title:
-    ko: 프리토킹 · 밸런스 게임 · B1
-    en: Free talking · Balance games · B1
-    ja: フリートーキング · 究極の二択 · B1
+    ko: (중급) 밸런스 게임
+    en: (Intermediate) Balance games
+    ja: (中級) 究極の二択
 
   description:
     ko: 두 선택 중 하나를 빠르게 고르고, 구체적인 생활 장면과 조건 변화로 선택의 이유를 길게 설명한다.

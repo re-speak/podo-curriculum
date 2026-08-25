@@ -22,9 +22,9 @@ spec:
   # label. Both come from tools/course-copy.json, never from the TOC — a
   # generated title was English in all three slots and 72 characters long.
   title:
-    ko: 여행 영어 · 혼자 하는 여행 · B2
-    en: Travel English · Travelling alone · B2
-    ja: 旅行英語 · ひとり旅と交流 · B2
+    ko: (중고급) 여행 · 혼자 하는 여행
+    en: (Upper Intermediate) Travel · Travelling alone
+    ja: (中上級) 旅行 · ひとり旅と交流
 
   description:
     ko: 나에게 맞는 추천을 받고, 무리에 끼고, 처음 만난 사람과 계획을 짜고, 적대적이지 않게 단호히 항의한다.

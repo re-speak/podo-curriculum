@@ -1,0 +1,608 @@
+<title>Korean Deck Decisions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+JP:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Serif:wght@500;600&display=swap">
+
+<style>
+:root{
+  --paper:#EEF1F5; --surface:#FFFFFF; --sunken:#F6F8FA;
+  --ink:#131820; --body:#333C49; --muted:#5D6875; --faint:#8A94A2;
+  --line:#D7DDE5; --line-soft:#E6EBF1;
+  --accent:#3B4FD8; --accent-soft:#EDEFFC; --accent-ink:#2A3AAE;
+  --art:#6D4AC4; --product:#0E7C86; --logic:#9A6215; --native:#B23A48;
+  --art-bg:#F1ECFB; --product-bg:#E6F4F5; --logic-bg:#F8F0E1; --native-bg:#FBECEE;
+  --learner:#E9F5EC; --learner-line:#BFDDC8;
+  --script:#ECEEFB; --script-line:#C9CFF2;
+  --ok:#127A4B; --ok-bg:#E6F4EC;
+  --shadow:0 1px 2px rgba(19,24,32,.05), 0 6px 18px -10px rgba(19,24,32,.18);
+  --r:10px;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --paper:#0F1216; --surface:#191D24; --sunken:#14181E;
+  --ink:#E9EDF3; --body:#C3CBD6; --muted:#98A2B0; --faint:#77828F;
+  --line:#2B323C; --line-soft:#232931;
+  --accent:#8C9BFF; --accent-soft:#1D2238; --accent-ink:#AEB9FF;
+  --art:#B49BF5; --product:#5CC5CE; --logic:#DCA84C; --native:#EE8592;
+  --art-bg:#221B33; --product-bg:#122A2C; --logic-bg:#2A2213; --native-bg:#2E1B1F;
+  --learner:#16281E; --learner-line:#2B4636;
+  --script:#1B1F33; --script-line:#2E3454;
+  --ok:#5FD39B; --ok-bg:#12261C;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 22px -12px rgba(0,0,0,.6);
+}}
+:root[data-theme="dark"]{
+  --paper:#0F1216; --surface:#191D24; --sunken:#14181E;
+  --ink:#E9EDF3; --body:#C3CBD6; --muted:#98A2B0; --faint:#77828F;
+  --line:#2B323C; --line-soft:#232931;
+  --accent:#8C9BFF; --accent-soft:#1D2238; --accent-ink:#AEB9FF;
+  --art:#B49BF5; --product:#5CC5CE; --logic:#DCA84C; --native:#EE8592;
+  --art-bg:#221B33; --product-bg:#122A2C; --logic-bg:#2A2213; --native-bg:#2E1B1F;
+  --learner:#16281E; --learner-line:#2B4636;
+  --script:#1B1F33; --script-line:#2E3454;
+  --ok:#5FD39B; --ok-bg:#12261C;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 22px -12px rgba(0,0,0,.6);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--body);
+  font-family:"IBM Plex Sans","IBM Plex Sans KR","IBM Plex Sans JP",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:15px; line-height:1.6; -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:"IBM Plex Serif","IBM Plex Sans KR",Georgia,serif; color:var(--ink); text-wrap:balance; margin:0}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+
+/* ---------- masthead ---------- */
+.top{max-width:1120px; margin:0 auto; padding:44px 22px 0}
+.eyebrow{font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted)}
+h1{font-size:clamp(28px,4.2vw,42px); line-height:1.15; letter-spacing:-.015em; margin:12px 0 10px}
+.lede{max-width:62ch; color:var(--body); font-size:16px}
+.lede b{color:var(--ink); font-weight:600}
+
+/* ---------- sticky bar ---------- */
+.bar{position:sticky; top:0; z-index:20; background:color-mix(in srgb,var(--paper) 88%,transparent);
+  backdrop-filter:blur(10px); border-bottom:1px solid var(--line); margin-top:30px}
+.bar-in{max-width:1120px; margin:0 auto; padding:11px 22px; display:flex; align-items:center; gap:16px; flex-wrap:wrap}
+.count{font-family:"IBM Plex Mono",monospace; font-size:13px; color:var(--ink); white-space:nowrap}
+.count b{font-weight:500; color:var(--accent-ink)}
+.track{flex:1 1 150px; height:5px; border-radius:99px; background:var(--line-soft); overflow:hidden; min-width:110px}
+.fill{display:block; height:100%; width:0; background:var(--accent); border-radius:99px; transition:width .3s ease}
+.acts{display:flex; gap:8px; margin-left:auto}
+button{font:inherit; font-size:13px; cursor:pointer; border-radius:8px; padding:7px 13px; border:1px solid var(--line);
+  background:var(--surface); color:var(--ink); transition:background .15s,border-color .15s}
+button:hover{border-color:var(--accent); color:var(--accent-ink)}
+button.primary{background:var(--accent); border-color:var(--accent); color:#fff}
+button.primary:hover{filter:brightness(1.08); color:#fff}
+button:focus-visible,input:focus-visible,textarea:focus-visible,label:focus-within{outline:2px solid var(--accent); outline-offset:2px}
+
+/* ---------- sections ---------- */
+main{max-width:1120px; margin:0 auto; padding:0 22px 90px}
+section{margin-top:52px}
+.sec-head{display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; padding-bottom:12px; border-bottom:2px solid var(--line)}
+.sec-head h2{font-size:22px; letter-spacing:-.01em}
+.who{font-size:13px; color:var(--muted)}
+.tally{margin-left:auto; font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--faint)}
+
+/* ---------- card ---------- */
+.card{background:var(--surface); border:1px solid var(--line); border-left:3px solid var(--kc,var(--accent));
+  border-radius:var(--r); box-shadow:var(--shadow); margin-top:18px; overflow:hidden}
+.card.done{border-left-color:var(--ok)}
+.card-head{display:flex; align-items:flex-start; gap:12px; padding:15px 18px 0; flex-wrap:wrap}
+.tag{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.09em; text-transform:uppercase;
+  padding:3px 8px; border-radius:5px; background:var(--kb); color:var(--kc); white-space:nowrap; font-weight:500}
+.card h3{font-size:17px; letter-spacing:-.005em; flex:1 1 260px}
+.path{font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--faint); word-break:break-all; flex-basis:100%}
+.done-flag{font-size:11.5px; color:var(--ok); background:var(--ok-bg); padding:3px 9px; border-radius:99px; white-space:nowrap; display:none}
+.card.done .done-flag{display:inline-block}
+
+.grid{display:grid; grid-template-columns:1fr; gap:0}
+@media(min-width:900px){ .grid{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr)} }
+.pane{padding:16px 18px 20px; min-width:0; align-self:start}
+@media(min-width:900px){ .pane.left{border-right:1px solid var(--line-soft)} }
+@media(max-width:899px){ .pane.left{border-bottom:1px solid var(--line-soft)} }
+.pane-label{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--faint); margin-bottom:11px}
+
+/* ---------- deck rendering ---------- */
+.deck{background:var(--sunken); border:1px solid var(--line-soft); border-radius:8px; padding:12px 13px; overflow-x:auto}
+.scene-note{font-size:12.5px; color:var(--muted); font-style:italic; margin-bottom:11px; padding-bottom:10px; border-bottom:1px dashed var(--line)}
+.turn{display:flex; gap:9px; margin-bottom:9px; align-items:flex-start}
+.turn:last-child{margin-bottom:0}
+.turn.me{flex-direction:row-reverse}
+.av{width:26px; height:26px; border-radius:50%; flex:none; object-fit:cover; border:1px solid var(--line)}
+.av.icon{background:var(--line-soft); display:grid; place-items:center; font-size:11px; color:var(--muted)}
+.bub{border:1px solid var(--line); background:var(--surface); border-radius:10px; padding:7px 10px; max-width:80%}
+.turn.me .bub{background:var(--learner); border-color:var(--learner-line)}
+.bub .ko{display:block; color:var(--ink); font-weight:500; font-size:14px}
+.bub .ja{display:block; color:var(--muted); font-size:12px; margin-top:2px}
+.nm{font-size:10.5px; color:var(--faint); display:block; margin-bottom:2px}
+.turn.flag .bub{border-color:var(--native); border-width:2px; background:var(--native-bg)}
+.turn.flag .bub .ko{color:var(--ink)}
+.script-box{background:var(--script); border:1px solid var(--script-line); border-radius:8px; padding:10px 12px; margin-bottom:11px}
+.script-box .ko{display:block; color:var(--ink); font-weight:500; font-size:14px}
+.script-box .ja{display:block; color:var(--muted); font-size:12px; margin-top:2px}
+
+/* ---------- reviewer quote ---------- */
+.quote{border-left:3px solid var(--kc); background:var(--kb); border-radius:0 8px 8px 0; padding:10px 13px; margin-bottom:8px}
+.quote p{margin:0; color:var(--ink); font-size:14px}
+.quote .src{display:block; margin-top:5px; font-family:"IBM Plex Mono",monospace; font-size:10.5px; color:var(--muted)}
+.why{font-size:13.5px; color:var(--body); margin:12px 0 4px}
+.why b{color:var(--ink); font-weight:600}
+.cost{font-size:12.5px; color:var(--muted); background:var(--sunken); border:1px dashed var(--line);
+  border-radius:7px; padding:8px 11px; margin-top:10px}
+
+/* ---------- choices ---------- */
+.choices{display:flex; flex-direction:column; gap:8px; margin-top:14px}
+.opt{display:flex; gap:10px; align-items:flex-start; border:1px solid var(--line); border-radius:8px;
+  padding:10px 12px; cursor:pointer; background:var(--surface); transition:border-color .15s,background .15s}
+.opt:hover{border-color:var(--accent)}
+.opt input{margin:3px 0 0; accent-color:var(--accent); flex:none}
+.opt:has(input:checked){border-color:var(--accent); background:var(--accent-soft)}
+.opt .t{font-size:14px; color:var(--ink)}
+.opt .kr{display:block; font-weight:500; color:var(--ink); margin-top:3px; font-size:14.5px}
+.opt .jp{display:block; color:var(--muted); font-size:12px}
+.opt .sub{display:block; color:var(--muted); font-size:12.5px; margin-top:3px}
+textarea{width:100%; margin-top:9px; font:inherit; font-size:14px; color:var(--ink); background:var(--sunken);
+  border:1px solid var(--line); border-radius:8px; padding:9px 11px; resize:vertical; min-height:62px}
+textarea::placeholder{color:var(--faint)}
+
+/* ---------- avatar exhibit ---------- */
+.faces{display:flex; gap:14px; flex-wrap:wrap; align-items:flex-start}
+.face{text-align:center}
+.face img{width:82px; height:82px; border-radius:12px; object-fit:cover; border:1px solid var(--line); display:block}
+.face span{display:block; font-family:"IBM Plex Mono",monospace; font-size:10.5px; color:var(--muted); margin-top:6px}
+.orphans{margin-top:14px; display:flex; flex-wrap:wrap; gap:7px}
+.orphan{font-size:12.5px; padding:4px 10px; border-radius:99px; border:1px dashed var(--native); color:var(--native); background:var(--native-bg)}
+
+/* ---------- output ---------- */
+.out{margin-top:52px; border:1px solid var(--line); border-radius:var(--r); background:var(--surface); box-shadow:var(--shadow); overflow:hidden}
+.out-head{padding:15px 18px; border-bottom:1px solid var(--line-soft); display:flex; align-items:center; gap:12px; flex-wrap:wrap}
+.out-head h2{font-size:18px}
+.out pre{margin:0; padding:16px 18px; background:var(--sunken); font-family:"IBM Plex Mono",monospace; font-size:12px;
+  line-height:1.65; color:var(--body); white-space:pre-wrap; word-break:break-word; max-height:340px; overflow:auto}
+.status{font-size:12.5px; color:var(--muted); padding:0 18px 14px}
+.status.ok{color:var(--ok)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="top">
+  <div class="eyebrow">Proofread round 2026-08-24 · unresolved</div>
+  <h1>20 comments I could not answer by editing words</h1>
+  <p class="lede">Everything the proofreader flagged that was a wording fix is <b>already applied and shipped in PR #121</b>. What is left needs a decision that is yours: new artwork, a course-design call, or a native speaker's ear. Each card shows the deck exactly as a learner sees it, the reviewer's own words, and a proposed answer you can accept or overwrite.</p>
+</div>
+
+<div class="bar">
+  <div class="bar-in">
+    <span class="count"><b id="n">0</b> of 14 decided</span>
+    <span class="track"><span class="fill" id="fill"></span></span>
+    <span class="acts">
+      <button id="copy">Copy for Claude</button>
+      <button id="save" class="primary">Save</button>
+    </span>
+  </div>
+</div>
+
+<main id="main"></main>
+
+<div class="out" id="outwrap" style="display:none">
+  <div class="out-head">
+    <h2>Your decisions</h2>
+    <button id="copy2" style="margin-left:auto">Copy</button>
+  </div>
+  <pre id="out"></pre>
+  <p class="status" id="status"></p>
+</div>
+
+<script type="application/json" id="saved">{}</script>
+
+<script>
+const HANA="data:image/jpeg;base64,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";
+const HARU="data:image/jpeg;base64,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";
+</script>
+<script>
+// Captured here on purpose: this is the last script in the document, so the parser
+// has seen every tag, and <main> is still empty because nothing below has run yet.
+// The DOM therefore still equals the source — safe to republish, and it carries the
+// scripts an earlier capture would have missed.
+const TEMPLATE = document.documentElement.outerHTML;
+
+const KINDS = {
+  art:     {c:"var(--art)",     b:"var(--art-bg)",     label:"Artwork"},
+  product: {c:"var(--product)", b:"var(--product-bg)", label:"Course design"},
+  logic:   {c:"var(--logic)",   b:"var(--logic-bg)",   label:"Scene logic"},
+  native:  {c:"var(--native)",  b:"var(--native-bg)",  label:"Native ear"}
+};
+
+const ITEMS = [
+{
+ id:"A1", kind:"art", n:4,
+ title:"Two portraits, and more characters than that",
+ path:"4 comments · ctx-banmal-dropping/08 · ctx-drama-crush/02 · ctx-kpop-online/08 · ctx-travel-eating-out/07",
+ quotes:[
+  ["지민/선배/형의 얼굴이 똑같음","08-mixed-hierarchy · 2026-08-23"],
+  ["친구랑 소희랑 똑같이 생겼어요","02-keeps-crossing-my-mind · 2026-08-20"],
+  ["친구 얼굴이 똑같아요","08-empathy-reactions · 2026-08-21"],
+  ["일행얼굴이 똑같아요","07-raising-a-problem · 2026-08-21"]],
+ exhibit:"faces",
+ why:"One root cause, not four bugs. <b>The shared runtime ships exactly two portraits</b>, so every partner in every scene pointed at the same one. I assigned them per course — a 직원 who is one person in lesson 4 stays that person in lesson 7 — which fixed most collisions. Five characters still have no face of their own, and three of them are men.",
+ orphans:["형 (male)","상대","다른 친구","택시 기사","승객"],
+ cost:"Adding portraits means new assets in <code class='mono'>shared/</code>, a <code class='mono'>sharedRuntime</code> version bump and a repoint of every deck — one PR, mechanical, but it touches the whole tree.",
+ opts:[
+  {v:"commission", t:"Commission 5–6 more portraits", sub:"Cover the gaps by type: man 30s, man 20s, woman 40s, uniformed staff, older adult. Fixes all four comments and every future scene with three speakers."},
+  {v:"placeholder", t:"Photos for named characters, role icons for the rest", sub:"지민·유진·소희 keep portraits; 직원·행인·판매자·승객 get a neutral role icon. Cheaper, and arguably truer — a shop assistant is not a recurring character."},
+  {v:"twohanded", t:"Rewrite scenes down to two speakers", sub:"No new art. Costs the one lesson whose whole point is switching register between two people at once (08-mixed-hierarchy)."},
+  {v:"defer", t:"Leave it for now", sub:"The collisions stay visible to learners and the reviewer will raise them again."}]
+},
+{
+ id:"P1", kind:"product", n:2,
+ title:"지민 proposes banmal, then speaks 존댓말",
+ path:"sandbox/drafts/kr/…/ctx-banmal-dropping-formality-upper-beginner/lessons/02-choosing-address-terms",
+ quotes:[["반말하자고 했다가 다시 존댓말이 어색해요","02-choosing-address-terms · 2026-08-23"],
+         ["여기도 존댓말이 어색","같은 화 · 2026-08-23"]],
+ scene:{note:"이름과 나이를 확인해 서로 부를 호칭을 정해요.", turns:[
+   ["지민","말은 놓기로 했는데 호칭부터 정해야겠다. 나를 뭐라고 부를래?","タメ口にすることにはしたけど、まず呼び方を決めないと。",0,0],
+   ["나","이제 지민 씨 말고 그냥 지민이라고 불러도 돼?","もうジミンさんではなく、ジミンと呼んでもいい？",1,0],
+   ["지민","그러기 전에 나이부터 확인하자.","そうする前に、まず年齢を確認しよう。",0,0],
+   ["나","혹시 몇 살이세요?","失礼ですが、何歳ですか？",1,0],
+   ["지민","저는 스물여섯이에요. 우리 동갑이니까 지민이라고 불러요.","私は26歳です。同い年なので、ジミンと呼んでください。",0,1]]},
+ why:"지민 speaks banmal in every other line of the course, then switches to 존댓말 in the one line that closes the deal. <b>The learner's 존댓말 is deliberate</b> — they are the one still transitioning, and 지민 says so two lessons later (아직도 저라고 하네). 지민's own line is the inconsistency.",
+ cost:"That last line is a target sentence: it appears again as reorder chips and as a fill-in answer key. Changing it means changing all three together.",
+ opts:[
+  {v:"jimin_only", t:"Fix 지민's line only", kr:"나는 스물여섯이야. 우리 동갑이니까 지민이라고 불러.", jp:"私は26歳だよ。同い年だから、ジミンって呼んで。", sub:"Keeps the learner's 혹시 몇 살이세요? — the asymmetry is the lesson."},
+  {v:"both", t:"Put both speakers in banmal", kr:"몇 살이야? / 나는 스물여섯이야. 우리 동갑이니까 지민이라고 불러.", sub:"Cleaner scene, but removes the transition the unit is teaching."},
+  {v:"keep", t:"Leave as is", sub:"The mixed register is intentional; explain it in the tutor note instead."}]
+},
+{
+ id:"P2", kind:"product", n:2,
+ title:"Two speech levels inside one speech bubble",
+ path:"…/ctx-banmal-dropping-formality-upper-beginner/lessons/08-mixed-hierarchy",
+ quotes:[["존댓말 평서문이 동시에 나와서 이상함","08-mixed-hierarchy · 2026-08-23"],
+         ["아까 평서문을 배웠기 때문에 (반말) 존댓말만 배우는게 더 자연스러울 것 같아요","같은 화 · 2026-08-23"]],
+ scene:{note:"연상과 친구가 함께 있는 자리에서 상대마다 말투를 바꿔요.", turns:[
+   ["지민","오늘은 형도 같이 있어. 사람마다 말투를 잘 바꿔야 해.","今日は年上の人も一緒。相手ごとに話し方を変えないと。",0,0],
+   ["나","형은 뭐 드실래요? 너는 뭐 먹을래?","お兄さんは何を召し上がりますか？ 君は何食べる？",1,0],
+   ["형","나는 비빔밥 먹을게. 둘은 편하게 골라.","私はビビンバにするよ。二人は気楽に選んで。",0,0],
+   ["나","제가 시킬게요. 내가 시킬게.","私が注文します。私が注文するね。",1,1]]},
+ why:"The lesson's point is switching register by addressee, so the two forms are correct — but they sit in <b>one bubble with no indication of who each half is aimed at</b>, which is what reads as strange. The reviewer's second comment goes further and questions the unit's design.",
+ opts:[
+  {v:"split", t:"Split into two turns, one per addressee", kr:"나 → 형: 제가 시킬게요.   /   나 → 지민: 내가 시킬게.", sub:"The screen then shows what actually happens: the learner turns to each person in turn. No change to what is taught."},
+  {v:"label", t:"Keep one bubble, name the addressee", kr:"(형에게) 제가 시킬게요. (지민에게) 내가 시킬게.", sub:"Smallest change; slightly cluttered on a 480px column."},
+  {v:"redesign", t:"Follow the reviewer — teach only 존댓말 here", sub:"Rebuilds the unit. The banmal declarative was taught in the previous lesson, so the contrast page may be redundant."},
+  {v:"keep", t:"Leave as is"}]
+},
+{
+ id:"P3", kind:"product", n:1,
+ title:"“이 과의 내용도 없어도 될 것 같아요”",
+ path:"…/ctx-drama-family-intermediate/lessons/10-filial-devotion (효도)",
+ quotes:[["이 과의 내용도 없어도 될 것 같아요.","10-filial-devotion · 2026-08-20"]],
+ scene:{note:"엄마가 “무슨 말 하려고?”라고 물은 데서 이어 가요.", turns:[
+   ["엄마","무슨 말 하려고?","何を言おうとしてるの？",0,0],
+   ["나","늘 고맙게 생각하는 거 알지?","いつも感謝してるって、分かってるよね？",1,0],
+   ["엄마","얘가 왜 이래, 무섭게.","この子、どうしたの。怖いじゃない。",0,1],
+   ["나","이번 생신엔 내가 다 알아서 준비할게.","今度の誕生日は、私が全部自分で準備するよ。",1,1],
+   ["엄마","됐어, 뭘 그런 걸.","いいよ、そんなことしなくて。",0,1]]},
+ why:"This is the finale of the family course, and the reviewer objected to <b>three of its five lines individually</b> (cards N1–N3 below) before saying the whole unit could go. If you cut it, those three become moot. If you keep it, the three line-level rewrites still need a decision.",
+ cost:"Cutting a lesson from a live course is a retirement, not a delete: the row keeps USE_YN='Y' until a deploy sets enabled:false. Renumbering the remaining nine changes CLASS_WEEK for all of them.",
+ opts:[
+  {v:"keep_fix", t:"Keep the lesson, apply the three line fixes", sub:"Cards N1–N3 below become live decisions."},
+  {v:"rewrite", t:"Keep the slot, rewrite the scene around a different beat", sub:"효도 stays as the theme but the gift-planning exchange goes. Needs a new scene from you or the writer."},
+  {v:"cut", t:"Retire the lesson", sub:"Course goes to nine lessons. N1–N3 below can be skipped."}]
+},
+{
+ id:"P4", kind:"product", n:1, ask:true,
+ title:"“단원 2-2 와 유사함” — which unit did you mean?",
+ path:"…/ctx-drama-friends-intermediate/lessons/01-first-meeting",
+ quotes:[["단원 2-2 와 유사함","01-first-meeting · 2026-08-24"]],
+ why:"I could not resolve the reference. Within this course, lesson 01 and lesson 02 are a deliberate two-part arc, not duplicates:",
+ pairs:[["01-first-meeting","비 오는 밤이에요. 앞사람이 뭔가를 떨어뜨렸어요."],
+        ["02-again","며칠 뒤예요. 그날 그 편의점에서 또 만났어요."]],
+ why2:"“2-2” may point at another track entirely — the Core Patterns unit 2 lesson 2, or the retired 썸 course's first meeting, which also opens on a chance encounter. Tell me which and I will compare them properly.",
+ opts:[
+  {v:"crush", t:"The 썸 course's first meeting (ctx-drama-crush/01)", sub:"That course is retired; the overlap may not matter any more."},
+  {v:"core", t:"Core Patterns unit 2, lesson 2"},
+  {v:"same", t:"This course's own lesson 02", sub:"Then the two-part arc itself is the problem and 01 needs a different opening."},
+  {v:"other", t:"Something else — I'll say which"}]
+},
+{
+ id:"L1", kind:"logic", n:1,
+ title:"The answer does not answer the question",
+ path:"…/ctx-banmal-chatting-intermediate/lessons/04-hearsay (전해 듣기)",
+ quotes:[["누가 그렇게 말했어? 라는 대답으로 어울리지 않음","04-hearsay · 2026-08-23"]],
+ scene:{note:"들은 소문과 내가 직접 본 근거를 구분해 친구에게 말해요.", turns:[
+   ["친구","너 그 둘 소문 들었어? 결국 헤어졌다는 얘기가 있던데.","あの二人の噂聞いた？ 別れたって話がある。",0,0],
+   ["나","너 그 소문 들었어? 걔네 헤어졌대.","その噂聞いた？ あの二人、別れたって。",1,0],
+   ["친구","진짜? 누가 그렇게 말했어?","本当？ 誰がそう言ったの？",0,0],
+   ["나","내가 그럴 줄 알았어, 처음부터 안 맞더라.","そうなると思ってた。最初から合ってなかったよ。",1,1],
+   ["친구","그러고 보니 만날 때마다 자주 싸웠지.","そういえば会うたびによく喧嘩してた。",0,0]]},
+ why:"친구 asks <b>who</b> said it. The learner answers with an opinion about the couple. The lesson is about separating hearsay from what you saw yourself, so naming the source is exactly the skill being taught — and the current line skips it.",
+ opts:[
+  {v:"answer", t:"Fix the answer — name the source", kr:"지현이가 그러더라. 나도 걔한테 들었어.", jp:"ジヒョンがそう言ってた。私もその子から聞いたの。", sub:"Teaches the pattern the lesson promises. The following line still works."},
+  {v:"question", t:"Fix the question instead", kr:"친구: 진짜? 너 직접 봤어?", jp:"本当？ 自分で見たの？", sub:"The learner's existing line becomes a valid answer. Smaller edit, but drops the 'who said it' pattern."},
+  {v:"keep", t:"Leave as is"}]
+},
+{
+ id:"L2", kind:"logic", n:1,
+ title:"A softening lesson whose model line is blunt",
+ path:"…/ctx-banmal-chatting-intermediate/lessons/05-gentle-disagreement",
+ quotes:[["어떤 부분이 다르게 보여? 라는 마지막 질문과 이어지지 않음","05-gentle-disagreement · 2026-08-23"]],
+ scene:{note:"친구의 단정에 정면으로 아니라고 하지 않고 다른 생각을 내요.", turns:[
+   ["친구","나는 한쪽만 잘못한 것 같아. 너도 그렇게 생각하지?","片方だけが悪いと思う。君もそう思うでしょ？",0,0],
+   ["나","글쎄, 난 좀 다르게 생각하는데.","さあ、私はちょっと違うと思うけど。",1,0],
+   ["친구","그래? 어떤 부분이 다르게 보여?","そう？ どの部分が違って見える？"  ,0,0],
+   ["나","에이, 아무리 그래도 그건 좀 아니지.","いや、いくらなんでもそれはちょっと違うでしょ。",1,1],
+   ["친구","알겠어. 그렇게 단정할 일은 아니네.","わかった。そこまで断定することではないね。",0,0]]},
+ why:"친구 invites the learner to explain <b>which part</b> they see differently. The scripted answer is a flat rejection — the opposite of what the lesson is called, and it makes 친구's next line (“알겠어”) unearned.",
+ opts:[
+  {v:"both", t:"Give a reason instead of a verdict", kr:"한쪽만 잘못했다고 보기엔 서로 오해가 있었던 것 같아.", jp:"片方だけが悪いと言うには、お互い誤解があった気がする。", sub:"Answers the question and models the pattern."},
+  {v:"soft", t:"Offer the other side's position", kr:"그 사람도 그럴 만한 사정이 있었을 수도 있잖아.", jp:"あの人にもそうするだけの事情があったかもしれないでしょ。", sub:"Softer still; slightly less tied to the taught form."},
+  {v:"keep", t:"Leave as is"}]
+},
+{
+ id:"L3", kind:"logic", n:1,
+ title:"A teaser that describes a different scene",
+ path:"…/ctx-banmal-dropping-formality-upper-beginner/lessons/06-suggestions-and-commands",
+ quotes:[["다음장면 내용과 다른 이야기","06-suggestions-and-commands · 2026-08-23"]],
+ script:["저녁을 먹고 헤어질 때 존댓말 인사와 ‘네’가 자꾸 튀어나와요.","夕食のあと別れるとき、敬語のあいさつと「네」がつい出てしまいます。"],
+ scene:{note:"…and the mini-scene that follows it:", turns:[
+   ["지민","잘 먹었다. 이제 집에 가야겠다.","よく食べた。もう家に帰らないと。",0,0],
+   ["지민","우리 이제 헤어지는데, 반말로 인사해 봐.","もう別れるけど、タメ口であいさつしてみて。",0,0]]},
+ why:"The teaser frames the next lesson as a <b>problem</b> — formal speech keeps slipping out. The scene under it, and lesson 07 itself (헤어지는 인사와 짧은 대답을 반말로), are a straightforward practice prompt. The sentence and the scene are telling different stories.",
+ opts:[
+  {v:"match", t:"Rewrite the teaser to match the scene", kr:"저녁을 먹고 헤어질 시간이에요. 이번엔 인사도 대답도 반말로 해 봐요.", jp:"夕食のあと、別れる時間です。今度はあいさつも返事もタメ口で言ってみましょう。"},
+  {v:"scene", t:"Keep the teaser, change the scene to show the slip", kr:"나: 네, 내일 봬요. → 지민: 또 존댓말!", sub:"More dramatic, and lesson 07 would need to open on the correction."},
+  {v:"keep", t:"Leave as is"}]
+},
+{
+ id:"L4", kind:"logic", n:2,
+ title:"The awkward moment happens off-screen",
+ path:"…/ctx-banmal-dropping-formality-upper-beginner/lessons/09-semi-formal-speech",
+ quotes:[["무슨 상황인지 모르겠음","“今、私にタメ口で話したんですか？” · 2026-08-23"],
+         ["분위기가 이상해진 이유를 모르겠음","“…분위기가 싸늘해져요.” · 2026-08-23"]],
+ script:["다른 자리에서는 친한 줄 알고 먼저 반말했다가 분위기가 싸늘해져요.","別の場では、親しいと思って先にタメ口を使い、空気が冷たくなります。"],
+ scene:{note:"…and the two turns that follow:", turns:[
+   ["선배","좋아. 그런데 아까 다른 분께는 너무 빨리 말을 놓았나 봐.","でもさっき別の人には早くタメ口にしすぎたみたい。",0,0],
+   ["상대","방금 저한테 반말하신 거예요?","今、私にタメ口で話したんですか？",0,1]]},
+ why:"The learner is told the atmosphere went cold, then a stranger challenges them — but <b>the moment they actually spoke banmal is never shown</b>. Both of the reviewer's questions are the same gap: the cause is reported, never played.",
+ opts:[
+  {v:"show", t:"Play the moment, then the reaction", kr:"나: 어, 그거 나도 해 봤어.  →  상대: 방금 저한테 반말하신 거예요?", jp:"私: あ、それ私もやったことある。 → 相手: 今、私にタメ口で話したんですか？", sub:"Teaser becomes: 처음 만난 사람에게 나도 모르게 반말이 나왔어요. Two turns instead of one; the learner sees cause and effect."},
+  {v:"narrate", t:"Keep it reported, but say what was said", kr:"아까 처음 뵌 분께 ‘어, 그거 나도 해 봤어’라고 하셨죠?", sub:"One line changed instead of a restructured teaser."},
+  {v:"keep", t:"Leave as is"}]
+},
+{
+ id:"N1", kind:"native", n:1,
+ title:"“얘가 왜 이래, 무섭게.”",
+ path:"…/ctx-drama-family-intermediate/lessons/10-filial-devotion",
+ quotes:[["차라리 인정을하는게 어떨까요 왜 무섭게는 좀..","10-filial-devotion · 2026-08-20"]],
+ line:["엄마: 얘가 왜 이래, 무섭게.","この子、どうしたの。怖いじゃない。"],
+ why:"The child has just said they are grateful. 무섭게 reads as recoiling from it. The reviewer suggests the mother should let it land instead.",
+ note:"Only live if you keep the lesson (card P3).",
+ opts:[
+  {v:"a", t:"Embarrassed rather than alarmed", kr:"갑자기 왜 그래, 쑥스럽게.", jp:"急にどうしたの、照れるじゃない。"},
+  {v:"b", t:"Accept it outright", kr:"그런 말을 다 하네. 고맙다.", jp:"そんなこと言うのね。ありがとう。"},
+  {v:"keep", t:"Leave as is"}]
+},
+{
+ id:"N2", kind:"native", n:1,
+ title:"“이번 생신엔 내가 다 알아서 준비할게.”",
+ path:"…/ctx-drama-family-intermediate/lessons/10-filial-devotion",
+ quotes:[["문장이 이상해요","10-filial-devotion · 2026-08-20"]],
+ line:["나: 이번 생신엔 내가 다 알아서 준비할게.","今度の誕生日は、私が全部自分で準備するよ。"],
+ why:"다 알아서 is doing too much work at once — it can read as brushing the mother off rather than offering.",
+ note:"Only live if you keep the lesson (card P3).",
+ opts:[
+  {v:"a", t:"Plain offer", kr:"이번 생신은 내가 준비할게.", jp:"今度の誕生日は、私が準備するよ。"},
+  {v:"b", t:"Offer with the effort named", kr:"이번 생신은 내가 다 준비해 놓을게.", jp:"今度の誕生日は、私が全部準備しておくよ。"},
+  {v:"keep", t:"Leave as is"}]
+},
+{
+ id:"N3", kind:"native", n:1,
+ title:"“됐어, 뭘 그런 걸.”",
+ path:"…/ctx-drama-family-intermediate/lessons/10-filial-devotion",
+ quotes:[["그냥 준비하라고 하면 안되나요","10-filial-devotion · 2026-08-20"]],
+ line:["엄마: 됐어, 뭘 그런 걸.","いいよ、そんなことしなくて。"],
+ why:"The mother refuses, so the lesson ends on the offer being declined. The reviewer would rather she accepted — which also gives the finale a warmer close.",
+ note:"Only live if you keep the lesson (card P3).",
+ opts:[
+  {v:"a", t:"Accept", kr:"그래, 그럼 부탁할게.", jp:"そう、じゃあお願いするね。"},
+  {v:"b", t:"Accept, still a little bashful", kr:"뭘 그렇게까지. …그래, 그럼 맡길게.", jp:"そこまでしなくても。…そう、じゃあ任せるね。"},
+  {v:"keep", t:"Leave as is"}]
+},
+{
+ id:"N4", kind:"native", n:1,
+ title:"“계산은 정말 네가 하는 거야?”",
+ path:"…/ctx-drama-friends-intermediate/lessons/07-one-favor · 다음 화 맛보기",
+ quotes:[["오 한국인이 이런 표현을쓰나요..?","07-one-favor · 2026-08-24"]],
+ line:["나: 고마워. 그런데 계산은 정말 네가 하는 거야?","ありがとう。でも、会計は本当にあなたがするの？"],
+ why:"유진 has just offered to treat them. Asking whether they are <b>really</b> paying questions the offer — in Korean that lands as doubt or reluctance, not as the light teasing the scene wants.",
+ opts:[
+  {v:"a", t:"Accept warmly", kr:"고마워. 그럼 잘 먹을게.", jp:"ありがとう。じゃあ、ごちそうになるね。"},
+  {v:"b", t:"Accept with a bit of play", kr:"진짜? 그럼 오늘은 얻어먹는다?", jp:"本当？ じゃあ今日はごちそうになっちゃうよ？"},
+  {v:"keep", t:"Leave as is"}]
+},
+{
+ id:"N5", kind:"native", n:1,
+ title:"“우리 앞으로도 오래 볼 사이일까?”",
+ path:"…/ctx-drama-friends-intermediate/lessons/09-just-between-us · 다음 화 맛보기",
+ quotes:[["이런 말 잘안해요 ㅠㅠㅠ","09-just-between-us · 2026-08-24"]],
+ line:["나: 그럼 우리 앞으로도 오래 볼 사이일까?","じゃあ、私たちこれからも長く会う仲なのかな？"],
+ why:"오래 볼 사이 is a phrase people describe a friendship with, not one they ask about to someone's face. Said aloud it sounds translated.",
+ opts:[
+  {v:"a", t:"Turn it into a wish, not a question", kr:"우리 앞으로도 이렇게 지내자.", jp:"これからも、こんなふうにいようね。"},
+  {v:"b", t:"Keep it a question, make it casual", kr:"그럼 앞으로도 계속 보는 거다?", jp:"じゃあ、これからもずっと会うってことだよね？"},
+  {v:"keep", t:"Leave as is"}]
+}
+];
+
+/* ---------- render ---------- */
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const turnHtml = t => {
+  const [who, ko, ja, me, flag] = t;
+  const av = me ? '<span class="av icon" aria-hidden="true">나</span>'
+                : `<img class="av" src="${who==="형"||who==="선배"||who==="상대"?HARU:HANA}" alt="">`;
+  return `<div class="turn${me?" me":""}${flag?" flag":""}">${av}<div class="bub">
+    <span class="nm">${esc(who)}</span><span class="ko">${esc(ko)}</span><span class="ja">${esc(ja)}</span></div></div>`;
+};
+
+const SECTIONS = [
+  ["art","Artwork", "Needs new assets — nothing in the copy can fix these."],
+  ["product","Course design","Your call as the product owner. Each one changes what a course teaches, not how it is worded."],
+  ["logic","Scene logic","A scene that does not follow itself. I have drafted a fix for each; approve or overwrite."],
+  ["native","Native ear","The reviewer said the line is not how people speak but did not supply a replacement. Mine are proposals."]
+];
+
+const main = document.getElementById("main");
+SECTIONS.forEach(([kind, name, blurb]) => {
+  const items = ITEMS.filter(i => i.kind === kind);
+  const comments = items.reduce((a,i)=>a+i.n,0);
+  const sec = document.createElement("section");
+  sec.innerHTML = `<div class="sec-head"><h2>${name}</h2><span class="who">${blurb}</span>
+    <span class="tally">${items.length} decision${items.length>1?"s":""} · ${comments} comment${comments>1?"s":""}</span></div>`;
+  items.forEach(it => {
+    const K = KINDS[it.kind];
+    const card = document.createElement("article");
+    card.className = "card"; card.id = "card-" + it.id;
+    card.style.setProperty("--kc", K.c); card.style.setProperty("--kb", K.b);
+
+    let left = "";
+    if (it.exhibit === "faces") {
+      left = `<div class="faces">
+        <div class="face"><img src="${HANA}" alt="The first shared portrait"><span>hana-avatar.jpg</span></div>
+        <div class="face"><img src="${HARU}" alt="The second shared portrait"><span>haruka-avatar.jpg</span></div>
+        <div style="align-self:center;color:var(--muted);font-size:13px;max-width:22ch">These two are everything the shared runtime ships. Every partner in every scene draws from them.</div>
+      </div>
+      <div class="orphans">${it.orphans.map(o=>`<span class="orphan">${esc(o)} — no face</span>`).join("")}</div>`;
+    } else {
+      left = `<div class="deck">`;
+      if (it.script) left += `<div class="script-box"><span class="ko">${esc(it.script[0])}</span><span class="ja">${esc(it.script[1])}</span></div>`;
+      if (it.line)   left += `<div class="turn flag"><span class="av icon" aria-hidden="true">‹›</span><div class="bub"><span class="ko">${esc(it.line[0])}</span><span class="ja">${esc(it.line[1])}</span></div></div>`;
+      if (it.scene) {
+        left += `<p class="scene-note">${esc(it.scene.note)}</p>` + it.scene.turns.map(turnHtml).join("");
+      }
+      if (it.pairs) left += it.pairs.map(([a,b])=>`<div class="turn"><span class="av icon" aria-hidden="true">${a.slice(0,2)}</span><div class="bub"><span class="nm mono">${esc(a)}</span><span class="ko">${esc(b)}</span></div></div>`).join("");
+      left += `</div>`;
+    }
+
+    const opts = it.opts.map((o,idx)=>`
+      <label class="opt">
+        <input type="radio" name="${it.id}" value="${esc(o.v)}">
+        <span class="t">${esc(o.t)}
+          ${o.kr?`<span class="kr">${esc(o.kr)}</span>`:""}
+          ${o.jp?`<span class="jp">${esc(o.jp)}</span>`:""}
+          ${o.sub?`<span class="sub">${esc(o.sub)}</span>`:""}
+        </span>
+      </label>`).join("");
+
+    card.innerHTML = `
+      <div class="card-head">
+        <span class="tag">${it.id} · ${K.label}</span>
+        <h3>${it.title}</h3>
+        <span class="done-flag">decided</span>
+        <span class="path">${esc(it.path)}</span>
+      </div>
+      <div class="grid">
+        <div class="pane left">
+          <div class="pane-label">What the learner sees</div>
+          ${left}
+        </div>
+        <div class="pane">
+          <div class="pane-label">What the reviewer said</div>
+          ${it.quotes.map(q=>`<blockquote class="quote"><p>${esc(q[0])}</p><span class="src">${esc(q[1])}</span></blockquote>`).join("")}
+          <p class="why">${it.why}</p>
+          ${it.pairs&&it.why2?`<p class="why">${it.why2}</p>`:""}
+          ${it.note?`<p class="why" style="color:var(--muted)">${esc(it.note)}</p>`:""}
+          ${it.cost?`<p class="cost">${it.cost}</p>`:""}
+          <div class="choices">${opts}</div>
+          <textarea data-note="${it.id}" placeholder="Or write your own — this overrides the choice above"></textarea>
+        </div>
+      </div>`;
+    sec.appendChild(card);
+  });
+  main.appendChild(sec);
+});
+
+/* ---------- state ---------- */
+const KEY = "kr-deck-decisions-v1";
+let state = {};
+try { state = JSON.parse(document.getElementById("saved").textContent || "{}") || {}; } catch (e) { state = {}; }
+try { const l = JSON.parse(localStorage.getItem(KEY) || "null"); if (l) state = Object.assign({}, state, l); } catch (e) {}
+
+function apply() {
+  ITEMS.forEach(it => {
+    const s = state[it.id] || {};
+    if (s.choice) { const r = document.querySelector(`input[name="${it.id}"][value="${s.choice}"]`); if (r) r.checked = true; }
+    const ta = document.querySelector(`textarea[data-note="${it.id}"]`); if (ta && s.note) ta.value = s.note;
+    document.getElementById("card-" + it.id).classList.toggle("done", !!(s.choice || (s.note || "").trim()));
+  });
+  render();
+}
+function render() {
+  const done = ITEMS.filter(it => { const s = state[it.id] || {}; return s.choice || (s.note || "").trim(); }).length;
+  document.getElementById("n").textContent = done;
+  document.getElementById("fill").style.width = (done / ITEMS.length * 100) + "%";
+  const lines = ["교정 미해결 20건 — 결정", ""];
+  ITEMS.forEach(it => {
+    const s = state[it.id] || {};
+    if (!s.choice && !(s.note || "").trim()) return;
+    const opt = it.opts.find(o => o.v === s.choice);
+    lines.push(`[${it.id}] ${it.title}`);
+    if (opt) lines.push(`   → ${opt.t}${opt.kr ? "  :  " + opt.kr : ""}`);
+    if ((s.note || "").trim()) lines.push(`   ✎ ${s.note.trim()}`);
+    lines.push("");
+  });
+  const undec = ITEMS.filter(it => { const s = state[it.id] || {}; return !s.choice && !(s.note || "").trim(); });
+  if (undec.length) lines.push("아직 안 정한 것: " + undec.map(i => i.id).join(", "));
+  const text = done ? lines.join("\n") : "";
+  document.getElementById("out").textContent = text;
+  document.getElementById("outwrap").style.display = done ? "" : "none";
+  return text;
+}
+function persist() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
+
+document.addEventListener("change", e => {
+  if (e.target.matches('input[type="radio"]')) {
+    state[e.target.name] = Object.assign({}, state[e.target.name], { choice: e.target.value });
+    persist(); apply();
+  }
+});
+document.addEventListener("input", e => {
+  if (e.target.matches("textarea[data-note]")) {
+    const id = e.target.dataset.note;
+    state[id] = Object.assign({}, state[id], { note: e.target.value });
+    persist();
+    document.getElementById("card-" + id).classList.toggle("done", !!(state[id].choice || e.target.value.trim()));
+    render();
+  }
+});
+
+function say(msg, ok) {
+  const el = document.getElementById("status");
+  el.textContent = msg; el.className = "status" + (ok ? " ok" : "");
+}
+async function copyAll() {
+  const t = render();
+  if (!t) { say("Nothing decided yet."); return; }
+  try { await navigator.clipboard.writeText(t); say("Copied — paste it back to Claude.", true); }
+  catch (e) { say("Select the text above and copy it."); }
+}
+document.getElementById("copy").addEventListener("click", copyAll);
+document.getElementById("copy2").addEventListener("click", copyAll);
+
+document.getElementById("save").addEventListener("click", async () => {
+  render();
+  const api = await (window.claude && window.claude.use ? claude.use("artifact") : Promise.resolve(null));
+  if (!api) { say("Saving is not available here — use Copy for Claude instead."); return; }
+  const doc = TEMPLATE.replace(
+    /(<script type="application\/json" id="saved">)[\s\S]*?(<\/script>)/,
+    (m, a, b) => a + JSON.stringify(state).replace(/</g, "\\u003c") + b);
+  try {
+    say("Saving…");
+    await api.publish("<!doctype html>\n" + doc);
+    say("Saved. Claude can read your decisions from this page now.", true);
+  } catch (err) {
+    say(err && err.code === "conflict"
+      ? "Someone else saved first — this page will reload to their version."
+      : "Could not save. Use Copy for Claude instead.");
+  }
+});
+
+apply();
+</script>

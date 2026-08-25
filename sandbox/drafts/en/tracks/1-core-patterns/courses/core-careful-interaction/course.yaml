@@ -21,9 +21,9 @@ spec:
   # label. Both come from tools/course-copy.json, never from the TOC — a
   # generated title was English in all three slots and 72 characters long.
   title:
-    ko: 영어 핵심 패턴 · 조심스러운 요청 · B1
-    en: English Core · Careful requests · B1
-    ja: 英語コアパターン · 慎重な依頼 · B1
+    ko: (중급) 핵심 패턴 · 조심스러운 요청
+    en: (Intermediate) Core · Careful requests
+    ja: (中級) コアパターン · 慎重な依頼
 
   description:
     ko: 조심스럽게 부탁하고, 무례하지 않게 정보를 묻고, 그럴 법한 일을 짚는다.

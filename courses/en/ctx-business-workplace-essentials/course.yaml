@@ -22,9 +22,9 @@ spec:
   # label. Both come from tools/course-copy.json, never from the TOC — a
   # generated title was English in all three slots and 72 characters long.
   title:
-    ko: 비즈니스 영어 · 사무실 기본 · A2–B1
-    en: Business English · At the office · A2–B1
-    ja: ビジネス英語 · 職場の基本 · A2–B1
+    ko: (중급) 비즈니스 · 사무실 기본
+    en: (Intermediate) Business · At the office
+    ja: (中級) ビジネス · 職場の基本
 
   description:
     ko: 맡은 역할을 소개하고, 통화 문제를 해결하고, 시차를 넘어 일정을 잡고, 전달되는 진행 보고를 한다.
