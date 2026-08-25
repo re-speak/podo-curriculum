@@ -108,6 +108,12 @@ those, and only then expand the remaining batch as described in the workflow.
 
 ## Reviewing many existing lessons
 
+Open questions from the last proofreading round live in
+[`proofread-decisions.html`](./proofread-decisions.html) with the round written up in
+[`reference/proofread-round-2026-08-24.md`](./reference/proofread-round-2026-08-24.md). Read the
+round before re-opening one of the decks it names — several carry a reviewer objection that is
+waiting on a product or art decision, not on an edit.
+
 For a curriculum-wide proofreading, consistency check or other judgment-heavy audit, read
 [`PROOFREADING-WORKFLOW.md`](./PROOFREADING-WORKFLOW.md), especially **Token-efficient projected
 audits**. Do not give whole lesson HTML files to parallel reviewers when the question concerns a
