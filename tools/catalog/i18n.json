@@ -312,6 +312,36 @@
       "ko": "체험 레슨 보기",
       "ja": "体験レッスンを見る",
       "en": "See the trial lessons"
+    },
+    "toc": {
+      "ko": "차례",
+      "ja": "目次",
+      "en": "Contents"
+    },
+    "where": {
+      "ko": "현재 위치",
+      "ja": "現在の位置",
+      "en": "You are here"
+    },
+    "prevLesson": {
+      "ko": "이전",
+      "ja": "前へ",
+      "en": "Previous"
+    },
+    "nextLesson": {
+      "ko": "다음",
+      "ja": "次へ",
+      "en": "Next"
+    },
+    "none": {
+      "ko": "없음",
+      "ja": "なし",
+      "en": "None"
+    },
+    "more": {
+      "ko": "더 보기",
+      "ja": "その他",
+      "en": "More"
     }
   },
   "detail": {
