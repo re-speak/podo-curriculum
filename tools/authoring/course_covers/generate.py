@@ -85,23 +85,24 @@ FAMILY_FILL = {
     "banmal": "#DF6A11",    # 26deg   3.4:1
     "business": "#7535DB",  # 263deg  6.4:1
     "trial": "#33405F",     # a deep neutral, so all four trial motifs read on it
-    "hangul": "#3C51CE",    # hangul   231deg  dE 97.8  (derived)
+    "hangul": "#1A6D1A",   # hangul  120deg  6.41:1  echo, second colour
 }
 
 TALK_FILL = {
-    # hue, then how far the fill sits from the motif's own colours in CIE Lab.
-    # The floor is dE 45 — below that the ground starts to swallow the object.
-    "me-lately": "#B42DA7",              # memories    306deg  dE 62.6
-    "things-i-like": "#1B6B1B",          # thinking    120deg  dE 63.9
-    "small-things": "#2C5AB1",           # thinking    219deg  dE 47.1
-    "people-and-ties": "#1B646D",        # people      186deg  dE 46.0
-    "love-and-marriage": "#982670",      # romance     321deg  dE 46.7
-    "work-and-money": "#28A128",         # work-money  120deg  dE 61.7
-    "between-two-countries": "#964CD2",  # countries   273deg  dE 68.3
-    "what-if": "#256395",                # what-if     207deg  dE 50.0
-    "what-came-before": "#C2305C",       # memories    342deg  dE 71.4
-    "worth-thinking-about": "#1A6A4A",   # thinking    156deg  dE 66.9
-    "balance-games": "#A6362A",          # balance       6deg  dE 86.8
+    # The artwork's own colour, deepened until the object separates on lightness.
+    # Where several land on one hue they fan out inside it — four blues twenty
+    # degrees apart, not a blue and a green. Re-derive with `measure_motifs.py --fills`.
+    "me-lately":           "#247998",  # memories    196deg   4.87:1  echo, 4 on this hue (fanned 14 deg)
+    "things-i-like":       "#8149D4",  # thinking    264deg   5.46:1  echo, second colour, 5 on this hue (fanned 6 deg)
+    "small-things":        "#8C2CBC",  # thinking    280deg   6.56:1  echo, second colour, 5 on this hue (fanned 10 deg)
+    "people-and-ties":     "#A82F28",  # people        4deg   6.77:1  echo, 2 on this hue (fanned 4 deg)
+    "love-and-marriage":   "#A0254B",  # romance     342deg   7.34:1  echo, 2 on this hue (fanned 4 deg)
+    "work-and-money":      "#5B8CD9",  # work-money  217deg    3.4:1  echo, second colour, 4 on this hue (fanned 7 deg)
+    "between-two-countries":"#1D7D74",  # countries   174deg    4.9:1  echo, 4 on this hue (fanned 21 deg)
+    "what-if":             "#3D51D1",  # what-if     232deg   6.38:1  echo, 5 on this hue (fanned 23 deg)
+    "what-came-before":    "#4F53D6",  # memories    238deg   5.97:1  echo, 4 on this hue (fanned 28 deg)
+    "worth-thinking-about":"#8A2292",  # thinking    296deg   7.66:1  echo, second colour, 5 on this hue (fanned 26 deg)
+    "balance-games":       "#5844D3",  # balance     248deg    6.6:1  echo, 5 on this hue (fanned 7 deg)
 }
 
 

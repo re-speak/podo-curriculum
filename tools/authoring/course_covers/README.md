@@ -82,32 +82,44 @@ it actually spends area on, weighted by saturation × lightness so highlights an
 outlines do not vote — and the mean lightness of its opaque pixels.
 
 ```sh
-python3 tools/authoring/course_covers/measure_motifs.py
+python3 tools/authoring/course_covers/measure_motifs.py          # what it measured
+python3 tools/authoring/course_covers/measure_motifs.py --fills  # the table to paste back
 ```
 
-Each fill is then the colour **furthest from that artwork's own colours in CIE
-Lab**, at a depth set by how light the object is: the dark briefcase gets a light
-ground, the pale phone a deep one. That second half is what keeps a pale object
-from dissolving into a pale ground.
+**The ground echoes the artwork.** It takes the artwork's own strongest colour and
+deepens it until the object separates on lightness rather than on hue — a pink
+phone on deep wine, a blue clock on teal, a green Hangul block on deep green.
+Five of the seven hand-set `FAMILY_FILL` entries had already landed there by eye,
+which is why drama, business and travel read as cohesive and nobody asked about
+them.
 
-The distance has to be perceptual. The first version of this compared hue angles
-and required 45°, and it produced a green ground behind the green-and-blue globes
-of `countries` — 51° apart on paper, the same colour to look at. Greens sprawl
-across 90–170° and still read as one thing; Lab says so and hue arithmetic does
-not. The floor is now ΔE 45, below which the ground starts to swallow the object,
-and every fill in the table clears it.
+How deep is not a taste call either: it comes from the object. The dark briefcase
+of `work-money` averages 0.45 lightness and gets a light ground; the pale phone of
+`romance` averages 0.81 and gets a much deeper one. That single rule is what lets
+an echo stay an echo without the object dissolving into it.
 
-Two guards sit on top. Hues from about 9° to 94° turn to mud once they are deep
-enough to hold white text — orange becomes brown, yellow becomes olive — so they
-are only used when nothing else clears the floor. And each fill is also scored
-against the fills already assigned, so two topics on the same rail stay tellable
-apart once both have cleared their own artwork.
+Two things can stop an echo, and then the ground steps to the artwork's *next*
+colour rather than to an unrelated one:
+
+- **Mud.** Hues from about 9° to 94° turn to brown or olive once they are deep
+  enough to hold white text, so a yellow lightbulb cannot have a yellow ground.
+  It takes the purple of its own question marks instead — still a colour from the
+  picture.
+- **A sibling.** Two courses cannot ship the same fill, and the toy artwork is
+  mostly blue and purple, so echoes cluster. They fan out *inside* the
+  neighbourhood the artwork put them in: a band of four blues becomes four blues
+  about twenty degrees apart, not a blue and a green. No fill currently moves more
+  than 28° off its own artwork.
+
+An earlier version did the opposite — it put each ground as far from its artwork
+as CIE Lab allowed. That solved a real problem (a green ground behind green globes,
+which 45° of hue clearance had let through) but it solved it by throwing away the
+thing that made the hand-set fills work. Echo plus the depth rule handles both.
 
 The table is committed rather than computed at generation time for two reasons:
 `generate.py` stays free of a Pillow dependency (it only needs `rsvg-convert`),
 and a reviewer can see the hues in the diff instead of trusting a measurement
-they cannot see. Re-run `measure_motifs.py` and update the table only when a
-motif PNG changes.
+they cannot see. Re-run `--fills` and paste when a motif PNG changes.
 
 ## The motifs
 
