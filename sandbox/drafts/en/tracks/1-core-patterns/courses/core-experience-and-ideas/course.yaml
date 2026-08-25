@@ -21,9 +21,9 @@ spec:
   # label. Both come from tools/course-copy.json, never from the TOC — a
   # generated title was English in all three slots and 72 characters long.
   title:
-    ko: 영어 핵심 패턴 · 경험과 연결 · B1
-    en: English Core · Experience and ideas · B1
-    ja: 英語コアパターン · 経験と連結 · B1
+    ko: (중급) 핵심 패턴 · 경험과 연결
+    en: (Intermediate) Core · Experience and ideas
+    ja: (中級) コアパターン · 経験と連結
 
   description:
     ko: 경험과 기간을 말하고, 생각을 이어 붙여 길게 말한다.

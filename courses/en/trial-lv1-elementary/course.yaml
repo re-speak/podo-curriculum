@@ -28,9 +28,9 @@ spec:
   difficulty: BEGINNER
 
   title:
-    ko: 체험 레슨 · 초급
-    en: Trial lesson · Elementary
-    ja: 体験レッスン · 初級
+    ko: (초급) 체험 레슨
+    en: (Beginner) Trial lesson
+    ja: (初級) 体験レッスン
 
   description:
     ko: 영어를 문장으로 말해 보는 25분 체험 레슨. 튜터가 수업 뒤에 레벨을 진단한다.

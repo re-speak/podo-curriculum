@@ -22,9 +22,9 @@ spec:
   # label. Both come from tools/course-copy.json, never from the TOC — a
   # generated title was English in all three slots and 72 characters long.
   title:
-    ko: 비즈니스 영어 · 협상과 완곡함 · B2
-    en: Business English · Negotiation · B2
-    ja: ビジネス英語 · 交渉と婉曲表現 · B2
+    ko: (중고급) 비즈니스 · 협상과 완곡함
+    en: (Upper Intermediate) Business · Negotiation
+    ja: (中上級) ビジネス · 交渉と婉曲表現
 
   description:
     ko: 문제를 다시 규정하고, 조건을 걸어 제안하고, 무리한 약속을 되밀고, 교착을 푼다.

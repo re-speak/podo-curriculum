@@ -22,9 +22,9 @@ spec:
   # label. Both come from tools/course-copy.json, never from the TOC — a
   # generated title was English in all three slots and 72 characters long.
   title:
-    ko: 영어 핵심 패턴 · 지금과 과거 · A2
-    en: English Core · Now and before · A2
-    ja: 英語コアパターン · 今と過去 · A2
+    ko: (초중급) 핵심 패턴 · 지금과 과거
+    en: (Upper Beginner) Core · Now and before
+    ja: (初中級) コアパターン · 今と過去
 
   description:
     ko: 늘 하는 일과 지금 하고 있는 일을 구분하고, 있었던 일을 말한다.
