@@ -8,13 +8,33 @@ motifs beside it.  The outputs live with each course as ``assets/cover.svg`` and
     python3 tools/authoring/course_covers/generate.py
     python3 tools/authoring/course_covers/generate.py --check
     python3 tools/authoring/course_covers/generate.py --only kr/hangul-starter
+
+**The cover is designed at 144x180, not at 864x1080.**  That is the size the
+student app draws it (``apps/web/src/features/subscribes/ui/lesson-thumbnail.tsx``:
+a 144 px card, ``aspect-[4/5]``, in a horizontal carousel).  Everything here is
+authored as the card size times six, so a label that is 10 px on the card is 60
+here.  The previous layout was composed at full size and carried an eyebrow, a
+language pill and a footer track label that all landed under 7 px on the card —
+they are gone.
+
+What the cover says now, top to bottom:
+
+  pill    the sub-family and the level — ``ドラマ 1 · 中級``, ``初級パターン 1``.
+          The rail header already names the track, so the pill names the thing
+          inside it that the header does not.
+  title   the topic, in the language the course teaches.
+  motif   unchanged.
+
+Colour is no longer a hash.  ``palette_for`` reads a table: one fill per level
+band on the core ladder, one per sub-family in the contextual track, one per
+topic in free talking.  Nothing is a gradient of anything — a course and its
+neighbour differ because they *are* different, not by a shade.
 """
 
 from __future__ import annotations
 
 import argparse
 import base64
-import hashlib
 import html
 import pathlib
 import re
@@ -33,51 +53,115 @@ COURSES = ROOT / "courses"
 MOTIFS = pathlib.Path(__file__).resolve().parent / "motifs"
 WIDTH = 864
 HEIGHT = 1080
+SCALE = 6  # the card is 144x180; everything below is authored at that times six
 THUMBNAIL = "assets/cover.png"
-TITLE_MAX_VISUAL_WIDTH = 8.2
-TITLE_CONTENT_WIDTH = 680
 
 
-PALETTES = {
-    # The first six are the fills measured from Figma node 1367:5422.
-    "green":  ("#69CD73", "#43B95B", "#B7F0BC"),
-    "purple": ("#7637E0", "#5120B9", "#BCA0F7"),
-    "orange": ("#EE6619", "#C94A0B", "#FFC092"),
-    "pink":   ("#F37297", "#D94A78", "#FFC0D2"),
-    "navy":   ("#1A2D5E", "#101C42", "#7184B8"),
-    "red":    ("#F0473D", "#C93632", "#FFAAA4"),
-    # A travel extension of the same saturated/soft-highlight grammar.
-    "blue":   ("#2F9AE4", "#176FBB", "#A9D9FA"),
+# ---------------------------------------------------------------- colour
+#
+# Every fill is a solid colour, and every group of courses that belongs together
+# shares one.  The freetalking and hangul entries are computed rather than
+# chosen: `measure_motifs.py` reports each motif's own colours and how light it
+# is, and each fill is the one furthest from those colours in CIE Lab, at a depth
+# set by how light the object is.  Re-derive them with that script if a motif
+# changes.  The rest are set by hand, because they cover a family whose members
+# use several different motifs and so have no single artwork to read.
+
+CORE_BAND = {
+    # The speech-bubble motif is 255deg and almost nothing else, so the ladder
+    # walks 148 -> 180 -> 208 -> 240 -> 292 and only nears purple where the fill
+    # is dark enough that the bubbles separate on lightness instead.
+    "BEGINNER": "#28AA64",            # 148deg   3.0:1
+    "UPPER_BEGINNER": "#1B9090",      # 180deg   3.9:1
+    "INTERMEDIATE": "#1C71BB",        # 208deg   5.1:1
+    "UPPER_INTERMEDIATE": "#4444D3",  # 240deg   7.0:1
+    "ADVANCED": "#6F227A",            # 292deg   9.6:1
+}
+
+FAMILY_FILL = {
+    "drama": "#D62056",     # 342deg  5.0:1
+    "kpop": "#8F5CE2",      # 263deg  4.4:1
+    "travel": "#1B8586",    # 180deg  4.4:1
+    "banmal": "#DF6A11",    # 26deg   3.4:1
+    "business": "#7535DB",  # 263deg  6.4:1
+    "trial": "#33405F",     # a deep neutral, so all four trial motifs read on it
+    "hangul": "#3C51CE",    # hangul   231deg  dE 97.8  (derived)
+}
+
+TALK_FILL = {
+    # hue, then how far the fill sits from the motif's own colours in CIE Lab.
+    # The floor is dE 45 — below that the ground starts to swallow the object.
+    "me-lately": "#B42DA7",              # memories    306deg  dE 62.6
+    "things-i-like": "#1B6B1B",          # thinking    120deg  dE 63.9
+    "small-things": "#2C5AB1",           # thinking    219deg  dE 47.1
+    "people-and-ties": "#1B646D",        # people      186deg  dE 46.0
+    "love-and-marriage": "#982670",      # romance     321deg  dE 46.7
+    "work-and-money": "#28A128",         # work-money  120deg  dE 61.7
+    "between-two-countries": "#964CD2",  # countries   273deg  dE 68.3
+    "what-if": "#256395",                # what-if     207deg  dE 50.0
+    "what-came-before": "#C2305C",       # memories    342deg  dE 71.4
+    "worth-thinking-about": "#1A6A4A",   # thinking    156deg  dE 66.9
+    "balance-games": "#A6362A",          # balance       6deg  dE 86.8
 }
 
 
-MOTIF_PALETTES = {
-    "hangul": ("green",),
-    "patterns": ("green", "purple", "orange"),
-    "kpop": ("pink", "purple"),
-    "romance": ("pink", "red", "navy"),
-    "travel": ("blue", "orange"),
-    "dining": ("orange", "red"),
-    "shopping": ("pink", "purple"),
-    "lodging": ("navy", "blue"),
-    "business": ("purple", "navy"),
-    "freetalk": ("red", "pink", "navy"),
-    "balance": ("purple", "orange"),
-    "countries": ("blue", "green"),
-    "work-money": ("navy", "orange"),
-    "thinking": ("orange", "purple"),
-    "memories": ("navy", "purple"),
-    "people": ("green", "blue", "pink"),
-    "what-if": ("purple", "navy"),
+# ---------------------------------------------------------------- families
+#
+# A family is the unit a learner compares within: the thing the rail header does
+# not already say.  It drives the fill, the pill, and whether a course is
+# numbered.
+
+# Kept short on purpose: the pill has 120 px of card to live in, and the label
+# is only half of what it carries.  `フリートーク` is also what the trial report
+# already calls this track (`tools/course-card-ja.json`).
+FAMILY_LABEL = {
+    # family: (label on a kr cover, label on an en cover)
+    "core": ("パターン", "Core"),
+    "hangul": ("ハングル", "Hangul"),
+    "trial": ("体験", "Trial"),
+    "drama": ("ドラマ", "Drama"),
+    "kpop": ("K-POP", "K-pop"),
+    "travel": ("旅行", "Travel"),
+    "banmal": ("タメ口", "Casual speech"),
+    "business": ("ビジネス", "Business"),
+    "talk": ("フリートーク", "Free talking"),
 }
 
+# Families whose courses run in a fixed order, so the pill carries the position.
+# Travel is not one of them: 식당 · 쇼핑 · 숙소 · 길 are four places on one trip,
+# not four steps, and a number would promise an order the content does not have.
+NUMBERED = ("drama", "kpop", "banmal")
 
-def stable_index(text: str, count: int) -> int:
-    return int(hashlib.sha256(text.encode("utf-8")).hexdigest()[:8], 16) % count
+
+def family_of(lang: str, slug: str) -> str:
+    if slug.startswith("trial-"):
+        return "trial"
+    if "hangul" in slug:
+        return "hangul"
+    if slug.startswith("core-"):
+        return "core"
+    if slug.startswith("talk-"):
+        return "talk"
+    if "drama" in slug:
+        return "drama"
+    if "kpop" in slug:
+        return "kpop"
+    if "banmal" in slug:
+        return "banmal"
+    if "business" in slug:
+        return "business"
+    if "travel" in slug:
+        return "travel"
+    return "talk"
 
 
-def discover() -> list[pathlib.Path]:
-    return sorted(COURSES.glob("*/*/course.yaml"))
+def talk_topic_key(slug: str) -> str:
+    """`talk-me-lately-advanced` -> `me-lately`, across both corpora's suffixes."""
+    body = slug[len("talk-"):]
+    for suffix in ("-intermediate", "-advanced", "-accessible", "-full"):
+        if body.endswith(suffix):
+            return body[: -len(suffix)]
+    return body
 
 
 def motif_for(lang: str, slug: str) -> str:
@@ -116,119 +200,143 @@ def motif_for(lang: str, slug: str) -> str:
             return "people"
         if "long-distance" in slug:
             return "countries"
-        if "makeup" in slug:
-            return "patterns"
         return "romance"
     if "banmal" in slug:
         return "people"
-    if "balance-games" in slug:
-        return "balance"
-    if "between-two-countries" in slug:
-        return "countries"
-    if "love-and-marriage" in slug:
-        return "romance"
-    if "me-lately" in slug or "what-came-before" in slug:
-        return "memories"
-    if "people-and-ties" in slug:
-        return "people"
-    if "what-if" in slug:
-        return "what-if"
-    if "work-and-money" in slug:
-        return "work-money"
-    if "worth-thinking-about" in slug or "small-things" in slug or "things-i-like" in slug:
-        return "thinking"
     if slug.startswith("talk-"):
-        return "freetalk"
+        key = talk_topic_key(slug)
+        return {
+            "balance-games": "balance", "between-two-countries": "countries",
+            "love-and-marriage": "romance", "me-lately": "memories",
+            "what-came-before": "memories", "people-and-ties": "people",
+            "what-if": "what-if", "work-and-money": "work-money",
+        }.get(key, "thinking")
     return "patterns"
 
 
-def palette_for(slug: str, difficulty: str, motif: str) -> str:
-    choices = list(MOTIF_PALETTES[motif])
-    if difficulty == "ADVANCED":
-        dark = [p for p in choices if p in ("navy", "purple", "red")]
-        if dark:
-            choices = dark
-    elif difficulty in ("BEGINNER", "UPPER_BEGINNER"):
-        light = [p for p in choices if p in ("green", "orange", "pink", "blue")]
-        if light:
-            choices = light
-    return choices[stable_index(slug, len(choices))]
+def palette_for(lang: str, slug: str, difficulty: str) -> str:
+    family = family_of(lang, slug)
+    if family == "core":
+        return CORE_BAND.get(difficulty, CORE_BAND["INTERMEDIATE"])
+    if family == "talk":
+        return TALK_FILL.get(talk_topic_key(slug), "#3055C1")
+    return FAMILY_FILL[family]
 
 
-def cover_copy(lang: str, slug: str, titles: dict) -> tuple[str, str, str, str]:
-    target_key = "ko" if lang == "kr" else "en"
-    parts = [part.strip() for part in titles[target_key].split(" · ") if part.strip()]
-    ja_parts = [part.strip() for part in titles["ja"].split(" · ") if part.strip()]
-    if slug.startswith("trial-"):
-        topic = parts[0]
-        level = " · ".join(ja_parts[1:])
-        track = "TRIAL"
-    elif slug == "hangul-starter":
-        topic = parts[0]
-        level = " · ".join(ja_parts[1:])
-        track = "HANGUL"
-    elif slug.startswith("core-") and lang == "kr":
-        topic = " ".join(parts[1:]) if len(parts) > 1 else parts[0]
-        level = ja_parts[0]
-        track = "CORE"
-    else:
-        topic = parts[1] if len(parts) > 1 else parts[0]
-        level = " · ".join(ja_parts[2:]) if len(ja_parts) > 2 else ""
-        if slug.startswith("core-"):
-            track = "CORE"
-        elif slug.startswith("talk-"):
-            track = "TALK"
-        elif "business" in slug:
-            track = "BUSINESS"
-        elif "travel" in slug:
-            track = "TRAVEL"
-        else:
-            track = "SCENE"
-    language = "KOREAN" if lang == "kr" else "ENGLISH"
-    return language, track, topic, level
+def shade(fill: str, factor: float = 0.88) -> str:
+    """The barely-there second stop, so a flat fill still has a direction."""
+    r, g, b = (int(fill[i:i + 2], 16) for i in (1, 3, 5))
+    return "#%02X%02X%02X" % tuple(max(0, round(c * factor)) for c in (r, g, b))
 
+
+# ---------------------------------------------------------------- copy
+
+def _parts(text: str) -> list[str]:
+    return [part.strip() for part in text.split(" · ") if part.strip()]
+
+
+CEFR = {"BEGINNER": "A1", "UPPER_BEGINNER": "A2", "INTERMEDIATE": "B1",
+        "UPPER_INTERMEDIATE": "B2", "ADVANCED": "C1"}
+
+
+def cover_copy(lang: str, slug: str, titles: dict, difficulty: str,
+               position: int | None) -> tuple[str, str]:
+    """(pill, title).
+
+    The level word is read out of ``spec.title`` rather than derived, so the
+    cover and the line under it never disagree.  The support language differs by
+    corpus: a Korean course is supported in Japanese, an English one in English.
+    """
+    family = family_of(lang, slug)
+    label = FAMILY_LABEL[family][0 if lang == "kr" else 1]
+    target = _parts(titles["ko" if lang == "kr" else "en"])
+    support = _parts(titles["ja"]) if lang == "kr" else _parts(titles["en"])
+
+    if family == "core":
+        if lang == "kr":
+            # `コア文法パターン · 初級 · 3` — no topic segment; the level is the
+            # middle part and the trailing number is the position inside that
+            # level, not up the ladder. The title carries the ladder position.
+            level = support[1] if len(support) > 1 else difficulty
+            band = target[2] if len(target) > 2 else ""
+            return f"{level}{label} {band}".strip(), f"핵심 패턴 {position}" if position else target[-1]
+        # `English Core · First words · A1` — a topic segment, level last.
+        level = support[-1] if len(support) > 1 else CEFR.get(difficulty, difficulty)
+        return f"{label} · {level}", target[1] if len(target) > 2 else target[0]
+
+    if family in ("hangul", "trial"):
+        # `体験レッスン · 初級` — two parts, the level last.
+        level = support[-1] if len(support) > 1 else CEFR.get(difficulty, difficulty)
+        if lang == "en":
+            level = CEFR.get(difficulty, difficulty)
+        return f"{label} · {level}", target[0]
+
+    level = support[2] if len(support) > 2 else (support[-1] if len(support) > 1 else difficulty)
+    topic = target[1] if len(target) > 1 else target[0]
+    if family in NUMBERED and position:
+        return f"{label} {position} · {level}", topic
+    return f"{label} · {level}", topic
+
+
+# ---------------------------------------------------------------- position
+#
+# Two families need to know where a course sits among its siblings, and the
+# manifests do not say — `classLevel` does, because it is the catalogue order.
+
+def positions(paths: list[pathlib.Path]) -> dict[pathlib.Path, int]:
+    """1-based position of each course inside its own family, in catalogue order.
+
+    The core ladder is numbered across the whole ladder; a contextual run is
+    numbered inside its own run.  Only enabled courses are counted, so retiring
+    one closes the gap rather than leaving a hole in the numbering.
+    """
+    rows = []
+    for path in paths:
+        doc = yaml.safe_load(path.read_text(encoding="utf-8"))
+        spec = doc["spec"]
+        if not spec.get("enabled"):
+            continue
+        lang, slug = path.parts[-3], path.parent.name
+        family = family_of(lang, slug)
+        if family not in NUMBERED and not (family == "core" and lang == "kr"):
+            continue
+        rows.append((lang, family, float(spec["classLevel"]), path))
+    out: dict[pathlib.Path, int] = {}
+    for key in {(lang, family) for lang, family, _, _ in rows}:
+        run = sorted(r for r in rows if (r[0], r[1]) == key)
+        for index, (_, _, _, path) in enumerate(run, start=1):
+            out[path] = index
+    return out
+
+
+# ---------------------------------------------------------------- layout
 
 def visual_width(text: str) -> float:
     width = 0.0
     for char in text:
         if char.isspace():
-            width += 0.5
+            width += 0.42
         elif unicodedata.east_asian_width(char) in ("W", "F", "A"):
             width += 1.0
         else:
-            width += 0.62
+            width += 0.55
     return width
 
 
-def split_title(text: str) -> list[str]:
-    """Wrap a title without splitting a word or other whitespace-delimited unit."""
-    if visual_width(text) <= TITLE_MAX_VISUAL_WIDTH:
+def wrap(text: str, limit: float) -> list[str]:
+    """At most two lines, breaking on whitespace and never inside a word."""
+    if visual_width(text) <= limit:
         return [text]
-
-    # English and the current Korean catalogue both provide semantic spacing.
-    # Prefer the split whose widest line is shortest, using balance as a tie-breaker.
-    points = [match.start() for match in re.finditer(r"\s+", text)]
-    if points:
-        _, _, point = min(
-            (
-                max(visual_width(text[:point]), visual_width(text[point:])),
-                abs(visual_width(text[:point]) - visual_width(text[point:])),
-                point,
-            )
-            for point in points
-        )
-    else:
-        # With no semantic boundary, fitting one line is safer than inventing
-        # a break inside an English word or Korean phrase.
+    points = [m.start() for m in re.finditer(r"\s+", text)]
+    if not points:
         return [text]
+    _, _, point = min(
+        (max(visual_width(text[:p]), visual_width(text[p:])),
+         abs(visual_width(text[:p]) - visual_width(text[p:])), p)
+        for p in points
+    )
     first, second = text[:point].strip(), text[point:].strip()
     return [first, second] if first and second else [text]
-
-
-def title_size(lines: list[str]) -> int:
-    widest = max(visual_width(line) for line in lines)
-    fitted = min(96, int(TITLE_CONTENT_WIDTH / widest))
-    return max(48, fitted - fitted % 2)
 
 
 def motif_href(course_root: pathlib.Path, motif: str) -> str:
@@ -236,67 +344,77 @@ def motif_href(course_root: pathlib.Path, motif: str) -> str:
     return pathlib.Path(pathlib.os.path.relpath(asset, course_root / "assets")).as_posix()
 
 
-def svg_for(course_path: pathlib.Path, doc: dict) -> str:
+def svg_for(course_path: pathlib.Path, doc: dict, position: int | None) -> str:
     lang = course_path.parts[-3]
     slug = course_path.parent.name
     spec = doc["spec"]
+    difficulty = spec.get("difficulty", "")
     motif = motif_for(lang, slug)
-    palette_name = palette_for(slug, spec.get("difficulty", ""), motif)
-    base, dark, _highlight = PALETTES[palette_name]
-    language, track, topic, level = cover_copy(lang, slug, spec["title"])
-    lines = split_title(topic)
-    font_size = title_size(lines)
-    line_height = int(font_size * 1.05)
-    title_y = 204
+    fill = palette_for(lang, slug, difficulty)
+    pill, title = cover_copy(lang, slug, spec["title"], difficulty, position)
+
+    s = SCALE
+    pad = 12 * s
+    pill_h = round(18.5 * s)
+    pill_y = 11 * s
+    # The pill has the card's width minus its own margins, and nothing else.
+    # Shrink rather than overflow — a clipped pill is worse than a small one.
+    pill_room = (144 - 24) * s
+    pill_font = 10 * s
+    if (visual_width(pill) * pill_font + 16 * s) > pill_room:
+        pill_font = max(round(8 * s), int((pill_room - 16 * s) / visual_width(pill)))
+    pill_w = round(visual_width(pill) * pill_font + 16 * s)
+
+    title_font = 17 * s
+    lines = wrap(title, 6.9)
+    if len(lines) == 1 and visual_width(lines[0]) > 6.9:
+        title_font = round(17 * s * 6.9 / visual_width(lines[0]))
+    line_h = round(title_font * 1.16)
+    title_top = pill_y + pill_h + round(5 * s)
     title_nodes = "\n".join(
-        f'    <text x="84" y="{title_y + i * line_height}" class="title" font-size="{font_size}">{html.escape(line)}</text>'
+        f'    <text x="{pad}" y="{title_top + round(title_font * .80) + i * line_h}"'
+        f' class="title" font-size="{title_font}">{html.escape(line)}</text>'
         for i, line in enumerate(lines)
     )
-    level_y = title_y + len(lines) * line_height + 28
-    level_text = html.escape(level or spec.get("difficulty", ""))
+
     motif_path = html.escape(motif_href(course_path.parent, motif))
-    sequence = f"{lang.upper()} · {track}"
+    motif_x, motif_w = 16 * s, (144 - 16 - 4) * s
+    motif_h, motif_bottom = 96 * s, 8 * s
 
     return f'''<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{WIDTH}" height="{HEIGHT}" viewBox="0 0 {WIDTH} {HEIGHT}">
   <defs>
-    <linearGradient id="bg" x1="92" y1="50" x2="780" y2="1050" gradientUnits="userSpaceOnUse">
-      <stop stop-color="{base}"/>
-      <stop offset=".38" stop-color="{base}"/>
-      <stop offset="1" stop-color="{dark}"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="430" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="{fill}"/>
+      <stop offset=".46" stop-color="{fill}"/>
+      <stop offset="1" stop-color="{shade(fill)}"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="translate(650 790) rotate(112) scale(510 470)" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFFFFF" stop-opacity=".19"/>
-      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
-    </radialGradient>
-    <clipPath id="card"><rect width="864" height="1080" rx="48"/></clipPath>
+    <linearGradient id="scrim" x1="0" y1="0" x2="0" y2="{round(HEIGHT * .48)}" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#000000" stop-opacity=".26"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="card"><rect width="{WIDTH}" height="{HEIGHT}" rx="48"/></clipPath>
     <style>
       text {{ font-family: Pretendard, "Hiragino Sans", sans-serif; }}
-      .eyebrow {{ fill: #fff; font-size: 42px; font-weight: 800; letter-spacing: 1.2px; }}
-      .title {{ fill: #fff; font-weight: 900; letter-spacing: -2.5px; }}
-      .level {{ fill: #fff; fill-opacity: .82; font-size: 42px; font-weight: 700; letter-spacing: -.8px; }}
+      .pill {{ fill: #fff; font-weight: 700; letter-spacing: -.2px; }}
+      .title {{ fill: #fff; font-weight: 700; letter-spacing: -3px; }}
     </style>
   </defs>
   <g clip-path="url(#card)">
-    <rect width="864" height="1080" fill="url(#bg)"/>
-    <circle cx="716" cy="708" r="322" fill="none" stroke="#FFFFFF" stroke-opacity=".07" stroke-width="92"/>
-    <circle cx="695" cy="713" r="178" fill="none" stroke="#000000" stroke-opacity=".055" stroke-width="54"/>
-    <path d="M-46 897C137 735 268 826 403 698C552 558 646 424 934 468" fill="none" stroke="#FFFFFF" stroke-opacity=".055" stroke-width="64" stroke-linecap="round"/>
-    <rect width="864" height="1080" fill="url(#glow)"/>
+    <rect width="{WIDTH}" height="{HEIGHT}" fill="url(#bg)"/>
+    <circle cx="{round(78 * s)}" cy="{round(115 * s)}" r="{round(86 * s)}" fill="none" stroke="#FFFFFF" stroke-opacity=".075" stroke-width="{14 * s}"/>
+    <rect width="{WIDTH}" height="{round(HEIGHT * .48)}" fill="url(#scrim)"/>
 
-    <text x="84" y="105" class="eyebrow">{html.escape(sequence)}</text>
-    <rect x="664" y="58" width="120" height="66" rx="33" fill="#000000" fill-opacity=".22"/>
-    <text x="724" y="103" text-anchor="middle" fill="#FFFFFF" font-size="32" font-weight="800">{html.escape(language[:2])}</text>
+    <image x="{motif_x}" y="{HEIGHT - motif_bottom - motif_h}" width="{motif_w}" height="{motif_h}" preserveAspectRatio="xMidYMax meet" href="{motif_path}" xlink:href="{motif_path}"/>
+
+    <rect x="{pad}" y="{pill_y}" width="{pill_w}" height="{pill_h}" rx="{pill_h // 2}" fill="#000000" fill-opacity=".42"/>
+    <text x="{pad + round(8 * s)}" y="{pill_y + pill_h // 2 + round(pill_font * .35)}" class="pill" font-size="{pill_font}">{html.escape(pill)}</text>
 {title_nodes}
-    <text x="86" y="{level_y}" class="level">{level_text}</text>
-
-    <image x="166" y="390" width="760" height="640" preserveAspectRatio="xMidYMid meet" href="{motif_path}" xlink:href="{motif_path}"/>
-
-    <text x="84" y="1004" fill="#FFFFFF" font-size="38" font-weight="900" letter-spacing="1.4">PODO</text>
-    <text x="780" y="1004" text-anchor="end" fill="#FFFFFF" fill-opacity=".82" stroke="#000000" stroke-opacity=".18" stroke-width="7" paint-order="stroke" font-size="30" font-weight="700">{html.escape(track)}</text>
   </g>
 </svg>
 '''
 
+
+# ---------------------------------------------------------------- write
 
 def ensure_thumbnail(raw: str) -> str:
     line = f"  thumbnail: {THUMBNAIL}"
@@ -342,11 +460,15 @@ def render(svg_path: pathlib.Path, png_path: pathlib.Path,
         )
 
 
-def generate(course_path: pathlib.Path, check: bool) -> list[str]:
+def discover() -> list[pathlib.Path]:
+    return sorted(COURSES.glob("*/*/course.yaml"))
+
+
+def generate(course_path: pathlib.Path, position: int | None, check: bool) -> list[str]:
     raw = course_path.read_text(encoding="utf-8")
     doc = yaml.safe_load(raw)
     expected_manifest = ensure_thumbnail(raw)
-    expected_svg = svg_for(course_path, doc)
+    expected_svg = svg_for(course_path, doc, position)
     assets = course_path.parent / "assets"
     svg_path = assets / "cover.svg"
     png_path = assets / "cover.png"
@@ -390,7 +512,9 @@ def main() -> int:
         print("rsvg-convert is required", file=sys.stderr)
         return 2
 
-    paths = discover()
+    everything = discover()
+    place = positions(everything)  # numbering always reads the whole catalogue
+    paths = everything
     if args.only:
         wanted = COURSES / args.only / "course.yaml"
         paths = [path for path in paths if path == wanted]
@@ -400,7 +524,7 @@ def main() -> int:
 
     errors: list[str] = []
     for path in paths:
-        errors.extend(generate(path, args.check))
+        errors.extend(generate(path, place.get(path), args.check))
 
     if errors:
         print("\n".join(f"ERROR {error}" for error in errors), file=sys.stderr)
