@@ -21,9 +21,9 @@ spec:
   # label. Both come from tools/course-copy.json, never from the TOC — a
   # generated title was English in all three slots and 72 characters long.
   title:
-    ko: 프리토킹 · 좋아하는 것 · C1
-    en: Free talking · Things I like · C1
-    ja: フリートーキング · 好きなもの · C1
+    ko: (고급) 좋아하는 것
+    en: (Advanced) Things I like
+    ja: (上級) 好きなもの
 
   description:
     ko: 좋아하는 대상과 이유를 구체적인 경험으로 설명한다.

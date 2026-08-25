@@ -22,9 +22,9 @@ spec:
   # label. Both come from tools/course-copy.json, never from the TOC — a
   # generated title was English in all three slots and 72 characters long.
   title:
-    ko: 영어 핵심 패턴 · 일 처리하기 · B1+
-    en: English Core · Getting things done · B1+
-    ja: 英語コアパターン · 段取りをつける · B1+
+    ko: (중고급) 핵심 패턴 · 일 처리하기
+    en: (Upper Intermediate) Core · Getting things done
+    ja: (中上級) コアパターン · 段取りをつける
 
   description:
     ko: 지난 일을 돌아보고, 누가 언제까지 무엇을 할지 정한다.

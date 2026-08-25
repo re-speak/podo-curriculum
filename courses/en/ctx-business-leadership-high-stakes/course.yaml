@@ -22,9 +22,9 @@ spec:
   # label. Both come from tools/course-copy.json, never from the TOC — a
   # generated title was English in all three slots and 72 characters long.
   title:
-    ko: 비즈니스 영어 · 리더의 말 · C1
-    en: Business English · Leading · C1
-    ja: ビジネス英語 · リーダーの言葉 · C1
+    ko: (고급) 비즈니스 · 리더의 말
+    en: (Advanced) Business · Leading
+    ja: (上級) ビジネス · リーダーの言葉
 
   description:
     ko: 어려운 평가 면담을 열고, 행동으로 이어지는 피드백을 주고, 불확실한 가운데 제언한다.

@@ -21,9 +21,9 @@ spec:
   # label. Both come from tools/course-copy.json, never from the TOC — a
   # generated title was English in all three slots and 72 characters long.
   title:
-    ko: 프리토킹 · 생각해 볼 것 · C1
-    en: Free talking · Worth a thought · C1
-    ja: フリートーキング · 考えたいこと · C1
+    ko: (고급) 생각해 볼 것
+    en: (Advanced) Worth a thought
+    ja: (上級) 考えたいこと
 
   description:
     ko: 일상에서 답할 수 있는 근거로 의견을 말하고 반대 입장까지 검토한다.

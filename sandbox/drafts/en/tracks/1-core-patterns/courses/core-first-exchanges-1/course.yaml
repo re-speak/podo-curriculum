@@ -21,9 +21,9 @@ spec:
   # label. Both come from tools/course-copy.json, never from the TOC — a
   # generated title was English in all three slots and 72 characters long.
   title:
-    ko: 영어 핵심 패턴 · 첫 문장 · A1
-    en: English Core · First words · A1
-    ja: 英語コアパターン · 最初の一文 · A1
+    ko: (초급) 핵심 패턴 · 첫 문장
+    en: (Beginner) Core · First words
+    ja: (初級) コアパターン · 最初の一文
 
   description:
     ko: 자기소개를 하고, 주변의 사물을 말하고, 영어가 반드시 요구하는 주어를 빠뜨리지 않는다.
