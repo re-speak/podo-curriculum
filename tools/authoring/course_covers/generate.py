@@ -111,26 +111,48 @@ TALK_FILL = {
 # not already say.  It drives the fill, the pill, and whether a course is
 # numbered.
 
-# Kept short on purpose: the pill has 120 px of card to live in, and the label
-# is only half of what it carries.  `フリートーク` is also what the trial report
-# already calls this track (`tools/course-card-ja.json`).
+# The pill is chrome, so it is written in the language the learner is supported
+# in — Japanese for both corpora, because both serve the JP market
+# (`countryCode: JP`).  The title beside it is the language being taught.  That
+# is the split the Korean covers already used and the English ones now match.
+#
+# It is also what makes the pill fit.  English level words are long: `Upper
+# Intermediate` on its own is most of the 120 px a pill has, and
+# `Business 4 · Upper Intermediate` overflows by a third.  `中上級` is three
+# characters, and it is the word on the filter chip a JP learner is looking at.
+#
+# `フリートーク` is also what the trial report already calls this track
+# (`tools/course-card-ja.json`).
 FAMILY_LABEL = {
-    # family: (label on a kr cover, label on an en cover)
-    "core": ("パターン", "Core"),
-    "hangul": ("ハングル", "Hangul"),
-    "trial": ("体験", "Trial"),
-    "drama": ("ドラマ", "Drama"),
-    "kpop": ("K-POP", "K-pop"),
-    "travel": ("旅行", "Travel"),
-    "banmal": ("タメ口", "Casual speech"),
-    "business": ("ビジネス", "Business"),
-    "talk": ("フリートーク", "Free talking"),
+    "core": "パターン",
+    "hangul": "ハングル",
+    "trial": "体験",
+    "drama": "ドラマ",
+    "kpop": "K-POP",
+    "travel": "旅行",
+    "banmal": "タメ口",
+    "business": "ビジネス",
+    "talk": "フリートーク",
 }
 
+# The five words a learner already sees on the level filter, verbatim from
+# podo-app `apps/web/src/shared/config/i18n/messages/{ko,ja,en}.json`
+# (`subscribeList.filters.level.*`).  Taking them from there rather than parsing
+# them out of the title is what makes the cover and the filter chip agree — and
+# it is why CEFR is gone from the covers: `A2–B1` and `B1+` are not buckets the
+# filter has, so a course could not be filtered to the level it claimed.
+LEVEL_WORD = {"BEGINNER": "初級", "UPPER_BEGINNER": "初中級", "INTERMEDIATE": "中級",
+              "UPPER_INTERMEDIATE": "中上級", "ADVANCED": "上級"}
+
 # Families whose courses run in a fixed order, so the pill carries the position.
-# Travel is not one of them: 식당 · 쇼핑 · 숙소 · 길 are four places on one trip,
-# not four steps, and a number would promise an order the content does not have.
-NUMBERED = ("drama", "kpop", "banmal")
+# Korean travel is not one of them — 식당 · 쇼핑 · 숙소 · 길 are four places on one
+# trip, not four steps — but the English travel and business runs are ordered by
+# classLevel from A2 to C1, so there the number is a fact rather than a promise.
+NUMBERED = ("core", "drama", "kpop", "banmal", "business")
+
+
+def numbered(lang: str, family: str) -> bool:
+    return family in NUMBERED or (lang == "en" and family == "travel")
 
 
 def family_of(lang: str, slug: str) -> str:
@@ -235,47 +257,45 @@ def _parts(text: str) -> list[str]:
     return [part.strip() for part in text.split(" · ") if part.strip()]
 
 
-CEFR = {"BEGINNER": "A1", "UPPER_BEGINNER": "A2", "INTERMEDIATE": "B1",
-        "UPPER_INTERMEDIATE": "B2", "ADVANCED": "C1"}
+def topic_of(lang: str, family: str, titles: dict, ladder: int | None) -> str:
+    """The one phrase on the cover that names what this course is about.
+
+    English manifests carry the new shape — ``(Beginner) Core · First words`` —
+    so the topic is what follows the family.  Korean still carries the old
+    ``Track · Topic · Level`` and is rewritten in its own pass; until then this
+    keeps the two readable side by side.
+    """
+    if lang == "en":
+        text = re.sub(r"^\([^)]*\)\s*", "", titles["en"])
+        return _parts(text)[-1]
+    parts = _parts(titles["ko"])
+    if family == "core":
+        return f"핵심 패턴 {ladder}" if ladder else parts[-1]
+    if family in ("hangul", "trial"):
+        return parts[0]
+    return parts[1] if len(parts) > 1 else parts[0]
 
 
 def cover_copy(lang: str, slug: str, titles: dict, difficulty: str,
-               position: int | None) -> tuple[str, str]:
+               place: tuple[int, int] | None) -> tuple[str, str]:
     """(pill, title).
 
-    The level word is read out of ``spec.title`` rather than derived, so the
-    cover and the line under it never disagree.  The support language differs by
-    corpus: a Korean course is supported in Japanese, an English one in English.
+    One shape for both corpora: ``family [position] · level``.  The level word
+    comes from ``difficulty`` through ``LEVEL_WORD``, never from the title — that
+    is the only way the cover, the line under it and the filter chip can all say
+    the same thing.
+
+        ドラマ 2 · 中級   パターン 3 · 初級   旅行 1 · 中級   フリートーク · 上級
     """
     family = family_of(lang, slug)
-    label = FAMILY_LABEL[family][0 if lang == "kr" else 1]
-    target = _parts(titles["ko" if lang == "kr" else "en"])
-    support = _parts(titles["ja"]) if lang == "kr" else _parts(titles["en"])
+    label = FAMILY_LABEL[family]
+    level = LEVEL_WORD.get(difficulty, difficulty)
+    ladder, band = place if place else (None, None)
+    title = topic_of(lang, family, titles, ladder)
 
-    if family == "core":
-        if lang == "kr":
-            # `コア文法パターン · 初級 · 3` — no topic segment; the level is the
-            # middle part and the trailing number is the position inside that
-            # level, not up the ladder. The title carries the ladder position.
-            level = support[1] if len(support) > 1 else difficulty
-            band = target[2] if len(target) > 2 else ""
-            return f"{level}{label} {band}".strip(), f"핵심 패턴 {position}" if position else target[-1]
-        # `English Core · First words · A1` — a topic segment, level last.
-        level = support[-1] if len(support) > 1 else CEFR.get(difficulty, difficulty)
-        return f"{label} · {level}", target[1] if len(target) > 2 else target[0]
-
-    if family in ("hangul", "trial"):
-        # `体験レッスン · 初級` — two parts, the level last.
-        level = support[-1] if len(support) > 1 else CEFR.get(difficulty, difficulty)
-        if lang == "en":
-            level = CEFR.get(difficulty, difficulty)
-        return f"{label} · {level}", target[0]
-
-    level = support[2] if len(support) > 2 else (support[-1] if len(support) > 1 else difficulty)
-    topic = target[1] if len(target) > 1 else target[0]
-    if family in NUMBERED and position:
-        return f"{label} {position} · {level}", topic
-    return f"{label} · {level}", topic
+    if numbered(lang, family) and ladder:
+        return f"{label} {ladder} · {level}", title
+    return f"{label} · {level}", title
 
 
 # ---------------------------------------------------------------- position
@@ -283,44 +303,68 @@ def cover_copy(lang: str, slug: str, titles: dict, difficulty: str,
 # Two families need to know where a course sits among its siblings, and the
 # manifests do not say — `classLevel` does, because it is the catalogue order.
 
-def positions(paths: list[pathlib.Path]) -> dict[pathlib.Path, int]:
-    """1-based position of each course inside its own family, in catalogue order.
+def positions(paths: list[pathlib.Path]) -> dict[pathlib.Path, tuple[int, int]]:
+    """(position in the family, position inside this level band), in catalogue order.
 
-    The core ladder is numbered across the whole ladder; a contextual run is
-    numbered inside its own run.  Only enabled courses are counted, so retiring
-    one closes the gap rather than leaving a hole in the numbering.
+    `classLevel` is the catalogue order, so it is what both counts read.  Only
+    enabled courses count, so retiring one closes the gap instead of leaving a
+    hole in the numbering.
     """
     rows = []
     for path in paths:
-        doc = yaml.safe_load(path.read_text(encoding="utf-8"))
-        spec = doc["spec"]
+        spec = yaml.safe_load(path.read_text(encoding="utf-8"))["spec"]
         if not spec.get("enabled"):
             continue
         lang, slug = path.parts[-3], path.parent.name
-        family = family_of(lang, slug)
-        if family not in NUMBERED and not (family == "core" and lang == "kr"):
-            continue
-        rows.append((lang, family, float(spec["classLevel"]), path))
-    out: dict[pathlib.Path, int] = {}
-    for key in {(lang, family) for lang, family, _, _ in rows}:
+        rows.append((lang, family_of(lang, slug), float(spec["classLevel"]),
+                     spec.get("difficulty", ""), path))
+
+    ladder: dict[pathlib.Path, int] = {}
+    band: dict[pathlib.Path, int] = {}
+    for key in {(lang, family) for lang, family, _, _, _ in rows}:
         run = sorted(r for r in rows if (r[0], r[1]) == key)
-        for index, (_, _, _, path) in enumerate(run, start=1):
-            out[path] = index
-    return out
+        for index, row in enumerate(run, start=1):
+            ladder[row[4]] = index
+        for difficulty in {r[3] for r in run}:
+            inner = [r for r in run if r[3] == difficulty]
+            for index, row in enumerate(inner, start=1):
+                band[row[4]] = index
+    return {path: (ladder[path], band[path]) for path in ladder}
 
 
 # ---------------------------------------------------------------- layout
 
+# Advance widths of Pretendard Bold, in em x 100, for ASCII 32-126 in order.
+# Measured once with Pillow; baked so this file needs no font library. A guessed
+# ratio is not good enough here — the pill is sized from this, and estimating a
+# space at .42 when it is .23 is what made the pill stop hugging its text.
+_ASCII_EM = (
+    "2331386263966520393954652945283766476164666364586464282865656554877264727059"
+    "5673722755665588717562756363647072996970643937394746485661566157376160262656"
+    "26886059616139543760568255565539363965"
+)
+_CJK_EM = {"H": 0.938, "K": 0.938, "L": 0.864}  # hiragana/katakana, hangul
+
+
+def char_width(char: str) -> float:
+    """Advance width in em, at the weight the covers are set in."""
+    code = ord(char)
+    if 32 <= code <= 126:
+        offset = (code - 32) * 2
+        return int(_ASCII_EM[offset:offset + 2]) / 100
+    if char == "\u00b7":
+        return 0.28
+    if 0x3040 <= code <= 0x30FF or 0xFF66 <= code <= 0xFF9F:
+        return _CJK_EM["K"]
+    if 0xAC00 <= code <= 0xD7A3 or 0x1100 <= code <= 0x11FF:
+        return _CJK_EM["L"]
+    if unicodedata.east_asian_width(char) in ("W", "F"):
+        return 1.0
+    return 0.55
+
+
 def visual_width(text: str) -> float:
-    width = 0.0
-    for char in text:
-        if char.isspace():
-            width += 0.42
-        elif unicodedata.east_asian_width(char) in ("W", "F", "A"):
-            width += 1.0
-        else:
-            width += 0.55
-    return width
+    return sum(char_width(c) for c in text)
 
 
 def wrap(text: str, limit: float) -> list[str]:
@@ -344,14 +388,14 @@ def motif_href(course_root: pathlib.Path, motif: str) -> str:
     return pathlib.Path(pathlib.os.path.relpath(asset, course_root / "assets")).as_posix()
 
 
-def svg_for(course_path: pathlib.Path, doc: dict, position: int | None) -> str:
+def svg_for(course_path: pathlib.Path, doc: dict, place: tuple[int, int] | None) -> str:
     lang = course_path.parts[-3]
     slug = course_path.parent.name
     spec = doc["spec"]
     difficulty = spec.get("difficulty", "")
     motif = motif_for(lang, slug)
     fill = palette_for(lang, slug, difficulty)
-    pill, title = cover_copy(lang, slug, spec["title"], difficulty, position)
+    pill, title = cover_copy(lang, slug, spec["title"], difficulty, place)
 
     s = SCALE
     pad = 12 * s
@@ -362,7 +406,9 @@ def svg_for(course_path: pathlib.Path, doc: dict, position: int | None) -> str:
     pill_room = (144 - 24) * s
     pill_font = 10 * s
     if (visual_width(pill) * pill_font + 16 * s) > pill_room:
-        pill_font = max(round(8 * s), int((pill_room - 16 * s) / visual_width(pill)))
+        # No floor: the pill fitting is the invariant. If this ever shrinks far
+        # enough to notice, the label is too long and the label is what to fix.
+        pill_font = int((pill_room - 16 * s) / visual_width(pill))
     pill_w = round(visual_width(pill) * pill_font + 16 * s)
 
     title_font = 17 * s
@@ -464,11 +510,11 @@ def discover() -> list[pathlib.Path]:
     return sorted(COURSES.glob("*/*/course.yaml"))
 
 
-def generate(course_path: pathlib.Path, position: int | None, check: bool) -> list[str]:
+def generate(course_path: pathlib.Path, place: tuple[int, int] | None, check: bool) -> list[str]:
     raw = course_path.read_text(encoding="utf-8")
     doc = yaml.safe_load(raw)
     expected_manifest = ensure_thumbnail(raw)
-    expected_svg = svg_for(course_path, doc, position)
+    expected_svg = svg_for(course_path, doc, place)
     assets = course_path.parent / "assets"
     svg_path = assets / "cover.svg"
     png_path = assets / "cover.png"

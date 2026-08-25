@@ -27,17 +27,39 @@ What a cover says now, top to bottom:
 
 | | |
 |---|---|
-| pill | the sub-family and the level — `ドラマ 1 · 中級`, `初級パターン 1`, `Business · B2` |
+| pill | `family [position] · level` — `ドラマ 2 · 中級`, `パターン 7 · 中上級`, `旅行 1 · 中級` |
 | title | the topic, in the language the course teaches |
 | motif | one glossy object, bottom-anchored, unchanged |
 
+**Both corpora use the same shape and the same chrome language.** The pill is
+support text, and both corpora serve the JP market (`countryCode: JP`), so it is
+Japanese on a Korean cover and Japanese on an English one; the title beside it is
+the language being taught. Writing the English chrome in English was the first
+attempt and it does not fit — `Upper Intermediate` alone is most of the 120 px a
+pill has, and `Business 4 · Upper Intermediate` overflows by a third. `中上級` is
+three characters, and it is the word on the filter chip a JP learner is reading.
+
 The rail header above the carousel already names the track, so the pill names the
 thing inside it that the header does not. A family that runs in a fixed order
-(`드라마`, `케이팝`, `반말`) carries its position; `여행` does not, because
-식당 · 쇼핑 · 숙소 · 길 are four places on one trip rather than four steps.
+carries its position — the core ladder, `ドラマ`, `K-POP`, `タメ口`, and the
+English travel and business runs, which go A2 to C1 by `classLevel`. Korean
+travel does not, because 식당 · 쇼핑 · 숙소 · 길 are four places on one trip
+rather than four steps.
 
-The level word is read out of `spec.title` rather than derived from `difficulty`,
-so the cover and the line under it can never disagree.
+**The level word comes from `difficulty`, through `LEVEL_WORD`.** Those five
+words are copied from podo-app's own level filter
+(`apps/web/src/shared/config/i18n/messages/ja.json`,
+`subscribeList.filters.level.*`), so the cover, the line under it and the filter
+chip cannot disagree. It is also why CEFR is gone from the covers: `A2–B1` and
+`B1+` are not buckets the filter has, so a course carrying one could not be
+filtered to the level it claimed.
+
+**The pill is sized from real font metrics.** `_ASCII_EM` holds Pretendard Bold's
+advance widths, measured once and baked so this file needs no font library. A
+guessed ratio is not good enough — estimating a space at .42 em when it is .23
+is what made the pill stop hugging its text. There is no minimum pill size: the
+pill fitting inside the card is the invariant, and a pill that would have to
+shrink to fit is a label that is too long.
 
 ## Colour is a table, not a hash
 

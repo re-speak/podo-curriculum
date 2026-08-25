@@ -23,8 +23,8 @@
 
     <image x="96" y="456" width="744" height="576" preserveAspectRatio="xMidYMax meet" href="../../../../tools/authoring/course_covers/motifs/travel.png" xlink:href="../../../../tools/authoring/course_covers/motifs/travel.png"/>
 
-    <rect x="72" y="66" width="470" height="111" rx="55" fill="#000000" fill-opacity=".42"/>
-    <text x="120" y="142" class="pill" font-size="60">Travel · B2</text>
+    <rect x="72" y="66" width="494" height="111" rx="55" fill="#000000" fill-opacity=".42"/>
+    <text x="120" y="142" class="pill" font-size="60">旅行 4 · 中上級</text>
     <text x="72" y="289" class="title" font-size="102">Travelling</text>
     <text x="72" y="407" class="title" font-size="102">alone</text>
   </g>

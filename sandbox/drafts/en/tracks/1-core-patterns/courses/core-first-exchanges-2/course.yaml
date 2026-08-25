@@ -21,9 +21,9 @@ spec:
   # label. Both come from tools/course-copy.json, never from the TOC — a
   # generated title was English in all three slots and 72 characters long.
   title:
-    ko: 영어 핵심 패턴 · 하기와 부탁 · A1
-    en: English Core · Doing and asking · A1
-    ja: 英語コアパターン · 動作と依頼 · A1
+    ko: (초급) 핵심 패턴 · 하기와 부탁
+    en: (Beginner) Core · Doing and asking
+    ja: (初級) コアパターン · 動作と依頼
 
   description:
     ko: 하는 일과 안 하는 일을 말하고, 필요한 것을 부탁한다.

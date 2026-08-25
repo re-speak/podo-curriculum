@@ -21,9 +21,9 @@ spec:
   # label. Both come from tools/course-copy.json, never from the TOC — a
   # generated title was English in all three slots and 72 characters long.
   title:
-    ko: 프리토킹 · 요즘의 나 · B1
-    en: Free talking · Me lately · B1
-    ja: フリートーキング · 最近のわたし · B1
+    ko: (중급) 요즘의 나
+    en: (Intermediate) Me lately
+    ja: (中級) 最近のわたし
 
   description:
     ko: 최근 경험을 구체적으로 꺼내 길게 말한다.

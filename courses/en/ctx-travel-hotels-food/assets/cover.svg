@@ -23,8 +23,8 @@
 
     <image x="96" y="456" width="744" height="576" preserveAspectRatio="xMidYMax meet" href="../../../../tools/authoring/course_covers/motifs/dining.png" xlink:href="../../../../tools/authoring/course_covers/motifs/dining.png"/>
 
-    <rect x="72" y="66" width="470" height="111" rx="55" fill="#000000" fill-opacity=".42"/>
-    <text x="120" y="142" class="pill" font-size="60">Travel · B1</text>
+    <rect x="72" y="66" width="431" height="111" rx="55" fill="#000000" fill-opacity=".42"/>
+    <text x="120" y="142" class="pill" font-size="60">旅行 2 · 中級</text>
     <text x="72" y="289" class="title" font-size="102">Hotels</text>
     <text x="72" y="407" class="title" font-size="102">and food</text>
   </g>

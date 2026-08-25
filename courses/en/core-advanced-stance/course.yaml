@@ -22,9 +22,9 @@ spec:
   # label. Both come from tools/course-copy.json, never from the TOC — a
   # generated title was English in all three slots and 72 characters long.
   title:
-    ko: 영어 핵심 패턴 · 논증과 태도 · C1
-    en: English Core · Argument and stance · C1
-    ja: 英語コアパターン · 論証と含み · C1
+    ko: (고급) 핵심 패턴 · 논증과 태도
+    en: (Advanced) Core · Argument and stance
+    ja: (上級) コアパターン · 論証と含み
 
   description:
     ko: 추상적으로 논증하고, 말한 것이 아니라 뜻한 것을 알아듣는다.

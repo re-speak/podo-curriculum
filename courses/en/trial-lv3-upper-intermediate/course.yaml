@@ -28,9 +28,9 @@ spec:
   difficulty: UPPER_INTERMEDIATE
 
   title:
-    ko: 체험 레슨 · 중고급
-    en: Trial lesson · Upper-intermediate
-    ja: 体験レッスン · 中上級
+    ko: (중고급) 체험 레슨
+    en: (Upper Intermediate) Trial lesson
+    ja: (中上級) 体験レッスン
 
   description:
     ko: 일하는 자리에서 의견을 전해 보는 25분 체험 레슨.

@@ -22,9 +22,9 @@ spec:
   # label. Both come from tools/course-copy.json, never from the TOC — a
   # generated title was English in all three slots and 72 characters long.
   title:
-    ko: 프리토킹 · 두 나라 사이 · B1
-    en: Free talking · Two countries · B1
-    ja: フリートーキング · ふたつの国 · B1
+    ko: (중급) 두 나라 사이
+    en: (Intermediate) Two countries
+    ja: (中級) ふたつの国
 
   description:
     ko: 다른 나라에서 놀란 점을 설명하고, 일본에 온 사람은 무엇에 놀랄지 말한다.

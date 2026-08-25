@@ -23,9 +23,8 @@
 
     <image x="96" y="456" width="744" height="576" preserveAspectRatio="xMidYMax meet" href="../../../../tools/authoring/course_covers/motifs/lodging.png" xlink:href="../../../../tools/authoring/course_covers/motifs/lodging.png"/>
 
-    <rect x="72" y="66" width="506" height="111" rx="55" fill="#000000" fill-opacity=".42"/>
+    <rect x="72" y="66" width="440" height="111" rx="55" fill="#000000" fill-opacity=".42"/>
     <text x="120" y="142" class="pill" font-size="60">旅行 · 初中級</text>
-    <text x="72" y="289" class="title" font-size="102">숙소 &amp;</text>
-    <text x="72" y="407" class="title" font-size="102">문제 해결</text>
+    <text x="72" y="289" class="title" font-size="102">숙소 &amp; 문제 해결</text>
   </g>
 </svg>

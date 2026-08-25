@@ -23,8 +23,8 @@
 
     <image x="96" y="456" width="744" height="576" preserveAspectRatio="xMidYMax meet" href="../../../../tools/authoring/course_covers/motifs/patterns.png" xlink:href="../../../../tools/authoring/course_covers/motifs/patterns.png"/>
 
-    <rect x="72" y="66" width="514" height="111" rx="55" fill="#000000" fill-opacity=".42"/>
-    <text x="120" y="142" class="pill" font-size="60">初級パターン 2</text>
+    <rect x="72" y="66" width="536" height="111" rx="55" fill="#000000" fill-opacity=".42"/>
+    <text x="120" y="142" class="pill" font-size="60">パターン 2 · 初級</text>
     <text x="72" y="289" class="title" font-size="102">핵심 패턴 2</text>
   </g>
 </svg>

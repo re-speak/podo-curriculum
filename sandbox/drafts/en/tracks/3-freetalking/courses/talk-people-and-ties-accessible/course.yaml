@@ -21,9 +21,9 @@ spec:
   # label. Both come from tools/course-copy.json, never from the TOC — a
   # generated title was English in all three slots and 72 characters long.
   title:
-    ko: 프리토킹 · 사람과 관계 · B1
-    en: Free talking · People and ties · B1
-    ja: フリートーキング · 人と関係 · B1
+    ko: (중급) 사람과 관계
+    en: (Intermediate) People and ties
+    ja: (中級) 人と関係
 
   description:
     ko: 실제 관계 경험을 꺼내고 그 경험에서 생긴 의견을 설명한다.

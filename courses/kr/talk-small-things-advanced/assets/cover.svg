@@ -23,7 +23,7 @@
 
     <image x="96" y="456" width="744" height="576" preserveAspectRatio="xMidYMax meet" href="../../../../tools/authoring/course_covers/motifs/thinking.png" xlink:href="../../../../tools/authoring/course_covers/motifs/thinking.png"/>
 
-    <rect x="72" y="66" width="686" height="111" rx="55" fill="#000000" fill-opacity=".42"/>
+    <rect x="72" y="66" width="598" height="111" rx="55" fill="#000000" fill-opacity=".42"/>
     <text x="120" y="142" class="pill" font-size="60">フリートーク · 上級</text>
     <text x="72" y="289" class="title" font-size="102">사소한 것들</text>
   </g>

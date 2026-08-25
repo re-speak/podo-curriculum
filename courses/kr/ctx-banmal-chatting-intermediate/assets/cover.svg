@@ -23,9 +23,8 @@
 
     <image x="96" y="456" width="744" height="576" preserveAspectRatio="xMidYMax meet" href="../../../../tools/authoring/course_covers/motifs/people.png" xlink:href="../../../../tools/authoring/course_covers/motifs/people.png"/>
 
-    <rect x="72" y="66" width="565" height="111" rx="55" fill="#000000" fill-opacity=".42"/>
+    <rect x="72" y="66" width="483" height="111" rx="55" fill="#000000" fill-opacity=".42"/>
     <text x="120" y="142" class="pill" font-size="60">タメ口 2 · 中級</text>
-    <text x="72" y="289" class="title" font-size="102">반말로</text>
-    <text x="72" y="407" class="title" font-size="102">수다 떨기</text>
+    <text x="72" y="289" class="title" font-size="102">반말로 수다 떨기</text>
   </g>
 </svg>
