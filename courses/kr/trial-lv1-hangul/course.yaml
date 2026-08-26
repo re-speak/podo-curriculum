@@ -30,9 +30,9 @@ spec:
   difficulty: BEGINNER
 
   title:
-    ko: 체험 레슨 · 초급
-    en: Trial lesson · Beginner
-    ja: 体験レッスン · 初級
+    ko: (초급) 체험 레슨
+    en: (Beginner) Trial lesson
+    ja: (初級) 体験レッスン
 
   description:
     ko: 한국어를 처음 접하는 일본어 화자를 위한 55분 체험 레슨. 한글을 읽는 데까지 가고, 상담 리포트로 마무리한다.

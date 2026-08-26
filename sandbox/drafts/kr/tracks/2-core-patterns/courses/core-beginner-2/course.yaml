@@ -21,9 +21,9 @@ spec:
   difficulty: BEGINNER
 
   title:
-    ko: 핵심 문법 패턴 · 초급 · 2
-    en: Core grammar patterns · Beginner · 2
-    ja: コア文法パターン · 初級 · 2
+    ko: (초급) 핵심 패턴 2
+    en: (Beginner) Core 2
+    ja: (初級) コアパターン 2
 
   # 학습자가 카탈로그에서 읽는 문장이다. 앱이 로케일로 고르므로 JP 마켓 코스는
   # ja 가 화면에 뜬다 — 여기 세 언어는 tools/course-copy.json 이 원본이고,

@@ -21,9 +21,9 @@ spec:
   difficulty: ADVANCED
 
   title:
-    ko: 프리토킹 · 밸런스 게임 · 고급
-    en: Free talking · Balance games · Advanced
-    ja: フリートーキング · 究極の二択 · 上級
+    ko: (고급) 밸런스 게임
+    en: (Advanced) Balance games
+    ja: (上級) 究極の二択
 
   # 학습자가 카탈로그에서 읽는 문장이다. 앱이 로케일로 고르므로 JP 마켓 코스는
   # ja 가 화면에 뜬다 — 여기 세 언어는 tools/course-copy.json 이 원본이고,

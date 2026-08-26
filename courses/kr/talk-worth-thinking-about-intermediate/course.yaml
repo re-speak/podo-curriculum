@@ -21,9 +21,9 @@ spec:
   difficulty: INTERMEDIATE
 
   title:
-    ko: 프리토킹 · 생각해 볼 것 · 중급
-    en: Free talking · Worth thinking about · Intermediate
-    ja: フリートーキング · 考えてみたいこと · 中級
+    ko: (중급) 생각해 볼 것
+    en: (Intermediate) Worth thinking about
+    ja: (中級) 考えてみたいこと
 
   # 학습자가 카탈로그에서 읽는 문장이다. 앱이 로케일로 고르므로 JP 마켓 코스는
   # ja 가 화면에 뜬다 — 여기 세 언어는 tools/course-copy.json 이 원본이고,

@@ -29,9 +29,9 @@ spec:
   difficulty: INTERMEDIATE
 
   title:
-    ko: 상황별 한국어 · 가족 & 일상 · 중급
-    en: Korean in context · Family & everyday · Intermediate
-    ja: 場面別の韓国語 · 家族と日常 · 中級
+    ko: (중급) 드라마 · 가족 & 일상
+    en: (Intermediate) Drama · Family & everyday
+    ja: (中級) ドラマ · 家族と日常
 
   # 학습자가 카탈로그에서 읽는 문장이다. 앱이 로케일로 고르므로 JP 마켓 코스는
   # ja 가 화면에 뜬다 — 여기 세 언어는 tools/course-copy.json 이 원본이고,

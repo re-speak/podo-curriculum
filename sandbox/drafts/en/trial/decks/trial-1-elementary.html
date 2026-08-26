@@ -8,7 +8,7 @@
   <meta name="podo:report-language" content="ja">
   <meta name="podo:lesson-id" content="trial-1-elementary">
   <meta name="podo:level" content="A1">
-  <meta name="podo:content-version" content="2026-08-24">
+  <meta name="podo:content-version" content="2026-08-26">
   <meta name="podo:title-ko" content="체험 레슨 · 초급">
   <meta name="podo:title-en" content="Trial lesson · Elementary">
   <meta name="podo:title-ja" content="体験レッスン 初級">
@@ -23,6 +23,7 @@
     <div class="brand-page" data-page-id="cover">
       <span class="podo-badge"><span class="logo">PODO</span><span class="tag">体験レッスン</span></span>
       <h1 class="brand-title">初級</h1>
+      <img class="brand-art mid" src="../assets/podo-character-happy.png" alt="">
     </div>
 
     <!-- ============ GREETING ============
@@ -42,10 +43,17 @@
          Three questions, and all three feed the report: the motive picks which contextual
          course is laid down, the goal sets the distance, the pace drives the month count.
          The English trial has no consultation after the report, so these answers are the
-         only thing that makes the plan this learner's rather than anyone's. -->
+         only thing that makes the plan this learner's rather than anyone's.
+
+         The divider says it in both languages. It carried Japanese only until 2026-08-26,
+         which left an English-speaking tutor with nothing to read at the moment they have
+         to ask a learner for personal information — the first version of this fix hid the
+         English in a tutor-only note, but a line the learner is allowed to hear does not
+         need hiding, and the page already pairs its languages everywhere else. -->
     <div class="brand-page bleed" data-page-id="needs-intro">
-      <h2 class="brand-title">ニーズ把握</h2>
-      <p class="brand-sub">あなたのことを教えてください。答えに合わせて、最後のプランが変わります。</p>
+      <h2 class="brand-title">ニーズ把握<span class="en" style="display:block;margin-top:5px;font-size:21px;font-weight:800;color:rgba(28,28,28,.56);letter-spacing:-.01em;line-height:1.25;">Needs Analysis</span></h2>
+      <p class="brand-sub">学習のニーズについて、少し教えてください。<span class="en" style="display:block;margin-top:3px;font-size:13px;font-weight:600;color:rgba(28,28,28,.5);line-height:1.45;">Please tell me a little about your learning needs.</span></p>
+      <div class="tutor-note" style="text-align:left;">Read both lines, then move on — the questions are on the next three pages, not this one.</div>
       <img class="brand-art" src="../assets/podo-character-ask.png" alt="">
     </div>
 
@@ -107,8 +115,8 @@
     </div>
 
     <div class="brand-page divider" data-page-id="trial-intro">
-      <h2 class="brand-title">Trial lesson<span class="ja">体験レッスン</span></h2>
-      <p class="brand-sub">ここから25分。終わるころには、自分の一日の始まりと終わりを英語で言えて、相手にも聞けるようになります。約束します！</p>
+      <h2 class="brand-title">体験レッスン<span class="en" style="display:block;margin-top:5px;font-size:21px;font-weight:800;color:rgba(28,28,28,.56);letter-spacing:-.01em;line-height:1.25;">Trial lesson</span></h2>
+      <p class="brand-sub">ここから体験レッスンです。通常のレッスンより少し短めです。<span class="en" style="display:block;margin-top:3px;font-size:13px;font-weight:600;color:rgba(28,28,28,.5);line-height:1.45;">We&#x27;ll start the trial lesson now. It&#x27;s a little shorter than a regular class.</span></p>
       <img class="brand-art study" src="../assets/podo-character-study.png" alt="">
     </div>
 
@@ -184,38 +192,29 @@
 
     <div class="section" data-page-id="native-tip"><h2 class="section-title">Around nine or nine-ish? <span class="title-ja">(around nine と nine-ish)</span></h2><p class="section-subtitle"><span class="ko">Both mean about nine. Use "nine-ish" in casual conversation.</span><span class="ja">どちらも9時ごろという意味です。「nine-ish」はカジュアルな会話で使います。</span></p><div class="tutor-note">Read both versions so the learner can hear the casual tone of -ish.</div><div class="nuance-compare"><div class="nuance-choice"><span class="nuance-when"><b>Any situation</b><small>どんな場面でも</small></span><span class="korean">I usually start <span class="ending">around nine</span>.</span><span class="translation">ふだん9時ごろ始めます。</span></div><div class="nuance-or"><span>Pick by situation <small>場面で選ぶ</small></span></div><div class="nuance-choice"><span class="nuance-when"><b>Casual conversation</b><small>カジュアルな会話で</small></span><span class="korean">I usually start <span class="ending">at nine-ish</span>.</span><span class="translation">ふだん9時くらいに始めます。</span></div></div></div>
 
-    <div class="section" data-page-id="todays-result">
-      <h2 class="section-title">Today&#x27;s result <span class="title-ja">(今日の成果)</span></h2>
-      <p class="section-subtitle"><span class="ko">Twenty-five minutes ago you had none of these.</span><span class="ja">25分前は、まだ1つもありませんでした。</span></p>
-      <div class="payoff">
-        <span class="eqline">動作 4 × 時刻 6</span>
-        <span class="big">24</span>
-        <span class="cap">今日言えるようになった文の数</span>
-      </div>
-    </div>
-
     <div class="brand-page end bleed" data-page-id="closing">
       <svg class="end-arch" viewBox="0 0 480 300" aria-hidden="true">
         <path id="endArch" d="M 70 255 Q 237 135 404 258" fill="none"></path>
-        <text><textPath href="#endArch" startOffset="50%" text-anchor="middle">本日はお疲れさまでした！</textPath></text>
+        <text><textPath href="#endArch" startOffset="50%" text-anchor="middle">Great work today!</textPath></text>
       </svg>
       <img class="end-art" src="../assets/podo-3d-bye.png" alt="">
       <div class="end-card">
         <div class="end-bar"><span>Welcome to PODO</span><span class="end-check">✓</span></div>
-        <p class="end-title"><span class="hl">体験レッスン</span>は<br>ここまでです！</p>
-        <p class="end-copy">今日はお話しできて楽しかったです。<br><strong>次はもっと気楽に、もっとたくさん話せるようになります ;)</strong></p>
+        <p class="end-title"><span class="hl">体験レッスン</span>は<br>ここまでです！<span class="en" style="display:block;margin-top:7px;font-size:14px;font-weight:800;color:#6f7568;letter-spacing:0;line-height:1.3;">That&#x27;s our trial lesson!</span></p>
+        <p class="end-copy">今日はお話しできて楽しかったです。<span class="en" style="display:block;margin-top:2px;font-size:11.5px;font-weight:600;color:#8b9084;line-height:1.45;">I really enjoyed talking with you today.</span><strong style="display:block;margin-top:10px;">次はもっと気楽に、もっとたくさん話せるようになります ;)</strong><span class="en" style="display:block;margin-top:2px;font-size:11.5px;font-weight:600;color:#8b9084;line-height:1.45;">Next time you&#x27;ll speak more easily, and a lot more.</span></p>
         <div class="end-report">
           <span class="badge-dark">このあとのチャットで</span>
           <span class="t">あなただけの英語 診断レポート</span>
           <span class="s">担当スタッフがお届けします。</span>
         </div>
+        <div class="tutor-note" style="text-align:left;">Green box: &quot;Your own English report arrives in the chat after class.&quot;</div>
       </div>
     </div>
 
     <div class="section" data-page-id="tutor-score" data-act="Wrapping up">
       <h2 class="section-title">See you next time <span class="title-ja">(また会いましょう)</span></h2>
       <p class="section-subtitle"><span class="ko">That&#x27;s everything for today. Thank you!</span><span class="ja">今日はここまでです。ありがとうございました！</span></p>
-      <div class="tutor-note">Score the learner once they have left — there is no rush. What you pick here is what builds the report waiting for them in the chat.</div>
+      <div class="tutor-note">Score this right after class — the learner&#x27;s report is built from what you pick. If Submit won&#x27;t click, something here or on the ニーズ把握 pages is unanswered.</div>
 
       <div class="lvcheck">
         <span class="lvcheck-h">Level check <small>tutor only</small></span>

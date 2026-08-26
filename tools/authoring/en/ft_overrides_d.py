@@ -543,6 +543,32 @@ QUESTION_OVERRIDES = {
         },
     },
     113: {
+        "warm-1": {
+            "full": (
+                "What you want nearby",
+                "近くにほしいもの",
+                "What is the most important thing to have within walking distance of your home?",
+                "家から歩いて行ける範囲にあると最も大切なものは何ですか？",
+                [
+                    "How often would you use it?",
+                    "Would a ten-minute walk feel close enough?",
+                ],
+            ),
+            "accessible": None,
+        },
+        "warm-2": {
+            "full": (
+                "The perfect view",
+                "理想の眺め",
+                "What would be the perfect view from your window?",
+                "窓からどんな景色が見えたら理想的ですか？",
+                [
+                    "Would you accept a longer commute for that view?",
+                    "Would you rather see trees or city lights?",
+                ],
+            ),
+            "accessible": None,
+        },
         "q2": {
             "full": (
                 "What you would miss",
@@ -558,13 +584,13 @@ QUESTION_OVERRIDES = {
         },
         "q3": {
             "full": (
-                "Country life without a car",
-                "車なしの田舎暮らし",
-                "What would make countryside life possible for you without a car?",
-                "車がなくても田舎で暮らせるようにするには、何が必要ですか？",
+                "Advantages of country life",
+                "田舎暮らしのよさ",
+                "What advantages does living in the countryside have over living in a city?",
+                "都会で暮らす場合と比べて、田舎暮らしにはどんなよさがありますか？",
                 [
-                    "Would a nearby station be enough?",
-                    "How often would you need shops or a hospital?",
+                    "Would you live in the countryside if you had your dream job there?",
+                    "Do you think most people prefer living in big cities or small towns?",
                 ],
             ),
             "accessible": None,
@@ -584,13 +610,13 @@ QUESTION_OVERRIDES = {
         },
         "q6": {
             "full": (
-                "A reason to leave",
-                "離れる理由",
-                "What would make you leave the place you chose?",
-                "選んだ場所を離れたくなるのは、どんなときですか？",
+                "Anywhere in the world",
+                "世界のどこにでも住めるなら",
+                "If you had enough money to live anywhere in the world, where would you choose to live, and why?",
+                "世界のどこにでも住めるだけのお金があるとしたら、どこを選び、その理由は何ですか？",
                 [
-                    "Noise, isolation, or a long commute?",
-                    "Where would you move instead?",
+                    "Would you want to live there forever, or just for a few years?",
+                    "What would you miss about your current home?",
                 ],
             ),
             "accessible": None,

@@ -21,9 +21,9 @@ spec:
   difficulty: ADVANCED
 
   title:
-    ko: 프리토킹 · 일과 돈 · 고급
-    en: Free talking · Work & money · Advanced
-    ja: フリートーキング · 仕事とお金 · 上級
+    ko: (고급) 일과 돈
+    en: (Advanced) Work & money
+    ja: (上級) 仕事とお金
 
   # 학습자가 카탈로그에서 읽는 문장이다. 앱이 로케일로 고르므로 JP 마켓 코스는
   # ja 가 화면에 뜬다 — 여기 세 언어는 tools/course-copy.json 이 원본이고,
