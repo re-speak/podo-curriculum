@@ -1,0 +1,62 @@
+{
+  "ctx-banmal-chatting-intermediate": {
+    "혜진": "portrait-hyejin.jpg"
+  },
+  "ctx-banmal-dropping-formality-upper-beginner": {
+    "지민": "portrait-jimin.png",
+    "선배": "portrait-minsu.jpg",
+    "옆자리 사람": "portrait-donghyun.jpg"
+  },
+  "ctx-drama-boundaries-intermediate": {
+    "태오": "portrait-minsu.jpg"
+  },
+  "ctx-drama-crush-intermediate": {
+    "유진": "portrait-yujin.jpg",
+    "친구": "portrait-hyejin.jpg"
+  },
+  "ctx-drama-dating-intermediate": {
+    "유진": "portrait-yujin.jpg"
+  },
+  "ctx-drama-family-intermediate": {
+    "엄마": "portrait-mijeong.jpg"
+  },
+  "ctx-drama-friends-intermediate": {
+    "유진": "portrait-yujin.jpg"
+  },
+  "ctx-drama-long-distance-intermediate": {
+    "유진": "portrait-yujin.jpg"
+  },
+  "ctx-kpop-fan-life-intermediate": {
+    "친구": "portrait-hyejin.jpg",
+    "판매자": "portrait-soojin.jpg"
+  },
+  "ctx-kpop-online-intermediate": {
+    "친구": "portrait-hyejin.jpg",
+    "팬 계정": "portrait-yujin.jpg",
+    "다른 친구": "portrait-yerin.jpg"
+  },
+  "ctx-kpop-stage-upper-beginner": {
+    "친구": "portrait-hyejin.jpg"
+  },
+  "ctx-kpop-talk-beginner": {
+    "팬": "portrait-jimin.png"
+  },
+  "ctx-travel-eating-out-upper-beginner": {
+    "직원": "portrait-soojin.jpg",
+    "일행": "portrait-yerin.jpg"
+  },
+  "ctx-travel-getting-around-intermediate": {
+    "행인": "portrait-minsu.jpg",
+    "역무원": "portrait-soojin.jpg",
+    "승객": "portrait-yerin.jpg",
+    "택시 기사": "portrait-seongho.jpg"
+  },
+  "ctx-travel-shopping-upper-beginner": {
+    "직원": "portrait-soojin.jpg",
+    "상인": "portrait-seongho.jpg"
+  },
+  "ctx-travel-staying-upper-beginner": {
+    "직원": "portrait-soojin.jpg",
+    "일행": "portrait-yerin.jpg"
+  }
+}
