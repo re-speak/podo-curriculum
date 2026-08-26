@@ -1,0 +1,665 @@
+<title>Banmal Audit Decisions</title>
+<meta name="google" content="notranslate">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+JP:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Serif:wght@500;600&display=swap">
+
+<style>
+:root{
+  --paper:#EEF1F5; --surface:#FFFFFF; --sunken:#F6F8FA;
+  --ink:#131820; --body:#333C49; --muted:#5D6875; --faint:#8A94A2;
+  --line:#D7DDE5; --line-soft:#E6EBF1;
+  --accent:#3B4FD8; --accent-soft:#EDEFFC; --accent-ink:#2A3AAE;
+  --hi:#2E6E8E;  --hi-bg:#E3EFF5;   /* 존댓말 — up the ladder */
+  --lo:#A9622C;  --lo-bg:#FAEDE1;   /* 반말  — down the ladder */
+  --mid:#6B5B95; --mid-bg:#EDE9F6;  /* 전환 · 반존대 */
+  --bad:#B23A48; --bad-bg:#FBECEE;
+  --ok:#127A4B;  --ok-bg:#E6F4EC;
+  --rail:#DDE3EA;
+  --shadow:0 1px 2px rgba(19,24,32,.05), 0 6px 18px -10px rgba(19,24,32,.18);
+  --r:10px;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --paper:#0F1216; --surface:#191D24; --sunken:#14181E;
+  --ink:#E9EDF3; --body:#C3CBD6; --muted:#98A2B0; --faint:#77828F;
+  --line:#2B323C; --line-soft:#232931;
+  --accent:#8C9BFF; --accent-soft:#1D2238; --accent-ink:#AEB9FF;
+  --hi:#6BB6D8; --hi-bg:#12262F;
+  --lo:#DB9A62; --lo-bg:#2C1E13;
+  --mid:#A896D6; --mid-bg:#221C33;
+  --bad:#EE8592; --bad-bg:#2E1B1F;
+  --ok:#5FD39B; --ok-bg:#12261C;
+  --rail:#2B323C;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 22px -12px rgba(0,0,0,.6);
+}}
+:root[data-theme="dark"]{
+  --paper:#0F1216; --surface:#191D24; --sunken:#14181E;
+  --ink:#E9EDF3; --body:#C3CBD6; --muted:#98A2B0; --faint:#77828F;
+  --line:#2B323C; --line-soft:#232931;
+  --accent:#8C9BFF; --accent-soft:#1D2238; --accent-ink:#AEB9FF;
+  --hi:#6BB6D8; --hi-bg:#12262F;
+  --lo:#DB9A62; --lo-bg:#2C1E13;
+  --mid:#A896D6; --mid-bg:#221C33;
+  --bad:#EE8592; --bad-bg:#2E1B1F;
+  --ok:#5FD39B; --ok-bg:#12261C;
+  --rail:#2B323C;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 22px -12px rgba(0,0,0,.6);
+}
+
+*{box-sizing:border-box}
+body{margin:0; background:var(--paper); color:var(--body);
+  font-family:"IBM Plex Sans","IBM Plex Sans KR","IBM Plex Sans JP",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-size:15px; line-height:1.62; -webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"IBM Plex Serif","IBM Plex Sans KR",Georgia,serif; color:var(--ink); text-wrap:balance; margin:0}
+code,.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+
+.top{max-width:1080px; margin:0 auto; padding:46px 22px 0}
+.eyebrow{font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted)}
+h1{font-size:clamp(28px,4.2vw,40px); line-height:1.14; letter-spacing:-.015em; margin:12px 0 12px}
+.lede{max-width:64ch; font-size:16px}
+.lede b{color:var(--ink); font-weight:600}
+
+/* register legend */
+.legend{display:flex; gap:18px; flex-wrap:wrap; margin-top:22px; padding:13px 16px;
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--r); max-width:64ch}
+.lg{display:flex; align-items:center; gap:9px; font-size:12.5px; color:var(--muted)}
+.lg b{color:var(--ink); font-weight:500}
+
+.bar{position:sticky; top:0; z-index:20; background:color-mix(in srgb,var(--paper) 88%,transparent);
+  backdrop-filter:blur(10px); border-bottom:1px solid var(--line); margin-top:30px}
+.bar-in{max-width:1080px; margin:0 auto; padding:11px 22px; display:flex; align-items:center; gap:16px; flex-wrap:wrap}
+.count{font-family:"IBM Plex Mono",monospace; font-size:13px; color:var(--ink); white-space:nowrap; font-variant-numeric:tabular-nums}
+.count b{font-weight:500; color:var(--accent-ink)}
+.track{flex:1 1 150px; height:5px; border-radius:99px; background:var(--line-soft); overflow:hidden; min-width:110px}
+.fill{display:block; height:100%; width:0; background:var(--accent); border-radius:99px; transition:width .3s ease}
+.acts{display:flex; gap:8px; margin-left:auto}
+button{font:inherit; font-size:13px; cursor:pointer; border-radius:8px; padding:7px 13px; border:1px solid var(--line);
+  background:var(--surface); color:var(--ink); transition:background .15s,border-color .15s,color .15s}
+button:hover{border-color:var(--accent); color:var(--accent-ink)}
+button.primary{background:var(--accent); border-color:var(--accent); color:#fff}
+button.primary:hover{filter:brightness(1.08); color:#fff}
+button:focus-visible,input:focus-visible,textarea:focus-visible,label:focus-within{outline:2px solid var(--accent); outline-offset:2px}
+
+main{max-width:1080px; margin:0 auto; padding:0 22px 90px}
+section{margin-top:54px}
+.sec-head{display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; padding-bottom:11px; border-bottom:2px solid var(--line)}
+.sec-head h2{font-size:21px; letter-spacing:-.01em}
+.sec-head .who{font-size:13px; color:var(--muted)}
+.sec-head .tally{margin-left:auto; font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--faint)}
+
+.card{background:var(--surface); border:1px solid var(--line); border-left:3px solid var(--edge,var(--accent));
+  border-radius:var(--r); box-shadow:var(--shadow); margin-top:18px; overflow:hidden}
+.card.done{border-left-color:var(--ok)}
+.card-head{display:flex; align-items:flex-start; gap:11px; padding:15px 18px 13px; flex-wrap:wrap; border-bottom:1px solid var(--line-soft)}
+.chip{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.09em; text-transform:uppercase;
+  padding:3px 8px; border-radius:5px; background:var(--edge-bg); color:var(--edge); white-space:nowrap; font-weight:500}
+.card h3{font-size:17px; letter-spacing:-.005em; flex:1 1 260px; line-height:1.35}
+.sev{font-size:11px; padding:3px 9px; border-radius:99px; white-space:nowrap; font-weight:500;
+  background:var(--bad-bg); color:var(--bad)}
+.sev.mid{background:var(--line-soft); color:var(--muted)}
+.done-flag{font-size:11.5px; color:var(--ok); background:var(--ok-bg); padding:3px 9px; border-radius:99px; display:none; white-space:nowrap}
+.card.done .done-flag{display:inline-block}
+.path{font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--faint); word-break:break-all; flex-basis:100%; margin:0}
+
+.pane{padding:17px 18px}
+.pane + .pane{border-top:1px solid var(--line-soft)}
+.pane.decide{background:var(--sunken)}
+.plabel{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.12em; text-transform:uppercase;
+  color:var(--faint); margin:0 0 11px}
+.why{margin:0 0 14px; max-width:70ch}
+.why b{color:var(--ink); font-weight:600}
+.why + .why{margin-top:-4px}
+
+/* scene exhibit with register ladder */
+.scenes{display:grid; grid-template-columns:1fr; gap:14px}
+@media(min-width:900px){ .scenes.two{grid-template-columns:1fr 1fr} }
+.scene{background:var(--sunken); border:1px solid var(--line-soft); border-radius:8px; padding:12px 13px; min-width:0}
+.pane.decide .scene{background:var(--surface)}
+.scene-label{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--muted); margin:0 0 4px}
+.scene-note{font-size:12.5px; color:var(--muted); font-style:italic; margin:0 0 11px; padding-bottom:9px; border-bottom:1px dashed var(--line)}
+.turn{display:grid; grid-template-columns:14px 44px minmax(0,1fr); gap:9px; align-items:start; padding:5px 0}
+.turn + .turn{border-top:1px solid var(--line-soft)}
+.reg{position:relative; width:14px; height:30px; margin-top:2px}
+.reg::before{content:""; position:absolute; left:6px; top:3px; bottom:3px; width:2px; background:var(--rail); border-radius:2px}
+.reg i{position:absolute; left:2px; width:10px; height:10px; border-radius:50%; border:2px solid var(--surface)}
+.reg.hi i{top:0; background:var(--hi)}
+.reg.lo i{bottom:0; background:var(--lo)}
+.reg.mid i{top:10px; background:var(--mid)}
+.nm{font-size:12px; color:var(--muted); padding-top:3px; white-space:nowrap}
+.said{min-width:0}
+.ko{display:block; color:var(--ink); font-weight:500; font-size:14.5px; word-break:keep-all}
+.ja{display:block; color:var(--muted); font-size:12px; margin-top:2px}
+.turn.flag{background:var(--bad-bg); border-radius:6px; padding-left:6px; padding-right:6px; margin:2px -6px}
+.turn.good{background:var(--ok-bg); border-radius:6px; padding-left:6px; padding-right:6px; margin:2px -6px}
+.mark{display:block; font-size:11.5px; margin-top:4px; color:var(--bad); font-weight:500}
+.turn.good .mark{color:var(--ok)}
+.tag{display:inline-block; font-family:"IBM Plex Mono",monospace; font-size:10px; letter-spacing:.06em;
+  padding:1px 6px; border-radius:4px; background:var(--accent-soft); color:var(--accent-ink); margin-left:6px; vertical-align:1px}
+
+.quote{border-left:3px solid var(--line); padding:2px 0 2px 12px; margin:0 0 13px; color:var(--body)}
+.quote .src{display:block; font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--faint); margin-top:4px}
+
+.facts{margin:0 0 14px; padding:11px 13px; background:var(--sunken); border:1px solid var(--line-soft); border-radius:8px; font-size:13.5px}
+.pane.decide .facts{background:var(--surface)}
+.facts dl{margin:0; display:grid; grid-template-columns:auto 1fr; gap:5px 14px}
+.facts dt{font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--faint); text-transform:uppercase; letter-spacing:.08em; padding-top:3px}
+.facts dd{margin:0; color:var(--ink)}
+
+.opts{display:flex; flex-direction:column; gap:8px; margin:0 0 13px}
+label.opt{display:grid; grid-template-columns:18px 1fr; gap:11px; align-items:start; cursor:pointer;
+  padding:11px 13px; border:1px solid var(--line); border-radius:8px; background:var(--surface); transition:border-color .15s,background .15s}
+label.opt:hover{border-color:var(--accent)}
+label.opt input{margin:3px 0 0; accent-color:var(--accent); width:16px; height:16px}
+label.opt .t{color:var(--ink); font-weight:500; font-size:14px}
+label.opt .rec{font-family:"IBM Plex Mono",monospace; font-size:10px; letter-spacing:.06em; color:var(--ok);
+  background:var(--ok-bg); padding:1px 6px; border-radius:4px; margin-left:7px; vertical-align:1px; font-weight:500}
+label.opt .sub{display:block; font-size:13px; color:var(--muted); margin-top:3px}
+label.opt:has(input:checked){border-color:var(--accent); background:var(--accent-soft)}
+
+.note-l{display:block; font-size:12.5px; color:var(--muted); margin-bottom:5px}
+textarea{width:100%; min-height:62px; resize:vertical; font:inherit; font-size:13.5px; padding:9px 11px;
+  border:1px solid var(--line); border-radius:8px; background:var(--surface); color:var(--ink)}
+
+.out{max-width:1080px; margin:0 auto 70px; padding:0 22px}
+.out-in{background:var(--surface); border:1px solid var(--line); border-radius:var(--r); box-shadow:var(--shadow); overflow:hidden}
+.out-head{display:flex; align-items:center; gap:12px; padding:14px 18px; border-bottom:1px solid var(--line-soft)}
+.out-head h2{font-size:17px}
+.out pre{margin:0; padding:15px 18px; background:var(--sunken); font-family:"IBM Plex Mono",monospace; font-size:12px;
+  line-height:1.62; color:var(--body); white-space:pre-wrap; word-break:break-word; max-height:340px; overflow:auto}
+.status{font-size:12.5px; color:var(--muted); padding:11px 18px; margin:0}
+.status.ok{color:var(--ok)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="top">
+  <div class="eyebrow">Banmal audit 2026-08-26 · open decisions</div>
+  <h1>Fifteen calls the audit could not make for you</h1>
+  <p class="lede">Both banmal courses were read end to end, 20 lessons, and every Korean line in the drafts matches the promoted deck word for word — <b>every line below is on a learner's screen right now</b>. What could be settled by reading was settled and written up in <code>reference/banmal-course-audit-2026-08-26.md</code>. What is left needs a call: a course-design decision, a native speaker's ear, or a choice between two defensible designs. Each card shows the deck as it stands, the fix beside it, and a recommendation.</p>
+  <div class="legend">
+    <span class="lg"><span class="reg hi" style="height:22px"><i></i></span> <b>존댓말</b> — up the ladder</span>
+    <span class="lg"><span class="reg lo" style="height:22px"><i></i></span> <b>반말</b> — down the ladder</span>
+    <span class="lg"><span class="reg mid" style="height:22px"><i></i></span> <b>전환 · 반존대</b></span>
+  </div>
+</div>
+
+<div class="bar">
+  <div class="bar-in">
+    <span class="count"><b id="n">0</b> of 15 decided</span>
+    <span class="track"><span class="fill" id="fill"></span></span>
+    <span class="acts">
+      <button id="copy">Copy for Claude</button>
+      <button id="save" class="primary">Save</button>
+    </span>
+  </div>
+</div>
+
+<main id="main"></main>
+
+<div class="out" id="outwrap" style="display:none">
+  <div class="out-in">
+    <div class="out-head"><h2>Your decisions</h2><button id="copy2" style="margin-left:auto">Copy</button></div>
+    <pre id="out"></pre>
+    <p class="status" id="status"></p>
+  </div>
+</div>
+
+<script type="application/json" id="saved">{}</script>
+
+<script>
+const TEMPLATE = document.documentElement.outerHTML;
+
+const KINDS = {
+  design:  {c:"var(--accent)", b:"var(--accent-soft)", label:"Course design"},
+  script:  {c:"var(--mid)",    b:"var(--mid-bg)",      label:"Scene script"},
+  native:  {c:"var(--bad)",    b:"var(--bad-bg)",      label:"Native ear"},
+  process: {c:"var(--hi)",     b:"var(--hi-bg)",       label:"Process"}
+};
+
+const ITEMS = [
+{
+ id:"B1", kind:"design", sev:"high", sec:"drop",
+ title:"지민 drops formality, then climbs back up",
+ path:"…/ctx-banmal-dropping-formality-upper-beginner/lessons/02-choosing-address-terms",
+ quote:["반말하자고 했다가 다시 존댓말이 어색해요","02-choosing-address-terms · 2026-08-23"],
+ why:"Three defects, not one. <b>The scene reverses direction on its last two lines</b> — and a scene is remembered by where it lands. <b>지민 uses 저 one line before mocking the learner for using 저</b> in the teaser, which undercuts lesson 03, whose entire teaching point is 저 → 나. And <b>this lesson's own native tip states the rule the course order breaks</b>: “한국어에서는 반말 전에 호칭을 정해야 해서…”. Lesson 01 settles 말 놓기; lesson 02 then checks age. The tip describes the reverse.",
+ scenes:[
+  {label:"As it ships", note:"반말 → 반말 → 반말 → 존댓말 → 존댓말. The ladder climbs at the close.", turns:[
+   ["지민","말은 놓기로 했는데 호칭부터 정해야겠다. 나를 뭐라고 부를래?","タメ口にすることにはしたけど、まず呼び方を決めないと。","lo"],
+   ["나","이제 지민 씨 말고 그냥 지민이라고 불러도 돼?","もうジミンさんではなく、ジミンと呼んでもいい？","lo","","목표 1"],
+   ["지민","그러기 전에 나이부터 확인하자.","そうする前に、まず年齢を確認しよう。","lo"],
+   ["나","혹시 몇 살이세요?","失礼ですが、何歳ですか？","hi","flag","목표 2"],
+   ["지민","저는 스물여섯이에요. 우리 동갑이니까 지민이라고 불러요.","私は26歳です。同い年なので、ジミンと呼んでください。","hi","flag"]]},
+  {label:"Recommended", note:"존댓말 → 전환 → 반말. The switch is caused on-screen by finding out they are 동갑.", turns:[
+   ["지민","아까 말 놓기로 했는데, 호칭부터 정해야겠어요.","さっきタメ口にするって決めたけど、呼び方から決めないと。","hi"],
+   ["나","혹시 몇 살이세요?","失礼ですが、何歳ですか？","hi","good","목표 2"],
+   ["지민","저는 스물여섯이에요. 어, 우리 동갑이네.","私は26歳です。あ、同い年だね。","mid","good"],
+   ["나","그럼 지민 씨 말고 그냥 지민이라고 불러도 돼?","じゃあジミンさんじゃなく、ジミンって呼んでもいい？","lo","good","목표 1"],
+   ["지민","좋아. 너도 그냥 이름 불러.","いいよ。君も名前で呼んで。","lo"]]}],
+ facts:[["Cost","5 scene lines + lesson 01's teaser, which duplicates them verbatim"],["Drills","Unchanged — both target sentences keep their register"],["Also fixes","지민's 저, and the tip/order contradiction"]],
+ opts:[
+  {v:"reorder-scene", t:"Move the age check to the front of the scene", rec:true, sub:"The recommended column above. Direction runs 존댓말 → 반말, the switch has a visible cause, both targets stay put, and no drill line changes."},
+  {v:"all-banmal", t:"Make the whole scene 반말", sub:"Your reading (b). Cheap in the scene, expensive underneath — Part 2's target 혹시 ~(으)세요? is itself 존댓말, so 4 따라 읽기 lines, 4 chip sets and 4 blanks all have to change with it."},
+  {v:"swap-lessons", t:"Swap lessons 01 and 02", sub:"Puts 나이·호칭 before 말 놓기, matching real Korean and the tip. But CLASS_WEEK changes for both, and the teaser chain that links all ten lessons has to be re-cut at the seam."},
+  {v:"leave-b1", t:"Leave it", sub:"The reviewer raises it again next round."}]
+},
+{
+ id:"B2", kind:"design", sev:"high", sec:"drop",
+ title:"The 반존대 lesson contains no 반존대",
+ path:"…/ctx-banmal-dropping-formality-upper-beginner/lessons/09-semi-formal-speech",
+ why:"The lesson is titled <b>반존대 — 중간 지대</b> and the course blurb sells <b>“애매한 사이에서는 반존대로 버티고”</b>. The scene has the learner in full 존댓말 (저는 / 제가 / ~는데요 / ~ㄹ게요) and 선배 in full 반말. Its two declared patterns are <code>~(으)ㄴ/는데요</code> and <code>~(으)니까 ~(으)ㄹ게요</code> — both plain honorific. The lesson teaches <b>declining to drop formality</b>, which is a real and useful skill, but it is not the one the course is selling. 반존대 is the mixed register — 요 dropped intermittently, 그래요 → 그래, 밥 먹었어요? → 밥 먹었어? — and it is taught nowhere in the course.",
+ scenes:[
+  {label:"What ships as “반존대”", note:"Nothing in the middle. The learner is pinned high, 선배 pinned low.", turns:[
+   ["선배","우리 이제 자주 보니까 말 편하게 해도 되지 않을까?","もうよく会うから、気楽に話してもいいんじゃない？","lo"],
+   ["나","저는 아직 존댓말이 편한데요.","私はまだ敬語のほうが楽なんですが。","hi","flag","목표 1"],
+   ["선배","아, 그래? 그럼 편한 대로 해.","あ、そう？ じゃあ楽なようにして。","lo"],
+   ["나","제가 어리니까 존댓말 쓸게요.","私が年下なので敬語を使います。","hi","flag","목표 2"],
+   ["선배","알겠어. 부담 갖지 마.","わかった。負担に思わないで。","lo"]]},
+  {label:"What 반존대 actually sounds like", note:"For reference — the register the title promises.", turns:[
+   ["선배","밥은 먹었어?","ごはん食べた？","lo"],
+   ["나","네, 아까 먹었어요. 선배는요?","はい、さっき食べました。先輩は？","hi","","존댓말"],
+   ["나","아, 저도 방금 나왔는데. 같이 갈래요?","あ、私もいま出てきて。一緒に行きます？","mid","good","반존대"]]}],
+ facts:[["Declared patterns","~(으)ㄴ/는데요 · ~(으)니까 ~(으)ㄹ게요 — both fully honorific"],["canDo says","“애매한 사이를 버틴다” — but the scene never enters the middle"],["Reach","Course title, course description, lesson title and the catalogue tagline all say 반존대"]],
+ opts:[
+  {v:"retitle-and-log", t:"Re-title 09 to what it teaches, log 반존대 separately", rec:true, sub:"Honest and cheap now: 09 becomes 말 놓기 완곡하게 거절하기, and the course description drops the 반존대 claim. 반존대 goes on the list as a candidate lesson of its own, where it can get real patterns."},
+  {v:"rewrite-09", t:"Rewrite 09 to actually teach 반존대", sub:"Keeps the promise. Needs two new patterns and a new scene — a lesson redesign, not an edit, and the declining skill has to go somewhere or be lost."},
+  {v:"both", t:"Rewrite 09 for 반존대 and move declining to a new lesson 11", sub:"Keeps both skills. Adds a week to a live course, which changes CLASS_WEEK for nothing else but does grow the product."},
+  {v:"leave-b2", t:"Leave it", sub:"The course keeps selling a skill it does not teach."}]
+},
+{
+ id:"B3", kind:"script", sev:"high", sec:"drop",
+ title:"Lesson 06 promises a problem lesson 07 never has",
+ path:"…/lessons/06-suggestions-and-commands → 07-greetings-and-responses",
+ quote:["다음장면 내용과 다른 이야기","06-suggestions-and-commands · 2026-08-23"],
+ why:"06's teaser says <b>존댓말 인사와 ‘네’가 자꾸 튀어나와요</b> — polite forms keep slipping out. In 07 the learner says every line correctly on the first try and 지민 answers <b>“이제 대답도 자연스럽네”</b>. Nothing slips. The teaser advertises a struggle; the lesson delivers a clean drill, which also leaves 07 with no reason to exist beyond a vocabulary list.",
+ scenes:[
+  {label:"06 teaser → 07 opening", note:"The promise, then what actually happens.", turns:[
+   ["06 예고","저녁을 먹고 헤어질 때 존댓말 인사와 ‘네’가 자꾸 튀어나와요.","夕食後に別れるとき、敬語のあいさつと「네」がつい出ます。",null,"flag"],
+   ["지민","우리 이제 헤어지는데, 반말로 인사해 봐.","もう別れるけど、タメ口であいさつしてみて。","lo"],
+   ["나","나 먼저 갈게, 조심히 들어가.","私、先に帰るね。気をつけて帰って。","lo","flag"],
+   ["지민","좋아. 이제 대답도 자연스럽네.","いいね。返事も自然になった。","lo","flag"]]},
+  {label:"Recommended — let it slip once", note:"The teaser gets paid off and 07 earns its place.", turns:[
+   ["지민","우리 이제 헤어지는데, 반말로 인사해 봐.","もう別れるけど、タメ口であいさつしてみて。","lo"],
+   ["나","네, 먼저 가 볼게요 — 아, 아니다. 나 먼저 갈게.","はい、先に失礼します — あ、違った。私、先に帰るね。","mid","good"],
+   ["지민","봐, 그게 제일 잘 튀어나오지.","ほら、それが一番出やすいんだよ。","lo","good"],
+   ["나","응, 알겠어. 그때 보자.","うん、わかった。そのとき会おう。","lo"]]}],
+ opts:[
+  {v:"slip-in-07", t:"Put the slip into 07's scene", rec:true, sub:"One line, plus 지민's reaction. Redeems the teaser and gives 07 a dramatic reason to exist."},
+  {v:"fix-teaser", t:"Rewrite 06's teaser to match the clean drill", sub:"Cheapest — one sentence. But the course loses the only moment where a mistake is shown being caught, which is what the whole 반말 transition feels like in real life."},
+  {v:"leave-b3", t:"Leave it", sub:""}]
+},
+{
+ id:"B4", kind:"script", sev:"high", sec:"drop",
+ title:"The learner blurts 반말 off-screen — and out of character",
+ path:"…/lessons/09-semi-formal-speech → 10-returning-to-polite-speech",
+ quote:["무슨 상황인지 모르겠음","“今、私にタメ口で話したんですか？” · 2026-08-23"],
+ why:"The card called this a missing scene. It is worse than that. <b>09 builds the learner as conspicuously careful</b> — they turn down 선배's own offer to drop formality and explain 제가 어리니까 존댓말 쓸게요. Then the teaser reports that this same person carelessly spoke 반말 to a stranger. It is not only unshown, it <b>contradicts the character the lesson just built</b>, one page earlier.",
+ scenes:[
+  {label:"As it ships", note:"Careful in 09; careless in the teaser; challenged in 10. The middle beat is narration.", turns:[
+   ["나 (09)","제가 어리니까 존댓말 쓸게요.","私が年下なので敬語を使います。","hi"],
+   ["선배 (예고)","그런데 아까 다른 분께는 너무 빨리 말을 놓았나 봐.","でもさっき別の人には早くタメ口にしすぎたみたい。","lo","flag"],
+   ["상대 (10)","방금 저한테 반말하신 거예요?","今、私にタメ口で話したんですか？","hi","flag"]]},
+  {label:"Recommended — play the moment, keep the character", note:"The slip has a cause the careful learner would plausibly have.", turns:[
+   ["상대","여기 자리 있어요?","ここ、席空いてますか？","hi"],
+   ["나","어, 앉아 — 아.","うん、座って — あ。","lo","good"],
+   ["상대","방금 저한테 반말하신 거예요?","今、私にタメ口で話したんですか？","hi","good"],
+   ["나","죄송해요, 제가 말이 짧았어요.","すみません、言葉遣いが短くなってしまいました。","hi"]]}],
+ facts:[["Why it slipped","선배 had just told them to speak comfortably — the register carried over to the next person"],["Where it goes","End of 09, or as 10's opening beat before the apology"]],
+ opts:[
+  {v:"stage-in-10", t:"Open 10 by playing the slip, then the apology", rec:true, sub:"Two lines before the existing first line. The learner stays in character — the 반말 carries over from 선배's permission a minute earlier, which is exactly how this mistake happens."},
+  {v:"stage-in-09", t:"Stage it at the end of 09 instead", sub:"Same fix, earlier. Makes 09 end on a sting rather than on 부담 갖지 마, which is a stronger episode ending but a colder one."},
+  {v:"fix-teaser-only", t:"Only rewrite the teaser so it stops contradicting 09", sub:"Removes the character break, leaves the event unshown. Cheapest."},
+  {v:"leave-b4", t:"Leave it", sub:""}]
+},
+{
+ id:"B5", kind:"native", sev:"mid", sec:"drop",
+ title:"형 is hardcoded into the learner's own line",
+ path:"…/lessons/08-mixed-hierarchy",
+ why:"The learner's target sentence is <b>형은 뭐 드실래요?</b> A woman learning Korean cannot say that line — hers is 오빠. Lesson 02 already teaches 형·오빠·누나·언니 as a set, so the vocabulary is there; the scene just pins one branch of it. This is the only lesson in the course where the learner addresses a named senior.",
+ scenes:[
+  {label:"The line as written", note:"Two addressees in one bubble is a separate decision — already settled as a split.", turns:[
+   ["나","형은 뭐 드실래요? 너는 뭐 먹을래?","お兄さんは何を召し上がりますか？ 君は何食べる？","hi","flag"],
+   ["나","제가 시킬게요. 내가 시킬게.","私が注文します。私が注文するね。","hi","flag"]]}],
+ opts:[
+  {v:"neutral-senior", t:"Change the senior to 선배", rec:true, sub:"선배 is gender-free, already in this course's vocabulary from lesson 02, and keeps the honorific contrast intact. One character rename across the deck."},
+  {v:"gloss-both", t:"Keep 형 and gloss 오빠 beside it", sub:"Preserves the family-term flavour, but doubles every line the learner speaks and the tutor has to pick one aloud anyway."},
+  {v:"leave-b5", t:"Leave it", sub:"Half the learners read a line they would not say."}]
+},
+{
+ id:"B6", kind:"native", sev:"mid", sec:"drop",
+ title:"An intonation claim I could not verify",
+ path:"…/lessons/05-asking-questions · 원어민 팁",
+ quote:["어디 가?는 끝을 올리면 질문이고 내려 읽으면 ‘어디 가’라고 알려 주는 말처럼 들릴 수 있어요.","current deck text"],
+ why:"The first half is right. The second half is the part I doubt: falling <b>어디 가</b> does not become “telling someone where to go”. It reads as flat, rhetorical, or slightly annoyed — not directive. This is a native call, not a logic one, so I am not guessing at a replacement.",
+ opts:[
+  {v:"drop-clause", t:"Drop the second clause, keep the rising-tone half", rec:true, sub:"The useful half is the contrast with a rising question. Losing the doubtful half costs nothing."},
+  {v:"native-rewrite", t:"Send it to a native reviewer for a replacement", sub:"Keeps a two-part tip, at the cost of another round."},
+  {v:"leave-b6", t:"Leave it as written", sub:""}]
+},
+{
+ id:"B7", kind:"design", sev:"high", sec:"chat",
+ title:"Eight of ten chatting scenes break the same way",
+ path:"sandbox/drafts/kr/…/ctx-banmal-chatting-intermediate",
+ why:"Every scene in this course is five turns, and <b>the learner's two lines are always turns 2 and 4</b> — those two lines are the lesson's target expressions, and 친구's turns are written around them afterwards. That frame works when a target is a <b>reaction</b> (공감, 놀람, 위로), because a reaction can follow anything. It breaks when a target is an <b>initiation</b> — asking, relaying news, explaining — because turn 1 has already taken the opening move. Every failure in this course is an initiating target jammed into a reacting slot, or the same move played twice. Fixing the placement rule is worth more than fixing eight scenes one at a time.",
+ facts:[["Clean","01-empathizing · 08-comforting — both targets are reactions"],["Broken","02 · 03 · 04 · 05 · 06 · 07 · 09 · 10"],["The rule","If a target initiates, it owns turn 1, or turn 1 carries no content for it to collide with"]],
+ opts:[
+  {v:"rule-as-check", t:"Adopt the rule and make it an authoring check", rec:true, sub:"Goes in tools/authoring/ as a shared check, since it is a discourse rule and just as true of the English decks. Blocks a merge, which is the only reason the last round's rules held."},
+  {v:"rule-as-convention", t:"Adopt it as written guidance only", sub:"Goes into ux-philosophy.md or the deltas file. Cheaper, and reaches exactly as far as whoever remembers to read it — which AGENTS.md already says is the failure mode."},
+  {v:"case-by-case", t:"Skip the rule, fix the scenes individually", sub:"Faster to the first fix, and the next course written from this template repeats it."},
+  {v:"leave-b7", t:"Leave it", sub:""}]
+},
+{
+ id:"B8", kind:"script", sev:"high", sec:"chat",
+ title:"04-hearsay: two non-sequiturs, and the flagged one is the smaller",
+ path:"…/ctx-banmal-chatting-intermediate/lessons/04-hearsay",
+ quote:["누가 그렇게 말했어? 라는 대답으로 어울리지 않음","04-hearsay · 2026-08-23"],
+ why:"The reviewer flagged turn 4. <b>Turn 2 is worse</b>: 친구 has just relayed the rumour, and the learner relays it back to them. That is the initiating-target collision in its purest form. Turn 4 is the flagged one — 친구 asks <b>who</b> said it and the answer is an opinion. Note the fix for turn 4 is not to rewrite the learner's line: <code>내가 그럴 줄 알았어…안 맞더라</code> is exactly what the lesson's canDo asks for and it carries the <code>~더라</code> target. <b>친구's question is what is wrong.</b>",
+ scenes:[
+  {label:"As it ships", note:"Targets: ~대 (heard) and ~더라 (saw it myself).", turns:[
+   ["친구","너 그 둘 소문 들었어? 결국 헤어졌다는 얘기가 있던데.","あの二人の噂聞いた？ 結局別れたって話がある。","lo","flag"],
+   ["나","너 그 소문 들었어? 걔네 헤어졌대.","その噂聞いた？ あの二人、別れたって。","lo","flag","목표 ~대"],
+   ["친구","진짜? 누가 그렇게 말했어?","本当？ 誰がそう言ったの？","lo","flag"],
+   ["나","내가 그럴 줄 알았어, 처음부터 안 맞더라.","そうなると思ってた。最初から合ってなかったよ。","lo","flag","목표 ~더라"],
+   ["친구","그러고 보니 만날 때마다 자주 싸웠지.","そういえば会うたびによく喧嘩してた。","lo"]]},
+  {label:"Recommended", note:"Turn 1 is emptied of content so the initiating target has room; 친구's question is re-aimed.", turns:[
+   ["친구","오늘따라 조용하네. 무슨 일 있어?","今日はやけに静かだね。何かあった？","lo","good"],
+   ["나","너 그 소문 들었어? 걔네 헤어졌대.","その噂聞いた？ あの二人、別れたって。","lo","good","목표 ~대"],
+   ["친구","진짜? 너는 어떻게 생각했는데?","本当？ 君はどう思ってた？","lo","good"],
+   ["나","내가 그럴 줄 알았어. 처음부터 좀 안 맞더라.","そうなると思ってた。最初からちょっと合ってなかったよ。","lo","good","목표 ~더라"],
+   ["친구","그러고 보니 만날 때마다 자주 싸웠지.","そういえば会うたびによく喧嘩してた。","lo"]]}],
+ facts:[["Changed","친구's turns 1 and 3. The learner's two target lines are untouched."],["canDo","“들은 소문을 전하고, 그럴 줄 알았다고 자기 관찰을 덧붙인다” — now actually what happens"]],
+ opts:[
+  {v:"take-b8", t:"Take this rewrite", rec:true, sub:"Two of 친구's lines change; both drills and both target sentences stay exactly as they are."},
+  {v:"learner-lines", t:"Rewrite the learner's lines instead", sub:"Keeps 친구's “누가 그렇게 말했어?” and has the learner name a source. Hits ~더라 too, but drops the 그럴 줄 알았다 move the canDo promises."},
+  {v:"leave-b8", t:"Leave it", sub:""}]
+},
+{
+ id:"B9", kind:"script", sev:"high", sec:"chat",
+ title:"05-gentle-disagreement ends on a blunt refusal",
+ path:"…/ctx-banmal-chatting-intermediate/lessons/05-gentle-disagreement",
+ quote:["어떤 부분이 다르게 보여? 라는 마지막 질문과 이어지지 않음","05-gentle-disagreement · 2026-08-23"],
+ why:"친구 asks <b>which part</b> the learner sees differently, and the answer names no part and closes the door — in a lesson called 부드럽게 반박하기. Then 친구 concedes anyway, which nothing has earned. <b>The pattern is not the problem.</b> <code>아무리 ~아/어도</code> is a declared target and it can be soft; the sentence attached to it is what is blunt. Keep the grammar, change what it says.",
+ scenes:[
+  {label:"As it ships", note:"Targets: ~는데 and 아무리 ~아/어도.", turns:[
+   ["친구","나는 한쪽만 잘못한 것 같아. 너도 그렇게 생각하지?","私は片方だけが悪いと思う。君もそう思うでしょ？","lo"],
+   ["나","글쎄, 난 좀 다르게 생각하는데.","さあ、私はちょっと違うと思うけど。","lo","good","목표 ~는데"],
+   ["친구","그래? 어떤 부분이 다르게 보여?","そう？ どの部分が違って見える？","lo"],
+   ["나","에이, 아무리 그래도 그건 좀 아니지.","いや、いくらなんでもそれはちょっと違うでしょ。","lo","flag","목표 아무리~어도"],
+   ["친구","알겠어. 그렇게 단정할 일은 아니네.","わかった。そこまで断定することではないね。","lo","flag"]]},
+  {label:"Recommended", note:"Same two patterns. The second one now names a part and leaves the door open.", turns:[
+   ["친구","나는 한쪽만 잘못한 것 같아. 너도 그렇게 생각하지?","私は片方だけが悪いと思う。君もそう思うでしょ？","lo"],
+   ["나","글쎄, 난 좀 다르게 생각하는데.","さあ、私はちょっと違うと思うけど。","lo","good","목표 ~는데"],
+   ["친구","그래? 어떤 부분이 다르게 보여?","そう？ どの部分が違って見える？","lo"],
+   ["나","아무리 걔가 잘못했어도, 한쪽만 탓하기는 좀 그렇지 않아?","いくらあの子が悪かったとしても、片方だけ責めるのはちょっとどうかな？","lo","good","목표 아무리~어도"],
+   ["친구","알겠어. 그렇게 단정할 일은 아니네.","わかった。そこまで断定することではないね。","lo","good"]]}],
+ facts:[["Changed","One line — the learner's turn 4"],["Now earned","친구's 알겠어 follows an argument instead of a refusal"]],
+ opts:[
+  {v:"take-b9", t:"Take this rewrite", rec:true, sub:"One line changes. Both declared patterns survive; the drills built on 아무리 ~아/어도 keep their frame."},
+  {v:"new-target", t:"Replace the 아무리 ~아/어도 target entirely", sub:"A softer pattern would fit the lesson better, but it means rebuilding Part 2's 따라 읽기, chips and blanks."},
+  {v:"leave-b9", t:"Leave it", sub:""}]
+},
+{
+ id:"B10", kind:"design", sev:"mid", sec:"chat",
+ title:"How far to take the remaining six chatting scenes",
+ path:"…/lessons/02 · 03 · 06 · 07 · 09 · 10",
+ why:"Beyond 04 and 05, six more scenes carry the same defect at lower severity. <b>07 and 09 are the serious ones.</b> In 07 the tip says <code>다니까</code> suits a <i>repeated</i> complaint and the learner uses it as their opening line, then answers a question about <b>today</b> with a state of <b>요즘</b>. In 09 친구 knows a fact never stated (“바로 확인해서”), and the learner's regret — <code>그때 그 말은 하지 말걸</code> — never says which words, so there is nothing to practise against. The other four are milder: 02 seeks agreement already given, 03 reacts before the reveal, 06 answers teasing with real irritation (<code>그만 좀 해</code>), 10 explains a late reply two turns after the plan is closed.",
+ facts:[["Serious","07-complaining · 09-relief-and-regret"],["Milder","02-seeking-agreement · 03-surprise-and-twists · 06-teasing · 10-kakao-style"],["If the rule lands","All six are the same edit shape: move or empty the colliding turn"]],
+ opts:[
+  {v:"all-six", t:"Rewrite all six now", rec:true, sub:"The course is read as one continuous conversation, so a half-fixed course still reads oddly. With the placement rule in hand these are mechanical."},
+  {v:"serious-two", t:"Fix 07 and 09 only", sub:"Clears the two where a learner cannot tell what is being practised, and leaves four that merely read a little off."},
+  {v:"defer-six", t:"Defer all six until the rule is agreed", sub:"Sequences the work behind B7, at the cost of another pass over the same decks."},
+  {v:"leave-b10", t:"Leave them", sub:""}]
+},
+{
+ id:"B11", kind:"design", sev:"mid", sec:"friends",
+ title:"“단원 2-2 와 유사함” — resolved, and it is not from a retired course",
+ path:"…/ctx-drama-friends-intermediate/lessons/01-first-meeting",
+ quote:["단원 2-2 와 유사함","01-first-meeting · 2026-08-24"],
+ why:"The reference resolves. The reviewer was reading proofreading packets, which number courses <code>01…16</code> and units <code>## 02 · 02-choosing-address-terms</code> inside them — so <b>2-2 is packet 02, unit 02</b>: the banmal 호칭 lesson in card B1. The content confirms it. Both lessons build a first-contact scene on the same pair, <b>혹시</b> plus <b>~아/어도 되다</b>. Neither course is retired; both are <code>enabled: true</code> in production. So this is a coverage call, not a cleanup.",
+ scenes:[
+  {label:"The overlap", note:"Different courses, different levels, same two moves.", turns:[
+   ["drama-friends 01","혹시… 우리 어디서 본 적 있지 않아요?","もしかして…どこかで会ったことありませんか？","hi"],
+   ["drama-friends 01","저… 혹시 번호 물어봐도 돼요?","あの…番号を聞いてもいいですか？","hi","flag"],
+   ["banmal 02","혹시 몇 살이세요?","失礼ですが、何歳ですか？","hi"],
+   ["banmal 02","…지민이라고 불러도 돼?","…ジミンって呼んでもいい？","lo","flag"]]}],
+ facts:[["drama-friends","중급 · classLevel 300.005 · enabled: true"],["banmal-dropping","초중급 · classLevel 300.130 · enabled: true"],["Track","Both sit in 3-contextual-korean"]],
+ opts:[
+  {v:"accept-overlap", t:"Accept it — different levels, deliberate reinforcement", rec:true, sub:"초중급 and 중급 are far apart, and a pattern met twice in different situations is how it sticks. Record the decision so the next reviewer does not re-raise it."},
+  {v:"move-friends", t:"Give drama-friends 01 a different pattern pair", sub:"The younger course keeps the canonical introduction of 혹시 + ~아/어도 되다. But 01-first-meeting is the course opener and this pair is exactly what a first meeting needs."},
+  {v:"move-banmal", t:"Move banmal 02's 혹시 elsewhere", sub:"Interacts with B1 — if the age check moves to the front of the scene, this target becomes more load-bearing, not less."},
+  {v:"leave-b11", t:"Leave it undecided", sub:""}]
+},
+{
+ id:"B12", kind:"design", sev:"high", sec:"friends",
+ title:"Seven of ten native tips in a live course are the same filler string",
+ path:"…/ctx-drama-friends-intermediate/lessons/04 · 05 · 06 · 07 · 08 · 09 · 10",
+ quote:["두 표현은 둘 다 자연스러워요. 상황에 맞는 쪽을 골라 쓰면 돼요.","identical in seven decks · live in courses/"],
+ why:"Nobody reported this — it surfaced while checking N4 and N5, which live in the same course. The 원어민 팁 is <b>the only slot in this deck format that carries something a native speaker knows and a textbook does not</b>. In seven of ten lessons it says nothing at all, and it is live: the same string appears seven times under <code>courses/</code>. This is a larger hole than either of the two flagged sentences below.",
+ facts:[["Affected","04-go-together · 05-late · 06-on-your-side · 07-one-favor · 08-my-treat · 09-just-between-us · 10-friends-for-long"],["Real tips","01 · 02 · 03 carry genuine ones — the format works when it is filled"],["Live","Confirmed present in courses/, not only in drafts"]],
+ opts:[
+  {v:"write-seven", t:"Write all seven now, from the lessons' own patterns", rec:true, sub:"Each lesson declares two patterns; the tip's job is the distinction between them or the register they carry. 01–03 show the shape to match."},
+  {v:"write-and-gate", t:"Write the seven and add a check that catches filler tips", sub:"A shared authoring check for a native tip repeated across decks. Stops the next course shipping with placeholders, which is how this one did."},
+  {v:"remove-slot", t:"Remove the tip section from those seven decks", sub:"Honest, and loses the slot. A deck with no tip is better than a deck with an empty one — but the format expects it and the tutor script reads it aloud."},
+  {v:"leave-b12", t:"Leave them", sub:""}]
+},
+{
+ id:"B13", kind:"native", sev:"mid", sec:"friends",
+ title:"“계산은 정말 네가 하는 거야?”",
+ path:"…/ctx-drama-friends-intermediate/lessons/07-one-favor · 다음 화 맛보기",
+ quote:["오 한국인이 이런 표현을쓰나요..?","07-one-favor · 2026-08-24"],
+ why:"유진 has just offered to treat. Asking whether they are <b>really</b> paying questions the offer — it lands as doubt or reluctance, not the light teasing the scene wants. It is a teaser line, not a target sentence, so it is cheap to change. Both replacements below accept the offer while keeping the teasing.",
+ scenes:[
+  {label:"As it ships", note:"The reaction reads as suspicion of the offer.", turns:[
+   ["유진","오늘은 내가 살게.","今日は私がおごるよ。","lo"],
+   ["나","계산은 정말 네가 하는 거야?","会計は本当に君がするの？","lo","flag"]]},
+  {label:"Two natural replacements", note:"Both accept, then tease.", turns:[
+   ["나","진짜? 그럼 나 비싼 거 시킨다?","本当？ じゃあ高いの頼むよ？","lo","good","A"],
+   ["나","웬일이야, 네가 다 사고.","どうしたの、君がおごるなんて。","lo","good","B"]]}],
+ opts:[
+  {v:"n4-a", t:"진짜? 그럼 나 비싼 거 시킨다?", rec:true, sub:"Accepts the offer and turns it into a joke in one move. The most common thing a Korean speaker actually says here, and it sets up 08-my-treat."},
+  {v:"n4-b", t:"웬일이야, 네가 다 사고.", sub:"Warmer and drier — teases the rarity of the offer rather than the bill. Slightly older-sounding."},
+  {v:"n4-native", t:"Send it back for a native line", sub:""},
+  {v:"leave-b13", t:"Leave it", sub:""}]
+},
+{
+ id:"B14", kind:"native", sev:"mid", sec:"friends",
+ title:"“우리 앞으로도 오래 볼 사이일까?”",
+ path:"…/ctx-drama-friends-intermediate/lessons/09-just-between-us · 다음 화 맛보기",
+ quote:["이런 말 잘안해요 ㅠㅠㅠ","09-just-between-us · 2026-08-24"],
+ why:"<b>오래 볼 사이</b> is a phrase people use to <i>describe</i> a friendship, not one they ask about to someone's face. Said aloud it sounds translated. Also a teaser line, and it has to hand off to 10-friends-for-long, so the replacement should still point forward.",
+ scenes:[
+  {label:"As it ships", turns:[
+   ["나","우리 앞으로도 오래 볼 사이일까?","私たち、これからも長く会う仲かな？","lo","flag"]]},
+  {label:"Two natural replacements", note:"Both keep the warmth and still set up 10-friends-for-long.", turns:[
+   ["나","우리 십 년 뒤에도 이러고 있을까?","私たち、十年後もこうしてるかな？","lo","good","A"],
+   ["나","이런 얘기 하는 사이, 흔하지 않은데.","こういう話ができる仲って、なかなかないよね。","lo","good","B"]]}],
+ opts:[
+  {v:"n5-a", t:"우리 십 년 뒤에도 이러고 있을까?", rec:true, sub:"Natural, warm, and asks about the future without naming the relationship — which is the part that sounded translated. Hands straight to 10-friends-for-long."},
+  {v:"n5-b", t:"이런 얘기 하는 사이, 흔하지 않은데.", sub:"Describes rather than asks, which is what Korean does with this idea. Echoes the lesson's own N밖에 없다 target."},
+  {v:"n5-native", t:"Send it back for a native line", sub:""},
+  {v:"leave-b14", t:"Leave it", sub:""}]
+},
+{
+ id:"B15", kind:"process", sev:"mid", sec:"tidy",
+ title:"The retired 효도 course still has its directory",
+ path:"courses/kr/ctx-drama-family-intermediate",
+ why:"You were right that this one was already handled. <code>ctx-drama-family-intermediate</code> is <b>enabled: false in both origin/stage and origin/main</b> (PR #133), so the retirement has reached production. <b>Three of the open native-ear cards died with it</b> — N1, N2 and N3 were all lines in 10-filial-devotion, the lesson the reviewer wanted cut. AGENTS.md says the flag deploys first and the directory goes afterwards; the flag has deployed, so the last step is now safe to take.",
+ facts:[["stage","enabled: false"],["main","enabled: false — the retirement is in production"],["Dissolved","N1 얘가 왜 이래, 무섭게 · N2 다 알아서 준비할게 · N3 됐어, 뭘 그런 걸"],["Rows","apply.py never deletes — the grape rows stay until cleaned by hand"]],
+ opts:[
+  {v:"delete-now", t:"Delete the directory in the next PR", rec:true, sub:"The AGENTS.md sequence is complete: flag set, deployed to prod, directory removed. Leaving it invites someone to edit a course no learner can reach."},
+  {v:"delete-with-rows", t:"Delete it and clean the grape rows in the same PR", sub:"Adds the manual row and GCS cleanup, declared with a Retired-course: trailer. More work, but nothing is left pointing at content nobody updates."},
+  {v:"keep-dir", t:"Keep the directory for now", sub:"Useful if the arc restructure might reuse the lessons. Costs nothing but confusion."},
+  {v:"leave-b15", t:"Leave it undecided", sub:""}]
+}
+];
+
+const SECTIONS = [
+  {k:"drop",    t:"반말 · 말 놓기",       who:"ctx-banmal-dropping-formality-upper-beginner · 초중급 · live"},
+  {k:"chat",    t:"반말 · 수다",          who:"ctx-banmal-chatting-intermediate · 중급 · live"},
+  {k:"friends", t:"드라마 · 친구",        who:"ctx-drama-friends-intermediate · 중급 · live"},
+  {k:"tidy",    t:"Tidying up",           who:"already decided elsewhere — one step left"}
+];
+
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+function turnHtml(t){
+  const [who, ko, ja, reg, mark, tag] = t;
+  const cls = "turn" + (mark === "flag" ? " flag" : mark === "good" ? " good" : "");
+  const rail = reg ? `<span class="reg ${reg}"><i></i></span>` : `<span class="reg"></span>`;
+  const tg = tag ? `<span class="tag">${esc(tag)}</span>` : "";
+  return `<div class="${cls}">${rail}<span class="nm">${esc(who)}</span>` +
+         `<span class="said"><span class="ko">${esc(ko)}${tg}</span>` +
+         (ja ? `<span class="ja">${esc(ja)}</span>` : "") + `</span></div>`;
+}
+
+function sceneHtml(s){
+  return `<div class="scene"><p class="scene-label">${esc(s.label)}</p>` +
+    (s.note ? `<p class="scene-note">${esc(s.note)}</p>` : "") +
+    s.turns.map(turnHtml).join("") + `</div>`;
+}
+
+function cardHtml(it){
+  const k = KINDS[it.kind];
+  const sev = it.sev === "high"
+    ? `<span class="sev">높음</span>`
+    : `<span class="sev mid">중간</span>`;
+  const quote = it.quote
+    ? `<blockquote class="quote">${esc(it.quote[0])}<span class="src">${esc(it.quote[1])}</span></blockquote>` : "";
+  const facts = it.facts
+    ? `<div class="facts"><dl>${it.facts.map(f => `<dt>${esc(f[0])}</dt><dd>${esc(f[1])}</dd>`).join("")}</dl></div>` : "";
+  const scenes = it.scenes
+    ? `<div class="scenes${it.scenes.length > 1 ? " two" : ""}">${it.scenes.map(sceneHtml).join("")}</div>` : "";
+  const opts = it.opts.map((o, i) => `
+    <label class="opt" for="${it.id}-${i}">
+      <input type="radio" name="${it.id}" id="${it.id}-${i}" value="${esc(o.v)}">
+      <span><span class="t">${esc(o.t)}${o.rec ? `<span class="rec">recommended</span>` : ""}</span>
+      ${o.sub ? `<span class="sub">${esc(o.sub)}</span>` : ""}</span>
+    </label>`).join("");
+  return `<article class="card" id="card-${it.id}" style="--edge:${k.c};--edge-bg:${k.b}">
+    <div class="card-head">
+      <span class="chip">${esc(it.id)} · ${esc(k.label)}</span>
+      <h3>${esc(it.title)}</h3>${sev}
+      <span class="done-flag">decided</span>
+      <p class="path">${esc(it.path)}</p>
+    </div>
+    <div class="pane">
+      <p class="plabel">What is there</p>
+      ${quote}<p class="why">${it.why}</p>${facts}${scenes}
+    </div>
+    <div class="pane decide">
+      <p class="plabel">Your call</p>
+      <div class="opts">${opts}</div>
+      <label class="note-l" for="note-${it.id}">Anything else — overrides the choice above</label>
+      <textarea id="note-${it.id}" data-note="${it.id}" placeholder="Write your own answer…"></textarea>
+    </div>
+  </article>`;
+}
+
+const main = document.getElementById("main");
+main.innerHTML = SECTIONS.map(sec => {
+  const rows = ITEMS.filter(i => i.sec === sec.k);
+  return `<section id="sec-${sec.k}">
+    <div class="sec-head"><h2>${esc(sec.t)}</h2><span class="who">${esc(sec.who)}</span>
+    <span class="tally">${rows.length} decision${rows.length > 1 ? "s" : ""}</span></div>
+    ${rows.map(cardHtml).join("")}</section>`;
+}).join("");
+
+const KEY = "banmal-audit-decisions-v1";
+const state = {};
+
+function load(){
+  let seed = {};
+  try { seed = JSON.parse(document.getElementById("saved").textContent || "{}"); } catch (e) { seed = {}; }
+  let mine = {};
+  try { mine = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { mine = {}; }
+  Object.assign(state, seed, mine);
+  for (const [id, v] of Object.entries(state)){
+    if (v && v.choice){
+      const el = document.querySelector(`input[name="${id}"][value="${v.choice}"]`);
+      if (el) el.checked = true;
+    }
+    if (v && v.note){
+      const t = document.querySelector(`textarea[data-note="${id}"]`);
+      if (t) t.value = v.note;
+    }
+  }
+}
+
+function tick(id){
+  const chosen = document.querySelector(`input[name="${id}"]:checked`);
+  const t = document.querySelector(`textarea[data-note="${id}"]`);
+  const note = t ? t.value.trim() : "";
+  if (chosen || note) state[id] = {choice: chosen ? chosen.value : "", note};
+  else delete state[id];
+  const card = document.getElementById("card-" + id);
+  if (card) card.classList.toggle("done", !!state[id]);
+  const n = Object.keys(state).length;
+  document.getElementById("n").textContent = n;
+  document.getElementById("fill").style.width = (n / ITEMS.length * 100) + "%";
+  try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {}
+}
+
+main.addEventListener("change", e => { if (e.target.name) tick(e.target.name); });
+main.addEventListener("input", e => { if (e.target.dataset.note) tick(e.target.dataset.note); });
+
+function report(){
+  const lines = ["반말 감사 — 결정 (2026-08-26)", ""];
+  for (const it of ITEMS){
+    const v = state[it.id];
+    if (!v) continue;
+    lines.push(`[${it.id}] ${it.title}`);
+    if (v.choice){
+      const o = it.opts.find(x => x.v === v.choice);
+      lines.push(`   → ${o ? o.t : v.choice}`);
+    }
+    if (v.note) lines.push(`   ✎ ${v.note}`);
+    lines.push("");
+  }
+  const open = ITEMS.filter(i => !state[i.id]).map(i => i.id);
+  if (open.length) lines.push("아직 안 정한 것: " + open.join(", "));
+  return lines.join("\n");
+}
+
+function show(msg, ok){
+  const s = document.getElementById("status");
+  s.textContent = msg;
+  s.className = "status" + (ok ? " ok" : "");
+}
+
+function copyOut(){
+  const text = report();
+  document.getElementById("outwrap").style.display = "block";
+  document.getElementById("out").textContent = text;
+  const done = () => show("Copied. Paste it back into the session.", true);
+  if (navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(done)
+      .catch(() => show("Could not reach the clipboard — select the text above and copy it.", false));
+  } else {
+    show("Select the text above and copy it.", false);
+  }
+}
+
+document.getElementById("copy").addEventListener("click", copyOut);
+document.getElementById("copy2").addEventListener("click", copyOut);
+
+document.getElementById("save").addEventListener("click", () => {
+  const html = TEMPLATE.replace(
+    /(<script type="application\/json" id="saved">)[\s\S]*?(<\/script>)/,
+    (m, a, b) => a + JSON.stringify(state).replace(/</g, "\\u003c") + b);
+  const blob = new Blob([html], {type: "text/html"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "banmal-audit-decisions.html";
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  document.getElementById("outwrap").style.display = "block";
+  document.getElementById("out").textContent = report();
+  show("Saved a copy with your answers baked in. Replace the file in the repo to commit them.", true);
+});
+
+load();
+for (const it of ITEMS) tick(it.id);
+</script>
