@@ -21,9 +21,9 @@ spec:
   difficulty: UPPER_INTERMEDIATE
 
   title:
-    ko: 핵심 문법 패턴 · 중고급 · 2
-    en: Core grammar patterns · Upper intermediate · 2
-    ja: コア文法パターン · 中上級 · 2
+    ko: (중고급) 핵심 패턴 11
+    en: (Upper Intermediate) Core 11
+    ja: (中上級) コアパターン 11
 
   # 학습자가 카탈로그에서 읽는 문장이다. 앱이 로케일로 고르므로 JP 마켓 코스는
   # ja 가 화면에 뜬다 — 여기 세 언어는 tools/course-copy.json 이 원본이고,

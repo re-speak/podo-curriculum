@@ -73,7 +73,8 @@ class CourseCopyTests(unittest.TestCase):
         for track, cfg in plan_courses.TRACKS.items():
             parsed = plan_courses.track_parsers.PARSERS[track](here / "tracks" / track)
             courses = plan_courses.pack_core(parsed) if track == "2-core-patterns" else parsed
-            for course in (plan_courses.compose(c, cfg) for c in courses):
+            for course in (plan_courses.compose(c, cfg, i)
+                           for i, c in enumerate(courses, 1)):
                 with self.subTest(course=course["slug"]):
                     written = self.copy.get(course["slug"], {}).get("description", {})
                     self.assertTrue(written.get("en"), "no en description")
@@ -97,7 +98,8 @@ class CourseCopyTests(unittest.TestCase):
         for track, cfg in plan_courses.TRACKS.items():
             parsed = plan_courses.track_parsers.PARSERS[track](here / "tracks" / track)
             courses = plan_courses.pack_core(parsed) if track == "2-core-patterns" else parsed
-            for course in (plan_courses.compose(c, cfg) for c in courses):
+            for course in (plan_courses.compose(c, cfg, i)
+                           for i, c in enumerate(courses, 1)):
                 title = plan_courses.course_title(course, self.copy)
                 for lang, limit in plan_courses.TITLE_LIMITS.items():
                     with self.subTest(course=course["slug"], lang=lang):
@@ -107,7 +109,7 @@ class CourseCopyTests(unittest.TestCase):
         course = {"slug": "ctx-banmal-dropping-formality-upper-beginner",
                   "title": {"ko": "x" * 40, "en": "x", "ja": "y"}}
         self.assertEqual(
-            plan_courses.course_title(course, self.copy)["ko"], "상황별 한국어 · 말 놓기 · 초중급")
+            plan_courses.course_title(course, self.copy)["ko"], "(초중급) 반말 · 말 놓기")
 
     def test_upper_bands_are_not_collapsed_into_their_neighbours(self):
         self.assertEqual(plan_courses.DIFFICULTY["초중급"], "UPPER_BEGINNER")

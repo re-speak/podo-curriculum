@@ -21,9 +21,9 @@ spec:
   difficulty: INTERMEDIATE
 
   title:
-    ko: 프리토킹 · 사람과 관계 · 중급
-    en: Free talking · People & ties · Intermediate
-    ja: フリートーキング · 人と関係 · 中級
+    ko: (중급) 사람과 관계
+    en: (Intermediate) People & ties
+    ja: (中級) 人と関係
 
   # 학습자가 카탈로그에서 읽는 문장이다. 앱이 로케일로 고르므로 JP 마켓 코스는
   # ja 가 화면에 뜬다 — 여기 세 언어는 tools/course-copy.json 이 원본이고,

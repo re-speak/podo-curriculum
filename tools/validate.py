@@ -5,7 +5,7 @@ The PR gate. Everything that could break a live lesson, checked before merge.
 Six layers, cheapest first:
 
   1. schema      — course.yaml / lesson.yaml against JSON Schema
-  2. structure   — slugs match directories, weeks run 1..N
+  2. structure   — slugs match directories, weeks run 1..N, titles say their level
   3. package     — every deck actually builds, with the GCS-flattening audit
   4. contract    — the built HTML through lemonboard's own data-sync validator
   5. runtime     — every pinned shared-runtime URL is live and matches shared/
@@ -70,6 +70,9 @@ import yaml
 import build
 import model
 
+sys.path.insert(0, str(model.REPO / "tools" / "authoring"))
+import course_naming as naming  # noqa: E402  (path set above)
+
 LEMONBOARD_KEY_ENV = "PODO_LEMONBOARD_API_KEY"
 REPO = model.REPO
 
@@ -132,6 +135,32 @@ def check_catalog_placement(course: model.Course) -> list[str]:
         except model.ValidationError as exc:
             problems.append(str(exc))
     return problems
+
+
+def check_titles(courses: list) -> list[str]:
+    """Does every course's name still agree with the rest of the course?
+
+    A title carries the level word, the family name and — on the core ladder —
+    the rung, and every one of those is a copy of something else in the file:
+    `difficulty` drives the app's level filter, the slug names the family,
+    `classLevel` fixes the order. Copies drift, and all three drift silently:
+    `hangul-starter` shipped as BEGINNER while calling itself `Starter`, and
+    `trial-lv2-patterns` shipped as UPPER_BEGINNER while calling itself
+    `Elementary`, for as long as anyone had been looking.
+
+    So none of it is trusted. `course_naming` recomposes the title from the
+    fields it should have been derived from and this fails on any difference —
+    the same module the cover reads, which is what keeps the card, the line
+    under it and the filter chip from disagreeing.
+
+    Retired courses are checked too. `enabled: false` still upserts a row, and a
+    course coming back on should not need its name fixed first.
+    """
+    rows = [naming.Row(course.lang, course.slug, float(course.spec["classLevel"]),
+                       course.spec.get("difficulty", ""),
+                       bool(course.spec.get("enabled")), course.spec["title"])
+            for course in courses]
+    return naming.problems(rows)
 
 
 def validate_contract(html: str, api: str, label: str, key: str) -> list[str]:
@@ -443,6 +472,7 @@ def main() -> int:
         print(f"\nshared runtime  ({rt['version']} · {len(seen_urls)} distinct file(s) pinned)")
         problems += check_runtime_urls(seen_urls, rt)
 
+    problems += check_titles(courses)
     problems += check_retirements(args.base, courses)
 
     print()

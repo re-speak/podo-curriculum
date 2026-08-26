@@ -21,9 +21,9 @@ spec:
   difficulty: INTERMEDIATE
 
   title:
-    ko: 상황별 한국어 · 케이팝 팬 라이프 · 중급
-    en: Korean in context · K-pop fan life · Intermediate
-    ja: 場面別の韓国語 · K-POPファンライフ · 中級
+    ko: (중급) 케이팝 팬 라이프
+    en: (Intermediate) K-pop fan life
+    ja: (中級) K-POPファンライフ
 
   # 학습자가 카탈로그에서 읽는 문장이다. 앱이 로케일로 고르므로 JP 마켓 코스는
   # ja 가 화면에 뜬다 — 여기 세 언어는 tools/course-copy.json 이 원본이고,

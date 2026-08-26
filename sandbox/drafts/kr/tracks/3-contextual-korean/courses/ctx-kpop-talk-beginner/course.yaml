@@ -21,9 +21,9 @@ spec:
   difficulty: BEGINNER
 
   title:
-    ko: 상황별 한국어 · 케이팝 토크 · 초급
-    en: Korean in context · K-pop talk · Beginner
-    ja: 場面別の韓国語 · K-POPトーク · 初級
+    ko: (초급) 케이팝 토크
+    en: (Beginner) K-pop talk
+    ja: (初級) K-POPトーク
 
   # 학습자가 카탈로그에서 읽는 문장이다. 앱이 로케일로 고르므로 JP 마켓 코스는
   # ja 가 화면에 뜬다 — 여기 세 언어는 tools/course-copy.json 이 원본이고,

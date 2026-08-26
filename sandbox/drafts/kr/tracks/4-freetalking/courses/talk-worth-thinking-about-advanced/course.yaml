@@ -21,9 +21,9 @@ spec:
   difficulty: ADVANCED
 
   title:
-    ko: 프리토킹 · 생각해 볼 것 · 고급
-    en: Free talking · Worth thinking about · Advanced
-    ja: フリートーキング · 考えてみたいこと · 上級
+    ko: (고급) 생각해 볼 것
+    en: (Advanced) Worth thinking about
+    ja: (上級) 考えてみたいこと
 
   # 학습자가 카탈로그에서 읽는 문장이다. 앱이 로케일로 고르므로 JP 마켓 코스는
   # ja 가 화면에 뜬다 — 여기 세 언어는 tools/course-copy.json 이 원본이고,
