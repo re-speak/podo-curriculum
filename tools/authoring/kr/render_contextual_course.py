@@ -85,7 +85,26 @@ AVATAR = ('<span class="avatar icon"><svg aria-hidden="true" viewBox="0 0 24 24"
           '<path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2.5c-4.7 0-8.5 '
           '2.6-8.5 5.8V22h17v-1.7c0-3.2-3.8-5.8-8.5-5.8Z" fill="currentColor"/>'
           '</svg></span>')
-HANA = '<img alt="" class="avatar" src="https://respeak-lemonade.s3.ap-northeast-2.amazonaws.com/test/hana-avatar.jpg"/>'
+PORTRAIT_PREFIX = '../../../../../../../../../shared/assets/'
+PORTRAIT_CAST = json.loads(
+    (pathlib.Path(__file__).resolve().parents[3]
+     / 'sandbox/drafts/kr/tracks/3-contextual-korean/portrait-cast.json').read_text()
+)
+
+
+def avatar_for(role: str, course_name: str) -> str:
+    """Return a stable course-scoped face; tutors and learners stay neutral."""
+    if role in {'나', '선생님'}:
+        return AVATAR
+    # Unit tests render synthetic course fragments that intentionally have no
+    # cast ledger. Real course renders always pass a key present in the ledger.
+    if course_name not in PORTRAIT_CAST:
+        return f'<img alt="" class="avatar" src="{PORTRAIT_PREFIX}portrait-yujin.jpg"/>'
+    try:
+        filename = PORTRAIT_CAST[course_name][role]
+    except KeyError as failure:
+        raise ManifestError(f'{course_name}: no portrait assignment for role {role!r}') from failure
+    return f'<img alt="" class="avatar" src="{PORTRAIT_PREFIX}{esc(filename)}"/>'
 
 
 def esc(value: str) -> str:
@@ -134,9 +153,10 @@ def build_zone(sync_id: str, answer: str) -> str:
             f'data-sync-kind="order" data-a="{esc(answer)}"></span>')
 
 
-def turn(role: str, ko: str, ja: str, *, slot: str | None = None, yomi: str | None = None) -> str:
+def turn(role: str, ko: str, ja: str, *, course_name: str = '', slot: str | None = None,
+         yomi: str | None = None) -> str:
     mine = role == "나"
-    who = AVATAR if mine else HANA
+    who = avatar_for(role, course_name)
     bubble = "bubble me" if mine else "bubble"
     cls = "turn me" if mine else "turn other"
     if slot:
@@ -150,10 +170,11 @@ def turn(role: str, ko: str, ja: str, *, slot: str | None = None, yomi: str | No
             f'</span><div class="{bubble}">{content}</div></div>')
 
 
-def open_turn(role: str, label: str, sync_id: str, *, seed: str = "", tall: bool = False) -> str:
+def open_turn(role: str, label: str, sync_id: str, *, course_name: str = '', seed: str = "",
+              tall: bool = False) -> str:
     """Render a genuinely editable free response, rather than an exact-answer slot."""
     mine = role == "나"
-    who = AVATAR if mine else HANA
+    who = avatar_for(role, course_name)
     bubble = "bubble me" if mine else "bubble"
     cls = "turn me" if mine else "turn other"
     size = " tall" if tall else " small"
@@ -182,14 +203,15 @@ def transition(page_id: str, kicker: str, title: str, title_ja: str, copy_ja: st
             f'<p class="transition-copy">{esc(copy_ja)}</p></div>')
 
 
-def episode_card(item: dict, course_name: str) -> str:
+def episode_card(item: dict, course_name: str, course_key: str) -> str:
     return (f'<div class="transition-page episode-card" data-page-id="episode-card" '
             f'data-act="{esc(item["titleKo"])}"><span class="transition-kicker">'
             f'{esc(course_name)} · 제{item["number"]}화</span><h2 class="transition-title">'
             f'{esc(item["titleKo"])}</h2><p class="transition-copy">{esc(item["sceneJa"])}</p>'
             f'<div class="scene-cast"><span class="cast-row">{AVATAR}<span class="cast-who">나'
             f'<small>{esc(item.get("learnerRoleJa", "K-POPファン・あなたの役"))}</small></span></span>'
-            f'<span class="cast-row">{HANA}<span class="cast-who">{esc(item["incoming"]["role"])}'
+            f'<span class="cast-row">{avatar_for(item["incoming"]["role"], course_key)}'
+            f'<span class="cast-who">{esc(item["incoming"]["role"])}'
             f'<small>{esc(item.get("partnerRoleJa", "同じ趣味を楽しむ友達"))}</small></span></span></div></div>')
 
 
@@ -447,7 +469,8 @@ def activities(part: str, data: dict, where: str) -> tuple[str, str, str]:
             translate_activity(part, rows_of(data, 'translateExamples', where)))
 
 
-def render_lesson(item: dict, course_name: str, final: bool, where: str = '') -> str:
+def render_lesson(item: dict, course_name: str, final: bool, where: str = '',
+                  course_key: str = '') -> str:
     where = where or item['slug']
     p1, p2 = item['p1'], item['p2']
     scene_role = item['incoming']['role']
@@ -455,25 +478,31 @@ def render_lesson(item: dict, course_name: str, final: bool, where: str = '') ->
     p2_role = p2.get('responseRole', scene_role)
     ending_role = item.get('ending', {}).get('openRole', scene_role)
     teaser_role = scene_role
+    def t(role: str, ko: str, ja: str, **kwargs: object) -> str:
+        return turn(role, ko, ja, course_name=course_key, **kwargs)
+
+    def ot(role: str, label: str, sync_id: str, **kwargs: object) -> str:
+        return open_turn(role, label, sync_id, course_name=course_key, **kwargs)
+
     scene_turns = [
-        turn(scene_role, item['incoming']['ko'], item['incoming']['ja']),
-        turn('나', p1['line'], p1['ja'], yomi=p1.get('yomi')),
-        turn(p1_role, p1['responseKo'], p1['responseJa']),
-        turn('나', p2['line'], p2['ja'], yomi=p2.get('yomi')),
-        turn(p2_role, p2['responseKo'], p2['responseJa']),
+        t(scene_role, item['incoming']['ko'], item['incoming']['ja']),
+        t('나', p1['line'], p1['ja'], yomi=p1.get('yomi')),
+        t(p1_role, p1['responseKo'], p1['responseJa']),
+        t('나', p2['line'], p2['ja'], yomi=p2.get('yomi')),
+        t(p2_role, p2['responseKo'], p2['responseJa']),
     ]
     scene = ''.join(scene_turns)
     complete = ''.join([
-        turn(scene_role, item['incoming']['ko'], item['incoming']['ja']),
-        turn('나', p1['line'], p1['ja'], slot='p3-complete-1'),
-        turn(p1_role, p1['responseKo'], p1['responseJa']),
-        turn('나', p2['line'], p2['ja'], slot='p3-complete-2'),
-        turn(p2_role, p2['responseKo'], p2['responseJa']),
+        t(scene_role, item['incoming']['ko'], item['incoming']['ja']),
+        t('나', p1['line'], p1['ja'], slot='p3-complete-1'),
+        t(p1_role, p1['responseKo'], p1['responseJa']),
+        t('나', p2['line'], p2['ja'], slot='p3-complete-2'),
+        t(p2_role, p2['responseKo'], p2['responseJa']),
     ])
     p1_reorder, p1_fill, p1_translate = activities('p1', p1, f'{where} p1')
     p2_reorder, p2_fill, p2_translate = activities('p2', p2, f'{where} p2')
     pages = [
-        episode_card(item, course_name),
+        episode_card(item, course_name, course_key),
         page('scene', '오늘의 장면', '今日のワンシーン', f'<div class="dialogue">{scene}</div>',
              (item['sceneKo'], item['sceneJa'])),
         (f'<div class="transition-page" data-page-id="lesson-goal"><span class="transition-kicker">목표</span>'
@@ -552,23 +581,23 @@ def render_lesson(item: dict, course_name: str, final: bool, where: str = '') ->
         page('p3-complete', '장면 완성하기', '場面を完成しよう', f'<div class="dialogue">{complete}</div>',
              ('핵심 대사 두 개를 완성하고 장면을 이어 보세요.', '中心のセリフを2つ完成させ、場面を続けてみましょう。')),
         page('p3-freetalk', '자유 대화', 'フリートーク',
-             f'<div class="dialogue">{turn("선생님", item.get("freeQuestionKo", item["canDoKo"]), item.get("freeQuestionJa", item["canDoJa"]))}'
-             f'{open_turn("나", item.get("freePromptJa", "自分の経験を韓国語で話そう"), "p3-freetalk-answer", tall=True)}'
-             f'{open_turn("나", item.get("tutorQuestionJa", "先生にも同じことを聞こう"), "p3-freetalk-question", seed=item.get("tutorQuestionKo", "선생님은 어때요?"))}'
-             f'{open_turn("선생님", "先生の答え", "p3-freetalk-tutor-answer")}</div>',
+             f'<div class="dialogue">{t("선생님", item.get("freeQuestionKo", item["canDoKo"]), item.get("freeQuestionJa", item["canDoJa"]))}'
+             f'{ot("나", item.get("freePromptJa", "自分の経験を韓国語で話そう"), "p3-freetalk-answer", tall=True)}'
+             f'{ot("나", item.get("tutorQuestionJa", "先生にも同じことを聞こう"), "p3-freetalk-question", seed=item.get("tutorQuestionKo", "선생님은 어때요?"))}'
+             f'{ot("선생님", "先生の答え", "p3-freetalk-tutor-answer")}</div>',
              ('자기 이야기를 한 뒤, 저한테도 물어보세요.', '自分の話をしたら、私にも聞いてみてください。')),
         page('native-tip', '원어민 팁', 'ネイティブのひとこと',
              nuance_tip(item)),
     ])
     if final:
         ending_turns = [
-            turn(ending_role, item['ending']['openKo'], item['ending']['openJa']),
-            turn('나', p1['line'], p1['ja'], slot='ending-1'),
-            turn(p1_role, p1['responseKo'], p1['responseJa']),
-            turn('나', p2['line'], p2['ja'], slot='ending-2'),
-            turn(p2_role, p2['responseKo'], p2['responseJa']),
-            turn('나', item['ending']['confirmKo'], item['ending']['confirmJa']),
-            turn(item['ending'].get('closeRole', p2_role), item['ending']['closeKo'], item['ending']['closeJa']),
+            t(ending_role, item['ending']['openKo'], item['ending']['openJa']),
+            t('나', p1['line'], p1['ja'], slot='ending-1'),
+            t(p1_role, p1['responseKo'], p1['responseJa']),
+            t('나', p2['line'], p2['ja'], slot='ending-2'),
+            t(p2_role, p2['responseKo'], p2['responseJa']),
+            t('나', item['ending']['confirmKo'], item['ending']['confirmJa']),
+            t(item['ending'].get('closeRole', p2_role), item['ending']['closeKo'], item['ending']['closeJa']),
         ]
         pages.append(page('course-epilogue', '코스 에필로그', 'コース・エピローグ',
                           f'<div class="dialogue">{"".join(ending_turns)}</div>',
@@ -577,13 +606,13 @@ def render_lesson(item: dict, course_name: str, final: bool, where: str = '') ->
         teaser = [
             # Reuse the scene's real prompt so the learner produces each target once.
             # A prewritten summary here duplicated both target lines before the slots.
-            turn(teaser_role, item['incoming']['ko'], item['incoming']['ja']),
-            turn('나', p1['line'], p1['ja'], slot='next-1'),
-            turn(p1_role, p1['responseKo'], p1['responseJa']),
-            turn('나', p2['line'], p2['ja'], slot='next-2'),
-            turn(p2_role, p2['responseKo'], p2['responseJa']),
-            turn(item['teaser'].get('bridgeRole', p2_role), item['teaser']['bridgeKo'], item['teaser']['bridgeJa']),
-            turn(item['nextHook']['role'], item['nextHook']['ko'], item['nextHook']['ja']),
+            t(teaser_role, item['incoming']['ko'], item['incoming']['ja']),
+            t('나', p1['line'], p1['ja'], slot='next-1'),
+            t(p1_role, p1['responseKo'], p1['responseJa']),
+            t('나', p2['line'], p2['ja'], slot='next-2'),
+            t(p2_role, p2['responseKo'], p2['responseJa']),
+            t(item['teaser'].get('bridgeRole', p2_role), item['teaser']['bridgeKo'], item['teaser']['bridgeJa']),
+            t(item['nextHook']['role'], item['nextHook']['ko'], item['nextHook']['ja']),
         ]
         pages.append(page(f'episode{item["number"] + 1}-taste', '다음 장면', '次の場面',
                           f'<div class="dialogue">{"".join(teaser)}</div>',
@@ -684,7 +713,8 @@ def render(data: dict) -> None:
         start = source.index('  <div class="phone">') + len('  <div class="phone">')
         end = source.index('\n  </div>', start)
         authored = '\n    ' + render_lesson(item, data['courseTitleKo'], item['number'] == 10,
-                                                f'{data["course"]} {item["slug"]}') + '\n'
+                                                f'{data["course"]} {item["slug"]}',
+                                                data['course']) + '\n'
         rendered = source[:start] + authored + source[end:]
         # The path is computed, not written down. The literal here used to be
         # `../../../../../../runtime/js/yomi.js` — six levels to a directory that
