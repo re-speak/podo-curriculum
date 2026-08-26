@@ -249,7 +249,8 @@ def open_greeting(asks):
     return "".join(out)
 
 
-NEEDS = '''
+def needs(opening):
+    return f'''
     <!-- ============ ニーズ把握 ============
          Three questions, and all three feed the report: the motive picks which contextual
          course is laid down, the goal sets the distance, the pace drives the month count.
@@ -260,11 +261,19 @@ NEEDS = '''
          which left an English-speaking tutor with nothing to read at the moment they have
          to ask a learner for personal information — the first version of this fix hid the
          English in a tutor-only note, but a line the learner is allowed to hear does not
-         need hiding, and the page already pairs its languages everywhere else. -->
+         need hiding, and the page already pairs its languages everywhere else.
+
+         The note carries the tutor's own line rather than asking them to invent one. A
+         tutor pilot on 2026-08-26 read the page cold and it landed as personal questions
+         arriving out of nowhere; naming the shift first is what makes it the next part of
+         the lesson. It is written the way a tutor talks, not the way an app instructs —
+         it is said out loud — and it is written per band, because a 初級 learner cannot
+         take the sentence a 上級 learner wants. So each deck registers its own
+         (needs_line=) and this block only says what the tutor does with it. -->
     <div class="brand-page bleed" data-page-id="needs-intro">
       <h2 class="brand-title">ニーズ把握<span class="en" style="display:block;margin-top:5px;font-size:21px;font-weight:800;color:rgba(28,28,28,.56);letter-spacing:-.01em;line-height:1.25;">Needs Analysis</span></h2>
       <p class="brand-sub">学習のニーズについて、少し教えてください。<span class="en" style="display:block;margin-top:3px;font-size:13px;font-weight:600;color:rgba(28,28,28,.5);line-height:1.45;">Please tell me a little about your learning needs.</span></p>
-      <div class="tutor-note" style="text-align:left;">Read both lines, then move on — the questions are on the next three pages, not this one.</div>
+      <div class="tutor-note" style="text-align:left;">Your line: “{opening}” Then move on — don't ask the questions here; each has its own page.</div>
       <img class="brand-art" src="../assets/podo-character-ask.png" alt="">
     </div>
 
@@ -784,6 +793,7 @@ register(
     title={"ko": "체험 레슨 · 초급", "en": "Trial lesson · Elementary", "ja": "体験レッスン 初級"},
     source=T1_SOURCE,
     lesson=T1_LESSON,
+    needs_line="Okay, now I'm going to ask you a few questions about your English. Let's start on the next page.",
     greeting=greeting(T1_GREETING),
     lesson_goal="",
 )
@@ -796,6 +806,7 @@ register(
     title={"ko": "체험 레슨 · 중급", "en": "Trial lesson · Intermediate", "ja": "体験レッスン 中級"},
     source=T2_SOURCE,
     lesson=T2_LESSON,
+    needs_line="Alright, next we'll do your needs analysis — it starts on the next page.",
     greeting=open_greeting(OPEN_GREETING),
     lesson_goal="",
     freetalk=True,
@@ -809,6 +820,7 @@ register(
     title={"ko": "체험 레슨 · 중고급", "en": "Trial lesson · Upper-intermediate", "ja": "体験レッスン 中上級"},
     source=T3_SOURCE,
     lesson=T3_LESSON,
+    needs_line="Okay, so next up is your needs analysis — a few questions about what you want to use English for. Let's go to the next page.",
     greeting=open_greeting(OPEN_GREETING),
     lesson_goal="",
     freetalk=True,
@@ -822,6 +834,7 @@ register(
     title={"ko": "체험 레슨 · 고급", "en": "Trial lesson · Advanced", "ja": "体験レッスン 上級"},
     source=T4_SOURCE,
     lesson=T4_LESSON,
+    needs_line="Right, let's do your needs analysis next — I want to get a sense of what you're aiming for. Let's head to the next page.",
     greeting=open_greeting(OPEN_GREETING),
     lesson_goal="",
     freetalk=True,
@@ -836,7 +849,7 @@ def build(key):
     out = [
         head(spec["id"], spec["level"], spec["title"], spec["cover"]),
         spec["greeting"],
-        NEEDS,
+        needs(spec["needs_line"]),
         TRIAL_INTRO,
         # Empty on every band: all four carry the source lesson's own goal page, lifted
         # with the rest. Kept as a seam — a band that ever needs a wrapper goal puts it
