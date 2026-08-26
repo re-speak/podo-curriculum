@@ -40,7 +40,8 @@ The shared rules under *The tutor's register* take these forms:
 | Invite rather than command | `읽어 보세요` → `한 번 읽어 볼까요?` |
 | Name the subject | `막히면` → `학생이 막히면`; `읽고` → `학생이 읽고 나면` |
 | Reassure on covered ground | `이미 알고 있는 글자죠?` · `이렇게만 기억해 주시면 돼요` |
-| Tutor demonstration, when genuinely needed | `제가 먼저 읽어 볼게요` — only for a new sound or a role the tutor holds |
+| Tutor demonstration, when genuinely needed | `제가 먼저 읽을게요` — only for a new sound or a role the tutor holds. Plain, not `읽어 볼게요`: the tutor is demonstrating, not attempting |
+| Learner instruction ending | The activity decides, not taste — silent screen actions take `눌러 보세요`, anything said aloud takes `읽어 볼까요?`, and the Japanese moves with it (`てください` / `てみましょうか`) |
 
 The Hangul track additionally has a set of **settled repeated phrases** agreed with a native
 proofreader — the exact strings for pages that recur across decks. They live in
