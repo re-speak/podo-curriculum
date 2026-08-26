@@ -300,5 +300,35 @@
 5. **06→07 예고 회수**, **09→10 사건 상연** (L3·L4).
 6. **drama-friends 자리 채우기 팁 7건** + N4·N5.
 
-1~3 은 확정된 판단이라 바로 착수할 수 있다. 4 는 과 하나를 다시 설계하는 일이고,
-5~6 은 아직 결정이 열려 있다.
+## 8. 적용 결과 (2026-08-26)
+
+열다섯 건 모두 결정되어 `fix/kr-banmal-audit` 브랜치에 반영했다. 결정 기록은
+[`../banmal-audit-decisions.html`](../banmal-audit-decisions.html) 에 그대로 남아 있다.
+
+| | 결정 | 손댄 곳 |
+| --- | --- | --- |
+| B1 | 나이 확인을 장면 앞으로 | 02 의 네 장면 + 01 예고편. **드릴 무변경** |
+| B2 | 09 를 실제 내용으로 개제, 반존대는 별도 과 후보 | 덱·lesson.yaml·course.yaml·목차 |
+| B3 | 07 장면에 실수를 넣음 | 07 의 네 장면 |
+| B4 | 10 첫 장면에서 반말을 상연 | 09 예고편 + 10 의 세 장면 |
+| B5 | 형 → 선배 | 07·08. 드릴의 형·누나·선배님 변화는 유지 |
+| B6 | 하강 억양 설명 삭제 | 05 원어민 팁 |
+| B7 | 규칙을 체크로 | `tools/authoring/check_scene_moves.py` + 테스트 9개 |
+| B8·B9 | 제안한 재작성 채택 | 04 는 친구의 두 줄만, 05 는 학습자 한 줄만 |
+| B10 | 나머지 여섯 과 전부 | 02·03·06·07·09·10 |
+| B11 | 중복 허용 | 결정만 기록 |
+| B12 | 원어민 팁 일곱 개 집필 | drama-friends 04–10 |
+| B13·B14 | A 안 채택 | 두 예고편 줄 |
+| B15 | 디렉터리 삭제 | `courses/kr/ctx-drama-family-intermediate` (53 파일) |
+
+게이트: `check_deck.py` 938덱 0에러(경고 109는 기존과 동일), `check_structure.py` 0문제,
+`validate.py --env stage` ✓ valid(은퇴 확인 포함), authoring 테스트 전부 통과.
+`test_vocabulary` 의 영어 running lexicon 실패는 `origin/stage` 에서도 같으므로 이 변경과 무관하다.
+
+### 남은 것
+
+- **`check_scene_moves.py` 를 머지 게이트에 넣는 일.** 지금 코퍼스에 13건이 남아 있고
+  대부분 진짜다 — kpop·travel 코스가 같은 장면 틀에서 같은 결함을 만들었다. 이번 PR 이
+  건드리지 않은 덱이라 지금 게이트로 올리면 모든 PR 이 막힌다. 13건을 먼저 정리해야 한다.
+- **반존대 과.** B2 로 목차에 후보로만 남겼다. 표현 두 개를 새로 정해야 한다.
+- **영어 running lexicon.** `tools/authoring/test_vocabulary.py` 가 기존부터 빨갛다.
