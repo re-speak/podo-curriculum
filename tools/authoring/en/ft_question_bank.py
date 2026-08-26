@@ -39,6 +39,11 @@ PAGES = ("warm-1", "warm-2", "q1", "q2", "q3", "q4", "q5", "q6")
 # here is therefore an editorial decision, not an automatic level rewrite.
 ACCESSIBLE_ADAPTATIONS = {
     (6, "q1"),
+    (5, "warm-1"),
+    (5, "warm-2"),
+    (5, "q1"),
+    (5, "q2"),
+    (5, "q6"),
     (38, "warm-1"),
     (38, "q5"),
     (104, "q6"),
