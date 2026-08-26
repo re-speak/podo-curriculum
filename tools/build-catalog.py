@@ -64,6 +64,9 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
 import model  # noqa: E402
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent / "authoring"))
+import course_naming as naming  # noqa: E402
+
 REPO = model.REPO
 TEMPLATES = REPO / "tools" / "catalog"
 
@@ -529,33 +532,23 @@ def lesson_entry(course: model.Course, lesson: model.Lesson, deck_hrefs: dict,
 def unit_entry(course: model.Course, no: int, decks: dict, family: dict) -> dict:
     """한 코스 = 트랙 안의 단원 하나.
 
-    껍데기 값(label · title · subtitle)이 단원 머리글에 그대로 뜬다. 제목에서 트랙
-    이름을 떼는 것은 머리글이 "핵심 문법 패턴 · 초급 · 1" 처럼 트랙 이름을 한 번 더
-    말하지 않게 하려는 것뿐이다 — 뗄 수 없으면 통째로 쓴다."""
+    껍데기 값(label · title · subtitle)이 단원 머리글에 그대로 뜬다. 제목에서 레벨과
+    계열을 떼는 것은 머리글이 "(중급) 드라마 · 친구" 처럼 이미 옆의 칩과 머리글이 하는
+    말을 한 번 더 하지 않게 하려는 것뿐이다 — `short_titles` 가 한 자리에서 뗀다."""
     spec = course.spec
     level = course_level(course)
-    title = pick(spec.get("title"), "ko", "ja", "en")
-    prefix = f"{family['ko']} · "
     lessons = [
         lesson_entry(course, l, decks, level, family)
         for l in sorted(course.lessons, key=lambda l: l.week)
     ]
-    # 코스 제목도 세 언어가 course.yaml 에 들어 있다. 트랙 이름을 떼는 일은 언어마다
-    # 접두사가 달라서 각각 따로 해야 한다.
-    titles = {}
-    for code in ("ko", "ja", "en"):
-        v = (spec.get("title") or {}).get(code)
-        if not v:
-            continue
-        v = str(v)
-        fam = f"{family.get(code) or family['ko']} · "
-        titles[code] = v[len(fam):] if v.startswith(fam) else v
+    titles = short_titles(course)
+    title = pick(titles, "ko", "ja", "en")
 
     return {
         # 숫자만 넘기고 "코스"는 화면에서 붙인다 — 표시 언어마다 단위가 다르다.
         "no": no,
         "label": f"{no}{UNIT_WORD}",
-        "title": title[len(prefix):] if title.startswith(prefix) else title,
+        "title": title,
         "titles": titles,
         "subtitle": pick(spec.get("title"), "ja", "en"),
         "levels": [level],
@@ -884,43 +877,20 @@ window.PODO_TOC = %s;
 """
 
 
-def course_short(course: model.Course, family: dict, level: str) -> dict:
-    """코스 이름에서 트랙 이름과 레벨을 뗀 나머지. 세 언어를 같은 자리에서 뗀다.
+def short_titles(course: model.Course) -> dict:
+    """코스 이름에서 레벨과 계열을 뗀 나머지. 세 언어를 같은 자리에서 뗀다.
 
-    제목은 `핵심 문법 패턴 · 초급 · 1` 처럼 마디로 적힌다. 차례에서는 트랙 이름이 머리글에,
-    레벨이 칩에 이미 한 번씩 있으므로 세 번째로 되풀이하지 않는다.
+    제목은 `(중급) 드라마 · 친구` 로 적힌다 — 레벨이 괄호 안에, 계열이 그 뒤에.
+    차례에서는 레벨이 칩에, 계열이 머리글에 이미 한 번씩 있으므로 세 번째로
+    되풀이하지 않는다.
 
-    **뗄 자리는 한국어 제목으로 정하고 나머지 언어에 그대로 적용한다.** 값으로 비교하면
-    영어 커리큘럼에서 어긋난다 — 코스 제목의 en 은 `Core grammar patterns` 인데 트랙의 en
-    이름은 `Core Patterns` 이라 앞머리가 안 떨어지고, 그대로 두면 차례에 트랙 이름이 한 번
-    더 실린다. 세 언어의 마디 수는 항상 같아서 자리로 떼면 어긋날 데가 없다.
-
-    첫 마디는 트랙 이름일 때만 뗀다. `비즈니스 영어 · 회의와 발표 · B2` 처럼 트랙 안에서
-    갈라지는 이름은 그 자체가 알맹이라, 떼면 무엇에 관한 코스인지가 사라진다."""
-    def dash(x: str) -> str:
-        return x.replace("–", "-").replace("—", "-")
-
-    titles = {code: str(v) for code, v in (course.spec.get("title") or {}).items()
-              if code in ("ko", "ja", "en") and v}
-    ko = titles.get("ko", "")
-    parts_ko = ko.split(" · ")
-    names = {dash(level)} | {dash(level_name(level, c)) for c in ("ko", "ja", "en")}
-    keep = [i for i, seg in enumerate(parts_ko)
-            if not (i == 0 and seg == family.get("ko")) and dash(seg) not in names]
-
-    out = {}
-    for code, raw in titles.items():
-        parts = raw.split(" · ")
-        picked = ([parts[i] for i in keep if i < len(parts)]
-                  if len(parts) == len(parts_ko)
-                  else [p for p in parts if dash(p) not in names])
-        out[code] = " · ".join(picked) or level_name(level, code)
-    return out
-
-
-def level_name(level: str, code: str) -> str:
-    """레벨 이름의 표시 언어. 표에 없으면(영어 커리큘럼의 CEFR) 그대로 둔다."""
-    return (strings().get("level", {}).get(level, {}) or {}).get(code) or level
+    떼는 규칙은 여기 없다. `course_naming.topic_of` 가 `title_for` 의 역함수이고,
+    제목을 짓는 쪽과 읽는 쪽이 같은 함수를 봐야 어긋나지 않는다 — 카탈로그가 제 손으로
+    앞머리를 떼던 동안 영어 코스는 `(中級) 旅行 · 空港と移動` 을 통째로 싣고 있었다.
+    카탈로그 빌드는 allowFailure 라 아무것도 빨개지지 않았다."""
+    return {code: naming.topic_of(course.lang, course.slug, code, str(value))
+            for code, value in (course.spec.get("title") or {}).items()
+            if code in naming.LANGS and value}
 
 
 def track_toc(in_track: list[model.Course], deck_maps: dict, family: dict) -> list[dict]:
@@ -952,7 +922,7 @@ def track_toc(in_track: list[model.Course], deck_maps: dict, family: dict) -> li
             continue
         out.append({
             "lv": level,
-            "n": course_short(course, family, level),
+            "n": short_titles(course),
             "group": not solo_track and len(rows) > 1,
             "l": rows,
         })

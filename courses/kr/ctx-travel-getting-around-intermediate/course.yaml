@@ -21,9 +21,9 @@ spec:
   difficulty: INTERMEDIATE
 
   title:
-    ko: 상황별 한국어 · 길 & 교통 · 중급
-    en: Korean in context · Getting around · Intermediate
-    ja: 場面別の韓国語 · 道と交通 · 中級
+    ko: (중급) 여행 · 길 & 교통
+    en: (Intermediate) Travel · Getting around
+    ja: (中級) 旅行 · 道と交通
 
   # 학습자가 카탈로그에서 읽는 문장이다. 앱이 로케일로 고르므로 JP 마켓 코스는
   # ja 가 화면에 뜬다 — 여기 세 언어는 tools/course-copy.json 이 원본이고,

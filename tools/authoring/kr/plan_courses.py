@@ -51,6 +51,8 @@ import pathlib
 import re
 import sys
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
+import course_naming as naming  # noqa: E402  (path set above)
 import track_parsers
 
 VALID_COUNTRY_CODES = {"KR", "JP"}
@@ -135,10 +137,12 @@ DIFFICULTY = {"왕초급": "BEGINNER", "초급": "BEGINNER", "초중급": "UPPER
               "고급": "ADVANCED"}
 LEVEL_SLUG = {"왕초급": "starter", "초급": "beginner", "초중급": "upper-beginner",
               "중급": "intermediate", "중고급": "upper-intermediate", "고급": "advanced"}
-LEVEL_JA = {"왕초급": "超入門", "초급": "初級", "초중급": "初中級",
-            "중급": "中級", "중고급": "中上級", "고급": "上級"}
-LEVEL_EN = {"왕초급": "Starter", "초급": "Beginner", "초중급": "Upper beginner",
-            "중급": "Intermediate", "중고급": "Upper intermediate", "고급": "Advanced"}
+# The level words a learner reads are not here. They are in
+# ../course_naming.py, keyed by `difficulty` rather than by the table of
+# contents' word, because that is the key the app's level filter uses. This file
+# held its own copy until 2026-08-26 and the two disagreed — `Upper beginner`
+# here against `Upper Beginner` in the English corpus, and `超入門` against a
+# course the filter called `初級`.
 
 # Attribute order is not ours to rely on: a deck that has been through an HTML
 # formatter comes back as `<meta content="…" name="podo:title-ko"/>`, and the
@@ -193,33 +197,33 @@ def pack_core(units: list) -> list[dict]:
     return courses
 
 
-def compose(course: dict, cfg: dict) -> dict:
-    """Give a course a slug and titles that name its track and level.
+def compose(course: dict, cfg: dict, rung: int) -> dict:
+    """Give a course its slug, and the title the catalogue shows.
 
     Parsers return a *bare* name — `drama-crush`, `me-lately`, `1` — because the
     track knows its own prefix and the level comes off the course. Composing here
     means a slug can never disagree with the track it sits in.
 
-        ctx-drama-crush-intermediate     상황별 한국어 · 설렘 & 고백 · 중급
-        talk-me-lately-advanced          프리토킹 · 요즘의 나 · 고급
-        core-1-beginner                  핵심 문법 패턴 · 1 · 초급
-        hangul-starter                   한글 떼기 · 왕초급
+        ctx-drama-crush-intermediate     (중급) 드라마 · 설렘 & 고백
+        talk-me-lately-advanced          (고급) 요즘의 나
+        core-beginner-1                  (초급) 핵심 패턴 1
+        hangul-starter                   (초급) 한글 떼기
 
-    **The level goes last** — it is the least distinguishing part of the name, so
-    putting it at the end lets `ctx-drama-*` and `ctx-kpop-*` sort together by
-    show instead of being scattered across levels.
+    **The slug still ends in the level**, so `ctx-drama-*` and `ctx-kpop-*` sort
+    together by show instead of scattering across levels — except on the core
+    ladder, where `levelFirst` keeps the progression in order because the bare
+    name there is only a counter.
 
-    **Except where the bare name is only a counter.** `2-core-patterns` sets
-    `levelFirst`, because there the level is the identity and the number merely
-    orders within it — level-last would interleave `core-1-advanced` with
-    `core-1-beginner` and lose the progression:
+    **The title does not.** Its shape belongs to `course_naming`, shared with the
+    English generator, the covers and the PR gate — the level in front, the
+    sub-family the rail header does not already say, and the topic. Composing it
+    anywhere else is how the two corpora ended up with two shapes and how the
+    covers ended up naming a level the filter disagreed with.
 
-        core-beginner-1 … -4      핵심 문법 패턴 · 초급 · 1
-        core-upper-beginner-1 … -2
-        core-intermediate-1 … -3
-
-    A single-course track drops the bare part rather than repeating itself
-    (`hangul-starter`, not `hangul-reading-starter`).
+    `rung` is this course's place on its track, which the core ladder puts in the
+    title in place of a topic. `course_naming.ladder` is authoritative and counts
+    only enabled courses; this counts all of them, so a plan that disables one
+    mid-ladder is caught by the gate rather than here.
     """
     level = course["level"]
     bare = course["slug"].strip("-")
@@ -227,14 +231,11 @@ def compose(course: dict, cfg: dict) -> dict:
     order = (lvl, bare) if cfg.get("levelFirst") else (bare, lvl)
     course["slug"] = "-".join(x for x in (cfg["prefix"], *order) if x)
 
-    label = {"ko": level, "en": LEVEL_EN[level], "ja": LEVEL_JA[level]}
     course["title"] = {
-        k: " · ".join(
-            x for x in (cfg["name"][k],
-                        *((label[k], course["title"].get(k)) if cfg.get("levelFirst")
-                          else (course["title"].get(k), label[k])))
-            if x)
-        for k in ("ko", "en", "ja")
+        k: naming.title_for("kr", course["slug"], k,
+                            course["title"].get(k) or cfg["name"][k],
+                            DIFFICULTY[level], rung)
+        for k in naming.LANGS
     }
     return course
 
@@ -423,7 +424,7 @@ def plan_track(track: pathlib.Path, dry: bool, only_course: str | None = None) -
 
     parsed = parser(track)
     courses = pack_core(parsed) if track.name == "2-core-patterns" else parsed
-    courses = [compose(c, cfg) for c in courses]
+    courses = [compose(c, cfg, i) for i, c in enumerate(courses, 1)]
     copy = course_copy()
     selected_courses = [c for c in courses if only_course is None or c["slug"] == only_course]
     if not selected_courses:

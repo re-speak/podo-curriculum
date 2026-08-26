@@ -21,9 +21,9 @@ spec:
   difficulty: ADVANCED
 
   title:
-    ko: 프리토킹 · 요즘의 나 · 고급
-    en: Free talking · Me lately · Advanced
-    ja: フリートーキング · 最近のわたし · 上級
+    ko: (고급) 요즘의 나
+    en: (Advanced) Me lately
+    ja: (上級) 最近のわたし
 
   # 학습자가 카탈로그에서 읽는 문장이다. 앱이 로케일로 고르므로 JP 마켓 코스는
   # ja 가 화면에 뜬다 — 여기 세 언어는 tools/course-copy.json 이 원본이고,

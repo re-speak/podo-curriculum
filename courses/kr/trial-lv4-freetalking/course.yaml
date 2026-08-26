@@ -30,9 +30,9 @@ spec:
   difficulty: ADVANCED
 
   title:
-    ko: 체험 레슨 · 고급
-    en: Trial lesson · Advanced
-    ja: 体験レッスン · 上級
+    ko: (고급) 체험 레슨
+    en: (Advanced) Trial lesson
+    ja: (上級) 体験レッスン
 
   description:
     ko: 주제를 놓고 자기 생각을 말해 보는 55분 프리토킹 체험 레슨.
