@@ -59,13 +59,20 @@ arguments, `promote.py` and `repoint-shared.py` walk the whole repository; that 
 deliberate full-corpus regeneration, not shorthand for “promote my changed course.”
 
 - **`tools/authoring/`** holds the checks that are true of both curricula —
-  `check_deck.py`, `check_quotes.py`, `vocabulary.py`, `page_review.py`. Run them
-  against either corpus; `--all` walks the whole repo. **`tools/authoring/{kr,en}/`**
+  `check_deck.py`, `check_quotes.py`, `check_scene_moves.py`, `vocabulary.py`,
+  `page_review.py`. Run them against either corpus; `--all` walks the whole repo. **`tools/authoring/{kr,en}/`**
   holds what is genuinely language-specific, plus the lesson scaffolder
   (`new_lesson.py`), course planning and the brief/catalog builders. Run all of them
   against the drafts, not `courses/`. **A new check goes in the shared directory
   unless it cannot be written for the other language** — filing a general check under
   one language is how the last round of duplicated rules started.
+- **`check_scene_moves.py` is advisory for now, like `check_quotes.py`.** It finds a
+  turn that repeats what the turn before it just said — the trace an *initiating*
+  target leaves when it is slotted into a scene's reacting position (turn 2 or 4),
+  because turn 1 already took the opening move. The 2026-08-26 banmal audit found
+  this in eight of ten scenes in one course. It stays out of the merge gate until
+  the thirteen remaining hits elsewhere in `3-contextual-korean` are triaged;
+  gating it today would fail PRs on decks nobody in that PR touched.
 - **Promotion is named in a manifest**, `promotion.yaml`, sitting beside the
   drafts. Adding a lesson to a course means adding a row there — that row is the
   reviewable part. `tools/make-promotion.py` derives the whole file from the decks

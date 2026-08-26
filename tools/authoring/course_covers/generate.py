@@ -60,6 +60,24 @@ HEIGHT = 1080
 SCALE = 6  # the card is 144x180; everything below is authored at that times six
 THUMBNAIL = "assets/cover.png"
 
+# The web thumbnail.  `cover.png` is what grape gets and it is ~220 KB; the public
+# catalogue draws the same artwork at 36 px in a row and 118 px in an open course,
+# and a track page holding 22 of them cannot pay 5 MB for that.  Two hundred and
+# eighty-eight is the 144 px card at 2x, which is the largest the catalogue ever
+# draws it, and WebP at q80 puts it under 8 KB — the whole corpus is then lighter
+# than three of the PNGs.
+#
+# It is committed art, not a build-time computation, for the same reason the PNG
+# is: `tools/build-catalog.py` runs inside the prod deploy off a
+# `tools/requirements.txt` that is deliberately three packages, and resizing there
+# would put an image library in the merge gate.  Here it is one more subprocess in
+# a script that already shells out to rsvg-convert and already proves its output
+# byte-for-byte with `--check`.
+THUMB_WIDTH = 288
+THUMB_HEIGHT = 360
+THUMB_QUALITY = 80
+WEB_THUMBNAIL = "assets/cover-thumb.webp"
+
 
 # ---------------------------------------------------------------- colour
 #
@@ -373,6 +391,20 @@ def render(svg_path: pathlib.Path, png_path: pathlib.Path,
         )
 
 
+def shrink(png_path: pathlib.Path, webp_path: pathlib.Path) -> None:
+    """The web thumbnail, from the PNG this script just rendered.
+
+    Reading the PNG rather than the SVG keeps one render in the chain: whatever
+    the cover is, the thumbnail is that same image, smaller. cwebp is
+    deterministic for fixed arguments, so `--check` can compare bytes."""
+    subprocess.run(
+        ["cwebp", "-quiet", "-q", str(THUMB_QUALITY), "-m", "6",
+         "-resize", str(THUMB_WIDTH), str(THUMB_HEIGHT),
+         str(png_path), "-o", str(webp_path)],
+        check=True,
+    )
+
+
 def discover() -> list[pathlib.Path]:
     return sorted(COURSES.glob("*/*/course.yaml"))
 
@@ -385,6 +417,7 @@ def generate(course_path: pathlib.Path, rung: int | None, check: bool) -> list[s
     assets = course_path.parent / "assets"
     svg_path = assets / "cover.svg"
     png_path = assets / "cover.png"
+    webp_path = assets / "cover-thumb.webp"
     errors: list[str] = []
 
     if check:
@@ -406,12 +439,20 @@ def generate(course_path: pathlib.Path, rung: int | None, check: bool) -> list[s
             render(probe_svg, probe_png, svg_path.parent)
             if probe_png.read_bytes() != png_path.read_bytes():
                 errors.append(f"{png_path.relative_to(ROOT)}: rendered PNG is stale")
+            if not webp_path.is_file():
+                errors.append(f"{webp_path.relative_to(ROOT)}: web thumbnail is missing")
+            else:
+                probe_webp = pathlib.Path(tmp) / "cover-thumb.webp"
+                shrink(probe_png, probe_webp)
+                if probe_webp.read_bytes() != webp_path.read_bytes():
+                    errors.append(f"{webp_path.relative_to(ROOT)}: web thumbnail is stale")
         return errors
 
     assets.mkdir(parents=True, exist_ok=True)
     course_path.write_text(expected_manifest, encoding="utf-8")
     svg_path.write_text(expected_svg, encoding="utf-8")
     render(svg_path, png_path)
+    shrink(png_path, webp_path)
     return errors
 
 
@@ -433,9 +474,11 @@ def main() -> int:
     parser.add_argument("--only", metavar="LANG/SLUG", help="generate one course")
     args = parser.parse_args()
 
-    if shutil.which("rsvg-convert") is None:
-        print("rsvg-convert is required", file=sys.stderr)
-        return 2
+    for tool, install in (("rsvg-convert", "brew install librsvg"),
+                          ("cwebp", "brew install webp")):
+        if shutil.which(tool) is None:
+            print(f"{tool} is required — {install}", file=sys.stderr)
+            return 2
 
     everything = discover()
     rungs = rungs_for(everything)  # numbering always reads the whole catalogue

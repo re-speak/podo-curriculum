@@ -107,6 +107,7 @@ KO_END = ".!?"          # Korean decks punctuate the spoken line with ASCII too
 TAG = re.compile(r"<[^>]+>")
 PAGE_ID = re.compile(r'data-page-id="([^"]+)"')
 SYNC_ID = re.compile(r'data-sync-id="([^"]+)"')
+EMPTY_YOMI = re.compile(r'<span\s+class="yomi">\s*＿+\s*</span>')
 SUBTITLE = re.compile(r'<p class="section-subtitle([^"]*)"[^>]*>(.*?)</p>', re.S)
 SPAN_KO = re.compile(r'<span class="ko">(.*?)</span>', re.S)
 SPAN_JA = re.compile(r'<span class="ja">(.*?)</span>', re.S)
@@ -1880,6 +1881,11 @@ def check(path):
         errs.append(
             'missing <meta name="podo:target-language" content="en"> — shared '
             "tutor controls will fall back to Korean"
+        )
+    if not is_english and EMPTY_YOMI.search(html):
+        errs.append(
+            "empty `.yomi` placeholder — omit underscore-only readings; the input or "
+            "masked Korean already shows where the learner answers"
         )
     if (
         is_english

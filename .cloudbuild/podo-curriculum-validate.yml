@@ -311,7 +311,10 @@ steps:
 
         # 한국어 전용. 판정을 내리는 검사만 게이트에 넣는다 —
         # check_distractors 는 설계상 후보만 내놓으므로 --strict 없이는 판정이 아니다.
-        for check in check_structure check_teaching check_reorder check_freetalk check_syllabus check_chips; do
+        # check_tone 은 tone-standard.json 의 settled 표만 판정한다. 아직 갈린 동사는
+        # mixed 에 있어 보고만 하므로, 게이트에 넣어도 PR 을 막지 않는다 — 막는 것은
+        # 이미 굳은 형태를 되돌리는 변경뿐이다.
+        for check in check_structure check_teaching check_reorder check_freetalk check_syllabus check_chips check_tone; do
           run "kr/$$check" python3 "tools/authoring/kr/$$check.py"
         done
 
