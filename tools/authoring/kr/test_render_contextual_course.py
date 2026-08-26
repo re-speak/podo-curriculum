@@ -91,6 +91,14 @@ class StaticControlTests(unittest.TestCase):
         self.assertIn('data-answer="문장"', exact)
         self.assertIn('<textarea class="free-input"', open_answer)
 
+    def test_dialogue_completion_omits_a_reading_for_the_hidden_answer(self):
+        control = renderer.turn(
+            "나", "자리 나면 전화 주시겠어요?", "席が空いたら電話していただけますか？",
+            slot="p3-complete-2", yomi="チャリ ナミョン チョナ チュシゲッソヨ",
+        )
+        self.assertIn('<input class="slot-input"', control)
+        self.assertNotIn('class="yomi"', control)
+
     def test_spoken_response_uses_shared_feedback_activity(self):
         control = renderer.feedback_activity("p1-write-answer", "自分の話 & 例")
         self.assertIn('class="fb-compose"', control)
