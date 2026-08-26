@@ -409,6 +409,59 @@ def _one_line(node) -> str:
     return " ".join(node.get_text(" ", strip=True).split())
 
 
+# 덱이 예문 안에서 배우는 조각에 씌우는 표시. 929개 덱을 통틀어 이 둘뿐이고
+# (`ending` 883 · `topic` 38), 조사 하나를 가르치는 과가 `topic` 을 쓴다.
+_MARKS = {"ending", "topic"}
+
+# 덱이 패턴 자리에 번호만 적어 둔 경우. 이름이 아니라 자리표라 카드에 실을 수 없다.
+_GENERIC_ACT = re.compile(r"^(pattern|パターン|패턴)\s*\d+$", re.IGNORECASE)
+
+
+def _marked(node) -> tuple[str, list[list[int]]]:
+    """덱의 예문 한 줄과, 그 안에서 배우는 조각이 앉은 자리.
+
+    덱은 문장을 통째로 쓰고 가르치는 조각에만 표시를 씌운다. 카탈로그가 그리는
+    `<mark>` 는 같은 조각이라, 문자열을 다시 찾지 않고 덱이 이미 표시해 둔 자리를 그대로
+    받아 적는다 — 같은 조각이 문장에 두 번 나오면 찾기로는 어느 쪽인지 알 수 없다."""
+    text, spans, pos = "", [], 0
+    for child in node.children:
+        chunk = child.get_text() if hasattr(child, "get_text") else str(child)
+        if getattr(child, "name", None) == "span" and _MARKS & set(child.get("class") or ()):
+            spans.append([pos, pos + len(chunk)])
+        text += chunk
+        pos += len(chunk)
+    return " ".join(text.split()), spans
+
+
+def _deck_patterns(soup) -> list[dict]:
+    """수업용 덱이 가르치는 패턴들 — 이름, 예문, 강조 자리, 뜻.
+
+    덱 한 벌이 이미 네 가지를 다 들고 있다. `part1-intro` 의 `data-act` 가 패턴 이름,
+    `p1-teach` 의 `.sent-hero` 가 예문과 강조, `.pattern-meaning` 이 뜻이다. 목차
+    마크다운(초안)에도 같은 것이 적혀 있지만 그쪽은 `sandbox/` 라 공개 빌드가 읽지
+    않는다 — 배포되는 것에서 읽어야 배포되는 것과 어긋나지 않는다.
+
+    이 모양이 아닌 덱(프리토킹·한글)은 그냥 빈 목록이 된다."""
+    pats = []
+    for teach in soup.select('[data-page-id$="-teach"]'):
+        part = str(teach.get("data-page-id", "")).split("-")[0]        # p1 · p2
+        intro = (soup.select_one(f'[data-page-id="{part}-intro"]')
+                 or soup.select_one(f'[data-page-id="part{part[1:]}-intro"]'))
+        hero = teach.select_one(".sent-hero .korean") or teach.select_one(".sent-hero .en")
+        if hero is None:
+            continue
+        ex, spans = _marked(hero)
+        if not ex:
+            continue
+        pats.append({
+            "pat": " ".join(str(intro.get("data-act", "")).split()) if intro else "",
+            "ex": ex,
+            "spans": spans,
+            "gloss": _one_line(teach.select_one(".pattern-meaning .ja")),
+        })
+    return pats
+
+
 _DECK_FACTS: dict[pathlib.Path, dict] = {}
 
 
@@ -423,9 +476,10 @@ def deck_facts(lesson) -> dict:
     if path in _DECK_FACTS:
         return _DECK_FACTS[path]
 
-    facts = {"goal": None, "qs": []}
+    facts = {"goal": None, "qs": [], "pats": []}
     if path.exists():
         s = _soup(path.read_text(encoding="utf-8", errors="replace"))
+        facts["pats"] = _deck_patterns(s)
         g = s.select_one('[data-page-id="lesson-goal"] p.section-subtitle')
         if g:
             t, ja = _one_line(g.select_one("span.ko")), _one_line(g.select_one("span.ja"))
@@ -526,6 +580,26 @@ def lesson_entry(course: model.Course, lesson: model.Lesson, deck_hrefs: dict,
         entry["goal"] = facts["goal"]
     if facts["qs"]:
         entry["qs"] = facts["qs"]
+    # 배우는 조각을 예문 안에서 짚어 준다. 템플릿은 처음부터 이것을 그릴 줄 알았고
+    # (`.pcard` · `<mark>`), 아무도 값을 넘기지 않았을 뿐이다. 패턴 카드가 있으면
+    # 칩은 나오지 않는다 — 템플릿이 이미 그렇게 갈라 놓았다.
+    #
+    # 이름만 덱에서 오지 않을 수 있다. 한국어 덱은 `data-act` 에 패턴을 그대로 적지만
+    # (`N이에요 / 예요`), 영어 덱은 `Pattern 1` 이라고만 적어 카드에 아무 말도 남기지
+    # 못한다. 그때는 두 자리로 떨어진다 — 먼저 `teaches.patterns`(사람이 적어 둔 이름),
+    # 그것도 없으면 예문에서 표시된 조각 그 자체다. 영어 말뭉치는 `teaches` 가 통째로
+    # 비어 있고, 대신 덱이 `I'm` 을 문장 안에서 짚어 준다: 그 조각이 곧 패턴이라
+    # 이름으로 세워도 새로 지어내는 말이 아니다.
+    if facts["pats"]:
+        pats = []
+        for i, p in enumerate(facts["pats"]):
+            name = p["pat"] if p["pat"] and not _GENERIC_ACT.match(p["pat"]) else ""
+            if not name and i < len(chips):
+                name = chips[i]
+            if not name:
+                name = " ".join(p["ex"][a:b] for a, b in p["spans"]).strip()
+            pats.append({**p, "pat": name})
+        entry["pats"] = pats
     return entry
 
 
@@ -551,6 +625,11 @@ def unit_entry(course: model.Course, no: int, decks: dict, family: dict) -> dict
         "title": title,
         "titles": titles,
         "subtitle": pick(spec.get("title"), "ja", "en"),
+        # 이 코스가 무엇을 하는 코스인지 한 줄. 세 언어가 이미 course.yaml 에 있고,
+        # grape 이 코스 카드의 부제로 쓰는 바로 그 문장이다 — 사람이 읽는 페이지에만
+        # 닿지 않고 있었다(`site/catalog.json` 에는 처음부터 실려 있다).
+        "desc": {k: str(v) for k, v in (spec.get("description") or {}).items()
+                 if k in ("ko", "ja", "en") and v},
         "levels": [level],
         "level": level,
         "slug": course.slug,
@@ -887,10 +966,24 @@ def short_titles(course: model.Course) -> dict:
     떼는 규칙은 여기 없다. `course_naming.topic_of` 가 `title_for` 의 역함수이고,
     제목을 짓는 쪽과 읽는 쪽이 같은 함수를 봐야 어긋나지 않는다 — 카탈로그가 제 손으로
     앞머리를 떼던 동안 영어 코스는 `(中級) 旅行 · 空港と移動` 을 통째로 싣고 있었다.
-    카탈로그 빌드는 allowFailure 라 아무것도 빨개지지 않았다."""
-    return {code: naming.topic_of(course.lang, course.slug, code, str(value))
-            for code, value in (course.spec.get("title") or {}).items()
-            if code in naming.LANGS and value}
+    카탈로그 빌드는 allowFailure 라 아무것도 빨개지지 않았다.
+
+    **번호가 곧 이름인 계열은 계열 이름을 도로 붙인다.** 한국어 코어는 자기 토픽이
+    없어서 `topic_of` 가 사다리 번호만 돌려준다 — 그대로 머리글에 놓으면 `1코스 · 1` 이
+    되어, 제목이 옆 칩을 한 번 더 말하는 것 말고는 아무것도 하지 않는다. 여기서만
+    되붙이고 `topic_of` 는 건드리지 않는다: 그쪽은 `title_for` 의 역함수이고,
+    validate 의 왕복 검사가 그 성질에 걸려 있다."""
+    family = naming.family_of(course.lang, course.slug)
+    label = naming.FAMILY[family].label if family in naming.FAMILY else None
+    number_is_name = (course.lang, family) in naming.NUMBER_IS_NAME
+
+    out = {}
+    for code, value in (course.spec.get("title") or {}).items():
+        if code not in naming.LANGS or not value:
+            continue
+        topic = naming.topic_of(course.lang, course.slug, code, str(value))
+        out[code] = f"{label[code]} {topic}".strip() if number_is_name and label else topic
+    return out
 
 
 def track_toc(in_track: list[model.Course], deck_maps: dict, family: dict) -> list[dict]:

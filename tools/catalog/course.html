@@ -10,7 +10,12 @@
        1. The language tabs come from DATA.page, since one template draws both
           korean/ and english/ track pages.
        2. The level ramp is keyed by position (see gateway.html).
-       3. Links drop the .html and the catalog is ../ rather than ../catalog.html,
+       3. A course prints its own `spec.description` at the head of the body it
+          opens into. Upstream draws the authored track TOC, where a course is a
+          heading with prose under it; here a course is a row in courses/, and
+          that sentence is the only thing on the page that says what the course
+          is for. Nothing else in this file moved.
+       4. Links drop the .html and the catalog is ../ rather than ../catalog.html,
           because this site is served at a custom domain where a language is a
           path (/korean-jp) and its catalog is that directory's index. GitHub
           Pages resolves the extensionless links to the same files upstream
@@ -693,6 +698,11 @@ function group(g, index) {
   //   · 단원 설명문은 이 커리큘럼을 왜 이렇게 짰는지에 대한 메모라, 훑어보는 자리에 놓일 글이 아니다
   // 둘 다 지우면 남는 것은 이야기와 성과, 그리고 과 목록뿐이다.
   let head = "";
+  // 이 코스가 무엇을 하는 코스인지 한 줄. 펼쳤을 때 제일 먼저 읽히는 자리이고,
+  // 목록이 시작되기 전에 "여기가 맞는 코스인가" 를 판단할 수 있는 유일한 문장이다.
+  if (g.desc && loc(g.desc)) {
+    head += `<p class="story">${esc(loc(g.desc))}</p>`;
+  }
   if (g.work) {
     head += `<p class="story"><b>《${esc(g.work)}》</b> ${esc(g.story)}
       ${g.cast ? `<span class="cast">${esc(t("ui","cast"))} — ${esc(g.cast)}</span>` : ""}</p>`;
