@@ -339,12 +339,18 @@ TRIAL_INTRO = '''
 # promise aloud; before 2026-08-26 this page was Japanese only and the tutor had no line
 # for the moment the lesson begins.
 #
-# It carried a per-band can-do promise until the same date — "by the end you'll be able
+# It carried a per-band can-do promise until 2026-08-26 — "by the end you'll be able
 # to disagree with a senior colleague", and so on, one per band, ending in 約束します！.
 # Cut in the trial review: the tutor should say the class is starting and that it runs
 # short, and nothing else. The trade is real and was made deliberately — this was the
-# deck's one sales moment, and the lesson-goal page that follows now carries the whole
-# job of telling a learner who has not bought anything what they are about to get.
+# deck's one sales moment.
+#
+# For a day the 初級 goal page inherited that job, and no other band had anything in its
+# place. Unifying the goal pages with the lessons removed it there too, so no trial deck
+# now promises an outcome: the learner sees the lesson's title, exactly as an enrolled
+# learner does, and what they get is demonstrated over the next thirty pages rather than
+# stated on page eight. If the promise has to come back, it belongs here — one page, all
+# four bands — not in a goal page that then stops matching the lesson it was lifted from.
 
 
 # ---- the report --------------------------------------------------------------
@@ -601,9 +607,11 @@ def register(key, **spec):
 #   中上級  B2     FT-113   Life in the city or the countryside?      3-freetalking · accessible
 #   上級    C1     FT-5     A place you would show a visitor          3-freetalking · full
 #
-# All four are lifted whole. 初級 replaces its source goal with a concrete pattern preview;
-# the conversation bands keep the source lesson goal because it accurately names the topic
-# and makes no false promise about a fixed language outcome.
+# All four are lifted whole, lesson-goal included. 初級 substituted its own goal page —
+# 今日のゴール over three preview lines — until 2026-08-26; it was the only page in any of
+# the four decks not lifted from a lesson, and the only English goal page in the corpus
+# with that shape. A trial is the lesson, so its opening is the lesson's opening: the
+# lesson's own title, read aloud once. See the 初級 section below for what that costs.
 #
 # No band has a 今日の成果 payoff page. Three of them did until 2026-08-26 — a lime card
 # reading 動作 4 × 時刻 6 = 24, or 聞き方 2 × 行き先 4 = 8. The multiplication was the
@@ -628,7 +636,8 @@ def register(key, **spec):
 # ---------------------------------------------------------------------------
 # 初級 · CORE-12 · I start work at nine
 #
-# Lifted whole, source lesson-goal excepted, exactly like the other three.
+# Lifted whole, exactly like the other three — including the source lesson-goal, since
+# 2026-08-26. What it replaced is described in the band table above.
 #
 # This band carried a 16-page cut until 2026-08-24, described here as a deliberate 60%
 # trim. It was not one. The list was written on 08-21 against a lesson that was still
@@ -648,7 +657,7 @@ def register(key, **spec):
 
 T1_SOURCE = "1-core-patterns/courses/core-first-exchanges-2/lessons/12-i-start-work-at-nine/lesson.html"
 
-T1_LESSON = ["words-you-know",
+T1_LESSON = ["lesson-goal", "words-you-know",
              "part1-intro", "p1-teach", "p1-read", "p1-rule", "p1-choose", "p1-reorder",
              "p1-fill", "p1-translate", "p1-write",
              "part2-intro", "p2-teach", "p2-read", "p2-rule", "p2-choose", "p2-reorder",
@@ -668,23 +677,6 @@ T1_GREETING = [
     [("other", "では、今日のレッスンを始めますね。", "OK, let&#x27;s start today&#x27;s lesson.", None),
      ("me", "はい、お願いします！", "Yes, let&#x27;s go!", "先生のことばに、返事してみましょう！")],
 ]
-
-
-
-T1_LESSON_GOAL = '''
-    <div class="transition-page" data-page-id="lesson-goal" data-act="Talking about your day">
-      <span class="transition-kicker">GOAL</span>
-      <h2 class="transition-title">Today&#x27;s goal <span class="title-ja">(今日のゴール)</span></h2>
-      <p class="section-subtitle"><span class="ko">By the end of today, you&#x27;ll be able to talk about your day like this.</span><span class="ja">今日が終わるころには、こんなふうに自分の一日を話せるようになります。</span></p>
-      <div class="tutor-note">Read the three lines aloud once so the learner hears the shape, then move on.</div>
-      <div class="known lines">
-        <div class="known-row"><span class="k">What time do you start work?</span><span class="j">何時に仕事を始めますか？</span></div>
-        <div class="known-row"><span class="k">I start work at nine.</span><span class="j">9時に仕事を始めます</span></div>
-        <div class="known-row"><span class="k">I usually finish work around six.</span><span class="j">ふだん6時ごろ仕事を終えます</span></div>
-      </div>
-    </div>
-'''
-
 
 
 # ---------------------------------------------------------------------------
@@ -792,10 +784,8 @@ register(
     title={"ko": "체험 레슨 · 초급", "en": "Trial lesson · Elementary", "ja": "体験レッスン 初級"},
     source=T1_SOURCE,
     lesson=T1_LESSON,
-    # the wrapper supplies its own goal page, carrying the promise instead of the title
-    omit=["lesson-goal"],
     greeting=greeting(T1_GREETING),
-    lesson_goal=T1_LESSON_GOAL,
+    lesson_goal="",
 )
 
 register(
@@ -848,7 +838,9 @@ def build(key):
         spec["greeting"],
         NEEDS,
         TRIAL_INTRO,
-        # Empty on the three conversation bands: they carry the source lesson's own goal.
+        # Empty on every band: all four carry the source lesson's own goal page, lifted
+        # with the rest. Kept as a seam — a band that ever needs a wrapper goal puts it
+        # here, ahead of the lifted pages, and names lesson-goal in `omit`.
         spec["lesson_goal"],
     ]
     for pid in spec["lesson"]:
