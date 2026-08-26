@@ -21,9 +21,9 @@ spec:
   difficulty: INTERMEDIATE
 
   title:
-    ko: 상황별 한국어 · 온라인 팬덤 & 커뮤니티 · 중급
-    en: Korean in context · Online fandom · Intermediate
-    ja: 場面別の韓国語 · オンラインファンダム · 中級
+    ko: (중급) 케이팝 · 온라인 팬덤 & 커뮤니티
+    en: (Intermediate) K-pop · Online fandom
+    ja: (中級) K-POP · オンラインファンダム
 
   # 학습자가 카탈로그에서 읽는 문장이다. 앱이 로케일로 고르므로 JP 마켓 코스는
   # ja 가 화면에 뜬다 — 여기 세 언어는 tools/course-copy.json 이 원본이고,

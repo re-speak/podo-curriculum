@@ -21,9 +21,9 @@ spec:
   difficulty: UPPER_BEGINNER
 
   title:
-    ko: 상황별 한국어 · 식당 & 카페 · 초중급
-    en: Korean in context · Eating out · Upper beginner
-    ja: 場面別の韓国語 · レストランとカフェ · 初中級
+    ko: (초중급) 여행 · 식당 & 카페
+    en: (Upper Beginner) Travel · Eating out
+    ja: (初中級) 旅行 · レストランとカフェ
 
   # 학습자가 카탈로그에서 읽는 문장이다. 앱이 로케일로 고르므로 JP 마켓 코스는
   # ja 가 화면에 뜬다 — 여기 세 언어는 tools/course-copy.json 이 원본이고,

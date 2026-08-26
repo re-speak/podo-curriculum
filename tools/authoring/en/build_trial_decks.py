@@ -157,6 +157,7 @@ def head(lesson_id, level, title, cover, version=None):
     <div class="brand-page" data-page-id="cover">
       <span class="podo-badge"><span class="logo">PODO</span><span class="tag">体験レッスン</span></span>
       <h1 class="brand-title">{cover}</h1>
+      <img class="brand-art mid" src="../assets/podo-character-happy.png" alt="">
     </div>
 '''
 

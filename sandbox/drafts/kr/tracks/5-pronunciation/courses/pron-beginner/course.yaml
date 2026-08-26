@@ -21,9 +21,9 @@ spec:
   difficulty: BEGINNER
 
   title:
-    ko: 발음 교정 · 초급
-    en: Pronunciation repair · Beginner
-    ja: 発音の矯正 · 初級
+    ko: (초급) 발음 교정
+    en: (Beginner) Pronunciation repair
+    ja: (初級) 発音の矯正
 
   # 학습자가 카탈로그에서 읽는 문장이다. 앱이 로케일로 고르므로 JP 마켓 코스는
   # ja 가 화면에 뜬다 — 여기 세 언어는 tools/course-copy.json 이 원본이고,
