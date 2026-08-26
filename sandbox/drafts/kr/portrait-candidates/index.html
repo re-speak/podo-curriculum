@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google" content="notranslate">
+  <title>Contextual Korean portrait comparison</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; }
+    body { max-width: 1120px; margin: 0 auto; padding: 32px 20px 64px; background: #f5f4f1; color: #242321; }
+    h1 { margin-bottom: 8px; }
+    h2 { margin-top: 40px; }
+    p { color: #68645e; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 20px; }
+    figure { margin: 0; padding: 12px; border: 1px solid #dedbd5; border-radius: 16px; background: white; }
+    img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 11px; background: #ece9e3; }
+    figcaption { padding: 10px 2px 2px; font-weight: 650; }
+    small { display: block; margin-top: 3px; color: #77726b; font-weight: 400; line-height: 1.35; }
+  </style>
+</head>
+<body>
+  <h1>Portrait comparison</h1>
+  <p>The final section contains studies only. They are not wired into any lesson.</p>
+
+  <h2>Quality references</h2>
+  <div class="grid">
+    <figure><img src="../../../../shared/assets/hana-avatar.jpg" alt="Hana"><figcaption>Hana<small>Original quality reference</small></figcaption></figure>
+    <figure><img src="../../../../shared/assets/haruka-avatar.jpg" alt="Haruka"><figcaption>Haruka<small>Original quality reference</small></figcaption></figure>
+  </div>
+
+  <h2>Current lesson portraits</h2>
+  <div class="grid">
+    <figure><img src="../../../../shared/assets/portraits/jimin.png" alt="Jimin"><figcaption>Jimin<small>User-supplied 200 px source</small></figcaption></figure>
+    <figure><img src="../../../../shared/assets/portraits/minsu.jpg" alt="Minsu"><figcaption>Minsu<small>First generated set</small></figcaption></figure>
+    <figure><img src="../../../../shared/assets/portraits/mijeong.jpg" alt="Mijeong"><figcaption>Mijeong<small>First generated set</small></figcaption></figure>
+    <figure><img src="../../../../shared/assets/portraits/soojin.jpg" alt="Soojin"><figcaption>Soojin<small>First generated set</small></figcaption></figure>
+  </div>
+
+  <h2>New candidate studies</h2>
+  <div class="grid">
+    <figure><img src="00-jimin-original-upscaled.png" alt="Jimin deterministic upscale"><figcaption>Jimin — upscale<small>Same source image, resized to 600 px</small></figcaption></figure>
+    <figure><img src="01-jimin-rerender.png" alt="Jimin rerender"><figcaption>Jimin — rerender<small>More detailed, but identity and styling drifted</small></figcaption></figure>
+    <figure><img src="02-young-man-natural.png" alt="Young man naturalness study"><figcaption>Young man<small>Naturalness study; somewhat too photorealistic</small></figcaption></figure>
+    <figure><img src="03-middle-aged-woman-natural.png" alt="Middle-aged woman naturalness study"><figcaption>Middle-aged woman<small>Strongest naturalness direction so far</small></figcaption></figure>
+    <figure><img src="04-service-worker-natural.png" alt="Service worker naturalness study"><figcaption>Service worker<small>Improved texture; still slightly polished</small></figcaption></figure>
+  </div>
+
+  <h2>Round 2 — reference-matched stylization</h2>
+  <div class="grid">
+    <figure><img src="05-young-man-stylized.png" alt="Stylized young Korean man"><figcaption>Young man<small>Animated-feature proportions and simplified materials</small></figcaption></figure>
+    <figure><img src="06-middle-aged-woman-stylized.png" alt="Stylized middle-aged Korean woman"><figcaption>Middle-aged woman<small>Age variation within the Hana and Haruka visual language</small></figcaption></figure>
+    <figure><img src="07-older-man-stylized.png" alt="Stylized older Korean man"><figcaption>Older man<small>Mature character without semi-realistic rendering</small></figcaption></figure>
+  </div>
+</body>
+</html>
