@@ -603,7 +603,8 @@ def lesson_entry(course: model.Course, lesson: model.Lesson, deck_hrefs: dict,
     return entry
 
 
-def unit_entry(course: model.Course, no: int, decks: dict, family: dict) -> dict:
+def unit_entry(course: model.Course, no: int, decks: dict, family: dict,
+               cover: str = "") -> dict:
     """한 코스 = 트랙 안의 단원 하나.
 
     껍데기 값(label · title · subtitle)이 단원 머리글에 그대로 뜬다. 제목에서 레벨과
@@ -630,6 +631,8 @@ def unit_entry(course: model.Course, no: int, decks: dict, family: dict) -> dict
         # 닿지 않고 있었다(`site/catalog.json` 에는 처음부터 실려 있다).
         "desc": {k: str(v) for k, v in (spec.get("description") or {}).items()
                  if k in ("ko", "ja", "en") and v},
+        # 표지. 닫힌 줄에서는 36px 표시로, 펼치면 118px 표지로 자란다 — 같은 파일 하나다.
+        "cover": cover,
         "levels": [level],
         "level": level,
         "slug": course.slug,
@@ -672,6 +675,10 @@ def track_entry(lang: str, no: int, family: dict, units: list[dict],
             {"k": "deckWordShort", "v": ready},
         ],
         "groups": units,
+        # 카탈로그 첫 화면의 트랙 카드가 부채처럼 펼쳐 놓는 표지 셋. 트랙의 첫 세 코스를
+        # 그대로 쓴다 — 고르는 규칙을 두면 아무도 검토하지 않는 편집 결정이 하나 생긴다.
+        # 순서는 사다리 순서라, 셋은 언제나 그 트랙이 시작되는 자리의 표지다.
+        "covers": [u["cover"] for u in units if u.get("cover")][:3],
         "dist": dist,
         "span": span,
         "total": len(lessons),
@@ -687,6 +694,25 @@ def track_entry(lang: str, no: int, family: dict, units: list[dict],
 # --------------------------------------------------------------------------- #
 # building
 # --------------------------------------------------------------------------- #
+
+def copy_cover(base: pathlib.Path, course: model.Course) -> str:
+    """이 코스의 웹 썸네일을 언어 디렉터리 안으로 옮기고, 그 자리를 돌려준다.
+
+    `assets/cover-thumb.webp` 는 `course_covers/generate.py` 가 표지에서 함께 구워
+    커밋해 둔 것이다(288×360 · 8KB 아래). 여기서는 바이트를 옮기기만 한다 — 카탈로그
+    빌드는 배포 안에서 도는 자리라, 이미지 라이브러리가 들어올 자리가 아니다.
+
+    표지가 없는 코스는 빈 문자열이다. `model.Course.thumbnail` 이 None 일 수 있는 것과
+    같은 이유로 — grape 은 표지를 안 보내면 컬럼을 건드리지 않는다 — 화면도 표지가
+    없는 코스를 그릴 수 있어야 한다."""
+    thumb = course.root / "assets" / "cover-thumb.webp"
+    if not thumb.is_file():
+        return ""
+    rel = f"covers/{course.slug}.webp"
+    (base / "covers").mkdir(parents=True, exist_ok=True)
+    shutil.copy2(thumb, base / rel)
+    return rel
+
 
 def copy_decks(base: pathlib.Path, course: model.Course) -> dict:
     """Copy every deck this course has, and hand back where each one landed.
@@ -771,7 +797,7 @@ def build_language(out: pathlib.Path, lang: str, courses: list[model.Course],
         for i, course in enumerate(in_track, start=1):
             decks = copy_decks(base, course)
             deck_maps[course.slug] = decks
-            unit = unit_entry(course, i, decks, family)
+            unit = unit_entry(course, i, decks, family, copy_cover(base, course))
             units.append(unit)
             statuses.append("open" if course.incomplete else "live")
 

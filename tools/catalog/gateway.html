@@ -124,7 +124,7 @@
   .card-en { display: block; margin-top: 1px; color: var(--ink-3); font-size: 12px; font-weight: 500; }
   .card-state { display: inline-flex; margin-top: 5px; padding: 3px 7px; border-radius: 1px;
     background: #555d64; color: #fff; font-size: 10px; font-weight: 800; letter-spacing: -.01em; }
-  .card-d { flex: 1 1 auto; display: -webkit-box; margin: 15px 0 0; overflow: hidden; color: var(--ink-2);
+  .card-d { flex: 1 1 auto; display: -webkit-box; margin: 15px 0 0; max-width: 34ch; overflow: hidden; color: var(--ink-2);
     font-size: 13px; line-height: 1.65; word-break: keep-all; -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
   .card-foot { display: flex; align-items: center; justify-content: space-between; gap: 12px;
     margin-top: 17px; padding: 10px 11px; border-radius: var(--radius-sm); background: rgba(255,255,255,.76); }
@@ -135,6 +135,19 @@
     letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
   .card-lv { display: flex; flex: 0 0 auto; align-items: center; gap: 6px; color: var(--ink-3); font-size: 12px; font-weight: 600; }
   .card-lv i { width: 9px; height: 9px; border-radius: 1px; box-shadow: inset 0 0 0 1px rgba(0,0,0,.1); }
+  /* 트랙이 무엇으로 이루어져 있는지, 들어가기 전에 한 번. 카드 아래쪽 절반은 지금까지
+     비어 있었고, 표지 셋은 그 자리를 채우되 아무것에서도 자리를 뺏지 않는다. 장식이라
+     읽는 사람에게 읽어 줄 것이 없다 — aria-hidden 이고, 트랙 이름이 이미 링크를 말한다. */
+  .card-fan { position: absolute; right: 15px; top: 84px; display: flex; z-index: -1; }
+  .card-fan i { display: block; width: 62px; height: 78px; border-radius: 5px;
+    background-size: cover; background-position: center;
+    box-shadow: 0 4px 14px rgba(16,24,32,.16); }
+  .card-fan i:nth-child(1) { transform: rotate(-9deg) translateY(6px); }
+  .card-fan i:nth-child(2) { margin-left: -17px; transform: rotate(-3deg); }
+  .card-fan i:nth-child(3) { margin-left: -17px; transform: rotate(4deg) translateY(4px); }
+  .card[data-status="plan"] .card-fan { display: none; }
+  @media (max-width: 600px) { .card-fan { display: none; } }
+
   .flag { position: absolute; top: 20px; right: 50px; color: var(--ink-4); font-size: 10.5px; font-weight: 650; }
   @media (max-width: 600px) {
     h1 { font-size: 34px; }
@@ -397,6 +410,8 @@ document.getElementById("cards").innerHTML = realTracks().map(t => {
         ${t.status === "plan" ? `<span class="card-state">${esc(tr("ui","planOnly"))}</span>` : ""}</div>
     </div>
     <p class="card-d">${esc(loc(t.desc))}</p>
+    ${(t.covers || []).length ? `<div class="card-fan" aria-hidden="true">${
+      t.covers.map(c => `<i style="background-image:url(${esc(c)})"></i>`).join("")}</div>` : ""}
     <div class="card-foot">
       <div class="card-figs">${t.stats.map(s => `<div><b>${esc(s.v)}</b>${esc(tr("ui", s.k))}</div>`).join("")}</div>
       <div class="card-lv">${dot ? `<i style="background:${lvColor(dot)}"></i>` : ""}${esc(span)}</div>
