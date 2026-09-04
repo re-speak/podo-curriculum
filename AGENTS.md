@@ -299,6 +299,22 @@ the controls written straight into the HTML.
   values carry more of the live catalogue than the other three combined; do not collapse them
   into their neighbours. The full convention, and how each track maps onto it, is in
   `sandbox/drafts/kr/AGENTS.md` and `sandbox/drafts/en/AGENTS.md`.
+- **The ladder has six rungs and the filter has five chips, so `difficulty` is a slot, not a
+  level.** podo-app filters on the five words in `subscribeList.filters.level.*` — there is no
+  왕초급 chip. That collapses `trial-lv1-hangul` (왕초급) and `trial-lv2-patterns` (초급) onto
+  `BEGINNER`, and since both are also titled `(초급) 체험 레슨` they become one indistinguishable
+  trial to anything picking by difficulty. The dev team split them in the prod DB by hand in
+  2026-08; `trial-lv2-patterns` declares `UPPER_BEGINNER` so the next `apply` agrees with that
+  row instead of reverting it, while its card still says 초급 — the level it is written at.
+  That one divergence is declared in `course_naming.DISPLAY_LEVEL`, which drives the title and
+  the cover pill together; `problems` still recomposes and checks every other title. Do not add
+  a row there to make a mismatched title pass. Which rung a course actually sits on is
+  `podo:level` in its `course.yaml` header comment, never this field.
+- **`apply.py` overwrites; a hand-edit in grape or the DB is one deploy from gone.** Nothing
+  reads the live row back, so a value the dev team changed by hand survives only if somebody
+  writes it into `course.yaml` too. When you hear that a row was patched directly, diff the
+  whole corpus against the DB (`GT_CLASS_COURSE`, `CLASS_WEEK = 0` gives one row per course)
+  rather than fixing the one course you were told about.
 - **Lesson rows ship a title but no description.** Every course in the live catalogue gives
   each lesson a one-line can-do; ours send `slug`, `week`, `title` and `decks` only. Live rows
   also carry an `"N. "` prefix matching `CLASS_WEEK`, which nothing here adds. Both are open

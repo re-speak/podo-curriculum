@@ -27,7 +27,23 @@ spec:
   # 여덟 개로 보인다. 레거시 네 개를 어떻게 할지는 따로 결정할 일이고, 그때까지는
   # 이쪽이 HTML 체험이라는 것만 제목으로 구분된다.
   enabled: true
-  difficulty: BEGINNER
+
+  # UPPER_BEGINNER 이지 BEGINNER 가 아니다 — podo:level 이 초급인데도.
+  #
+  # 사다리는 여섯 칸(왕초급·초급·초중급·중급·중고급·고급)인데 앱의 레벨 필터는
+  # 다섯 개다 — 왕초급 칩이 없다(podo-app subscribeList.filters.level.*). 그래서
+  # trial-lv1-hangul(왕초급)과 이 코스(초급)가 둘 다 BEGINNER 로 내려앉고,
+  # 제목마저 "(초급) 체험 레슨" 으로 같아 difficulty 로 체험을 고르는 쪽에서는
+  # 한 칸에 두 행이 앉아 서로를 가린다. 2026-08 에 개발팀이 prod DB 에서 이 두
+  # 행(GT_CLASS_COURSE.ID 12102·12103)의 DIFFICULTY 를 UPPER_BEGINNER 로 직접
+  # 고쳤다. 여기를 BEGINNER 로 되돌리면 다음 apply 가 그 수정을 덮어써 같은
+  # 장애가 다시 난다 — 실제로 199b502f02 가 그렇게 되돌렸고, 그래서 고쳐졌다.
+  #
+  # 카드에 적히는 말은 그대로 초급이다. 이 코스가 초급 문형을 가르치기 때문이고,
+  # 그 예외는 tools/authoring/course_naming.py 의 DISPLAY_LEVEL 이 선언한다.
+  # 즉 여기 difficulty 는 레벨 주장이 아니라 필터 칸의 자리표다. 사다리에서
+  # 어디인지는 위의 podo:level(초급) 이 말한다.
+  difficulty: UPPER_BEGINNER
 
   title:
     ko: (초급) 체험 레슨

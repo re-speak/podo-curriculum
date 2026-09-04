@@ -53,6 +53,31 @@ LEVEL_WORDS = {
 
 LANGS = ("ko", "en", "ja")
 
+# The level word a card shows, when it cannot be the word for its `difficulty`.
+#
+# `difficulty` normally does two jobs at once — it is the chip the app filters
+# on and it is the word in the title — and everywhere but the Korean trials the
+# two agree. There they cannot. The ladder has six rungs and the filter has five
+# chips: there is no 왕초급 chip, so `trial-lv1-hangul` (왕초급) and
+# `trial-lv2-patterns` (초급) both land on BEGINNER and, being identically
+# titled as well, collapse into one indistinguishable trial for anything that
+# picks by difficulty. The dev team split them in the prod DB in 2026-08 by
+# moving lv2 to UPPER_BEGINNER; `course.yaml` now declares that too, so the next
+# `apply` agrees with the row instead of reverting it.
+#
+# The card still says 초급, because 초급 is what lv2 is written at. So for this
+# one course the chip and the word part ways. This table is where that is
+# declared — not a hole in `problems`, which still recomposes every title from
+# it, but a second derived value with one entry. Adding a row here is a claim
+# that a course's filter slot and its level are deliberately different things;
+# do not add one to make a mismatched title pass.
+DISPLAY_LEVEL = {("kr", "trial-lv2-patterns"): "BEGINNER"}
+
+
+def level_word(corpus: str, slug: str, lang: str, difficulty: str) -> str:
+    return LEVEL_WORDS[lang].get(
+        DISPLAY_LEVEL.get((corpus, slug), difficulty), difficulty)
+
 # The language a corpus teaches. It is what the cover puts in large type, and
 # the support language (Japanese for both, `countryCode: JP`) is what the pill
 # is written in.
@@ -180,7 +205,7 @@ def title_for(corpus: str, slug: str, lang: str, topic: str,
               difficulty: str, rung: int | None) -> str:
     """`(level) [family · ]topic`, in one of ko / en / ja."""
     family = family_of(corpus, slug)
-    level = LEVEL_WORDS[lang].get(difficulty, difficulty)
+    level = level_word(corpus, slug, lang, difficulty)
     label = FAMILY[family].label
 
     if (corpus, family) in NUMBER_IS_NAME:
@@ -230,7 +255,10 @@ def cover_copy(corpus: str, slug: str, titles: dict, difficulty: str,
         ドラマ 2 · 中級   パターン 3 · 初級   旅行 · 初中級   フリートーク · 上級
     """
     family = family_of(corpus, slug)
-    level = LEVEL_WORDS["ja"].get(difficulty, difficulty)
+    # The pill repeats the word in the title beside it, not the filter chip —
+    # a card that says 初級 in one line and 初中級 in the next is worse than
+    # either. Where the two differ, `DISPLAY_LEVEL` decides both.
+    level = level_word(corpus, slug, "ja", difficulty)
     lang = TAUGHT[corpus]
     label = FAMILY[family]
 
