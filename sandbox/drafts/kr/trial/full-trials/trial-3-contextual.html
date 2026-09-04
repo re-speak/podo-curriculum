@@ -6,7 +6,7 @@
   <meta name="google" content="notranslate">
   <meta name="podo:lesson-id" content="trial-3-full">
   <meta name="podo:level" content="중급">
-  <meta name="podo:content-version" content="2026-08-24">
+  <meta name="podo:content-version" content="2026-09-04">
   <!-- 리포트는 대역 없이 한 언어로 간다. 그 언어가 무엇인지 CSS 가 알아야 해서
        마크업이 선언한다 — 일본어 리포트는 줄바꿈 규칙이 한국어와 반대라
        (keep-all 이면 일본어 문장은 끊길 자리가 없어 카드를 뚫고 나간다),
@@ -15,6 +15,7 @@
   <title>体験レッスン 中級 — PODO 韓国語</title>
   <link rel="stylesheet" href="../../../../../shared/css/lesson-card.css">
   <link rel="stylesheet" href="../../../../../shared/css/trial.css">
+  <link rel="stylesheet" href="../../../../../shared/css/motivation-freetalk.css">
 </head>
 <body>
   <div class="phone">
@@ -70,6 +71,7 @@
         <button class="opt-row" data-val="self" data-sync-option="self"><img class="r-ico" src="../assets/reasons/self.png" alt=""><span class="opt-body"><span class="opt-main">自己啓発</span><span class="opt-sub">자기계발</span></span></button>
         <button class="opt-row" data-val="other" data-sync-option="other"><img class="r-ico" src="../assets/reasons/other.png" alt=""><span class="opt-body"><span class="opt-main">その他（先生に教えてください）</span><span class="opt-sub">기타</span></span></button>
       </div>
+      <input type="hidden" id="needs-why-primary" value="" data-sync-id="needs-why-primary" data-sync-kind="value">
     </div>
 
     <div class="section needs-jp" id="p-goal" data-page-id="needs-goal">
@@ -210,7 +212,7 @@
            lines under it are the same frame filled differently. -->
       <div class="sent-hero">
         <span class="korean">그 카페에서 <span class="ending">본 적 있어요</span>.</span>
-        
+
         <span class="translation">あのカフェで<span class="ending">見たことがあります</span>。</span>
       </div>
       <div class="sent-more">
@@ -223,16 +225,6 @@
          sentence belongs to the world of the scene — 김치 and 한국 were the
          old textbook's props, not this story's. The drama does not stop
          because the drills started. -->
-    <div class="section" data-page-id="p1-read">
-      <h2 class="section-title">같이 읽어요 <span class="title-ja">(一緒に読もう)</span></h2>
-      <p class="section-subtitle"><span class="ko">이번엔 혼자 한 번 읽어 볼까요?</span><span class="ja">今度はひとりで一度読んでみましょうか。</span></p>
-      <div class="model-list">
-        <div class="model-line"><span class="korean">그 드라마 <span class="ending">본 적 있어요</span>.</span><span class="translation">あのドラマ、<span class="ending">見たことがあります</span>。</span></div>
-        <div class="model-line"><span class="korean">그 카페에 <span class="ending">간 적 있어요</span>.</span><span class="translation">あのカフェに<span class="ending">行ったことがあります</span>。</span></div>
-        <div class="model-line"><span class="korean">떡볶이 <span class="ending">먹은 적 있어요</span>.</span><span class="translation">トッポッキを<span class="ending">食べたことがあります</span>。</span></div>
-        <div class="model-line"><span class="korean">그 사람 <span class="ending">만난 적 없어요</span>.</span><span class="translation">あの人に<span class="ending">会ったことはありません</span>。</span></div>
-      </div>
-    </div>
 
     <!-- the one rule in the pattern, taught by comparison -->
     <div class="section" data-page-id="p1-rule">
@@ -264,102 +256,12 @@
     </div>
 
     <!-- drill · recognise which of the two the verb asks for -->
-    <div class="section" data-page-id="p1-choose">
-      <h2 class="section-title">ㄴ과 은 고르기 <span class="title-ja">(ㄴ と 은 を選ぼう)</span></h2>
-      <p class="section-subtitle"><span class="ko">받침을 보고, 맞는 쪽을 눌러 보세요.</span><span class="ja">パッチムを見て、正しいほうをタップしてください。</span></p>
-      <div class="choose-list">
-        <div class="choose-row sentence" data-sync-id="p1-choice-eat" data-sync-kind="selection" data-sync-state="chosen">
-          <span class="translation">トッポッキを食べたことがあります。</span>
-          <span class="choose-sentence">떡볶이 먹<span class="opt" data-sync-option="eun" data-correct>은</span><span class="sep">/</span><span class="opt" data-sync-option="n">ㄴ</span> 적 있어요.</span>
-        </div>
-        <div class="choose-row sentence" data-sync-id="p1-choice-go" data-sync-kind="selection" data-sync-state="chosen">
-          <span class="translation">あのカフェに行ったことがあります。</span>
-          <span class="choose-sentence">그 카페에 가<span class="opt" data-sync-option="eun">은</span><span class="sep">/</span><span class="opt" data-sync-option="n" data-correct>ㄴ</span> 적 있어요.</span>
-        </div>
-        <div class="choose-row sentence" data-sync-id="p1-choice-read" data-sync-kind="selection" data-sync-state="chosen">
-          <span class="translation">読んだことがあります。</span>
-          <span class="choose-sentence">읽<span class="opt" data-sync-option="n">ㄴ</span><span class="sep">/</span><span class="opt" data-sync-option="eun" data-correct>은</span> 적 있어요.</span>
-        </div>
-        <div class="choose-row sentence" data-sync-id="p1-choice-meet" data-sync-kind="selection" data-sync-state="chosen">
-          <span class="translation">会ったことがあります。</span>
-          <span class="choose-sentence">만나<span class="opt" data-sync-option="n" data-correct>ㄴ</span><span class="sep">/</span><span class="opt" data-sync-option="eun">은</span> 적 있어요.</span>
-        </div>
-      </div>
-    </div>
 
     <!-- drill · order the words. the pieces are given, the sentence isn't.
          있어요 and 없어요 are chips of their own, so the row that turns
          negative is a choice the learner makes rather than a word they read. -->
-    <div class="section" data-page-id="p1-reorder">
-      <h2 class="section-title">문장 만들기 <span class="title-ja">(文を組み立てよう)</span></h2>
-      <p class="section-subtitle"><span class="ko">단어를 순서대로 놓고, 소리 내어 말해 보세요.</span><span class="ja">単語を順番に並べて、声に出して言ってみましょう。</span></p>
-      <div class="task-block">
-        <div class="answer-box small">
-          <span class="answer-label">あのカフェに行ったことがあります。</span>
-          <span class="answer-space build-zone" data-sync-id="p1-order-go" data-sync-kind="order" data-a="그 카페에 간 적 있어요"></span>
-        </div>
-        <span class="choice" data-item-id="went">간 적</span>
-        <span class="choice" data-item-id="have-go">있어요</span>
-        <span class="choice" data-item-id="cafe">그 카페에</span>
-      </div>
-      <div class="task-block">
-        <div class="answer-box small">
-          <span class="answer-label">トッポッキを食べたことがあります。</span>
-          <span class="answer-space build-zone" data-sync-id="p1-order-eat" data-sync-kind="order" data-a="떡볶이 먹은 적 있어요"></span>
-        </div>
-        <span class="choice" data-item-id="have-eat">있어요</span>
-        <span class="choice" data-item-id="tteokbokki">떡볶이</span>
-        <span class="choice" data-item-id="ate">먹은 적</span>
-      </div>
-      <div class="task-block">
-        <div class="answer-box small">
-          <span class="answer-label">そのドラマ、見たことがありません。</span>
-          <span class="answer-space build-zone" data-sync-id="p1-order-see" data-sync-kind="order" data-a="그 드라마 본 적 없어요"></span>
-        </div>
-        <span class="choice" data-item-id="no-have">없어요</span>
-        <span class="choice" data-item-id="saw">본 적</span>
-        <span class="choice" data-item-id="drama">그 드라마</span>
-      </div>
-      <div class="task-block">
-        <div class="answer-box small">
-          <span class="answer-label">あの人に会ったことがありますか？</span>
-          <span class="answer-space build-zone" data-sync-id="p1-order-meet" data-sync-kind="order" data-a="그 사람 만난 적 있어요?"></span>
-        </div>
-        <span class="choice" data-item-id="met">만난 적 있어요?</span>
-        <span class="choice" data-item-id="person">그 사람</span>
-      </div>
-    </div>
 
     <!-- drill · the blank is the pattern and nothing else -->
-    <div class="section" data-page-id="p1-fill">
-      <h2 class="section-title">빈칸을 채워요 <span class="title-ja">(空欄をうめよう)</span></h2>
-      <p class="section-subtitle"><span class="ko">빈칸에 들어갈 말을 넣어서, 문장을 통째로 소리 내어 말해 보세요.</span><span class="ja">空欄に入ることばを入れて、文をまるごと声に出して言ってみましょう。</span></p>
-      <div class="tutor-note">학생이 말한 대로 빈칸에 적어 주세요.</div>
-      <div class="task-block">
-        <div class="answer-box">
-          <span class="answer-label">あのカフェに<span class="target ending">行ったこと</span>があります。</span>
-          <span class="answer-fill"><span class="korean">그 카페에 <input class="slot-input" type="text" data-sync-id="p1-fill-go" data-answer="간 적" autocomplete="off" spellcheck="false"> 있어요.</span></span>
-        </div>
-      </div>
-      <div class="task-block">
-        <div class="answer-box">
-          <span class="answer-label">トッポッキを<span class="target ending">食べたこと</span>があります。</span>
-          <span class="answer-fill"><span class="korean">떡볶이 <input class="slot-input" type="text" data-sync-id="p1-fill-eat" data-answer="먹은 적" autocomplete="off" spellcheck="false"> 있어요.</span></span>
-        </div>
-      </div>
-      <div class="task-block">
-        <div class="answer-box">
-          <span class="answer-label">そのドラマ、<span class="target ending">見たこと</span>がありません。</span>
-          <span class="answer-fill"><span class="korean">그 드라마 <input class="slot-input" type="text" data-sync-id="p1-fill-see" data-answer="본 적" autocomplete="off" spellcheck="false"> 없어요.</span></span>
-        </div>
-      </div>
-      <div class="task-block">
-        <div class="answer-box">
-          <span class="answer-label">あの人に<span class="target ending">会ったこと</span>がありますか？</span>
-          <span class="answer-fill"><span class="korean">그 사람 <input class="slot-input" type="text" data-sync-id="p1-fill-meet" data-answer="만난 적" autocomplete="off" spellcheck="false"> 있어요?</span></span>
-        </div>
-      </div>
-    </div>
 
     <!-- top of the ladder for part 1: their own experience, not the book's -->
     <div class="section" data-page-id="p1-write">
@@ -385,7 +287,7 @@
       <div class="tutor-note">대답은 네, 돼요 / 안 돼요라고 알려 주세요.</div>
       <div class="sent-hero">
         <span class="korean">혹시 번호 <span class="ending">물어봐도 돼요</span>?</span>
-        
+
         <span class="translation">もしかして、番号を<span class="ending">聞いてもいいですか</span>？</span>
       </div>
       <div class="sent-more">
@@ -394,16 +296,6 @@
       </div>
     </div>
 
-    <div class="section" data-page-id="p2-read">
-      <h2 class="section-title">같이 읽어요 <span class="title-ja">(一緒に読もう)</span></h2>
-      <p class="section-subtitle"><span class="ko">이번엔 혼자 한 번 읽어 볼까요?</span><span class="ja">今度はひとりで一度読んでみましょうか。</span></p>
-      <div class="model-list">
-        <div class="model-line"><span class="korean">여기 <span class="ending">앉아도 돼요</span>?</span><span class="translation">ここに<span class="ending">座ってもいいですか</span>？</span></div>
-        <div class="model-line"><span class="korean">사진 <span class="ending">찍어도 돼요</span>?</span><span class="translation">写真を<span class="ending">撮ってもいいですか</span>？</span></div>
-        <div class="model-line"><span class="korean">이거 <span class="ending">먹어도 돼요</span>?</span><span class="translation">これ、<span class="ending">食べてもいいですか</span>？</span></div>
-        <div class="model-line"><span class="korean">혹시 번호 <span class="ending">물어봐도 돼요</span>?</span><span class="translation">もしかして、番号を<span class="ending">聞いてもいいですか</span>？</span></div>
-      </div>
-    </div>
 
     <!-- the one rule in the pattern, taught by comparison -->
     <div class="section" data-page-id="p2-rule">
@@ -452,99 +344,9 @@
       </div>
     </div>
 
-    <div class="section" data-page-id="p2-choose">
-      <h2 class="section-title">아도와 어도 고르기 <span class="title-ja">(아도 と 어도 を選ぼう)</span></h2>
-      <p class="section-subtitle"><span class="ko">마지막 모음을 보고, 맞는 쪽을 눌러 보세요.</span><span class="ja">最後の母音を見て、正しいほうをタップしてください。</span></p>
-      <div class="choose-list">
-        <div class="choose-row sentence" data-sync-id="p2-choice-sit" data-sync-kind="selection" data-sync-state="chosen">
-          <span class="translation">ここに座ってもいいですか？</span>
-          <span class="choose-sentence">여기 앉<span class="opt" data-sync-option="ado" data-correct>아도</span><span class="sep">/</span><span class="opt" data-sync-option="eodo">어도</span> 돼요?</span>
-        </div>
-        <div class="choose-row sentence" data-sync-id="p2-choice-eat" data-sync-kind="selection" data-sync-state="chosen">
-          <span class="translation">これ、食べてもいいですか？</span>
-          <span class="choose-sentence">이거 먹<span class="opt" data-sync-option="ado">아도</span><span class="sep">/</span><span class="opt" data-sync-option="eodo" data-correct>어도</span> 돼요?</span>
-        </div>
-        <div class="choose-row sentence" data-sync-id="p2-choice-photo" data-sync-kind="selection" data-sync-state="chosen">
-          <span class="translation">写真を撮ってもいいですか？</span>
-          <span class="choose-sentence">사진 찍<span class="opt" data-sync-option="eodo" data-correct>어도</span><span class="sep">/</span><span class="opt" data-sync-option="ado">아도</span> 돼요?</span>
-        </div>
-        <div class="choose-row sentence" data-sync-id="p2-choice-take" data-sync-kind="selection" data-sync-state="chosen">
-          <span class="translation">これ、もらってもいいですか？</span>
-          <span class="choose-sentence">이거 받<span class="opt" data-sync-option="eodo">어도</span><span class="sep">/</span><span class="opt" data-sync-option="ado" data-correct>아도</span> 돼요?</span>
-        </div>
-      </div>
-    </div>
 
     <!-- drill · order the words. the pieces are given, the sentence isn't. -->
-    <div class="section" data-page-id="p2-reorder">
-      <h2 class="section-title">문장 만들기 <span class="title-ja">(文を組み立てよう)</span></h2>
-      <p class="section-subtitle"><span class="ko">단어를 순서대로 놓고, 소리 내어 말해 보세요.</span><span class="ja">単語を順番に並べて、声に出して言ってみましょう。</span></p>
-      <div class="task-block">
-        <div class="answer-box small">
-          <span class="answer-label">ここに座ってもいいですか？</span>
-          <span class="answer-space build-zone" data-sync-id="p2-order-sit" data-sync-kind="order" data-a="여기 앉아도 돼요?"></span>
-        </div>
-        <span class="choice" data-item-id="dweyo">돼요?</span>
-        <span class="choice" data-item-id="here">여기</span>
-        <span class="choice" data-item-id="sit">앉아도</span>
-      </div>
-      <div class="task-block">
-        <div class="answer-box small">
-          <span class="answer-label">写真、いっしょに撮ってもいいですか？</span>
-          <span class="answer-space build-zone" data-sync-id="p2-order-photo" data-sync-kind="order" data-a="사진 같이 찍어도 돼요?"></span>
-        </div>
-        <span class="choice" data-item-id="take-photo">찍어도 돼요?</span>
-        <span class="choice" data-item-id="together">같이</span>
-        <span class="choice" data-item-id="photo">사진</span>
-      </div>
-      <div class="task-block">
-        <div class="answer-box small">
-          <span class="answer-label">もしかして、番号を聞いてもいいですか？</span>
-          <span class="answer-space build-zone" data-sync-id="p2-order-number" data-sync-kind="order" data-a="혹시 번호 물어봐도 돼요?"></span>
-        </div>
-        <span class="choice" data-item-id="ask">물어봐도 돼요?</span>
-        <span class="choice" data-item-id="number">번호</span>
-        <span class="choice" data-item-id="hoksi">혹시</span>
-      </div>
-      <div class="task-block">
-        <div class="answer-box small">
-          <span class="answer-label">これ、食べてもいいですか？</span>
-          <span class="answer-space build-zone" data-sync-id="p2-order-eat" data-sync-kind="order" data-a="이거 먹어도 돼요?"></span>
-        </div>
-        <span class="choice" data-item-id="eat">먹어도 돼요?</span>
-        <span class="choice" data-item-id="this">이거</span>
-      </div>
-    </div>
 
-    <div class="section" data-page-id="p2-fill">
-      <h2 class="section-title">빈칸을 채워요 <span class="title-ja">(空欄をうめよう)</span></h2>
-      <p class="section-subtitle"><span class="ko">빈칸에 들어갈 말을 넣어서, 문장을 통째로 소리 내어 말해 보세요.</span><span class="ja">空欄に入ることばを入れて、文をまるごと声に出して言ってみましょう。</span></p>
-      <div class="tutor-note">학생이 말한 대로 빈칸에 적어 주세요.</div>
-      <div class="task-block">
-        <div class="answer-box">
-          <span class="answer-label">ここに<span class="target ending">座っても</span>いいですか？</span>
-          <span class="answer-fill"><span class="korean">여기 <input class="slot-input" type="text" data-sync-id="p2-fill-sit" data-answer="앉아도" autocomplete="off" spellcheck="false"> 돼요?</span></span>
-        </div>
-      </div>
-      <div class="task-block">
-        <div class="answer-box">
-          <span class="answer-label">写真を<span class="target ending">撮っても</span>いいですか？</span>
-          <span class="answer-fill"><span class="korean">사진 <input class="slot-input" type="text" data-sync-id="p2-fill-photo" data-answer="찍어도" autocomplete="off" spellcheck="false"> 돼요?</span></span>
-        </div>
-      </div>
-      <div class="task-block">
-        <div class="answer-box">
-          <span class="answer-label">番号を<span class="target ending">聞いても</span>いいですか？</span>
-          <span class="answer-fill"><span class="korean">번호 <input class="slot-input" type="text" data-sync-id="p2-fill-ask" data-answer="물어봐도" autocomplete="off" spellcheck="false"> 돼요?</span></span>
-        </div>
-      </div>
-      <div class="task-block">
-        <div class="answer-box">
-          <span class="answer-label">ちょっと<span class="target ending">休んでも</span>いいですか？</span>
-          <span class="answer-fill"><span class="korean">잠깐 <input class="slot-input" type="text" data-sync-id="p2-fill-rest" data-answer="쉬어도" autocomplete="off" spellcheck="false"> 돼요?</span></span>
-        </div>
-      </div>
-    </div>
 
     <div class="section" data-page-id="p2-write">
       <h2 class="section-title">내 질문 만들기 <span class="title-ja">(自分の質問を作ろう)</span></h2>
@@ -650,35 +452,39 @@
     </div>
 
     <!-- the number that sells the next lesson -->
-    <div class="section" data-page-id="todays-result">
-      <h2 class="section-title">오늘의 결과 <span class="title-ja">(今日の成果)</span></h2>
-      <p class="section-subtitle"><span class="ko">25분 전엔 이 장면을 못 읽었는데, 지금은 제1화를 통째로 연기할 수 있어요.</span><span class="ja">25分前はこのシーンが読めなかったのに、今は第1話をまるごと演じられます。</span></p>
-      <!-- the number leads and the table under it is the receipt: the claim
-           lands first, then the learner can check it by eye. -->
-      <div class="payoff">
-        <span class="eqline">動詞 8 ＋ ~(으)ㄴ 적 있어요 ＋ ~아/어도 돼요?</span>
-        <span class="big">16</span>
-        <span class="cap">今日言えるようになった文の数</span>
-      </div>
-      <!-- eight verbs, two ways to end them — the 16 the deck claims -->
-      <div class="combi">
-        <div class="combi-head">
-          <span class="combi-tag n">動詞 8</span>
-          <span></span><!-- the ＋ belongs between the banks, not twice -->
-          <span class="combi-tag e">言い方 2</span>
+        <div class="section" data-page-id="motivation-freetalk">
+      <h2 class="section-title">맞춤 자유 대화 <span class="title-ja">(あなたに合うフリートーク)</span></h2>
+      <p class="section-subtitle"><span class="ko">내가 좋아하는 관심사로 이야기하며 나에게 딱 맞는 수업을 미리 경험해 보세요!</span><span class="ja">自分の好きな関心事で話しながら、自分にぴったりのレッスンを体験してみてください！</span></p>
+      <div class="tutor-note">4페이지에서 처음 선택한 학습 동기의 질문이 자동으로 표시됩니다. 편한 질문부터 이야기해 주세요.</div>
+      <div class="motivation-freetalk-card">
+        <p class="motivation-empty" data-motivation-empty>4ページで学ぶきっかけを選ぶと、ここに質問が表示されます。</p>
+        <div class="motivation-questions" data-motivation="kpop" hidden>
+          <div class="motivation-question"><span class="motivation-question-label">まずは気軽に</span><p class="ko">가장 좋아하는 한국 아이돌이나 배우는 누구인가요? 그 이유는 무엇인가요?</p><p class="ja">一番好きな韓国のアイドルや俳優は誰ですか？その理由は何ですか？</p></div>
+          <div class="motivation-question"><span class="motivation-question-label">想像してみよう</span><p class="ko">만약 하루 동안 좋아하는 한국 드라마의 주인공이 될 수 있다면, 어떤 드라마의 어떤 장면 속으로 들어가고 싶나요?</p><p class="ja">もし1日だけ好きな韓国ドラマの主人公になれるとしたら、どのドラマのどのシーンに入り込みたいですか？</p></div>
         </div>
-        <div class="combi-body">
-          <div class="combi-nouns">
-            <span>가다</span><span>보다</span>
-            <span>먹다</span><span>읽다</span>
-            <span>만나다</span><span>앉다</span>
-            <span>찍다</span><span>물어보다</span>
-          </div>
-          <span class="combi-plus">＋</span>
-          <div class="combi-ends">
-            <span>(으)ㄴ 적 있어요.</span>
-            <span>아/어도 돼요?</span>
-          </div>
+        <div class="motivation-questions" data-motivation="travel" hidden>
+          <div class="motivation-question"><span class="motivation-question-label">まずは気軽に</span><p class="ko">한국에 가면 가장 가보고 싶은 곳과 꼭 먹어보고 싶은 음식은 무엇인가요?</p><p class="ja">韓国に行ったら一番行ってみたい場所と、絶対に食べてみたい食べ物は何ですか？</p></div>
+          <div class="motivation-question"><span class="motivation-question-label">想像してみよう</span><p class="ko">예산과 시간에 전혀 제한이 없다면, 한국에서 딱 한 달 동안 어떤 특별한 여행을 해보고 싶나요?</p><p class="ja">予算と時間に全く制限がないとしたら、韓国でちょうど1ヶ月間、どんな特別な旅行をしてみたいですか？</p></div>
+        </div>
+        <div class="motivation-questions" data-motivation="friend" hidden>
+          <div class="motivation-question"><span class="motivation-question-label">まずは気軽に</span><p class="ko">한국인 친구나 연인과 한국어로 가장 먼저 해보고 싶은 대화나 활동은 무엇인가요?</p><p class="ja">韓国人の友達や恋人と、韓国語で一番最初にどんな会話や活動をしてみたいですか？</p></div>
+          <div class="motivation-question"><span class="motivation-question-label">想像してみよう</span><p class="ko">한국인 친구를 사귀기 위해 내가 가진 최고의 매력 포인트 한 가지를 한국어로 어필해 본다면?</p><p class="ja">韓国人の友達を作るために、自分の最大の魅力ポイントを一つ、韓国語でアピールするとしたら？</p></div>
+        </div>
+        <div class="motivation-questions" data-motivation="work" hidden>
+          <div class="motivation-question"><span class="motivation-question-label">まずは気軽に</span><p class="ko">한국어를 활용해서 어떤 분야의 일이나 업무를 해보고 싶으신가요?</p><p class="ja">韓国語を活かして、どんな分野の仕事や業務をしてみたいですか？</p></div>
+          <div class="motivation-question"><span class="motivation-question-label">想像してみよう</span><p class="ko">한국 회사에 취직했는데, 사장님이 내일 당장 회식 메뉴를 고르라고 합니다. 어떤 메뉴를 선택해서 점수를 딸 건가요?</p><p class="ja">韓国の会社に就職したのに、社長から明日すぐ会食のメニューを選ぶように言われました。どのメニューを選んで高評価を得ますか？</p></div>
+        </div>
+        <div class="motivation-questions" data-motivation="topik" hidden>
+          <div class="motivation-question"><span class="motivation-question-label">まずは気軽に</span><p class="ko">목표로 하는 TOPIK 급수는 몇 급인가요? 그 급수를 따면 가장 먼저 무엇을 하고 싶나요?</p><p class="ja">目標にしているTOPIKの級は何級ですか？その級に合格したら、一番最初に何をしたいですか？</p></div>
+          <div class="motivation-question"><span class="motivation-question-label">想像してみよう</span><p class="ko">내가 ‘한국어 능력자’가 되어서 선생님과 입장이 바뀐다면, 선생님께 가장 먼저 내주고 싶은 숙제는 무엇인가요?</p><p class="ja">自分が「韓国語マスター」になって先生と立場が逆転したら、先生に一番最初に出したい宿題は何ですか？</p></div>
+        </div>
+        <div class="motivation-questions" data-motivation="self" hidden>
+          <div class="motivation-question"><span class="motivation-question-label">まずは気軽に</span><p class="ko">한국어 공부 외에 최근에 관심을 가지고 배우고 있거나 도전해보고 싶은 것이 있나요?</p><p class="ja">韓国語の勉強以外に、最近興味を持って学んでいることや挑戦してみたいことはありますか？</p></div>
+          <div class="motivation-question"><span class="motivation-question-label">想像してみよう</span><p class="ko">자고 일어났더니 갑자기 한국어를 완벽하게 원어민처럼 할 수 있게 되었습니다! 오늘 하루 일정을 어떻게 보내실 건가요?</p><p class="ja">朝起きたら突然、韓国語がネイティブのように完璧に話せるようになっていました！今日の1日のスケジュールをどう過ごしますか？</p></div>
+        </div>
+        <div class="motivation-questions" data-motivation="other" hidden>
+          <div class="motivation-question"><span class="motivation-question-label">まずは気軽に</span><p class="ko">요즘 일상에서 가장 푹 빠져 있는 취미나 소소한 즐거움은 무엇인가요?</p><p class="ja">最近の日常で一番はまっている趣味や、ささやかな楽しみは何ですか？</p></div>
+          <div class="motivation-question"><span class="motivation-question-label">想像してみよう</span><p class="ko">평생 동안 딱 한 가지 음식만 먹고 살아야 한다면, 어떤 음식을 선택할 건가요?</p><p class="ja">(もし一生、たった一つの食べ物だけを食べて生きていかなければならないとしたら、どの食べ物を選びますか？)</p></div>
         </div>
       </div>
     </div>
@@ -1612,6 +1418,7 @@
        그대로 그려지고, 아무 에러도 나지 않는다.
        한국어 판본은 report.js 안의 기본값이 그대로다(사내 확인용으로
        ../reports/trial-1-report.html 이 그쪽을 부른다). 공유 스크립트. -->
+  <script src="../../../../../shared/js/motivation-freetalk.js"></script>
   <script src="../../../../../shared/js/report-ja.js"></script>
 
   <!-- REPORT · 리포트·안내 페이지의 배선. 공유 스크립트. -->
