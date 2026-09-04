@@ -169,5 +169,41 @@ class Cover(unittest.TestCase):
         self.assertEqual(title, "식당 & 카페")
 
 
+class DisplayLevel(unittest.TestCase):
+    """The one course whose filter slot and level word are different things.
+
+    trial-lv2 is written at 초급 but sits in the UPPER_BEGINNER slot, because
+    the ladder has a 왕초급 rung and the app's filter does not — see
+    `course_naming.DISPLAY_LEVEL`. What must not drift is the pair: the title
+    and the pill both take the declared word, and everything else about the
+    title is still recomposed and checked.
+    """
+
+    TITLE = {"ko": "(초급) 체험 레슨", "en": "(Beginner) Trial lesson",
+             "ja": "(初級) 体験レッスン"}
+
+    def test_the_title_takes_the_declared_word_not_the_difficulty(self):
+        self.assertEqual(
+            naming.title_for("kr", "trial-lv2-patterns", "ja", "体験レッスン",
+                             "UPPER_BEGINNER", None),
+            "(初級) 体験レッスン")
+
+    def test_the_pill_follows_the_title_rather_than_the_filter_chip(self):
+        pill, _ = naming.cover_copy("kr", "trial-lv2-patterns", self.TITLE,
+                                    "UPPER_BEGINNER", None)
+        self.assertEqual(pill, "体験 · 初級")
+
+    def test_the_gate_accepts_the_declared_pair(self):
+        self.assertEqual(
+            naming.problems([row("trial-lv2-patterns", difficulty="UPPER_BEGINNER",
+                                 class_level=12.0, **self.TITLE)]),
+            [])
+
+    def test_a_course_without_an_entry_still_has_to_match_its_difficulty(self):
+        found = naming.problems([row("trial-lv3-contextual", difficulty="UPPER_BEGINNER",
+                                     class_level=13.0, **self.TITLE)])
+        self.assertTrue(any("composes" in problem for problem in found), found)
+
+
 if __name__ == "__main__":
     unittest.main()
