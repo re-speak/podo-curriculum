@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<!-- VENDORED from tools/authoring/kr/track_template.html — byte-identical to it
+     except for the edits listed here, so a change upstream re-applies as a diff.
+
+     A track upstream is a track here too: the courses in a family are its units,
+     and their lessons are its lessons. That is what the unit shell was built for,
+     so nothing here had to be collapsed.
+
+     Edits:
+       1. The language tabs come from DATA.page, since one template draws both
+          korean/ and english/ track pages.
+       2. The level ramp is keyed by position (see gateway.html).
+       3. A course prints its own `spec.description` at the head of the body it
+          opens into. Upstream draws the authored track TOC, where a course is a
+          heading with prose under it; here a course is a row in courses/, and
+          that sentence is the only thing on the page that says what the course
+          is for. Nothing else in this file moved.
+       4. Links drop the .html and the catalog is ../ rather than ../catalog.html,
+          because this site is served at a custom domain where a language is a
+          path (/korean-jp) and its catalog is that directory's index. GitHub
+          Pages resolves the extensionless links to the same files upstream
+          writes, so only the links moved, not the tree.
+
+     Filled by tools/build-catalog.py — do not edit the built file by hand. -->
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google" content="notranslate">
+<meta name="theme-color" content="#ffffff">
+<title id="ttl">커리큘럼 · PODO 한국어</title>
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="../../site.css">
+<style>
+  @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+  /* ────────────────────────────────────────────────────────────────────
+     읽는 순서를 선이 아니라 면과 밀도로 만든다.
+
+       1. 트랙 개요          — 트랙색을 품은 큰 면. 이름·설명·규모가 한 덩어리다.
+       2. 찾아보기           — 중립색 도구 면. 검색과 필터만 둔다.
+       3. 단원               — 흰 카드와 트랙색 번호칩으로 훑는다.
+       4. 과                 — 옅은 타일. 제목만 남겨 빠르게 고른다.
+       5. 선택한 과          — 트랙색 바닥과 예문 블록이 선택 상태를 만든다.
+
+     예문의 배우는 조각은 살구색으로 고정해 트랙색과 역할이 겹치지 않게 한다.
+     ──────────────────────────────────────────────────────────────────── */
+  :root {
+    --ink: #16181a;
+    --ink-2: #454a4f;
+    --ink-3: #62686e;
+    --ink-4: #7d848a;
+    --line: #e6e8ea;
+    --line-soft: #f1f2f3;
+    --surface: #fafbfb;
+    --lime: #b5fd4c;
+    --radius: 4px;
+    --radius-sm: 2px;
+
+    /* 덱의 --ending-* 그대로. "이 과가 가르치는 조각"이라는 뜻이 레슨과 같다. */
+    --pat-mark: #ffdfc7;
+    --pat-ink:  #a4501a;
+
+    /* 레벨 램프. 이름이 아니라 축 위의 자리로 매긴다 — 눈금 이름은 언어마다 다르지만
+       (한국어 6단, 영어 CEFR) 옅은 것에서 짙은 것으로 오른다는 규칙은 같다. 어느 이름이
+       몇 번을 쓰는지는 build-catalog.py 가 DATA.ramp 에 실어 보낸다. */
+    --lv-1: #eef8de;
+    --lv-2: #d7f0b4;
+    --lv-3: #b1e07c;
+    --lv-4: #7ac845;
+    --lv-5: #3f7a1c;
+    --lv-6: #2a5511;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #fff; color: var(--ink); line-height: 1.6;
+    font-family: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 28px 130px; }
+  @media (max-width: 600px) { .wrap { padding: 0 18px 80px; } }
+  a { color: inherit; text-decoration: none; }
+  :focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: var(--radius-sm); }
+  .lbl { color: var(--ink-3); font-size: 11px; font-weight: 700; letter-spacing: .07em; }
+
+  /* ---------- 트랙 탭 ---------- */
+  .tabs { position: sticky; top: 0; z-index: 30; background: rgba(255,255,255,.94); backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line); }
+  .tabs-in { max-width: 1040px; margin: 0 auto; padding: 0 28px; display: flex; gap: 2px; overflow-x: auto; }
+  @media (max-width: 600px) { .tabs-in { padding: 0 18px; } }
+  .tabs-in::-webkit-scrollbar { display: none; }
+  .tab { flex: 0 0 auto; padding: 13px 14px 11px; border-bottom: 2px solid transparent;
+    color: var(--ink-3); font-size: 13px; font-weight: 600; white-space: nowrap; }
+  .tab:hover { color: var(--ink); }
+  .tab em { font-style: normal; margin-right: 7px; color: var(--ink-4); font-size: 11px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .tab.on { color: var(--ac); border-bottom-color: var(--ac); font-weight: 750; }
+  .tab.on em { color: var(--ac); opacity: .6; }
+  .tab.home { padding-left: 0; padding-right: 16px; color: var(--ink-4); }
+  .tab.home:hover { color: var(--ink); }
+
+  /* ---------- 1단 · 트랙 머리 ---------- */
+  .hero { padding: 32px 0 0; }
+  .hero-card { position: relative; isolation: isolate; overflow: hidden; display: grid;
+    grid-template-columns: minmax(0,1.35fr) minmax(290px,.65fr); gap: 44px; align-items: end;
+    padding: 40px 42px; border: 1px solid color-mix(in srgb, var(--ac) 12%, var(--line)); border-radius: 8px;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--tint) 86%, white), #fff 72%);
+    box-shadow: none; }
+  .hero-card::after { content: ""; position: absolute; z-index: -1; width: 260px; height: 260px;
+    right: -100px; top: -130px; border: 46px solid color-mix(in srgb, var(--ac) 10%, transparent);
+    border-radius: 50%; }
+  .plan-track .hero-card { border: 2px dashed #9ba2a8;
+    background: repeating-linear-gradient(135deg, #f3f4f5 0 12px, #fff 12px 24px); }
+  .plan-banner[hidden] { display: none; }
+  .plan-banner { display: flex; align-items: center; gap: 12px; margin-top: 14px; padding: 13px 15px;
+    border: 1px solid #aeb4b9; border-radius: var(--radius); background: #f1f3f4;
+    color: #394047; font-size: 13px; font-weight: 650; }
+  .plan-banner strong { flex: 0 0 auto; padding: 3px 7px; background: #555d64; color: #fff;
+    font-size: 10px; font-weight: 800; letter-spacing: -.01em; }
+  .hero-no { display: inline-flex; align-items: center; gap: 8px; color: var(--ac); font-size: 12px;
+    font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+  .hero-no::before { content: ""; width: 8px; height: 8px; background: var(--ac); }
+  h1 { margin: 11px 0 0; font-size: 44px; font-weight: 820; line-height: 1.08; letter-spacing: -.045em; word-break: keep-all; }
+  h1 span { display: block; margin: 7px 0 0; color: var(--ink-3); font-size: 14px; font-weight: 550; letter-spacing: 0; }
+  .hero-d { max-width: 52ch; margin: 19px 0 0; color: var(--ink-2); font-size: 15px; line-height: 1.72; word-break: keep-all; }
+
+  .panel { min-width: 0; padding: 20px; border: 1px solid rgba(22,24,26,.08); border-radius: var(--radius);
+    background: rgba(255,255,255,.82); box-shadow: none; }
+  .overview-label { display: block; margin-bottom: 13px; color: var(--ink-3); font-size: 12px;
+    font-weight: 750; letter-spacing: .08em; }
+  .figs { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; }
+  .figs div { min-width: 0; }
+  .figs div b { display: block; color: var(--ac); font-size: 24px; font-weight: 780;
+    letter-spacing: -.04em; line-height: 1.1; font-variant-numeric: tabular-nums; }
+  .figs div span { display: block; margin-top: 3px; color: var(--ink-3); font-size: 12px; font-weight: 650; }
+  #distwrap:not([hidden]) { margin-top: 20px; }
+  .dist { display: flex; gap: 2px; height: 10px; }
+  .dist i { border-radius: 1px; }
+  .dist-legend { display: flex; flex-wrap: wrap; gap: 4px 12px; margin: 10px 0 0; color: var(--ink-2); font-size: 12px; }
+  .dist-legend span { display: inline-flex; align-items: center; gap: 5px; }
+  .dist-legend i { width: 8px; height: 8px; border-radius: 1px; box-shadow: inset 0 0 0 1px rgba(0,0,0,.08); }
+  .dist-legend b { font-weight: 750; font-variant-numeric: tabular-nums; }
+
+  /* ---------- 2단 · 찾아보기 ---------- */
+  .curriculum-head { margin: 34px 0 0; padding: 20px; border-radius: var(--radius); background: #f4f6f8; }
+  .band { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin: 0 0 14px; }
+  .band h2 { margin: 0; color: var(--ink); font-size: 20px; font-weight: 780; letter-spacing: -.025em; }
+  .band p { margin: 0; color: var(--ink-3); font-size: 12px; font-weight: 650; }
+
+  /* ---------- controls ---------- */
+  .controls { padding: 0; }
+  .crow { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+  .crow[hidden] { display: none; }
+  .crow + .crow { margin-top: 12px; }
+  .search { flex: 1 1 240px; min-width: 190px; padding: 11px 15px; border: 1px solid #d7dce0;
+    border-radius: var(--radius-sm); background: #fff; box-shadow: none; font: inherit; font-size: 13.5px; }
+  .search::placeholder { color: var(--ink-4); }
+  .search:focus { outline: none; box-shadow: inset 0 0 0 2px var(--ac); }
+  /* 표시 언어 선택기. 브랜드 옆 작은 세 칸 — 헤더의 무게중심을 바꾸지 않는다. */
+  .loc { display: flex; gap: 2px; margin-left: auto; padding: 2px; border: 1px solid #e3e7ea;
+    border-radius: var(--radius-sm); background: #fff; }
+  .loc button { padding: 4px 9px; border: 0; border-radius: 2px; background: transparent;
+    color: var(--ink-3); font: inherit; font-size: 12px; font-weight: 650; cursor: pointer; }
+  .loc button:hover { color: var(--ink); }
+  .loc button[aria-pressed="true"] { background: var(--ink); color: #fff; }
+
+  /* 프리토킹 과의 질문 여덟 개. 번호는 덱이 부르는 이름 그대로(몸풀기·질문)이고,
+     이어지는 질문은 한 단 들여 본 질문에 붙어 있음을 보인다. */
+  .qs { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+  .qitem { padding: 11px 13px; border: 1px solid var(--gray-200, #e6e8ea); border-radius: var(--radius-sm);
+    background: #fff; }
+  .qn { display: inline-block; margin-bottom: 5px; padding: 2px 7px; border-radius: 2px;
+    background: var(--tint); color: var(--ac); font-size: 11px; font-weight: 800; }
+  .qt { margin: 0; font-size: 14px; font-weight: 650; line-height: 1.5; }
+  .qja { margin: 3px 0 0; color: var(--ink-3); font-size: 12.5px; line-height: 1.5; }
+  .qf { margin: 7px 0 0; padding-left: 15px; display: grid; gap: 2px;
+    color: var(--ink-4); font-size: 12.5px; }
+  .qf li { line-height: 1.45; }
+  .goal-ja { margin: 3px 0 0; color: var(--ink-3); font-size: 12.5px; line-height: 1.55; }
+
+  .chip { padding: 6px 10px; border: 1px solid #dfe3e6; border-radius: var(--radius-sm); background: #fff; color: var(--ink-3); font: inherit; font-size: 12px; font-weight: 600; cursor: pointer; }
+  .chip:hover { color: var(--ink); }
+  .chip[aria-pressed="true"] { background: var(--ink); color: #fff; }
+  .chip .dot { display: inline-block; width: 7px; height: 7px; margin-right: 6px; border-radius: 1px; box-shadow: inset 0 0 0 1px rgba(0,0,0,.1); vertical-align: 1px; }
+  /* 이 페이지에서 실제로 누르는 것은 이 둘뿐이라 버튼처럼 보이게 둔다 */
+  .btn { padding: 10px 12px; border: 1px solid #dfe3e6; border-radius: var(--radius-sm); background: #fff;
+    color: var(--ink-2); font: inherit; font-size: 12.5px; font-weight: 650; cursor: pointer; white-space: nowrap; }
+  .btn:hover { background: color-mix(in srgb, var(--tint) 64%, white); color: var(--ink); }
+  .btn.on { background: var(--ink); border-color: var(--ink); color: #fff; }
+  .btn.deep { color: var(--ac); }
+  .btn.deep:hover { background: var(--tint); }
+  .btn.deep.on { background: var(--ac); border-color: var(--ac); color: #fff; }
+  .hits { margin-left: auto; color: var(--ink-3); font-size: 12px; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+  /* ---------- 3단 · 단원 카드 ---------- */
+  .groups { margin-top: 18px; display: grid; gap: 12px; }
+  .group { border: 1px solid #dfe3e6; border-radius: var(--radius); overflow: hidden; background: #fff;
+    box-shadow: none; transition: border-color .16s, background .16s; }
+  .group:hover { border-color: #bdc4ca; }
+  .group.open { border-color: #c8ced3; }
+  .group.hide { display: none; }
+  /* 표지. 닫힌 줄에서는 36px 표시이고, 펼치면 자리에서 빠져나와 본문의 118px 표지가
+     된다 — 그림 하나가 두 크기를 갖는 것이지 같은 그림이 두 장 있는 것이 아니다.
+     자리는 접힌 채로 남지 않는다: 표시가 나가면 번호칩과 제목이 그 자리로 미끄러진다. */
+  .gmark { flex: 0 0 auto; width: 36px; height: 45px; overflow: hidden;
+    transition: width .28s cubic-bezier(.2,.7,.3,1), margin-left .28s cubic-bezier(.2,.7,.3,1); }
+  .group.open .gmark { width: 0; margin-left: -16px; }
+  .cov { display: block; width: 36px; height: 45px; border-radius: var(--radius-sm);
+    background-size: cover; background-position: center; box-shadow: 0 1px 2px rgba(16,24,32,.14); }
+  .plate { display: flex; align-items: center; gap: 20px; }
+  .plate-copy { min-width: 0; flex: 1 1 auto; }
+  .plate-copy > :first-child { margin-top: 0; }
+  .cov-slot { flex: 0 0 auto; width: 118px; height: 148px; }
+  .cov-slot .cov { width: 118px; height: 148px; border-radius: var(--radius); }
+  /* 나는 동안의 표지. 흐름 밖에 있어서 지나가는 자리가 다시 배치되지 않는다. */
+  .cov-flying { position: fixed; z-index: 40; margin: 0; pointer-events: none;
+    background-size: cover; background-position: center;
+    box-shadow: 0 6px 22px rgba(16,24,32,.22); }
+  @media (max-width: 600px) { .plate { gap: 14px; } .cov-slot, .cov-slot .cov { width: 96px; height: 120px; } }
+
+  .ghead { display: flex; align-items: center; gap: 16px;
+    width: 100%; padding: 16px 18px; border: 0; background: #fff; font: inherit; text-align: left; cursor: pointer; }
+  .group.open .ghead { background: linear-gradient(90deg, color-mix(in srgb, var(--tint) 76%, white), #fff 72%); }
+  .gnum { flex: 0 0 auto; display: grid; place-items: center; min-width: 40px; height: 34px; padding: 0 9px; border-radius: var(--radius-sm);
+    background: var(--ac); color: #fff; font-size: 12px; font-weight: 800; letter-spacing: -.01em; white-space: nowrap; box-shadow: none; }
+  .gtitle { flex: 1 1 auto; min-width: 0; font-size: 18px; font-weight: 750; letter-spacing: -.03em; word-break: keep-all; }
+  .gtitle em { display: block; margin-top: 2px; color: var(--ink-3); font-style: normal; font-size: 12.5px; font-weight: 500; letter-spacing: 0; }
+  .gmeta { display: flex; align-items: center; gap: 14px; color: var(--ink-3); font-size: 12px; font-weight: 600; white-space: nowrap; }
+  .gmeta > * { flex: 0 0 auto; }
+  .lv-tag { display: inline-flex; align-items: center; gap: 6px; color: var(--ink-2); }
+  .lv-tag i { width: 9px; height: 9px; border-radius: 1px; box-shadow: inset 0 0 0 1px rgba(0,0,0,.1); }
+  .caret { display: inline-block; width: 10px; color: var(--ink-4); font-size: 9px; }
+  .caret::before { content: "\25B8"; }
+  .group.open .caret { color: var(--ac); }
+  .group.open .caret::before { content: "\25BE"; }
+  .gbody { display: none; padding: 12px 20px 20px; }
+  .group.open .gbody { display: block; }
+
+  .story { margin: 0; max-width: 70ch; color: var(--ink-2); font-size: 13.5px; line-height: 1.75; word-break: keep-all; }
+  .story b { color: var(--ink); font-weight: 750; }
+  .story .cast { display: block; margin-top: 5px; color: var(--ink-4); font-size: 12px; }
+  .gcan { margin: 12px 0 0; max-width: 70ch; padding: 12px 14px; border-radius: var(--radius-sm);
+    background: color-mix(in srgb, var(--tint) 58%, white); color: var(--ink); font-size: 13.5px; line-height: 1.7; word-break: keep-all; }
+  .gcan b { display: block; margin-bottom: 2px; color: var(--ac); }
+
+  /* ---------- 4단 · 과 한 줄 ---------- */
+  .lessons { margin-top: 16px; display: grid; gap: 6px; }
+  /* 머리글이 없는 단원(핵심·한글)에서는 목록이 곧바로 시작한다 */
+  .gbody > .lessons:first-child { margin-top: 0; }
+  .lesson { border-radius: var(--radius-sm); background: var(--surface); }
+  .lesson.hide { display: none; }
+  .lrow { display: flex; align-items: center; gap: 10px; }
+  .lrow-btn { flex: 1 1 auto; min-width: 0;
+    display: grid; grid-template-columns: 58px minmax(0,1fr) minmax(0,auto); align-items: baseline; gap: 16px;
+    width: 100%; padding: 12px 13px; border: 0; border-radius: var(--radius-sm); background: none; font: inherit; text-align: left; cursor: pointer; }
+  /* 덱이 나와 있는 과에만 붙는 문. 여기는 4단이라 트랙색을 쓰지 않는다 —
+     색을 여기까지 내리면 펼친 과 안의 살구색 mark 가 묻힌다. */
+  .deck-links { flex: 0 0 auto; display: flex; gap: 5px; margin-right: 13px; }
+  .deck { flex: 0 0 auto; padding: 5px 11px; border: 1px solid var(--line); border-radius: var(--radius-sm); background: #fff;
+    color: var(--ink-2); font-size: 11.5px; font-weight: 700; white-space: nowrap; }
+  .deck:hover { border-color: var(--ink); color: var(--ink); }
+  .deck .ext { color: var(--ink-4); font-size: 10px; }
+  .deck:hover .ext { color: var(--ink-3); }
+  .lrow-btn:hover { background: color-mix(in srgb, var(--tint) 50%, white); }
+  .lrow-btn:hover .ltitle { color: var(--ink); }
+  .lno { color: var(--ac); font-size: 12px; font-weight: 750; font-variant-numeric: tabular-nums; }
+  .ltitle { min-width: 0; font-size: 14.5px; font-weight: 650; letter-spacing: -.015em; word-break: keep-all; transition: color .12s; }
+  .ltitle em { font-style: normal; color: var(--ink-3); font-weight: 450; letter-spacing: 0; }
+  .first-tag { display: inline-block; margin-left: 8px; padding: 2px 6px; border: 1px solid color-mix(in srgb, var(--ac) 28%, var(--line));
+    border-radius: var(--radius-sm); color: var(--ac); font-size: 10px; font-weight: 750; letter-spacing: .02em; vertical-align: 1px; }
+  .ltitle mark { background: var(--lime); color: var(--ink); border-radius: var(--radius-sm); padding: 0 2px; }
+  .lchips { display: none; }
+  .lchips .pat { max-width: 26ch; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 500; }
+  .lchips .sep, .lchips .pat.ref { color: var(--ink-4); }
+  @media (max-width: 760px) { .lchips { display: none; } .lrow-btn { grid-template-columns: 46px minmax(0,1fr); } }
+
+  /* ---------- 5단 · 펼친 과 ----------
+     펼친 과는 얇은 외곽선과 옅은 바닥 하나로만 선택 상태를 만든다. 제목 → 할 수 있는
+     것 → 예문 → 표현의 순서를 고정하고, 예문 둘은 넓은 화면에서 나란히 둔다. */
+  .lesson.open { margin: 5px 0 10px; border: 1px solid color-mix(in srgb, var(--ac) 42%, #d7dce0);
+    background: color-mix(in srgb, var(--tint) 58%, white); border-radius: var(--radius); box-shadow: none; }
+  .lesson.open .lrow { padding-right: 16px; }
+  .lesson.open .lrow-btn { grid-template-columns: auto minmax(0,1fr); gap: 12px; padding: 17px 18px 12px; }
+  .lesson.open .deck-links { margin-right: 0; }
+  .lesson.open .lrow-btn:hover { background: transparent; }
+  .lesson.open .lno { padding: 3px 8px; border-radius: var(--radius-sm); background: var(--ac); color: #fff; font-weight: 750; }
+  .lesson.open .ltitle { font-size: 16px; font-weight: 750; letter-spacing: -.02em; }
+  .lesson.open .ltitle em { font-size: 13.5px; }
+  .lesson.open .lchips { display: none; }       /* 블록 안에서 패턴 이름이 다시 나온다 */
+
+  .ldetail { display: none; padding: 0 20px 22px; }
+  .lesson.open .ldetail { display: block; }
+  @media (max-width: 760px) { .ldetail { padding: 0 16px 16px; } }
+
+  /* 펼친 과 안에서는 선 대신 여백·바닥색·작은 라벨로 의미를 나눈다. */
+  .field + .field { margin-top: 20px; }
+  .field > .lbl { display: inline-flex; align-items: center; margin-bottom: 10px; padding: 4px 7px;
+    border-radius: var(--radius-sm); background: color-mix(in srgb, var(--ac) 10%, white); color: var(--ac);
+    font-size: 10.5px; letter-spacing: .045em; }
+  .field-goal { position: relative; padding: 14px 16px 14px 46px; border-radius: var(--radius-sm); background: rgba(255,255,255,.74); }
+  .field-goal::before { content: "\2713"; position: absolute; left: 17px; top: 17px; display: grid; place-items: center;
+    width: 22px; height: 22px; border-radius: var(--radius-sm); background: var(--ac); color: #fff; font-size: 13px; font-weight: 800; }
+  .field-goal > .lbl { margin-bottom: 5px; padding: 0; background: none; }
+
+  /* 이 과의 약속. 카드에서 제일 먼저 읽혀야 하는 줄이라 본문보다 크고 진하다. */
+  .goal { margin: 0; max-width: 62ch; color: var(--ink); font-size: 15px; font-weight: 600; line-height: 1.65; word-break: keep-all; }
+  .words { display: flex; flex-wrap: wrap; gap: 6px; }
+  .words span { padding: 5px 10px; background: color-mix(in srgb, var(--tint) 55%, white); border-radius: var(--radius-sm); font-size: 16px; font-weight: 700; }
+  .scene { margin: 0 0 16px; max-width: 62ch; color: var(--ink-3); font-size: 12.5px; line-height: 1.6; word-break: keep-all; }
+
+  /* 한글 트랙에서는 단어가 결과 예시이고, 실제 학습 대상은 낱자와 조합 규칙이다.
+     그래서 글자·규칙을 가장 큰 면에, 읽기 예시는 조용한 보조 줄에 둔다. */
+  .hangul-focus { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+  .hangul-focus-item { min-height: 66px; display: flex; align-items: center; padding: 14px 16px;
+    border-radius: var(--radius-sm); background: rgba(255,255,255,.9); color: var(--ink); font-size: 15px;
+    font-weight: 700; line-height: 1.65; word-break: keep-all; }
+  .hangul-focus-item .jamo { display: inline-block; margin: 0 2px; padding: 1px 5px;
+    border-radius: var(--radius-sm); background: color-mix(in srgb, var(--ac) 12%, white); color: var(--ac);
+    font-size: 21px; font-weight: 800; line-height: 1.35; letter-spacing: .035em; vertical-align: -1px; }
+  .field-hangul-practice { margin-top: 16px; }
+  .hangul-practice { display: flex; flex-wrap: wrap; align-items: center; gap: 5px 0; max-width: 72ch; }
+  .hangul-practice span { color: var(--ink-3); font-size: 13px; font-weight: 600; }
+  .hangul-practice span:not(:last-child)::after { content: "\00B7"; margin: 0 9px; color: var(--ink-4); }
+
+  /* 페이지에서 채운 색은 트랙색과 이 살구색뿐이고, 트랙색은 3단 위쪽에만 있다.
+     그래서 과를 펼쳤을 때 그 안에서 유일하게 칠해진 것이 배우는 조각이 된다. */
+  .pats { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+  .pcard { padding: 16px; border-radius: var(--radius-sm); background: rgba(255,255,255,.88); box-shadow: none; }
+  .pcard .sent { margin: 0; font-size: 18.5px; font-weight: 700; line-height: 1.45; letter-spacing: -.025em; word-break: keep-all; }
+  .pcard .sent mark { background: var(--pat-mark); color: var(--pat-ink); padding: 1px 3px; margin: 0 -1px; border-radius: var(--radius-sm); font-weight: 800;
+    -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+  .pcard .reply { margin: 5px 0 0; color: var(--ink-3); font-size: 13px; font-weight: 500; word-break: keep-all; }
+  .pcard .reply::before { content: "\21B3 "; color: var(--ink-4); }
+  .pcard .pmeta { margin: 10px 0 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 3px 9px; }
+  .pcard .pname { color: var(--pat-ink); font-size: 12px; font-weight: 750; }
+  .pcard .pgloss { color: var(--ink-4); font-size: 12px; word-break: keep-all; }
+
+  /* 표현 — 훑을 때 눈에 걸리도록 글줄이 아니라 낱개로 앉힌다 */
+  .said { display: flex; flex-wrap: wrap; gap: 6px; }
+  .said span { padding: 5px 10px; background: rgba(255,255,255,.88); border-radius: var(--radius-sm);
+    color: var(--ink-2); font-size: 12.5px; font-weight: 600; }
+  .rule { margin: 11px 0 0; max-width: 66ch; color: var(--ink-2); font-size: 12.5px; line-height: 1.7; word-break: keep-all; }
+
+  @media (max-width: 600px) {
+    .hero { padding-top: 26px; }
+    .hero-card { grid-template-columns: 1fr; gap: 26px; padding: 28px 22px; border-radius: 6px; }
+    h1 { font-size: 34px; }
+    .panel { padding: 16px; }
+    .curriculum-head { margin-top: 24px; padding: 16px; }
+    .band { margin-bottom: 12px; }
+    .ghead { grid-template-columns: auto minmax(0,1fr); gap: 10px 12px; padding: 14px; }
+    .gtitle { font-size: 16px; }
+    .gmeta { grid-column: 2; justify-content: flex-start; flex-wrap: wrap; gap: 4px 10px; }
+    .gbody { padding: 6px 14px 16px; }
+    .lrow { gap: 6px; }
+    .deck { padding: 5px 8px; }
+    .lesson.open .lrow { padding-right: 8px; }
+    .lesson.open .lrow-btn { padding-inline: 15px 8px; }
+    .ldetail { padding: 0 15px 18px; }
+    .field-goal { padding: 14px 14px 14px 46px; }
+    .pats { grid-template-columns: 1fr; }
+  }
+
+
+  .empty { margin-top: 40px; color: var(--ink-3); font-size: 13.5px; text-align: center; }
+  .empty.hide { display: none; }
+  .nextrack { display: flex; justify-content: space-between; gap: 14px; margin-top: 70px; padding: 15px 17px;
+    border-radius: var(--radius-sm); background: var(--surface); }
+  .nextrack a { color: var(--ink-3); font-size: 13px; font-weight: 600; }
+  .nextrack a:hover { color: var(--ink); }
+  footer { margin-top: 26px; color: var(--ink-4); font-size: 12px; line-height: 1.8; }
+  footer code { color: var(--ink-3); font-size: 11.5px; }
+</style>
+</head>
+<body>
+<a class="podo-skip" href="#main" data-i18n="ui.skip">본문으로 건너뛰기</a>
+<header class="podo-bar">
+  <div class="podo-bar__inner">
+    <a class="podo-brand" id="brand" href="../../index.html"><img src="../../favicon.svg" width="28" height="28" alt="">PODO Curriculum</a>
+    <nav class="podo-nav" id="nav" data-i18n-label="ui.navLabel" aria-label="커리큘럼 탐색"></nav>
+    <div class="loc" id="loc" role="group"></div>
+  </div>
+</header>
+<nav class="tabs"><div class="tabs-in" id="tabs"></div></nav>
+<main class="wrap" id="main">
+
+  <header class="hero">
+    <div class="hero-card">
+      <div class="hero-copy">
+        <span class="hero-no" id="hno"></span>
+        <h1 id="h1"></h1>
+        <p class="hero-d" id="hd"></p>
+      </div>
+      <div class="panel">
+        <span class="overview-label" data-i18n="ui.overview">한눈에 보기</span>
+        <div class="figs" id="figs"></div>
+        <div id="distwrap"></div>
+      </div>
+    </div>
+  </header>
+  <div class="plan-banner" id="plan-banner" hidden><strong data-i18n="ui.noDev">개발 안 함</strong>
+    <span data-i18n="ui.noDevP">계획 참고용 — 이 트랙은 현재 개발하지 않으며, 레슨 덱 제작도 승인되지 않았습니다.</span></div>
+
+  <section class="curriculum-head" aria-labelledby="curriculum-title">
+    <div class="band" id="band"></div>
+    <div class="controls">
+      <div class="crow">
+        <input class="search" id="q" type="search" data-i18n-ph="ui.searchPlaceholder"
+             placeholder="과·패턴·표현 검색" autocomplete="off">
+        <button class="btn" id="expandUnits" type="button" data-i18n="ui.expandUnits">단원 모두 펼치기</button>
+        <button class="btn deep" id="expandAll" type="button" data-i18n="ui.expandAll">과까지 모두 펼치기</button>
+        <span class="hits" id="hits"></span>
+      </div>
+      <div class="crow" id="levelbar"></div>
+    </div>
+  </section>
+
+  <div class="groups" id="groups"></div>
+  <div class="empty hide" id="empty" data-i18n="ui.noResults">검색 결과가 없습니다.</div>
+
+  <div class="nextrack" id="nextrack"></div>
+  <footer>
+  </footer>
+
+</main>
+
+<script>
+const DATA = {"levels": ["왕초급", "초급", "초중급", "중급", "중고급", "고급"], "ramp": {"왕초급": 1, "초급": 2, "초중급": 3, "중급": 4, "중고급": 5, "고급": 6}, "nav": [{"id": "trial", "no": 0, "ko": "체험 레슨", "ja": "体験レッスン", "en": "Trial Lessons", "accent": "#69737d", "trial": true}, {"id": "1-hangul", "no": 1, "ko": "한글 읽기", "ja": "ハングルを読む", "en": "Hangul Reading", "accent": "#4f7d10", "trial": false}, {"id": "2-core-patterns", "no": 2, "ko": "핵심 문법 패턴", "ja": "コア文法パターン", "en": "Core Patterns", "accent": "#2b5fd9", "trial": false}, {"id": "3-contextual-korean", "no": 3, "ko": "상황별 한국어", "ja": "場面別の韓国語", "en": "Contextual Korean", "accent": "#c22a5f", "trial": false}, {"id": "4-freetalking", "no": 4, "ko": "중급·고급 프리토킹", "ja": "中級・上級フリートーキング", "en": "Intermediate & Advanced Freetalking", "accent": "#0080a8", "trial": false}], "track": {"id": "1-hangul", "no": 1, "trial": false, "ko": "한글 읽기", "en": "Hangul Reading", "ja": "ハングルを読む", "glyph": "가", "status": "live", "accent": "#4f7d10", "tint": "#f2f7e8", "unitWord": "코스", "lessonWord": "과", "desc": {"ko": "어떤 한국어 음절이든 소리 내어 읽을 수 있게. 한 레슨에 새 요소는 하나만.", "ja": "どんな韓国語の音節も声に出して読めるように。1レッスンで新しい要素は1つだけ。", "en": "Read any Korean syllable aloud. One new element per lesson, never two."}, "note": "", "stats": [{"k": "lessonWord", "v": 14}, {"k": "unitWord", "v": 1}, {"k": "deckWordShort", "v": 28}], "groups": [{"no": 1, "label": "1코스", "title": "한글 떼기", "titles": {"ko": "한글 떼기", "en": "Hangul reading", "ja": "ハングル入門"}, "subtitle": "(初級) ハングル入門", "desc": {"ko": "자음 · 모음 · 받침을 거쳐 간판을 읽기까지.", "en": "From consonants and vowels through final consonants, to reading the signs on a Korean street.", "ja": "子音・母音・パッチムを通って、街の看板が読めるところまで。"}, "cover": "covers/hangul-starter.webp", "levels": ["왕초급"], "level": "왕초급", "slug": "hangul-starter", "lessons": [{"n": 1, "title": "글자 블록과 첫 소리", "sub": "文字ブロックと最初の音", "titles": {"ko": "글자 블록과 첫 소리", "en": "Letter blocks and first sounds", "ja": "文字ブロックと最初の音"}, "chips": ["블록 규칙", "모음 ㅏ ㅓ ㅗ ㅜ ㅡ ㅣ", "자음 ㄴ ㅁ", "소리 없는 ㅇ"], "jamo": false, "level": "왕초급", "decks": [{"href": "view/hangul-starter/01-letter-blocks-and-first-sounds/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/hangul-starter/01-letter-blocks-and-first-sounds/lecture/index.html", "source": "courses/kr/hangul-starter/lessons/01-letter-blocks-and-first-sounds/lecture/index.html"}, {"href": "view/hangul-starter/01-letter-blocks-and-first-sounds/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/hangul-starter/01-letter-blocks-and-first-sounds/prestudy/index.html", "source": "courses/kr/hangul-starter/lessons/01-letter-blocks-and-first-sounds/prestudy/index.html"}], "can": "나 · 너 · 나무 · 누나 · 어머니 · 오이", "canLabel": "읽을 수 있다", "goal": {"t": "이 세 단어를 보세요. 곧 혼자 읽을 수 있을 거예요.", "ja": "この3つの単語を見てください。もうすぐ自分で読めるようになります。"}}, {"n": 2, "title": "평음 여섯 개", "sub": "平音 6つ", "titles": {"ko": "평음 여섯 개", "en": "Six plain consonants", "ja": "平音 6つ"}, "chips": ["ㄱ ㄷ ㄹ", "ㅂ ㅅ ㅈ  *(함정은 하나: 시 = \"시[shi]\")*"], "jamo": false, "level": "왕초급", "decks": [{"href": "view/hangul-starter/02-six-plain-consonants/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/hangul-starter/02-six-plain-consonants/lecture/index.html", "source": "courses/kr/hangul-starter/lessons/02-six-plain-consonants/lecture/index.html"}, {"href": "view/hangul-starter/02-six-plain-consonants/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/hangul-starter/02-six-plain-consonants/prestudy/index.html", "source": "courses/kr/hangul-starter/lessons/02-six-plain-consonants/prestudy/index.html"}], "chipsL10n": {"ja": ["ㄱ ㄷ ㄹ", "ㅂ ㅅ ㅈ *(落とし穴は一つ: 시 = \"시[shi]\")*"], "en": ["ㄱ ㄷ ㄹ", "ㅂ ㅅ ㅈ *(one trap: 시 = \"시[shi]\")*"]}, "can": "고기 · 구두 · 다리 · 바다 · 아버지 · 사자 · 주스 · 모자", "canLabel": "읽을 수 있다", "goal": {"t": "이 세 단어를 보세요. 곧 혼자 읽을 수 있게 될 거예요.", "ja": "この3つの単語を見てください。もうすぐ自分で読めるようになります。"}}, {"n": 3, "title": "복습과 속도", "sub": "復習とスピード", "titles": {"ko": "복습과 속도", "en": "Review and speed", "ja": "復習とスピード"}, "chips": ["섞어 읽기", "받아쓰기", "지금까지 배운 것으로 단어 만들기"], "jamo": false, "level": "왕초급", "decks": [{"href": "view/hangul-starter/03-review-and-speed/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/hangul-starter/03-review-and-speed/lecture/index.html", "source": "courses/kr/hangul-starter/lessons/03-review-and-speed/lecture/index.html"}, {"href": "view/hangul-starter/03-review-and-speed/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/hangul-starter/03-review-and-speed/prestudy/index.html", "source": "courses/kr/hangul-starter/lessons/03-review-and-speed/prestudy/index.html"}], "can": "가구 · 거리 · 부모 · 소리 · 도시 · 가지 — 멈추지 않고 읽는다", "canLabel": "읽을 수 있다", "cans": {"ja": "止まらずに読む", "en": "Read them without stopping"}, "goal": {"t": "오늘은 새로운 글자가 없어요. 지금까지 배운 글자로 이런 단어를 읽을 거예요.", "ja": "今日は新しい文字はありません。これまでに習った文字で、こんな単語を読みます。"}}, {"n": 4, "title": "획을 더하면 바람이 더해진다", "sub": "画を足すと、息が足される", "titles": {"ko": "획을 더하면 바람이 더해진다", "en": "Add a stroke, add air", "ja": "画を足すと、息が足される"}, "chips": ["ㅎ ＋ 격음 ㅋ ㅌ ㅍ ㅊ *(짝으로 가르칩니다: ㄱ→ㅋ", "ㄷ→ㅌ", "ㅂ→ㅍ", "ㅈ→ㅊ)*"], "jamo": false, "level": "왕초급", "decks": [{"href": "view/hangul-starter/04-add-a-stroke-add-air/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/hangul-starter/04-add-a-stroke-add-air/lecture/index.html", "source": "courses/kr/hangul-starter/lessons/04-add-a-stroke-add-air/lecture/index.html"}, {"href": "view/hangul-starter/04-add-a-stroke-add-air/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/hangul-starter/04-add-a-stroke-add-air/prestudy/index.html", "source": "courses/kr/hangul-starter/lessons/04-add-a-stroke-add-air/prestudy/index.html"}], "can": "하마 · 코 · 토마토 · 포도 · 차 · 커피", "canLabel": "읽을 수 있다", "goal": {"t": "바람이 섞인 소리를 배워요. 이 세 단어를 혼자 읽을 수 있게 될 거예요.", "ja": "「息のまじった音」を習います。この3つの単語を自分で読めるようになります。"}}, {"n": 5, "title": "겹쳐 쓰면 세진다", "sub": "重ねると、強くなる", "titles": {"ko": "겹쳐 쓰면 세진다", "en": "Double it, and it gets tense", "ja": "重ねると、強くなる"}, "chips": ["경음 ㄲ ㄸ ㅃ ㅆ ㅉ *(이번에도 평음에서 짝을 떠서)*"], "jamo": false, "level": "왕초급", "decks": [{"href": "view/hangul-starter/05-double-is-strong/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/hangul-starter/05-double-is-strong/lecture/index.html", "source": "courses/kr/hangul-starter/lessons/05-double-is-strong/lecture/index.html"}, {"href": "view/hangul-starter/05-double-is-strong/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/hangul-starter/05-double-is-strong/prestudy/index.html", "source": "courses/kr/hangul-starter/lessons/05-double-is-strong/prestudy/index.html"}], "chipsL10n": {"ja": ["濃音 ㄲ ㄸ ㅃ ㅆ ㅉ *(今回も平音からペアを取って)*"], "en": ["Tense ㄲ ㄸ ㅃ ㅆ ㅉ *(again paired off from the plain series)*"]}, "can": "토끼 · 아빠 · 가짜 · 코끼리 · 싸다", "canLabel": "읽을 수 있다", "goal": {"t": "오늘은 짧고 단단한 소리를 배워요. 이 세 단어를 혼자 읽을 수 있게 될 거예요.", "ja": "今日は「短くて かたい音」を習います。この3つの単語を自分で読めるようになります。"}}, {"n": 6, "title": "자음표 전체", "sub": "子音表、ぜんぶ", "titles": {"ko": "자음표 전체", "en": "The whole consonant chart", "ja": "子音表、ぜんぶ"}, "chips": ["평음 / 격음 / 경음을 한 표에", "최소 대립쌍 가–카–까", "자–차–짜", "듣고 고르기"], "jamo": false, "level": "왕초급", "decks": [{"href": "view/hangul-starter/06-the-whole-consonant-chart/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/hangul-starter/06-the-whole-consonant-chart/lecture/index.html", "source": "courses/kr/hangul-starter/lessons/06-the-whole-consonant-chart/lecture/index.html"}, {"href": "view/hangul-starter/06-the-whole-consonant-chart/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/hangul-starter/06-the-whole-consonant-chart/prestudy/index.html", "source": "courses/kr/hangul-starter/lessons/06-the-whole-consonant-chart/prestudy/index.html"}], "chipsL10n": {"ja": ["平音 / 激音 / 濃音を一つの表に", "ミニマルペア 가–카–까", "자–차–짜", "聞いて選ぶ"], "en": ["Plain / aspirated / tense in one chart", "Minimal pairs 가–카–까", "자–차–짜", "Listen and choose"]}, "can": "다리 vs 따리 · 방 vs 팡 — 어느 줄인지 듣고, 어떤 자음이든 보는 즉시 읽는다", "canLabel": "읽을 수 있다", "cans": {"ja": "どの行の音かを聞き分け、どの子音でも見た瞬間に読む", "en": "Hear which row a sound belongs to, and read any consonant on sight"}, "goal": {"t": "새로운 글자가 하나도 없어요. 자음을 전부 배웠거든요. 오늘은 이 여섯 단어를 읽어 볼게요.", "ja": "新しい文字が1つもありません。子音はもう全部そろいました。この6つの単語を読みます。"}}, {"n": 7, "title": "y 모음과 e 모음", "sub": "y の母音と e の母音", "titles": {"ko": "y 모음과 e 모음", "en": "Y-vowels and e-vowels", "ja": "y の母音と e の母音"}, "chips": ["ㅑ ㅕ ㅛ ㅠ *(획 하나 = y 하나)*"], "jamo": false, "level": "왕초급", "decks": [{"href": "view/hangul-starter/07-y-vowels-and-e-vowels/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/hangul-starter/07-y-vowels-and-e-vowels/lecture/index.html", "source": "courses/kr/hangul-starter/lessons/07-y-vowels-and-e-vowels/lecture/index.html"}, {"href": "view/hangul-starter/07-y-vowels-and-e-vowels/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/hangul-starter/07-y-vowels-and-e-vowels/prestudy/index.html", "source": "courses/kr/hangul-starter/lessons/07-y-vowels-and-e-vowels/prestudy/index.html"}], "chipsL10n": {"ja": ["ㅑ ㅕ ㅛ ㅠ *(画一本 = y 一つ)*"], "en": ["ㅑ ㅕ ㅛ ㅠ *(one stroke = one y)*"]}, "can": "우유 · 여자 · 야구 · 요리 · 개 · 시계 · 얘기", "canLabel": "읽을 수 있다", "goal": {"t": "오늘은 모음을 여덟 개 더 배워봐요. 그런데 새로운 글자는 거의 없어요. 이 세 단어를 혼자 읽을 수 있게 될 거예요.", "ja": "今日は母音をあと8つ追加で習います。でも新しい音はほとんどありません。この3つの単語を自分で読めるようになります。"}}, {"n": 8, "title": "합쳐진 모음", "sub": "組み合わせ母音（w の音）", "titles": {"ko": "합쳐진 모음", "en": "Combined w-vowels", "ja": "組み合わせ母音（w の音）"}, "chips": [], "jamo": false, "level": "왕초급", "decks": [{"href": "view/hangul-starter/08-combined-w-vowels/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/hangul-starter/08-combined-w-vowels/lecture/index.html", "source": "courses/kr/hangul-starter/lessons/08-combined-w-vowels/lecture/index.html"}, {"href": "view/hangul-starter/08-combined-w-vowels/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/hangul-starter/08-combined-w-vowels/prestudy/index.html", "source": "courses/kr/hangul-starter/lessons/08-combined-w-vowels/prestudy/index.html"}], "can": "사과 · 가위 · 의자 · 회사 · 뭐 · 왜", "canLabel": "읽을 수 있다", "goal": {"t": "오늘은 모음 두 개를 붙여서 읽어 볼게요. 이 세 단어를 혼자 읽을 수 있게 될 거예요.", "ja": "今日は母音を2つくっつけて読んでみましょう。この3つの単語を自分で読めるようになります。"}}, {"n": 9, "title": "복습 — 모든 글자", "sub": "復習 — 文字ぜんぶ、パッチムなし", "titles": {"ko": "복습 — 모든 글자", "en": "Review — every letter, no batchim", "ja": "復習 — 文字ぜんぶ、パッチムなし"}, "chips": ["자음 19개 × 모음 21개", "속도 읽기", "부품에서 글자 조립하기"], "jamo": false, "level": "왕초급", "decks": [{"href": "view/hangul-starter/09-review-no-batchim/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/hangul-starter/09-review-no-batchim/lecture/index.html", "source": "courses/kr/hangul-starter/lessons/09-review-no-batchim/lecture/index.html"}, {"href": "view/hangul-starter/09-review-no-batchim/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/hangul-starter/09-review-no-batchim/prestudy/index.html", "source": "courses/kr/hangul-starter/lessons/09-review-no-batchim/prestudy/index.html"}], "chipsL10n": {"ja": ["子音19個 × 母音21個", "スピード読み", "パーツから文字を組み立てる"], "en": ["19 consonants × 21 vowels", "Speed reading", "Assembling letters from their parts"]}, "can": "어제 · 화요일 · 교과서 · 뉴스 — 받침 없는 단어라면 처음 봐도 읽는다", "canLabel": "읽을 수 있다", "cans": {"ja": "パッチムのない単語なら、初めて見ても読める", "en": "Read any batchim-free word, even seeing it for the first time"}, "goal": {"t": "오늘은 새로 배우는 글자가 없어요. 받침 없는 단어는 처음 봐도 읽을 수 있게 될 거예요.", "ja": "今日は新しい文字はありません。パッチムのない単語なら、初めて見ても読めるようになります。"}}, {"n": 10, "title": "받침 ① 울리는 소리", "sub": "パッチム① 響く音", "titles": {"ko": "받침 ① 울리는 소리", "en": "Batchim I — the sonorants", "ja": "パッチム① 響く音"}, "chips": ["받침 ㅇ ㄴ ㅁ ㄹ *(ㄴ/ㅁ/ㅇ은 ん에 걸고"], "jamo": false, "level": "왕초급", "decks": [{"href": "view/hangul-starter/10-batchim-sonorants/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/hangul-starter/10-batchim-sonorants/lecture/index.html", "source": "courses/kr/hangul-starter/lessons/10-batchim-sonorants/lecture/index.html"}, {"href": "view/hangul-starter/10-batchim-sonorants/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/hangul-starter/10-batchim-sonorants/prestudy/index.html", "source": "courses/kr/hangul-starter/lessons/10-batchim-sonorants/prestudy/index.html"}], "can": "강 · 산 · 밤 · 문 · 발 · 길 · 엄마 · 사람 · 사랑 · 서울", "canLabel": "읽을 수 있다", "goal": {"t": "오늘은 글자 아래에 글자가 하나 더 생기는 걸 배워볼거예요. 수업이 끝나면 이 세 단어를 혼자 읽을 수 있을 거예요.", "ja": "今日は文字の下に文字がもう１つ増えたものを勉強しましょう。この授業が終わったら下の3つの単語を自分で読めるようになります。"}}, {"n": 11, "title": "받침 ② 막는 소리", "sub": "パッチム② 止める音", "titles": {"ko": "받침 ② 막는 소리", "en": "Batchim II — the stops", "ja": "パッチム② 止める音"}, "chips": ["ㄱ ㄷ ㅂ *(っ에 겁니다 — 소리를 터뜨리지 않고 끊습니다)*", "**받침 7개 소리** 규칙 *(ㅋㄲ→ㄱ", "ㅅㅆㅈㅊㅌㅎ→ㄷ", "ㅍ→ㅂ)*"], "jamo": false, "level": "왕초급", "decks": [{"href": "view/hangul-starter/11-batchim-stops/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/hangul-starter/11-batchim-stops/lecture/index.html", "source": "courses/kr/hangul-starter/lessons/11-batchim-stops/lecture/index.html"}, {"href": "view/hangul-starter/11-batchim-stops/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/hangul-starter/11-batchim-stops/prestudy/index.html", "source": "courses/kr/hangul-starter/lessons/11-batchim-stops/prestudy/index.html"}], "chipsL10n": {"ja": ["ㄱ ㄷ ㅂ *(っ に近い — 音を破裂させずに止めます)*", "**パッチム7つの音** のルール *(ㅋㄲ→ㄱ", "ㅅㅆㅈㅊㅌㅎ→ㄷ", "ㅍ→ㅂ)*"], "en": ["ㄱ ㄷ ㅂ *(close to っ — stop the sound without releasing it)*", "**The seven batchim sounds** rule *(ㅋㄲ→ㄱ", "ㅅㅆㅈㅊㅌㅎ→ㄷ", "ㅍ→ㅂ)*"]}, "can": "책 · 밥 · 옷 · 부엌 · 낮 · 앞 · 한국 · 김밥", "canLabel": "읽을 수 있다", "goal": {"t": "소리를 딱 끊는 받침이에요. 이 세 단어를 혼자 읽게 될 거예요.", "ja": "「音をぴたっと止める」パッチムです。この3つの単語を自分で読めるようになります。"}}, {"n": 12, "title": "겹받침 입문 — 글자 둘, 자리 하나", "sub": "二重パッチム入門 — 文字は2つ、席は1つ", "titles": {"ko": "겹받침 입문 — 글자 둘, 자리 하나", "en": "Double batchim starter — two letters, one slot", "ja": "二重パッチム入門 — 文字は2つ、席は1つ"}, "chips": ["먼저 익힐 여섯 짝 ㄺ ㄻ ㅀ", "ㅄ ㄳ ㄶ *(둘 중 하나만 소리 납니다 — 어느 쪽인지가 규칙)*"], "jamo": false, "level": "왕초급", "decks": [{"href": "view/hangul-starter/12-double-batchim/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/hangul-starter/12-double-batchim/lecture/index.html", "source": "courses/kr/hangul-starter/lessons/12-double-batchim/lecture/index.html"}, {"href": "view/hangul-starter/12-double-batchim/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/hangul-starter/12-double-batchim/prestudy/index.html", "source": "courses/kr/hangul-starter/lessons/12-double-batchim/prestudy/index.html"}], "chipsL10n": {"ja": ["まず覚える6組 ㄺ ㄻ ㅀ", "ㅄ ㄳ ㄶ *(どちらか一方だけ音が出ます — どちらがそれかがルール)*"], "en": ["The first six clusters to learn: ㄺ ㄻ ㅀ", "ㅄ ㄳ ㄶ *(only one of the two is voiced — which one is the rule)*"]}, "can": "닭 · 삶 · 싫다 · 값 · 몫 · 많다", "canLabel": "읽을 수 있다", "goal": {"t": "겹받침 중에서 먼저 익힐 여섯 짝을 배워요. 이 세 단어를 혼자 읽을 수 있게 될 거예요.", "ja": "二重パッチムの中から、まず覚えたい6組を習います。この3つの単語を自分で読めるようになります。"}}, {"n": 13, "title": "한국 사람처럼 읽기", "sub": "韓国の人みたいに読む", "titles": {"ko": "한국 사람처럼 읽기", "en": "Reading like a native", "ja": "韓国の人みたいに読む"}, "chips": ["연음 (겹받침 포함)", "ㅎ 변화"], "jamo": false, "level": "왕초급", "decks": [{"href": "view/hangul-starter/13-reading-like-a-native/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/hangul-starter/13-reading-like-a-native/lecture/index.html", "source": "courses/kr/hangul-starter/lessons/13-reading-like-a-native/lecture/index.html"}, {"href": "view/hangul-starter/13-reading-like-a-native/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/hangul-starter/13-reading-like-a-native/prestudy/index.html", "source": "courses/kr/hangul-starter/lessons/13-reading-like-a-native/prestudy/index.html"}], "chipsL10n": {"ja": ["連音（二重パッチムを含む）", "ㅎ 변화"], "en": ["Liaison (including double batchim)", "ㅎ 변화"]}, "can": "한국어→한구거 · 음악→으막 · 좋아요→조아요 · 많다→만타", "canLabel": "읽을 수 있다", "goal": {"t": "오늘은 새로 배우는 글자가 없어요. 받침 넘기기와 ㅎ 소리 변화, 두 가지만 연습해요.", "ja": "今日は新しく勉強する文字はありません。パッチムの移動と ㅎ の音の変化、この2つだけを練習します。"}}, {"n": 14, "title": "마무리 — 낯선 단어도 읽는다", "sub": "仕上げ — 初めて見る言葉も読める", "titles": {"ko": "마무리 — 낯선 단어도 읽는다", "en": "Capstone — decode unfamiliar words", "ja": "仕上げ — 初めて見る言葉も読める"}, "chips": ["낯선 실물 단어 읽기 (간판 / 메뉴 / 이름)", "첫 수업 인사와 교실 표현 듣고 따라 읽기"], "jamo": false, "level": "왕초급", "decks": [{"href": "view/hangul-starter/14-capstone-read-anything/lecture", "level": "수업용", "slot": "lecture", "entry": "decks/hangul-starter/14-capstone-read-anything/lecture/index.html", "source": "courses/kr/hangul-starter/lessons/14-capstone-read-anything/lecture/index.html"}, {"href": "view/hangul-starter/14-capstone-read-anything/prestudy", "level": "예습용", "slot": "prestudy", "entry": "decks/hangul-starter/14-capstone-read-anything/prestudy/index.html", "source": "courses/kr/hangul-starter/lessons/14-capstone-read-anything/prestudy/index.html"}], "chipsL10n": {"ja": ["初めて見る実物の単語を読む（看板 / メニュー / 名前）", "初回授業のあいさつと教室表現を聞いて復唱する"], "en": ["Reading unfamiliar real-world words (signs / menus / names)", "Hearing and repeating first-lesson greetings and classroom phrases"]}, "can": "한국 거리에서 자주 만나는 간판·메뉴·이름을 글자 단위로 뜯어서 읽고, 안녕하세요·감사합니다·잘 들으세요·따라 읽으세요를 듣고 따라 한다", "canLabel": "읽을 수 있다", "cans": {"ja": "韓国の街でよく見かける看板・メニュー・名前を一文字ずつ分けて読み、안녕하세요・감사합니다・잘 들으세요・따라 읽으세요を聞いて復唱する", "en": "Break the signs, menus and names you meet on a Korean street into letters and read them, and hear and repeat 안녕하세요 · 감사합니다 · 잘 들으세요 · 따라 읽으세요"}, "goal": {"t": "오늘은 새로 배우는 글자가 하나도 없어요. 지금까지 배운 것만으로 이런 걸 읽을 거예요.", "ja": "今日は新しく勉強する文字が1つもありません。これまで習ったものだけで、こんなものを読みます。"}}]}], "covers": ["covers/hangul-starter.webp"], "dist": {"왕초급": 14}, "span": ["왕초급"], "total": 14, "unitCount": 1, "decks": [{"n": 1, "title": "글자 블록과 첫 소리", "titles": {"ko": "글자 블록과 첫 소리", "en": "Letter blocks and first sounds", "ja": "文字ブロックと最初の音"}, "href": "view/hangul-starter/01-letter-blocks-and-first-sounds/lecture", "level": "수업용", "slot": "lecture"}, {"n": 1, "title": "글자 블록과 첫 소리", "titles": {"ko": "글자 블록과 첫 소리", "en": "Letter blocks and first sounds", "ja": "文字ブロックと最初の音"}, "href": "view/hangul-starter/01-letter-blocks-and-first-sounds/prestudy", "level": "예습용", "slot": "prestudy"}, {"n": 2, "title": "평음 여섯 개", "titles": {"ko": "평음 여섯 개", "en": "Six plain consonants", "ja": "平音 6つ"}, "href": "view/hangul-starter/02-six-plain-consonants/lecture", "level": "수업용", "slot": "lecture"}, {"n": 2, "title": "평음 여섯 개", "titles": {"ko": "평음 여섯 개", "en": "Six plain consonants", "ja": "平音 6つ"}, "href": "view/hangul-starter/02-six-plain-consonants/prestudy", "level": "예습용", "slot": "prestudy"}, {"n": 3, "title": "복습과 속도", "titles": {"ko": "복습과 속도", "en": "Review and speed", "ja": "復習とスピード"}, "href": "view/hangul-starter/03-review-and-speed/lecture", "level": "수업용", "slot": "lecture"}, {"n": 3, "title": "복습과 속도", "titles": {"ko": "복습과 속도", "en": "Review and speed", "ja": "復習とスピード"}, "href": "view/hangul-starter/03-review-and-speed/prestudy", "level": "예습용", "slot": "prestudy"}, {"n": 4, "title": "획을 더하면 바람이 더해진다", "titles": {"ko": "획을 더하면 바람이 더해진다", "en": "Add a stroke, add air", "ja": "画を足すと、息が足される"}, "href": "view/hangul-starter/04-add-a-stroke-add-air/lecture", "level": "수업용", "slot": "lecture"}, {"n": 4, "title": "획을 더하면 바람이 더해진다", "titles": {"ko": "획을 더하면 바람이 더해진다", "en": "Add a stroke, add air", "ja": "画を足すと、息が足される"}, "href": "view/hangul-starter/04-add-a-stroke-add-air/prestudy", "level": "예습용", "slot": "prestudy"}, {"n": 5, "title": "겹쳐 쓰면 세진다", "titles": {"ko": "겹쳐 쓰면 세진다", "en": "Double it, and it gets tense", "ja": "重ねると、強くなる"}, "href": "view/hangul-starter/05-double-is-strong/lecture", "level": "수업용", "slot": "lecture"}, {"n": 5, "title": "겹쳐 쓰면 세진다", "titles": {"ko": "겹쳐 쓰면 세진다", "en": "Double it, and it gets tense", "ja": "重ねると、強くなる"}, "href": "view/hangul-starter/05-double-is-strong/prestudy", "level": "예습용", "slot": "prestudy"}, {"n": 6, "title": "자음표 전체", "titles": {"ko": "자음표 전체", "en": "The whole consonant chart", "ja": "子音表、ぜんぶ"}, "href": "view/hangul-starter/06-the-whole-consonant-chart/lecture", "level": "수업용", "slot": "lecture"}, {"n": 6, "title": "자음표 전체", "titles": {"ko": "자음표 전체", "en": "The whole consonant chart", "ja": "子音表、ぜんぶ"}, "href": "view/hangul-starter/06-the-whole-consonant-chart/prestudy", "level": "예습용", "slot": "prestudy"}, {"n": 7, "title": "y 모음과 e 모음", "titles": {"ko": "y 모음과 e 모음", "en": "Y-vowels and e-vowels", "ja": "y の母音と e の母音"}, "href": "view/hangul-starter/07-y-vowels-and-e-vowels/lecture", "level": "수업용", "slot": "lecture"}, {"n": 7, "title": "y 모음과 e 모음", "titles": {"ko": "y 모음과 e 모음", "en": "Y-vowels and e-vowels", "ja": "y の母音と e の母音"}, "href": "view/hangul-starter/07-y-vowels-and-e-vowels/prestudy", "level": "예습용", "slot": "prestudy"}, {"n": 8, "title": "합쳐진 모음", "titles": {"ko": "합쳐진 모음", "en": "Combined w-vowels", "ja": "組み合わせ母音（w の音）"}, "href": "view/hangul-starter/08-combined-w-vowels/lecture", "level": "수업용", "slot": "lecture"}, {"n": 8, "title": "합쳐진 모음", "titles": {"ko": "합쳐진 모음", "en": "Combined w-vowels", "ja": "組み合わせ母音（w の音）"}, "href": "view/hangul-starter/08-combined-w-vowels/prestudy", "level": "예습용", "slot": "prestudy"}, {"n": 9, "title": "복습 — 모든 글자", "titles": {"ko": "복습 — 모든 글자", "en": "Review — every letter, no batchim", "ja": "復習 — 文字ぜんぶ、パッチムなし"}, "href": "view/hangul-starter/09-review-no-batchim/lecture", "level": "수업용", "slot": "lecture"}, {"n": 9, "title": "복습 — 모든 글자", "titles": {"ko": "복습 — 모든 글자", "en": "Review — every letter, no batchim", "ja": "復習 — 文字ぜんぶ、パッチムなし"}, "href": "view/hangul-starter/09-review-no-batchim/prestudy", "level": "예습용", "slot": "prestudy"}, {"n": 10, "title": "받침 ① 울리는 소리", "titles": {"ko": "받침 ① 울리는 소리", "en": "Batchim I — the sonorants", "ja": "パッチム① 響く音"}, "href": "view/hangul-starter/10-batchim-sonorants/lecture", "level": "수업용", "slot": "lecture"}, {"n": 10, "title": "받침 ① 울리는 소리", "titles": {"ko": "받침 ① 울리는 소리", "en": "Batchim I — the sonorants", "ja": "パッチム① 響く音"}, "href": "view/hangul-starter/10-batchim-sonorants/prestudy", "level": "예습용", "slot": "prestudy"}, {"n": 11, "title": "받침 ② 막는 소리", "titles": {"ko": "받침 ② 막는 소리", "en": "Batchim II — the stops", "ja": "パッチム② 止める音"}, "href": "view/hangul-starter/11-batchim-stops/lecture", "level": "수업용", "slot": "lecture"}, {"n": 11, "title": "받침 ② 막는 소리", "titles": {"ko": "받침 ② 막는 소리", "en": "Batchim II — the stops", "ja": "パッチム② 止める音"}, "href": "view/hangul-starter/11-batchim-stops/prestudy", "level": "예습용", "slot": "prestudy"}, {"n": 12, "title": "겹받침 입문 — 글자 둘, 자리 하나", "titles": {"ko": "겹받침 입문 — 글자 둘, 자리 하나", "en": "Double batchim starter — two letters, one slot", "ja": "二重パッチム入門 — 文字は2つ、席は1つ"}, "href": "view/hangul-starter/12-double-batchim/lecture", "level": "수업용", "slot": "lecture"}, {"n": 12, "title": "겹받침 입문 — 글자 둘, 자리 하나", "titles": {"ko": "겹받침 입문 — 글자 둘, 자리 하나", "en": "Double batchim starter — two letters, one slot", "ja": "二重パッチム入門 — 文字は2つ、席は1つ"}, "href": "view/hangul-starter/12-double-batchim/prestudy", "level": "예습용", "slot": "prestudy"}, {"n": 13, "title": "한국 사람처럼 읽기", "titles": {"ko": "한국 사람처럼 읽기", "en": "Reading like a native", "ja": "韓国の人みたいに読む"}, "href": "view/hangul-starter/13-reading-like-a-native/lecture", "level": "수업용", "slot": "lecture"}, {"n": 13, "title": "한국 사람처럼 읽기", "titles": {"ko": "한국 사람처럼 읽기", "en": "Reading like a native", "ja": "韓国の人みたいに読む"}, "href": "view/hangul-starter/13-reading-like-a-native/prestudy", "level": "예습용", "slot": "prestudy"}, {"n": 14, "title": "마무리 — 낯선 단어도 읽는다", "titles": {"ko": "마무리 — 낯선 단어도 읽는다", "en": "Capstone — decode unfamiliar words", "ja": "仕上げ — 初めて見る言葉も読める"}, "href": "view/hangul-starter/14-capstone-read-anything/lecture", "level": "수업용", "slot": "lecture"}, {"n": 14, "title": "마무리 — 낯선 단어도 읽는다", "titles": {"ko": "마무리 — 낯선 단어도 읽는다", "en": "Capstone — decode unfamiliar words", "ja": "仕上げ — 初めて見る言葉も読める"}, "href": "view/hangul-starter/14-capstone-read-anything/prestudy", "level": "예습용", "slot": "prestudy"}]}, "page": {"title": {"ko": "커리큘럼 카탈로그 · PODO 한국어", "ja": "カリキュラム・カタログ · PODO 韓国語", "en": "Curriculum catalog · PODO Korean"}, "kicker": {"ko": "PODO · 한국어 커리큘럼", "ja": "PODO · 韓国語カリキュラム", "en": "PODO · Korean curriculum"}, "lead": {"ko": "지금 수업에서 실제로 열리는 교재입니다. 트랙을 하나 골라 들어가면 그 안의 모든 코스와 과를, 각 과의 수업용 · 예습용 교재까지 수업에서 열리는 파일 그대로 볼 수 있습니다.", "ja": "いま授業で実際に開く教材です。トラックを一つ選ぶと、その中のすべてのコースとレッスンを、授業用・予習用の教材まで、授業で開くファイルのまま見ることができます。", "en": "These are the decks that actually open in class. Pick a track to see every course and lesson inside it, including each lesson's in-class and prep decks, exactly as they open in class."}, "h1": {"ko": "개 과가<br>지금 수업에서 열립니다", "ja": "レッスンが<br>いま授業で開きます", "en": "lessons are open<br>in class right now"}, "trackCount": 4, "stats": [[5, "tracksH"], [53, "unitWord"], [968, "deckWord"]], "foot": {"ko": "PODO · 한국어 커리큘럼 — 일본어 학습자를 위한 한국어 코스", "ja": "PODO · 韓国語カリキュラム — 日本語話者のための韓国語コース", "en": "PODO · Korean curriculum — Korean courses for Japanese speakers"}, "home": "../../", "nav": [{"label": "한국어", "langKey": "ko", "href": "../../korean-jp/", "current": true}, {"label": "English", "langKey": "en", "href": "../../english-jp/", "current": false}]}, "i18n": {"_note": "공개 카탈로그의 UI 문자열. 세 로케일이 한 벌로 나가고 브라우저에서 고른다 — 페이지를 세 번 굽지 않는다. 교재의 문장(목표·질문·패턴)은 여기 없다: 그건 덱이 원본이고 build-catalog.py 가 덱에서 읽는다.", "locale": {"ko": {"ko": "한국어", "ja": "韓国語", "en": "Korean"}, "ja": {"ko": "일본어", "ja": "日本語", "en": "Japanese"}, "en": {"ko": "영어", "ja": "英語", "en": "English"}, "label": {"ko": "표시 언어", "ja": "表示言語", "en": "Display language"}}, "ui": {"skip": {"ko": "본문으로 건너뛰기", "ja": "本文へスキップ", "en": "Skip to content"}, "homeKicker": {"ko": "커리큘럼 라이브러리", "ja": "カリキュラム・ライブラリ", "en": "Curriculum library"}, "homeH1": {"ko": "일본어 화자를 위한 말하기 커리큘럼", "ja": "日本語話者のためのスピーキング・カリキュラム", "en": "Speaking curricula for Japanese learners."}, "homeLead": {"ko": "언어를 하나 골라 학습 순서와 트랙, 준비된 레슨 덱을 살펴보세요.", "ja": "言語を選ぶと、学習の順序・トラック・公開済みのレッスンデッキを確認できます。", "en": "Choose a language to inspect its learning sequence, curriculum tracks, and available lesson decks."}, "chooseLang": {"ko": "학습할 언어 고르기", "ja": "学習する言語を選ぶ", "en": "Choose a target language"}, "ladder": {"ko": "레벨 사다리", "ja": "レベルの階段", "en": "Level ladder"}, "ladderP": {"ko": "각 트랙이 어느 레벨 구간을 덮는지, 그 구간에 몇 과가 놓여 있는지.", "ja": "各トラックがどのレベル帯をカバーし、そこに何レッスンあるか。", "en": "Which level range each track covers, and how many lessons sit in it."}, "readyDecks": {"ko": "완성된 레슨 덱", "ja": "公開済みのレッスンデッキ", "en": "Ready lesson decks"}, "readyDecksP": {"ko": "실제 수업 화면이 준비된 과만 모았습니다. 새 탭에서 열립니다.", "ja": "実際の授業画面が用意されたレッスンだけを集めています。新しいタブで開きます。", "en": "Only lessons whose real class screen is ready. Opens in a new tab."}, "overview": {"ko": "한눈에 보기", "ja": "ひと目で見る", "en": "At a glance"}, "noDev": {"ko": "개발 안 함", "ja": "開発しない", "en": "Not in development"}, "noDevP": {"ko": "계획 참고용 — 이 트랙은 현재 개발하지 않으며, 레슨 덱 제작도 승인되지 않았습니다.", "ja": "計画の参考用 — このトラックは現在開発しておらず、デッキ制作も承認されていません。", "en": "For planning reference — this track is not in development and no decks are approved."}, "expandUnits": {"ko": "단원 모두 펼치기", "ja": "ユニットをすべて開く", "en": "Expand all units"}, "expandAll": {"ko": "과까지 모두 펼치기", "ja": "レッスンまですべて開く", "en": "Expand every lesson"}, "noResults": {"ko": "검색 결과가 없습니다.", "ja": "検索結果がありません。", "en": "No results."}, "generated": {"ko": "이 페이지는 생성물입니다.", "ja": "このページは生成物です。", "en": "This page is generated."}, "tracksH": {"ko": "학습 트랙", "ja": "学習トラック", "en": "learning tracks"}, "tracksP": {"ko": "카드를 눌러 그 트랙의 전체 목차로 들어갑니다.", "ja": "カードを押すと、そのトラックの全目次に入ります。", "en": "Tap a card to open that track's full contents."}, "unitWord": {"ko": "코스", "ja": "コース", "en": "courses"}, "deckWord": {"ko": "레슨 교재", "ja": "レッスン教材", "en": "lesson decks"}, "lessonsOpen": {"ko": "개 과가 지금 수업에서 열립니다", "ja": "レッスンが、いま授業で開きます", "en": "lessons are open in class right now"}, "openDeck": {"ko": "덱 열기", "ja": "デッキを開く", "en": "Open deck"}, "catalog": {"ko": "카탈로그", "ja": "カタログ", "en": "Catalog"}, "groupCan": {"ko": "끝내면 할 수 있는 것", "ja": "終えたらできること", "en": "What you can do at the end"}, "cast": {"ko": "등장인물", "ja": "登場人物", "en": "Cast"}, "allLevels": {"ko": "전 레벨", "ja": "全レベル", "en": "All levels"}, "keepAdding": {"ko": "계속 추가", "ja": "追加中", "en": "Still growing"}, "planOnly": {"ko": "계획만 있음 · 현재 개발하지 않음", "ja": "計画のみ · 現在は開発していません", "en": "Planned only — not in development"}, "openCatalog": {"ko": "카탈로그 열기", "ja": "カタログを開く", "en": "Open catalog"}, "growing": {"ko": "계속 추가 중", "ja": "追加中", "en": "Still growing"}, "live": {"ko": "운영 중", "ja": "提供中", "en": "Live"}, "countTracks": {"ko": "트랙", "ja": "トラック", "en": "tracks"}, "countCourses": {"ko": "코스", "ja": "コース", "en": "courses"}, "countLessons": {"ko": "과", "ja": "レッスン", "en": "lessons"}, "lessonWord": {"ko": "과", "ja": "レッスン", "en": "lessons"}, "deckWordShort": {"ko": "교재", "ja": "教材", "en": "decks"}, "navLabel": {"ko": "커리큘럼 탐색", "ja": "カリキュラムを見る", "en": "Browse the curriculum"}, "trackWord": {"ko": "트랙", "ja": "トラック", "en": "Track"}, "levelLabel": {"ko": "레벨", "ja": "レベル", "en": "Level"}, "searchPlaceholder": {"ko": "과·패턴·표현 검색", "ja": "レッスン・パターン・表現を検索", "en": "Search lessons, patterns, phrases"}, "curriculum": {"ko": "커리큘럼", "ja": "カリキュラム", "en": "Curriculum"}, "planContents": {"ko": "계획 목차", "ja": "計画の目次", "en": "Planned contents"}, "collapseUnits": {"ko": "단원 모두 접기", "ja": "ユニットをすべて閉じる", "en": "Collapse all units"}, "collapseAll": {"ko": "과까지 모두 접기", "ja": "レッスンまですべて閉じる", "en": "Collapse every lesson"}, "planNoDecks": {"ko": "계획 목차이며 현재 사용할 수 있는 레슨 덱은 없습니다.", "ja": "計画上の目次で、いま使えるレッスンデッキはありません。", "en": "A planned outline — no lesson decks are available yet."}, "noLevelBound": {"ko": "특정 레벨에 묶이지 않습니다 — 튜터가 문제를 들은 시점에 한 과씩 꺼내 씁니다.", "ja": "特定のレベルに縛られません — チューターが課題に気づいた時点で1レッスンずつ使います。", "en": "Not tied to a level — the tutor pulls one lesson at the moment the problem shows up."}, "noDecks": {"ko": "아직 나와 있는 덱이 없습니다.", "ja": "まだ公開されているデッキはありません。", "en": "No decks are published yet."}, "coreRef": {"ko": "핵심", "ja": "コア", "en": "Core"}, "peakUpTo": {"ko": "핵심 {n}과까지", "ja": "コアは {n} レッスンまで", "en": "Core through lesson {n}"}, "openInNewTab": {"ko": "{title} 덱을 새 탭에서 엽니다", "ja": "{title} のデッキを新しいタブで開きます", "en": "Opens the {title} deck in a new tab"}, "slotLecture": {"ko": "수업용", "ja": "授業用", "en": "In class"}, "slotPrestudy": {"ko": "예습용", "ja": "予習用", "en": "Prep"}, "fullScreen": {"ko": "전체 화면", "ja": "全画面", "en": "Full screen"}, "openTrack": {"ko": "{n}개 덱 펼치기", "ja": "{n} 件のデッキを開く", "en": "Show {n} decks"}, "qWarmup": {"ko": "몸풀기", "ja": "ウォームアップ", "en": "Warm-up"}, "qQuestion": {"ko": "질문", "ja": "質問", "en": "Question"}, "trialKicker": {"ko": "먼저 한 과만", "ja": "まずは1レッスンだけ", "en": "Start with one lesson"}, "trialOpen": {"ko": "체험 레슨 보기", "ja": "体験レッスンを見る", "en": "See the trial lessons"}, "toc": {"ko": "차례", "ja": "目次", "en": "Contents"}, "where": {"ko": "현재 위치", "ja": "現在の位置", "en": "You are here"}, "prevLesson": {"ko": "이전", "ja": "前へ", "en": "Previous"}, "nextLesson": {"ko": "다음", "ja": "次へ", "en": "Next"}, "none": {"ko": "없음", "ja": "なし", "en": "None"}, "more": {"ko": "더 보기", "ja": "その他", "en": "More"}}, "detail": {"learnThis": {"ko": "이번에 배우는 것", "ja": "今回学ぶこと", "en": "What you learn"}, "readPractice": {"ko": "읽기 연습", "ja": "読む練習", "en": "Reading practice"}, "readGoal": {"ko": "읽기 목표", "ja": "読みのゴール", "en": "Reading goal"}, "talkGoal": {"ko": "대화 목표", "ja": "会話のゴール", "en": "Conversation goal"}, "fixPoint": {"ko": "교정 포인트", "ja": "直すポイント", "en": "Correction focus"}, "lessonGoal": {"ko": "이 과의 목표", "ja": "このレッスンのゴール", "en": "Goal of this lesson"}, "deckGoal": {"ko": "덱이 말하는 오늘의 목표", "ja": "デッキが示す今日のゴール", "en": "Today's goal, as the deck states it"}, "corePatterns": {"ko": "핵심 패턴", "ja": "コアパターン", "en": "Core patterns"}, "howToFix": {"ko": "고치는 법", "ja": "直し方", "en": "How to fix it"}, "minPairs": {"ko": "최소 대립쌍", "ja": "ミニマルペア", "en": "Minimal pairs"}, "learning": {"ko": "배우는 것", "ja": "学ぶこと", "en": "What is taught"}, "saidAndRule": {"ko": "표현과 규칙", "ja": "表現とルール", "en": "Phrases and rules"}, "saidNow": {"ko": "바로 쓰는 표현", "ja": "すぐ使う表現", "en": "Ready-made phrases"}, "rule": {"ko": "규칙", "ja": "ルール", "en": "Rule"}, "noDetail": {"ko": "이 과의 상세는 목차 원문에 있습니다.", "ja": "このレッスンの詳細は目次の原文にあります。", "en": "Details for this lesson live in the source contents."}, "questions": {"ko": "오늘의 질문", "ja": "今日の質問", "en": "Today's questions"}, "questionsN": {"ko": "질문 {n}개", "ja": "質問 {n} 問", "en": "{n} questions"}, "followUps": {"ko": "이어서 물어보기", "ja": "続けて聞く", "en": "Follow-ups"}}, "level": {"왕초급": {"ko": "왕초급", "ja": "超入門", "en": "Starter"}, "초급": {"ko": "초급", "ja": "初級", "en": "Beginner"}, "초중급": {"ko": "초중급", "ja": "初中級", "en": "Upper beginner"}, "중급": {"ko": "중급", "ja": "中級", "en": "Intermediate"}, "중고급": {"ko": "중고급", "ja": "中上級", "en": "Upper intermediate"}, "고급": {"ko": "고급", "ja": "上級", "en": "Advanced"}}}};
+const T = DATA.track, LEVELS = DATA.levels;
+
+/* 표시 언어. 한 벌로 구운 페이지가 세 언어를 모두 답한다 — URL 이 언어에 따라
+   갈라지지 않아야 링크 하나가 누구에게나 같은 곳을 가리킨다.
+   교재의 문장(질문·목표·패턴)은 번역하지 않는다: 그건 배우는 대상 그 자체다.
+   전환되는 것은 화면의 말과, 덱이 이미 들고 있는 일본어 받침이다. */
+const I18N = DATA.i18n, LOCALES = ["ko", "ja", "en"];
+const LS_KEY = "podo-catalog-locale";
+const DEFAULT_LOCALE = "ja";
+/* 브라우저 언어를 보지 않는다. 지금 이 커리큘럼을 배우는 사람은 전부 일본어 화자라,
+   기기 설정이 영어인 일본인에게 영어를 내밀 이유가 없다. 시장이 늘면 그때 다시 본다. */
+function initialLocale() {
+  try { const v = localStorage.getItem(LS_KEY); if (LOCALES.includes(v)) return v; } catch (e) {}
+  return DEFAULT_LOCALE;
+}
+let L = initialLocale();
+/** i18n 표에서 한 줄. 없으면 한국어로 떨어진다 — 빈칸을 보여 주지 않는다. */
+const t = (sec, key) => ((I18N[sec] || {})[key] || {})[L] || ((I18N[sec] || {})[key] || {}).ko || "";
+/** {ko,ja,en} 을 든 값에서 지금 언어의 것. 없으면 있는 것 아무거나. */
+const loc = o => !o ? "" : (o[L] || o.ko || o.en || o.ja || "");
+/** 레벨 눈금 이름. 표에 없으면(영어 코스의 CEFR) 그대로 쓴다. */
+const lvName = lv => ((I18N.level || {})[lv] || {})[L] || lv;
+/** 일본어 받침은 일본어로 볼 때만 보여 준다. 한국어·영어 번역은 아직 없고,
+    없는 것을 있는 척하지 않는다. */
+const showJa = () => L === "ja";
+/** 언어 탭의 이름. locale 표에서 지금 표시 언어의 것으로 부른다 —
+    일본어 화면에서 "한국어" 탭 하나만 한국어로 남을 이유가 없다. */
+const langLabel = n => (n.langKey && (I18N.locale[n.langKey] || {})[L]) || n.label;
+/* 짙은 두 칸 위에서는 글씨가 흰색이어야 읽힌다. */
+const isDark = lv => DATA.ramp[lv] >= 5;
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+/* ---------- 언어마다 다른 자리 ----------
+   한 템플릿이 korean/ 과 english/ 를 함께 그린다. 언어 이름이 들어가는 자리는 전부
+   DATA.page 에서 온다. */
+document.getElementById("brand").href = DATA.page.home;
+function paintLangNav() {
+  document.getElementById("nav").innerHTML = DATA.page.nav.map(n =>
+    `<a${n.optional ? ` class="podo-nav__optional"` : ""} href="${esc(n.href)}"${
+      n.current ? ` aria-current="page"` : ""}>${esc(langLabel(n))}</a>`).join("");
+}
+
+const lvColor = lv => `var(--lv-${DATA.ramp[lv]})`;
+
+document.documentElement.style.setProperty("--ac", T.accent);
+document.documentElement.style.setProperty("--tint", T.tint);
+/** 트랙 이름. 이 페이지의 주인공이라 표시 언어를 그대로 따른다. */
+const trackName = () => loc({ko: T.ko, ja: T.ja, en: T.en}) || T.ko;
+
+/* ---------- 탭 · 머리 · 띠 ----------
+   전부 한 함수 안에 둔다. 언어를 바꾸면 이 셋이 함께 다시 그려져야 하고, 예전에는
+   여기 있던 글자들이 그리는 시점 한 번만 한국어로 박혀 되돌릴 방법이 없었다. */
+function paintTrack() {
+  document.getElementById("ttl").textContent = `${trackName()} · ${loc(DATA.page.title)}`;
+
+  document.getElementById("tabs").innerHTML =
+    `<a class="tab home" href="../">← ${esc(t("ui","catalog"))}</a>` +
+    DATA.nav.map(n => `<a class="tab${n.id === T.id ? " on" : ""}${n.trial ? " trial" : ""}" href="${esc(n.id)}"${n.id === T.id ? ' aria-current="page"' : ""}
+      style="--ac:${n.accent}">${n.trial ? "" : `<em>${String(n.no).padStart(2, "0")}</em>`}${esc(loc({ko:n.ko, ja:n.ja, en:n.en}) || n.ko)}</a>`).join("");
+
+  const name = trackName();
+  const span = T.span.length
+    ? (T.span.length === 1 ? lvName(T.span[0]) : `${lvName(T.span[0])} — ${lvName(T.span[T.span.length - 1])}`)
+    : t("ui","allLevels");
+  const flag = T.status === "plan" ? ` · ${t("ui","planOnly")}` : T.status === "open" ? ` · ${t("ui","keepAdding")}` : "";
+  document.getElementById("hno").textContent = T.trial
+    ? `${t("ui","trialKicker")} · ${span}${flag}`
+    : `${t("ui","trackWord")} ${String(T.no).padStart(2, "0")} · ${span}${flag}`;
+  document.getElementById("h1").setAttribute("aria-label", `${name} — ${T.en}`);
+  // 라틴 보조 줄은 영어로 볼 때 제목을 두 번 말하게 된다.
+  document.getElementById("h1").innerHTML = `${esc(name)}${L === "en" ? "" : `<span aria-hidden="true">${esc(T.en)}</span>`}`;
+  document.getElementById("hd").textContent = loc(T.desc);
+  // stats 는 {k: i18n 키, v: 숫자} 다. k 를 그대로 찍으면 화면에 "lessonWord" 가 뜬다.
+  document.getElementById("figs").innerHTML =
+    T.stats.map(s => `<div><b>${esc(s.v)}</b><span>${esc(t("ui", s.k))}</span></div>`).join("");
+
+  const used = LEVELS.filter(lv => T.dist[lv]);
+  document.querySelector(".panel").classList.toggle("single", used.length === 1);
+  document.getElementById("distwrap").hidden = used.length === 1;
+  document.getElementById("distwrap").innerHTML = used.length
+    ? `<div class="dist">${used.map(lv => `<i style="flex:${T.dist[lv]};background:${lvColor(lv)}"
+        title="${esc(lvName(lv))} ${T.dist[lv]} ${esc(t("ui","lessonWord"))}"></i>`).join("")}</div>
+       <div class="dist-legend">${used.map(lv => `<span><i style="background:${lvColor(lv)}"></i>${esc(lvName(lv))} <b>${T.dist[lv]}</b></span>`).join("")}</div>`
+    : `<div class="dist-legend"><span>${esc(t("ui", T.status === "plan" ? "planNoDecks" : "noLevelBound"))}</span></div>`;
+
+  document.body.classList.toggle("plan-track", T.status === "plan");
+  document.getElementById("plan-banner").hidden = T.status !== "plan";
+
+  const made = (T.decks || []).length;
+  document.getElementById("band").innerHTML =
+    `<h2 id="curriculum-title">${esc(t("ui", T.status === "plan" ? "planContents" : "curriculum"))}</h2>
+     <p>${T.unitCount || T.groups.length} ${esc(t("ui","unitWord"))}${made ? ` · ${esc(t("ui","deckWordShort"))} ${made}` : ""}</p>`;
+
+  const usedLevels = LEVELS.filter(lv => T.dist[lv]);
+  document.getElementById("levelbar").hidden = usedLevels.length < 2;
+  document.getElementById("levelbar").innerHTML =
+    `<span class="lbl" style="margin-right:4px">${esc(t("ui","levelLabel"))}</span>` +
+    usedLevels.map(lv => `<button class="chip lv" type="button" data-lv="${lv}"
+      aria-pressed="${activeLevels.has(lv)}">
+      <span class="dot" style="background:${lvColor(lv)}"></span>${esc(lvName(lv))}</button>`).join("");
+}
+
+/* ---------- 3·4·5단 ---------- */
+function chips(l) {
+  const p = chipList(l).slice(0, 2).map(c =>
+    `<span class="pat" title="${esc(c)}">${esc(c.replace(/\s+\(.*$/, "").trim() || c)}</span>`);
+  if (l.refs && l.refs.length) p.push(`<span class="pat ref">${esc(t("ui","coreRef"))} ${l.refs[0]}</span>`);
+  return p.join(`<span class="sep">·</span>`);
+}
+
+/** 문장을 그대로 쓰되, 배우는 조각에만 mark 를 씌운다. spans 는 빌드 때 계산된다. */
+function marked(sentence, spans) {
+  if (!spans || !spans.length) return esc(sentence);
+  let out = "", last = 0;
+  for (const [a, b] of spans) {
+    out += esc(sentence.slice(last, a)) + "<mark>" + esc(sentence.slice(a, b)) + "</mark>";
+    last = b;
+  }
+  return out + esc(sentence.slice(last));
+}
+
+/** 한글 학습 항목 안의 낱자 묶음만 크게 보여 준다. 설명은 그대로 두어 규칙의 맥락을 잃지 않는다. */
+function markedJamo(text) {
+  return esc(text).replace(/[ㄱ-ㅎㅏ-ㅣ](?:[\s＋/·–→]*[ㄱ-ㅎㅏ-ㅣ])*/g,
+    chars => `<strong class="jamo">${chars}</strong>`);
+}
+
+/** 펼친 과는 라벨 붙은 칸 셋으로 이루어진다 — 무엇을 할 수 있게 되는가,
+    무엇을 배우는가, 그리고 그것을 받쳐 주는 말. 트랙마다 칸의 이름만 달라진다. */
+/** 목표 문장을 지금 표시 언어로. canDo 는 학습자가 말하는 한국어가 아니라 "무엇을 할
+    수 있게 되는가" 의 설명이라, 일본어로 보는 사람에게는 일본어여야 한다. 일본어가
+    아직 없는 줄만 한국어 원문으로 남는다. */
+/** 배울 거리 칩. 패턴 자체는 한국어 그대로지만, 몇몇 줄에 붙은 설명은 일본어를 갖는다. */
+function chipList(l) {
+  const alt = l.chipsL10n && l.chipsL10n[L];
+  return (alt && alt.length) ? alt : (l.chips || []);
+}
+
+function canText(l, fallback) {
+  return (l.cans && l.cans[L]) || fallback || "";
+}
+
+function detail(l) {
+  const fields = [];
+  const isHangul = T.id === "1-hangul";
+
+  // 한글에서는 배울 글자·규칙이 본문이고, 읽을 수 있는 단어는 그 결과를 확인하는 예시다.
+  if (isHangul && l.chips && l.chips.length) {
+    fields.push({kind: "hangul-core", label: t("detail","learnThis"),
+      body: `<div class="hangul-focus">${chipList(l).map(c =>
+        `<div class="hangul-focus-item"><span>${markedJamo(c)}</span></div>`).join("")}</div>`});
+  }
+  if (isHangul && l.can) {
+    // "낱말 · 낱말 · 낱말 — 지시문" 한 줄이다. 낱말은 읽을 대상이라 한국어 그대로 칩이
+    // 되고, 지시문만 일본어를 갖는다. 낱말 목록이 아니면 통째로 목표 문장으로 다룬다.
+    const [head, ...rest] = l.can.split(/\s+—\s+/);
+    const tail = rest.join(" — ");
+    const words = head.split(" · ").map(w => w.trim()).filter(Boolean);
+    const note = canText(l, tail);
+    if (words.length >= 2) {
+      fields.push({kind: "hangul-practice", label: t("detail","readPractice"),
+        body: `<div class="hangul-practice">${words.map(w => `<span>${esc(w)}</span>`).join("")}</div>`
+          + (note ? `<p class="goal">${esc(note)}</p>` : "")});
+    } else {
+      fields.push({kind: "goal", label: t("detail","readGoal"),
+        body: `<p class="goal">${esc(canText(l, l.can))}</p>`});
+    }
+  }
+
+  // ① 이 과의 약속
+  if (l.can && !isHangul) {
+    const canNow = canText(l, l.can);
+    const words = canNow.split(" · ").map(w => w.trim()).filter(Boolean);
+    const listy = words.length >= 3 && words.every(w => w.length <= 7);
+    const goalLabel = l.canLabel === "읽을 수 있다" ? t("detail","readGoal")
+      : l.canLabel === "이야기한다" ? t("detail","talkGoal")
+      : l.canLabel === "일본어의 습관" ? t("detail","fixPoint") : t("detail","lessonGoal");
+    fields.push({kind: "goal", label: goalLabel, body: listy
+      ? `<div class="words">${words.map(w => `<span>${esc(w)}</span>`).join("")}</div>`
+      : `<p class="goal">${esc(canNow)}</p>`});
+  }
+
+  // ② 배우는 것 — 패턴이 있으면 예문 안에서 짚어 주고, 없으면 이름만 늘어놓는다
+  const ps = (l.pats || []).filter(p => p.ex || p.pat);
+  if (ps.length) {
+    fields.push({kind: "patterns", label: t("detail","corePatterns"), body: `<div class="pats">` + ps.map(p => `<div class="pcard">
+      ${p.ex ? `<p class="sent">${marked(p.ex, p.spans)}</p>` : ""}
+      ${p.reply ? `<p class="reply">${esc(p.reply)}</p>` : ""}
+      <div class="pmeta"><span class="pname">${esc(p.pat)}</span>
+        ${p.gloss ? `<span class="pgloss">${esc(p.gloss)}</span>` : ""}</div></div>`).join("") + `</div>`});
+  } else if (l.fix) {
+    fields.push({kind: "goal", label: t("detail","howToFix"), body: `<p class="goal">${esc(l.fix)}</p>`});
+  }
+  if (l.chips && l.chips.length && !ps.length && !isHangul) {
+    fields.push({kind: "items", label: l.fix ? t("detail","minPairs") : t("detail","learning"),
+      body: `<div class="said">${chipList(l).map(c => `<span>${esc(c)}</span>`).join("")}</div>`});
+  }
+
+  // ③ 받쳐 주는 말 — 통째로 외워 쓰는 표현과, 딱 한 줄짜리 규칙
+  const said = (l.notes || []).find(n => n.k === "표현");
+  const rule = (l.notes || []).find(n => n.k === "문법");
+  if (said || rule) {
+    // 트랙마다 구분자가 다르다: 핵심은 ·, 상황별은 쉼표. 쉼표로도 나누되 · 로 갈린
+    // 뒤에는 건드리지 않는다 — "아, 그래요?" 처럼 쉼표를 품은 한 덩어리가 있다.
+    let ws = [];
+    if (said) {
+      ws = said.v.split(/\s*·\s*/).filter(Boolean);
+      if (ws.length === 1) ws = ws[0].split(/\s*,\s*/).filter(Boolean);
+    }
+    fields.push({kind: "support", label: said && rule ? t("detail","saidAndRule") : said ? t("detail","saidNow") : t("detail","rule"),
+      body: (ws.length ? `<div class="said">${ws.map(w => `<span>${esc(w)}</span>`).join("")}</div>` : "")
+      + (rule ? `<p class="rule">${esc(rule.v)}</p>` : "")});
+  }
+
+  // ④ 덱이 스스로 말하는 오늘의 목표. canDo 를 대신하지 않고 옆에 선다 —
+  //    canDo 는 커리큘럼이 적은 목표, 이쪽은 학습자가 덱에서 실제로 읽는 문장이다.
+  if (l.goal && (l.goal.t || l.goal.ja)) {
+    fields.push({kind: "deckgoal", label: t("detail","deckGoal"), body:
+      (l.goal.t ? `<p class="goal">${esc(l.goal.t)}</p>` : "")
+      + (showJa() && l.goal.ja ? `<p class="goal-ja">${esc(l.goal.ja)}</p>` : "")});
+  }
+
+  // ⑤ 프리토킹 과가 그날 실제로 묻는 것 전부. 덱을 열지 않고도 주제가 맞는지
+  //    판단할 수 있어야 이 트랙의 목차가 의미를 갖는다 — 문법이 아니라 질문이
+  //    그 과의 내용이기 때문이다.
+  if (l.qs && l.qs.length) {
+    fields.push({kind: "questions",
+      label: `${t("detail","questions")} · ${t("detail","questionsN").replace("{n}", l.qs.length)}`,
+      body: `<ol class="qs">` + l.qs.map(q => `<li class="qitem">
+        ${q.n ? `<span class="qn">${esc(qLabel(q.n))}</span>` : ""}
+        ${q.t ? `<p class="qt">${esc(q.t)}</p>` : ""}
+        ${showJa() && q.ja ? `<p class="qja">${esc(q.ja)}</p>` : ""}
+        ${(q.f && q.f.length) ? `<ul class="qf" aria-label="${esc(t("detail","followUps"))}">`
+            + q.f.map(x => `<li>${esc(x)}</li>`).join("") + `</ul>` : ""}
+      </li>`).join("") + `</ol>`});
+  }
+
+  if (!fields.length) return `<p class="scene">${esc(t("detail","noDetail"))}</p>`;
+  return (l.scene ? `<p class="scene">${esc(l.scene)}</p>` : "")
+    + fields.map(f => `<section class="field field-${f.kind}"><span class="lbl">${esc(f.label)}</span>${f.body}</section>`).join("");
+}
+
+/** 덱 슬롯의 이름. 빌드가 넘긴 한국어 라벨 대신 표시 언어로 부른다. */
+function slotLabel(d) {
+  return d.slot ? t("ui", d.slot === "prestudy" ? "slotPrestudy" : "slotLecture") : (d.level || "");
+}
+
+/** 덱이 한국어로만 들고 있는 질문 번호표("몸풀기 1", "질문 3")를 표시 언어로 옮긴다.
+    종류만 갈아 끼우고 번호는 그대로 둔다 — 모르는 모양이면 원문을 그대로 쓴다. */
+const QN_KIND = {"몸풀기": "qWarmup", "질문": "qQuestion"};
+function qLabel(n) {
+  const m = /^(\S+)\s*(\d+)$/.exec(String(n || "").trim());
+  const key = m && QN_KIND[m[1]];
+  return key ? `${t("ui", key)} ${m[2]}` : (n || "");
+}
+
+function lessonRow(l, groupIndex, lessonIndex) {
+  const c = chips(l);
+  const firstLabel = `${t("ui","lessonWord")} 1`;
+  const name = loc(l.titles) || l.title;
+  // l.sub 는 일본어 제목이다 — 일본어로 볼 때는 제목 그 자체라 두 번 적을 이유가 없다.
+  const sub = (l.sub === firstLabel || l.sub === name) ? "" : l.sub || (c ? "" : l.can);
+  const firstTag = l.first ? `<span class="first-tag">${esc(firstLabel)}</span>` : "";
+  const no = String(l.n).padStart(2, "0");
+  // 덱이 있으면 그 과에서 곧장 수업 화면으로 나간다 — 카탈로그를 잃지 않도록 새 탭에서.
+  const variants = l.decks || (l.deck ? [{href:l.deck, level:""}] : []);
+  const showLevels = (l.levels || []).length > 1 || variants.length > 1;
+  const deck = variants.length ? `<div class="deck-links">${variants.map(d =>
+    `<a class="deck" href="../${esc(d.href)}" target="_blank" rel="noopener"
+       title="${esc(t("ui","openInNewTab").replace("{title}", name))}">${showLevels ? esc(slotLabel(d)) : esc(t("ui","openDeck"))} <span class="ext">↗</span></a>`
+  ).join("")}</div>` : "";
+  const detailId = `group-${groupIndex + 1}-lesson-${lessonIndex + 1}-detail`;
+  return `<div class="lesson" data-text="${esc([l.title, l.sub, l.can, l.scene, (l.chips||[]).join(" "), (l.notes||[]).map(n=>n.v).join(" ")].join(" ").toLowerCase())}">
+    <div class="lrow">
+      <button class="lrow-btn" type="button" aria-expanded="false" aria-controls="${detailId}">
+        <span class="lno">${esc(t("ui","lessonWord"))} ${no}</span>
+        <span class="ltitle">${esc(name)}${sub ? ` <em>— ${esc(sub)}</em>` : ""}${firstTag}</span>
+        <span class="lchips">${c}</span>
+      </button>
+      ${deck}
+    </div>
+    <div class="ldetail" id="${detailId}">${detail(l)}</div>
+  </div>`;
+}
+
+function group(g, index) {
+  // 단원 머리에는 "이 단원이 무엇인가"만 둔다.
+  //   · 패턴 목록은 바로 아래 과 목록이 이미 한 줄씩 들고 있다 — 같은 것을 두 번 적는 셈이었다
+  //   · 단원 설명문은 이 커리큘럼을 왜 이렇게 짰는지에 대한 메모라, 훑어보는 자리에 놓일 글이 아니다
+  // 둘 다 지우면 남는 것은 이야기와 성과, 그리고 과 목록뿐이다.
+  let head = "";
+  // 이 코스가 무엇을 하는 코스인지 한 줄. 펼쳤을 때 제일 먼저 읽히는 자리이고,
+  // 목록이 시작되기 전에 "여기가 맞는 코스인가" 를 판단할 수 있는 유일한 문장이다.
+  if (g.desc && loc(g.desc)) {
+    head += `<p class="story">${esc(loc(g.desc))}</p>`;
+  }
+  if (g.work) {
+    head += `<p class="story"><b>《${esc(g.work)}》</b> ${esc(g.story)}
+      ${g.cast ? `<span class="cast">${esc(t("ui","cast"))} — ${esc(g.cast)}</span>` : ""}</p>`;
+  }
+  if (g.blurb && (g.work || T.id === "3-contextual-korean")) {
+    head += `<p class="gcan"><b class="lbl">${esc(t("ui","groupCan"))}</b>${esc(g.blurb)}</p>`;
+  }
+
+  const bodyId = `group-${index + 1}-body`;
+  // 코스 제목도 세 언어가 있다. 부제의 일이란 "일본어로는 이렇게 부른다" 였으니,
+  // 제목이 이미 일본어인 화면에서는 같은 말을 두 번 적는 것이 된다.
+  const gTitle = loc(g.titles) || g.title;
+  const gSub = L === "ja" ? "" : ((g.titles && g.titles.ja) || g.subtitle);
+  const groupLevels = g.levels || (g.level ? [g.level] : []);
+  const levelTags = groupLevels.map(lv =>
+    `<span class="lv-tag"><i style="background:${lvColor(lv)}"></i>${esc(lvName(lv))}</span>`).join("");
+  return `<div class="group" data-lv="${esc(groupLevels.join(" "))}">
+    <button class="ghead" type="button" aria-expanded="false" aria-controls="${bodyId}">
+      <span class="gmark">${g.cover ? `<i class="cov" style="background-image:url(../${esc(g.cover)})"></i>` : ""}</span>
+      <span class="gnum">${g.no ? `${g.no}${esc(t("ui","unitWord"))}` : esc(g.label)}</span>
+      <span class="gtitle">${esc(gTitle)}${gSub ? `<em>${esc(gSub)}</em>` : ""}</span>
+      <span class="gmeta">${g.peak ? `<span>${esc(t("ui","peakUpTo").replace("{n}", g.peak))}</span>` : ""}${g.form ? `<span>${esc(g.form)}</span>` : ""}
+        ${levelTags}
+        <span>${g.lessons.length} ${esc(t("ui","lessonWord"))}</span><span class="caret"></span></span>
+    </button>
+    <div class="gbody" id="${bodyId}">
+      <div class="plate">${g.cover ? `<span class="cov-slot"></span>` : ""}<div class="plate-copy">${head}</div></div>
+      <div class="lessons">${g.lessons.map((l, lessonIndex) => lessonRow(l, index, lessonIndex)).join("")}</div>
+    </div>
+  </div>`;
+}
+
+const $groups = document.getElementById("groups");
+
+/* ---------- 표지가 자라는 자리 ----------
+   36px 표시와 118px 표지는 같은 요소다. 옮기고, 옮기기 전 자리에서 옮긴 뒤 자리로
+   날린다. 나는 동안에는 흐름 밖의 복제가 대신 움직여서, 지나가는 자리가 다시 배치되는
+   일이 없다 — 원본은 이미 목적지에 앉아 있고 잠깐 숨어 있을 뿐이다. */
+const REDUCED_MOTION = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const MOVE = {duration: 280, easing: "cubic-bezier(.2,.7,.3,1)"};
+
+function flyCover(cover, from, to) {
+  if (REDUCED_MOTION || !from || !to || !from.width || !to.width) return;
+  const ghost = document.createElement("div");
+  ghost.className = "cov cov-flying";
+  ghost.style.backgroundImage = cover.style.backgroundImage;
+  document.body.appendChild(ghost);
+  cover.style.visibility = "hidden";
+  const at = (r, radius) => ({left: r.left + "px", top: r.top + "px", width: r.width + "px",
+                              height: r.height + "px", borderRadius: radius});
+  ghost.animate([at(from, "2px"), at(to, "4px")], {...MOVE, fill: "both"})
+    .finished.catch(() => {}).then(() => { ghost.remove(); cover.style.visibility = ""; });
+}
+
+/** 표지를 그 코스의 상태에 맞는 자리에 놓는다. 표시 언어가 바뀌면 목록이 통째로 다시
+    그려지는데(`redraw`), 펼쳐 둔 자리는 그 뒤에 되살아난다 — 그때 표지도 따라가야 한다. */
+function placeCovers() {
+  $groups.querySelectorAll(".group").forEach(group => {
+    const cover = group.querySelector(".cov");
+    if (!cover) return;
+    const home = group.classList.contains("open")
+      ? group.querySelector(".cov-slot") : group.querySelector(".gmark");
+    if (home && cover.parentElement !== home) home.appendChild(cover);
+  });
+}
+
+/** 언어가 바뀌면 목록을 다시 그린다. 펼쳐 둔 자리를 자리 번호로 기억했다가 되돌려
+    준다 — 언어를 바꿨다고 보던 곳을 잃으면 전환이 벌처럼 느껴진다. */
+function redraw() {
+  const openG = [...$groups.querySelectorAll(".group")].map(el => el.classList.contains("open"));
+  const openL = [...$groups.querySelectorAll(".lesson")].map(el => el.classList.contains("open"));
+  $groups.innerHTML = T.groups.map(group).join("");
+  $groups.querySelectorAll(".group").forEach((el, i) => {
+    if (openG[i]) { el.classList.add("open"); el.querySelector(".ghead").setAttribute("aria-expanded", "true"); }
+  });
+  $groups.querySelectorAll(".lesson").forEach((el, i) => {
+    if (openL[i]) { el.classList.add("open"); el.querySelector(".lrow-btn").setAttribute("aria-expanded", "true"); }
+  });
+  placeCovers();                                // 펼친 코스의 표지는 본문에 있어야 한다
+  if (typeof apply === "function") apply();     // 검색·레벨 필터를 다시 먹인다 (표지를 다시 놓는다)
+}
+
+$groups.innerHTML = T.groups.map(group).join("");
+
+/* ---------- 이전 · 다음 트랙 ---------- */
+{
+  const i = DATA.nav.findIndex(n => n.id === T.id);
+  const prev = DATA.nav[i - 1], next = DATA.nav[i + 1];
+  document.getElementById("nextrack").innerHTML =
+    (prev ? `<a href="${esc(prev.id)}">← ${esc(loc({ko:prev.ko, ja:prev.ja, en:prev.en}) || prev.ko)}</a>` : `<a href="../">← ${esc(t("ui","catalog"))}</a>`) +
+    (next ? `<a href="${esc(next.id)}">${esc(loc({ko:next.ko, ja:next.ja, en:next.en}) || next.ko)} →</a>` : `<a href="../">${esc(t("ui","catalog"))} →</a>`);
+}
+
+/* ---------- behaviour ---------- */
+$groups.addEventListener("click", e => {
+  if (e.target.closest(".deck")) return;          // 덱 링크는 펼치기가 아니라 나가기다
+  const head = e.target.closest(".ghead");
+  if (head) {
+    const group = head.parentElement;
+    const cover = group.querySelector(".cov");
+    const from = cover ? cover.getBoundingClientRect() : null;
+    const mark = group.querySelector(".gmark");
+    const was = mark ? mark.getBoundingClientRect().width : 0;
+    const wasMargin = mark ? parseFloat(getComputedStyle(mark).marginLeft) || 0 : 0;
+
+    // 미끄러짐을 잠시 끄고 새 배치를 확정한다 — 표지가 내려앉을 자리를 재려면
+    // 자리 자체가 움직이는 중이면 안 된다.
+    if (mark) mark.style.transition = "none";
+    const open = group.classList.toggle("open");
+    head.setAttribute("aria-expanded", open);
+    if (cover) (open ? group.querySelector(".cov-slot") : mark).appendChild(cover);
+    if (mark) {
+      void mark.offsetWidth;
+      const now = mark.getBoundingClientRect().width;
+      const nowMargin = parseFloat(getComputedStyle(mark).marginLeft) || 0;
+      mark.style.transition = "";
+      if (cover) flyCover(cover, from, cover.getBoundingClientRect());
+      if (!REDUCED_MOTION) {
+        mark.animate([{width: was + "px", marginLeft: wasMargin + "px"},
+                      {width: now + "px", marginLeft: nowMargin + "px"}], MOVE);
+      }
+    }
+    return;
+  }
+  const row = e.target.closest(".lrow-btn");
+  if (row) {
+    const open = row.closest(".lesson").classList.toggle("open");
+    row.setAttribute("aria-expanded", open);
+  }
+});
+
+const $q = document.getElementById("q");
+const $hits = document.getElementById("hits");
+const $empty = document.getElementById("empty");
+let activeLevels = new Set();
+
+function apply() {
+  const q = $q.value.trim().toLowerCase();
+  let hits = 0, shown = 0;
+  document.querySelectorAll(".group").forEach(g => {
+    const groupLevels = new Set(g.dataset.lv.split(" ").filter(Boolean));
+    const lvOk = !activeLevels.size || [...activeLevels].some(lv => groupLevels.has(lv));
+    let inGroup = 0;
+    g.querySelectorAll(".lesson").forEach(l => {
+      const ok = lvOk && (!q || l.dataset.text.includes(q));
+      l.classList.toggle("hide", !ok);
+      if (ok) inGroup++;
+    });
+    g.classList.toggle("hide", inGroup === 0);
+    if (inGroup) shown++;
+    hits += inGroup;
+    if (q) {
+      g.classList.add("open");
+      g.querySelector(".ghead")?.setAttribute("aria-expanded", "true");
+    }
+  });
+  placeCovers();   // 검색이 코스를 펼치기도 한다 — 표지가 접힌 자리에 남으면 사라진다
+  const filtering = q || activeLevels.size;
+  $hits.textContent = filtering
+    ? `${hits} ${t("ui","lessonWord")} · ${shown} ${t("ui","unitWord")}` : "";
+  $empty.classList.toggle("hide", !(filtering && hits === 0));
+
+  if (q) {
+    document.querySelectorAll(".lesson:not(.hide) .ltitle").forEach(el => {
+      const t = el.textContent, i = t.toLowerCase().indexOf(q);
+      if (i < 0) return;
+      el.innerHTML = esc(t.slice(0, i)) + "<mark>" + esc(t.slice(i, i + q.length)) + "</mark>" + esc(t.slice(i + q.length));
+    });
+  }
+}
+
+$q.addEventListener("input", () => {
+  document.querySelectorAll(".ltitle mark").forEach(m => { const p = m.parentElement; p.innerHTML = p.textContent; });
+  apply();
+});
+
+document.getElementById("levelbar").addEventListener("click", e => {
+  const b = e.target.closest(".lv");
+  if (!b) return;
+  const lv = b.dataset.lv;
+  activeLevels.has(lv) ? activeLevels.delete(lv) : activeLevels.add(lv);
+  b.setAttribute("aria-pressed", activeLevels.has(lv));
+  apply();
+});
+
+const $units = document.getElementById("expandUnits");
+const $all = document.getElementById("expandAll");
+
+function setOpen(units, lessons) {
+  document.querySelectorAll(".group").forEach(g => {
+    g.classList.toggle("open", units);
+    g.querySelector(".ghead")?.setAttribute("aria-expanded", units);
+  });
+  document.querySelectorAll(".lesson").forEach(l => {
+    l.classList.toggle("open", lessons);
+    l.querySelector(".lrow-btn")?.setAttribute("aria-expanded", lessons);
+  });
+  placeCovers();   // 한꺼번에 여닫는 자리. 표지도 함께 옮겨야 자리를 잃지 않는다
+  $units.classList.toggle("on", units && !lessons);
+  $all.classList.toggle("on", lessons);
+  $units.textContent = t("ui", units && !lessons ? "collapseUnits" : "expandUnits");
+  $all.textContent = t("ui", lessons ? "collapseAll" : "expandAll");
+}
+$units.addEventListener("click", () => setOpen(!$units.classList.contains("on"), false));
+$all.addEventListener("click", () => { const on = !$all.classList.contains("on"); setOpen(on, on); });
+
+// 들어오자마자 첫 단원은 열어 둔다 — 이 페이지는 이미 한 트랙으로 좁혀진 자리라,
+// 무엇이 들어 있는지 한 번은 보여 주는 편이 낫다.
+/* ---- 표시 언어 ---------------------------------------------------------- */
+
+/** data-i18n 이 붙은 자리를 지금 언어로 채운다. 마크업의 한국어는 기본값으로 남는다 —
+    JS 가 죽어도 페이지는 읽히는 상태여야 한다. */
+function paintStatic() {
+  document.querySelectorAll("[data-i18n-label]").forEach(el => {
+    const [sec, key] = el.getAttribute("data-i18n-label").split(".");
+    const v = t(sec, key); if (v) el.setAttribute("aria-label", v);
+  });
+  document.querySelectorAll("[data-i18n-ph]").forEach(el => {
+    const [sec, key] = el.getAttribute("data-i18n-ph").split(".");
+    const v = t(sec, key); if (v) el.placeholder = v;
+  });
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const [sec, key] = el.getAttribute("data-i18n").split(".");
+    const v = t(sec, key);
+    if (v) el.textContent = v;
+  });
+  document.documentElement.lang = L;
+  paintLangNav();
+}
+
+function paintLocaleBar() {
+  const bar = document.getElementById("loc");
+  if (!bar) return;
+  bar.setAttribute("aria-label", t("locale", "label"));
+  bar.innerHTML = LOCALES.map(code =>
+    `<button type="button" data-loc="${code}" aria-pressed="${code === L}">` +
+    `${esc((I18N.locale[code] || {})[code] || code)}</button>`).join("");
+}
+
+function setLocale(next) {
+  if (!LOCALES.includes(next) || next === L) return;
+  L = next;
+  try { localStorage.setItem(LS_KEY, L); } catch (e) {}
+  paintStatic(); paintLocaleBar(); paintTrack(); redraw();
+  // 펼침 버튼의 말은 지금 펼쳐진 상태에 달렸다 — 상태를 읽어 그대로 다시 적는다.
+  setOpen($units.classList.contains("on"), $all.classList.contains("on"));
+}
+
+document.getElementById("loc").addEventListener("click", e => {
+  const b = e.target.closest("button[data-loc]");
+  if (b) setLocale(b.dataset.loc);
+});
+
+paintStatic();
+paintLocaleBar();
+paintTrack();
+
+const firstGroup = document.querySelector(".group");
+firstGroup?.classList.add("open");
+firstGroup?.querySelector(".ghead")?.setAttribute("aria-expanded", "true");
+placeCovers();   // 첫 코스는 열린 채로 그려진다 — 그 표지는 처음부터 본문에 있어야 한다
+</script>
+</body>
+</html>
