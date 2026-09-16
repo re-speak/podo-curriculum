@@ -20,6 +20,18 @@
           path (/korean-jp) and its catalog is that directory's index. GitHub
           Pages resolves the extensionless links to the same files upstream
           writes, so only the links moved, not the tree.
+       5. The phone layout is this file's own, because two things upstream does
+          not have made it wrong here. `.ghead` is `display: flex` (the course
+          cover, edit 3's neighbour, sits in it) while upstream is grid, so the
+          `grid-template-columns` in the ≤600px block did nothing and the meta
+          row stayed on the title's line and got cut off. And the text here is
+          Japanese, which has no spaces, so `word-break: keep-all` made whole
+          sentences unbreakable — a lesson title ran under its deck buttons.
+          Every `keep-all` is therefore paired with `overflow-wrap: break-word`,
+          and the deck buttons drop to their own row on a phone.
+       6. The track tab strip scrolls the current tab into view on load. It is a
+          horizontal scroller, and at phone width the tab you are on can start
+          off-screen — with no scrollbar to say there is more.
 
      Filled by tools/build-catalog.py — do not edit the built file by hand. -->
 <html lang="ko">
@@ -120,9 +132,21 @@
   .hero-no { display: inline-flex; align-items: center; gap: 8px; color: var(--ac); font-size: 12px;
     font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
   .hero-no::before { content: ""; width: 8px; height: 8px; background: var(--ac); }
-  h1 { margin: 11px 0 0; font-size: 44px; font-weight: 820; line-height: 1.08; letter-spacing: -.045em; word-break: keep-all; }
+  /* ---------- keep-all 의 짝 ----------
+     아래에서 `word-break: keep-all` 이 나올 때마다 `overflow-wrap: break-word` 가
+     같이 붙는다. keep-all 은 한국어 때문에 있다 — 낱말 가운데를 자르지 않게. 그런데
+     이 카탈로그의 본문은 대부분 일본어이고, 일본어에는 띄어쓰기가 없어서 keep-all
+     아래에서는 문장 하나가 통째로 «낱말 하나» 가 된다. 그래서 좁은 화면에서 자리를
+     넘겨도 접히지 않고 옆 칸으로 흘러나갔다: 폰에서 과 제목이 교재 단추 밑에 깔려
+     겹쳐 보인 것이 그것이고, 펼친 단원의 설명문이 표지 밖으로 새어 나간 것도 같다.
+
+     break-word 는 마지막 수단으로만 끼어든다. 정상적으로 접을 수 있으면 keep-all 이
+     먼저이고, 한 줄이 도저히 안 들어갈 때만 낱말을 자른다 — 한국어의 규칙은 그대로
+     두고 넘칠 때만 구해 주는 짝이다. `anywhere` 가 아니라 `break-word` 인 이유는
+     하나: anywhere 는 min-content 계산까지 바꿔서 넓은 화면의 칸 너비가 같이 움직인다. */
+  h1 { margin: 11px 0 0; font-size: 44px; font-weight: 820; line-height: 1.08; letter-spacing: -.045em; word-break: keep-all; overflow-wrap: break-word; }
   h1 span { display: block; margin: 7px 0 0; color: var(--ink-3); font-size: 14px; font-weight: 550; letter-spacing: 0; }
-  .hero-d { max-width: 52ch; margin: 19px 0 0; color: var(--ink-2); font-size: 15px; line-height: 1.72; word-break: keep-all; }
+  .hero-d { max-width: 52ch; margin: 19px 0 0; color: var(--ink-2); font-size: 15px; line-height: 1.72; word-break: keep-all; overflow-wrap: break-word; }
 
   .panel { min-width: 0; padding: 20px; border: 1px solid rgba(22,24,26,.08); border-radius: var(--radius);
     background: rgba(255,255,255,.82); box-shadow: none; }
@@ -223,7 +247,8 @@
   .group.open .ghead { background: linear-gradient(90deg, color-mix(in srgb, var(--tint) 76%, white), #fff 72%); }
   .gnum { flex: 0 0 auto; display: grid; place-items: center; min-width: 40px; height: 34px; padding: 0 9px; border-radius: var(--radius-sm);
     background: var(--ac); color: #fff; font-size: 12px; font-weight: 800; letter-spacing: -.01em; white-space: nowrap; box-shadow: none; }
-  .gtitle { flex: 1 1 auto; min-width: 0; font-size: 18px; font-weight: 750; letter-spacing: -.03em; word-break: keep-all; }
+  .gtitle { flex: 1 1 auto; min-width: 0; font-size: 18px; font-weight: 750; letter-spacing: -.03em;
+    word-break: keep-all; overflow-wrap: break-word; }
   .gtitle em { display: block; margin-top: 2px; color: var(--ink-3); font-style: normal; font-size: 12.5px; font-weight: 500; letter-spacing: 0; }
   .gmeta { display: flex; align-items: center; gap: 14px; color: var(--ink-3); font-size: 12px; font-weight: 600; white-space: nowrap; }
   .gmeta > * { flex: 0 0 auto; }
@@ -236,11 +261,11 @@
   .gbody { display: none; padding: 12px 20px 20px; }
   .group.open .gbody { display: block; }
 
-  .story { margin: 0; max-width: 70ch; color: var(--ink-2); font-size: 13.5px; line-height: 1.75; word-break: keep-all; }
+  .story { margin: 0; max-width: 70ch; color: var(--ink-2); font-size: 13.5px; line-height: 1.75; word-break: keep-all; overflow-wrap: break-word; }
   .story b { color: var(--ink); font-weight: 750; }
   .story .cast { display: block; margin-top: 5px; color: var(--ink-4); font-size: 12px; }
   .gcan { margin: 12px 0 0; max-width: 70ch; padding: 12px 14px; border-radius: var(--radius-sm);
-    background: color-mix(in srgb, var(--tint) 58%, white); color: var(--ink); font-size: 13.5px; line-height: 1.7; word-break: keep-all; }
+    background: color-mix(in srgb, var(--tint) 58%, white); color: var(--ink); font-size: 13.5px; line-height: 1.7; word-break: keep-all; overflow-wrap: break-word; }
   .gcan b { display: block; margin-bottom: 2px; color: var(--ac); }
 
   /* ---------- 4단 · 과 한 줄 ---------- */
@@ -264,7 +289,8 @@
   .lrow-btn:hover { background: color-mix(in srgb, var(--tint) 50%, white); }
   .lrow-btn:hover .ltitle { color: var(--ink); }
   .lno { color: var(--ac); font-size: 12px; font-weight: 750; font-variant-numeric: tabular-nums; }
-  .ltitle { min-width: 0; font-size: 14.5px; font-weight: 650; letter-spacing: -.015em; word-break: keep-all; transition: color .12s; }
+  .ltitle { min-width: 0; font-size: 14.5px; font-weight: 650; letter-spacing: -.015em;
+    word-break: keep-all; overflow-wrap: break-word; transition: color .12s; }
   .ltitle em { font-style: normal; color: var(--ink-3); font-weight: 450; letter-spacing: 0; }
   .first-tag { display: inline-block; margin-left: 8px; padding: 2px 6px; border: 1px solid color-mix(in srgb, var(--ac) 28%, var(--line));
     border-radius: var(--radius-sm); color: var(--ac); font-size: 10px; font-weight: 750; letter-spacing: .02em; vertical-align: 1px; }
@@ -303,17 +329,17 @@
   .field-goal > .lbl { margin-bottom: 5px; padding: 0; background: none; }
 
   /* 이 과의 약속. 카드에서 제일 먼저 읽혀야 하는 줄이라 본문보다 크고 진하다. */
-  .goal { margin: 0; max-width: 62ch; color: var(--ink); font-size: 15px; font-weight: 600; line-height: 1.65; word-break: keep-all; }
+  .goal { margin: 0; max-width: 62ch; color: var(--ink); font-size: 15px; font-weight: 600; line-height: 1.65; word-break: keep-all; overflow-wrap: break-word; }
   .words { display: flex; flex-wrap: wrap; gap: 6px; }
   .words span { padding: 5px 10px; background: color-mix(in srgb, var(--tint) 55%, white); border-radius: var(--radius-sm); font-size: 16px; font-weight: 700; }
-  .scene { margin: 0 0 16px; max-width: 62ch; color: var(--ink-3); font-size: 12.5px; line-height: 1.6; word-break: keep-all; }
+  .scene { margin: 0 0 16px; max-width: 62ch; color: var(--ink-3); font-size: 12.5px; line-height: 1.6; word-break: keep-all; overflow-wrap: break-word; }
 
   /* 한글 트랙에서는 단어가 결과 예시이고, 실제 학습 대상은 낱자와 조합 규칙이다.
      그래서 글자·규칙을 가장 큰 면에, 읽기 예시는 조용한 보조 줄에 둔다. */
   .hangul-focus { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
   .hangul-focus-item { min-height: 66px; display: flex; align-items: center; padding: 14px 16px;
     border-radius: var(--radius-sm); background: rgba(255,255,255,.9); color: var(--ink); font-size: 15px;
-    font-weight: 700; line-height: 1.65; word-break: keep-all; }
+    font-weight: 700; line-height: 1.65; word-break: keep-all; overflow-wrap: break-word; }
   .hangul-focus-item .jamo { display: inline-block; margin: 0 2px; padding: 1px 5px;
     border-radius: var(--radius-sm); background: color-mix(in srgb, var(--ac) 12%, white); color: var(--ac);
     font-size: 21px; font-weight: 800; line-height: 1.35; letter-spacing: .035em; vertical-align: -1px; }
@@ -326,20 +352,20 @@
      그래서 과를 펼쳤을 때 그 안에서 유일하게 칠해진 것이 배우는 조각이 된다. */
   .pats { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
   .pcard { padding: 16px; border-radius: var(--radius-sm); background: rgba(255,255,255,.88); box-shadow: none; }
-  .pcard .sent { margin: 0; font-size: 18.5px; font-weight: 700; line-height: 1.45; letter-spacing: -.025em; word-break: keep-all; }
+  .pcard .sent { margin: 0; font-size: 18.5px; font-weight: 700; line-height: 1.45; letter-spacing: -.025em; word-break: keep-all; overflow-wrap: break-word; }
   .pcard .sent mark { background: var(--pat-mark); color: var(--pat-ink); padding: 1px 3px; margin: 0 -1px; border-radius: var(--radius-sm); font-weight: 800;
     -webkit-box-decoration-break: clone; box-decoration-break: clone; }
-  .pcard .reply { margin: 5px 0 0; color: var(--ink-3); font-size: 13px; font-weight: 500; word-break: keep-all; }
+  .pcard .reply { margin: 5px 0 0; color: var(--ink-3); font-size: 13px; font-weight: 500; word-break: keep-all; overflow-wrap: break-word; }
   .pcard .reply::before { content: "\21B3 "; color: var(--ink-4); }
   .pcard .pmeta { margin: 10px 0 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 3px 9px; }
   .pcard .pname { color: var(--pat-ink); font-size: 12px; font-weight: 750; }
-  .pcard .pgloss { color: var(--ink-4); font-size: 12px; word-break: keep-all; }
+  .pcard .pgloss { color: var(--ink-4); font-size: 12px; word-break: keep-all; overflow-wrap: break-word; }
 
   /* 표현 — 훑을 때 눈에 걸리도록 글줄이 아니라 낱개로 앉힌다 */
   .said { display: flex; flex-wrap: wrap; gap: 6px; }
   .said span { padding: 5px 10px; background: rgba(255,255,255,.88); border-radius: var(--radius-sm);
     color: var(--ink-2); font-size: 12.5px; font-weight: 600; }
-  .rule { margin: 11px 0 0; max-width: 66ch; color: var(--ink-2); font-size: 12.5px; line-height: 1.7; word-break: keep-all; }
+  .rule { margin: 11px 0 0; max-width: 66ch; color: var(--ink-2); font-size: 12.5px; line-height: 1.7; word-break: keep-all; overflow-wrap: break-word; }
 
   @media (max-width: 600px) {
     .hero { padding-top: 26px; }
@@ -348,11 +374,22 @@
     .panel { padding: 16px; }
     .curriculum-head { margin-top: 24px; padding: 16px; }
     .band { margin-bottom: 12px; }
-    .ghead { grid-template-columns: auto minmax(0,1fr); gap: 10px 12px; padding: 14px; }
+    /* 여기 머리는 표지(.gmark) 때문에 flex 다 — upstream 의 track_template 은 grid 라서
+       vendor 하며 따라온 grid-template-columns 는 아무 일도 하지 않았고, 레벨·과 수·
+       화살표가 제목과 같은 줄에 남아 폰에서 오른쪽으로 잘려 나갔다. 줄을 나누는 일은
+       flex 가 한다: 표지·번호·제목이 첫 줄, 메타가 통째로 둘째 줄. */
+    .ghead { flex-wrap: wrap; gap: 6px 12px; padding: 14px; }
     .gtitle { font-size: 16px; }
-    .gmeta { grid-column: 2; justify-content: flex-start; flex-wrap: wrap; gap: 4px 10px; }
+    .gmeta { flex: 1 1 100%; justify-content: flex-start; flex-wrap: wrap; white-space: normal; gap: 4px 10px; }
     .gbody { padding: 6px 14px 16px; }
-    .lrow { gap: 6px; }
+    /* 과 한 줄에서는 제목과 교재 두 개가 한 줄을 다투다가 제목이 단추 밑으로 깔렸다.
+       단추를 아랫줄로 내리고 제목에 줄 하나를 통째로 준다. 들여쓰기는 제목이 시작하는
+       자리(13px 안여백 + 46px 번호 칸 + 16px 간격)에 맞춘다 — 어느 과의 교재인지가
+       왼쪽 정렬만으로 읽히게. */
+    .lrow { flex-wrap: wrap; gap: 0 6px; }
+    .lrow-btn { flex: 1 1 100%; padding-bottom: 6px; }
+    .deck-links { flex: 1 1 100%; margin: 0 0 12px; padding-left: 75px; }
+    .lesson.open .deck-links { padding-left: 15px; }
     .deck { padding: 5px 8px; }
     .lesson.open .lrow { padding-right: 8px; }
     .lesson.open .lrow-btn { padding-inline: 15px 8px; }
@@ -376,7 +413,7 @@
 <a class="podo-skip" href="#main" data-i18n="ui.skip">본문으로 건너뛰기</a>
 <header class="podo-bar">
   <div class="podo-bar__inner">
-    <a class="podo-brand" id="brand" href="../../index.html"><img src="../../favicon.svg" width="28" height="28" alt="">PODO Curriculum</a>
+    <a class="podo-brand" id="brand" href="../../index.html"><img src="../../favicon.svg" width="28" height="28" alt=""><span class="podo-brand__name">PODO Curriculum</span></a>
     <nav class="podo-nav" id="nav" data-i18n-label="ui.navLabel" aria-label="커리큘럼 탐색"></nav>
     <div class="loc" id="loc" role="group"></div>
   </div>
@@ -485,6 +522,13 @@ function paintTrack() {
     `<a class="tab home" href="../">← ${esc(t("ui","catalog"))}</a>` +
     DATA.nav.map(n => `<a class="tab${n.id === T.id ? " on" : ""}${n.trial ? " trial" : ""}" href="${esc(n.id)}"${n.id === T.id ? ' aria-current="page"' : ""}
       style="--ac:${n.accent}">${n.trial ? "" : `<em>${String(n.no).padStart(2, "0")}</em>`}${esc(loc({ko:n.ko, ja:n.ja, en:n.en}) || n.ko)}</a>`).join("");
+
+  /* 띠는 좁은 화면에서 가로로 흐른다. 지금 보고 있는 트랙이 그 흐름의 오른쪽 끝에
+     있으면 화면 밖에서 시작하고, 띠에 스크롤바도 없어서 트랙이 더 있다는 것 자체가
+     보이지 않는다. 열릴 때 현재 칸을 띠 안으로 끌어다 놓는다 — 페이지는 움직이지
+     않게 block: "nearest" 로. */
+  const here = document.querySelector("#tabs .tab.on");
+  if (here) here.scrollIntoView({ block: "nearest", inline: "center" });
 
   const name = trackName();
   const span = T.span.length
