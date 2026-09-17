@@ -16,6 +16,9 @@
        3. The level ramp is keyed by position on the axis (--lv-1 … --lv-6 plus
           DATA.ramp) rather than by rung name, because English is graded in CEFR
           and a name-keyed lookup left those segments with no colour at all.
+       4. Every `word-break: keep-all` is paired with `overflow-wrap: break-word`,
+          and the ladder's name column narrows on a phone. Both are about this
+          site's copy being Japanese — see course.html's edit 5 for the reason.
 
      Filled by tools/build-catalog.py — do not edit the built file by hand. -->
 <html lang="ko">
@@ -85,10 +88,14 @@
   .hero::after { content: ""; position: absolute; z-index: -1; width: 250px; height: 250px; right: -105px; top: -145px;
     border: 46px solid rgba(45,100,224,.055); border-radius: 50%; }
   .kicker { display: block; color: var(--ink-4); font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
-  h1 { margin: 14px 0 0; font-size: 44px; font-weight: 820; line-height: 1.22; letter-spacing: -.04em; word-break: keep-all; }
+  /* `word-break: keep-all` 에는 `overflow-wrap: break-word` 가 늘 따라온다 —
+     keep-all 은 한국어를 위한 규칙이고, 띄어쓰기가 없는 일본어에서는 문장 하나가
+     통째로 낱말 하나가 되어 좁은 화면에서 접히지 않고 넘쳐 나가기 때문이다.
+     break-word 는 그때만 끼어든다. tools/catalog/course.html 에 긴 설명이 있다. */
+  h1 { margin: 14px 0 0; font-size: 44px; font-weight: 820; line-height: 1.22; letter-spacing: -.04em; word-break: keep-all; overflow-wrap: break-word; }
   h1 b { font-weight: 800; font-variant-numeric: tabular-nums; }
   h1 .u { position: relative; white-space: nowrap; }
-  .lead { max-width: 58ch; margin: 18px auto 0; color: var(--ink-2); font-size: 14.5px; line-height: 1.75; word-break: keep-all; }
+  .lead { max-width: 58ch; margin: 18px auto 0; color: var(--ink-2); font-size: 14.5px; line-height: 1.75; word-break: keep-all; overflow-wrap: break-word; }
 
   .stats { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 34px; margin-top: 27px; }
   .stat { padding: 0; background: none; box-shadow: none; }
@@ -125,7 +132,7 @@
   .card-state { display: inline-flex; margin-top: 5px; padding: 3px 7px; border-radius: 1px;
     background: #555d64; color: #fff; font-size: 10px; font-weight: 800; letter-spacing: -.01em; }
   .card-d { flex: 1 1 auto; display: -webkit-box; margin: 15px 0 0; max-width: 34ch; overflow: hidden; color: var(--ink-2);
-    font-size: 13px; line-height: 1.65; word-break: keep-all; -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
+    font-size: 13px; line-height: 1.65; word-break: keep-all; overflow-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
   .card-foot { display: flex; align-items: center; justify-content: space-between; gap: 12px;
     margin-top: 17px; padding: 10px 11px; border-radius: var(--radius-sm); background: rgba(255,255,255,.76); }
   .card[data-status="plan"] .card-foot { box-shadow: inset 0 0 0 1px #d7dadd; }
@@ -230,6 +237,15 @@
   .laxis span { text-align: center; color: var(--ink-4); font-size: 11px; font-weight: 600; }
   .lhead { display: grid; grid-template-columns: 128px 1fr; gap: 16px; margin-bottom: 9px; }
   .lfoot { margin: 14px 0 0; color: var(--ink-4); font-size: 11.5px; }
+  /* 사다리는 여섯 칸짜리 표라 폰에서 가로로 흐른다 — 그건 그대로 둔다. 다만 620px
+     로는 390px 화면에서 절반 조금 넘게만 보여서, 어느 트랙이 어디까지 덮는지를
+     읽으려면 매번 끝까지 밀어야 했다. 이름 칸을 줄이면 한 번에 들어오는 폭이
+     늘어난다. 이름은 두세 줄로 접히지만 읽히고, 칸의 숫자는 그대로다. */
+  @media (max-width: 600px) {
+    .ladder-grid { min-width: 480px; }
+    .lrow, .lhead { grid-template-columns: 96px 1fr; gap: 10px; }
+    .laxis span { font-size: 10px; }
+  }
 
   footer { margin-top: 76px; padding: 18px 20px; border-radius: var(--radius-sm); background: var(--surface);
     color: var(--ink-4); font-size: 12px; line-height: 1.8; }
@@ -246,7 +262,7 @@
 <a class="podo-skip" href="#main" data-i18n="ui.skip">본문으로 건너뛰기</a>
 <header class="podo-bar">
   <div class="podo-bar__inner">
-    <a class="podo-brand" id="brand" href="../index.html"><img src="../favicon.svg" width="28" height="28" alt="">PODO Curriculum</a>
+    <a class="podo-brand" id="brand" href="../index.html"><img src="../favicon.svg" width="28" height="28" alt=""><span class="podo-brand__name">PODO Curriculum</span></a>
     <nav class="podo-nav" id="nav" data-i18n-label="ui.navLabel" aria-label="커리큘럼 탐색"></nav>
     <div class="loc" id="loc" role="group"></div>
   </div>
