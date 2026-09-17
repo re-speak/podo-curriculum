@@ -16,6 +16,9 @@
        3. The level ramp is keyed by position on the axis (--lv-1 … --lv-6 plus
           DATA.ramp) rather than by rung name, because English is graded in CEFR
           and a name-keyed lookup left those segments with no colour at all.
+       4. Every `word-break: keep-all` is paired with `overflow-wrap: break-word`,
+          and the ladder's name column narrows on a phone. Both are about this
+          site's copy being Japanese — see course.html's edit 5 for the reason.
 
      Filled by tools/build-catalog.py — do not edit the built file by hand. -->
 <html lang="ko">
@@ -85,10 +88,14 @@
   .hero::after { content: ""; position: absolute; z-index: -1; width: 250px; height: 250px; right: -105px; top: -145px;
     border: 46px solid rgba(45,100,224,.055); border-radius: 50%; }
   .kicker { display: block; color: var(--ink-4); font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
-  h1 { margin: 14px 0 0; font-size: 44px; font-weight: 820; line-height: 1.22; letter-spacing: -.04em; word-break: keep-all; }
+  /* `word-break: keep-all` 에는 `overflow-wrap: break-word` 가 늘 따라온다 —
+     keep-all 은 한국어를 위한 규칙이고, 띄어쓰기가 없는 일본어에서는 문장 하나가
+     통째로 낱말 하나가 되어 좁은 화면에서 접히지 않고 넘쳐 나가기 때문이다.
+     break-word 는 그때만 끼어든다. tools/catalog/course.html 에 긴 설명이 있다. */
+  h1 { margin: 14px 0 0; font-size: 44px; font-weight: 820; line-height: 1.22; letter-spacing: -.04em; word-break: keep-all; overflow-wrap: break-word; }
   h1 b { font-weight: 800; font-variant-numeric: tabular-nums; }
   h1 .u { position: relative; white-space: nowrap; }
-  .lead { max-width: 58ch; margin: 18px auto 0; color: var(--ink-2); font-size: 14.5px; line-height: 1.75; word-break: keep-all; }
+  .lead { max-width: 58ch; margin: 18px auto 0; color: var(--ink-2); font-size: 14.5px; line-height: 1.75; word-break: keep-all; overflow-wrap: break-word; }
 
   .stats { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 34px; margin-top: 27px; }
   .stat { padding: 0; background: none; box-shadow: none; }
@@ -125,7 +132,7 @@
   .card-state { display: inline-flex; margin-top: 5px; padding: 3px 7px; border-radius: 1px;
     background: #555d64; color: #fff; font-size: 10px; font-weight: 800; letter-spacing: -.01em; }
   .card-d { flex: 1 1 auto; display: -webkit-box; margin: 15px 0 0; max-width: 34ch; overflow: hidden; color: var(--ink-2);
-    font-size: 13px; line-height: 1.65; word-break: keep-all; -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
+    font-size: 13px; line-height: 1.65; word-break: keep-all; overflow-wrap: break-word; -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
   .card-foot { display: flex; align-items: center; justify-content: space-between; gap: 12px;
     margin-top: 17px; padding: 10px 11px; border-radius: var(--radius-sm); background: rgba(255,255,255,.76); }
   .card[data-status="plan"] .card-foot { box-shadow: inset 0 0 0 1px #d7dadd; }
@@ -212,24 +219,43 @@
   .dnone { margin: 16px 0 0; color: var(--ink-3); font-size: 13px; }
 
   /* ---------- level ladder ---------- */
+  /* 눈금 수는 언어마다 다르다 — 한국어 6단, 영어 CEFR 7칸. 칸 수를 6 으로 적어 두면
+     일곱 번째가 격자 밖으로 밀려 자기 줄 아래에 한 줄 더 생기고, 축의 C1 은 A1 밑으로
+     내려앉는다. 그러면 표가 거짓말을 한다: 프리토킹의 C1 121 과가 A1 칸 아래에 그려져
+     A1 에 121 과가 있는 것처럼 읽혔다. paintLadder 가 --lv-cols 를 실제 눈금 수로
+     채우고, 칸도 칸 사이 선도 그 값에서 나온다. */
   .ladder { margin-top: 18px; overflow-x: auto; }
-  .ladder-grid { min-width: 620px; }
+  .ladder-grid { --lv-cols: 6; --lv-step: calc(100% / var(--lv-cols)); min-width: 620px; }
   .lrow { display: grid; grid-template-columns: 128px 1fr; align-items: center; gap: 16px; }
   .lrow + .lrow { margin-top: 4px; }
   .lrow-head { display: flex; align-items: baseline; gap: 7px; justify-content: flex-end; text-align: right; font-size: 12.5px; font-weight: 700; }
   .lrow-head i { width: 8px; height: 8px; border-radius: 1px; }
   .lrow-head em { font-style: normal; color: var(--ink-4); font-size: 11px; font-weight: 600; font-variant-numeric: tabular-nums; }
-  .lcols { position: relative; display: grid; grid-template-columns: repeat(6, 1fr); gap: 2px; height: 30px; }
+  .lcols { position: relative; display: grid; grid-template-columns: repeat(var(--lv-cols), 1fr); gap: 2px; height: 30px; }
   .lcols::before { content: ""; position: absolute; inset: 0; background:
-      repeating-linear-gradient(to right, transparent 0, transparent calc(16.666% - 1px), var(--line-soft) calc(16.666% - 1px), var(--line-soft) 16.666%); }
+      repeating-linear-gradient(to right, transparent 0, transparent calc(var(--lv-step) - 1px), var(--line-soft) calc(var(--lv-step) - 1px), var(--line-soft) var(--lv-step)); }
   .lseg { display: grid; place-items: center; border-radius: 1px; font-size: 11px; font-weight: 700; font-variant-numeric: tabular-nums; }
   .lseg.dark { color: #fff; }
   .lseg.plan { background: repeating-linear-gradient(135deg, var(--surface) 0 6px, #fff 6px 12px);
     box-shadow: inset 0 0 0 1px var(--line); color: var(--ink-3); grid-column: 1 / -1; font-weight: 600; }
-  .laxis { display: grid; grid-template-columns: repeat(6, 1fr); gap: 2px; }
+  .laxis { display: grid; grid-template-columns: repeat(var(--lv-cols), 1fr); gap: 2px; }
   .laxis span { text-align: center; color: var(--ink-4); font-size: 11px; font-weight: 600; }
   .lhead { display: grid; grid-template-columns: 128px 1fr; gap: 16px; margin-bottom: 9px; }
   .lfoot { margin: 14px 0 0; color: var(--ink-4); font-size: 11.5px; }
+  /* 폰에서는 이름을 옆 칸에 두지 않는다. 좁은 칸에 밀어 넣으면 트랙 이름이 두세 줄로
+     접히는데(「フリート / ーキング」— 장음 부호 앞에서 끊긴다) 오른쪽 정렬이라 그
+     들쭉날쭉한 끝이 숫자 쪽을 향한다. 이름을 막대 위 한 줄로 올리면 이름은 한 줄에
+     펴지고 막대는 화면 전체를 쓴다 — 가로 스크롤도 그래서 같이 사라진다. */
+  @media (max-width: 600px) {
+    .ladder { overflow-x: visible; }
+    .ladder-grid { min-width: 0; }
+    .lrow, .lhead { grid-template-columns: minmax(0, 1fr); gap: 5px; }
+    .lrow + .lrow { margin-top: 14px; }
+    .lrow-head { justify-content: flex-start; text-align: left; }
+    .lhead { margin-bottom: 7px; }
+    .lhead > :first-child { display: none; }   /* 이름 칸 자리를 잡아 주던 빈 칸 */
+    .laxis span { font-size: 10px; }
+  }
 
   footer { margin-top: 76px; padding: 18px 20px; border-radius: var(--radius-sm); background: var(--surface);
     color: var(--ink-4); font-size: 12px; line-height: 1.8; }
@@ -246,7 +272,7 @@
 <a class="podo-skip" href="#main" data-i18n="ui.skip">본문으로 건너뛰기</a>
 <header class="podo-bar">
   <div class="podo-bar__inner">
-    <a class="podo-brand" id="brand" href="../index.html"><img src="../favicon.svg" width="28" height="28" alt="">PODO Curriculum</a>
+    <a class="podo-brand" id="brand" href="../index.html"><img src="../favicon.svg" width="28" height="28" alt=""><span class="podo-brand__name">PODO Curriculum</span></a>
     <nav class="podo-nav" id="nav" data-i18n-label="ui.navLabel" aria-label="커리큘럼 탐색"></nav>
     <div class="loc" id="loc" role="group"></div>
   </div>
@@ -466,6 +492,8 @@ document.getElementById("decks").addEventListener("click", e => {
 });
 
 function paintLadder() {
+  // 축과 막대가 같은 수의 칸을 쓰게 한다. 눈금 수는 언어가 정한다(한국어 6, 영어 7).
+  document.querySelector(".ladder-grid").style.setProperty("--lv-cols", LEVELS.length);
   document.getElementById("ladder-axis").innerHTML =
     LEVELS.map(l => `<span>${esc(lvName(l))}</span>`).join("");
   document.getElementById("ladder").innerHTML = DATA.tracks.map(t => {

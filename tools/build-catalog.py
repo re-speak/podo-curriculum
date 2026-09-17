@@ -35,11 +35,21 @@ can reach this" (→ `USE_YN`), so reusing it keeps one switch instead of two: a
 course that is not live is not advertised, and turning a course on turns its page
 on with it.
 
-Decks are copied verbatim, never rewritten. A deck is a directory of `index.html`
-+ `deck.css` + its own images, all referenced relatively, with the shared runtime
-on the CDN — so copying the directory is the whole port. The viewer frames it in
-an iframe rather than inlining it, which keeps the deck's CSS out of the
-catalog's and means what a visitor sees is byte-for-byte the file the room loads.
+Decks are copied, not rebuilt. A deck is a directory of `index.html` + `deck.css`
++ its own images, all referenced relatively, with the shared runtime on the CDN —
+so copying the directory is the whole port. The viewer frames it in an iframe
+rather than inlining it, which keeps the deck's CSS out of the catalog's.
+
+The copy carries **one** added line, and only in `index.html`: the four-statement
+reader that `ROLE_TAG` explains, which lets the URL say whether this screen is a
+learner's or a tutor's. Everything else is the bytes the room loads.
+
+That line exists because **this site has two audiences.** The catalog is the
+public one, and tutor-web's 수업자료 미리보기 is the other — it iframes these very
+files, not the GCS copy (podo-app
+`apps/tutor-web/src/server/modules/lectures/lib/curriculumDeck.ts`). So teaching
+mode cannot be decided in the file; it is decided per URL, and the default is to
+decide nothing.
 
     python3 tools/build-catalog.py            # → site/
     python3 -m http.server -d site 8000       # → http://localhost:8000
@@ -714,6 +724,73 @@ def copy_cover(base: pathlib.Path, course: model.Course) -> str:
     return rel
 
 
+# ---------------------------------------------------------------------------
+# 덱 사본이 자기 화면의 용도를 아는 법
+#
+# 카탈로그를 보는 사람은 학습자다. 덱을 그대로 복사해 두면 페이저가 «티칭 모드»
+# 스위치를 그리고, 누르면 정답·튜터 노트·발음 힌트가 전부 열린다 — 수업에서 튜터가
+# 쓰라고 있는 것이지, 공개 카탈로그에서 아무나 켜라고 있는 것이 아니다.
+#
+# 그런데 **이 사본의 독자가 학습자만이 아니다.** tutor-web 의 «수업자료 미리보기» 가
+# 바로 이 사이트를 iframe 으로 띄운다 — GCS 사본이 아니라 여기다
+# (podo-app `apps/tutor-web/src/server/modules/lectures/lib/curriculumDeck.ts`,
+# `embedUrl = <curriculum.podospeaking.com>/<lang>/decks/…/index.html`). 그래서 파일에
+# «학습자» 를 못 박으면 튜터의 미리보기에서도 티칭 모드가 사라진다. 같은 URL 이 두
+# 독자를 태우는 이상, 누구인지는 파일이 아니라 **주소가** 말해야 한다.
+#
+# 그래서 사본은 판단하지 않고 읽기만 한다:
+#
+#     ?role=student  → 학습자. 스위치를 지운다.
+#     ?role=tutor    → 튜터. 스위치를 켠 채로 연다.
+#     (없음)         → 아무것도 주장하지 않는다 — 종전대로 스위치는 보이되 꺼져 있다.
+#
+# «없음» 이 종전 동작인 것이 이 설계의 핵심이다. 카탈로그 뷰어는 자기가 여는 iframe 에
+# ?role=student 를 붙이므로(VIEWER) 공개 화면은 오늘 바로 닫히고, 파라미터를 아직
+# 붙이지 않는 tutor-web 미리보기는 배포 순서와 무관하게 오늘과 똑같이 돈다. 반대로
+# 기본값을 student 로 두었다면, 이 저장소가 먼저 배포되는 순간 튜터의 미리보기가
+# podo-app 이 따라올 때까지 티칭 모드를 잃는다.
+#
+# 티칭 모드를 **켠 채로** 열고 싶으면 그 주소에 ?role=tutor 를 붙이면 된다. tutor-web
+# 쪽에서는 위 curriculumDeck.ts 의 embedUrl/viewUrl 에 한 마디 붙이는 일이다.
+#
+# 역할을 읽는 쪽은 이미 있다(shared/js/pager.js): "student" 면 스위치를 그리지 않고
+# 아예 지우고(CSS 로 감추는 것과 달리 날개도 같이 사라진다), 그 밖의 명시된 역할이면
+# 켠 채로 시작한다. 여기는 그 판단의 재료만 넘긴다 — 보안 경계가 아니다.
+#
+# **줄은 </head> 앞에 있어야 한다.** 페이저는 문서 끝에서 돌지만 값을 그때 한 번만
+# 읽으므로, 덱의 스크립트보다 먼저 서 있기만 하면 된다. iframe 의 load 이벤트에서
+# 넣는 것은 늦다 — 그때는 이미 스위치가 그려져 있다. <head> 바로 뒤도 안 된다:
+# <meta charset> 을 밀어내면 파서가 문서를 한 번 다시 읽는다.
+#
+# 이미 값이 있으면 건드리지 않는다. 레몬보드는 수업에서 자기 역할을 <head> 바로 뒤에
+# 주입하는데(lemonboard `html-sync/runtime.ts`), 그 화면이 이 사본을 열 일은 없지만
+# 순서상 이 줄이 뒤에 오므로 덮어쓰지 않는 편이 맞다.
+ROLE_TAG = (
+    '<script>(function(){'
+    r'var m = /[?&]role=(student|tutor)\b/.exec(location.search);'
+    'if (m && !window.PODO_LESSON_CONTEXT) '
+    'window.PODO_LESSON_CONTEXT = { viewerRole: m[1] };'
+    '})();</script>'
+)
+
+HEAD_CLOSE = re.compile(r"</head\s*>", re.I)
+
+
+def add_role_reader(entry: pathlib.Path) -> None:
+    """복사된 덱의 index.html 에 ROLE_TAG 를 한 줄 끼운다.
+
+    `</head>` 를 못 찾으면 세운다. 조용히 건너뛰면 그 덱 하나만 티칭 모드를 단 채
+    공개되는데, 빌드는 초록으로 끝나서 아무 데서도 드러나지 않는다."""
+    html_text = entry.read_text(encoding="utf-8")
+    m = HEAD_CLOSE.search(html_text)
+    if not m:
+        raise model.ValidationError(
+            f"{entry}: no </head> to read the viewer role in")
+    entry.write_text(
+        html_text[:m.start()] + ROLE_TAG + "\n" + html_text[m.start():],
+        encoding="utf-8")
+
+
 def copy_decks(base: pathlib.Path, course: model.Course) -> dict:
     """Copy every deck this course has, and hand back where each one landed.
 
@@ -728,6 +805,7 @@ def copy_decks(base: pathlib.Path, course: model.Course) -> dict:
                 continue
             deck_rel = f"decks/{course.slug}/{lesson.slug}/{slot}"
             shutil.copytree(deck.entry.parent, base / deck_rel)
+            add_role_reader(base / deck_rel / deck.entry.name)
             hrefs.setdefault(lesson.slug, []).append({
                 # 링크에는 확장자가 없고(Pages 가 붙여서 찾는다) 파일은 .html 이다.
                 "href": f"view/{course.slug}/{lesson.slug}/{slot}",
@@ -1240,6 +1318,20 @@ VIEWER_JS = r"""/* GENERATED by tools/build-catalog.py */
       return n;
     }
 
+    /* 이 장이 튜터의 것이면, 뷰어 안에서 움직인 뒤에도 계속 튜터의 것이어야 한다.
+       차례·이전/다음·슬롯 전환은 전부 다른 뷰어 장으로 가는 링크라, 역할을 실어
+       보내지 않으면 다음 장이 기본값인 학습자로 열린다 — 튜터가 한 번 넘기는 순간
+       티칭 모드가 사라진다. 처음 열 때만 맞고 그 뒤로 틀리는 것이 제일 나쁘다:
+       고장이 났다는 신호가 «없어졌다» 하나뿐이라 자기 실수처럼 보인다.
+
+       카탈로그로 돌아가는 링크(브랜드·트랙)에는 일부러 붙이지 않는다. 거기는 공개
+       카탈로그이지 튜터의 화면이 아니다 — 역할이 따라가야 하는 범위는 뷰어까지다.
+
+       학습자 쪽은 실어 보낼 것이 없다. 역할이 없는 뷰어는 자기 iframe 을 이미
+       ?role=student 로 열고 있어서, 붙이지 않는 것이 곧 학습자다. */
+    var ROLE_Q = /[?&]role=tutor\b/.test(location.search) ? "?role=tutor" : "";
+    function stay(href) { return href + ROLE_Q; }
+
     /* 차례는 한 번만 짓는다. 표시 언어를 바꿀 때 다시 지으면 펼쳐 둔 묶음이 도로 닫힌다 —
        그래서 글자만 갈아 끼우도록 만들 때 각 자리를 적어 둔다. */
     var paints = [];
@@ -1268,7 +1360,7 @@ VIEWER_JS = r"""/* GENERATED by tools/build-catalog.py */
         var byLevel = !c.group && c.l.length === 1;
         c.l.forEach(function (r) {
           var a = el("a", byLevel ? "row row--solo" : "row");
-          a.href = r.h;
+          a.href = stay(r.h);
           var b = el("b"), t = el("span", "t");
           a.appendChild(b); a.appendChild(t);
           if (r.c === D.course && r.s === D.lesson) a.setAttribute("aria-current", "page");
@@ -1294,7 +1386,7 @@ VIEWER_JS = r"""/* GENERATED by tools/build-catalog.py */
         var node;
         if (o) {
           node = document.createElement("a");
-          node.href = o.h;
+          node.href = stay(o.h);
           node.title = lvName(o.lv) + " · " + loc(o.t);
         } else {
           node = document.createElement("span");
@@ -1310,7 +1402,7 @@ VIEWER_JS = r"""/* GENERATED by tools/build-catalog.py */
       slots.textContent = "";
       D.slots.forEach(function (s) {
         var a = el("a", null, tr("ui", s === "prestudy" ? "slotPrestudy" : "slotLecture"));
-        a.href = s + ".html";
+        a.href = stay(s + ".html");
         if (s === D.slot) a.setAttribute("aria-current", "page");
         slots.appendChild(a);
       });
@@ -1343,7 +1435,7 @@ VIEWER_JS = r"""/* GENERATED by tools/build-catalog.py */
       row("←", loc(D.track), document.getElementById("track").href);
       D.slots.forEach(function (s) {
         if (s === D.slot) return;
-        row("", tr("ui", s === "prestudy" ? "slotPrestudy" : "slotLecture"), s + ".html");
+        row("", tr("ui", s === "prestudy" ? "slotPrestudy" : "slotLecture"), stay(s + ".html"));
       });
       var f = row("", tr("ui", "fullScreen"), document.getElementById("full").href);
       f.target = "_blank"; f.rel = "noopener";
@@ -1514,7 +1606,7 @@ VIEWER = """<!DOCTYPE html>
   </nav>
   <span class="right">
     <span class="seg" id="slots"></span>
-    <a class="iconbtn" href="{deck}" target="_blank" rel="noopener" id="full"
+    <a class="iconbtn" href="{deck}?role=student" target="_blank" rel="noopener" id="full"
       data-i18n-label="ui.fullScreen" aria-label="전체 화면">
       <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor"
         stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -1532,8 +1624,26 @@ VIEWER = """<!DOCTYPE html>
 </aside>
 <div class="menu" id="phone" hidden></div>
 <main class="stage">
-  <iframe id="deck" src="{deck}" title="{title}"></iframe>
+  <iframe id="deck" src="{deck}?role=student" title="{title}"></iframe>
 </main>
+<script>
+  /* 이 장을 여는 사람은 보통 학습자라, 덱은 ?role=student 로 열린다 — 티칭 모드
+     스위치가 아예 그려지지 않는다(build-catalog.py 의 ROLE_TAG 참고).
+
+     튜터가 이 장을 열 때는 그러면 안 된다. tutor-web 의 «새 탭에서 열기» 가 바로
+     이 주소를 여는데, 거기서 교재를 미리 보는 사람은 티칭 모드가 필요하다. 이 장이
+     ?role=tutor 로 열렸으면 그 말을 덱에도 그대로 넘긴다.
+
+     기본값이 student 이고 markup 에 이미 박혀 있으므로, 흔한 쪽은 요청이 한 번이다.
+     여기서 다시 쓰는 것은 튜터가 왔을 때뿐이다. */
+  (function () {{
+    if (!/[?&]role=tutor\\b/.test(location.search)) return;
+    var frame = document.getElementById("deck");
+    var full = document.getElementById("full");
+    frame.src = frame.src.replace(/role=student\\b/, "role=tutor");
+    full.href = full.href.replace(/role=student\\b/, "role=tutor");
+  }})();
+</script>
 <script src="{up}i18n.js"></script>
 <script src="{toc_src}"></script>
 <script>window.PODO_VIEW = {data};</script>
