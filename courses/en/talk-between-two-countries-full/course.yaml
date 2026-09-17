@@ -19,7 +19,7 @@ spec:
   classLevel: "3100.010"
   lessonTime: 25
   # Promotion is a human-reviewed act; the authoring draft remains disabled.
-  enabled: true
+  enabled: false
   difficulty: ADVANCED
 
   # Three name columns, three descriptions: the app picks by locale, so `ja` is
