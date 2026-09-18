@@ -1,0 +1,128 @@
+/* The public catalog's chrome. Shared design with the authoring catalogs under
+   sandbox/drafts/<code>/catalog.html, so the two read as one product — a change
+   here should usually be made there too.
+   Filled by tools/build-catalog.py; the generated site/ is gitignored. */
+
+:root {
+  --site-ink: #171916;
+  --site-muted: #656a63;
+  --site-line: #e1e4df;
+  --site-soft: #f5f6f3;
+  --site-lime: #b5fd4c;
+  --site-focus: #285bb8;
+}
+
+.podo-skip {
+  position: fixed;
+  z-index: 1000;
+  top: 8px;
+  left: 8px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  color: #fff;
+  background: var(--site-ink);
+  font-size: 14px;
+  font-weight: 750;
+  text-decoration: none;
+  transform: translateY(-150%);
+}
+
+.podo-skip:focus { transform: translateY(0); }
+
+.podo-bar {
+  border-bottom: 1px solid var(--site-line);
+  color: var(--site-ink);
+  background: rgba(255, 255, 255, .96);
+}
+
+.podo-bar__inner {
+  width: min(1120px, calc(100% - 40px));
+  min-height: 64px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.podo-brand {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: inherit;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: -.01em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.podo-brand img {
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+}
+
+.podo-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.podo-nav a {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 12px;
+  border-radius: 6px;
+  color: var(--site-muted);
+  font-size: 13px;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.podo-nav a:hover { color: var(--site-ink); background: var(--site-soft); }
+.podo-nav a[aria-current="page"] { color: var(--site-ink); background: var(--site-soft); }
+
+:where(a, button, input, textarea, select):focus-visible {
+  outline: 3px solid var(--site-focus);
+  outline-offset: 3px;
+}
+
+:where(a, button) { touch-action: manipulation; }
+
+/* 폰에서는 셋 다 한 줄에 들어가지 않는다. 글씨만 줄이면 줄어드는 대신 낱자가
+   세로로 쪼개져서(한/국/어) 읽히지 않으므로, 하나를 접어야 한다 — 접는 것은
+   워드마크다. 로고가 남아 있는 한 "여기가 어디인가" 는 그대로 읽히고, 이름은
+   접근성 트리에 남는다. 언어 탭과 표시 언어는 둘 다 고르라고 있는 것이라
+   접을 수 없다.
+
+   나머지는 절대로 줄바꿈하지 않는다. 이 막대 안의 글자는 전부 낱말 하나짜리
+   라벨이라, 한 번 접히면 그 줄이 깨진 것으로 보인다. */
+@media (max-width: 640px) {
+  .podo-bar__inner { width: min(100% - 24px, 600px); min-height: 58px; gap: 8px; }
+  /* 이름이 빠지면 로고 28px 이 그대로 누를 자리가 된다 — 44px 는 남겨 둔다. */
+  .podo-brand { flex: 0 0 auto; min-width: 44px; gap: 0; justify-content: center; }
+  .podo-brand__name {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .podo-nav { flex: 0 0 auto; gap: 0; }
+  .podo-nav a { padding: 0 7px; font-size: 12.5px; white-space: nowrap; }
+  .podo-nav .podo-nav__optional { display: none; }
+  /* 로케일 전환은 템플릿마다 인라인 <style> 로 들고 있어서, 여기서 덮으려면
+     한 칸 더 좁혀야 한다 — `.loc button` 은 나중에 오는 쪽이 이긴다. */
+  .podo-bar .loc { flex: 0 0 auto; margin-left: 0; }
+  .podo-bar .loc button { padding: 4px 7px; font-size: 11.5px; white-space: nowrap; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .podo-skip { transition: none; }
+}
